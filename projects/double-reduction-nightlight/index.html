@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Did Double Reduction Really Reduce Burden? | Yidan Xia</title>
+    <meta name="description" content="A research path using nighttime light data, synthetic control methods, and GIS to evaluate China’s Double Reduction policy and the validity of nighttime light as an educational proxy.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../../index.html#projects">Projects</a>
+          <a class="active" href="index.html">Double Reduction Study</a>
+          <a href="#materials">Materials</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero project-hero">
+        <div class="hero-content">
+          <p class="eyebrow">Education policy, proxy validity, and spatial data</p>
+          <h1>Did Double Reduction Really Reduce Burden?</h1>
+          <p>
+            A synthetic control test using school and residential-community nighttime light data, followed by a Shanghai GIS exercise that asks whether the proxy itself can hold.
+          </p>
+          <div class="hero-actions">
+            <a class="button light" href="../../assets/double-reduction/english-paper.pdf">Read Paper</a>
+            <a class="button light" href="shanghai_nightlight_map.html">Open Shanghai Map</a>
+            <a class="button light" href="shanghai_school_compare.html">Compare Schools</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container article-layout">
+          <aside class="toc" aria-label="Project sections">
+            <strong>On This Page</strong>
+            <a href="#overview">Overview</a>
+            <a href="#path">Research Path</a>
+            <a href="#data">Data</a>
+            <a href="#method">Method</a>
+            <a href="#results">SCM Results</a>
+            <a href="#proxy">Proxy Validity</a>
+            <a href="#materials">Materials</a>
+          </aside>
+
+          <article class="article">
+            <section id="overview">
+              <h2>Overview</h2>
+              <p class="lead">
+                This project asks whether China’s Double Reduction policy actually reduced student study burden, or whether unchanged exam pressure and stakeholder incentives shifted study activity across places.
+              </p>
+              <p>
+                The original empirical move was to avoid the weaknesses of surveys by using VIIRS nighttime light intensity around schools and nearby residential communities as an objective behavioral proxy. If students stayed later at school, school-area lights might rise. If learning moved home, residential-community lights might rise. If burden genuinely fell, both should decline.
+              </p>
+
+              <div class="quote">
+                <p>
+                  The starting point was less technical: looking out late at night during high school, seeing lights across the city, and wondering how many students were still awake behind them.
+                </p>
+              </div>
+
+              <div class="kpi-grid">
+                <div class="kpi">
+                  <strong>10</strong>
+                  <span>Double Reduction pilot cities: Beijing, Shanghai, Shenyang, Guangzhou, Chengdu, Zhengzhou, Changzhi, Weihai, Nantong, and Jinhua.</span>
+                </div>
+                <div class="kpi">
+                  <strong>41</strong>
+                  <span>Cities in the school-level SCM dataset, including 31 donor cities.</span>
+                </div>
+                <div class="kpi">
+                  <strong>2.06M</strong>
+                  <span>Community-month observations in the merged community panel.</span>
+                </div>
+                <div class="kpi">
+                  <strong>32</strong>
+                  <span>Quarterly aligned observation periods from 2017-03 to 2024-12.</span>
+                </div>
+              </div>
+            </section>
+
+            <section id="path">
+              <h2>Research Path</h2>
+              <p>
+                The value of this project is not only the result, but the path by which the result became more cautious. The research moved from a promising proxy, to causal identification problems, to a stricter placebo standard, and finally to a GIS test of the proxy’s own validity.
+              </p>
+
+              <div class="timeline">
+                <div class="timeline-item">
+                <div class="time">1. Question</div>
+                  <div>
+                    I began with nighttime light as a possible proxy for late study behavior. The initial Chinese paper asked whether Double Reduction genuinely reduced student burden or merely displaced it across school and home.
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="time">2. DID Fails</div>
+                  <div>
+                    A standard DID design, even after adding city-month interactions and grade-level time interactions, failed the parallel trends test at the 1 percent level. PSM-DID also failed because pilot cities were structurally different from controls.
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="time">3. SCM Shift</div>
+                  <div>
+                    I moved to synthetic control, allowing the donor weights to be chosen endogenously from non-pilot cities rather than pre-selecting nearest neighbors.
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="time">4. Placebo Revision</div>
+                  <div>
+                    The English paper used standard Abadie-style in-space placebo tests as the core inference standard. This changed the interpretation: many effects were visible over time, but most could not be distinguished from placebo city changes.
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="time">5. Proxy Test</div>
+                  <div>
+                    A later Shanghai 2022 GIS exercise asked a deeper question: can VIIRS nighttime light, at this scale and temporal resolution, actually detect school activity?
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="data">
+              <h2>Data Collection and Processing</h2>
+              <p>
+                The project combines manually cleaned location data, satellite radiance data, city economic covariates, and school-level classification. The key challenge was not only collecting observations, but deciding which observations could plausibly represent educational activity.
+              </p>
+
+              <div class="method-grid">
+                <div class="method-box">
+                  <h3>Schools</h3>
+                  <p>
+                    School locations were retrieved through Baidu Maps API with broad school-related keywords, then cleaned to remove non-school places, duplicate entries, relocated or closed schools, vocational schools, party schools, international schools, special education schools, and schools in ethnic autonomous regions.
+                  </p>
+                  <p>
+                    After cleaning, the school groups included 7,687 treated primary-school records, 3,411 treated junior-high records, and 628 treated senior-high records. Multi-campus schools were treated as separate observation units.
+                  </p>
+                </div>
+                <div class="method-box">
+                  <h3>Communities</h3>
+                  <p>
+                    Residential communities were screened from property-management data. The sample targeted communities likely to contain students: within 800 meters of primary or junior high schools, within 300 meters of senior high schools, or inside recognized education-resource districts.
+                  </p>
+                  <p>
+                    Communities built after 2012, dormitories, industrial parks, high-end villas, boutique apartments, and records without GPS information were excluded.
+                  </p>
+                </div>
+                <div class="method-box">
+                  <h3>Nighttime Light</h3>
+                  <p>
+                    The outcome uses VIIRS DNB monthly composite data in the VCMCFG configuration, especially <code>avg_rade9h</code>, the average radiance after 9 PM. Pixels with cloud-free observation counts of 2 or less were dropped.
+                  </p>
+                  <p>
+                    The 2022 Suomi-NPP anomaly is noted: July and August 2022 had missing SNPP observations, and August 2022 used NOAA-20/J01 substitute data.
+                  </p>
+                </div>
+                <div class="method-box">
+                  <h3>City Covariates</h3>
+                  <p>
+                    Matching features included pre-treatment nighttime light trajectories and economic covariates: GDP, secondary-industry share, and tertiary-industry share. These covariates proxy city-level development and nighttime activity context, not individual family characteristics.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section id="method">
+              <h2>Method</h2>
+              <p>
+                The analysis uses a synthetic control design at the city-quarter level. Monthly observations are aggregated to quarters to reduce noise and align with economic data. For each treated city, a synthetic city is built from non-pilot donors by matching pre-policy nighttime light trajectories and covariates.
+              </p>
+
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Component</th>
+                    <th>Implementation</th>
+                    <th>Reason</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Outcome</td>
+                    <td>Mean nighttime light around schools or selected communities, aggregated to city-quarter level.</td>
+                    <td>Creates comparable treatment paths while reducing pixel-level noise.</td>
+                  </tr>
+                  <tr>
+                    <td>Feature Vector</td>
+                    <td>Four pre-treatment light points, pre-treatment mean light, GDP, secondary industry share, tertiary industry share.</td>
+                    <td>Matches both trajectory and urban-economic context.</td>
+                  </tr>
+                  <tr>
+                    <td>Optimization</td>
+                    <td>Nested SCM: V-matrix for feature importance and W-matrix for donor-city weights, with standardized features.</td>
+                    <td>Lets the data choose donor cities instead of assuming a fixed comparable control group.</td>
+                  </tr>
+                  <tr>
+                    <td>Inference</td>
+                    <td>Standard in-space placebo is primary; bootstrap placebo is secondary.</td>
+                    <td>In-space placebo asks whether the treated city changed more than placebo control cities.</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p class="note">
+                The revision that matters most: the English paper treats standard in-space placebo p-values as the main significance criterion. Bootstrap significance alone is not enough, because it can show that a city changed after July 2021 without proving the change was unique to policy treatment.
+              </p>
+            </section>
+
+            <section id="results">
+              <h2>SCM Results</h2>
+              <p>
+                The central finding is methodological and substantive: post-policy changes are visible, but broad causal attribution fails. COVID-19 and city-specific shocks created changes in both treated and control cities during 2021-2022, which undermines the ability to isolate the Double Reduction policy.
+              </p>
+
+              <div class="result-grid">
+                <div class="result-box caution">
+                  <h3>School Overall</h3>
+                  <p>
+                    No pilot city simultaneously passes the standard in-space placebo test and the backup test at the overall school level. Several cities show significant bootstrap changes, but those changes are not uniquely distinguishable from donor-city variation.
+                  </p>
+                </div>
+                <div class="result-box good">
+                  <h3>Changzhi Communities</h3>
+                  <p>
+                    Changzhi is the strongest case: community overall ATT is +14.087, in-space placebo p &lt; 0.001, bootstrap p &lt; 0.001, and R² is 0.362. But concurrent school construction and education infrastructure investment make interpretation cautious.
+                  </p>
+                </div>
+                <div class="result-box caution">
+                  <h3>Shanghai Fit</h3>
+                  <p>
+                    Shanghai is difficult to synthesize: school overall R² is -3.061 and community overall R² is -1.255. This signals that major cities with distinctive economic and spatial structures are hard to match with available donor cities.
+                  </p>
+                </div>
+                <div class="result-box good">
+                  <h3>Level Pattern</h3>
+                  <p>
+                    In Changzhi community data, junior high shows the largest positive ATT: primary +9.184, junior high +15.116, senior high +11.529. This pattern is directionally consistent with the public choice prediction, but not causally conclusive.
+                  </p>
+                </div>
+              </div>
+
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Venue</th>
+                    <th>Most defensible result</th>
+                    <th>Interpretation</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Schools</td>
+                    <td>Changzhi junior and senior high, plus Weihai junior high, are the limited level-specific cases passing both tests.</td>
+                    <td>Suggestive, but too narrow for a general policy conclusion.</td>
+                  </tr>
+                  <tr>
+                    <td>Communities</td>
+                    <td>Changzhi passes both tests overall and across levels.</td>
+                    <td>Potential behavioral substitution, but infrastructure investment may be the actual light source.</td>
+                  </tr>
+                  <tr>
+                    <td>Across Cities</td>
+                    <td>Effects are heterogeneous in direction and magnitude.</td>
+                    <td>Consistent with mixed implementation and local shocks, not with a clean uniform treatment effect.</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="figure-grid">
+                <figure class="figure wide">
+                  <img src="../../assets/double-reduction/changzhi-community-level.jpg" alt="Changzhi community level-specific synthetic control comparison.">
+                  <figcaption>
+                    Changzhi community level comparison. The strongest observed positive effect appears in junior high communities.
+                  </figcaption>
+                </figure>
+                <figure class="figure">
+                  <img src="../../assets/double-reduction/changzhi-community-overall.jpg" alt="Changzhi community overall synthetic control plot.">
+                  <figcaption>
+                    Changzhi community overall SCM output. This is the cleanest statistical case, but it remains substantively confounded.
+                  </figcaption>
+                </figure>
+                <figure class="figure">
+                  <img src="../../assets/double-reduction/changzhi-school-level.jpg" alt="Changzhi school level-specific synthetic control comparison.">
+                  <figcaption>
+                    Changzhi school level comparison, included to show how the school and community channels differ.
+                  </figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section id="proxy">
+              <h2>Testing the Proxy Itself</h2>
+              <p>
+                After the paper, I built a Shanghai 2022 GIS exercise to ask whether nighttime light can really capture school attendance or study activity. The test used 168 Shanghai high schools, monthly VIIRS data, and interactive maps for school-level comparison.
+              </p>
+              <p>
+                The result weakens the proxy. During the April-May 2022 Shanghai lockdown, when schools were closed and city life was severely restricted, high-school nighttime light did not fall as sharply as the hypothesis would predict. January averaged about 48.3 nW/cm²/sr, March 46.9, April 38.5, May 38.2, and August 32.3. The pattern looks more seasonal and spatial than behavioral.
+              </p>
+
+              <div class="button-row">
+                <a class="button" href="shanghai_nightlight_map.html">Open Interactive Map</a>
+                <a class="button" href="shanghai_school_compare.html">Open School Comparison Tool</a>
+              </div>
+
+              <div class="figure-grid">
+                <figure class="figure">
+                  <img src="../../assets/double-reduction/shanghai-march.jpg" alt="Shanghai nighttime light map for March 2022.">
+                  <figcaption>March 2022. Brightness is concentrated in central Shanghai.</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img src="../../assets/double-reduction/shanghai-april.jpg" alt="Shanghai nighttime light map for April 2022.">
+                  <figcaption>April 2022. No dramatic collapse appears at the high-school points.</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img src="../../assets/double-reduction/shanghai-may.jpg" alt="Shanghai nighttime light map for May 2022.">
+                  <figcaption>May 2022. The lockdown period remains bright enough to challenge the student-activity proxy.</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img src="../../assets/double-reduction/shanghai-june.jpg" alt="Shanghai nighttime light map for June 2022.">
+                  <figcaption>June 2022. The decline looks more consistent with seasonality and observation conditions.</figcaption>
+                </figure>
+                <figure class="figure wide">
+                  <img src="../../assets/double-reduction/shanghai-statistics.jpg" alt="Shanghai nighttime light monthly statistics and district comparison.">
+                  <figcaption>
+                    Monthly statistics and district comparison. Huangpu, Jing’an, and other central districts remain structurally brighter than suburban districts, suggesting urbanization and infrastructure dominate the signal.
+                  </figcaption>
+                </figure>
+              </div>
+
+              <p>
+                This changes the methodological conclusion. At 463-meter resolution, school study activity may be drowned out by street lighting, building facade lights, safety lighting, hospitals, logistics facilities, residential lights, and emergency infrastructure. The same schools and districts remain bright across months, which suggests that VIIRS may capture urban location more than student behavior.
+              </p>
+              <p>
+                A better design would need higher-frequency data, finer spatial resolution, and triangulation with other indicators such as electricity use, traffic around schools, time-use surveys, or administrative records.
+              </p>
+            </section>
+
+            <section id="materials">
+              <h2>Research Materials</h2>
+              <p>
+                The materials show the shift from an initially promising proxy to a more cautious conclusion. The paper gives the main argument; the interactive maps make the proxy problem visible; the notebooks record the SCM workflow.
+              </p>
+
+              <div class="artifact-list">
+                <div class="artifact">
+                  <a href="../../assets/double-reduction/english-paper.pdf">English Paper</a>
+                  <p>Research paper developed from the original Chinese study, revised after the placebo-test problem became central.</p>
+                </div>
+                <div class="artifact">
+                  <a href="shanghai_nightlight_map.html">Shanghai Nighttime Light Map</a>
+                  <p>Interactive monthly map for 2022 Shanghai high-school nightlight intensity.</p>
+                </div>
+                <div class="artifact">
+                  <a href="shanghai_school_compare.html">School Comparison Tool</a>
+                  <p>Interactive comparison of selected schools across months.</p>
+                </div>
+                <div class="artifact">
+                  <strong>Core Notebooks</strong>
+                  <p><code>Community_Level.ipynb</code>, <code>Community_Overall.ipynb</code>, <code>School_Level.ipynb</code>, and <code>School_Overall.ipynb</code> run the level-specific and overall SCM analyses.</p>
+                </div>
+              </div>
+            </section>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>Yidan Xia</span>
+        <span><a href="../../index.html">Back to home</a></span>
+      </div>
+    </footer>
+  </body>
+</html>

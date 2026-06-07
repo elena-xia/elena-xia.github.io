@@ -110,11 +110,11 @@ a:hover {
 }
 
 .home-hero {
-  background-image: url("pcs/shanghai-march.jpg");
+  background-image: url("identity-network-hero.jpg");
 }
 
 .project-hero {
-  background-image: url("pcs/changzhi-community-overall.jpg");
+  background-image: url("double-reduction/changzhi-community-overall.jpg");
   background-position: center 44%;
 }
 
@@ -584,7 +584,7 @@ a:hover {
   flex-wrap: wrap;
 }
 
-.placeholder {
+.direction-page {
   min-height: 520px;
   display: flex;
   align-items: center;

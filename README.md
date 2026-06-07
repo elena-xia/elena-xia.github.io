@@ -1,38 +1,11 @@
-# Yidan Xia Personal Website
+# Yidan Xia
 
-This folder is the root of the `elena-xia.github.io` GitHub Pages repository.
+Personal academic website for Yidan Xia.
 
-## Structure
+The homepage foregrounds my broader research interests in identity formation, online expression, perceptions of international relations, and the economic contexts that shape political interpretation. The current completed project traces one empirical path from a lived question about nighttime lights to a synthetic control study of China's Double Reduction policy, then to a GIS-based check of whether nighttime light can plausibly serve as an educational proxy.
 
-- `index.html`: personal homepage.
-- `projects/pcs-nightlight/index.html`: completed project page for the Double Reduction / nighttime light project.
-- `projects/spatial-methods/index.html`: placeholder project page.
-- `projects/policy-notes/index.html`: placeholder project page.
-- `assets/styles.css`: shared site styling.
-- `assets/pcs/`: selected figures and the final paper PDF.
+## Current Projects
 
-## How Project Links Work
-
-GitHub Pages serves static files. A link to:
-
-```text
-projects/pcs-nightlight/
-```
-
-opens:
-
-```text
-projects/pcs-nightlight/index.html
-```
-
-So each future project can be added as:
-
-```text
-projects/new-project-name/index.html
-```
-
-Then add a card or navigation link to it from the homepage.
-
-## Deployment
-
-Copy the contents of this `site/` folder into the root of `elena-xia.github.io`, commit, and push. The custom domain `YIDANXIA.COM` should keep working as long as the GitHub Pages repository settings and Cloudflare DNS already point to the site.
+- **Did Double Reduction Really Reduce Burden?** A synthetic control study using school and residential-community nighttime light data, followed by a Shanghai GIS proxy-validity exercise.
+- **Online Identity Formation.** A developing research direction on how identity is expressed, circulated, and stabilized in networked environments.
+- **Perceiving International Relations.** A developing research direction on how media, identity, and economic experience shape everyday interpretations of international relations.
