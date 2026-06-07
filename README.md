@@ -1,6 +1,6 @@
 # Yidan Xia Personal Website
 
-This folder is ready to use as the root of the `elena-xia.github.io` GitHub Pages repository.
+This folder is the root of the `elena-xia.github.io` GitHub Pages repository.
 
 ## Structure
 
