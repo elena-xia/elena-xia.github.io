@@ -1,11 +1,127 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Yidan Xia</title>
+    <meta name="description" content="Yidan Xia, research projects in public policy, political economy, and spatial data.">
+    <link rel="stylesheet" href="assets/styles.css">
   </head>
   <body>
-    <h1>Yidan Xia</h1>
-    <p>Research proposals, notes, and reflections.</p>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="#projects">Projects</a>
+          <a href="#approach">Approach</a>
+          <a href="projects/pcs-nightlight/">PCS Project</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero home-hero">
+        <div class="hero-content">
+          <p class="eyebrow">Public policy, political behavior, and spatial data</p>
+          <h1>Yidan Xia</h1>
+          <p>
+            I study how policy goals move through institutions, data, and everyday life. This site gathers research projects, methods notes, and work in progress.
+          </p>
+          <div class="hero-actions">
+            <a class="button light" href="#projects">View Projects</a>
+            <a class="button light" href="projects/pcs-nightlight/">Open Current Project</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Research Projects</h2>
+            <p>
+              The site is organized as a portfolio: each project has its own page, with a short entry point here and a fuller research narrative inside.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <a class="project-card" href="projects/pcs-nightlight/">
+              <img src="assets/pcs/changzhi-community-overall.jpg" alt="Synthetic control result figure for Changzhi community nighttime light analysis.">
+              <div class="card-body">
+                <h3>Preference Mismatch and Policy Implementation</h3>
+                <p>
+                  A public choice analysis of China’s Double Reduction policy using VIIRS nighttime light data and synthetic control methods.
+                </p>
+                <div class="tag-row">
+                  <span class="tag">SCM</span>
+                  <span class="tag blue">VIIRS</span>
+                  <span class="tag rust">Policy Evaluation</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="project-card" href="projects/spatial-methods/">
+              <img src="assets/pcs/shanghai-may.jpg" alt="Shanghai nighttime light raster map for May 2022.">
+              <div class="card-body">
+                <h3>Spatial Methods Notebook</h3>
+                <p>
+                  Placeholder for future GIS, remote sensing, and data visualization projects.
+                </p>
+                <div class="tag-row">
+                  <span class="tag blue">GIS</span>
+                  <span class="tag">Methods</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="project-card" href="projects/policy-notes/">
+              <img src="assets/pcs/shanghai-statistics.jpg" alt="Nighttime light statistics figure for Shanghai high schools.">
+              <div class="card-body">
+                <h3>Policy Notes and Writing</h3>
+                <p>
+                  Placeholder for essays, proposals, conference notes, and other academic writing.
+                </p>
+                <div class="tag-row">
+                  <span class="tag violet">Writing</span>
+                  <span class="tag rust">Public Policy</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="approach">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Research Style</h2>
+            <p>
+              I am interested in how political and administrative incentives become visible in behavior, and in when our measures fail to see what we hoped they could see.
+            </p>
+          </div>
+
+          <div class="method-grid">
+            <div class="method-box">
+              <h3>Institutional Questions</h3>
+              <p>
+                I begin with puzzles about implementation: who wants what, who can observe what, and what happens when formal policy goals meet local incentives.
+              </p>
+            </div>
+            <div class="method-box">
+              <h3>Empirical Caution</h3>
+              <p>
+                I treat data as evidence, but also as an object of inquiry. A proxy that looks elegant still needs to survive tests of validity, timing, and scale.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>Yidan Xia</span>
+        <span>Hosted at yidanxia.com</span>
+      </div>
+    </footer>
   </body>
 </html>
