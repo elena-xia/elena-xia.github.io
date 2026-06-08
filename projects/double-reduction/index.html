@@ -418,20 +418,14 @@
     <!-- China Map Script -->
     <!--
       Map data sources (DataV GeoAtlas, areas_v3):
-      1. National (provinces + nine-dash line): https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json (~569 KB)
+      GeoJSON data bundled locally in assets/geo/ (originally from DataV GeoAtlas, areas_v3):
+      1. china_national.json = 100000_full.json (~569 KB)
          Contains: 34 admin divisions + Taiwan (adcode 710000) + nine-dash line (adchar "JD", adcode "100000_JD")
-      2. Province-level _full files for prefecture boundaries (loaded only for provinces with pilot cities):
-         - 110000_full.json (Beijing, municipality districts)
-         - 140000_full.json (Shanxi: Changzhi)
-         - 210000_full.json (Liaoning: Shenyang)
-         - 310000_full.json (Shanghai, municipality districts)
-         - 320000_full.json (Jiangsu: Nantong)
-         - 330000_full.json (Zhejiang: Jinhua)
-         - 370000_full.json (Shandong: Weihai)
-         - 410000_full.json (Henan: Zhengzhou)
-         - 440000_full.json (Guangdong: Guangzhou)
-         - 510000_full.json (Sichuan: Chengdu)
-      Nine-dash line is in the national file only. Province files do not contain it.
+      2. province_XXXXXX.json files for prefecture boundaries (pilot-city provinces only):
+         110000 (Beijing), 140000 (Shanxi), 210000 (Liaoning), 310000 (Shanghai),
+         320000 (Jiangsu), 330000 (Zhejiang), 370000 (Shandong), 410000 (Henan),
+         440000 (Guangdong), 510000 (Sichuan)
+      Nine-dash line is in the national file only.
     -->
     <script>
     (function() {
@@ -468,10 +462,10 @@
         '320000','330000','370000','410000',
         '440000','510000'
       ];
-      var BASE = 'https://geo.datav.aliyun.com/areas_v3/bound/';
+      var GEO = '../../assets/geo/';
 
       // 1. Load national layer (province outlines + nine-dash line + province labels)
-      fetch(BASE + '100000_full.json')
+      fetch(GEO + 'china_national.json')
         .then(function(r){ return r.json(); })
         .then(function(national) {
           // Province fill + outlines + nine-dash line
@@ -500,7 +494,7 @@
 
           // 2. Load prefecture boundaries for pilot-city provinces
           var fetches = prefProvinceCodes.map(function(code) {
-            return fetch(BASE + code + '_full.json').then(function(r){ return r.json(); });
+            return fetch(GEO + 'province_' + code + '.json').then(function(r){ return r.json(); });
           });
           return Promise.all(fetches);
         })
