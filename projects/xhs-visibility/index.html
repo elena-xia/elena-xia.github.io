@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visibility Friction on Xiaohongshu | Yidan Xia</title>
+    <meta name="description" content="Which post features are associated with reduced public-search visibility within a single Chinese discourse event? A study of the 2025 Mourning Ming wave on Xiaohongshu.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../../index.html#projects">Research</a>
+          <a href="../../about.html">About</a>
+          <a href="../../working-papers.html">Working Papers</a>
+          <a href="../../cv.html">CV</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero-img" style="background-image: url('../../assets/images/project2.jpg');">
+        <div class="hero-content">
+          <p class="eyebrow">Platform Data &middot; Content Coding &middot; Logistic Regression &middot; Visibility Friction</p>
+          <h1>Visibility Friction in the Hong-Kangxi Discourse on Xiaohongshu</h1>
+          <p>
+            Within a single discourse event, which post features are associated with reduced public-search visibility? The answer is layered, counterintuitive, and closer to “friction“ than to “deletion.”
+          </p>
+          <div class="hero-actions">
+            <a class="button light" href="../../assets/docs/xhs-visibility-paper.pdf">Read Paper</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container article-layout">
+          <aside class="toc" aria-label="Page sections">
+            <strong>On This Page</strong>
+            <a href="#question">Research Question</a>
+            <a href="#discourse">The Discourse</a>
+            <a href="#anti-manchu">Anti-Manchu Background</a>
+            <a href="#historiographic">Historiographic Registers</a>
+            <a href="#journey">Research Journey</a>
+            <a href="#data">Data &amp; Methods</a>
+            <a href="#findings">Findings</a>
+            <a href="#reflections">Reflections</a>
+            <a href="#materials">Materials</a>
+          </aside>
+
+          <article class="article">
+
+            <!-- 1. Research Question -->
+            <section id="question">
+              <h2>Research Question</h2>
+              <p class="lead">
+                Within the same Hong-Kangxi event corpus on Xiaohongshu (&#23567;&#32418;&#20070;), which post features are associated with reduced public-search visibility?
+              </p>
+              <p>
+                In November 2025, a rumor spread across the Chinese internet claiming that the Kangxi Emperor was the secret son of Empress Dowager Xiaozhuang and Hong Chengchou, a Ming general who surrendered to the Qing. The historical claim itself is not the object of this study. What matters is that the rumor reactivated several politically meaningful ways of narrating Chinese nationhood: anti-Manchu/Qing rupture narratives that challenge the state’s multi-ethnic unity framework, anti-Western pseudo-history claims that center the 1644 transition as a civilizational break, and feminist-lineage critiques that challenge patrilineal assumptions about national continuity. These directions touch different premises in the state-led national story.
+              </p>
+              <p>
+                Chinese information control is known to be strategic, delegated, and frictional rather than reducible to universal deletion. The missing piece is intra-domain variation: <strong>within the same event corpus, which post features are associated with reduced public-search visibility?</strong> I chose Xiaohongshu as the specific research platform and answer three operational questions. RQ1 asks what the corpus looks like by rhetorical mode, narrative direction, carrier material, and platform legibility. RQ2 tests whether anti-Manchu/Qing, anti-Western, and feminist-lineage directions differ in visibility friction. RQ3 tests whether mode, carrier, or legibility help explain visibility beyond direction alone.
+              </p>
+              <p style="font-size: 0.9rem; color: var(--muted);">
+                Course project for POLSCI 541 (Practical Data Science II), Duke University. Advisor: Nick Eubank.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 1b. The Discourse -->
+            <section id="discourse">
+              <h2>The Discourse: What Gathered Around the Rumor</h2>
+
+              <!-- (A) Image + short school list, side by side -->
+              <div class="pilot-grid" style="align-items: start;">
+                <div>
+                  <img src="../../assets/images/xhs-visibility/ming-wave-posts.png" alt="Collage of anonymized posts from the November 2025 Mourning Ming wave across Xiaohongshu, Zhihu, Bilibili, and Weibo, showing feminist redirection slogans, historical discussion, and meme-style engagement. Author identities have been redacted." style="width: 100%; border-radius: 8px; border: 1px solid var(--line);">
+                  <p style="font-size: 0.82rem; color: var(--muted); margin-top: 8px;">Anonymized posts from the November 2025 wave across Xiaohongshu, Zhihu, Bilibili, and Weibo; the discourse spread across platforms. Author avatars and IDs have been redacted.</p>
+                </div>
+                <div>
+                  <p>
+                    What makes the wave analytically interesting is not the rumor itself but what gathered around it. Participants visibly shared a stock of narrative material (Hong Chengchou, Xiaozhuang, the year 1644, the imperial portraits, the broken patriline) but did not share a single discourse system or value framework. Several distinct schools of interpretation crystallized inside the same discourse stream, each with its own internal logic and its own relation to the larger Mourning Ming complex. The most prominent are:
+                  </p>
+                  <ul style="font-size: 0.95rem; line-height: 1.55; margin-top: 6px;">
+                    <li>the <strong>race-swap school</strong> (&#25442;&#31181;)</li>
+                    <li>the <strong>xianghuo / Han victory school</strong> (&#39321;&#28779;)</li>
+                    <li>the <strong>feminist interpretation</strong></li>
+                    <li>the <strong>Red Chamber <i>suoyin</i> school</strong> (&#26032;&#26032;&#32034;&#38544;&#27966;)</li>
+                    <li>the <strong>Western pseudo-history school</strong> (&#35199;&#26041;&#20266;&#21490;&#35770;)</li>
+                    <li>the <strong>fan-circle idiom</strong> (&#39277;&#22280;)</li>
+                    <li>the <strong>“melon-eating” / fun-seeking register</strong> (&#21507;&#29916; / &#20048;&#23376;&#20154;)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- (B) School descriptions, full width below image -->
+              <h3>The race-swap school (&#25442;&#31181;)</h3>
+              <p>
+                This school reads the rumor as the literal substitution of one bloodline for another. Its key claim is that the Manchu imperial line was secretly broken and replaced by a Han line, so that the later Qing emperors (Kangxi, Qianlong, and their heirs) were “actually” Han. Within this school, the discovery is told as a kind of belated Han victory: even when the Manchus appeared to be ruling China, the line that “really” continued was Han.
+              </p>
+
+              <h3>The xianghuo / Han victory school (&#39321;&#28779;)</h3>
+              <p>
+                This school overlaps with the race-swap school but foregrounds the kinship vocabulary explicitly. Its central terms are <em>xianghuo</em> (&#39321;&#28779;, the patrilineal “incense and fire” of ancestral continuity), <em>duanle</em> (&#26029;&#20102;, “broken“), and “blood.” On its own framing, the Qing patriline was severed, and the line that subsequently continued was actually Han blood, a claim celebrated as a covert Han triumph over the conquerors.
+              </p>
+              <p>
+                <em>Xianghuo</em> (literally “incense and fire”) refers to the ritual continuation of the patriline through male descent. In the dominant Confucian-Han kinship logic, a child is conceptually the product of the father, and the mother’s body is a vessel through which the patrilineal line passes. To “extinguish a family’s xianghuo” (&#32477;&#39321;&#28779;) means to end the chain of male heirs who can perform ancestral rites, and it is treated as a grave failure. Scholarship on Chinese gender and nationhood has shown that this patrilineal logic is not a residual folk belief but an active organizing principle of family law, ancestral hall practice, and the state’s family-as-state analogy.<sup><a href="#fn1" id="ref1">1</a></sup>
+              </p>
+              <p>
+                The Hong-Kangxi discourse appears, on its surface, to attack Manchu rule. But the categories it deploys (the Qing patriline was broken, the xianghuo was severed, the line that actually continued was Han blood) are themselves patrilineal categories. They treat the child as a product of the father, treat male blood as the substance of historical continuity, and read the entire dynastic story through whose semen entered which womb. Even the celebration of the discovered “Han line” reaffirms the framework that sons belong to fathers and that fathers transmit identity. The framework subverts Qing legitimacy and reinforces patriarchal premises in a single operation.
+              </p>
+
+              <h3>The feminist interpretation</h3>
+              <p>
+                The feminist direction appropriates the discourse’s premise about broken civilizational continuity and turns it back on the patrilineal scaffolding. If patrilineal descent is in principle unverifiable, as the rumor itself dramatizes, then the entire architecture of patrilineal civilizational continuity collapses, and matrilineal descent becomes the only stable form of transmission. The best-known slogan circulating within this strand compresses the argument into four clauses, each inverting a patrilineal trope: ancestral halls as “imagined wombs,” genealogies as “virtual umbilical cords,” history as “a little boy passed around for adoption,” and “the matriline is the dragon-vein that cannot be cut.”<sup><a href="#fn2" id="ref2">2</a></sup> The redirection does not merely add a feminist gloss. It uses the discourse’s own materials to reverse the gender of national continuity itself. This direction is particularly prominent on Xiaohongshu, a platform whose user base skews female, and, as the Findings section shows, it is the direction most robustly associated with reduced search visibility.
+              </p>
+
+              <h3>The Red Chamber <i>suoyin</i> school (&#26032;&#26032;&#32034;&#38544;&#27966;)</h3>
+              <p>
+                This school reads <em>Dream of the Red Chamber</em> as an encrypted Ming-mourning text and folds it into the Hong-Kangxi universe. Earlier waves of Red Chamber <em>suoyin</em> (indexicalist reading) had already proposed that the novel encodes the fall of the Ming. The new wave goes further, treating the novel as also encoding the secret that Kangxi was a Han impostor, and reading characters, dates, and plot turns as ciphered evidence for the broader conspiracy.
+              </p>
+
+              <h3>The Western pseudo-history school (&#35199;&#26041;&#20266;&#21490;&#35770;)</h3>
+              <p>
+                This school extends the same suspicious-reading method outward. It argues that Western civilization’s claimed historical depth is largely fabricated, that key Chinese inventions and texts (the canonical example being the Yongle Encyclopedia) were stolen by Western powers, and that the apparent supremacy of Western science and technology rests on appropriated Chinese material. Within Mourning Ming, this school supplies the outward-facing complement to the inward-facing race-swap school: the Ming was destroyed from within by the Manchus and looted from without by the West.
+              </p>
+
+              <h3>The fan-circle idiom (&#39277;&#22280;)</h3>
+              <p>
+                This register imports the affective vocabulary of online idol fandom into Ming-mourning. The Chongzhen Emperor (the last Ming ruler, who hanged himself in 1644) is rendered as “Jianjian“ (&#26816;&#26816;), assigned a “tragic-beautiful“ persona, and “mo”-ed (&#23351;, a fandom verb expressing protective pity for a fragile, romanticized object). The historical figure is processed through the same emotional grammar that fans apply to fictional or celebrity love objects.
+              </p>
+
+              <h3>The “melon-eating” and meme registers</h3>
+              <p>
+                <em>Chigua</em> (&#21507;&#29916;, “eating melon“) is a Chinese internet term for a spectatorial posture that consumes gossip and controversy as entertainment without taking a stance, a kind of tabloid-style rubbernecking. Markers such as &#21507;&#29916;, &#31505;&#27515; (“dying of laughter”), &#25277;&#35937; (“absurdist”), &#20048;&#23376;&#20154; (“fun-seeker”), &#35841;&#25026; (“who gets it”), and &#31163;&#35889; (“outrageous”) appear often, and the underlying posture of treating the whole event as entertainment extends well beyond these specific markers. The term &#25277;&#35937; is worth flagging: in contemporary Xiaohongshu youth culture it does not mean “abstract” in the philosophical sense but refers to a deliberately nonsensical, absurdist aesthetic, content that is funny precisely because it refuses to make sense. This ironic posture makes position inference harder. Serious political content is routinely packaged in entertainment framing, and “fun-seeker” self-labeling can be either a sincere claim to non-seriousness or a protective mask for political expression. The two are hard to distinguish reliably.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 1c. Anti-Manchu Historical Background -->
+            <section id="anti-manchu">
+              <h2>Anti-Manchu Symbolism: Historical Background</h2>
+              <p>
+                The anti-Manchu symbolism that resurfaces in contemporary “Mourning Ming” discourse is not a spontaneous product of the 2025 internet. It draws on a racialized discursive repertoire whose decisive formation occurred in the late Qing revolutionary period (roughly 1900 to 1911) and whose components have remained available, though officially suppressed, ever since.
+              </p>
+              <p>
+                <strong>Two converging sources.</strong> Late Qing anti-Manchuism fused two distinct intellectual resources. The first was the classical Hua-Yi distinction (&#21326;&#22839;&#20043;&#36777;), a civilizational hierarchy separating the “civilized” Hua from the “barbarian“ Yi. Frank Dik&ouml;tter has argued that this distinction was never purely culturalist: classical texts already attributed somatic and quasi-biological characteristics to the Yi, constituting a proto-racial hierarchy rather than a fully open assimilationist order.<sup><a href="#fn3" id="ref3">3</a></sup> The second source was the modern concept of race, transmitted via Japan and the West through figures such as Yan Fu and Liang Qichao. The late Qing transformation, on Dik&ouml;tter’s account, was therefore not the importation of an entirely foreign idea but the reactivation and recoding of a pre-existing classificatory logic: the culturally defined Yi was re-inscribed as a biologically inferior race, converting a potentially erasable cultural difference into an ostensibly immutable difference of blood.<sup><a href="#fn4" id="ref4">4</a></sup>
+              </p>
+              <p>
+                <strong>The revolutionary indictment.</strong> Edward Rhoads has systematized the anti-Manchu critique advanced by revolutionaries such as Zou Rong, Chen Tianhua, and Zhang Binglin into a “seven-point indictment”: that the Manchus were an alien people not belonging to China; that they had committed atrocities during the conquest; that they had “barbarized” the Han through forced changes of hairstyle and dress; that they constituted a segregated privileged stratum; that they ruled by military occupation; that they discriminated against the Han politically; and that they were fundamentally hostile to the Han.<sup><a href="#fn5" id="ref5">5</a></sup> Zou Rong’s <em>The Revolutionary Army</em> (1903) exemplifies the racialized register, while Zhang Binglin supplied a learned genealogy tracing the Han to the mythic Yellow Emperor and figuring the Manchus as foreign oppressors, from which the slogans “expel the Manchus” (<em>paiman</em>) and “restore Han sovereignty” emerged.<sup><a href="#fn6" id="ref6">6</a></sup>
+              </p>
+              <p>
+                Crucially, Rhoads demonstrates that this indictment was not merely rhetorical fabrication. Against Mary Wright’s thesis that Manchu-Han assimilation had effectively been completed by the 1860s, Rhoads shows that systematic differences in administrative jurisdiction, residential segregation (the Manchu garrison cities), legal treatment, marriage prohibitions, and hereditary banner status persisted until the eve of the 1911 Revolution.<sup><a href="#fn7" id="ref7">7</a></sup> The mobilizing power of the revolutionary indictment rested in part on this institutional reality.
+              </p>
+              <p>
+                <strong>Sun Yat-sen’s pivot.</strong> The most consequential moment for understanding the official “bottom line” that this discourse now collides with is Sun Yat-sen’s reversal. Sun’s early Tongmenghui program (“expel the Tartar barbarians, restore China,” &#39537;&#38500;&#38801;&#34383;&#65292;&#24674;&#22797;&#20013;&#21326;) was a militant ethnonationalism of exclusion. Yet almost immediately after the 1911 Revolution, Sun pivoted to the “republic of five races” (<em>wuzu gonghe</em>: Han, Manchu, Mongol, Hui, Tibetan). Suisheng Zhao reads this pivot as instrumentally driven by territorial logic rather than ethnic reconciliation: a consistent anti-Manchu program would have entailed surrendering more than half of the Qing imperial territory (Manchuria, Mongolia, the Muslim northwest, Tibet) and confining the new republic to the eighteen Han provinces. To inherit the Qing territorial estate, the anti-Manchu program had to be “transcended.”<sup><a href="#fn8" id="ref8">8</a></sup>
+              </p>
+              <p>
+                <strong>Violence and suppression, not disappearance.</strong> Anti-Manchu discourse had material consequences: Rhoads documents large-scale violence against bannermen during the revolution, in Xi’an, Nanjing, Fuzhou, and Jingzhou, where Manchus attempting to pass as Han were identified by residence, accent, dress, and women’s unbound feet. This revises the conventional narrative of a “bloodless” revolution and shows that identifiable markers of difference survived two centuries of acculturation.<sup><a href="#fn9" id="ref9">9</a></sup> After 1911, ethnonationalist anti-Manchuism was first “transcended” by Sun and then, after 1949, further suppressed by the CPC (Communist Party of China) “unified multi-ethnic state” doctrine, which reframed the 1644 conquest as an internal dynastic transition rather than an external civilizational rupture.<sup><a href="#fn10" id="ref10">10</a></sup> As Zhao and others stress, this repertoire was suppressed rather than eliminated; it remained latent and available for reactivation under appropriate conditions.<sup><a href="#fn11" id="ref11">11</a></sup>
+              </p>
+              <p>
+                This is the analytic anchor of the present study: contemporary “Mourning Ming” discourse, by pushing the origin of “humiliation“ back from 1840 to 1644 and redefining the conquest as civilizational destruction, reactivates a century-old repertoire and directly contests the official bottom line.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 1d. Online Historiographic Registers -->
+            <section id="historiographic">
+              <h2>Online Historiographic Registers</h2>
+
+              <h3>The “impossible triangle”: three historiographic views</h3>
+              <p>
+                Chinese internet discourse on the Ming/Qing transition is organized around three historiographic frameworks that pull in incompatible directions:
+              </p>
+              <ul>
+                <li><strong>Class-based view</strong> (&#38454;&#32423;&#21490;&#35266;): reads 1644 through the lens of class contradiction. The Manchu conquest is subordinated to the story of feudal landlord exploitation of peasants. This is the orthodox Marxist historiographic position.</li>
+                <li><strong>Ethnonationalist view</strong> (&#27665;&#26063;&#21490;&#35266;): reads 1644 as an ethnic conquest. The Manchu/Han distinction is primary, and the Qing period is a foreign occupation.</li>
+                <li><strong>Unity view</strong> (&#22242;&#32467;&#21490;&#35266;, the current official preference): reads 1644 as an internal dynastic transition within a continuously unified multi-ethnic state. The Qing “belongs” to Chinese history, and the conquest was not a rupture.</li>
+              </ul>
+              <p>
+                These three views are sometimes called an “impossible triangle” (&#19981;&#21487;&#33021;&#19977;&#35282;) online because their judgments of 1644 and of Manchu rule pull against each other: the class view and the unity view can coexist (class struggle within a unified polity) but cannot accommodate the ethnonationalist insistence on conquest; the ethnonationalist view and the class view can coexist (a foreign ruling class exploiting domestic peasants) but disrupt unity; and so on.
+              </p>
+              <p>
+                What gave the Hong-Kangxi rumor its viral reach is that the same claim could satisfy all three frameworks at once. Ethnonationalists read it as the Han bloodline covertly reclaiming the throne. Unity advocates read it as proof that Manchu and Han had already mixed, dissolving the ethnic boundary into an internal Han affair. Class-based readers could reframe it as one Han landlord-official’s family replacing another. Even the feminist direction could use the same material for opposite purposes. The rumor functioned as a Rorschach test: each school projected its own framework onto the same story and found confirmation.
+              </p>
+
+              <h3><em>Tongsantong</em> and <em>gouzi shiguan</em>: mock-academic parody</h3>
+              <p>
+                The phrase <em>tongsantong</em> (&#36890;&#19977;&#32479;, “linking the three traditions”) borrows from a serious political-theory concept (Gan Yang’s proposal for synthesizing Confucian, Maoist, and liberal traditions in post-reform China) and repurposes it as a joke: the Hong-Kangxi rumor supposedly “reconciles” the three historiographic views in one stroke. This is deliberate mock-academic parody, using scholarly framing to package a punchline. It shares a rhetorical mechanism with the next term.
+              </p>
+              <p>
+                <em>Gouzi shiguan</em> (&#38057;&#23376;&#21490;&#35266;) is a coined pseudo-historiographic term. Its origin is a viral post explaining Zhu Yuanzhang’s (the Ming founder’s) character through an episode of transactional sexual exchange, using the crude term <em>mai gouzi</em> (&#21334;&#27807;&#23376;). The word <em>gouzi</em> came to denote the salacious, bodily “hook” in the narrative. <em>Gouzi shiguan</em> imitates the naming convention of legitimate historiographic positions (class-based view, ethnonationalist view) to label a “view” that reduces every historical figure or event to sexual or bodily motivation.
+              </p>
+              <p>
+                Its target is not historical fact but the sacralized narratives that dynasty enthusiasts (Ming loyalists, Qing apologists) build around idealized emperors. By pulling emperors and generals into the register of the body and of sex, it performs what Bakhtin called carnivalistic degradation: the official, the elevated, and the sacred are brought down to the material-bodily level and stripped of their authority. The vocabulary of this register is deliberately crude; euphemistic character substitutions (such as using &#22764; for other terms) are common strategies for evading platform keyword filters, and the evasion itself is part of the performative style.
+              </p>
+            </section>
+
+            <!-- Unified footnotes for the entire discourse block -->
+            <div style="margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 0.82rem; color: var(--muted); line-height: 1.6;">
+              <p id="fn1"><sup><a href="#ref1">1</a></sup> On patrilineal logic as an active principle of family law, ancestral practice, and the state’s family-as-state analogy, see Leta Hong Fincher, <em>Betraying Big Brother: The Feminist Awakening in China</em> (London: Verso, 2018), esp. chap. 7; and Wang Zheng, <em>Finding Women in the State: A Socialist Feminist Revolution in the People’s Republic of China, 1949&ndash;1964</em> (Oakland: University of California Press, 2017).</p>
+              <p id="fn2"><sup><a href="#ref2">2</a></sup> The most circulated feminist response within the discourse reads: &#31072;&#22530;&#26159;&#33222;&#24819;&#30340;&#23376;&#23467;&#65292;&#26063;&#35889;&#26159;&#34394;&#25311;&#30340;&#33040;&#24102;&#65292;&#21382;&#21490;&#26159;&#20219;&#20154;&#25265;&#20859;&#30340;&#23567;&#30007;&#23401;&#65292;&#27597;&#31995;&#26159;&#26025;&#19981;&#26029;&#30340;&#40857;&#33033;. Each clause inverts a load-bearing patrilineal trope. “Ancestral halls” and “genealogies,” the architectural and textual infrastructure of the patriline, are recoded as appropriations of the female reproductive body that the patriline cannot itself produce. “History is a little boy passed around for adoption“ rewrites the well-known Chinese saying that “history is a little girl whom anyone can dress up” (&#21382;&#21490;&#26159;&#20219;&#20154;&#25171;&#25198;&#30340;&#23567;&#22993;&#23064;), a popular shorthand for the constructedness of historical narrative. The original saying takes the constructedness of history for granted but encodes the constructed object as a passive, dressable female. The slogan keeps the constructedness but flips the gender: now it is the male heir, the carrier of the patriline, who is the passive object of others’ arrangements. “Adoption“ (&#25265;&#20859;) is a particularly pointed verb, because the central anxiety the Hong-Kangxi discourse activates is precisely whether the imperial line was secretly adopted in. Finally, “the matriline is the dragon-vein that cannot be cut” appropriates one of the most heavily masculinized Chinese metaphors for sovereign continuity, the <em>long mai</em> (&#40857;&#33033;, the dragon vein that runs through emperors), and reattaches it to matrilineal descent on the empirical ground that maternity, unlike paternity, is verifiable.</p>
+              <p id="fn3"><sup><a href="#ref3">3</a></sup> Frank Dik&ouml;tter, <em>The Discourse of Race in Modern China</em>, 2nd expanded ed. (London: Hurst, 2015), chap. 1. First published 1992 by Stanford University Press.</p>
+              <p id="fn4"><sup><a href="#ref4">4</a></sup> Dik&ouml;tter, <em>Discourse of Race</em>, chap. 2.</p>
+              <p id="fn5"><sup><a href="#ref5">5</a></sup> Edward J. M. Rhoads, <em>Manchus and Han: Ethnic Relations and Political Power in Late Qing and Early Republican China, 1861&ndash;1928</em> (Seattle: University of Washington Press, 2000), 11&ndash;17.</p>
+              <p id="fn6"><sup><a href="#ref6">6</a></sup> Rhoads, <em>Manchus and Han</em>, 1&ndash;17; Dik&ouml;tter, <em>Discourse of Race</em>, chap. 2.</p>
+              <p id="fn7"><sup><a href="#ref7">7</a></sup> Rhoads, <em>Manchus and Han</em>, 34&ndash;69.</p>
+              <p id="fn8"><sup><a href="#ref8">8</a></sup> Suisheng Zhao, <em>A Nation-State by Construction: Dynamics of Modern Chinese Nationalism</em> (Stanford: Stanford University Press, 2004), chap. 2.</p>
+              <p id="fn9"><sup><a href="#ref9">9</a></sup> Rhoads, <em>Manchus and Han</em>, 195&ndash;210.</p>
+              <p id="fn10"><sup><a href="#ref10">10</a></sup> Zhao, <em>A Nation-State by Construction</em>, chaps. 2, 5.</p>
+              <p id="fn11"><sup><a href="#ref11">11</a></sup> Zhao, <em>A Nation-State by Construction</em>, chap. 5; Kevin Carrico, <em>The Great Han: Race, Nationalism, and Tradition in China Today</em> (Oakland: University of California Press, 2017), 131&ndash;158.</p>
+            </div>
+
+            <hr class="divider">
+
+            <!-- 2. Research Journey -->
+            <section id="journey">
+              <h2>Research Journey</h2>
+
+              <h3>The dependent variable comes first: from “deletion“ to “visibility friction“</h3>
+              <p>
+                Before the codebook was designed, a 100-post manual audit of posts flagged as likely deleted produced a finding that reshaped the entire project. Of those 100 posts, 32 were confirmed gone from identifiable author profiles (hard deletion). But 27 were still present on the author’s profile page, fully viewable, yet invisible through public search. The remaining 41 could not be verified because the author could not be identified.
+              </p>
+              <p>
+                This meant that roughly 27% of “deleted” posts were not deleted at all. They were shadow-banned from search, or deprioritized by the search algorithm, or subject to some other form of reduced discoverability. Calling the outcome “deletion“ would be inaccurate. Following Roberts (2018), the outcome was reconceptualized as <em>visibility friction</em>: the dependent variable became <code>search_nonretrievable</code> (whether a post collected in November 2025 could still be found via public Xiaohongshu search in April 2026), and the project framing shifted from “did the platform delete certain posts?” to “within this event, does search-visibility friction track narrative direction, carrier material, or platform legibility?”
+              </p>
+              <p>
+                This was not a late correction. It happened during the earliest phase of data exploration (P1), before the first codebook draft was complete, and it remained the project’s framing throughout.
+              </p>
+
+              <h3>The codebook: a full lineage abandoned, then rebuilt from scratch</h3>
+              <p>
+                The first codebook lineage (v1 through v2-Alpha.2) used a single-pass mode-plus-topic architecture. Mode categories covered rhetorical action (claim, evidence work, inquiry, spectating), and topic categories covered both narrative direction (anti-Manchu, anti-Western, feminist) and carrier material (Hong-Kangxi genealogy, Red Chamber) in the same list. Close reading of the first 350 posts revealed that this design did not survive contact with the data: strict “Mourning Ming” posts were a minority, meme and gossip posts dominated roughly 40% of the corpus, categories were rarely clean (a single post could simultaneously do gossip spectating, Red Chamber interpretation, and feminist critique), and median post length was only 160 characters.
+              </p>
+              <p>
+                The lineage was iteratively patched (adding scope, refining tag-vs-content rules, splitting tone from topic). After each patch, a smoke test or small reliability exercise would surface new problems. The decisive failure came in a 96-post reliability test (analytic n = 89): the T3 field (Hong-Kangxi genealogy) reached a human-LLM kappa of only 0.38.
+              </p>
+              <p>
+                The diagnosis was not a simple codebook bug. The primary coder had implicitly treated event relevance as requiring a topic label, placing vague event-evocation posts into T3, while the LLMs read the codebook literally and left topics empty when no Hong-Kangxi paternity material was textually present. This was human coder drift, and it surfaced a deeper architectural problem: the topic field was being asked to do three different jobs at once (narrative direction, carrier material, and residual context). The entire first lineage was abandoned rather than patched again.
+              </p>
+
+              <h3>Advisor guidance and the second lineage</h3>
+              <p>
+                A meeting with advisor Nick Eubank reoriented the methodology. Several of his points directly shaped the replacement design: 0.4 is not a magic kappa threshold, just as 0.05 is not a magic p-value; the human-human benchmark is the ceiling for LLM performance, so a second human coder (H2) must be introduced; development data can be revisited and codebooks revised on it, as long as a separate held-out sample is reserved for final validation; and low-frequency but theory-bearing categories (such as anti-Western with only 14 positive cases) must be retained, not dropped for statistical convenience.
+              </p>
+              <p>
+                The replacement codebook (v3 through v3.3-final) was built around four design constraints derived from the failure: (1) separate rhetorical action from theory-bearing content from cultural carrier, using a two-pass coding architecture; (2) treat empty-state for both direction and carrier as a valid label, not a missing one; (3) reduce substantive mode categories from six to four to lower boundary load on coders; and (4) derive style flags (such as playful lexical markers) by deterministic script rather than subjective coding. Three calibration rounds on disjoint development samples (n = 57, 76, and 49) refined the instrument before it was frozen as v3.3-final and tested on a 240-post held-out reliability sample.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 3. Data & Methods -->
+            <section id="data">
+              <h2>Data &amp; Methods</h2>
+
+              <div class="data-stack">
+                <div class="method-box">
+                  <h3>Corpus</h3>
+                  <p>
+                    The raw November 2025 crawl collected 2,797 posts from Xiaohongshu using three keyword searches: &#24247;&#29081;&#29916; (Kangxi gossip), &#27946;&#25215;&#30068; (Hong Chengchou), and &#20266;&#21490; (pseudo-history). After removing 107 unrelated keyword-noise posts, the cleaned corpus contained 2,690 rows: 1,594 Hong-Kangxi event posts (the analytic corpus), 593 standalone Western pseudo-history posts, and 503 pure historical analysis posts. Each record includes title, caption/body text, OCR-extracted image text, post type, keyword source, engagement metadata, posting date, and an April 2026 search-verification status.
+                  </p>
+                </div>
+
+                <div class="method-box">
+                  <h3>Dependent variable</h3>
+                  <p>
+                    <code>search_nonretrievable</code>: whether a post collected in November 2025 could still be found via public Xiaohongshu search in April 2026. Verification used a Playwright-based script that searched the first 20 characters of each post’s title and checked whether the post’s unique ID appeared in the rendered results. Direct URL checks were not possible because Xiaohongshu uses expiring security tokens. The outcome is interpreted as public-search visibility friction, not confirmed deletion or censor intent.
+                  </p>
+                </div>
+
+                <div class="method-box">
+                  <h3>Coding architecture</h3>
+                  <p>
+                    The v3.3-final codebook uses a two-pass system. Pass 1 classifies rhetorical mode (<code>public_claim_or_correction</code>, <code>information_or_evidence_work</code>, <code>inquiry_or_reflection</code>, <code>playful_spectatorship</code>) and evidence work. Pass 2 classifies content: three direction dummies (anti-Western, anti-Manchu/Qing, feminist-lineage) and four carrier dummies (Hong-Kangxi material, Red Chamber <i>suoyin</i>, popular-culture intertext, broader history/politics). Platform legibility is script-derived from post type, text length, OCR text, and video-observability flags.
+                  </p>
+                </div>
+
+                <div class="method-box">
+                  <h3>LLM-assisted coding and reliability</h3>
+                  <p>
+                    Production labels used a mixed human-LLM strategy. Five LLMs were deployed: Claude Sonnet 4.6, DeepSeek V3.2, and GPT-5.4 (current set), plus Claude Opus 4.7 and DeepSeek V4 Pro Thinking (robust set for reliability testing). Of the 1,594 event posts, 623 high-risk posts (any direction positive, any mode disagreement) were human-adjudicated with field-by-field final labels. The remaining 971 used LLM-consensus labels under strict rules: direction was set to negative only when both LLMs agreed negative.
+                  </p>
+                  <p>
+                    Held-out reliability was tested on a 240-post sample (160 fresh random + 80 keyword-enriched boundary supplement) coded by two human coders and five LLMs. Key human-human benchmarks: direction_status kappa = 0.737, mode kappa = 0.677, carrier macro kappa = 0.625. The H1-H2 benchmark is the ceiling, not a ground truth: it estimates how reproducible the codebook is when applied by trained coders.
+                  </p>
+                </div>
+
+                <div class="method-box">
+                  <h3>Statistical model</h3>
+                  <p>
+                    The main model is a descriptive logistic regression predicting <code>search_nonretrievable</code> from direction dummies, mode, carrier, evidence work, platform legibility, post type, posting date, keyword fixed effects, log visible-text length, and log engagement. Robust standard errors. N = 1,463 after excluding verification errors and mode/content-uncodable posts. Engagement is included with caution: it may partly reflect earlier visibility or ranking rather than serving as a clean pre-treatment control. Models with and without engagement, and with low-engagement exclusions, are reported as sensitivity checks.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 4. Findings -->
+            <section id="findings">
+              <h2>Findings</h2>
+
+              <h3>Most event participation is not theory-bearing</h3>
+              <p>
+                The event corpus is not dominated by overt political claims. Public claim/correction is the largest mode (609 posts, 38.2%), but playful spectatorship is also large (441, 27.7%). Information/evidence work and inquiry/reflection account for 238 (14.9%) and 225 (14.1%). Direction is rarer than event participation: only 91 posts carry anti-Manchu/Qing labels (5.7%), 14 carry anti-Western labels (0.9%), and 98 carry feminist-lineage labels (6.1%). Most posts participate in the Hong-Kangxi event without advancing any of the three theory-bearing directions.
+              </p>
+
+              <h3>Adjusted associations: feminist-lineage, Red Chamber, and the counterintuitive pattern</h3>
+              <p>
+                After adjusting for mode, carrier, legibility, post type, date, text length, and engagement (N = 1,463):
+              </p>
+              <p>
+                <strong>Feminist-lineage direction</strong> is the only theory-bearing direction that remains clearly associated with higher search non-retrievability in the main model and across sensitivity checks. Posts carrying this direction are 16.4 percentage points more likely to be search-nonretrievable (OR = 2.06, 95% CI [1.22, 3.46]). This is the first time the gender dimension surfaced as an empirical finding in my research. I did not set out to study gendered dimensions of nationalist discourse, but the data pointed there consistently: the claim that maternal descent is the unbroken line appears to be treated as more sensitive than the ethnic-classificatory or temporal-causal directions.
+              </p>
+              <p>
+                <strong>Red Chamber <i>suoyin</i> carrier</strong> is the strongest non-direction association and the single most robust predictor across all model variants. Posts using Dream of the Red Chamber as interpretive material are 19.2 percentage points more likely to be search-nonretrievable (OR = 2.30, 95% CI [1.64, 3.21]). This is the most counterintuitive finding: using a more roundabout, more “literary” way to talk about politics is associated with higher, not lower, visibility friction. The Red Chamber estimate remains large and significant after excluding low-engagement posts, OCR-dependent posts, and under alternative carrier coding sources.
+              </p>
+              <p>
+                <strong>Anti-Manchu/Qing direction</strong> is positive in all models but never statistically stable. Its confidence interval crosses 1 (OR = 1.27, 95% CI [0.77, 2.09]). It should be treated as theoretically important but empirically unresolved.
+              </p>
+              <p>
+                <strong>Anti-Western direction</strong> has only 14 positive cases in the full corpus. Its wide confidence interval (OR = 0.53, 95% CI [0.15, 1.81]) carries no information. This is a sample-size limitation, not evidence of safety or absence of friction.
+              </p>
+              <p>
+                <strong>Medium OCR legibility</strong> (image-text or video posts where text is partly OCR-extractable) is positive (OR = 1.37, 95% CI [1.05, 1.79], AME = +7.3 percentage points). But this is best interpreted as a format/searchability mechanism, not as evidence of content moderation. Image-text and video posts provide less searchable text to begin with. When these posts are excluded and the regression is re-run on caption-only posts, the feminist-lineage and Red Chamber estimates remain positive, confirming that the content-level associations are not driven by format.
+              </p>
+
+              <h3>The three directions barely overlap</h3>
+              <p>
+                Anti-Manchu/Qing and feminist-lineage share only 5 joint positive cases (roughly 5% of each). Anti-Western and feminist-lineage share zero. The three directions depend on different carrier materials: feminist-lineage posts rely heavily on Hong-Kangxi genealogy material (the paternity rumor itself), while anti-Manchu/Qing posts draw more on broader historical/political material and Red Chamber interpretations. These are not three labels for the same posts. They are three distinct streams within the same event, carried by different materials, and they face different visibility outcomes.
+              </p>
+
+              <figure class="figure" style="margin: 28px 0;">
+                <img src="../../assets/images/xhs-visibility/main-model-forest.png" alt="Forest plot of odds ratios from the main logistic regression with engagement controls. Feminist-lineage direction and Red Chamber suoyin carrier show the largest positive associations with search non-retrievability.">
+                <figcaption>Main model: odds ratios with robust 95% confidence intervals. Outcome is search_nonretrievable. Values above 1 indicate higher odds of being search-nonretrievable. Feminist-lineage direction and Red Chamber <i>suoyin</i> carrier are the two clearest positive signals.</figcaption>
+              </figure>
+
+              <div class="figure-grid">
+                <figure class="figure">
+                  <img src="../../assets/images/xhs-visibility/visibility-by-direction.png" alt="Bivariate search non-retrievability rates by direction: anti-West 46.2% (n=13), anti-Manchu/Qing 61.4% (n=88), feminist lineage 64.9% (n=97).">
+                  <figcaption>Raw search non-retrievability rates by direction. Feminist-lineage and anti-Manchu/Qing posts have higher rates than anti-Western, but the anti-Western sample (n = 13) is too small for inference.</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img src="../../assets/images/xhs-visibility/direction-cooccurrence.png" alt="Direction co-occurrence heatmap showing 14 anti-West, 91 anti-Manchu/Qing, and 98 feminist-lineage posts with minimal overlap: only 5 posts are both anti-Manchu/Qing and feminist-lineage.">
+                  <figcaption>Direction co-occurrence. Diagonal cells are total positives; off-diagonal cells are joint positives. The three directions are nearly disjoint.</figcaption>
+                </figure>
+              </div>
+
+              <h3>Key regression results</h3>
+              <div style="overflow-x: auto;">
+              <table class="data-table" style="font-size: 0.88rem;">
+                <thead>
+                  <tr>
+                    <th>Term</th>
+                    <th>With engagement: OR (95% CI)</th>
+                    <th>AME</th>
+                    <th>Without engagement: OR (95% CI)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Anti-West direction</td><td>0.53 [0.15, 1.81]</td><td>&minus;0.146</td><td>0.53 [0.16, 1.73]</td></tr>
+                  <tr><td>Anti-Manchu/Qing direction</td><td>1.27 [0.77, 2.09]</td><td>+0.057</td><td>1.29 [0.80, 2.11]</td></tr>
+                  <tr style="background: #f0f7f2;"><td><strong>Feminist-lineage direction</strong></td><td><strong>2.06 [1.22, 3.46]</strong></td><td><strong>+0.165</strong></td><td><strong>1.90 [1.14, 3.16]</strong></td></tr>
+                  <tr><td>Hong-Kangxi carrier</td><td>0.86 [0.68, 1.09]</td><td>&minus;0.036</td><td>0.85 [0.67, 1.08]</td></tr>
+                  <tr style="background: #f0f7f2;"><td><strong>Red Chamber <i>suoyin</i> carrier</strong></td><td><strong>2.30 [1.64, 3.21]</strong></td><td><strong>+0.192</strong></td><td><strong>2.24 [1.61, 3.12]</strong></td></tr>
+                  <tr><td>Medium OCR legibility</td><td>1.37 [1.05, 1.79]</td><td>+0.073</td><td>1.33 [1.02, 1.74]</td></tr>
+                  <tr><td>Log engagement total</td><td>0.93 [0.89, 0.97]</td><td></td><td>not included</td></tr>
+                </tbody>
+              </table>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--muted);">
+                AME is the average marginal effect (percentage point change) for binary predictors in the with-engagement model.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 5. Reflections -->
+            <section id="reflections">
+              <h2>Reflections</h2>
+
+              <h3>What this says about Chinese platform governance</h3>
+              <p>
+                Two common stereotypes about Chinese internet censorship are both inaccurate. The first (“everything gets deleted”) is contradicted by the sheer volume of event participation that remains searchable: most posts in this corpus, including many that discuss the Hong-Kangxi rumor enthusiastically, are still retrievable months later. The second (“only obviously political content is removed”) is contradicted by the pattern of what is actually less visible. Within this single event, search non-retrievability is layered and counterintuitive. The most robust content-level association is not with the most overtly political direction (anti-Manchu/Qing), but with Red Chamber <i>suoyin</i> material, the most literary and roundabout way of engaging with the event’s political implications. And the only direction that is stable across all model specifications is feminist-lineage, not the ethnic-classificatory direction that directly challenges the multi-ethnic unity framework.
+              </p>
+              <p>
+                This is closer to what the censorship literature calls <em>friction</em> than to keyword-based deletion. The platform does not simply delete posts containing sensitive words. The visibility landscape is shaped by a mix of mechanisms, and the content associations that emerge are not the ones that a simple “political sensitivity” model would predict.
+              </p>
+
+              <h3>Limitations</h3>
+              <p>
+                The dependent variable (<code>search_nonretrievable</code>) mixes at least four mechanisms that this study cannot distinguish: platform-initiated removal, algorithmic search deprioritization, author self-deletion, and account-level risk cascades. No stable account identifiers were captured in the crawl, so account-level clustering is not possible and author-deletion cannot be separated from platform-deletion.
+              </p>
+              <p>
+                The findings cannot be generalized beyond this corpus. They describe within-event associations on one platform during one time window. The standalone Western pseudo-history posts and pure historical analysis posts in the broader crawl have search non-retrievability rates that do not differ dramatically from the Hong-Kangxi event posts, which suggests that a baseline fraction of posts on Xiaohongshu becomes search-nonretrievable over time regardless of content. This event may not be special.
+              </p>
+              <p>
+                The crawl date was November 20, 2025. Posts that were politically sensitive enough to be removed before that date are missing from the corpus entirely. The sample therefore underrepresents the most aggressively moderated content, and the associations reported here describe visibility friction among posts that survived long enough to be collected.
+              </p>
+
+              <h3>Gender as an empirical emergence</h3>
+              <p>
+                Feminist-lineage direction is the only theory-bearing direction that is statistically stable in the main model. I did not design this project to study gendered dimensions of nationalist discourse. The original research question was about narrative direction in general: anti-Manchu, anti-Western, and feminist. But the data produced a clear asymmetry. The claim that “the maternal line is the unbroken dragon-vein“ (&#27597;&#31995;&#25165;&#26159;&#26025;&#19981;&#26029;&#30340;&#40857;&#33033;) appears to be treated as more sensitive, or at least more subject to visibility friction, than explicit anti-Manchu historical revisionism. This finding now shapes how I think about identity formation more broadly: patrilineal assumptions about national continuity may be more politically load-bearing, and more actively policed, than the ethnic or temporal dimensions that dominate existing scholarship.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 6. Materials -->
+            <section id="materials">
+              <h2>Materials</h2>
+              <div class="artifact-list" style="grid-template-columns: 1fr;">
+                <div class="artifact">
+                  <a href="../../assets/docs/xhs-visibility-paper.pdf">Paper: Visibility Friction in the Hong-Kangxi Discourse on Xiaohongshu (PDF)</a>
+                  <p>Final course paper with full regression results, codebook development appendix, and held-out reliability test.</p>
+                </div>
+              </div>
+            </section>
+
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>Yidan Xia &middot; Duke University</span>
+        <span><a href="../../index.html">Back to home</a></span>
+      </div>
+    </footer>
+  </body>
+</html>
