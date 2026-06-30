@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Florida Opioid Policies: A Data-Methods Exercise | Yidan Xia</title>
+    <meta name="description" content="Data preparation, propensity score matching, and control-group selection for a difference-in-differences evaluation of Florida's 2010 opioid control policies.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../../index.html#projects">Research</a>
+          <a href="../../about.html">About</a>
+          <a href="../../working-papers.html">Working Papers</a>
+          <a href="../../cv.html">CV</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero-img" style="background-image: url('../../assets/images/project6.jpg');">
+        <div class="hero-content">
+          <p class="eyebrow">Data Integration &middot; PSM &middot; DiD &middot; Coursework</p>
+          <h1>Florida&rsquo;s 2010 Opioid Policies: A Data-Methods Exercise</h1>
+          <p>
+            Data preparation, propensity score matching, and control-group selection for a difference-in-differences evaluation.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container article-layout">
+          <aside class="toc" aria-label="Page sections">
+            <strong>On This Page</strong>
+            <a href="#background">Background &amp; My Role</a>
+            <a href="#sources">Data Sources</a>
+            <a href="#cleaning">Cleaning &amp; Variables</a>
+            <a href="#psm">PSM &amp; Control Selection</a>
+            <a href="#trends">Parallel Trends</a>
+            <a href="#prepost">Pre-Post Analysis &amp; DiD Setup</a>
+            <a href="#skills">Skills Summary</a>
+          </aside>
+
+          <article class="article">
+
+            <!-- 1. Background & My Role -->
+            <section id="background">
+              <h2>Background &amp; My Role</h2>
+              <p>
+                This was a collaborative course project for IDS 590 (Special Topics in Interdisciplinary Data Science) at Duke University, with Aiden Shin and CJ Walker. The project evaluated whether Florida&rsquo;s 2010 opioid prescription-control regulations reduced opioid shipments and overdose mortality, using a difference-in-differences (DiD) design on county-level panel data from 2006 to 2015.
+              </p>
+              <p>
+                <strong>My contribution</strong> covered nearly all data processing and integration, propensity score matching for control-group selection, parallel trend assessment, and Florida pre-post analysis. Specifically, I built and own five notebooks: data cleaning and merging (two notebooks), PSM for control state selection, parallel trend assessment (event study), and pre-post analysis for Florida. I also wrote the DiD model specification in the report appendix.
+              </p>
+              <p>
+                <strong>The main DiD estimation and final conclusions are team work</strong>, carried out by my collaborators. This page presents only my own contributions.
+              </p>
+              <p style="font-size: 0.9rem; color: var(--muted);">
+                Course project for IDS 590, Duke University, Fall 2025.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 2. Data Sources & Integration -->
+            <section id="sources">
+              <h2>Data Sources &amp; Integration</h2>
+              <p>
+                The analysis required merging four data sources that arrived in entirely different formats, with inconsistent county-name spellings, different file structures, and different missing-value conventions.
+              </p>
+              <div class="data-stack">
+                <div class="method-box">
+                  <h3>Opioid shipments</h3>
+                  <p>DEA ARCOS data (released via Washington Post FOIA), in parquet format. Contains drug type, county, year, weight in grams, and MME conversion factor. Filtered to 15 states (Florida + 14 candidate control states) and years 2006 to 2015. Morphine milligram equivalents (MME) calculated as <code>calc_base_wt_in_gm &times; mme_conversion_factor</code>, then summed to county-year totals.</p>
+                </div>
+                <div class="method-box">
+                  <h3>Population</h3>
+                  <p>US Census Bureau Intercensal Estimates, in two batches of state-by-state Excel files (2000 to 2010 as .xls, 2010 to 2020 as .xlsx). Each file required skipping variable-length headers, dropping state totals, filtering to county rows, cleaning county names, and melting from wide to long format. The two batches were then concatenated into a single 2006 to 2015 panel.</p>
+                </div>
+                <div class="method-box">
+                  <h3>Mortality</h3>
+                  <p>CDC WONDER Underlying Cause of Death files, yearly tab-separated text files for 2006 to 2015. Filtered to drug-induced causes (codes D1, D2, D4, D9). Suppressed death counts (a CDC convention for small cells) converted to zero. County and state parsed from combined strings. Deaths summed across cause codes per county-year. Mortality rate calculated as <code>(drug_deaths / population) &times; 100,000</code>.</p>
+                </div>
+                <div class="method-box">
+                  <h3>Socioeconomic covariates</h3>
+                  <p>ACS 2005 to 2009 Five-Year Estimates pulled via the Census API for 15 states. Variables: poverty rate, percent white non-Hispanic, percent Black non-Hispanic, percent Hispanic. These served as PSM matching covariates.</p>
+                </div>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 3. Cleaning & Variables -->
+            <section id="cleaning">
+              <h2>Cleaning &amp; Variable Construction</h2>
+              <p>
+                The main integration challenge was county-name inconsistency across the four data sources. The same county might appear as &ldquo;De Kalb,&rdquo; &ldquo;DeKalb,&rdquo; or &ldquo;DEKALB&rdquo;; &ldquo;St. Louis&rdquo; vs. &ldquo;Saint Louis&rdquo;; &ldquo;La Porte&rdquo; vs. &ldquo;LAPORTE.&rdquo; I wrote a standardization function (developed through iterative trial and error) that uppercases, replaces abbreviations (&ldquo;ST.&rdquo; to &ldquo;SAINT,&rdquo; &ldquo;STE.&rdquo; to &ldquo;SAINTE&rdquo;), strips apostrophes and periods, and removes all spaces. This function was applied to every data source before merging, creating a uniform join key.
+              </p>
+              <p>
+                After merging all four sources, the key constructed variables were:
+              </p>
+              <ul>
+                <li><strong>MME per 1,000 residents</strong>: total MME / population &times; 1,000</li>
+                <li><strong>Overdose mortality per 100,000</strong>: drug deaths / population &times; 100,000</li>
+                <li><strong>Pre-treatment MME trend</strong>: OLS slope of MME per 1,000 regressed on year for 2006 to 2009, computed separately for each county (used as a PSM covariate)</li>
+                <li><strong>Poverty rate and racial composition</strong>: from ACS data, used as PSM covariates</li>
+              </ul>
+              <p>
+                The final sample comprised <strong>62 counties across 15 states</strong>: 14 Florida counties (treatment) and 48 counties from the control pool, restricted to counties with average population above 350,000.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 4. PSM & Control Selection -->
+            <section id="psm">
+              <h2>Propensity Score Matching &amp; Control-Group Selection</h2>
+              <p>
+                Rather than pre-selecting control states by judgment, I used propensity score matching to let the data identify which non-Florida states most closely resembled Florida&rsquo;s counties on pre-treatment characteristics. The eligible control pool excluded states that had adopted mandatory prescription drug monitoring programs or pain clinic laws before 2015.
+              </p>
+              <p>
+                I tested four PSM specifications, crossing two dimensions: whether or not to include the pre-treatment MME trend as a covariate, and whether to match with or without replacement. All specifications used logistic regression on standardized covariates (poverty rate, racial composition, mean MME per 1,000, mean mortality rate, and optionally the MME trend slope) to estimate the probability of being a Florida county, then matched each Florida county to its nearest control-county neighbor by propensity score distance.
+              </p>
+              <p>
+                Across all four specifications, <strong>Pennsylvania, Illinois, and Oklahoma</strong> consistently emerged as the states providing the best matches. This cross-specification consistency was the basis for selecting these three as the DiD control states. No single specification was treated as primary; the decision rested on the convergence of results across all four.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 5. Parallel Trends -->
+            <section id="trends">
+              <h2>Parallel Trend Assessment</h2>
+              <p>
+                With the control states selected, I estimated an event-study model to assess whether Florida and the control group followed parallel trends before the 2010 policy. The model interacted event-time dummies (relative to 2009 as the reference year) with a treatment indicator, with county fixed effects and standard errors clustered at the state level. Two outcomes were tested: MME per 1,000 and overdose mortality per 100,000.
+              </p>
+
+              <div class="figure-grid">
+                <figure class="figure">
+                  <img src="../../assets/images/ids590/event_study_mme.png" alt="Event study coefficient plot for MME per 1,000 population, showing pre-treatment and post-treatment coefficients with 95% confidence intervals and linear trend lines.">
+                  <figcaption>Event study: MME per 1,000. Pre-treatment coefficients with 95% CIs and fitted trend lines. Some pre-policy divergence is visible, suggesting Florida was &ldquo;catching up&rdquo; to controls before 2010.</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img src="../../assets/images/ids590/event_study_mortality.png" alt="Event study coefficient plot for mortality rate per 100,000 population, showing pre-treatment and post-treatment coefficients with 95% confidence intervals and linear trend lines.">
+                  <figcaption>Event study: mortality rate per 100,000. Parallel trends roughly supported in the pre-policy period, strengthening confidence in the DiD identification for this outcome.</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 6. Pre-Post Analysis & DiD Setup -->
+            <section id="prepost">
+              <h2>Pre-Post Analysis &amp; DiD Model Setup</h2>
+              <p>
+                Before the full DiD (carried out by my collaborators), I produced a Florida-only pre-post analysis. For the 14 Florida counties with average population above 350,000, I computed yearly means with 95% confidence intervals and fitted separate LOWESS curves (frac = 0.7) for the pre-policy (2006 to 2009) and post-policy (2010 to 2015) periods.
+              </p>
+
+              <div class="figure-grid">
+                <figure class="figure">
+                  <img src="../../assets/images/ids590/fl_mme_lowess.png" alt="Florida opioid shipments (MME per 1,000) from 2006 to 2015 with separate pre-policy and post-policy LOWESS curves and 95% confidence intervals.">
+                  <figcaption>Florida opioid shipments (MME per 1,000) with separate pre/post LOWESS curves. Shipments peaked around 2010, then declined substantially by 2015.</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img src="../../assets/images/ids590/fl_mortality_lowess.png" alt="Florida overdose mortality rate per 100,000 from 2006 to 2015 with separate pre-policy and post-policy LOWESS curves and 95% confidence intervals.">
+                  <figcaption>Florida overdose mortality (per 100,000). Mortality declined after 2010, then partially rebounded by 2015, possibly reflecting the rise of illicit fentanyl.</figcaption>
+                </figure>
+              </div>
+
+              <p>
+                I also wrote the formal DiD model specification used in the report appendix:
+              </p>
+              <p style="text-align: center; font-family: Georgia, serif; font-size: 1.1rem; margin: 20px 0;">
+                Y<sub>it</sub> = &alpha;<sub>i</sub> + &lambda;<sub>t</sub> + &beta; &middot; Treated<sub>i</sub> &middot; Post<sub>t</sub> + &epsilon;<sub>it</sub>
+              </p>
+              <p>
+                where &alpha;<sub>i</sub> are county fixed effects, &lambda;<sub>t</sub> are year fixed effects, and &beta; is the DiD estimand. Standard errors are clustered at the county level. The main DiD estimation using this specification was then carried out by my collaborators.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 7. Skills Summary -->
+            <section id="skills">
+              <h2>Skills Summary</h2>
+              <ul>
+                <li><strong>Multi-source data integration:</strong> merged four data sources in four different formats (parquet, state-by-state Excel files across two decades, yearly tab-separated text, Census API JSON) into a single county-year panel.</li>
+                <li><strong>Entity resolution:</strong> built a county-name standardization function to resolve spelling inconsistencies across federal data sources (abbreviations, spacing, punctuation).</li>
+                <li><strong>Propensity score matching:</strong> designed and executed a full PSM pipeline (covariate selection, logistic estimation, nearest-neighbor matching, multi-specification robustness) to select control states for a DiD design.</li>
+                <li><strong>Event study:</strong> implemented an event-study regression with county fixed effects and clustered standard errors to assess parallel pre-treatment trends.</li>
+                <li><strong>Census API and derived variables:</strong> pulled ACS estimates via the Census Bureau API and constructed rate variables for use as matching covariates.</li>
+              </ul>
+            </section>
+
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>Yidan Xia &middot; Duke University</span>
+        <span><a href="../../index.html">Back to home</a></span>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Double Reduction &amp; Nighttime Light | Yidan Xia</title>
+    <meta name="description" content="A synthetic control test of China's Double Reduction policy using nighttime light data, plus a Shanghai GIS proxy-validity exercise.">
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>MathJax={tex:{inlineMath:[['$','$']],displayMath:[['$$','$$']]}}</script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../../index.html#projects">Research</a>
+          <a href="../../about.html">About</a>
+          <a href="../../working-papers.html">Working Papers</a>
+          <a href="../../cv.html">CV</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero-img" style="background-image: url('../../assets/images/project1.jpg');">
+        <div class="hero-content">
+          <p class="eyebrow">Synthetic Control &middot; VIIRS &middot; GIS &middot; Proxy Validity</p>
+          <h1>Did Double Reduction Really Reduce Burden?</h1>
+          <p>
+            A synthetic control test using school and residential-community nighttime light data, followed by a Shanghai GIS exercise that asks whether the proxy itself can hold.
+          </p>
+          <div class="hero-actions">
+            <a class="button light" href="../../assets/docs/english-paper.pdf">Read Paper</a>
+            <a class="button light" href="tools/nightlight-map.html">Shanghai Light Map</a>
+            <a class="button light" href="tools/school-compare.html">Compare Schools</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container article-layout">
+          <aside class="toc" aria-label="Page sections">
+            <strong>On This Page</strong>
+            <a href="#question">Research Question</a>
+            <a href="#cities">Pilot Cities</a>
+            <a href="#journey">Research Journey</a>
+            <a href="#scm-general">What Is SCM?</a>
+            <a href="#scm-this">This Study’s SCM</a>
+            <a href="#data">Data</a>
+            <a href="#findings">Findings</a>
+            <a href="#proxy-test">Testing the Proxy</a>
+            <a href="#reflections">Reflections</a>
+            <a href="#materials">Materials</a>
+          </aside>
+
+          <article class="article">
+
+            <!-- 1. Research Question -->
+            <section id="question">
+              <h2>Research Question</h2>
+              <p class="lead">
+                Did China’s 2021 Double Reduction policy actually reduce student study burden, or did unchanged exam pressure and stakeholder incentives merely shift study activity across locations?
+              </p>
+              <p>
+                In July 2021, China implemented the Double Reduction (&#21452;&#20943;, shuang jian) policy, a comprehensive education reform targeting compulsory education (grades 1 through 9). The policy bans for-profit tutoring in core subjects, limits homework volume, and requires schools to provide after-school services. It directly affected millions of families, thousands of schools, and a tutoring industry previously valued at over $100 billion.
+              </p>
+              <p>
+                The question is grounded in public choice theory. The policy constrained tutoring hours and homework, but the underlying incentive structure (high-stakes exams, school evaluation criteria, parental competition) remained intact. In a principal-agent framework adapted for China’s hierarchical governance, rational actors facing unchanged incentives are predicted to substitute behaviors rather than reduce them: tutoring becomes “homework help,” group tutoring shifts to private or online forms, and wealthier families access premium substitutes while affordable options disappear.
+              </p>
+              <p>
+                The empirical move was to avoid survey self-report by using VIIRS satellite nighttime light intensity around schools and residential communities as a behavioral proxy. If students stayed later at school, school-area lights should rise. If study moved home, community lights should rise. If burden genuinely fell, both should decline.
+              </p>
+              <div class="quote">
+                <p>
+                  The starting point was less technical: looking out late at night during high school, seeing lights across the city, and wondering how many students were still awake behind them.
+                </p>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 2. Pilot Cities -->
+            <section id="cities">
+              <h2>Pilot Cities</h2>
+              <p>The Ministry of Education designated 10 cities as Double Reduction pilot zones in July 2021.</p>
+              <div class="pilot-grid">
+                <ul class="city-list">
+                  <li><span class="city-name">Beijing</span> <span class="city-info">Capital, municipality</span></li>
+                  <li><span class="city-name">Shanghai</span> <span class="city-info">Municipality, east coast</span></li>
+                  <li><span class="city-name">Shenyang</span> <span class="city-info">Liaoning province capital, northeast</span></li>
+                  <li><span class="city-name">Guangzhou</span> <span class="city-info">Guangdong province capital, south</span></li>
+                  <li><span class="city-name">Chengdu</span> <span class="city-info">Sichuan province capital, southwest</span></li>
+                  <li><span class="city-name">Zhengzhou</span> <span class="city-info">Henan province capital, central</span></li>
+                  <li><span class="city-name">Changzhi</span> <span class="city-info">Shanxi province, mid-size inland city</span></li>
+                  <li><span class="city-name">Weihai</span> <span class="city-info">Shandong province, east coast</span></li>
+                  <li><span class="city-name">Nantong</span> <span class="city-info">Jiangsu province, Yangtze Delta</span></li>
+                  <li><span class="city-name">Jinhua</span> <span class="city-info">Zhejiang province, east</span></li>
+                </ul>
+                <div id="china-map"></div>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--muted);">
+                The control group comprises 30 to 31 non-pilot prefecture-level cities, selected to exclude cities with concurrent large-scale education policy interventions.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 3. Research Journey -->
+            <section id="journey">
+              <h2>Research Journey</h2>
+              <p>
+                The initial design used a standard difference-in-differences (DID) specification comparing nighttime light around schools in the ten pilot cities against non-pilot controls, with city-month interactions and grade-level time interactions. Even after these additions, the parallel trends test was rejected at the 1% level (F-test p &lt; 0.01). Treatment and control groups had systematically different light trajectories before the policy began.
+              </p>
+              <p>
+                The next attempt used propensity score matching (PSM-DID). Matching variables included pre-policy 12-month nighttime light trends, regional per capita GDP, population, and secondary/tertiary industry shares. The propensity score distributions barely overlapped: treatment schools concentrated at scores of 0.6 to 1.1, controls at 0 to 0.3. Even after strict matching, the parallel trends test still failed.
+              </p>
+              <figure class="figure" style="margin: 24px 0; max-width: 520px;">
+                <img src="../../assets/images/double-reduction/psm-distribution.png" alt="Propensity score distributions for treatment and control groups showing minimal overlap.">
+                <figcaption>Post-matching propensity score distributions. Treatment group (orange) and control group (blue) concentrate at opposite ends, with very limited overlap.</figcaption>
+              </figure>
+              <p>
+                The pilot cities were selected for administrative and political reasons. They are among China’s largest and most economically distinct cities, and no amount of matching on observables could repair that structural difference. This led to the synthetic control method (Abadie, Diamond, and Hainmueller 2010), which constructs a weighted combination of donor cities to approximate each treated city’s pre-treatment trajectory. Instead of pre-selecting comparable cities, the data chooses the weights.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 4. What Is SCM? -->
+            <section id="scm-general">
+              <h2>What Is Synthetic Control?</h2>
+              <p>
+                The synthetic control method (SCM) is a technique for estimating the causal effect of a policy or intervention when only one or a few units are treated. The core idea: take a group of untreated units and combine them with optimized weights to build a “synthetic” version of the treated unit that matches its pre-treatment behavior as closely as possible. After the intervention, any divergence between the actual treated unit and its synthetic counterpart is attributed to the treatment.
+              </p>
+              <figure class="figure" style="margin: 24px 0;">
+                <img src="../../assets/images/scm-explainer.png" alt="Three-panel diagram explaining SCM: (a) one treated series compared to many controls, (b) controls reweighted into a single synthetic control matching pre-treatment, (c) synthetic control projected forward to estimate counterfactual.">
+                <figcaption>Graphical explanation of SCM. (a) One treated time series is compared to multiple untreated controls. (b) An algorithm reweights controls into a single synthetic control matching the treated series before the intervention. (c) The synthetic control is projected forward to approximate what would have happened without the intervention. Source: Reproduced from Caetano et al. (2025), using example data from Abadie (2021), under a CC BY 4.0 license; horizontal version accessed via Ver&iacute;ssimo and Caetano’s <a href="https://about.conservationevidence.com/2025/09/25/culturomics/">Conservation Evidence blog post</a>, &ldquo;Culturomics: a low-cost opportunity to evaluate conservation campaigns&rdquo; (September 25, 2025). No changes made.</figcaption>
+              </figure>
+              <p>Formally, SCM solves the following optimization:</p>
+              <p>$$\min_{\mathbf{W}} \|\mathbf{X}_1 - \mathbf{X}_0 \mathbf{W}\|^2 \quad \text{s.t.} \quad w_j \geq 0, \quad \sum_{j=1}^{J} w_j = 1$$</p>
+              <p>
+                Here $\mathbf{X}_1$ is a vector of pre-treatment characteristics (outcome values at key time points, plus covariates) for the treated unit. $\mathbf{X}_0$ is the corresponding matrix for the $J$ untreated donor units. $\mathbf{W} = (w_1, \ldots, w_J)$ is the weight vector. The constraints ensure that the synthetic control is a convex combination of real units, not an extrapolation.
+              </p>
+              <p>
+                In practice, SCM uses a nested optimization structure. An outer loop selects a diagonal matrix $\mathbf{V}$ that determines how much weight each feature receives in the matching. An inner loop, given $\mathbf{V}$, finds the donor weights $\mathbf{W}$ that minimize the $\mathbf{V}$-weighted distance between the treated unit and its synthetic counterpart. The outer loop then adjusts $\mathbf{V}$ to minimize the overall pre-treatment prediction error across all time periods.
+              </p>
+              <p>
+                Compared to DID, SCM does not require parallel trends. It lets the data choose which control units contribute, and how much. The trade-off is that SCM requires a good pre-treatment fit: if no weighted combination of donors can approximate the treated unit’s trajectory, the method breaks down.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 5. How This SCM Was Built -->
+            <section id="scm-this">
+              <h2>How This SCM Was Built</h2>
+              <p>
+                The general framework above was applied to this case as follows, step by step.
+              </p>
+
+              <h3>Unit of analysis</h3>
+              <p>
+                The outcome variable is the mean nighttime light intensity (VIIRS avg_rade9h, in nW/cm&sup2;/sr) across all schools or communities within a given city, aggregated to the city-quarter level. Monthly data is averaged to quarters to reduce noise and align with economic covariates.
+              </p>
+
+              <h3>Feature construction</h3>
+              <p>
+                Following Abadie, Diamond, and Hainmueller, the feature vector for each city comprises three components: (1) nighttime light intensity at four strategically selected pre-treatment time points (the initial quarter, one-third point, two-thirds point, and the final pre-treatment quarter), capturing trajectory shape; (2) the pre-treatment mean of the outcome variable; and (3) pre-treatment averages of economic covariates including GDP, secondary industry ratio, and tertiary industry ratio. These economic variables capture each city’s development level and industrial structure.
+              </p>
+
+              <h3>Donor pool screening</h3>
+              <p>
+                Control cities are screened by data availability: minimum 4 pre-treatment periods with valid data, at least 80% coverage of the treatment city’s pre-treatment span, and no concurrent “Double Reduction“ pilot status. For school data, 31 cities passed screening; for community data, 30 cities.
+              </p>
+
+              <h3>Nested optimization</h3>
+              <p>
+                The inner optimization finds $\mathbf{W}$ using Sequential Least Squares Programming (SLSQP) with four initializations (one uniform, three random Dirichlet) to avoid local minima. The outer optimization selects $\mathbf{V}$ using the Nelder-Mead simplex algorithm (maximum 100 iterations) to minimize the mean squared prediction error across all pre-treatment periods, not just the selected lag points. Before optimization, all features are standardized to z-scores using the control group’s mean and standard deviation.
+              </p>
+
+              <h3>Placebo tests</h3>
+              <p>
+                Two complementary approaches are used for inference. The primary test is the standard in-space placebo (Abadie et al.): for each of the 30 control cities, the same SCM procedure is run as if that city were treated. The treated city’s RMSPE ratio (post-treatment RMSPE divided by pre-treatment RMSPE) is then compared against the full distribution of placebo ratios. If p &lt; 0.1, the effect is considered significant: the treated city’s deviation is larger than what most control cities experienced. The secondary test is a bootstrap placebo, which draws 90 bootstrap samples from the pre-treatment residuals to assess whether the post-treatment effect exceeds what pre-treatment noise would predict.
+              </p>
+              <p>
+                The distinction matters. A city can pass bootstrap (it changed relative to its own pre-treatment noise) while failing in-space placebo (control cities also changed by comparable amounts). The combination “bootstrap passes, in-space fails” signals that something real happened but was not unique to the treated city.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 6. Data -->
+            <section id="data">
+              <h2>Data</h2>
+              <div class="data-stack">
+                <div class="method-box">
+                  <h3>School Locations</h3>
+                  <p>
+                    School locations were retrieved via Baidu Maps API with broad school-related keywords, then cleaned to remove non-school places (bus stops, police stations named after schools), vocational and international schools, relocated or closed schools, and ethnic-minority schools. School types were verified through encyclopedia entries, official websites, news, and social media. Nine-year and twelve-year schools were reclassified; complete high schools with junior divisions were treated as junior high given the policy’s scope.
+                  </p>
+                  <p>
+                    Final sample: treatment group 7,687 primary / 3,411 junior high / 628 senior high; control group 10,962 / 3,636 / 883.
+                  </p>
+                </div>
+                <div class="method-box">
+                  <h3>Residential Communities</h3>
+                  <p>
+                    Communities from Macro Data Network (macrodatas.cn), a platform aggregating property management data. Selected by proximity to schools (800m for primary/junior high, 300m for senior high) or location in recognized education-resource-dense districts (Beijing Haidian, Shanghai Xuhui, and others). Built 2012 or earlier. Excluded: staff housing, dormitories, industrial parks, villas, boutique apartments, records without GPS. Final sample: 64,639 communities.
+                  </p>
+                </div>
+                <div class="method-box">
+                  <h3>Nighttime Light</h3>
+                  <p>
+                    VIIRS DNB monthly composites (VCMCFG configuration) from <a href="https://eogdata.mines.edu/products/vnl/">NCEI/NOAA</a>, 2017 to 2024. Outcome variable: average radiance after 9 PM (avg_rade9h, in nW/cm&sup2;/sr). Spatial resolution: approximately 463 meters per pixel. Pixels with cloud-free observation count of 2 or fewer were dropped. August 2022 uses NOAA-20 (JPSS-1) substitute data due to Suomi-NPP entering safe mode on July 26, 2022.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 7. Findings -->
+            <section id="findings">
+              <h2>Findings</h2>
+              <p>
+                Post-policy changes in nighttime light are visible in many pilot cities, but <strong>broad causal attribution fails</strong>. COVID-19 (December 2019 through late 2022) overlaps almost entirely with the Double Reduction implementation period (July 2021 onward). If COVID affected cities heterogeneously (and it did, with pilot cities likely experiencing stricter lockdowns as large, politically visible metropolises), then the differential COVID impact is inseparable from any policy effect.
+              </p>
+
+              <h3>School Data Results (Table 1)</h3>
+              <div style="overflow-x: auto;">
+              <table class="data-table" style="font-size: 0.82rem; white-space: nowrap;">
+                <thead>
+                  <tr>
+                    <th>City</th>
+                    <th>ATT (Overall)</th>
+                    <th>ATT Primary</th>
+                    <th>ATT Jr. High</th>
+                    <th>ATT Sr. High</th>
+                    <th>RMSPE%</th>
+                    <th>In-Space p</th>
+                    <th>Rank</th>
+                    <th>Bootstrap p</th>
+                    <th>Max Weight</th>
+                    <th>R&sup2;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Beijing</td><td>-0.848</td><td>-0.820</td><td>-0.218</td><td>-1.017</td><td>11.674</td><td>0.300</td><td>10/31</td><td>0.344</td><td>0.456</td><td>0.057</td></tr>
+                  <tr><td>Changzhi</td><td>0.991</td><td>0.333</td><td>0.953</td><td>4.691***</td><td>10.674</td><td>0.133</td><td>5/31</td><td>0.000***</td><td>0.324</td><td>0.509</td></tr>
+                  <tr><td>Chengdu</td><td>-4.796***</td><td>-2.367***</td><td>-3.470***</td><td>-3.966***</td><td>11.712</td><td>0.167</td><td>6/31</td><td>0.000***</td><td>0.363</td><td>0.353</td></tr>
+                  <tr><td>Guangzhou</td><td>0.984</td><td>0.735</td><td>1.673*</td><td>-0.493</td><td>8.892</td><td>0.400</td><td>13/31</td><td>0.000***</td><td>0.475</td><td>0.491</td></tr>
+                  <tr><td>Jinhua</td><td>-0.265</td><td>0.335</td><td>-0.097</td><td>0.394</td><td>10.147</td><td>0.767</td><td>24/31</td><td>0.589</td><td>0.332</td><td>0.395</td></tr>
+                  <tr><td>Nantong</td><td>-1.188***</td><td>-1.077***</td><td>-1.081***</td><td>-2.283***</td><td>6.193</td><td>0.167</td><td>6/31</td><td>0.000***</td><td>0.336</td><td>0.705</td></tr>
+                  <tr><td>Shanghai</td><td>-3.856**</td><td>-3.988**</td><td>-3.036*</td><td>-3.957**</td><td>14.470</td><td>0.433</td><td>14/31</td><td>0.022**</td><td>0.784</td><td>-3.061</td></tr>
+                  <tr><td>Shenyang</td><td>-3.308***</td><td>-3.578***</td><td>-4.187**</td><td>-2.341***</td><td>7.620</td><td>0.300</td><td>10/31</td><td>0.000***</td><td>0.587</td><td>0.425</td></tr>
+                  <tr><td>Weihai</td><td>-3.240***</td><td>-0.226</td><td>-2.502***</td><td>-0.193</td><td>12.906</td><td>0.200</td><td>7/31</td><td>0.000***</td><td>0.808</td><td>0.528</td></tr>
+                  <tr><td>Zhengzhou</td><td>-0.375</td><td>-0.396</td><td>-0.371</td><td>0.919</td><td>4.040</td><td>0.300</td><td>10/31</td><td>0.033**</td><td>0.305</td><td>0.835</td></tr>
+                </tbody>
+              </table>
+              </div>
+
+              <h3>Community Data Results (Table 2)</h3>
+              <div style="overflow-x: auto;">
+              <table class="data-table" style="font-size: 0.82rem; white-space: nowrap;">
+                <thead>
+                  <tr>
+                    <th>City</th>
+                    <th>ATT (Overall)</th>
+                    <th>ATT Primary</th>
+                    <th>ATT Jr. High</th>
+                    <th>ATT Sr. High</th>
+                    <th>RMSPE%</th>
+                    <th>In-Space p</th>
+                    <th>Rank</th>
+                    <th>Bootstrap p</th>
+                    <th>Max Weight</th>
+                    <th>R&sup2;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Beijing</td><td>-2.188</td><td>-3.592*</td><td>-1.131</td><td>3.997</td><td>11.567</td><td>0.267</td><td>9/31</td><td>0.022**</td><td>0.609</td><td>-0.049</td></tr>
+                  <tr style="background: #f0f7f2;"><td><strong>Changzhi</strong></td><td><strong>14.087***</strong></td><td><strong>9.184***</strong></td><td><strong>15.116***</strong></td><td><strong>11.529***</strong></td><td>12.058</td><td><strong>0.000***</strong></td><td><strong>1/31</strong></td><td><strong>0.000***</strong></td><td>0.588</td><td>0.362</td></tr>
+                  <tr><td>Chengdu</td><td>-8.160***</td><td>-7.599***</td><td>-8.645***</td><td>-9.636***</td><td>12.847</td><td>0.167</td><td>6/31</td><td>0.000***</td><td>0.666</td><td>0.364</td></tr>
+                  <tr><td>Guangzhou</td><td>2.628**</td><td>3.623***</td><td>1.957</td><td>1.449</td><td>9.749</td><td>0.467</td><td>15/31</td><td>0.000***</td><td>0.450</td><td>0.503</td></tr>
+                  <tr><td>Jinhua</td><td>5.435**</td><td>7.661***</td><td>2.193</td><td>-1.211</td><td>13.628</td><td>0.400</td><td>13/31</td><td>0.000***</td><td>0.475</td><td>0.137</td></tr>
+                  <tr><td>Nantong</td><td>-2.479***</td><td>-0.291</td><td>-2.738***</td><td>-1.519</td><td>5.982</td><td>0.467</td><td>15/31</td><td>0.000***</td><td>0.433</td><td>0.720</td></tr>
+                  <tr><td>Shanghai</td><td>-0.075*</td><td>-0.467</td><td>-1.268**</td><td>0.714</td><td>11.432</td><td>0.833</td><td>26/31</td><td>1.000</td><td>0.871</td><td>-1.255</td></tr>
+                  <tr><td>Shenyang</td><td>14.244***</td><td>12.489***</td><td>11.919***</td><td>17.153</td><td>19.790</td><td>0.300</td><td>10/31</td><td>0.000***</td><td>0.848</td><td>-3.002</td></tr>
+                  <tr><td>Weihai</td><td>-1.313</td><td>-0.536</td><td>0.180</td><td>-0.087</td><td>8.087</td><td>0.433</td><td>14/31</td><td>0.133</td><td>0.658</td><td>0.547</td></tr>
+                  <tr><td>Zhengzhou</td><td>2.514**</td><td>-0.162</td><td>2.452***</td><td>2.891</td><td>5.575</td><td>0.167</td><td>6/31</td><td>0.000***</td><td>0.300</td><td>0.614</td></tr>
+                </tbody>
+              </table>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--muted);">
+                Significance: * p &lt; 0.1, ** p &lt; 0.05, *** p &lt; 0.01 (bootstrap). In-Space p threshold: &le; 0.1. RMSPE% benchmark: &le; 15%. R&sup2; applies to synthetic control fit quality.
+              </p>
+
+              <h3>Interpretation</h3>
+              <p>
+                Nearly all pilot cities show significant bootstrap changes but fail the in-space placebo test (p &gt; 0.1). Their post-policy deviations cannot be distinguished from what control cities also experienced. The changes were real but not unique to treatment.
+              </p>
+              <p>
+                <strong>Changzhi is the sole city passing both placebo tests at the community level</strong>, with positive ATTs across all three school levels: primary +9.184, junior high +15.116 (the largest), and senior high +11.529. The in-space placebo rank is 1 out of 31. However, between 2021 and 2023, Changzhi undertook substantial educational infrastructure investment, constructing or expanding 46 schools and adding over 17,000 student seats. The observed increase in nighttime light intensity likely reflects construction activity and improved lighting rather than (or in addition to) behavioral substitution.
+              </p>
+              <p>
+                Shanghai presents a severely negative R&sup2; of -3.061 for school data, meaning the synthetic control performs worse than a simple mean prediction. Its nighttime light level is so far above any combination of donor cities that no credible synthetic control can be formed. The maximum donor weight reaches 0.784, indicating excessive reliance on a single city.
+              </p>
+
+              <div class="figure-grid">
+                <figure class="figure wide">
+                  <img src="../../assets/images/double-reduction/changzhi-overall-scm.png" alt="Changzhi community overall synthetic control results, showing actual vs synthetic trajectory and treatment effect.">
+                  <figcaption>Changzhi community overall: actual vs. synthetic trajectory, treatment effect time series, cumulative effect, placebo distribution, and donor weights. Pre-treatment fit is acceptable (R&sup2; = 0.362, RMSPE% = 12.058%). Post-policy divergence is sharp and consistent.</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img src="../../assets/images/double-reduction/changzhi-overall-placebo.png" alt="Changzhi in-space placebo test showing treated city effect compared to placebo distribution.">
+                  <figcaption>Changzhi in-space placebo test. The treated city’s effect (red dashed line) exceeds all 30 placebo cities, yielding p &lt; 0.001.</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img src="../../assets/images/double-reduction/changzhi-levels.png" alt="Changzhi community level-stratified results showing primary, junior high, and senior high separately.">
+                  <figcaption>Changzhi community results by school level. Junior high shows the largest positive deviation, consistent with public choice predictions about differential exam pressure.</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 8. Testing the Proxy -->
+            <section id="proxy-test">
+              <h2>Testing the Proxy</h2>
+              <p>
+                Afterwards, a separate GIS exercise asked a deeper question: <strong>can VIIRS nighttime light, at this spatial and temporal resolution, actually detect school activity at all?</strong>
+              </p>
+              <p>
+                The exercise used 168 Shanghai high schools and monthly 2022 VIIRS data. During the April/May 2022 Shanghai lockdown, when schools were physically closed and city life severely restricted, high-school-area nighttime light did not collapse as the proxy hypothesis predicts. January averaged roughly 48.3 nW/cm&sup2;/sr, March 46.9, April 38.5, May 38.2, and August 32.3. The decline tracks seasonality and observation conditions far more than it tracks school closure. Central districts (Huangpu, Jing’an) remain structurally brighter than suburban districts regardless of school status, suggesting urbanization and infrastructure dominate the signal.
+              </p>
+              <p>Three conclusions emerged:</p>
+              <ul>
+                <li><strong>Seasonal factors dominate:</strong> the lowest months (July, August) are summer, not lockdown.</li>
+                <li><strong>At 463-meter resolution,</strong> student-generated light is drowned by street lighting, building facades, hospitals, logistics facilities, and residential base illumination.</li>
+                <li><strong>School-area brightness primarily reflects the urbanization level of the school’s location,</strong> not anything about student activity within it.</li>
+              </ul>
+
+              <div class="button-row">
+                <a class="button" href="tools/nightlight-map.html">Open Shanghai Light Map</a>
+                <a class="button" href="tools/school-compare.html">Compare Schools</a>
+              </div>
+
+              <div class="figure-grid">
+                <figure class="figure">
+                  <img src="../../assets/images/double-reduction/shanghai-march.jpg" alt="Shanghai nighttime light map, March 2022.">
+                  <figcaption>March 2022. Before lockdown. Central Shanghai is bright.</figcaption>
+                </figure>
+                <figure class="figure">
+                  <img src="../../assets/images/double-reduction/shanghai-april.jpg" alt="Shanghai nighttime light map, April 2022 lockdown.">
+                  <figcaption>April 2022. Lockdown. No dramatic collapse at school points.</figcaption>
+                </figure>
+                <figure class="figure wide">
+                  <img src="../../assets/images/double-reduction/shanghai-statistics.jpg" alt="Monthly statistics and district comparison.">
+                  <figcaption>Monthly trends and district comparison. The same schools and districts remain bright across months. VIIRS captures urban location more than student behavior.</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 9. Reflections -->
+            <section id="reflections">
+              <h2>Reflections</h2>
+              <p>
+                The primary finding of this project is negative, and the negative finding is the point. Nighttime light data cannot serve as a valid proxy for student study activity. The reasons are structural rather than fixable with better data processing: VIIRS resolution is too coarse, urban base illumination overwhelms any student-generated signal, seasonal patterns dominate the time series, and the COVID-19 pandemic produced heterogeneous shocks that are temporally inseparable from the policy itself.
+              </p>
+              <p>
+                The methodological journey matters as much as the conclusion. DID failed because pilot city selection was politically driven and structurally non-random. PSM-DID failed because matching on observables cannot repair fundamental trend differences rooted in unobserved selection processes. SCM performed better in principle but could not overcome the COVID confound or the structural mismatch between megacity treatment units and smaller donor cities.
+              </p>
+              <p>
+                A better design for this question would need higher-frequency data, finer spatial resolution, and triangulation with other indicators: electricity consumption records, traffic patterns near schools, time-use surveys, or administrative data on tutoring registrations. The question itself (whether policy constraints on education reduce burden or merely redirect it) remains important and unanswered.
+              </p>
+              <p>
+                For my broader research trajectory, this project established a lesson that shaped everything after it: <strong>macro-level observable proxies cannot reliably penetrate individual-level states.</strong> The gap between what a satellite sees and what a student does is not just a measurement limitation. It is a conceptual warning about the relationship between observable traces and the phenomena we want them to represent.
+              </p>
+            </section>
+
+            <hr class="divider">
+
+            <!-- 10. Materials -->
+            <section id="materials">
+              <h2>Materials</h2>
+              <div class="artifact-list">
+                <div class="artifact">
+                  <a href="../../assets/docs/english-paper.pdf">English Paper (PDF)</a>
+                  <p>Working paper. Standard Abadie-style SCM, in-space placebo tests, and the proxy-validity reframing.</p>
+                </div>
+                <div class="artifact">
+                  <a href="tools/nightlight-map.html">Shanghai Nighttime Light Map</a>
+                  <p>Interactive monthly map of 2022 VIIRS nightlight across 168 Shanghai high schools.</p>
+                </div>
+                <div class="artifact">
+                  <a href="tools/school-compare.html">School Comparison Tool</a>
+                  <p>Side-by-side monthly light trends for selected schools.</p>
+                </div>
+              </div>
+            </section>
+
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>Yidan Xia &middot; Duke University</span>
+        <span><a href="../../index.html">Back to home</a></span>
+      </div>
+    </footer>
+
+    <!-- China Map Script -->
+    <!--
+      Map data sources (DataV GeoAtlas, areas_v3):
+      GeoJSON data bundled locally in assets/geo/ (originally from DataV GeoAtlas, areas_v3):
+      1. china_national.json = 100000_full.json (~569 KB)
+         Contains: 34 admin divisions + Taiwan (adcode 710000) + nine-dash line (adchar "JD", adcode "100000_JD")
+      2. province_XXXXXX.json files for prefecture boundaries (pilot-city provinces only):
+         110000 (Beijing), 140000 (Shanxi), 210000 (Liaoning), 310000 (Shanghai),
+         320000 (Jiangsu), 330000 (Zhejiang), 370000 (Shandong), 410000 (Henan),
+         440000 (Guangdong), 510000 (Sichuan)
+      Nine-dash line is in the national file only.
+    -->
+    <script>
+    (function() {
+      var mapEl = document.getElementById('china-map');
+      if (!mapEl) return;
+
+      var map = L.map('china-map', {
+        center: [35.5, 108],
+        zoom: 4,
+        minZoom: 3,
+        maxZoom: 7,
+        zoomControl: true,
+        attributionControl: false
+      });
+      map.getContainer().style.background = '#f0f4f8';
+
+      var pilotCities = [
+        {name: 'Beijing',    lat: 39.9042, lng: 116.4074},
+        {name: 'Shanghai',   lat: 31.2304, lng: 121.4737},
+        {name: 'Shenyang',   lat: 41.8057, lng: 123.4315},
+        {name: 'Guangzhou',  lat: 23.1291, lng: 113.2644},
+        {name: 'Chengdu',    lat: 30.5728, lng: 104.0665},
+        {name: 'Zhengzhou',  lat: 34.7466, lng: 113.6254},
+        {name: 'Changzhi',   lat: 36.1954, lng: 113.1163},
+        {name: 'Weihai',     lat: 37.5097, lng: 122.1212},
+        {name: 'Nantong',    lat: 32.0161, lng: 120.8647},
+        {name: 'Jinhua',     lat: 29.0790, lng: 119.6471}
+      ];
+      var pilotSet = new Set(pilotCities.map(function(c){ return c.name; }));
+
+      // Province adcodes that contain pilot cities
+      var prefProvinceCodes = [
+        '110000','140000','210000','310000',
+        '320000','330000','370000','410000',
+        '440000','510000'
+      ];
+      var GEO = '../../assets/geo/';
+
+      // 1. Load national layer (province outlines + nine-dash line + province labels)
+      fetch(GEO + 'china_national.json')
+        .then(function(r){ return r.json(); })
+        .then(function(national) {
+          // Province fill + outlines + nine-dash line
+          L.geoJSON(national, {
+            style: function(f) {
+              if (f.properties && f.properties.adchar === 'JD') {
+                return { color: '#555', weight: 1.5, fillColor: 'transparent', fillOpacity: 0, dashArray: '6,4' };
+              }
+              return { color: '#8a9e92', weight: 0.8, fillColor: '#dce5dd', fillOpacity: 0.5 };
+            },
+            onEachFeature: function(f, layer) {
+              // Province name labels (skip nine-dash line and empty names)
+              if (f.properties && f.properties.name && f.properties.adchar !== 'JD') {
+                var center = layer.getBounds().getCenter();
+                L.marker(center, {
+                  icon: L.divIcon({
+                    className: 'province-label',
+                    html: '<span style="font-size:10px;color:#7a8e82;font-weight:600;white-space:nowrap;pointer-events:none;">' + f.properties.name + '</span>',
+                    iconSize: [0, 0],
+                    iconAnchor: [0, 0]
+                  })
+                }).addTo(map);
+              }
+            }
+          }).addTo(map);
+
+          // 2. Load prefecture boundaries for pilot-city provinces
+          var fetches = prefProvinceCodes.map(function(code) {
+            return fetch(GEO + 'province_' + code + '.json').then(function(r){ return r.json(); });
+          });
+          return Promise.all(fetches);
+        })
+        .then(function(provDataArr) {
+          // Draw prefecture boundaries (thin lines, no fill)
+          provDataArr.forEach(function(provData) {
+            L.geoJSON(provData, {
+              style: function() {
+                return { color: '#b0bdb5', weight: 0.4, fillColor: 'transparent', fillOpacity: 0 };
+              }
+            }).addTo(map);
+          });
+
+          // 3. Add pilot city markers with permanent labels
+          pilotCities.forEach(function(c) {
+            L.circleMarker([c.lat, c.lng], {
+              radius: 6, color: '#fff', fillColor: '#9a5737', fillOpacity: 1, weight: 2
+            }).addTo(map);
+            L.marker([c.lat, c.lng], {
+              icon: L.divIcon({
+                className: 'city-label',
+                html: '<span style="font-size:11px;color:#9a5737;font-weight:700;white-space:nowrap;text-shadow:0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;">' + c.name + '</span>',
+                iconSize: [0, 0],
+                iconAnchor: [-9, 5]
+              })
+            }).addTo(map);
+          });
+        })
+        .catch(function() {
+          mapEl.innerHTML = '<p style="padding:20px;color:#607066;">Map data could not be loaded. Please check your network connection.</p>';
+        });
+    })();
+    </script>
+  </body>
+</html>
