@@ -1,11 +1,17 @@
 # Yidan Xia
 
-Personal academic website for Yidan Xia.
+Personal academic website for Yidan Xia — yidanxia.com
 
-The homepage foregrounds my broader research interests in identity formation, online expression, perceptions of international relations, and the economic contexts that shape political interpretation. The current completed project traces one empirical path from a lived question about nighttime lights to a synthetic control study of China's Double Reduction policy, then to a GIS-based check of whether nighttime light can plausibly serve as an educational proxy.
+## About
 
-## Current Projects
+My work circles a single question: how does collective identity form, hold, divide, and travel? I approach it from several angles — intellectual history, macro-behavioral observation, platform-level digital expression, and the narratives states tell about themselves — combining archival and conceptual analysis with computational methods.
 
-- **Did Double Reduction Really Reduce Burden?** A synthetic control study using school and residential-community nighttime light data, followed by a Shanghai GIS proxy-validity exercise.
-- **Online Identity Formation.** A developing research direction on how identity is expressed, circulated, and stabilized in networked environments.
-- **Perceiving International Relations.** A developing research direction on how media, identity, and economic experience shape everyday interpretations of international relations.
+## What's on this site
+
+- **Research** — projects spanning my undergraduate thesis on modern Asianism, satellite-nightlight studies of education policy, platform-visibility analysis of online discourse, a literature review in international relations, and an M.A. thesis proposal in progress.
+- **Education & Course** — genealogy trees built from my coursework, reorganizing fields (contemporary Western political science, political anthropology, foundational IR scholarship) into interactive maps of how theories branch, react, and recombine.
+- **About / CV** — fuller research statement and academic background.
+
+## Built with
+
+Static HTML / CSS / JS, hosted on GitHub Pages with a custom domain (yidanxia.com).
