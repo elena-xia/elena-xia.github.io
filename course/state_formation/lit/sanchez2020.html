@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sánchez de la Sierra 2020 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 8" data-zh="第 8 周">Week 8</span> · <span data-en="Coercion–Extraction lane" data-zh="强制–汲取层">Coercion–Extraction lane</span> · <span data-en="Twentieth century &amp; contemporary (S5)" data-zh="二十世纪与当代（S5）">Twentieth century &amp; contemporary (S5)</span></p>
+        <h1><span class="lang-en">Raúl Sánchez de la Sierra (2020), “On the Origins of the State: Stationary Bandits and Taxation in Eastern Congo,” JPE 128(1).</span><span class="lang-zh">桑切斯·德拉谢拉（2020）《国家的起源：刚果东部的坐寇与征税》，JPE。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#4a7ba6" data-en="Natural experiment" data-zh="自然实验">Natural experiment</span><span class="chip" style="background:#b0713f" data-en="Diff-in-diff" data-zh="双重差分">Diff-in-diff</span><span class="chip" style="background:#6b8f5a" data-en="Field data" data-zh="田野数据">Field data</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The paper has multiple dependent variables organized along three dimensions. The first dimension is the “extensive margin” of the essential functions of a state, which captures whether armed actors establish state-like institutions at a given location in a given year. The specific extensive-margin DVs include: (a) whether the municipality was attacked by any armed actor; (b) whether an armed actor imposed customs taxation on mining output at the exit of a mine; (c) whether an armed actor imposed entry fees (working permits/visas) to work at the mine; (d) whether an armed actor established a monopoly of violence (i.e., became a “stationary bandit”) at the mine or support village; (e) whether an armed actor provided a security service at the mine or support village; and (f) a normalized mean index combining these outcomes. All of these are coded as binary dummies (0 or 1) for each municipality–year observation. (pp. 48–52, Table 1)</p>
+            <p>The second dimension is household welfare, measured at support villages. Welfare proxies include: (a) a savings/investment index constructed via principal component analysis of yearly cattle acquisitions; (b) the log of yearly weddings celebrated in the village (a costly, prestigious investment in a bride-price society); (c) the log of yearly immigration into the village (reflecting the relative desirability of living there); and (d) a composite welfare index combining the above via principal component analysis. (pp. 57–58)</p>
+            <p>The third dimension is the “intensive margin” of the essential functions of a state, which captures the sophistication of taxation and administrative capacity. Specific intensive-margin DVs include: (a) whether a poll tax exists; (b) whether a market (food market) tax exists; (c) whether a toll booth exists at the village; (d) whether a mill tax exists; (e) a tax sophistication index (a weighted average of taxes, where the weight reflects how strongly each tax is associated with fiscal administration); (f) whether a fiscal administration exists at the village; (g) whether a judicial administration exists at the village; and (h) an overall intensive-margin index combining the above.</p>
+          </div>
+          <div class="lang-zh">
+            <p>(pp. 64–65, Table 5)
+本文有多个因变量，按三个维度组织。第一个维度是国家基本功能的”广延边际”(extensive margin)，即武装行为者是否在特定地点和特定年份建立了类国家制度。具体的广延边际因变量包括：(a) 该市镇是否遭到武装行为者攻击；(b) 武装行为者是否在矿区出口对矿产产出征收海关税（通过设立路障实施）；(c) 武装行为者是否在矿区征收入场费（工作许可/签证）；(d) 武装行为者是否在矿区或支持村庄建立了暴力垄断（即成为”固定匪帮”）；(e) 武装行为者是否在矿区或支持村庄提供安全服务；(f) 以上各项的标准化均值指数。所有变量均为二元虚拟变量（0或1），以市镇–年为观测单位。（第48–52页，表1）</p>
+            <p>第二个维度是家庭福利，在支持村庄层面衡量。福利代理变量包括：(a) 基于年度购牛情况通过主成分分析构建的储蓄/投资指数；(b) 村庄年度婚礼数量的对数（在聘礼社会中，婚礼是一项昂贵且有声望的投资）；(c) 年度迁入人口数量的对数（反映居住在该村庄的相对吸引力）；(d) 综合以上各项通过主成分分析构建的福利综合指数。（第57–58页）</p>
+            <p>第三个维度是国家基本功能的”集约边际”(intensive margin)，即税收和行政能力的复杂化程度。具体的集约边际因变量包括：(a) 是否存在人头税；(b) 是否存在市场（食品市场）税；(c) 是否存在村庄收费站；(d) 是否存在磨坊税；(e) 税收复杂度指数（各种税的加权平均值，权重反映该种税与财政管理机构关联的强度）；(f) 村庄是否存在财政管理机构；(g) 村庄是否存在司法管理机构；(h) 综合以上各项的集约边际总指数。（第64–65页，表5）</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The main independent variables are exogenous shocks to the world prices of two minerals extracted in eastern Congo /ˈkɒŋɡoʊ/: coltan (columbite-tantalite) and gold. Specifically, the paper uses the interaction between the logarithm of the US price of coltan (or gold) in year t and a dummy indicating whether municipality j is endowed with coltan (or gold). The key variation is thus a difference-in-differences design: mineral-endowed locations are “treated” by the price shocks, while locations without those minerals serve as comparisons. (pp. 48–49)</p>
+            <p>The coltan price shock was triggered in early 2000 when Sony /ˈsoʊni/ announced the Playstation II /ˈpleɪsteɪʃən/, which used coltan as a key input. The US price surged from $90 to $590 per kilogram before collapsing during Christmas 2000 when the console underperformed. The gold price shock came later, driven by investors rushing to gold as a safe haven after the global recession, with the price rising sharply especially after 2006, reaching levels up to 6 times pre-shock levels by 2012. (pp. 34, 44, Figure 1)</p>
+            <p>For the welfare analysis, additional key IVs include the type of stationary bandit present (militia, external armed actor, or FARDC /ɛf eɪ ɑːr diː siː/, the Congolese national army), and an instrumental variable based on the 2003 Sun City /sʌn ˈsɪti/ peace agreement. (pp. 58, 61–66)</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要自变量是刚果（金）/ˈkɒŋɡoʊ/东部开采的两种矿物，钶钽铁矿（coltan）和黄金，的世界价格的外生冲击。具体而言，论文使用的是t年美国钶钽铁矿（或黄金）价格的对数与市镇j是否蕴含钶钽铁矿（或黄金）的虚拟变量的交互项。关键的变异来自双重差分设计：拥有矿产的地点被价格冲击”处理”，而没有这些矿产的地点作为对照组。（第48–49页）</p>
+            <p>钶钽铁矿价格冲击发生在2000年初，当时</p>
+            <p>游戏机），该产品以钶钽铁矿为关键输入品。美国价格从每公斤90美元飙升至590美元，随后在2000年圣诞节该游戏机表现不佳时崩溃。黄金价格冲击发生在较晚时期，由全球衰退后投资者涌向黄金作为避险资产驱动，价格在2006年后大幅上涨，到2012年达到冲击前水平的6倍。（第34、44页，图1）</p>
+            <p>在福利分析中，额外的关键自变量包括固定匪帮的类型（民兵、外部武装行为者、或FARDC /ɛf eɪ ɑːr diː siː/，刚果国民军），以及基于2003年Sun City /sʌn ˈsɪti/（太阳城）和平协议的工具变量。（第58、61–66页）</p>
+            <p>Sony /ˈsoʊni/宣布推出Playstation II /ˈpleɪsteɪʃən/（PlayStation 2</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>The paper conceptualizes the state following the Weberian and Tillyan tradition. Following Weber /ˈveɪbər/ (1946), a state is defined by its “monopoly of violence.” Following Tilly /ˈtɪli/ (1985, 1990), the “essential functions of a state” are: (1) war making, eliminating or neutralizing rivals outside the claimed territory; (2) state making, eliminating or neutralizing rivals inside the territory; (3) protection, eliminating or neutralizing enemies of the ruler’s clients (i.e., protecting the property of those taxed); and (4) extraction, acquiring the means to carry out the first three activities, i.e., taxation. (pp. 33, 38–39)</p>
+            <p>The paper does not treat the state as a binary concept or as a product of some grand social contract. Instead, it views state formation as a continuous, never-complete process that emerges from the activities of armed actors seeking to extract revenue. The paper draws on Olson’s /ˈɒlsən/ (1993) concept of the “stationary bandit”: a roving bandit who, rather than looting and moving on, decides to settle in a territory, establish a monopoly of violence, tax the population in a predictable way, and, because the bandit is now a residual claimant on the local economy, provide protection. Thus, the emergence of the state is not separate from organized crime; rather, states are the most successful organized crime operations that acquired legitimacy over time. Tilly (1985) famously put it: “War makes states.” (pp. 33–34, 38–42)</p>
+            <p>The paper further distinguishes between the “extensive margin” and the “intensive margin” of state formation. The extensive margin refers to whether state-like functions exist at all (i.e., whether a monopoly of violence, taxation, and protection emerge). The intensive margin refers to how sophisticated these functions become, whether the ruler develops more complex taxes (poll taxes, consumption taxes), creates fiscal and judicial administrations, and generally builds “fiscal capacity” in the sense of Besley and Persson /ˈbɛzli ænd ˈpɛrsən/ (2009). The historical parallel is drawn to the “maturing” of early states described by Ardant /arˈdɑ̃/ (1975) and Claessen and Skalnik /ˈklɑːsən ænd ˈskɑːlnɪk/ (1978). (pp. 40–42)</p>
+            <p>Measurement is done through a yearly panel dataset covering 650 locations (239 support villages and 411 mining sites) in eastern DRC from 1995 to 2013, reconstructed via recall-based surveys. The “state” is measured by the binary indicators listed above in the DV section: whether a stationary bandit exists, whether customs or other taxes are collected, whether security is provided, and whether fiscal and judicial administrations operate. (pp. 34, 44–48)</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文遵循韦伯和蒂利传统来概念化国家。遵循Weber /ˈveɪbər/（韦伯，1946），国家由其”暴力垄断”来定义。遵循Tilly /ˈtɪli/（蒂利，1985, 1990），”国家的基本功能”包括：(1) 战争制造，消除或中和领土外的竞争对手；(2) 国家制造，消除或中和领土内的竞争对手；(3) 保护，消除或中和统治者客户的敌人（即保护被征税者的财产）；(4) 攫取，获得执行前三项活动的手段，即征税。（第33、38–39页）</p>
+            <p>关键的是，本文不将国家视为二元概念或某种伟大社会契约的产物。相反，它将国家形成视为一个持续的、永远不会完成的过程，源于武装行为者寻求攫取收入的活动。论文借鉴了Olson /ˈɒlsən/（奥尔森，1993）的”固定匪帮”概念：一个流动匪帮决定不再掠夺后转移，而是定居在一个领地内，建立暴力垄断，以可预测的方式向人口征税，并且，因为匪帮现在是当地经济的剩余索取者，提供保护。因此，国家的出现并非独立于有组织犯罪；相反，国家就是那些最成功的、随时间获得了合法性的有组织犯罪行动。蒂利（1985）的名言是：”战争制造国家。”（第33–34、38–42页）</p>
+            <p>论文进一步区分了国家形成的”广延边际”和”集约边际”。广延边际指的是类国家功能是否存在（即暴力垄断、税收和保护是否出现）。集约边际指的是这些功能变得多么复杂，统治者是否发展出更复杂的税收（人头税、消费税），是否创建财政和司法管理机构，以及是否总体上建立了</p>
+            <p>Besley and Persson /ˈbɛzli ænd ˈpɛrsən/（贝斯利和佩尔松，2009）意义上的”财政能力”。历史类比来自Ardant /arˈdɑ̃/（阿尔当，1975）和Claessen and Skalnik /ˈklɑːsən ænd ˈskɑːlnɪk/（克莱森和斯卡尔尼克，1978）所描述的早期国家的”成熟化”。（第40–42页）</p>
+            <p>衡量方式是通过一个年度面板数据集，覆盖刚果（金）东部650个地点（239个支持村庄和411个矿场），时间跨度为1995年至2013年，基于回忆式调查重建。”国家”通过上述因变量部分列出的二元指标来衡量：是否存在固定匪帮，是否征收海关税或其他税，是否提供安全服务，以及是否运作财政和司法管理机构。（第34、44–48页）</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The core argument is that the essential functions of a state, monopoly of violence, taxation, and protection, can emerge endogenously from the revenue-maximizing behavior of armed actors, rather than from any social contract or deliberate state-building project. When the value of extractable output rises and that output can be observed, armed actors have stronger incentives to settle as stationary bandits, establish customs taxation, and provide protection at production sites. When the output is hard to observe (concealable), armed actors still have incentives to capture the surplus, but they must do so indirectly, by settling in the consumption economies (support villages) where miners spend their income, introducing more sophisticated taxes (working permits, poll taxes, market taxes), and building fiscal and judicial administrations to support collection. (pp. 34–35, 42–43)</p>
+            <p>The paper further argues that the welfare effect of having a stationary bandit depends on the armed actor’s objectives. When the stationary bandit’s mission encompasses the population’s well-being, as with popular militias or the FARDC (despite its corruption), the net effect on household welfare is positive. This is because the protection these actors provide, and the order they establish, outweighs the costs of their taxation. In contrast, when the stationary bandit is an external armed actor with no ties to the local population, the welfare effect is negligible or negative. (pp. 35, 57–66)</p>
+            <p>Finally, the paper identifies a novel “administration resource curse”: when output can be directly taxed (as with coltan), a resource boom leads stationary bandits to focus on easy-to-collect customs taxes and to dismantle their more sophisticated fiscal and judicial administrations in support villages. The opportunity cost of maintaining an administration rises when customs revenue is abundant. In contrast, when output is concealable (as with gold), a resource boom forces stationary bandits to invest in more sophisticated taxation and fiscal capacity. (pp. 35–36, 64–68)</p>
+          </div>
+          <div class="lang-zh">
+            <p>核心论点是，国家的基本功能，暴力垄断、税收和保护，可以从武装行为者追求收入最大化的行为中内生地产生，而非来自任何社会契约或刻意的国家建设项目。当可提取产出的价值上升且该产出可以被观察到时，武装行为者有更强的激励定居为固定匪帮，建立海关税收，并在生产地点提供保护。当产出难以观察（可隐匿）时，武装行为者仍有激励攫取剩余，但必须间接地，通过定居在矿工花费收入的消费经济体（支持村庄），引入更复杂的税收（工作许可、人头税、市场税），并建设财政和司法管理机构来支持征收。（第34–35、42–43页）</p>
+            <p>论文进一步论证，固定匪帮对福利的影响取决于武装行为者的目标。当固定匪帮的使命涵盖人口福祉，如民众民兵或FARDC（尽管存在腐败），对家庭福利的净效应是正面的。这是因为这些行为者提供的保护和建立的秩序超过了其税收的成本。相反，当固定匪帮是与当地人口无联系的外部武装行为者时，福利效应可以忽略或为负。（第35、57–66页）</p>
+            <p>最后，论文识别了一种新型的”行政资源诅咒”：当产出可以直接征税时（如钶钽铁矿），资源繁荣导致固定匪帮专注于易征收的海关税，并拆除其在支持村庄的更复杂的财政和司法管理机构。当海关收入充裕时，维持行政机构的机会成本上升。相反，当产出可隐匿时（如黄金），资源繁荣迫使固定匪帮投资于更复杂的税收和财政能力。（第35–36、64–68页）</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>8.1 Observable vs. Concealable Output</p>
+            <p>The central mechanism hinges on the observability of mining output. Coltan is bulky, a miner can produce up to 50 kg per day, and it must be transported in 75 kg bags by foot from the mine to the support village. This makes coltan output highly observable and easy to tax through customs (roadblocks at the mine exit). Gold, by contrast, has an extremely high value-to-weight ratio, daily production per worker is between 0.1 and 10 grams. Miners routinely conceal gold by swallowing it. Gold is thus called the “immaterial mineral.” A customs tax on gold would face systematic evasion and is thus rarely observed. (pp. 44, 50)</p>
+            <p>When the coltan price rises, the returns to establishing a roadblock and customs taxation at coltan mines increase. Armed actors thus create monopolies of violence and provide protection at coltan mines, the “essential functions of a state” emerge at the production site. When the gold price rises, armed actors cannot tax gold output directly. Instead, they settle in the support villages where miners’ families live and where income from gold is spent. There, they introduce working permits (a tax on mining labor rather than output), poll taxes, and market taxes. Because these taxes are harder to collect, armed actors also invest in fiscal and judicial administrations. (pp. 34–35, 50–52)</p>
+            <p>8.2 Trade Infrastructure</p>
+            <p>The coltan effect is concentrated near airstrips, the infrastructure through which coltan is exported, given the DRC’s poor road network. This confirms that the mechanism operates through the ability to tax and ship observable output. The gold effect, by contrast, is equally strong whether or not the village is near an airstrip, consistent with gold’s concealability making physical trade infrastructure irrelevant for the armed actors’ taxation strategy. (p. 54)</p>
+            <p>8.3 Type of Armed Actor and Welfare</p>
+            <p>The paper identifies four types of armed actors: (1) village self-defense militias, formed by villagers themselves; (2) regional militias, which originated as village militias but expanded; (3) external armed actors, representing foreign ethnic groups; and (4) the FARDC, the Congolese national army, which is infiltrated by organized crime. Village militias and the FARDC are seen as more legitimate (29% and 70% of episodes, respectively) and are more coethnic with the local population. External armed actors are seen as least legitimate (17%) and commit the most violent attacks (72% of their attacks include pillage, 59% sexual violence, 61% death). (pp. 54–57, Table 2)</p>
+            <p>The welfare mechanism works as follows: when the stationary bandit’s objective function places weight on the population’s welfare (as with militias and the FARDC), the protection they provide and the order they establish create a net positive effect. The value added through protection of property rights exceeds the value destroyed through tax distortions. When the stationary bandit cares only about extraction (external actors), the surplus is expropriated away and household welfare does not improve. (pp. 35, 42, 57–66)</p>
+            <p>8.4 Administration Resource Curse</p>
+            <p>When coltan prices rise, stationary bandits at coltan support villages dismantle their fiscal and judicial administrations. The logic is one of opportunity costs: customs taxation of coltan output is easy and profitable, so armed actors reallocate their limited organizational resources toward customs at mines and away from more sophisticated taxation in villages. Conversely, when gold prices rise, stationary bandits cannot rely on customs taxation and must invest in fiscal capacity to capture the surplus, introducing poll taxes, market taxes, and building administrative capacity. This mechanism is confirmed even after controlling for changes in the composition of stationary bandits (organization fixed effects). (pp. 35–36, 64–68, Table 5)</p>
+          </div>
+          <div class="lang-zh">
+            <p>可观察产出 vs. 可隐匿产出</p>
+            <p>核心机制取决于矿产产出的可观察性。钶钽铁矿体积大，一个矿工每天可生产多达50公斤，必须以75公斤的袋装从矿区步行运到支持村庄。这使得钶钽铁矿产出高度可观察，容易通过海关（在矿区出口设路障）征税。相比之下，黄金的价值重量比极高，每个工人的日产量在0.1到10克之间。矿工常通过吞咽来隐藏黄金。因此黄金被称为”非物质矿物”。对黄金的海关税将面临系统性逃税，因此很少被观察到。（第44、50页）</p>
+            <p>当钶钽铁矿价格上升时，在钶钽铁矿矿区建立路障和海关税收的回报增加。武装行为者因此在钶钽铁矿矿区建立暴力垄断并提供保护，国家的”基本功能”在生产地点出现。当黄金价格上升时，武装行为者无法直接对黄金产出征税。相反，他们定居在矿工家庭居住和矿工花费收入的支持村庄。在那里，他们引入工作许可（对采矿劳动而非产出征税）、人头税和市场税。由于这些税更难征收，武装行为者还投资于财政和司法管理机构。（第34–35、50–52页）</p>
+            <p>贸易基础设施</p>
+            <p>钶钽铁矿效应集中在靠近简易机场的地区，鉴于刚果（金）糟糕的公路网络，这是钶钽铁矿出口的基础设施。这证实了该机制通过对可观察产出征税和运输的能力来运作。相比之下，黄金效应在靠近和远离机场的村庄同样强烈，这与黄金的可隐匿性使实体贸易基础设施对武装行为者的征税策略无关紧要的判断一致。（第54页）</p>
+            <p>武装行为者类型与福利</p>
+            <p>论文识别了四类武装行为者：(1) 村庄自卫民兵，由村民自己组建；(2) 地区民兵，源于村庄民兵但规模扩大；(3) 外部武装行为者，代表外国族群利益；(4) FARDC，即刚果国民军，被有组织犯罪渗透。村庄民兵和FARDC被认为更合法（分别在29%和70%的事件中），且与当地人口更多同族。外部武装行为者被认为最不合法（17%），并犯下最暴力的攻击（72%的攻击包括抢劫，59%包括性暴力，61%包括死亡）。（第54–57页，表2）</p>
+            <p>福利机制如下运作：当固定匪帮的目标函数赋予人口福祉以权重时（如民兵和FARDC），他们提供的保护和建立的秩序产生净正效应。通过保护产权创造的附加值超过了税收扭曲破坏的价值。当固定匪帮只关心攫取时（外部行为者），剩余被没收，家庭福利不会改善。（第35、42、57–66页）</p>
+            <p>行政资源诅咒</p>
+            <p>当钶钽铁矿价格上升时，钶钽铁矿支持村庄的固定匪帮拆除其财政和司法管理机构。其逻辑在于机会成本：钶钽铁矿产出的海关税收既容易又有利可图，因此武装行为者将其有限的组织资源从村庄的复杂税收重新分配到矿区的海关。相反，当黄金价格上升时，固定匪帮不能依赖海关税收，必须投资于财政能力以攫取剩余，引入人头税、市场税，并建设行政能力。即使在控制了固定匪帮组成变化（组织固定效应）之后，这一机制仍得到证实。（第35–36、64–68页，表5）</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>9.1 Geographic Coverage and Unit of Analysis</p>
+            <p>The study covers the eastern Democratic Republic of the Congo /ˌdɛməˈkrætɪk rɪˈpʌblɪk əv ðə ˈkɒŋɡoʊ/ (DRC), specifically the provinces of Sud Kivu /suːd ˈkiːvuː/ and Nord Kivu /nɔːr ˈkiːvuː/. The sample consists of 239 support villages and their corresponding 411 mining sites, which together form 239 municipalities. The unit of analysis is the municipality–year (for mine-level and village-level analyses) and the household–year (for welfare analyses). (pp. 44–47, Figure 2)</p>
+            <p>9.2 Time Period</p>
+            <p>The panel covers 1995 to 2013. Data collection took place from July 2012 through June 2013 in Sud Kivu and from February through October 2015 in Nord Kivu. (p. 46)</p>
+            <p>9.3 Data Sources and Collection</p>
+            <p>The dataset was reconstructed through recall-based surveys. In each support village, a team of 10 surveyors trained local “history specialists”, individuals with long involvement in mining or village elders, to consolidate a municipality history over one week. Simultaneously, surveyors administered private interviews in 6–8 randomly selected households per village. At the end of the week, surveyors held a day-long meeting with the history specialists to cross-check data. The data from this meeting constitute the main source. The author acknowledges three challenges of recall data: measurement error from imperfect recall of magnitudes, measurement error from imperfect recall of dates, and reporting bias for sensitive information. Three months of piloting were used to develop protocols tailored to the cultural context. (pp. 44–46)</p>
+            <p>9.4 Measurement of Key Variables</p>
+            <p>Mineral prices: US prices of coltan and gold are taken from the US Geological Survey (2016). Local DRC prices are from the recall survey but are acknowledged to be “extremely unreliable” (which motivates the use of US prices in the reduced-form specification). Mineral endowment dummies are constructed from existing datasets (International Peace Information Service 2009; Référentiel Géographique Commun 2010) supplemented by the author’s own prospections. The armed actor classification (village militia, regional militia, external, FARDC) is based on fieldwork conversations with active officers and combatants of numerous armed groups between 2010 and 2018. (pp. 44–49, Table 2)</p>
+            <p>For the welfare analysis, only households settled in the support village before 2000 are included to avoid compositional effects from migration. Household-year data are aggregated to support village–year means. An additional implicit association test (IAT) was administered to approximately 10 households in 106 Nord Kivu support villages to measure biases toward different armed groups. (pp. 57–58, 67)</p>
+          </div>
+          <div class="lang-zh">
+            <p>地理覆盖范围和分析单位</p>
+            <p>研究覆盖刚果民主共和国 /ˌdɛməˈkrætɪk rɪˈpʌblɪk əv ðə ˈkɒŋɡoʊ/（DRC）东部，具体为Sud Kivu /suːd ˈkiːvuː/（南基伍省）和Nord Kivu /nɔːr ˈkiːvuː/（北基伍省）。样本包含239个支持村庄及其对应的411个矿场，共同组成239个市镇。分析单位为市镇–年（矿区级和村庄级分析）和家庭–年（福利分析）。（第44–47页，图2）</p>
+            <p>时间跨度</p>
+            <p>面板覆盖1995年至2013年。数据收集在南基伍省从2012年7月至2013年6月进行，在北基伍省从2015年2月至10月进行。（第46页）</p>
+            <p>数据来源和收集</p>
+            <p>数据集通过回忆式调查重建。在每个支持村庄，10名调查员的团队培训当地”历史专家”，在采矿业有长期参与的个人或村庄长者，在一周内整合市镇历史。同时，调查员在每个村庄随机抽取的6–8个家庭中进行私人访谈。在一周结束时，调查员与历史专家举行为期一天的会议以交叉核实数据。该会议的数据构成主要数据来源。作者承认回忆数据的三个挑战：对幅度的不完美回忆造成的测量误差、对日期的不完美回忆造成的测量误差、以及敏感信息的报告偏差。三个月的试点用于开发适合文化背景的协议。（第44–46页）</p>
+            <p>关键变量的衡量</p>
+            <p>矿物价格：钶钽铁矿和黄金的美国价格取自美国地质调查局（US Geological Survey, 2016）。刚果（金）当地价格来自回忆调查，但被认为”极不可靠”（这促使在简约形式规范中使用美国价格）。矿物禀赋虚拟变量根据现有数据集（International Peace Information Service 2009; Référentiel Géographique Commun 2010）构建，并辅以作者自己的勘探。武装行为者分类（村庄民兵、地区民兵、外部、FARDC）基于2010年至2018年间与众多武装团体的现役军官和战斗人员的田野调查对话。（第44–49页，表2）</p>
+            <p>对于福利分析，仅包括2000年之前定居在支持村庄的家庭，以避免因移民造成的组成效应。家庭–年数据聚合为支持村庄–年均值。此外，在106个北基伍支持村庄中约10户家庭还接受了内隐联想测试（IAT），以衡量对不同武装团体的偏见。（第57–58、67页）</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>10.1 Main Specification: Reduced-Form Difference-in-Differences</p>
+            <p>The primary empirical strategy is a reduced-form linear probability model estimated via OLS:</p>
+            <div class="formula-box">\[
+              Y_{jt}=\beta_t+\alpha_j+\gamma_c C_j p^{US}_{c,t}
+              +\gamma_g G_j p^{US}_{g,t}+\varepsilon_{jt}.
+            \]</div>
+            <p>Here \(Y_{jt}\) is a binary outcome in municipality \(j\) in year \(t\), \(\alpha_j\) and \(\beta_t\) are municipality and year fixed effects, \(C_j\) (\(G_j\)) is a dummy for coltan (gold) endowment, and \(p^{US}_{c,t}\) (\(p^{US}_{g,t}\)) is the log of the US price of coltan (gold). The coefficients \(\gamma_c\) and \(\gamma_g\) indicate how a 1 percentage point increase in the US mineral price differentially affects outcomes in mineral-endowed locations relative to non-endowed locations. Standard errors are clustered at the municipality level. (pp. 48–49)</p>
+            <p>10.2 Key Identifying Assumptions</p>
+            <p>For this strategy to identify causal effects, several assumptions must hold. First, parallel trends: absent the price shocks, outcomes in mineral-endowed and non-endowed locations would have evolved similarly. The author provides evidence that pre-shock trends are parallel and that including leads does not affect the contemporaneous coefficient. Second, exogeneity of US prices: the US price of coltan and gold must be unaffected by the behavior of armed actors in the DRC. For gold, the DRC’s share of global output is negligible (0.08%), making this plausible. For coltan, the DRC’s share is larger (up to 20% by 2010), but the year-2000 price spike was driven by speculative demand for Playstation II and the failure of Australian supply, not by DRC conditions. The author also shows that restricting the coltan analysis to 1999–2001 (the only credibly exogenous interval) leaves results unchanged. Third, the price shocks must not be correlated with other unobserved shocks differentially affecting mineral vs. non-mineral locations. (pp. 48–49, 54)</p>
+            <p>10.3 Instrumental Variables for Welfare Analysis</p>
+            <p>To estimate the causal effect of different types of stationary bandits on household welfare, the author uses the 2003 Sun City peace agreement as an instrument. The agreement led the RCD /ɑːr siː diː/ (the main external armed actor) and some regional militias to voluntarily withdraw from their territories. The IV strategy is a 2SLS using \(POST_t\times SB^{2002}_j\) as an instrument for whether a stationary bandit is present, where \(POST_t\) indicates years after 2003 and \(SB^{2002}_j\) indicates whether a location had a stationary bandit in 2002. The exclusion restriction requires that the peace agreement affected household welfare only through the withdrawal (or retention) of stationary bandits, not through other channels. The first-stage F-statistic is above 20. (pp. 61–66, Table 4)</p>
+            <p>10.4 Additional Methods</p>
+            <p>For the intensive-margin analysis, the author includes stationary-bandit organization fixed effects to separate changes in armed actors’ behavior from changes in the composition of stationary bandits. The author also reports 13 robustness checks including 2SLS using local prices, Arellano-Bond estimation, alternative year intervals, leads and lags, controls for time-varying village characteristics, and exclusion/inclusion of the FARDC. (pp. 49, 64–68)</p>
+            <p>FARDC。</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要规范：简约形式双重差分</p>
+            <p>主要的经验策略是通过OLS估计的简约形式线性概率模型：</p>
+            <div class="formula-box">\[
+              Y_{jt}=\beta_t+\alpha_j+\gamma_c C_j p^{US}_{c,t}
+              +\gamma_g G_j p^{US}_{g,t}+\varepsilon_{jt}.
+            \]</div>
+            <p>其中 \(Y_{jt}\) 是市镇 \(j\) 在 \(t\) 年的二元结果变量，\(\alpha_j\) 和 \(\beta_t\) 分别是市镇和年份固定效应，\(C_j\)（\(G_j\)）是钶钽铁矿（黄金）禀赋虚拟变量，\(p^{US}_{c,t}\)（\(p^{US}_{g,t}\)）是钶钽铁矿（黄金）美国价格的对数。系数 \(\gamma_c\) 和 \(\gamma_g\) 表示美国矿物价格每增加1个百分点，对矿产蕴藏地相对于非蕴藏地的差异影响。标准误在市镇层面聚类。（第48–49页）</p>
+            <p>关键识别假设</p>
+            <p>要使该策略识别因果效应，必须满足几个假设。第一，平行趋势：在没有价格冲击的情况下，矿产蕴藏地和非蕴藏地的结果变量将以类似方式演变。作者提供了冲击前趋势平行的证据，并表明包含前导项不影响当期系数。第二，美国价格的外生性：钶钽铁矿和黄金的美国价格不受刚果（金）武装行为者行为的影响。对于黄金，刚果（金）的全球产出份额微不足道（0.08%），使这一假设合理。对于钶钽铁矿，刚果（金）的份额较大（到2010年高达20%），但2000年的价格飙升由PlayStation II的投机需求和澳大利亚供应失败驱动，而非刚果（金）条件。作者还表明，将钶钽铁矿分析限制在1999–2001年（唯一可信外生的区间）不改变结果。第三，价格冲击不得与差异性影响矿产与非矿产地区的其他不可观察冲击相关。（第48–49、54页）</p>
+            <p>福利分析的工具变量</p>
+            <p>为估计不同类型固定匪帮对家庭福利的因果效应，作者使用2003年Sun City /sʌn ˈsɪti/（太阳城）和平协议作为工具变量。该协议导致RCD /ɑːr siː diː/（当时主要的外部武装行为者联盟）和一些地区民兵自愿撤出其领地。工具变量策略是2SLS，使用 \(POST_t\times SB^{2002}_j\) 作为固定匪帮是否存在的工具，其中 \(POST_t\) 表示2003年之后的年份，\(SB^{2002}_j\) 表示2002年某地点是否有固定匪帮。排除性限制要求和平协议仅通过固定匪帮的撤出（或保留）影响家庭福利，而非通过其他渠道。第一阶段F统计量高于20。（第61–66页，表4）</p>
+            <p>其他方法</p>
+            <p>对于集约边际分析，作者包含固定匪帮组织固定效应，以将武装行为者行为的变化与固定匪帮组成的变化分离。作者还报告了13项稳健性检验，包括使用当地价格的2SLS、Arellano-Bond估计、替代年份区间、前导项和滞后项、时变村庄特征控制、以及排除/包含</p>
+          </div>
+        </section>
+
+      <section class="class-notes">
+        <h2 data-en="Class Notes" data-zh="课堂笔记">Class Notes</h2>
+        <h3 data-en="Week 8 lecture: discussion of this reading" data-zh="第 8 周讲课：本篇文献的讨论">Week 8 lecture: discussion of this reading</h3>
+        <div class="lang-en cn-body"><p>The counterpart in this article: after the teacher’s question, a student answered correctly: it is the visibility/monitorability of the mineral. Coltan is bulky and hard to hide (similar to land in direct taxation: high q), while gold is easy to hide (similar to mobile goods in indirect taxation: low q).</p><p>Core findings: when coltan prices rise (high monitorability), armed groups set up checkpoints at mines to collect production taxes, without needing to penetrate deeply into village society. They only need to establish a violent monopoly over the mining area. When gold prices rise (low monitorability), armed groups cannot tax directly at the production stage (because gold is easy to hide), and instead collect consumption taxes: entering villages and taxing markets and households. This requires developing more socially penetrating ‘state institutions,’ which to some extent also gives local residents more of a voice, consistent with the empirical findings on welfare effects. q</p><p>Classroom critiques. Critique one (Speaker 2): the article frames itself using Olson’s ‘stationary bandit’ framework, but the core assumption of this framework is a long time horizon. Armed groups in the DRC clearly do not know how long a price shock will last, and since they observe fluctuations in mineral prices, they likely know it will not last very long. The ‘stationary bandit’ framework does not seem to apply here.</p><p>The teacher’s response: agreed. Time horizon is more of a scope condition: armed groups need some minimum time horizon before they will invest in building institutions, but what actually drives them to establish ‘stationary bandit’ style institutions is not a change in time horizon but a change in the price of taxable goods. Critique two (Speaker 5/Tanvi): the article never defines what a ‘state’ is. The argument is circular: it defines ‘state formation’ through the functions that armed groups take on (taxation, providing some form of order), and then claims this is research on the origins of the state.</p><p>The teacher’s response: fully agree. The literature review is ‘very chaotic,’ and the footnotes’ citations of readings from this course are often placed in the wrong spot. This is essential for publication in JPE: making the grand claim that this is about ‘state formation.’ But for the purposes of classroom analysis, this framing issue can be set aside. We can understand this article as a study of mechanisms: under what conditions groups that control violence have an incentive to develop particular state functions. Critique three (the teacher’s own): this article cannot directly tell us what happened when states first formed thousands of years ago, because armed groups in the DRC operate within an environment that already has a modern state (albeit a weak one), not state origins under a ‘state of nature.’ But it does provide an interesting empirical testing ground for certain mechanisms. On the structure of the article: the article tries to cram too much into a single journal paper (including the section on armed group identity), resulting in a confused literature review and insufficient background information. The teacher thinks this should have been written as a book: the section on armed group identity ‘would be a very interesting chapter in a book, not a single row in a regression table.’ One student (Speaker 2) instead found the identity section more interesting and more persuasive. On the discussion of the large number of regression tables in empirical papers: a student (Speaker 8) asked why empirical papers stack up so many regressions. The teacher explained that this is not a formal journal requirement but an equilibrium outcome of the peer review process. Each column of regressions has a reason for existing: the first column is the bivariate coefficient, then adding controls, adding fixed effects, changing the estimation method (OLS to IV), subsample analysis, and so on, all aimed at testing whether the result is robust to alternative explanations and methodological choices. But due to space constraints, the reasoning behind each column is usually not explained in detail: readers need specialized knowledge to ‘read’ these tables.</p><p>The teacher’s response: not as hopeless as corruption, but genuinely difficult. The teacher mentioned two frontier directions: (1) his own research focuses on how governments endogenously invest in raising q, and the empirical application uses a ‘niche measure’ of legibility; (2) in terms of measurement, cross-nationally comparable indicators (such as certain existing datasets) are far less mature than GDP is for material welfare. Moreover, many legibility indicators mix together different conceptual dimensions, even within Stasavage’s book, each chapter operationalizes legibility differently, even though the theoretical definition (the ability of a distant central power to easily observe and process local information) is consistent.</p></div><div class="lang-zh cn-body"><p>在这篇文章中的对应物：老师提问后学生正确回答：是矿产的可见度/可监控性。钶钽矿是体积大、难以隐藏的矿产（类似于直接税中的土地，高 q），黄金则容易隐藏（类似于间接税中的流动商品，低 q）。</p><p>核心发现：钶钽矿价格上涨（高可监控性）：武装团体在矿山设卡征收生产税，不需要深入渗透村庄社会。只需建立对矿区的暴力垄断。黄金价格上涨（低可监控性）：武装团体无法直接在生产环节征税（因为黄金容易隐藏），转而征收消费税：进入村庄，对市场和家庭征税。这需要发展更多渗透社会的”国家制度”，某种程度上也给了当地居民更多话语权，与福利效应的实证结果一致。q</p><p>课堂批评：批评一（Speaker 2）：文章用 Olson 的”坐寇”（stationary bandit）框架来包装，但这个框架的核心假设是长时间跨度（long time horizon）。DRC 的武装团体显然不知道价格冲击会持续多久，而且他们观察到矿产价格的波动，很可能知道不会持续太久。”坐寇”框架在这里似乎并不适用。</p><p>老师的回应：同意。时间跨度更多是一个范围条件：武装团体需要某种最低限度的时间跨度才会投入建制，但真正驱动他们建立”坐寇”式制度的不是时间跨度的变化，而是可征税商品的价格变化。批评二（Speaker 5/Tanvi）：文章从未定义什么是”国家”。论证是循环的：通过武装团体采取的功能（征税、提供某种秩序）来定义”国家形成”，然后声称这是关于国家起源的研究。</p><p>老师的回应：完全同意。文献综述”非常混乱”（very chaotic），脚注中对本课程已读文献的引用常常不得其所。这对于在 JPE 上发表至关重要：宣称这是关于”国家形成”的大论断。但对于课堂的分析目的而言，这个框架问题可以搁置。我们可以将这篇文章理解为一项关于机制的研究：在什么条件下，掌握暴力的团体会有激励发展特定的国家功能。批评三（老师自己）：这篇文章不能直接告诉我们数千年前国家最初形成时发生了什么，因为 DRC的武装团体是在一个已有现代国家（虽然很弱）的环境中运作的，不是”原始状态”下的国家起源。但它确实为某些机制提供了有趣的实证检验场域。关于文章的结构：文章试图在一篇期刊论文中塞入太多内容（包括武装团体身份认同的部分），导致文献综述混乱、背景信息不足。老师认为这本该写成一本书：武装团体身份认同的部分”会是书中很有趣的一章，而不是回归表中的一行”。一位学生（Speaker 2）反而认为身份认同部分更有趣、更有说服力。关于实证论文中大量回归表的讨论：学生（Speaker 8）问为什么实证论文要堆叠这么多回归。老师解释这不是期刊的正式要求，而是同行评审过程的均衡结果。每一列回归都有其存在的理由：第一列是双变量系数，加入控制变量、加入固定效应、换估计方法（OLS→IV）、子样本分析等，目的是检验结果是否对替代解释和方法选择具有稳健性。但由于篇幅限制，每一列的理由通常不会详细解释：需要读者具备专业知识来”读懂”这些表格。</p><p>老师的回应：不像腐败那么绝望，但确实困难。老师提到了两个前沿方向：（1）自己的研究关注政府如何内生地投资于提升 q，经验应用中使用了一个可辨识性的”小众”指标（niche measure）；（2）测量方面，跨国可比较的指标（如某些现有数据集）远不如 GDP 之于物质福利那样成熟。而且许多可辨识性的指标会混合不同的概念维度，即使在 Stasavage 的书中，每一章对可辨识性的操作化都不同，尽管理论上的定义（远方中央权力能够轻松观察和处理地方信息的能力）是一致的。</p></div>
+        <details><summary data-en="Shared week context" data-zh="本周共享背景">Shared week context: the blackboard principal-agent model &amp; cross-reading synthesis</summary><div class="lang-en cn-body">
+<p>Lecture framing: the Feb. 26 class used a principal-agent toy model to organize the week around legibility, monitoring, and centralization. The ruler chooses an institutional form, indirect rule/tax farming (\(I\)) or direct rule/state administration (\(D\)); the agent chooses effort \(e\in\{0,1\}\); and effort affects the probability of high tax revenue \(R\in\{L,H\}\).</p>
+<div class="formula-box">\[
+  \Pr(R=H\mid e=1)=p\in(0,1),\qquad \Pr(R=H\mid e=0)=0.
+\]</div>
+<p>The key monitoring parameter is:</p>
+<div class="formula-box">\[
+  q=\Pr(e=0\mid R=L),\qquad q\in\left[\frac{1}{2},1\right].
+\]</div>
+<p>Indirect rule/tax farming works through a share contract. The agent's incentive compatibility constraint and the ruler's optimal share are:</p>
+<div class="formula-box">\[
+  pSH\ge k,\qquad S_I^*=\frac{k}{pH}.
+\]</div>
+<p>The ruler's profit under indirect rule is independent of monitoring quality:</p>
+<div class="formula-box">\[
+  \pi_I=p(1-S_I^*)H=pH-k.
+\]</div>
+<p>Direct rule/state administration adds the threat of dismissal. If the agent is retained, the position has continuation value \(V&gt;0\). The incentive constraint, optimal share, and profit are:</p>
+<div class="formula-box">\[
+  pSH+qV\ge k,\qquad S_D^*=\max\left\{0,\frac{k-qV}{pH}\right\}.
+\]</div>
+<div class="formula-box">\[
+  \pi_D=\begin{cases}
+  pH, &amp; qV&gt;k,\\
+  pH-k+qV, &amp; qV\le k.
+  \end{cases}
+\]</div>
+<p>The institutional switch from \(I\) to \(D\) requires paying a transition cost \(C\). Direct rule is chosen when:</p>
+<div class="formula-box">\[
+  \pi_D-C\ge\pi_I\quad\Longleftrightarrow\quad qV\ge C\quad\Longleftrightarrow\quad q^*=\frac{C}{V}.
+\]</div>
+<p>The core takeaway is that tax farming is the fallback institution when monitoring is weak, while direct administration becomes attractive once monitoring and dismissal can discipline agents enough to justify the transition cost.</p>
+<div class="table-wrap"><table class="sf-table"><thead><tr><th>Reading</th><th>Role in the model</th><th>Core dependent variable</th><th>Status of \(q\)</th></tr></thead><tbody>
+<tr><td>Kiser (1994)</td><td>Contract choice: tax farming vs. state administration.</td><td>Institutional form of tax collection.</td><td>Mostly exogenous; tax type, state size, ruler autonomy, and control technology shift monitoring.</td></tr>
+<tr><td>Sng (2014)</td><td>Scale expansion dilutes monitoring capacity.</td><td>Decline of Qing fiscal capacity.</td><td>Exogenous to the ruler in the key model; distance and scale reduce effective monitoring.</td></tr>
+<tr><td>Stasavage (2020)</td><td>Moves from early democracy to hierarchy as bureaucratic technology improves.</td><td>Early democracy vs. hierarchical rule.</td><td>Begins to endogenize \(q\): writing, mapping, and bureaucracy raise legibility.</td></tr>
+<tr><td>Sánchez de la Sierra (2020)</td><td>Uses mineral visibility as an empirical proxy for taxable legibility.</td><td>Forms of taxation by armed groups.</td><td>Exogenous to armed actors, driven by commodity characteristics.</td></tr>
+</tbody></table></div>
+<p>The progressive logic of the week is: start with Kiser's narrow contract-choice problem, then add the rebellion constraint (Sng), the endogeneity of legibility (Stasavage), and causal identification of concrete mechanisms (Sánchez de la Sierra).</p>
+</div><div class="lang-zh cn-body">
+<p>课堂框架：2月26日的课堂用一个委托-代理玩具模型来组织本周文献，核心是 legibility / monitoring / centralization。统治者选择制度形式：间接统治/包税制（\(I\)）或直接统治/科层行政（\(D\)）；代理人选择是否努力 \(e\in\{0,1\}\)；努力影响税收收入 \(R\in\{L,H\}\) 的分布。</p>
+<div class="formula-box">\[
+  \Pr(R=H\mid e=1)=p\in(0,1),\qquad \Pr(R=H\mid e=0)=0.
+\]</div>
+<p>关键监控参数是：</p>
+<div class="formula-box">\[
+  q=\Pr(e=0\mid R=L),\qquad q\in\left[\frac{1}{2},1\right].
+\]</div>
+<p>间接统治/包税制通过分成合约激励代理人。代理人的激励相容约束和统治者的最优分成为：</p>
+<div class="formula-box">\[
+  pSH\ge k,\qquad S_I^*=\frac{k}{pH}.
+\]</div>
+<p>间接统治下，统治者利润与监控质量无关：</p>
+<div class="formula-box">\[
+  \pi_I=p(1-S_I^*)H=pH-k.
+\]</div>
+<p>直接统治/科层行政加入了解雇威胁。代理人如果保住职位，会获得续约价值 \(V&gt;0\)。激励约束、最优分成和统治者利润为：</p>
+<div class="formula-box">\[
+  pSH+qV\ge k,\qquad S_D^*=\max\left\{0,\frac{k-qV}{pH}\right\}.
+\]</div>
+<div class="formula-box">\[
+  \pi_D=\begin{cases}
+  pH, &amp; qV&gt;k,\\
+  pH-k+qV, &amp; qV\le k.
+  \end{cases}
+\]</div>
+<p>从 \(I\) 转向 \(D\) 需要支付制度转换成本 \(C\)。直接统治被选择当且仅当：</p>
+<div class="formula-box">\[
+  \pi_D-C\ge\pi_I\quad\Longleftrightarrow\quad qV\ge C\quad\Longleftrightarrow\quad q^*=\frac{C}{V}.
+\]</div>
+<p>核心结论：监控弱时，包税制是兜底制度；当监控与解雇威胁足以约束代理人并覆盖转换成本时，科层行政才变得有吸引力。</p>
+<div class="table-wrap"><table class="sf-table"><thead><tr><th>文献</th><th>在模型中的角色</th><th>核心被解释变量</th><th>\(q\) 的状态</th></tr></thead><tbody>
+<tr><td>Kiser (1994)</td><td>合约选择：包税制 vs. 国家行政征收。</td><td>税收征集的制度形式。</td><td>基本外生；税种、国家规模、统治者自主性、控制技术影响监控。</td></tr>
+<tr><td>Sng (2014)</td><td>规模扩张稀释监控能力。</td><td>清朝财政能力衰退。</td><td>在关键模型中对统治者近似外生；距离和规模降低有效监控。</td></tr>
+<tr><td>Stasavage (2020)</td><td>官僚技术提高后，治理从早期民主转向等级制。</td><td>早期民主 vs. 等级统治。</td><td>开始内生化 \(q\)：文字、测绘、官僚制提高可读性。</td></tr>
+<tr><td>Sánchez de la Sierra (2020)</td><td>以矿物可见度作为可征税性的经验代理。</td><td>武装团体的征税形式。</td><td>对武装行为者外生，由商品物理特征决定。</td></tr>
+</tbody></table></div>
+<p>本周的渐进逻辑是：从 Kiser 的狭窄合约选择问题出发，依次加入叛乱约束（Sng）、可读性的内生化（Stasavage），以及具体机制的因果识别（Sánchez de la Sierra）。</p>
+</div></details>
+        <p class="cn-src" data-en="Source: Feb26_lecture_notes.pdf · Feb 26 · Week 8 lecture" data-zh="来源：Feb26_lecture_notes.pdf · Feb 26 · Week 8 lecture">Source: Feb26_lecture_notes.pdf · Feb 26 · Week 8 lecture</p>
+      </section>
+
+        <nav class="node-nav">
+          <a class="prev" href="stasavage2020.html"><small data-en="Previous reading" data-zh="上一篇">Previous reading</small>Stasavage 2020</a>
+          <span class="disabled next"><small data-en="No next reading" data-zh="无下一篇">No next reading</small></span>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

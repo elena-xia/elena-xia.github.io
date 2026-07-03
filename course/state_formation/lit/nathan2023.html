@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nathan 2023 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 6" data-zh="第 6 周">Week 6</span> · <span data-en="Coercion–Extraction lane" data-zh="强制–汲取层">Coercion–Extraction lane</span> · <span data-en="Twentieth century &amp; contemporary (S5)" data-zh="二十世纪与当代（S5）">Twentieth century &amp; contemporary (S5)</span></p>
+        <h1><span class="lang-en">Noah L. Nathan (2023), The Scarce State: Inequality and Political Power in the Hinterland.</span><span class="lang-zh">内森（2023）《稀缺的国家：边陲地区的不平等与政治权力》。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#b98d40" data-en="Case illustration" data-zh="案例说明">Case illustration</span><span class="chip" style="background:#607066" data-en="Panel FE" data-zh="面板固定效应">Panel FE</span><span class="chip" style="background:#6b8f5a" data-en="Field data" data-zh="田野数据">Field data</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The book examines multiple interconnected dependent variables that capture the societal and political effects of state action in hinterland regions. These include: (1) socioeconomic inequality at both the inter-ethnic and intra-ethnic levels, particularly within and between rural communities; (2) elite capture and dynastic politics, meaning the extent to which specific families dominate access to political power across generations; (3) clientelism, especially the role of traditional chiefs as electoral brokers and intermediaries between politicians and voters; and (4) political violence, including both intra-communal conflicts over chieftaincy succession and inter-ethnic conflicts over land and resources (pp. 7, 17-18, 26-27).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本书考察了多个相互关联的因变量，这些变量捕捉了国家行动在边陲地区的社会和政治效应。这些因变量包括：（1）社会经济不平等，包括族群间和族群内部层面，特别是农村社区之间和内部的不平等；（2）精英俘获与政治家族，即特定家族跨代垄断政治权力的程度；（3）庇护主义，尤其是传统酋长作为选举掮客和政客与选民之间中介人的角色；（4）政治暴力，包括围绕酋长继承的社区内部冲突以及围绕土地和资源的族群间冲突（第7、17-18、26-27页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The central independent variable is state scarcity in hinterland regions, which the author defines through two key dimensions: (1) the state’s limited physical presence, the number of administrative offices, officials, and infrastructure in a region; and (2) the state’s relative resource advantages over society, the ratio between the economic value of resources the state can provide compared to what is available through the private market (pp. 9-12). The concept of state scarcity differs from the commonly used term “state weakness” because it emphasizes that even very absent and seemingly incapable states can still have enormous impacts on society when they control resources far more valuable than those available in the local economy (p. 5).</p>
+          </div>
+          <div class="lang-zh">
+            <p>核心自变量是边陲地区的国家稀缺性，作者通过两个关键维度来定义这一概念：（1）国家有限的实体存在，一个地区行政机构、官员和基础设施的数量；（2）国家相对于社会的资源优势，国家能够提供的资源的经济价值与私人市场可获得资源之间的比率（第9-12页）。国家稀缺性的概念不同于常用的“国家软弱”一词，因为它强调即使是非常缺席且看似无能的国家，当其控制的资源远比当地经济中可获得的资源更有价值时，仍然能够对社会产生巨大影响（第5页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>Nathan /ˈneɪθən/ conceptualizes the state as the set of bureaucratic organizations that act out the orders of state leaders as they attempt to govern (p. 8). This organizational definition is narrower than anthropological approaches that view the state as a social imaginary or process of political contestation. The author deliberately simplifies by treating the state as a unitary organ that follows its leaders’ directives, focusing on national state leaders, whether autocrats or elected politicians, as the decision-makers guiding state behavior (pp. 8-9).</p>
+            <p>The measurement of state presence draws on multiple empirical indicators. First, the author uses age heaping in census data as a proxy for state territorial reach and capacity, following Lee and Zhang (2017). The Myers Score, which measures clustering in reported ages ending in zero or five, indicates populations’ limited interaction with the formal state and resulting lack of access to birth certificates, school enrollment, or government documents (pp. 61-62). Second, the author constructs original data on the geographic footprint of colonial state facilities from archival sources, measuring the percentage of communities within walking distance (10 kilometers) of government facilities over time (pp. 66-67). Third, the author examines school construction as the primary measure of state service provision, documenting the expansion of schools across Northern Ghana /ˈɡɑːnə/ from 1901 to 1960 (pp. 84-85).</p>
+          </div>
+          <div class="lang-zh">
+            <p>内森将国家概念化为在国家领导人试图进行治理时执行其命令的官僚组织集合（第8页）。这一组织性定义比那些将国家视为社会想象或政治竞争过程的人类学方法更为狭窄。作者有意简化处理，将国家视为遵循领导人指令的统一机构，聚焦于作为引导国家行为的决策者的国家领导人，无论是独裁者还是民选政治家（第8-9页）。</p>
+            <p>国家存在的测量采用了多个经验指标。首先，作者采用人口普查数据中的年龄堆积现象作为国家领土覆盖范围和能力的代理指标，遵循Lee和Zhang（2017）的方法。迈尔斯分数衡量报告年龄中以零或五结尾的聚集程度，反映人口与正式国家互动有限以及由此导致的无法获得出生证明、学校注册或政府文件的情况（第61-62页）。其次，作者从档案资料中构建了关于殖民地国家设施地理足迹的原创数据，测量随时间推移位于政府设施步行距离（10公里）内的社区百分比（第66-67页）。第三，作者考察学校建设作为国家服务提供的主要测量指标，记录了1901年至1960年间北加纳学校的扩张情况（第84-85页）。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The book’s central argument challenges the common assumption that states with limited physical presence are necessarily states with limited impact on society. Nathan contends that the state’s scarcity, the fact that the state has so few points of contact with society and makes so few attempts at governing, is itself what allows the isolated actions that the state does take to have outsized effects (p. 7). This argument proceeds through three interconnected claims.</p>
+            <p>First, in regions of state scarcity, even very absent states regularly control the allocation of resources far more valuable than those otherwise available in society. When such a state acts, it typically distributes some resources to society. But because the state is limited and incapable, these resources are often targeted narrowly, to small sets of beneficiaries, rather than reaching society at large. These beneficiaries receive economic windfalls that elevate them in socioeconomic status relative to everyone else (p. 6). The economic language of scarcity provides a more appropriate metaphor than common terms like “limited state presence” or “state weakness” because it captures how the state’s few actions carry enormous relative weight, much as a scarce good in a marketplace commands a higher price (p. 5).</p>
+            <p>Second, if the state remains scarce and takes few new actions that benefit new beneficiaries, the advantages created by earlier state actions compound over time. Seemingly minor and isolated state actions can then have large long-term effects on socioeconomic inequality, creating new elites and sparking substantial changes to societal institutions. In turn, state-generated inequality affects how societal actors contest for political power (pp. 6-7). By contrast, and counterintuitively, in subnational regions where the state is more active, less resource-advantaged relative to a more developed private sector, or both, the same specific state actions will be less impactful on society and politics because new actions soon distribute new windfalls to new recipients, offsetting earlier actions (p. 7).</p>
+            <p>Third, the argument extends to claim that a state which appears weak relative to a “strong society” can paradoxically be the actor who forcefully made that society what it is, creating the very societal elites and institutions who now dominate it. Even in so-called “brown areas”, where the state appears weakest subnationally, society is not a pristine entity free of the state’s effects; these areas cannot be studied independently from the history of the state’s actions, however isolated and limited in scope those actions might appear (p. 6). Rather than zones of near statelessness, as Herbst’s (2000) framework suggests viewing rural regions with limited states, these areas are instead where the footprints of the state’s actions may be most visible in society and politics (p. 6).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本书的核心论点挑战了一个常见假设，即实体存在有限的国家必然是对社会影响有限的国家。内森认为，国家的稀缺性，国家与社会接触点如此之少且治理尝试如此之少这一事实，本身就是使国家所采取的孤立行动能够产生超大效应的原因（第7页）。这一论点通过三个相互关联的主张展开。</p>
+            <p>第一，在国家稀缺的地区，即使是非常缺席的国家也经常控制着远比社会中其他可用资源更有价值的资源分配。当这样的国家采取行动时，它通常会向社会分配一些资源。但由于国家是有限的和无能的，这些资源往往被狭隘地定向，给予小群体受益者，而非惠及整个社会。这些受益者获得经济意外之财，使他们相对于其他所有人的社会经济地位得到提升（第6页）。稀缺性的经济学语言比“有限的国家存在”或“国家软弱”等常用术语提供了更恰当的隐喻，因为它捕捉了国家少数行动所承载的巨大相对权重，就像市场上稀缺商品能够获得更高价格一样（第5页）。</p>
+            <p>第二，如果国家保持稀缺状态，且很少采取使新受益者获益的新行动，那么早期国家行动创造的优势会随时间复合累积。看似微小和孤立的国家行动随后可能对社会经济不平等产生巨大的长期影响，创造新的精英阶层并引发社会制度的重大变化。反过来，国家产生的不平等影响社会行动者如何争夺政治权力（第6-7页）。相反，而且有悖直觉的是，在国家更加活跃、相对于更发达的私营部门资源优势较小、或两者兼具的次国家地区，同样具体的国家行动对社会和政治的影响将较小，因为新行动很快会向新受益者分配新的意外之财，抵消了早期行动的效果（第7页）。</p>
+            <p>第三，该论点进一步主张，相对于“强社会”而言看起来软弱的国家，悖论性地可能正是强力塑造该社会成为今日面貌的行动者，创造了现在主导社会的那些精英和制度。即使在所谓的“棕色地带”，国家在次国家层面看起来最弱的地方，社会也不是免于国家影响的原始实体；这些地区不能脱离国家行动的历史来研究，无论这些行动看起来多么孤立和范围有限（第6页）。这些地区并非如Herbst（2000）框架所建议的那样是接近无国家状态的区域，而是国家行动的足迹在社会和政治中可能最为明显的地方（第6页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>The book proposes both direct and indirect mechanisms through which state scarcity transforms society and politics in hinterland regions.</p>
+            <p>The most direct mechanism operates through the creation of new forms of socioeconomic inequality when the state distributes scarce resources. Nathan develops this mechanism through four foundational assumptions (pp. 39-44):</p>
+            <p>(1) The effects of state interventions are best conceptualized as relative effects on inequality rather than absolute changes. State actions that induce larger changes in relative hierarchy, increasing or reducing inequality and reshuffling the relative distribution of resources, have more meaningful effects on how local society and politics operate. Even large absolute influxes of resources that do not change inequality may have comparatively insignificant impacts (pp. 39-40).</p>
+            <p>(2) How big a relative effect a given state action has depends on the existing level of inequality. Even a seemingly small distribution of resources can have large effects on relative status within previously flat societies with little inequality. By contrast, where there is already substantial stratification from a robust private sector economy, distributing the exact same amount of resources may have a comparatively tiny effect on inequality (p. 41).</p>
+            <p>(3) Initial resource advantages often compound over time. When the state provides one individual or community with a windfall while leaving others without, the beneficiary receives an economic head start. Over time, simply providing the same initial benefit to the non-beneficiary will no longer be enough for them to catch up; the more time passes, catching up requires an increasingly large additional benefit above the value of the initial windfall (pp. 41-42).</p>
+            <p>(4) The private value of many state resources to their recipients is declining in how many others already have the resource. When education is scarce, the private labor market returns to education are higher than if a recent graduate enters a labor market flush with many others with similar qualifications. This makes the timing of state resource distribution matter: earlier interventions can have much larger effects than later ones of the same size (pp. 42-44).</p>
+            <p>In Northern Ghana, these mechanisms operated through the interaction of three specific state actions. First, the colonial invention of chieftaincy among previously acephalous ethnic groups created a new class of state-backed local elites. The British arbitrarily selected certain families to serve as “traditional” intermediaries, placing them in positions of authority that would become hereditary over time (pp. 23-24, 72-77). Second, the expansion of public education from the 1940s through 1960s provided economic windfalls to the small first generation of students able to attend school. These benefits nested on top of the first intervention because chiefs were central in lobbying for and building schools, and were given significant input into early enrollment decisions, allowing their own children to attend before children from other families (pp. 24-25, 83-86). Third, the 1979 land reform that devolved land ownership to chiefs further increased the economic value of chieftaincy positions and dispossessed ethnic groups who lacked their own hierarchies of state-recognized chiefs from land they had farmed for generations (pp. 25, 86-89).</p>
+            <p>Beyond direct effects, the state’s scarcity also produces indirect effects by incentivizing endogenous responses from those who did not benefit from the state’s resources (pp. 53-55). Unlike classic studies that focus on rural responses to state-building as grassroots resistance (Scott 1998, 2009), Nathan argues that residents of hinterland regions often face powerful incentives to change their behavior and societal institutions to better seek out the state and its resources on their own (p. 54).</p>
+            <p>Where the state is resource-advantaged, its resources represent a highly valued bundle of goods. Meanwhile, the state’s absence itself limits its capacity to extract back from the population. Hinterland populations often confront extremely limited direct tax burdens. In such contexts, the immediate threat of state contact may be significantly overstated. To whatever limited extent the state acts, it often becomes a net provider of resources, not a net extractor. New societal elites and institutions that best facilitate improved access to the state can emerge endogenously, as communities shift their behavior on their own (pp. 16-17, 54-55). Chapter 5 of the book documents how “never recognized” ethnic groups in Northern Ghana have begun creating chiefs of their own in the late twentieth and early twenty-first centuries, doing to themselves what the colonial state did decades earlier elsewhere, inventing “traditional” institutions from scratch in an attempt to attract more resources from the state (p. 26).</p>
+            <p>The societal changes produced by state action then reshape the politics of hinterlands through three downstream mechanisms (pp. 56-57):</p>
+            <p>(1) Elite capture: The new elites who emerge from early state windfalls gain economic advantages that allow them to dominate politics, with economic inequality manifesting as political inequality. During autocratic periods, state-created elites can use their new local advantages to muscle aside rivals and attract further rents from state leaders. In electoral periods, these same elites can use their advantages to buy voters’ support, resulting in dynastic politics where politicians from the same small sets of families wield quasi-oligarchical power across generations (p. 17).</p>
+            <p>(2) Clientelism: Elites placed at the top of new socioeconomic hierarchies by the state’s actions can become clientelist brokers, coordinating and delivering local votes in return for further state resources. If these elites are not accountable to community members to hold onto their own positions of power, they may exploit their role as intermediaries for private gain, trading away community members’ votes while capturing many of the benefits. This becomes more likely where elites were elevated artificially by state actions, lacking organic, deeply-rooted social accountability to community members (pp. 17-18).</p>
+            <p>(3) Political violence: The societal changes caused by scarce states can produce political violence. Contrary to common claims, this violence is not an outcome of the state’s incapacity, but emerges because the state’s actions fuel new grievances. Where many residents view the state as a net provider, violence often takes the form of nonstate communal conflicts in which actors within society compete for the state’s attention, rather than explicitly targeting the state as in a civil war. Violence becomes a tool to improve one’s relative position in the hope of securing valuable state resources. Intra-communal violence erupts as residents contest the new intra-ethnic hierarchies emerging from the state’s isolated distribution of resources (p. 18).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本书提出了国家稀缺性转变边陲地区社会和政治的直接和间接机制。</p>
+            <p>最直接的机制通过国家分配稀缺资源时创造新形式的社会经济不平等来运作。内森通过四个基础假设发展了这一机制（第39-44页）：</p>
+            <p>（1）国家干预的效果最好被概念化为对不平等的相对效果，而非绝对变化。那些引发相对层级更大变化，增加或减少不平等并重新洗牌资源相对分配，的国家行动对地方社会和政治运作方式具有更有意义的影响。即使大量绝对资源流入若不改变不平等也可能产生相对微不足道的影响（第39-40页）。</p>
+            <p>（2）特定国家行动产生多大的相对效果取决于现有的不平等水平。即使看似很小的资源分配也可能对先前平等、不平等程度很低的社会中的相对地位产生巨大影响。相比之下，在已经通过强劲私营经济产生实质性分层的地方，分配完全相同数量的资源可能对不平等产生相对微小的影响（第41页）。</p>
+            <p>（3）初始资源优势往往会随时间复合累积。当国家给予某一个人或社区意外之财而让其他人空手而归时，受益者获得了经济上的先发优势。随着时间推移，简单地向非受益者提供同样的初始利益将不再足以让他们追赶上来；时间过得越久，追赶就需要越来越大的超出初始意外之财价值的额外利益（第41-42页）。</p>
+            <p>（4）许多国家资源对其接受者的私人价值随着已经拥有该资源的其他人数量增加而递减。当教育稀缺时，教育的私人劳动力市场回报高于当一个新毕业生进入一个充满许多具有类似资质者的劳动力市场时的回报。这使得国家资源分配的时机至关重要：早期干预可能比同等规模的后期干预更具影响力（第42-44页）。</p>
+            <p>在北加纳，这些机制通过三个具体国家行动的相互作用来运作。首先，殖民地对酋长制的发明在先前无首领的族群中创造了一个新的国家支持的地方精英阶层。英国人任意选择某些家族担任“传统”中介人，将他们置于随时间推移会变成世袭的权威地位（第23-24、72-77页）。其次，从1940年代到1960年代的公共教育扩张为第一代能够上学的少数学生提供了经济意外之财。这些利益叠加在第一次干预之上，因为酋长在游说和建设学校方面发挥了核心作用，并在早期入学决策中获得了重要发言权，使他们自己的孩子能够比其他家庭的孩子更早入学（第24-25、83-86页）。第三，将土地所有权下放给酋长的1979年土地改革进一步增加了酋长职位的经济价值，并剥夺了那些缺乏自己的国家认可酋长层级的族群世代耕种的土地（第25、86-89页）。</p>
+            <p>除了直接影响，国家稀缺性还通过激励那些未从国家资源中受益者的内生回应产生间接影响（第53-55页）。与那些将农村对国家建设的回应聚焦于草根抵抗的经典研究（Scott 1998, 2009）不同，内森认为边陲地区居民往往面临强大的激励，促使他们改变自己的行为和社会制度，以更好地主动寻求国家及其资源（第54页）。</p>
+            <p>在国家具有资源优势的地方，其资源代表着一束高度有价值的物品。同时，国家的缺席本身限制了其从人口中提取的能力。边陲地区人口往往面临极其有限的直接税收负担。在这种背景下，与国家接触的直接威胁可能被大大夸大了。无论国家行动的程度多么有限，它往往成为资源的净提供者，而非净提取者。最能促进改善获取国家资源的新社会精英和制度可以内生地出现，因为社区自行改变自己的行为（第16-17、54-55页）。本书第5章记录了北加纳“从未被承认”的族群如何在二十世纪晚期和二十一世纪初期开始创建自己的酋长，对自己做了殖民地国家几十年前在其他地方做的事情，从零开始发明“传统”制度，试图从国家那里吸引更多资源（第26页）。</p>
+            <p>国家行动产生的社会变化随后通过三个下游机制重塑了边陲地区的政治（第56-57页）：</p>
+            <p>（1）精英俘获：从早期国家意外之财中崛起的新精英获得了使他们能够主导政治的经济优势，经济不平等表现为政治不平等。在独裁时期，国家创造的精英可以利用他们新的地方优势挤走竞争对手并从国家领导人那里吸引更多租金。在选举时期，这些同样的精英可以利用他们的优势收买选民支持，导致来自同一小群家族的政客跨代掌握准寡头权力的政治家族现象（第17页）。</p>
+            <p>（2）庇护主义：被国家行动置于新社会经济层级顶端的精英可以成为庇护主义掮客，协调和交付地方选票以换取更多国家资源。如果这些精英对社区成员不负责任以保持自己的权力地位，他们可能会利用中介人角色谋取私利，出卖社区成员的选票同时攫取大部分利益。这在精英被国家行动人为抬高、缺乏对社区成员有机的、根深蒂固的社会问责的地方更可能发生（第17-18页）。</p>
+            <p>（3）政治暴力：稀缺国家造成的社会变化可能产生政治暴力。与常见说法相反，这种暴力不是国家无能的结果，而是因为国家行动激发了新的不满。在许多居民将国家视为净提供者的地方，暴力往往采取非国家社区冲突的形式，社会内部的行动者争夺国家的关注，而非像内战那样明确针对国家。暴力成为改善自身相对地位以期获得有价值国家资源的工具。社区内部暴力爆发，因为居民争夺从国家孤立的资源分配中产生的新的族群内部层级（第18页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>The book employs a multi-method design drawing on both quantitative and qualitative data sources, with extended field research dating to 2008 and primary data collection in 2018 and 2019 (p. 27).</p>
+            <p>(1) Census Data: The primary quantitative data source is highly localized community- and individual-level census data from three Ghanaian national censuses: 2010, 2000, and 1960. The 2010 data includes individual-level returns located to each individual community, creating a dataset of up to 2.5 million observations representing a 10 percent random sample of individual records within every census tract (Enumeration Area). The 1960 data has been digitized and geo-coded by the author for the first time (p. 27).</p>
+            <p>(2) Historical Archival Data: The author constructed several new datasets from archival sources, including: (a) data on chieftaincy institutions and appointments across Northern Ghana; (b) historical school enrollments and locations coded from colonial annual reports and school rosters from the Northern Regional Archives in Tamale /təˈmɑːleɪ/; and (c) other types of early state activity, including the construction of government facilities over time (pp. 27, 66-67, 84-85).</p>
+            <p>(3) Colonial Border Data: One central piece of data is the location of the Anglo-German colonial border that was in effect from 1899 to 1914, which divided the British Gold Coast from German Togoland /ˈtoʊɡoʊlænd/. This border is the basis for the natural experiment at the heart of the research design (p. 28).</p>
+            <p>(1) Elite Interviews: The author conducted over 110 in-depth interviews, including interviews with politicians (a random sample of 20 current Members of Parliament), government and political party officials, and civil society leaders (p. 27).</p>
+            <p>(2) Oral History Interviews: The author drew heavily on oral history interviews conducted with chiefs, tendanas /tenˈdɑːnəs/ (earth priests), and other community elders in twelve rural communities spanning the three main categories of ethnic groups (always chiefs, invented chiefs, and never recognized). These oral histories allow the analysis to be anchored in community members’ own narratives and collective memories about how the state has impacted their communities (pp. 27-28).</p>
+            <p>(3) Archival Materials: The author also drew on primary archival materials from colonial records, including annual reports of the Northern Territories, correspondence between colonial officials, and administrative documents (various citations throughout Chapter 3).</p>
+            <p>The primary geographic focus is Northern Ghana, comprising the Northern, North East, Savannah, Upper East, and Upper West Regions, approximately 17 percent of Ghana’s present-day population (now approximately 5 million of 30 million) (p. 20). The temporal scope spans from the onset of colonial rule in 1901 through the present day, with particular attention to three critical junctures: the early colonial period (1902-1930s) when chieftaincy was invented; the late colonial and early independence period (1945-1960) when education expanded; and the late 1970s when land reform occurred.</p>
+            <p>The analyses operate at multiple units of analysis depending on the specific outcome being examined: (1) individual-level for human capital and socioeconomic outcomes; (2) community-level (census Enumeration Areas) for measuring local public goods provision and community characteristics; and (3) ethnic group-level for comparing institutions across the three categories of groups (always chiefs, invented chiefs, never recognized).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本书采用多方法设计，利用定量和定性数据来源，田野调查始于2008年，主要数据收集于2018年和2019年（第27页）。</p>
+            <p>（1）人口普查数据：主要定量数据来源是来自加纳三次全国人口普查（2010年、2000年和1960年）的高度本地化的社区和个人层面数据。2010年数据包括定位到每个社区的个人层面记录，创建了一个多达250万观测值的数据集，代表每个普查区（统计区）内个人记录的10%随机样本。1960年数据首次由作者数字化并进行了地理编码（第27页）。</p>
+            <p>（2）历史档案数据：作者从档案来源构建了几个新数据集，包括：（a）整个北加纳酋长制度和任命的数据；（b）从殖民地年度报告和塔马利北部地区档案馆的学校名册中编码的历史学校注册和位置数据；（c）其他类型的早期国家活动，包括政府设施随时间的建设情况（第27、66-67、84-85页）。</p>
+            <p>（3）殖民边界数据：一项关键数据是1899年至1914年间有效的英德殖民边界的位置，该边界将英属黄金海岸与德属多哥兰分开。这条边界是研究设计核心的自然实验的基础（第28页）。</p>
+            <p>（1）精英访谈：作者进行了超过110次深度访谈，包括对政客（当前国会议员的20人随机样本）、政府和政党官员以及公民社会领袖的访谈（第27页）。</p>
+            <p>（2）口述历史访谈：作者大量依赖对酋长、滕达纳（大地祭司）和其他社区长老进行的口述历史访谈，这些访谈在十二个农村社区进行，涵盖三种主要族群类别（一直有酋长、发明的酋长和从未被承认）。这些口述历史使分析能够植根于社区成员关于国家如何影响其社区的自身叙述和集体记忆中（第27-28页）。</p>
+            <p>（3）档案材料：作者还利用了殖民记录中的原始档案材料，包括北部领土的年度报告、殖民官员之间的通信以及行政文件（第3章中的各处引用）。</p>
+            <p>主要地理焦点是北加纳，包括北部、东北、萨瓦纳、上东部和上西部地区，约占加纳现有人口的17%（目前约3000万中的500万）（第20页）。时间跨度从1901年殖民统治开始延伸至今，特别关注三个关键转折点：酋长制被发明的殖民早期（1902-1930年代）；教育扩张的殖民晚期和独立早期（1945-1960年）；以及土地改革发生的1970年代晚期。</p>
+            <p>根据所考察的具体结果，分析在多个分析单位上进行：（1）个人层面用于人力资本和社会经济结果；（2）社区层面（普查统计区）用于测量地方公共物品提供和社区特征；（3）族群层面用于比较三类群体（一直有酋长、发明的酋长、从未被承认）之间的制度。</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>The research design primarily relies on process tracing of the over-time effects of state actions within a single hinterland region, focusing on the {absent, advantaged} cell of the author’s typology (p. 28).</p>
+            <p>At the heart of the research design is a natural experiment based on the colonial border between British and German territory. For a brief 15-year period at the outset of colonial rule (1899-1914), roughly one quarter of Northern Ghana was part of German Togoland before being absorbed into the British Gold Coast during World War I. The initial Anglo-German border split the region’s population in a highly arbitrary manner, indeed, British officials themselves referred to this border as an “arbitrary boundary” (p. 28).</p>
+            <p>This border is the critical juncture that assigned communities on each side to different later paths of state-society relations. Most importantly, almost all precolonially acephalous communities initially under British rule experienced the imposition of chieftaincy, becoming the “invented chiefs” groups, while otherwise similar communities under initial German rule did not, becoming the “never recognized” groups. Because the next two major state actions (education and land reform) nested on top of this initial assignment of communities to chiefs, the 1899-1914 Anglo-German border provides a plausibly exogenous source of leverage with which to estimate the effects of state actions across time (p. 28).</p>
+            <p>For the natural experiment to be valid, several assumptions must hold:</p>
+            <p>(1) Exogeneity of border placement: The location of the Anglo-German border must have been unrelated to preexisting differences between communities on either side that might independently affect the outcomes of interest. The author argues this assumption is plausible because the border was drawn by European diplomats in the 1880s and 1890s without detailed knowledge of the local population, based on geopolitical considerations rather than local characteristics (pp. 65-66, 80).</p>
+            <p>(2) Parallel trends / no differential pre-trends: Communities on both sides of the border must have been on similar trajectories prior to the imposition of different colonial policies. The book addresses this through detailed historical analysis showing that both sides were populated by ethnically and institutionally similar acephalous groups prior to colonial rule.</p>
+            <p>(3) No spillovers: The treatment of communities on one side of the border must not have affected outcomes for communities on the other side. This assumption is addressed through the research design’s focus on outcomes that are likely to be determined at the community and household level.</p>
+            <p>The author details the external validity and scope conditions of the main argument by drawing on shadow cases (pp. 28-29). The most direct comparison is to Southern Ghana, where the state was both much more active and less resource-advantaged versus society than in the North. The South’s urban areas and rural cash crop zones serve as the natural comparison to Northern Ghana in the {present, non-advantaged} cell of the typology. In addition, in Chapters 2 and 9, the author includes additional shadow cases from Peru /pəˈruː/ and the Philippines /ˈfɪlɪpiːnz/ that capture the two less common, off-diagonal cells of the typology, allowing variation in the two main dimensions while demonstrating that the state’s presence and resource advantages serve as the principal scope conditions for the theory.</p>
+          </div>
+          <div class="lang-zh">
+            <p>研究设计主要依赖于过程追踪，追踪单一边陲地区内国家行动的跨时间效应，聚焦于作者类型学中的{缺席、有优势}单元格（第28页）。</p>
+            <p>研究设计的核心是一个基于英德殖民边界的自然实验。在殖民统治开始时的15年短暂时期（1899-1914年），北加纳约四分之一的地区属于德属多哥兰，后在第一次世界大战期间被并入英属黄金海岸。最初的英德边界以高度任意的方式分割了该地区的人口，事实上，英国官员自己称这条边界为“任意边界”（第28页）。</p>
+            <p>这条边界是一个关键转折点，将最初位于边界两侧的社区分配到随后不同的国家-社会关系轨迹上。最重要的是，几乎所有最初在英国统治下的先前无首领社区都经历了酋长制的强加，成为“发明的酋长”群体，而最初在德国统治下的其他类似社区则没有，成为“从未被承认”的群体。因为接下来的两个主要国家行动（教育和土地改革）都叠加在这一社区到酋长的初始分配之上，1899-1914年的英德边界提供了一个可信的外生杠杆来源，用以估计国家行动跨时间的效应（第28页）。</p>
+            <p>为使自然实验有效，必须满足几个假设：</p>
+            <p>（1）边界位置的外生性：英德边界的位置必须与边界两侧社区之间可能独立影响关注结果的既有差异无关。作者认为这一假设是合理的，因为边界是在1880年代和1890年代由欧洲外交官在不详细了解当地人口的情况下，基于地缘政治考虑而非地方特征划定的（第65-66、80页）。</p>
+            <p>（2）平行趋势/无差异性前趋势：边界两侧的社区在实施不同殖民政策之前必须处于相似的轨迹上。本书通过详细的历史分析来解决这个问题，表明在殖民统治之前，边界两侧都居住着族群和制度上相似的无首领群体。</p>
+            <p>（3）无溢出效应：对边界一侧社区的处理不得影响另一侧社区的结果。这一假设通过研究设计聚焦于可能在社区和家庭层面决定的结果来解决。</p>
+            <p>作者通过借鉴影子案例来详述主要论点的外部有效性和范围条件（第28-29页）。最直接的比较是与南加纳，那里的国家比北部更加活跃且相对于社会的资源优势更小。南部的城市地区和农村经济作物区在类型学的{存在、无优势}单元格中作为北加纳的自然比较对象。此外，在第2章和第9章中，作者还包括了来自秘鲁和菲律宾的额外影子案例，这些案例捕捉了类型学中两个较不常见的对角线外单元格，允许在两个主要维度上变化的同时证明国家的存在和资源优势是该理论的主要范围条件。</p>
+          </div>
+        </section>
+
+
+
+        <nav class="node-nav">
+          <a class="prev" href="acharyalee2023.html"><small data-en="Previous reading" data-zh="上一篇">Previous reading</small>Acharya &amp; Lee 2023</a>
+          <span class="disabled next"><small data-en="No next reading" data-zh="无下一篇">No next reading</small></span>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

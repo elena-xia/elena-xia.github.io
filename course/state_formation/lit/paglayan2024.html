@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paglayan 2024 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 11" data-zh="第 11 周">Week 11</span> · <span data-en="Organization–Representation lane" data-zh="组织–代表层">Organization–Representation lane</span> · <span data-en="The long nineteenth century (S4)" data-zh="长十九世纪（S4）">The long nineteenth century (S4)</span></p>
+        <h1><span class="lang-en">Agustina S. Paglayan (2024), Raised to Obey: The Rise and Spread of Mass Education, chs. 1, 3.</span><span class="lang-zh">帕格拉扬（2024）《养育以服从：大众教育的兴起与传播》第1、3章。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#607066" data-en="Panel FE" data-zh="面板固定效应">Panel FE</span><span class="chip" style="background:#315b7c" data-en="Comparative history" data-zh="比较历史">Comparative history</span><span class="chip" style="background:#b0713f" data-en="Diff-in-diff" data-zh="双重差分">Diff-in-diff</span><span class="chip" style="background:#62577f" data-en="Belief production" data-zh="信念生产">Belief production</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The central outcome of the book is the emergence and expansion of state-regulated primary education systems. In Chapters 1 and 3, this is the main object to be explained: why central governments began to regulate, fund, monitor, and expand primary education for the masses, rather than leaving children’s education to families, churches, and local communities. More specifically, the book is interested in at least two closely related dimensions of this outcome. First, it studies the emergence of state intervention in primary education: when governments began to monitor enrollment, fund schools, regulate curricula, regulate teacher training/certification, require provision, or pass compulsory schooling laws. Second, it studies the expansion of access to primary schooling, most visibly through rising enrollment rates. Chapters 1 and 3 also make clear that the shape of these systems matters: curriculum, teacher policy, inspection, and classroom discipline are not secondary details but part of what the state was building, though the detailed analysis of institutional design is developed more fully in later chapters.</p>
+          </div>
+          <div class="lang-zh">
+            <p>本书的核心因变量是国家规制的初等教育体系的出现与扩张。在第1章和第3章中，作者主要试图解释的是：中央政府为何开始规制、资助、监测并扩张面向大众的初等教育，而不是继续把儿童教育留给家庭、教会和地方社会。更具体说，这个结果至少有两个紧密相关的维度。第一，是国家干预的出现：政府何时开始监测入学、资助学校、规定课程、规制教师训练与认证、要求普及供给、通过义务教育法。第二，是初等教育覆盖面的扩张，最直观地体现在入学率上升。第1章和第3章也明确表明，教育体系的制度形态同样重要：课程内容、教师政策、督学制度和课堂纪律，并不是附带细节，而是国家所建构之体系的一部分；只是对制度设计的细致分析主要在后续章节展开。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The main explanatory factor is violent internal conflict involving the masses and perceived by national elites as threatening social order and the state’s stability. The book uses civil war as a particularly tractable empirical indicator in Chapter 2, but Chapters 1 and 3 make clear that the broader concept is not limited to civil war alone. It also includes peasant revolts, food riots, insurrections, social revolutions, mass protests, and other episodes of internal disorder that reveal the danger of mass violence and intensify elite fears of anarchy, crime, or political instability. What matters is not conflict in the abstract. It is internal conflict that convinces elites that existing tools, such as repression, concessions, and church-led moral instruction, are not enough to preserve order.</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要解释变量是涉及大众并被国家精英感知为威胁社会秩序和国家稳定的暴力性内部冲突。作者在第2章中用内战作为较容易操作化的经验指标，但第1章和第3章都明确指出，更一般的概念并不限于内战。它还包括农民起义、粮食骚乱、暴动、社会革命、大规模抗议以及其他形式的内部失序事件。这些事件的关键不只是“有冲突”，而是它们让精英相信：既有工具（镇压、让步、以及由教会承担的道德教化）已不足以维持秩序。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>Conceptualization and Measurement of the “State”</p>
+            <p>Paglayan conceptualizes the state in a classical state-building sense: as a centralized political authority whose defining function is to maintain social order and consolidate authority within a territory. She explicitly situates her argument against accounts that explain state-building mainly through war-making, coercion, and extraction. Her claim is not that coercion and fiscal centralization were unimportant, but that they were incomplete. In addition to repression and concessions, rulers also invested in indoctrination, and mass primary education became one of the main instruments through which they sought to mold obedient future citizens. Thus, in this book, “state-building” includes armies, taxes, and bureaucracy, but it also includes the capacity of central governments to regulate children’s education, impose common rules, shape moral instruction, certify teachers, and inspect schools. Empirically, the book does not build a single abstract “stateness index.” Instead, it tracks concrete manifestations of central state penetration into primary education: enrollment monitoring, state funding, curriculum regulation, teacher regulation, compulsory schooling, and related interventions.</p>
+          </div>
+          <div class="lang-zh">
+            <p>“国家”与“国家建设”的概念化与测量</p>
+            <p>帕格拉扬以一种典型的国家建设视角来理解国家：国家是维持社会秩序、在一片领土内巩固中央权威的集中化政治权威。她明确将自己的论证置于那些主要通过战争、强制和汲取来解释国家建设的传统叙事之外。她的意思不是说强制和财政集权不重要，而是说这还不够。除了镇压和让步之外，统治者还会投资于灌输/教化，而大众初等教育正是他们塑造未来顺从臣民的重要工具之一。因此，本书中的“国家建设”不仅涉及军队、税收和官僚制，也涉及中央政府规制儿童教育、规定统一规则、塑造道德教育、认证教师和督查学校的能力。经验上，作者并没有构造一个单一抽象的“国家性指数”，而是追踪中央国家渗透进初等教育的具体表现：入学监测、国家资助、课程规制、教师规制、义务教育法等。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The core argument is that state-regulated mass primary education emerged and spread in the West primarily as a state-building strategy for promoting long-term social order, not primarily as a response to democratization, industrialization, or external military rivalry. The book makes this argument in two linked steps.</p>
+            <p>First, it reconstructs an intellectual history: beginning in the early modern period, social contract thinkers, rulers, and reformers increasingly came to believe that primary education could be used to shape children’s beliefs, habits, and moral character in ways favorable to political order. By the late eighteenth century, absolutist Prussia had become the paradigmatic case in which schooling was explicitly connected to discipline, obedience, and respect for sovereign authority. These ideas then diffused widely across Europe and the Americas through reformers, official missions, educational travel, and influential texts.</p>
+            <p>Second, the book argues that the diffusion of these ideas alone cannot explain when centralized education reform actually happened. The missing link was political traction. National elites often resisted state-controlled mass education at first, either because they thought moral education should remain in the hands of parents and the Church, or because they thought the state lacked the resources to undertake so expensive a project. What changed elite coalitions was internal conflict. Episodes of violent disorder increased elite fears that the masses threatened property, life, power, and the viability of the state, while also exposing the limits of traditional tools for keeping order. Under those conditions, proposals for state-regulated primary education became politically attractive because schools promised a long-term way to teach future citizens obedience, discipline, respect for authority, and acceptance of the status quo. In this sense, mass schooling was fundamentally an internal security and state-building project, even if it later also served redistributive, economic, or nation-building purposes.</p>
+          </div>
+          <div class="lang-zh">
+            <p>核心论点是：西方国家规制的大众初等教育体系，首先是作为一种促进长期社会秩序的国家建设策略而出现和扩张的，而不是首先由民主化、工业化或外部军事竞争所驱动。这一论证有两个相互衔接的步骤。</p>
+            <p>第一，作者重构了一条思想史脉络：从近代早期开始，社会契约论者、统治者和改革者越来越相信，初等教育可以用来塑造儿童的信念、习惯和道德品格，从而服务于政治秩序。到18世纪后期，专制普鲁士成为最具代表性的案例，在那里，学校被明确地与纪律、服从以及对主权权威的尊重联系起来。随后，这套观念通过改革者流动、官方考察、教育旅行和关键文本，在欧洲和美洲广泛传播。</p>
+            <p>第二，作者认为：观念扩散本身不足以解释国家何时真正启动中央化教育改革。真正关键的是政治上的traction。起初，许多国家精英并不支持国家控制的大众教育，因为他们认为道德教育应继续由父母和教会负责，或者认为国家无力承担如此昂贵的事业。改变精英联盟的是内部冲突。暴力失序事件强化了精英对大众威胁财产、生命、权力以及国家存续的恐惧，同时也暴露出传统维稳工具的局限。正是在这种条件下，国家规制的初等教育方案才变得具有政治吸引力，因为学校承诺提供一种长期方案：从儿童时期就教会未来公民服从、守纪律、尊重权威并接受现状。就此意义而言，大众学校首先是一个内部安全与国家建设工程，即便它后来也承载了再分配、经济发展或民族建构等目标。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>Paglayan develops mechanisms at two levels.</p>
+            <p>At the political level, internal conflict changes elite incentives and beliefs. Violent episodes generate fear of the masses and reveal that the status quo is more fragile than elites had assumed. They can also reveal the weakness of existing tools: repression may fail, police may defect or sympathize with protesters, and church-based moral education may seem inadequate to produce orderly subjects. These crises therefore help build broader elite coalitions in favor of centralized schooling. Ideas about moral education already existed, but internal conflict made them newly urgent and politically actionable.</p>
+            <p>At the school level, the chapter identifies three main indoctrination mechanisms. First, schools use punishment and reward to teach children that obedience, compliance, and respect for authority are in their own interest. Second, schools teach children to accept their place in society, cultivating moderation, self-sacrifice, and the idea that happiness lies in accepting one’s lot rather than rebelling. Third, schools cultivate habits of obedience through repetition, routines, schedules, silence, marching, recitation, and repeated exposure to morally loaded language in primers and textbooks. Across all three mechanisms, the defining feature is that children are taught to internalize norms and values without room for critical questioning. The chapter then adds two further functions of schooling relevant to order: schools could also keep children off the streets during the day, and teachers could serve as local monitors of children and families.</p>
+          </div>
+          <div class="lang-zh">
+            <p>帕格拉扬在两个层次上展开机制。</p>
+            <p>在政治层面，内部冲突改变了精英的激励与认知。暴力事件会激发对大众的恐惧，并让精英意识到现有秩序比他们原先认为的更加脆弱。它还会暴露既有工具的不足：镇压可能失败，警察可能倒向抗议者，教会式道德教化也可能显得不足以塑造守序臣民。因此，这类危机会帮助形成更广泛的精英联盟，使其转而支持中央化学校体系。也就是说，道德教育的观念原本已经存在，但内部冲突使它突然变得迫切且具有政治可行性。</p>
+            <p>在学校层面，第3章明确提出了三种主要的灌输机制。第一，学校通过惩罚与奖赏，让儿童理解服从、守规矩和尊重权威符合他们自己的利益。第二，学校教儿童接受自己的社会位置，培养节制、自我牺牲，并灌输“幸福来自接受自己的命运，而不是反抗现状”的观念。第三，学校通过重复来塑造服从习惯：时间表、日常程序、安静行进、机械背诵，以及识字教材中不断重复的道德化语言，都会把服从内化为习惯。这三种机制的共同点在于：儿童被要求在没有批判性质疑空间的情况下内化规范与价值。第3章还补充了两个与秩序相关的功能：学校能在白天把儿童从街头隔离出去，而教师也能成为监视儿童及其家庭行为的地方性观察者。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>Because these notes focus on Chapters 1 and 3, the data section should distinguish clearly between what those chapters themselves do and what they preview from the broader book. Chapter 1 introduces two major empirical enterprises. First, the book collects information on the timing of central government intervention in primary education across countries, including enrollment monitoring and, for a subset of Western European and Latin American countries, more detailed forms of intervention such as funding, curriculum regulation, teacher regulation, universal provision, and compulsory schooling. Second, the book assembles a long-run dataset of primary school enrollment for forty-two countries in Europe and the Americas from 1828 onward, complemented by Lee and Lee’s broader global dataset. Chapter 1 also signals that later chapters will use parliamentary debates, political correspondence, government reports, landmark education laws, textbooks, and teacher manuals to study motives and institutional design. Chapter 3 then draws on this broader historical archive and on intellectual history to reconstruct how rulers and reformers thought about education as a tool of order, discipline, and obedience.</p>
+          </div>
+          <div class="lang-zh">
+            <p>由于这份讲义聚焦第1章和第3章，数据部分应当区分清楚：哪些是这两章本身直接展开的，哪些是它们为全书预告的。第1章主要介绍了两项大的经验工作。第一，作者收集了各国中央政府何时开始介入初等教育的信息，包括入学监测；对于部分西欧和拉美国家，还收集了更细的干预形式，如国家资助、课程规制、教师规制、普及供给与义务教育等。第二，作者构建了一个覆盖欧洲和美洲42国、从1828年起的长期初等教育入学数据集，并用 Lee and Lee 的全球数据集进行补充。第1章同时说明，后续章节还将使用议会辩论、政治通信、政府报告、里程碑式教育法、教科书和教师手册，来分析教育改革的动机与制度设计。第3章则更多依靠这一更广泛的历史档案和思想史材料，来重构统治者与改革者如何将教育理解为秩序、纪律和服从的工具。</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>In Chapters 1 and 3, the method is best described as a historical-institutional and theory-building strategy rather than a single causal identification design. Chapter 1 establishes the empirical puzzle and previews broad descriptive patterns: Western countries began regulating and expanding primary education earlier than others, and enrollment accelerated more clearly after internal conflict than after democratization. Chapter 3 then develops the theory that explains these patterns by combining intellectual history, conceptual argument, and historically grounded mechanism analysis. The full book later supplements this with cross-national descriptive analysis and country case studies, but in Chapters 1 and 3 the main methodological move is to identify a pattern that existing theories do not explain well and then provide a historically grounded alternative theory about motives, sequencing, and mechanisms. This means that these chapters do not try to present a fully identified causal estimate. They instead try to show that the author’s interpretation is historically plausible, theoretically coherent, and better able than rival theories to explain when and why state-regulated primary education emerged.</p>
+          </div>
+          <div class="lang-zh">
+            <p>在第1章和第3章中，方法上最准确的表述是：作者采用的是一种历史制度主义式、兼具理论建构性质的研究策略，而不是单一的因果识别设计。第1章先建立经验谜题，并预告若干总体描述性模式：西方国家更早开始规制和扩张初等教育；与民主化相比，内部冲突之后更明显出现入学扩张。第3章则在此基础上发展理论，通过思想史、概念论证和扎根于历史材料的机制分析来解释这些模式。全书后续当然还会辅以跨国描述分析和国家案例研究，但就第1章和第3章而言，主要的方法动作是：指出现有理论解释不足之处，再提出一个更能解释动机、时序和机制的历史性替代理论。也就是说，这两章的任务并不是给出一个完全识别的因果估计，而是证明作者的解释在历史上可信、在理论上自洽，并且比竞争性理论更能说明国家规制初等教育何时、为何出现。</p>
+          </div>
+        </section>
+
+
+
+        <nav class="node-nav">
+          <a class="prev" href="besleypersson2011.html"><small data-en="Previous reading" data-zh="上一篇">Previous reading</small>Besley &amp; Persson 2011</a>
+          <a class="next" href="wang2022.html"><small data-en="Next reading" data-zh="下一篇">Next reading</small>Wang 2022</a>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

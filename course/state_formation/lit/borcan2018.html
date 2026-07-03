@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Borcan et al. 2018 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 4" data-zh="第 4 周">Week 4</span> · <span data-en="Coercion–Extraction lane" data-zh="强制–汲取层">Coercion–Extraction lane</span> · <span data-en="Transhistorical theory &amp; global long-run panels (S0)" data-zh="一般理论与跨国长时段（S0）">Transhistorical theory &amp; global long-run panels (S0)</span></p>
+        <h1><span class="lang-en">Oana Borcan, Ola Olsson &amp; Louis Putterman (2018), “State History and Economic Development: Evidence from Six Millennia,” J. Econ. Growth.</span><span class="lang-zh">博尔灿、奥尔松、普特曼（2018）《国家历史与经济发展：来自六千年的证据》。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#8a6d2e" data-en="Index construction" data-zh="指数构造">Index construction</span><span class="chip" style="background:#607066" data-en="Panel FE" data-zh="面板固定效应">Panel FE</span><span class="chip" style="background:#24493d" data-en="▼ traces to the present" data-zh="▼ 追踪后果至当代">▼ traces to the present</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The main dependent variables of this paper are indicators of economic development, specifically including the following measurement dimensions:</p>
+            <p>1. Contemporary Economic Development Indicators (Year 2000):</p>
+            <p>Log GDP per capita in 2000 CE: The natural logarithm of per capita gross domestic product in constant 2000 US dollars, sourced from the World Bank World Development Indicators database. This is the standard measure of contemporary economic prosperity (p. 19).</p>
+            <p>Technology Adoption Index in 2000 CE: A composite technology adoption index constructed by Comin et al. (2010), covering technological progress in five sectors: agriculture, transportation, communications, writing, and military (p. 20).</p>
+            <p>2. Pre-industrial Economic Development Indicators (1500 CE and earlier):</p>
+            <p>Log Population Density in 1500 CE: Calculated based on population data from McEvedy and Jones (1978) and land area data from the World Bank. In the Malthusian era, population density is a proxy for productivity levels (pp. 19, 24).</p>
+            <p>Urbanization Rate in 1500 CE: Defined as the percentage of total population residing in urban areas (each with a city population size of at least 5,000), sourced from Acemoglu et al. (2005) (pp. 24-25).</p>
+            <p>Technology Adoption Index in 1500 CE: Also constructed by Comin et al. (2010), used to measure pre-industrial technological levels (p. 20).</p>
+            <p>The authors selected these diverse dependent variables based on the following theoretical considerations: under the Malthusian economic regime, productivity improvements translate into population growth rather than increases in per capita income, thus population density and urbanization rates can serve as effective proxy variables for productivity in the pre-industrial era. In the industrial era, per capita GDP can more directly reflect productivity levels (pp. 13-14).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文的主要因变量是经济发展指标，具体包括以下几个测量维度：</p>
+            <p>1. 当代经济发展指标（2000年）：</p>
+            <p>人均GDP对数值（Log GDP per capita in 2000 CE）：以2000年美元计价的人均国内生产总值的自然对数，数据来源于世界银行世界发展指标数据库。这是衡量当代经济繁荣程度的标准指标（第19页）。</p>
+            <p>技术采用指数（Technology Adoption Index in 2000 CE）：由Comin等人（2010）构建的综合技术采用指数，涵盖农业、交通、通讯、书写和军事五个领域的技术进步程度（第20页）。</p>
+            <p>2. 前工业时代经济发展指标（1500年及以前）：</p>
+            <p>人口密度对数值（Log Population Density in 1500 CE）：基于McEvedy和Jones（1978）的人口数据和世界银行的土地面积数据计算得出。在马尔萨斯时代，人口密度是衡量生产力水平的重要代理变量（第19页、第24页）。</p>
+            <p>城市化率（Urbanization Rate in 1500 CE）：定义为居住在城市地区（人口规模至少5000人）的总人口比例，数据来源于</p>
+            <p>Acemoglu等人（2005）（第24-25页）。</p>
+            <p>技术采用指数（Technology Adoption Index in 1500 CE）：同样由Comin等人（2010）构建，用于测量前工业时代的技术水平（第20页）。</p>
+            <p>作者选择这些多元化的因变量基于以下理论考量：在马尔萨斯经济体制下，生产力提升会转化为人口增长而非人均收入增加，因此人口密度和城市化率可以作为前工业时代生产力的有效代理变量。而在工业时代，人均GDP则能够更直接地反映生产力水平（第13-14页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The core independent variable of this paper is the Extended Statehist Index, which represents a major extension of the “State Antiquity Index” originally developed by Bockstette et al. (2002).</p>
+            <p>Temporal Coverage of the Index:</p>
+            <p>The original index only covered 1 CE to 1950 CE</p>
+            <p>This paper extends it backward to 3500 BCE (the time when the first state emerged) and supplements data for 1951-2000 CE</p>
+            <p>In total, it covers 110 fifty-year periods across 159 contemporary countries (pp. 2, 15)</p>
+            <p>Calculation Formula: The index uses the following formula to calculate the cumulative state history score:</p>
+            <div class="formula-box">\[
+              S_{i\tau}=
+              \frac{\sum_{t=0}^{\tau}(1+\rho)^{t-\tau}\,s_{it}}
+              {\sum_{t=0}^{\tau}(1+\rho)^{t-\tau}\,50}.
+            \]</div>
+            <p>Where</p>
+            <div class="formula-box">\[
+              s_{it}=z^1_{it}\cdot z^2_{it}\cdot z^3_{it}\cdot 50,
+            \]</div>
+            <p>and \(\rho\) is the depreciation rate. The authors primarily use a 1% depreciation rate (p. 15).</p>
+            <p>Three Component Dimensions of the Index:</p>
+            <p>State Existence (\(z^1\)): Is there a government above the tribal level? A full score of 1 indicates a complete state exists, 0.75 indicates only a paramount chiefdom, and 0 indicates no government presence (p. 15).</p>
+            <p>Source of Rule (\(z^2\)): Is the government locally or externally based? 1 indicates completely local rule, 0.5 indicates external rule, and 0.75 indicates local government with substantial foreign oversight (p. 15).</p>
+            <p>Territorial Coverage (\(z^3\)): What proportion of the modern country’s territory was under government control? 1 indicates over 50%, 0.75 indicates 25-50%, 0.5 indicates 10-25%, and 0.3 indicates below 10% (p. 15).</p>
+            <p>Ancestry-Adjusted Statehist Index: The authors also constructed a variable accounting for population migration, the “Ancestry-Adjusted Statehist.” This index uses the migration matrix developed by Putterman and Weil (2010) to calculate the weighted average state history score of contemporary populations’ ancestors (by their place of residence in 1500). This adjustment is particularly important for understanding economic development in immigrant countries such as the Americas, Australia, and New Zealand (pp. 22-23).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文的核心自变量是扩展的国家历史指数（Extended Statehist Index），这是对Bockstette等人（2002）最初开发的“国家古老程度指数”（State Antiquity Index）的重大扩展。</p>
+            <p>指数的时间覆盖范围：</p>
+            <p>原始指数仅覆盖公元1年至公元1950年</p>
+            <p>本文将其向前延伸至公元前3500年（第一个国家出现的时间），并补充了1951-2000年的数据</p>
+            <p>总计覆盖110个50年周期，涵盖159个当代国家（第2页、第15页）</p>
+            <p>指数的计算公式： 指数采用以下公式计算累积国家历史得分：</p>
+            <div class="formula-box">\[
+              S_{i\tau}=
+              \frac{\sum_{t=0}^{\tau}(1+\rho)^{t-\tau}\,s_{it}}
+              {\sum_{t=0}^{\tau}(1+\rho)^{t-\tau}\,50}.
+            \]</div>
+            <p>其中，</p>
+            <div class="formula-box">\[
+              s_{it}=z^1_{it}\cdot z^2_{it}\cdot z^3_{it}\cdot 50,
+            \]</div>
+            <p>\(\rho\) 为折旧率，作者主要使用1%的折旧率（第15页）。</p>
+            <p>指数的三个组成维度：</p>
+            <p>国家存在性（\(z^1\)）：是否存在部落水平以上的政府？满分1分表示存在完整国家，0.75分表示仅存在最高酋长制（paramount chiefdom），0分表示无政府存在（第15页）。</p>
+            <p>统治来源（\(z^2\)）：政府是本土还是外来？1分表示完全本土统治，0.5分表示外来统治，0.75分表示本土政府但受外国实质性监督（第15页）。</p>
+            <p>领土覆盖范围（\(z^3\)）：政府控制了现代国家领土的多少比例？1分表示超过50%，0.75分表示25-50%，0.5分表示10-25%，0.3分表示低于10%（第15页）。</p>
+            <p>祖先调整后的国家历史指数： 作者还构建了一个考虑人口迁移的变量，“祖先调整后的国家历史指数”（Ancestry-Adjusted Statehist）。该指数利用Putterman和Weil（2010）开发的迁移矩阵，计算当代人口祖先（按1500年居住地）的加权平均国家历史得分。这一调整对于理解美洲、澳大利亚和新西兰等移民国家的经济发展尤为重要（第22-23页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>Theoretical Conceptualization of the State:</p>
+            <p>The paper’s definition of the “state” follows the classical traditions of political anthropology and sociology. The authors first cite the classic definition by Max Weber: the state is “an entity which upholds the claim to the monopoly of the legitimate use of physical force in the enforcement of its order” (p. 5).</p>
+            <p>Building on this foundation, the authors adopt the evolutionary classification system of human societies proposed by Service (1962), categorizing human social organization into four levels: bands → tribes → chiefdoms → states. This classification system was further developed by scholars such as Johnson and Earle (2000) (pp. 3, 5-6).</p>
+            <p>According to Carneiro’s (1981) definition, the core characteristics of a state include:</p>
+            <p>Having a centralized government</p>
+            <p>Possessing the ability to collect taxes</p>
+            <p>Being able to enforce laws</p>
+            <p>Being capable of mobilizing forces for war (pp. 3, 14)</p>
+            <p>The authors specifically distinguish between chiefdoms and states: while simple chiefdoms fall short of being states, paramount chiefdoms, political entities that incorporate multiple individually substantial chiefdoms, can be understood as a form of incipient state. Therefore, when a polity reaches the paramount chiefdom level, the authors begin according partial weight (0.75 points) (pp. 5, 14).</p>
+            <p>Methods for Identifying State Origins:</p>
+            <p>The authors employ a “diagnostic traits approach” to identify the timing of state emergence. Specifically, when written records are unavailable, the authors rely on the following archaeological evidence to confirm state formation:</p>
+            <p>Monumental structures (such as palaces and temples)</p>
+            <p>Large urban settlements</p>
+            <p>Other material evidence showing the monopolization of power (p. 14)</p>
+            <p>Using Iraq as an example, Uruk’s transition from small settlements to large urban centers with grand architectural structures in the middle of the fourth millennium BCE is viewed as a marker of state formation (p. 14).</p>
+            <p>Coding Examples:</p>
+            <p>Using Belgium as an example: this territory came under large-scale political organization for the first time between 59 and 52 BCE when it was integrated into the Roman Empire. At this time, \(z^1\) is coded as 1 (complete state exists), but \(z^2\) is coded as 0.5 (external rule), and \(z^3\) is coded according to the proportion of territory under Roman control (p. 5).</p>
+            <p>Using Mexico as an example: during the period 450-100 BCE, early urban settlements appeared at Chiapas and Oaxaca, and the authors assigned a score of 0.75 (paramount chiefdom level). By 100 BCE, with large-scale urban growth at Teotihuacan and the development of institutions such as a standing army, the score was raised to 1 (complete state) (p. 14, footnote 23).</p>
+          </div>
+          <div class="lang-zh">
+            <p>国家的理论界定：</p>
+            <p>本文对“国家”的定义遵循政治人类学和社会学的经典传统。作者首先引用马克斯·韦伯（Max Weber /mæks ˈveɪbər/，马克斯·韦伯）的经典定义：国家是“在特定领土内对合法使用暴力拥有垄断权的实体”（第5页）。</p>
+            <p>在此基础上，作者采用了Service（1962）提出的人类社会演化分类体系，将人类社会组织形式分为四个层次：游群（bands）→ 部落（tribes）→ 酋邦（chiefdoms）→ 国家（states）。这一分类体系得到了Johnson和Earle（2000）等学者的进一步发展（第3页、第5-6页）。</p>
+            <p>根据Carneiro（1981）的界定，国家的核心特征包括：</p>
+            <p>拥有中央集权的政府</p>
+            <p>具备征税能力</p>
+            <p>能够执行法律</p>
+            <p>可以动员军队进行战争（第3页、第14页）</p>
+            <p>作者特别区分了酋邦和国家：虽然简单酋邦不足以被视为国家，但最高酋邦（paramount chiefdom），即整合了多个独立酋邦的政治实体，可以被理解为一种萌芽状态的国家。因此，当一个政体达到最高酋邦水平时，作者开始赋予部分权重（0.75分）（第5页、第14页）。</p>
+            <p>国家起源的识别方法：</p>
+            <p>作者采用“诊断特征法”（diagnostic traits approach）来识别国家的出现时间。具体而言，当缺乏文字记录时，作者依据以下考古学证据来确认国家形成：</p>
+            <p>纪念性建筑（如宫殿、神庙）</p>
+            <p>大型城市定居点</p>
+            <p>其他显示权力垄断化的物质证据（第14页）</p>
+            <p>以伊拉克（Iraq /ɪˈrɑːk/，伊拉克）为例，乌鲁克（Uruk /ˈʊrʊk/，乌鲁克）在公元前四千年中期从小型定居点发展为具有宏伟建筑结构的大型城市中心，这一转变被视为国家形成的标志（第14页）。</p>
+            <p>测量的编码实例：</p>
+            <p>以比利时（Belgium /ˈbeldʒəm/，比利时）为例：该地区在公元前59年至52年间被纳入罗马帝国（Roman Empire /ˈroʊmən/），首次出现大规模政治组织。此时，\(z^1\) 编码为1（存在完整国家），但 \(z^2\) 编码为0.5（外来统治），\(z^3\) 根据罗马控制的领土比例进行编码（第5页）。</p>
+            <p>以墨西哥（Mexico /ˈmeksɪkoʊ/，墨西哥）为例：公元前450-100年期间，恰帕斯（Chiapas /tʃiˈɑːpɑːs/，恰帕斯）和瓦哈卡（Oaxaca /wəˈhɑːkə/，瓦哈卡）出现早期城市定居点，作者赋予0.75分（最高酋邦水平）。到公元前100年，特奥蒂瓦坎（Teotihuacan /teɪˌoʊtiːwɑːˈkɑːn/，特奥蒂瓦坎）出现大规模城市增长和常备军等制度，此时提升为1分（完整国家）（第14页脚注23）。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The core argument of this paper is: The relationship between state history and contemporary economic development exhibits a hump-shaped (inverted U-shaped) pattern, rather than the linear positive correlation suggested by previous literature.</p>
+            <p>Specific Content of the Argument:</p>
+            <p>The authors argue that countries with either very short state histories (such as many countries in Sub-Saharan Africa) or very long state histories (such as ancient civilizations like Egypt, Iraq, Turkey, and China) have relatively lower levels of contemporary economic development. In contrast, countries with intermediate state history scores, such as the United Kingdom, Denmark, and Japan, are among the wealthiest nations in the world today (pp. 2-3).</p>
+            <p>Comparison with Existing Literature:</p>
+            <p>Previous studies (such as Bockstette et al. 2002) used only state history data from 1 CE to 1950 CE and found a positive correlation between state history and economic development. This paper reveals that this finding was actually a misleading conclusion caused by incomplete data. Because state history before the Common Era was not coded, the state history scores of ancient civilizations like Egypt and Iraq were severely underestimated, converging with scores of intermediate-history countries like the UK, thereby masking the true hump-shaped relationship (p. 12).</p>
+            <p>Data Support for the Argument:</p>
+            <p>Based on the extended state history index, the authors find:</p>
+            <p>The predicted income-maximizing level of state history is approximately 0.355, very close to the scores of the United Kingdom and most Western European countries (p. 31)</p>
+            <p>Quadratic regressions of state history on per capita GDP show that the linear term coefficient is significantly positive and the quadratic term coefficient is significantly negative, confirming the inverted U-shaped relationship (p. 28, Table 5)</p>
+            <p>This relationship is more robust when using the ancestry-adjusted state history index, with explanatory power significantly improving (R² increases from 5.2% to 23.4%) (p. 33)</p>
+            <p>Historical Evidence for the Argument:</p>
+            <p>The authors illustrate this pattern using four countries as examples:</p>
+            <p>Egypt: State origins date to around 3200 BCE, making it one of the oldest states. It experienced a glorious Old Kingdom period early on but entered relative stagnation from the first millennium BCE, being overtaken by later arrivals such as the Roman Empire (pp. 8-9).</p>
+            <p>Italy: State origins can be traced to the Etruscans around 850 BCE. It reached its peak during the Roman Empire but began declining after the fall of the Western Roman Empire in 476 CE, eventually being overtaken by Northern European countries (p. 9).</p>
+            <p>United Kingdom: State history began around 50 BCE during Roman rule, with internal polities emerging from 401 CE. Leveraging Atlantic trade and institutional innovations, Britain became the world’s leading power after the Napoleonic Wars (p. 9).</p>
+            <p>Estonia: Organized government did not first appear until 1237. Despite having the shortest state history, economic growth has been rapid since independence, with per capita income reaching approximately 70% of the UK’s by 2014 (pp. 9-10).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文的核心论点是：国家历史与当代经济发展之间呈现驼峰形（倒U形）关系，而非此前文献认为的线性正相关关系。</p>
+            <p>论点的具体内涵：</p>
+            <p>作者认为，无论是国家历史极短（如撒哈拉以南非洲许多国家）还是国家历史极长（如埃及Egypt /ˈiːdʒɪpt/、伊拉克、土耳其Turkey /ˈtɜːrki/、中国China /ˈtʃaɪnə/等古老文明）的国家，其当代经济发展水平都相对较低。而那些拥有中等国家历史得分的国家，如英国（United Kingdom /juːˌnaɪtɪd ˈkɪŋdəm/）、丹麦（Denmark /ˈdenmɑːrk/）、日本（Japan /dʒəˈpæn/）等，则是当今世界最富裕的国家（第2-3页）。</p>
+            <p>与既有文献的对比：</p>
+            <p>此前研究（如 Bockstette 等人，2002）仅使用公元1年至1950年的国家历史数据，发现国家历史与经济发展之间呈正相关关系。本文揭示这一发现实际上是数据不完整导致的误导性结论。由于公元前的国家历史未被编码，埃及、伊拉克等古老文明的国家历史得分被严重低估，与英国等中等历史国家的得分趋近，从而掩盖了真实的驼峰形关系（第12页）。</p>
+            <p>论点的数据支撑：</p>
+            <p>基于扩展后的国家历史指数，作者发现：</p>
+            <p>预测的收入最大化国家历史水平约为0.355，非常接近英国和大多数西欧国家的得分（第31页）</p>
+            <p>国家历史与人均GDP的二次项回归显示，线性项系数显著为正，二次项系数显著为负，确认了倒U形关系（第28页表5）</p>
+            <p>这一关系在使用祖先调整后的国家历史指数时更加稳健，解释力显著提高（R²从5.2%提升至23.4%）（第33页）</p>
+            <p>论点的历史佐证：</p>
+            <p>作者以四个国家为例阐释这一模式：</p>
+            <p>埃及：国家起源于约公元前3200年，是最古老的国家之一。早期经历了辉煌的古王国时期，但从公元前一千年开始陷入相对停滞，被罗马帝国等后来者超越（第8-9页）。</p>
+            <p>意大利（Italy /ˈɪtəli/，意大利）：国家可追溯至公元前850年的伊特鲁里亚人（Etruscans /ɪˈtrʌskənz/，伊特拉斯坎人）。罗马帝国时期达到顶峰，但在476年西罗马帝国灭亡后开始衰落，最终被北欧国家超越（第9页）。</p>
+            <p>英国：国家历史始于约公元前50年罗马统治时期，公元401年开始出现内部政体。凭借大西洋贸易和制度创新，英国在拿破仑战争后成为世界领先强国（第9页）。</p>
+            <p>爱沙尼亚（Estonia /ɛˈstoʊniə/）：直到1237年才首次出现有组织政府。尽管国家历史最短，但独立后经济增长迅速，2014年人均收入达到英国的约70%（第9-10页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>The authors propose a theoretical framework based on three core premises to explain how state history affects economic development:</p>
+            <p>Mechanism One: Early State Experience Promotes Productivity Growth</p>
+            <p>In newly established states, improvements in fiscal and institutional capacity, along with strengthened central coordination, have historically been conducive to productivity increases and economic growth. Specifically:</p>
+            <p>State building enables governments to extract taxes from the population, which in turn are transformed into public goods that provide security and more efficient modes of agricultural production (pp. 6, 8)</p>
+            <p>A consolidated bureaucracy enables investments in large public projects, technological innovation, and effective warfare, thus spurring economic growth (p. 6)</p>
+            <p>Research by scholars such as Tilly (1990), Collier (2009), and Besley and Persson (2013) indicates that states with short histories, especially if characterized by lack of autonomy and rule instability, generally have weaker fiscal capacity (p. 6)</p>
+            <p>Empirical research by Dincecco and Katz (2014) reveals strong correlations and potential causal links between administrative infrastructure, high taxes, and economic prosperity (p. 6)</p>
+            <p>Mechanism Two: Overcentralization Leads to Stagnation in Ancient States</p>
+            <p>However, beyond a certain critical point, state experience is instead conducive to the rise of extractive institutions and powerful elites that appropriate tax revenue rather than turn it into public goods. The specific arguments are as follows:</p>
+            <p>Scholars such as Tilly (1990) and Olson (1993) point out that the earliest states developed from the basic need to sustain collective action against external predators. Against “roving bandits,” it was welfare-enhancing to have a community member become a dictator who collected rents (p. 7)</p>
+            <p>But without constraining mechanisms, the autocrat himself becomes a “roving bandit,” maximizing rent extraction. Hence, in an autocracy, good economic performance is unsustainable in the long run (p. 7)</p>
+            <p>Historical examples of ancient states collapsing due to overcentralization abound:</p>
+            <p>The expansive Mesopotamian empire Ur III (c. 2000 BCE) fell when local city-states sought independence, rejecting the overbearing supercentralized bureaucracy designed to channel resources from the periphery to Ur (p. 7)</p>
+            <p>Only a few centuries later, Hammurabi’s great empire collapsed after disempowered local authorities rebelled against the drain on resources for the king’s glorification in Babylon (c. 1600 BCE) (p. 7)</p>
+            <p>Hariri’s (2012) research shows that older indigenously formed states were more likely to develop autocratic institutions than later states (p. 7)</p>
+            <p>Mechanism Three: Latecomers Can Learn from and Surpass Early States</p>
+            <p>Countries with less state experience can exploit the experience and mistakes of countries with greater state experience to advance their productivity levels beyond the maximum reached by the latter. The specific mechanisms include:</p>
+            <p>Institutional learning and innovation: The Romans could learn from Egypt’s experience that a state led by a divine regent was inferior to a republican and subsequently imperial order that made better use of human resources, politically and militarily (p. 11)</p>
+            <p>Avoiding overcentralization paths: In initially peripheral areas like England, the Netherlands, and Scandinavia, local and commercial elites effectively countered tendencies towards power centralization during the maturation process of these younger nation-states, thereby developing democratic political structures with constraints on executive power (p. 8)</p>
+            <p>Geographic location advantages: Britain was able to overtake Italy after 1500 CE partly due to its Atlantic-facing location bringing trade and colonization opportunities, but equally important were its superior political institutions, strengthening government accountability, encouraging commerce, developing superior naval and military capabilities, and leading in the emerging system of international credit (p. 11)</p>
+            <p>Less exposure to external shocks: Regions once peripheral to the more ancient civilizations, slower to develop state institutions, were also less exposed to raids by roaming armies and to incursions by migrating peoples (such as the Persian, Hellenic, Hun, Islamic, Mongol, and Turkic incursions) (p. 8)</p>
+            <p>Supplementary Mechanism: Complex Effects of Colonialism</p>
+            <p>The authors also discuss the differential impacts of colonialism on ancient and young states:</p>
+            <p>For ancient states: Colonization by middle-aged states (such as Britain and France) may have generated negative effects on the stagnation level of earlier developed states. Extractive institutions and other forms of economic domination tied to globalization may have helped latecomers overtake earlier states and may also have contributed to the productivity stagnation or decline of earlier states (p. 12).</p>
+            <p>For young colonial states in Sub-Saharan Africa: Regions with no pre-colonial state institutions had short state histories and spent more than half of their macro-political histories under external rule. With modern state structures thrust upon them from without, they could not build institutional capacity organically, leaving them vulnerable in the face of post-colonial challenges (p. 12)</p>
+          </div>
+          <div class="lang-zh">
+            <p>作者提出了一个基于三个核心前提的理论框架来解释国家历史如何影响经济发展：</p>
+            <p>机制一：早期国家经验促进生产力增长</p>
+            <p>在新建立的国家中，财政能力和制度能力的提升，以及中央协调功能的加强，历史上有助于生产力提升和经济增长。具体而言：</p>
+            <p>国家建设使政府能够从民众中征税，并将税收转化为提供安全保障和更有效农业生产模式的公共产品（第6页、第8页）</p>
+            <p>巩固的官僚体系能够投资大型公共项目、促进技术创新、进行有效的战争动员，从而刺激经济增长（第6页）</p>
+            <p>和Persson（2013）等学者的研究表明，国家历史较短且缺乏自治、统治不稳定的国家通常财政能力较弱（第6页）</p>
+            <p>Dincecco和Katz（2014）的实证研究揭示了行政基础设施、高税收与经济繁荣之间的强相关关系和潜在因果联系（第6页）</p>
+            <p>机制二：过度集权导致古老国家陷入停滞</p>
+            <p>然而，超过一定临界点后，国家经验反而会助长榨取性制度和权力精英的崛起，这些精英侵吞税收而非将其转化为公共产品。具体论证如下：</p>
+            <p>Olson（1993）等学者指出，最早的国家源于对抗外部掠夺者的集体行动需求。面对“流窜土匪”（roving bandits），由社区成员成为独裁者来收取租金是福利增进的选择（第7页）</p>
+            <p>但缺乏约束机制时，独裁者本身会变成“流窜土匪”，最大化租金榨取。因此，在专制政体中，良好的经济表现长期来看是不可持续的（第7页）</p>
+            <p>历史上古代国家因过度集权而崩溃的例子比比皆是：</p>
+            <p>美索不达米亚（Mesopotamia /ˌmesəpəˈteɪmiə/，</p>
+            <p>美索不达米亚）的乌尔第三王朝（Ur III /ʊr/，乌尔第三王朝，约公元前2000年）因地方城邦寻求独立、反对将资源从边缘输送到乌尔的过度集权官僚体系而灭亡（第7页）</p>
+            <p>几个世纪后，汉谟拉比（Hammurabi /ˌhæməˈrɑːbi/，汉谟拉比）帝国也因地方当局反抗为国王在巴比伦（Babylon /ˈbæbɪlɒn/，巴比伦）荣耀而耗尽资源的做法而崩溃（约公元前1600年）（第7页）</p>
+            <p>Hariri（2012）的研究表明，较早本土形成的国家比后来的国家更容易发展专制制度（第7页）</p>
+            <p>机制三：后来者可以学习并超越先行者</p>
+            <p>国家历史较短的国家能够利用国家历史较长国家的经验和错误，将生产力水平提升至后者所能达到的最高点之上。具体机制包括：</p>
+            <p>制度学习与创新：罗马人可以从埃及的经验中学习到，由神圣君主领导的国家不如共和制乃至后来的帝制更能有效利用人力资源，无论是政治上还是军事上（第11页）</p>
+            <p>避免过度集权的路径：在英格兰、荷兰（Netherlands /ˈneðərləndz/，荷兰）和斯堪的纳维亚（Scandinavia /ˌskændɪˈneɪviə/，斯堪的纳维亚）等最初处于边缘的地区，地方精英和商业精英有效地对抗了新兴民族国家成熟过程中的权力集中化倾向，从而发展出带有行政约束的民主政治结构（第8页）</p>
+            <p>地理位置的优势：英国在1500年后能够超越意大利，部分原因在于其面向大西洋的位置带来的贸易和殖民机会，但同样重要的是其优越的政治制度，强化了政府问责制、鼓励商业发展、催生了卓越的海军和军事能力，并在新兴国际信贷体系中占据领先地位（第11页）</p>
+            <p>较少遭受外部冲击：曾经处于古老文明边缘的地区，国家制度发展较慢，同时也较少遭受游荡军队的袭击和迁徙民族（如波斯人</p>
+            <p>Persian /ˈpɜːrʒən/、希腊人Hellenic /həˈlenɪk/、匈奴人Hun /hʌn/、伊斯兰教徒Islamic /ɪzˈlæmɪk/、蒙古人Mongol /ˈmɒŋɡəl/、突厥人Turkic /ˈtɜːrkɪk/等）的入侵（第8页）</p>
+            <p>补充机制：殖民主义的复杂影响</p>
+            <p>作者还讨论了殖民主义对古老国家和年轻国家的不同影响：</p>
+            <p>对于古老国家：中等年龄国家（如英国、法国France /fræns/）的殖民可能对早期发展国家的停滞水平产生负面影响，榨取性制度和全球化推动的其他形式经济支配不仅帮助后来者超越早期国家，甚至可能影响后者的生产力停滞或下降（第12页）</p>
+            <p>对于撒哈拉以南非洲等年轻殖民地国家：没有前殖民时期国家制度的地区不仅历史短暂，而且超过一半的宏观政治历史处于外来统治之下。现代国家结构从外部强加给它们，无法有机地建设制度能力，面对后殖民挑战时更加脆弱（第12页）</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>Geographic Coverage of the Data:</p>
+            <p>This study covers 159 contemporary countries, essentially including all countries in the world except the smallest ones. The authors divide the world into four main agricultural core areas for analysis:</p>
+            <p>Western Region: Including 62 countries, covering Europe, North Africa, the Middle East, as well as Central and South Asian countries such as Afghanistan, Armenia, Azerbaijan, Georgia, India, Iran, and Kazakhstan (p. 18, footnote 33)</p>
+            <p>East Asian Region: Including 20 countries</p>
+            <p>Americas Region: Including 27 countries, covering North America, South America, and the Caribbean</p>
+            <p>Sub-Saharan Africa: Including 47 countries</p>
+            <p>Oceania: Only 3 countries in the sample</p>
+            <p>Time Period:</p>
+            <p>The extended state history data covers from 3500 BCE to 2000 CE</p>
+            <p>A total of 110 fifty-year periods</p>
+            <p>Forming a panel dataset with 17,490 country-period observations (p. 2)</p>
+            <p>Unit of Analysis:</p>
+            <p>The basic unit of analysis is the territory delimited by contemporary country borders. The authors acknowledge that the borders of current countries sometimes have very little resemblance to the geopolitical logic in ancient times, but argue that to the extent researchers are interested in tracking the histories of countries to understand contemporary levels of development, the modern configuration of countries is still a natural point of departure (p. 3).</p>
+            <p>Data Sources:</p>
+            <p>Primary sources for state history data:</p>
+            <p>Encyclopedia Britannica Online as the main information source</p>
+            <p>Supplementary use of other academic sources when Britannica information is insufficient</p>
+            <p>Archaeological data used for periods lacking written records (p. 16)</p>
+            <p>Data sources for economic development indicators:</p>
+            <p>Per capita GDP (2000 CE): World Bank World Development Indicators database, in constant 2000 US dollars (p. 19)</p>
+            <p>Technology Adoption Index (1500 CE and 2000 CE): Dataset constructed by Comin et al. (2010), based on the presence and complexity of technologies in five sectors: agriculture, transportation, communications, writing, and military (p. 20)</p>
+            <p>Population density (1500 CE and earlier): McEvedy and Jones (1978) Atlas of World Population History provides population data, with land area data from the World Bank (p. 19)</p>
+            <p>Urbanization rate (1500 CE): Data reported by Acemoglu et al. (2005), defined as the percentage of total population residing in urban areas with populations of at least 5,000 (pp. 19, 24-25)</p>
+            <p>Data sources for control variables:</p>
+            <p>Years since Neolithic Transition (Agyears): Data assembled by Putterman and Trainor (2006), recording the number of millennia elapsed in 2000 CE since the Neolithic transition took place (pp. 19-20)</p>
+            <p>Time since first human settlement (Origtime): Data coded by Ahlerup and Olsson (2012), representing the time in millennia since initial uninterrupted settlement by modern humans (pp. 19-20)</p>
+            <p>Geographic and climatic control variables: From the Portland Physical Geography dataset and the dataset compiled by Ashraf and Galor (2013), including absolute latitude, landlocked status, distance to coast and rivers, mean elevation, land suitability, percentage arable land, temperature, precipitation, and malaria risk (p. 20)</p>
+            <p>Migration data source:</p>
+            <p>Ancestry adjustment matrix: Migration matrix developed by Putterman and Weil (2010), used to calculate the weighted average state history score of contemporary populations’ ancestors (pp. 22-23)</p>
+            <p>Sample Descriptive Statistics:</p>
+            <p>According to the summary statistics in Table 1 (p. 19):</p>
+            <p>Extended state history index (Statehist): Mean 0.234, standard deviation 0.172, range 0.017-0.743</p>
+            <p>State history index in 1500 CE: Mean 0.171, standard deviation 0.183, range 0-0.760</p>
+            <p>State age (millennia): Mean 1.640, standard deviation 1.430, range 0.100-5.500</p>
+            <p>Log per capita GDP (2000 CE): Mean 7.488, standard deviation 1.606, range 4.463-10.531</p>
+            <p>Technology adoption index (2000 CE): Mean 0.451, standard deviation 0.198, range 0.174-1.012</p>
+          </div>
+          <div class="lang-zh">
+            <p>数据的地理覆盖范围：</p>
+            <p>本研究涵盖159个当代国家，基本覆盖了全球除最小国家之外的所有国家。作者将世界划分为四个主要农业核心区进行分析：</p>
+            <p>西方区域：包括62个国家，涵盖欧洲、北非、中东，以及阿富汗（Afghanistan /æfˈɡænɪstæn/）、亚美尼亚（Armenia /ɑːrˈmiːniə/）、阿塞拜疆（Azerbaijan /ˌæzərbaɪˈdʒɑːn/）、格鲁吉亚（Georgia /ˈdʒɔːrdʒə/）、印度（India /ˈɪndiə/）、伊朗（Iran /ɪˈrɑːn/）、哈萨克斯坦（Kazakhstan /ˈkɑːzɑːkstɑːn/）等中亚和南亚国家（第18页脚注33）</p>
+            <p>东亚区域：包括20个国家</p>
+            <p>美洲区域：包括27个国家，涵盖北美、南美和加勒比地区（Caribbean /ˌkærɪˈbiːən/）</p>
+            <p>撒哈拉以南非洲：包括47个国家</p>
+            <p>大洋洲（Oceania /ˌoʊʃiˈeɪniə/）：样本中仅3个国家</p>
+            <p>时间周期：</p>
+            <p>扩展的国家历史数据覆盖公元前3500年至公元2000年</p>
+            <p>共计110个50年周期</p>
+            <p>形成包含17,490个国家-周期观测值的面板数据集（第2页）</p>
+            <p>分析单位：</p>
+            <p>分析的基本单位是当代国家的领土范围。作者承认，现代国家的边界有时与古代的地缘政治逻辑很少相似，但认为在研究者关注追踪国家历史以理解当代发展水平的前提下，现代国家配置仍是自然的出发点（第3页）。</p>
+            <p>数据来源：</p>
+            <p>国家历史数据的主要来源：</p>
+            <p>大英百科全书在线版（Encyclopedia Britannica Online）作为主要信息来源</p>
+            <p>当大英百科全书信息不足时，补充使用其他学术来源</p>
+            <p>考古学数据用于缺乏文字记录的时期（第16页）</p>
+            <p>经济发展指标的数据来源：</p>
+            <p>人均GDP（2000年）：世界银行世界发展指标数据库，以2000年美元计价（第19页）</p>
+            <p>技术采用指数（1500年和2000年）：Comin等人（2010）构建的数据集，基于农业、交通、通讯、书写和军事五个部门的技术存在和复杂程度（第20页）</p>
+            <p>人口密度（1500年及以前）：McEvedy和Jones（1978）的《世界人口历史图集》提供人口数据，土地面积数据来自世界银行（第19页）</p>
+            <p>城市化率（1500年）：Acemoglu等人（2005）报告的数据，定义为居住在人口至少5000的城市地区的总人口百分比（第19页、第24-25页）</p>
+            <p>控制变量的数据来源：</p>
+            <p>新石器革命时间（Agyears）：Putterman和Trainor（2006）汇编的数据，记录2000年时距新石器转型过去的千年数（第19-20页）</p>
+            <p>人类首次定居时间（Origtime）：Ahlerup和Olsson（2012）编码的数据，表示现代人类首次不间断定居至今的时间（千年）（第19-20页）</p>
+            <p>地理和气候控制变量：来自波特兰物理地理数据集和Ashraf与Galor（2013）汇编的数据集，包括绝对纬度、是否内陆、距海岸和河流距离、平均海拔、土地适宜性、可耕地比例、温度、降水、疟疾风险等（第20页）</p>
+            <p>迁移数据来源：</p>
+            <p>祖先调整矩阵：Putterman和Weil（2010）开发的迁移矩阵，用于计算当代人口祖先的加权平均国家历史得分（第22-23页）</p>
+            <p>样本统计描述：</p>
+            <p>根据表1的汇总统计（第19页）：</p>
+            <p>扩展的国家历史指数（Statehist）：均值0.234，标准差0.172，范围0.017-0.743</p>
+            <p>1500年国家历史指数：均值0.171，标准差0.183，范围0-0.760</p>
+            <p>国家年龄（千年）：均值1.640，标准差1.430，范围0.100-5.500</p>
+            <p>人均GDP对数（2000年）：均值7.488，标准差1.606，范围4.463-10.531</p>
+            <p>技术采用指数（2000年）：均值0.451，标准差0.198，范围0.174-1.012</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>Core Econometric Methods:</p>
+            <p>This paper employs Ordinary Least Squares (OLS) regression as the primary estimation method, focusing on testing the quadratic (nonlinear) relationship between state history and economic development. The basic model specification is:</p>
+            <div class="formula-box">\[
+              Technology1500_i=\beta_0+\beta_1 Statehist1500_i+\beta_2 Statehist1500_i^2+\epsilon_i.
+            \]</div>
+            <p>And the extended model with control variables:</p>
+            <div class="formula-box">\[
+              Technology1500_i=\beta_0+\beta_1 Statehist1500_i+\beta_2 Statehist1500_i^2
+              +\beta_j' Z_i+\beta_k' X_i+\lambda_c+\epsilon_i.
+            \]</div>
+            <p>Where \(Z_i\) is the vector of historical control variables, \(X_i\) is the vector of geographic control variables, and \(\lambda_c\) represents continent fixed effects (p. 20).</p>
+            <p>Methods for Testing the Inverted U-shaped Relationship:</p>
+            <p>To verify that the concavity of the quadratic functional form indeed implies non-monotonicity (i.e., having both rising and falling portions), the authors employ the “two-lines test” method proposed by Simonsohn (2016):</p>
+            <p>Splitting the sample at the predicted maximizing point of state history</p>
+            <p>Running regressions with only the linear term separately for countries below and above that point</p>
+            <p>If the coefficients on both sides have opposite signs and are both significant, this confirms the existence of an inverted U-shaped relationship (p. 21, footnote 37)</p>
+            <p>Robustness Checks:</p>
+            <p>1. Sensitivity analysis with different depreciation rates:</p>
+            <p>In addition to the primarily used 1% depreciation rate, the authors also test 0.1% and 2% rates</p>
+            <p>Results remain qualitatively consistent across different depreciation rates (pp. 21, 31)</p>
+            <p>2. Ancestry adjustment:</p>
+            <p>Using the migration matrix from Putterman and Weil (2010) to adjust the state history index</p>
+            <p>This adjustment significantly improves the model’s explanatory power (pp. 23, 33)</p>
+            <p>3. Treatment of spatial autocorrelation:</p>
+            <p>Conley (1999) standard error correction: Using a covariance matrix weighted by geographic distance, with a threshold of 20 coordinate degrees (p. 35)</p>
+            <p>Spatial Autoregressive Model (SAR): Allowing the dependent variable to be a function of neighboring countries’ outcomes (p. 35)</p>
+            <p>SARAR Model: Allowing both the dependent variable and error terms to follow spatial autoregressive processes (p. 35)</p>
+            <p>The spatial weighting matrix uses the inverse of great-circle distances between geodesic centroids (p. 35, footnote 54)</p>
+            <p>4. Sample exclusion tests:</p>
+            <p>Separately excluding regions such as the Middle East, Sub-Saharan Africa, and North Africa</p>
+            <p>Excluding former European colonies</p>
+            <p>Results remain robust in most cases (p. 33)</p>
+            <p>5. Alternative control variables:</p>
+            <p>Adding linear and squared terms for time since Neolithic transition and state age</p>
+            <p>Adding variables such as absolute latitude, migratory distance from Addis Ababa, and predicted genetic diversity (p. 32, footnote 45)</p>
+            <p>Assumptions Required for Method Validity:</p>
+            <p>1. Exogeneity assumption:</p>
+            <p>Consistency of OLS estimates requires that the independent variable is uncorrelated with the error term</p>
+            <p>The authors acknowledge that state history may be endogenous because productivity and technological sophistication sometimes drive conquest, changing borders and thereby influencing state history (pp. 34-35)</p>
+            <p>A large number of control variables and fixed effects are added to mitigate omitted variable bias</p>
+            <p>2. Border exogeneity assumption:</p>
+            <p>Using contemporary country borders to define historical variables assumes borders are not endogenous</p>
+            <p>The authors acknowledge this assumption may not hold but argue that because most countries have actually changed their borders throughout history, this somewhat mitigates the problem (p. 3)</p>
+            <p>3. Random measurement error assumption:</p>
+            <p>If measurement error in ancient data is random, estimates are biased toward zero</p>
+            <p>If measurement error is correlated with outcome variables, the direction of bias is difficult to predict (p. 34)</p>
+            <p>4. Correct functional form assumption:</p>
+            <p>The quadratic specification assumes the relationship between state history and economic development can be approximated by a parabola</p>
+            <p>The authors verify this assumption by comparing the explanatory power of linear and quadratic models (e.g., R² increases from 0.020 to 0.052 in Table 5) (p. 28)</p>
+          </div>
+          <div class="lang-zh">
+            <p>核心计量方法：</p>
+            <p>本文采用普通最小二乘法（OLS）回归作为主要估计方法，重点检验国家历史与经济发展之间的二次（非线性）关系。基本模型设定如下：</p>
+            <div class="formula-box">\[
+              Technology1500_i=\beta_0+\beta_1 Statehist1500_i+\beta_2 Statehist1500_i^2+\epsilon_i.
+            \]</div>
+            <p>以及包含控制变量的扩展模型：</p>
+            <div class="formula-box">\[
+              Technology1500_i=\beta_0+\beta_1 Statehist1500_i+\beta_2 Statehist1500_i^2
+              +\beta_j' Z_i+\beta_k' X_i+\lambda_c+\epsilon_i.
+            \]</div>
+            <p>其中 \(Z_i\) 为历史控制变量向量，\(X_i\) 为地理控制变量向量，\(\lambda_c\) 为大陆固定效应（第20页）。</p>
+            <p>检验倒U形关系的方法：</p>
+            <p>为验证二次函数形式的凹性确实意味着非单调性（即同时存在上升和下降部分），作者采用Simonsohn（2016）提出的“两线检验”方法：</p>
+            <p>在国家历史的预测最大化点将样本分为两部分</p>
+            <p>分别对低于和高于该点的国家进行仅包含线性项的回归</p>
+            <p>如果两边系数符号相反且均显著，则确认存在倒U形关系（第21页脚注37）</p>
+            <p>稳健性检验：</p>
+            <p>1. 不同折旧率的敏感性分析：</p>
+            <p>除主要使用的1%折旧率外，作者还测试了0.1%和2%的折旧率</p>
+            <p>结果在不同折旧率下保持定性一致（第21页、第31页）</p>
+            <p>2. 祖先调整：</p>
+            <p>使用Putterman和Weil（2010）的迁移矩阵调整国家历史指数</p>
+            <p>这一调整显著提高了模型的解释力（第23页、第33页）</p>
+            <p>3. 空间自相关的处理：</p>
+            <p>Conley（1999）标准误修正：使用地理距离加权的协方差矩阵，设定20个坐标度的阈值（第35页）</p>
+            <p>空间自回归模型（SAR）：允许因变量是邻国结果的函数（第35页）</p>
+            <p>SARAR模型：同时允许因变量和误差项遵循空间自回归过程（第35页）</p>
+            <p>空间权重矩阵采用测地线中心点之间的大圆距离的倒数（第35页脚注54）</p>
+            <p>4. 样本排除检验：</p>
+            <p>分别排除中东、撒哈拉以南非洲、北非等地区</p>
+            <p>排除前欧洲殖民地</p>
+            <p>结果在大多数情况下保持稳健（第33页）</p>
+            <p>5. 替代控制变量：</p>
+            <p>加入新石器革命时间、国家年龄的线性和二次项</p>
+            <p>加入绝对纬度、距离亚的斯亚贝巴（Addis Ababa /ˌædɪs ˈæbəbə/）的迁徙距离、预测遗传多样性等变量（第32页脚注45）</p>
+            <p>方法有效性所需的假设：</p>
+            <p>1. 外生性假设：</p>
+            <p>OLS估计的一致性要求自变量与误差项不相关</p>
+            <p>作者承认国家历史可能是内生的，因为生产力和技术水平有时会推动征服、改变边界，从而影响国家历史（第34-35页）</p>
+            <p>通过加入大量控制变量和固定效应来缓解遗漏变量偏误</p>
+            <p>2. 边界外生性假设：</p>
+            <p>使用当代国家边界定义历史变量假设边界不是内生的</p>
+            <p>作者承认这一假设可能不成立，但认为由于大多数国家在历史上实际改变过边界，这在一定程度上缓解了问题（第3页）</p>
+            <p>3. 测量误差的随机性：</p>
+            <p>如果古代数据的测量误差是随机的，估计值偏向零</p>
+            <p>如果测量误差与结果变量相关，则偏误方向难以预测（第34页）</p>
+            <p>4. 函数形式正确性：</p>
+            <p>二次函数设定假设国家历史与经济发展之间的关系可以用抛物线近似</p>
+            <p>作者通过比较线性与二次模型的解释力来验证这一假设（如表5中R²从0.020提升到0.052）（第28页）</p>
+          </div>
+        </section>
+
+
+
+        <nav class="node-nav">
+          <a class="prev" href="arroyomaurer2021.html"><small data-en="Previous reading" data-zh="上一篇">Previous reading</small>Arroyo Abad &amp; Maurer 2021</a>
+          <span class="disabled next"><small data-en="No next reading" data-zh="无下一篇">No next reading</small></span>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

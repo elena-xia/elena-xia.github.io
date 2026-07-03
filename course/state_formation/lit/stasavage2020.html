@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stasavage 2020 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 8" data-zh="第 8 周">Week 8</span> · <span data-en="Material–Technological lane" data-zh="物质–技术层">Material–Technological lane</span> · <span data-en="Antiquity &amp; the medieval world (S2)" data-zh="古代与中世纪（S2）">Antiquity &amp; the medieval world (S2)</span></p>
+        <h1><span class="lang-en">David Stasavage (2020), The Decline and Rise of Democracy, chs. 3–4.</span><span class="lang-zh">斯塔萨维奇（2020）《民主的衰落与崛起》第3–4章。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#315b7c" data-en="Comparative history" data-zh="比较历史">Comparative history</span><span class="chip" style="background:#b98d40" data-en="Case illustration" data-zh="案例说明">Case illustration</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The main dependent variable across both chapters is the form of governance a society adopts, specifically whether it practices “early democracy” (council or assembly governance) or “autocracy” (rule without a council). Stasavage operationalizes this primarily as a binary distinction: whether a society has council governance or not. In the Standard Cross Cultural Sample (SCCS) data, this is measured by whether rulers govern with the assistance of a council or assembly versus governing alone (p. 66). In the Western North American Indian (WNAI) data compiled by Jorgensen /ˈjɔːrɡənsən/, this is similarly measured as the presence or absence of council governance (p. 68). The dependent variable is not modern liberal democracy with elections and constitutions, but rather the much older and more widespread practice of collective governance through councils, what the author terms “early democracy.” A secondary dependent variable in Chapter 3 is the presence of bureaucracy (defined as subordinates chosen by the ruler who are not from the ruler’s own family), which is treated as a potential substitute for council governance (p. 74).</p>
+          </div>
+          <div class="lang-zh">
+            <p>两章的主要因变量是一个社会采用的治理形式，具体而言是该社会实行“早期民主”（议会或大会治理）还是“专制”（没有议会的统治）。斯塔萨维奇将其主要操作化为一个二元区分：一个社会是否存在议会治理。在标准跨文化样本（SCCS）数据中，这通过统治者是在议会或大会的协助下治理还是独自治理来衡量（第66页）。在约根森 /ˈjɔːrɡənsən/ 编纂的西部北美印第安人（WNAI）数据中，同样以议会治理的有无来衡量（第68页）。因变量不是带有选举和宪法的现代自由民主，而是更古老、更广泛存在的通过议会进行集体治理的实践，作者称之为“早期民主”。第三章的一个次要因变量是官僚制的存在（定义为由统治者选择的、不属于统治者自己家族的下属），它被视为议会治理的潜在替代品（第74页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The main independent variable is state weakness, understood as the ruler’s inability to monitor, tax, and control the population. This concept of state weakness is decomposed into three specific dimensions across the two chapters. First, in Chapter 3, agricultural variability (caloric variability), the degree to which agricultural potential varies from location to location within a society’s territory. This is measured as the standard deviation of caloric potential across localized grid cells using data from Galor /ɡəˈlɔːr/ and Özak /ˈøzɑːk/ (p. 67). Second, also in Chapter 3, exit options for the population, how easy it is for people to leave if dissatisfied. This is proxied by population density (lower density means easier exit) and by qualitative geographic features such as whether a society occupies a narrow river valley versus open land (pp. 69–72). Third, the ruler’s dependence on the population for military service, proxied by the prestige accorded to warriors in the SCCS (p. 73). In Chapter 4, the independent variable shifts to technology, specifically, technologies of soil mapping, geometry and surveying, agricultural intensification, and writing. These technologies are argued to strengthen the bureaucratic alternative and thereby undermine early democracy (pp. 79–97). Europe’s technological backwardness relative to China and the Middle East is presented as a key factor explaining why early democracy persisted longer in Europe.</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要自变量是国家的弱势，理解为统治者无法监控、征税和控制人口的能力不足。这一国家弱势概念在两章中被分解为三个具体维度。第一，在第三章中，农业变异性（热量变异性），一个社会领土内农业潜力从一个地点到另一个地点的变化程度。这通过使用加洛尔 /ɡəˈlɔːr/ 和厄扎克 /ˈøzɑːk/ 的数据，计算局部网格单元间热量潜力的标准差来衡量（第67页）。第二，同在第三章中，人口的退出选项，人们在不满时离开的难易程度。这以人口密度作为代理变量（密度越低意味着退出越容易），以及定性地理特征，如一个社会是占据狭窄河谷还是开阔土地（第69-72页）。第三，统治者对人口军事服务的依赖程度，以SCCS中给予战士的声望来代理衡量（第73页）。在第四章中，自变量转向技术，具体而言，是土壤测绘、几何与测量、农业集约化以及文字等技术。这些技术被认为强化了官僚制替代方案，从而削弱了早期民主（第79-97页）。欧洲相对于中国和中东的技术落后被提出作为解释早期民主为何在欧洲持续更久的关键因素。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>Stasavage follows Douglass North /nɔːrθ/ in defining the state as an entity that extracts revenue in exchange for protection (p. 62). Protection is broadly construed to include defense against external invasion, insurance against famine, and social protection. Revenue encompasses taxation in currency, taxation in kind, or any redistribution of economic surplus. This definition does not require formal institutions: among the Kwakiutl /kwɑːˈkjuːtəl/ of northwest North America, chiefs appropriated up to half the catch from hunting and fishing, which counts as revenue extraction (p. 63). A “weak state” in Stasavage’s framework is one where the ruler faces two fundamental problems: uncertainty about production (not knowing how much people produce, hence not knowing how much to tax) and exit risk (the population’s ability to leave, protest, or refuse to pay) (pp. 63–64). State strength is measured in the SCCS by whether governance exists above the level of the local community and by the presence of bureaucrats, subordinates chosen by the ruler who are not family members (pp. 65–66, 74). The concept of a “strong state” is thus one that has resolved these information and enforcement problems through bureaucratic capacity, intensive agriculture that makes production legible, and technologies like writing and soil mapping that allow rulers to monitor subjects without consulting councils (Chapter 4). This conceptualization stands in direct dialogue with James Scott’s notion of “legibility” from Seeing Like a State and Against the Grain, the idea that states need to render society “readable” to tax and control it. Stasavage effectively argues that where legibility was low, democracy emerged as a functional substitute.</p>
+          </div>
+          <div class="lang-zh">
+            <p>斯塔萨维奇遵循道格拉斯·诺斯 /nɔːrθ/ 的定义，将国家界定为以保护换取收入的实体（第62页）。保护被广义地理解为包括抵御外部入侵、防范饥荒的保险以及社会保护。收入涵盖货币征税、实物征税或任何经济剩余的再分配。关键的是，这个定义不要求正式制度：在北美西北海岸的夸夸嘉夸族 /kwɑːˈkjuːtəl/ 中，酋长从狩猎和捕鱼活动中侵占多达一半的收获，这也算收入汲取（第63页）。斯塔萨维奇框架中的“弱国家”是统治者面临两个根本问题的国家：生产的不确定性（不知道人们生产了多少，因此不知道该征多少税）和退出风险（人口离开、抗议或拒绝缴纳的能力）（第63-64页）。国家力量在SCCS中通过治理是否存在于地方社区层面之上，以及是否存在官僚，由统治者选择的非家族成员下属，来衡量（第65-66、74页）。因此，“强国家”的概念是通过官僚能力、使生产变得可读的集约化农业，以及文字和土壤测绘等技术使统治者无需咨询议会即可监控臣民来解决这些信息和执法问题的国家（第四章）。这一概念化与詹姆斯·斯科特 /skɒt/ 在《国家的视角》和《反谷》中的“可读性”概念直接对话，国家需要使社会变得“可读”以便征税和控制。斯塔萨维奇有效地论证了，在可读性低的地方，民主作为一种功能性替代品出现了。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The core argument spanning both chapters can be stated plainly: early democracy was not a sign of political progress but a consequence of state weakness. When rulers could not observe what people were producing, when people could easily leave, and when rulers needed their population for military service, rulers had to share power through councils or assemblies. Conversely, when rulers had the bureaucratic and technological means to monitor production, fix populations in place, and enforce tax collection without consulting anyone, they governed autocratically. The specific logic is as follows.</p>
+            <p>Chapter 3 establishes three conditions favoring early democracy. (1) Uncertainty about agricultural production. Where caloric variability was high, meaning agricultural output varied unpredictably across locations, rulers could not know how much to tax without local information. A council provided a forum where local knowledge could be revealed, allowing for more effective taxation by consent rather than by guesswork (pp. 66–69). (2) Exit options for the population. Where people could easily move elsewhere, due to low population density or extensive (non-intensive) agriculture, rulers were in a precarious position. To avoid losing their tax base entirely, they shared power. Evidence from the Jorgensen data on western North American Indians shows that council governance peaked at moderate population densities and disappeared entirely at densities above 25 people per square mile (pp. 71–72). This inverted-U relationship reflects the logic that at very low densities councils are logistically hard to organize, while at high densities people cannot exit and rulers can govern without consent. (3) Military dependence. When prevailing military technology required mass mobilization, rulers granted political voice as compensation for military service, the concept of “military democracy” first articulated by Lewis Henry Morgan /ˈmɔːrɡən/ (p. 73). In the SCCS, societies that accorded great prestige to warriors were roughly twice as likely to have council governance (p. 73).</p>
+            <p>Chapter 3 also introduces the bureaucratic alternative. Rulers who had a bureaucracy, defined as non-family subordinates, could solve both the information and enforcement problems without a council. Figure 3.4 shows this substitution effect clearly: among societies without bureaucrats, higher caloric variability is strongly associated with council presence; among societies with bureaucrats, caloric variability has no relationship with council presence (pp. 74–75). Bureaucracy and councils can also be complements: if democracy develops first, people develop habits of collective action that allow them to constrain a ruler even after a bureaucracy is established (p. 76). Tax farming is introduced as a third alternative that also economizes on the ruler’s need for information (p. 64).</p>
+            <p>Chapter 4 extends the argument by examining how specific technologies strengthened the bureaucratic alternative and thereby undermined early democracy. Soil mapping in China (the “fish scale maps” or yulin tu dating from the Ming /mɪŋ/ dynasty, based on a tradition going back to Yu /juː/ the Great) and among the Aztecs /ˈæztɛks/ (soil glyphs recorded in the Códice de Santa María Asunción /koˈðiθe ðe ˈsanta maˈɾia asunˈθjon/) allowed rulers to set differential tax rates based on soil quality without consulting local populations (pp. 80–84). Geometry and the ability to survey land, as practiced in ancient Egypt /ˈiːdʒɪpt/ and Sumeria /suːˈmɪəriə/, gave rulers tools to measure land for taxation that medieval Europeans lacked (pp. 86–87). Agricultural intensification, such as irrigation, the heavy plow, and crop rotation, made production more predictable and populations more fixed, reducing both the information and exit problems. European agriculture was markedly less intensive than Chinese or Middle Eastern agriculture: crop yields per hectare in ancient Egypt, Sumeria, and Tang /tɑːŋ/ dynasty China were three to four times those of medieval England /ˈɪŋɡlənd/ (p. 76). Writing was perhaps the most fundamental technology: it underpinned bureaucratic record-keeping and communication. Like bureaucracy itself, writing shows an indirect effect on democracy: among societies without writing, higher caloric variability predicts council presence; among societies with writing, this relationship disappears (Figure 4.3, pp. 93–94). The chapter also discusses the complexity of writing systems: simpler alphabetic systems (derived from the Old Canaanite /ˈkeɪnənaɪt/ and Phoenician /fɪˈnɪʃən/ alphabets) may have had democratizing effects by lowering access costs, whereas complex systems like Chinese logograms, cuneiform, and the Inka /ˈɪŋkə/ khipu /ˈkiːpuː/ concentrated literacy in an administrative elite (pp. 94–96).</p>
+            <p>The overarching thesis is therefore paradoxical: technological and civilizational “progress” often undermined democracy. Europe’s relative technological backwardness, its failure to develop soil mapping, its primitive surveying, its less intensive agriculture, and its late adoption of many technologies, left European rulers in a weaker position relative to their societies, and this weakness gave democracy a chance (pp. 79, 97).</p>
+          </div>
+          <div class="lang-zh">
+            <p>贯穿两章的核心论点可以直白地表述为：早期民主不是政治进步的标志，而是国家弱势的结果。当统治者无法观察人们的生产状况、人们可以轻易离开、且统治者需要人口提供军事服务时，统治者不得不通过议会或大会分享权力。相反，当统治者拥有官僚和技术手段来监控生产、固定人口并在不咨询任何人的情况下强制征税时，他们便实行专制统治。具体逻辑如下。</p>
+            <p>第三章确立了有利于早期民主的三个条件。（1）农业生产的不确定性。在热量变异性高的地方，意味着农业产出在不同地点之间不可预测地变化，统治者在没有地方信息的情况下无法知道该征多少税。议会提供了一个可以揭示地方知识的论坛，使得通过同意而非猜测来进行更有效的征税成为可能（第66-69页）。（2）人口的退出选项。在人们可以轻易迁移到其他地方的地方，由于人口密度低或粗放型（非集约型）农业，统治者处于不稳定的地位。为了避免完全失去税基，他们分享权力。约根森关于西部北美印第安人的数据表明，议会治理在中等人口密度时达到峰值，而在密度超过每平方英里25人时完全消失（第71-72页）。这种倒U型关系反映了这样的逻辑：在非常低的密度下，议会在后勤上难以组织，而在高密度下，人们无法退出，统治者可以不经同意即进行治理。（3）军事依赖。当流行的军事技术需要大规模动员时，统治者给予政治发言权作为军事服务的补偿，这就是刘易斯·亨利·摩尔根 /ˈmɔːrɡən/ 首先提出的“军事民主”概念（第73页）。在SCCS中，给予战士极高声望的社会拥有议会治理的可能性大约是其他社会的两倍（第73页）。</p>
+            <p>第三章还引入了官僚制替代方案。拥有官僚制的统治者，定义为非家族下属，可以在不需要议会的情况下解决信息和执法两个问题。图3.4清楚地展示了这种替代效应：在没有官僚的社会中，较高的热量变异性与议会的存在强相关；在有官僚的社会中，热量变异性与议会的存在没有关系（第74-75页）。官僚制和议会也可以是互补的：如果民主首先发展起来，人们会养成集体行动的习惯，使他们即使在官僚制建立后也能约束统治者（第76页）。税收包办（tax farming）被引入作为第三种同样节约统治者信息需求的替代方案（第64页）。</p>
+            <p>第四章通过考察特定技术如何强化官僚制替代方案从而削弱早期民主来扩展这一论证。中国的土壤测绘（“鱼鳞图”即yulin tu，始于明 /mɪŋ/ 朝，基于可追溯到大禹 /juː/ 的传统）和阿兹特克人 /ˈæztɛks/ 的土壤测绘（记录在《圣玛丽亚阿松森法典》/koˈðiθe ðe ˈsanta maˈɾia asunˈθjon/ 中的土壤字形符号）使统治者能够根据土壤质量设定差别税率，而无需咨询当地民众（第80-84页）。古代埃及 /ˈiːdʒɪpt/ 和苏美尔 /suːˈmɪəriə/ 所实践的几何学和土地测量能力，为统治者提供了中世纪欧洲人所缺乏的土地征税测量工具（第86-87页）。农业集约化，如灌溉、重犁和轮作，使生产更可预测，人口更固定，减少了信息和退出两个问题。欧洲农业的集约化程度明显低于中国或中东农业：古埃及、苏美尔和唐 /tɑːŋ/ 朝中国每公顷的作物产量是中世纪英格兰 /ˈɪŋɡlənd/ 的三到四倍（第76页）。文字可能是最基本的技术：它支撑了官僚制的记录保存和通信。与官僚制本身一样，文字对民主显示出间接效应：在没有文字的社会中，较高的热量变异性预测议会的存在；在有文字的社会中，这种关系消失了（图4.3，第93-94页）。本章还讨论了文字系统的复杂性：较简单的字母系统（源自古迦南 /ˈkeɪnənaɪt/ 和腓尼基 /fɪˈnɪʃən/ 字母表）可能通过降低准入成本产生了民主化效应，而复杂系统如中国的表意文字、楔形文字和印加 /ˈɪŋkə/ 的奇普 /ˈkiːpuː/（结绳记事）则将识字能力集中在行政精英手中（第94-96页）。</p>
+            <p>因此，总体论题具有悖论性：技术和文明的“进步”往往削弱了民主。欧洲相对的技术落后，未能发展土壤测绘、原始的测量技术、不太集约化的农业以及许多技术的晚期采用，使欧洲统治者相对于其社会处于更弱的地位，而这种弱势给了民主一个机会（第79、97页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>Stasavage proposes four interlinked mechanisms connecting state weakness to early democracy.</p>
+            <p>Mechanism 1: The information mechanism. When agricultural production is highly variable across locations, a ruler cannot devise an optimal tax policy because he does not know how much each locality produces. Setting taxes too high risks provoking protest or flight; setting them too low leaves revenue on the table. A council solves this by creating a forum for truthful communication about local production conditions. This does not require altruistic motives, truthful communication is sustained by a commonality of interest (e.g., the shared need for defense) and by the mutual preference for peaceful resolution over conflict (p. 64). Council members possess “real authority” through superior information, even without formal veto power over the ruler’s proposals (p. 64). The empirical prediction is straightforward: higher caloric variability should correlate with council presence.</p>
+            <p>Mechanism 2: The exit mechanism. Drawing on Robert Carneiro’s /kɑːrˈneɪroʊ/ circumscription theory (1970) and Sandra Vehrencamp’s /ˈveɪrənkæmp/ ornithological model of hierarchy, Stasavage argues that when people can easily leave, rulers must govern by consent to retain their tax base (pp. 63, 69). This mechanism is illustrated by the contrast between Mississippian /ˌmɪsɪˈsɪpiən/ societies in southeastern North America, which occupied narrow, fertile river valleys surrounded by less suitable land (high circumscription, autocratic governance), and Iroquois /ˈɪrəkwɔɪ/ and Huron /ˈhjʊərɒn/ societies in the northeast, which practiced mobile slash-and-burn agriculture and moved villages every ten to forty years (low circumscription, democratic governance) (pp. 70–71). The Jorgensen data show the inverted-U pattern: council governance peaks at moderate population density and vanishes at high density (pp. 71–72).</p>
+            <p>Mechanism 3: The military bargaining mechanism. When military technology requires mass participation, rulers must compensate soldiers with political voice. This is “military democracy” in Morgan’s sense. The empirical pattern in the SCCS, a strong correlation between warrior prestige and council governance, is best interpreted not as warrior prestige causing democracy, but as warrior prestige and council governance being complementary parts of a single bargain between rulers and fighters (p. 73).</p>
+            <p>Mechanism 4: The bureaucratic substitution mechanism (Chapters 3–4). Bureaucracy, intensive agriculture, soil mapping, surveying, and writing all reduce the ruler’s dependence on local knowledge. When bureaucrats can assess production and collect taxes, the ruler no longer needs a council for information. When intensive agriculture fixes populations in observable, measurable plots, exit becomes harder and production becomes legible. Figure 3.4 and Figure 4.3 provide the key evidence: the positive relationship between caloric variability and council governance exists only in the absence of bureaucracy (or writing); in the presence of bureaucracy (or writing), the relationship vanishes (pp. 75, 93–94). This is an interaction effect, and it is the most analytically rigorous claim in the two chapters.</p>
+          </div>
+          <div class="lang-zh">
+            <p>斯塔萨维奇提出了四个相互关联的机制，将国家弱势与早期民主联系起来。</p>
+            <p>机制一：信息机制。当农业生产在不同地点之间高度变异时，统治者无法制定最优税收政策，因为他不知道每个地方的产出是多少。税收定得太高有可能引发抗议或逃离；定得太低则白白损失收入。议会通过创造一个关于当地生产条件进行真实沟通的论坛来解决这个问题。这不需要利他动机，真实沟通由利益的共同性（例如对防御的共同需求）和对和平解决而非冲突的共同偏好来维持（第64页）。议会成员通过其信息优势拥有“真实权威”，即使没有对统治者提案的正式否决权（第64页）。经验预测是直截了当的：较高的热量变异性应与议会的存在相关。</p>
+            <p>机制二：退出机制。借鉴罗伯特·卡内罗 /kɑːrˈneɪroʊ/ 的限制理论（1970年）和桑德拉·维伦坎普 /ˈveɪrənkæmp/ 的鸟类学等级模型，斯塔萨维奇认为，当人们可以轻易离开时，统治者必须通过同意来治理以保留其税基（第63、69页）。这一机制通过以下对比得到说明：北美东南部的密西西比 /ˌmɪsɪˈsɪpiən/ 社会，占据被不太适合其集约农业的土地包围的狭窄肥沃河谷（高限制性，专制治理），与东北部的易洛魁 /ˈɪrəkwɔɪ/ 和休伦 /ˈhjʊərɒn/ 社会，后者实行流动的刀耕火种农业，每十到四十年迁移一次村庄（低限制性，民主治理）（第70-71页）。约根森数据显示了倒U型模式：议会治理在中等人口密度时达到峰值，在高密度时消失（第71-72页）。</p>
+            <p>机制三：军事讨价还价机制。当军事技术需要大规模参与时，统治者必须以政治发言权补偿士兵。这就是摩尔根意义上的“军事民主”。SCCS中的经验模式，战士声望与议会治理之间的强相关，最好的解释不是战士声望导致民主，而是战士声望和议会治理是统治者与战士之间单一讨价还价的互补部分（第73页）。</p>
+            <p>机制四：官僚制替代机制（第三、四章）。官僚制、集约化农业、土壤测绘、测量和文字都减少了统治者对地方知识的依赖。当官僚能够评估生产并征税时，统治者不再需要议会来获取信息。当集约化农业将人口固定在可观察、可测量的地块上时，退出变得更难，生产变得可读。图3.4和图4.3提供了关键证据：热量变异性与议会治理之间的正相关关系仅存在于没有官僚制（或文字）的情况下；在有官僚制（或文字）的情况下，这种关系消失了（第75、93-94页）。这是一个交互效应，是两章中分析上最严谨的论断。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>The two chapters draw on several distinct data sources, spanning different geographic regions, time periods, and units of analysis.</p>
+            <p>(1) The Standard Cross Cultural Sample (SCCS). This is a set of 186 well-documented societies from around the world, selected by George Peter Murdock /ˈmɜːrdɒk/ and Douglas White to be independent of each other. Each society is coded at a specific “ethnographic present,” typically the point of earliest reliable description. The SCCS provides data on: presence or absence of council governance (DV), whether governance extends beyond the local community, presence of bureaucrats (non-family subordinates chosen by the ruler), prestige accorded to warriors, and whether a system of writing exists (pp. 65–66, 73–74, 92–94). Geographic coverage is global; temporal coverage varies by society (ranging from several centuries BCE to the twentieth century). The unit of analysis is the individual society.</p>
+            <p>(2) Caloric potential and caloric variability data from Galor and Özak. These are constructed from the FAO’s Global Agro-Ecological Zones database, which records the maximum potential crop production for grid cells covering the globe at a resolution of approximately 10 km × 10 km, assuming no irrigation and no inputs added to the soil. Caloric potential measures the maximum calories producible from a given plot. Caloric variability is the standard deviation of caloric potential across a localized area of nine grid cells (pp. 65, 67). The Columbian Exchange is used to construct a temporal variability measure: the change in how many calories could be produced before versus after the exchange of crops between the New World and Old World (pp. 68–69).</p>
+            <p>(3) The Western North American Indian (WNAI) data from Joseph Jorgensen /ˈjɔːrɡənsən/. This covers 172 Native American groups located west of the Great Plains, essentially all groups in that region. It records council governance, population density, and various social and political features (pp. 68, 71–72). The unit of analysis is the individual Native American group. This data set is used as an independent check on the SCCS findings.</p>
+            <p>(4) Qualitative historical and archaeological evidence. For the Mississippian, Iroquois, and Huron societies, Stasavage draws on archaeological records and early European contact accounts (Chapter 3, pp. 70–71). For Chinese soil mapping, he uses the Yu Gong /juː ɡʊŋ/ (Tribute of Yu) text and Ming dynasty fish scale maps (pp. 80–83). For Aztec soil glyphs, he uses the Códice de Santa María Asunción (pp. 83–84). For European agricultural techniques, the Domesday Book, and European reconquest of Arab-controlled lands, he draws on a wide range of secondary historical sources (pp. 85–90). Crop yield data for ancient Egypt, Sumeria, Tang dynasty China, and medieval England come from agricultural history (pp. 76–77).</p>
+            <p>(5) Data on the origins and spread of writing. Stasavage uses the SCCS to code whether societies had writing, and uses distance from the three independently invented writing systems (Sumerian cuneiform, Chinese, and Olmec /ˈɒlmɛk/) as a predictor of whether a society adopted writing (pp. 91–93). The association between tuber-based versus cereal-based economies and the presence of writing is also tested using FAO suitability data (pp. 91–92).</p>
+          </div>
+          <div class="lang-zh">
+            <p>两章利用了几个不同的数据来源，涵盖不同的地理区域、时间段和分析单位。</p>
+            <p>（1）标准跨文化样本（SCCS）。这是由乔治·彼得·默多克 /ˈmɜːrdɒk/ 和道格拉斯·怀特选择的来自世界各地的186个有良好文献记录的社会，被选择为相互独立。每个社会在特定的“民族志现在”（通常是最早可靠描述的时间点）进行编码。SCCS提供以下数据：议会治理的有无（因变量）、治理是否延伸到地方社区之外、官僚的存在（统治者选择的非家族下属）、给予战士的声望，以及是否存在文字系统（第65-66、73-74、92-94页）。地理覆盖是全球性的；时间覆盖因社会而异（从公元前几个世纪到二十世纪不等）。分析单位是单个社会。</p>
+            <p>（2）来自加洛尔和厄扎克的热量潜力和热量变异性数据。这些数据由FAO的全球农业生态区数据库构建，记录了覆盖全球的、分辨率约为10公里×10公里的网格单元的最大潜在作物产量，假设无灌溉、无土壤投入。热量潜力衡量给定地块可产生的最大卡路里。热量变异性是九个网格单元组成的局部区域内热量潜力的标准差（第65、67页）。哥伦布大交换被用于构建时间变异性指标：新旧世界之间作物交换前后可产出热量的变化（第68-69页）。</p>
+            <p>（3）来自约瑟夫·约根森 /ˈjɔːrɡənsən/ 的西部北美印第安人（WNAI）数据。这涵盖了位于大平原以西的172个美洲原住民群体，基本上是该地区的所有群体。它记录了议会治理、人口密度和各种社会与政治特征（第68、71-72页）。分析单位是单个美洲原住民群体。该数据集被用作对SCCS发现的独立检验。</p>
+            <p>（4）定性的历史和考古证据。对于密西西比、易洛魁和休伦社会，斯塔萨维奇利用考古记录和早期欧洲接触记述（第三章，第70-71页）。对于中国的土壤测绘，他使用《禹贡》/juː ɡʊŋ/（禹的贡赋）文本和明朝鱼鳞图（第80-83页）。对于阿兹特克土壤字形，他使用《圣玛丽亚阿松森法典》（第83-84页）。对于欧洲农业技术、末日审判书和欧洲对阿拉伯控制土地的再征服，他利用了广泛的二手历史资料（第85-90页）。古埃及、苏美尔、唐朝中国和中世纪英格兰的作物产量数据来自农业史研究（第76-77页）。</p>
+            <p>（5）关于文字起源和传播的数据。斯塔萨维奇使用SCCS来编码社会是否拥有文字，并使用与三个独立发明的文字系统（苏美尔楔形文字、中文和奥尔梅克 /ˈɒlmɛk/ 文字）的距离作为社会是否采用文字的预测因子（第91-93页）。基于块茎经济与谷物经济之间的关联以及文字的存在，也使用FAO适宜性数据进行了检验（第91-92页）。</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>The methodology is primarily comparative-descriptive and correlational, supplemented with historical case studies and limited attempts at causal identification. The specific methods include:</p>
+            <p>(1) Cross-tabulations and box-and-whisker plots. The main empirical results are presented as bivariate or conditional comparisons. For example, Figure 3.1 compares the distribution of caloric variability in societies with and without councils. Figure 3.2 plots the share of societies with councils against population density categories. Figure 3.3 shows the fraction of societies with council governance by the level of warrior prestige. Figures 3.4 and 4.3 present the key interaction: the caloric variability–council relationship is shown separately for societies with and without bureaucrats (or writing). These are descriptive, not based on regression analysis with controls.</p>
+            <p>(2) Qualitative historical comparisons. The contrast between Mississippian and Northeastern Woodland societies, the comparison of Chinese versus European soil knowledge, the discussion of the European reconquest of Arab lands in Sicily /ˈsɪsɪli/ and Iberia /aɪˈbɪəriə/, all of these are comparative case analyses designed to illustrate the mechanisms. They follow a “most similar systems” logic in some cases (e.g., Huron and Mississippians both grew maize but differed in agricultural intensity and political form).</p>
+            <p>(3) Robustness checks using independent samples. The WNAI data on Native Americans is used as an out-of-sample check on the SCCS finding that caloric variability predicts council governance (p. 68). The Columbian Exchange is used to test whether temporal, as well as spatial, caloric variability predicts councils (pp. 68–69).</p>
+            <p>(4) Interaction analysis. The comparison of the caloric variability–council relationship in the presence versus absence of bureaucracy (Figure 3.4) or writing (Figure 4.3) is an informal interaction test. This is the closest the chapters come to a “mechanism test”, if bureaucracy substitutes for councils in solving information problems, then the caloric variability–council relationship should disappear when bureaucracy is present, which it does.</p>
+            <p>Key assumptions for these methods to be valid include: (a) The SCCS and WNAI data accurately represent the political and economic characteristics of the societies they code, this requires trusting ethnographic observation. (b) Caloric potential and caloric variability, based on modern FAO data with no irrigation and no inputs, reasonably proxy the actual agricultural conditions these societies faced. This is plausible for societies observed before major human transformation of the landscape but less so for societies observed after centuries of agricultural modification. (c) The relationships are not driven by confounding variables. Since the analysis is primarily bivariate, unobserved factors (e.g., cultural diffusion, proximity to trade routes, kinship structures, religious institutions) could plausibly explain the patterns. Stasavage addresses some confounders (e.g., trade and risk-sharing as alternative explanations for the caloric variability–council relationship, p. 68) but does not use multivariate regression to control for all plausible confounds simultaneously. (d) For the interaction analysis, one must assume that the presence of bureaucracy is not itself endogenous to the same factors that drive council presence.</p>
+          </div>
+          <div class="lang-zh">
+            <p>方法论主要是比较描述性和相关性的，辅以历史案例研究和有限的因果识别尝试。具体方法包括：</p>
+            <p>（1）交叉表和箱线图。主要经验结果以双变量或条件比较的形式呈现。例如，图3.1比较了有议会和无议会社会中热量变异性的分布。图3.2绘制了不同人口密度类别中拥有议会的社会比例。图3.3显示了按战士声望水平划分的拥有议会治理的社会比例。图3.4和图4.3呈现了关键的交互效应：热量变异性与议会的关系分别在有无官僚（或文字）的社会中展示。这些都是描述性的，不是基于带控制变量的回归分析。</p>
+            <p>（2）定性历史比较。密西西比社会与东北林地社会的对比、中国与欧洲土壤知识的比较、欧洲再征服西西里 /ˈsɪsɪli/ 和伊比利亚 /aɪˈbɪəriə/ 阿拉伯控制土地的讨论，所有这些都是旨在说明机制的比较案例分析。在某些情况下遵循“最相似系统”逻辑（例如，休伦人和密西西比人都种植玉米，但在农业集约化程度和政治形式上不同）。</p>
+            <p>（3）使用独立样本的稳健性检查。关于美洲原住民的WNAI数据被用作对SCCS发现（热量变异性预测议会治理）的样本外检验（第68页）。哥伦布大交换被用于检验时间上的（不仅是空间上的）热量变异性是否也预测议会（第68-69页）。</p>
+            <p>（4）交互分析。在有无官僚制（图3.4）或文字（图4.3）的情况下比较热量变异性与议会的关系，是一种非正式的交互检验。这是两章最接近“机制检验”的部分，如果官僚制在解决信息问题方面替代了议会，那么当官僚制存在时，热量变异性与议会的关系应该消失，事实确实如此。</p>
+            <p>这些方法有效的关键假设包括：（a）SCCS和WNAI数据准确地代表了它们所编码的社会的政治和经济特征，这要求信任民族志观察。（b）基于现代FAO数据（无灌溉、无投入）的热量潜力和热量变异性合理地代理了这些社会面临的实际农业条件。这对于在人类大规模改造景观之前被观察到的社会是合理的，但对于在几个世纪的农业改造之后被观察到的社会则不太合理。（c）这些关系不是由混杂变量驱动的。由于分析主要是双变量的，未观察到的因素（例如文化扩散、贸易路线的邻近性、亲属结构、宗教制度）可以合理地解释这些模式。斯塔萨维奇处理了一些混杂因素（例如贸易和风险分担作为热量变异性-议会关系的替代解释，第68页），但没有使用多元回归来同时控制所有合理的混杂因素。（d）对于交互分析，必须假设官僚制的存在本身不是由驱动议会存在的相同因素内生决定的。</p>
+          </div>
+        </section>
+
+      <section class="class-notes">
+        <h2 data-en="Class Notes" data-zh="课堂笔记">Class Notes</h2>
+        <h3 data-en="Week 8 lecture: discussion of this reading" data-zh="第 8 周讲课：本篇文献的讨论">Week 8 lecture: discussion of this reading</h3>
+        <div class="lang-en cn-body"><p>Reason the instructor chose this text: although Stasavage focuses on a somewhat different question (regime type / the origins of democracy), his analysis is directly relevant to the problems of monitoring and centralization. The core argument is: the development of bureaucratic technologies such as writing, geometry, and land surveying raised q, enabling rulers to build hierarchical bureaucracies, thereby replacing the “early democracy” that had earlier been achieved through parliaments/Council.</p><p>Key contribution: unlike the previous two texts, Stasavage at least opens the door to endogenizing q: governments may deliberately invest in technologies that increase legibility. In Kiser and Sng’s model, q is an exogenous parameter; Stasavage raises a question worth further exploration: why and how do governments actively invest in changing q?</p><p>Instructor’s assessment: this is an eminently readable book, but the empirical evidence is more illustrative than testing. Throughout the book, Stasavage makes extensive use of the Murdock Atlas (an ethnographic dataset from the Human Relations Area Files), and the class had previously discussed the reliability problems of this dataset. Moreover, Stasavage remains relatively vague about the government’s true motives for investing in bureaucratic technology.</p></div><div class="lang-zh cn-body"><p>老师选择此文的理由：Stasavage 虽然关注的是一个稍有不同的问题（政体类型/民主的起源），但他的分析与监控和集权化的问题直接相关。核心观点是：书写、几何学、土地测量等官僚技术的发展提高了 q，使得统治者能够建立科层等级制度，从而取代了早期通过议会/Council 实现的”早期民主”。</p><p>关键贡献：与前两篇文献不同，Stasavage 至少打开了 q 内生化的大门：政府可能有意投资于提升可辨识性的技术。在 Kiser 和 Sng 的模型中，q 是一个外生参数；Stasavage 提出了一个值得进一步探讨的问题：为什么以及如何，政府会主动投资于改变 q？</p><p>老师的评价：这是一本非常好读（eminently readable）的书，但经验证据更多是说明性的（illustrative）而非检验性的。Stasavage 在全书中大量使用了 Murdock Atlas（人类关系区域档案的民族志数据集），而课堂此前已经讨论过这个数据集的可靠性问题。此外，Stasavage 对政府投资官僚技术的真正动机持相对模糊的态度。</p></div>
+        <details><summary data-en="Shared week context" data-zh="本周共享背景">Shared week context: the blackboard principal-agent model &amp; cross-reading synthesis</summary><div class="lang-en cn-body">
+<p>Lecture framing: the Feb. 26 class used a principal-agent toy model to organize the week around legibility, monitoring, and centralization. The ruler chooses an institutional form, indirect rule/tax farming (\(I\)) or direct rule/state administration (\(D\)); the agent chooses effort \(e\in\{0,1\}\); and effort affects the probability of high tax revenue \(R\in\{L,H\}\).</p>
+<div class="formula-box">\[
+  \Pr(R=H\mid e=1)=p\in(0,1),\qquad \Pr(R=H\mid e=0)=0.
+\]</div>
+<p>The key monitoring parameter is:</p>
+<div class="formula-box">\[
+  q=\Pr(e=0\mid R=L),\qquad q\in\left[\frac{1}{2},1\right].
+\]</div>
+<p>Indirect rule/tax farming works through a share contract. The agent's incentive compatibility constraint and the ruler's optimal share are:</p>
+<div class="formula-box">\[
+  pSH\ge k,\qquad S_I^*=\frac{k}{pH}.
+\]</div>
+<p>The ruler's profit under indirect rule is independent of monitoring quality:</p>
+<div class="formula-box">\[
+  \pi_I=p(1-S_I^*)H=pH-k.
+\]</div>
+<p>Direct rule/state administration adds the threat of dismissal. If the agent is retained, the position has continuation value \(V&gt;0\). The incentive constraint, optimal share, and profit are:</p>
+<div class="formula-box">\[
+  pSH+qV\ge k,\qquad S_D^*=\max\left\{0,\frac{k-qV}{pH}\right\}.
+\]</div>
+<div class="formula-box">\[
+  \pi_D=\begin{cases}
+  pH, &amp; qV&gt;k,\\
+  pH-k+qV, &amp; qV\le k.
+  \end{cases}
+\]</div>
+<p>The institutional switch from \(I\) to \(D\) requires paying a transition cost \(C\). Direct rule is chosen when:</p>
+<div class="formula-box">\[
+  \pi_D-C\ge\pi_I\quad\Longleftrightarrow\quad qV\ge C\quad\Longleftrightarrow\quad q^*=\frac{C}{V}.
+\]</div>
+<p>The core takeaway is that tax farming is the fallback institution when monitoring is weak, while direct administration becomes attractive once monitoring and dismissal can discipline agents enough to justify the transition cost.</p>
+<div class="table-wrap"><table class="sf-table"><thead><tr><th>Reading</th><th>Role in the model</th><th>Core dependent variable</th><th>Status of \(q\)</th></tr></thead><tbody>
+<tr><td>Kiser (1994)</td><td>Contract choice: tax farming vs. state administration.</td><td>Institutional form of tax collection.</td><td>Mostly exogenous; tax type, state size, ruler autonomy, and control technology shift monitoring.</td></tr>
+<tr><td>Sng (2014)</td><td>Scale expansion dilutes monitoring capacity.</td><td>Decline of Qing fiscal capacity.</td><td>Exogenous to the ruler in the key model; distance and scale reduce effective monitoring.</td></tr>
+<tr><td>Stasavage (2020)</td><td>Moves from early democracy to hierarchy as bureaucratic technology improves.</td><td>Early democracy vs. hierarchical rule.</td><td>Begins to endogenize \(q\): writing, mapping, and bureaucracy raise legibility.</td></tr>
+<tr><td>Sánchez de la Sierra (2020)</td><td>Uses mineral visibility as an empirical proxy for taxable legibility.</td><td>Forms of taxation by armed groups.</td><td>Exogenous to armed actors, driven by commodity characteristics.</td></tr>
+</tbody></table></div>
+<p>The progressive logic of the week is: start with Kiser's narrow contract-choice problem, then add the rebellion constraint (Sng), the endogeneity of legibility (Stasavage), and causal identification of concrete mechanisms (Sánchez de la Sierra).</p>
+</div><div class="lang-zh cn-body">
+<p>课堂框架：2月26日的课堂用一个委托-代理玩具模型来组织本周文献，核心是 legibility / monitoring / centralization。统治者选择制度形式：间接统治/包税制（\(I\)）或直接统治/科层行政（\(D\)）；代理人选择是否努力 \(e\in\{0,1\}\)；努力影响税收收入 \(R\in\{L,H\}\) 的分布。</p>
+<div class="formula-box">\[
+  \Pr(R=H\mid e=1)=p\in(0,1),\qquad \Pr(R=H\mid e=0)=0.
+\]</div>
+<p>关键监控参数是：</p>
+<div class="formula-box">\[
+  q=\Pr(e=0\mid R=L),\qquad q\in\left[\frac{1}{2},1\right].
+\]</div>
+<p>间接统治/包税制通过分成合约激励代理人。代理人的激励相容约束和统治者的最优分成为：</p>
+<div class="formula-box">\[
+  pSH\ge k,\qquad S_I^*=\frac{k}{pH}.
+\]</div>
+<p>间接统治下，统治者利润与监控质量无关：</p>
+<div class="formula-box">\[
+  \pi_I=p(1-S_I^*)H=pH-k.
+\]</div>
+<p>直接统治/科层行政加入了解雇威胁。代理人如果保住职位，会获得续约价值 \(V&gt;0\)。激励约束、最优分成和统治者利润为：</p>
+<div class="formula-box">\[
+  pSH+qV\ge k,\qquad S_D^*=\max\left\{0,\frac{k-qV}{pH}\right\}.
+\]</div>
+<div class="formula-box">\[
+  \pi_D=\begin{cases}
+  pH, &amp; qV&gt;k,\\
+  pH-k+qV, &amp; qV\le k.
+  \end{cases}
+\]</div>
+<p>从 \(I\) 转向 \(D\) 需要支付制度转换成本 \(C\)。直接统治被选择当且仅当：</p>
+<div class="formula-box">\[
+  \pi_D-C\ge\pi_I\quad\Longleftrightarrow\quad qV\ge C\quad\Longleftrightarrow\quad q^*=\frac{C}{V}.
+\]</div>
+<p>核心结论：监控弱时，包税制是兜底制度；当监控与解雇威胁足以约束代理人并覆盖转换成本时，科层行政才变得有吸引力。</p>
+<div class="table-wrap"><table class="sf-table"><thead><tr><th>文献</th><th>在模型中的角色</th><th>核心被解释变量</th><th>\(q\) 的状态</th></tr></thead><tbody>
+<tr><td>Kiser (1994)</td><td>合约选择：包税制 vs. 国家行政征收。</td><td>税收征集的制度形式。</td><td>基本外生；税种、国家规模、统治者自主性、控制技术影响监控。</td></tr>
+<tr><td>Sng (2014)</td><td>规模扩张稀释监控能力。</td><td>清朝财政能力衰退。</td><td>在关键模型中对统治者近似外生；距离和规模降低有效监控。</td></tr>
+<tr><td>Stasavage (2020)</td><td>官僚技术提高后，治理从早期民主转向等级制。</td><td>早期民主 vs. 等级统治。</td><td>开始内生化 \(q\)：文字、测绘、官僚制提高可读性。</td></tr>
+<tr><td>Sánchez de la Sierra (2020)</td><td>以矿物可见度作为可征税性的经验代理。</td><td>武装团体的征税形式。</td><td>对武装行为者外生，由商品物理特征决定。</td></tr>
+</tbody></table></div>
+<p>本周的渐进逻辑是：从 Kiser 的狭窄合约选择问题出发，依次加入叛乱约束（Sng）、可读性的内生化（Stasavage），以及具体机制的因果识别（Sánchez de la Sierra）。</p>
+</div></details>
+        <p class="cn-src" data-en="Source: Feb26_lecture_notes.pdf · Feb 26 · Week 8 lecture" data-zh="来源：Feb26_lecture_notes.pdf · Feb 26 · Week 8 lecture">Source: Feb26_lecture_notes.pdf · Feb 26 · Week 8 lecture</p>
+      </section>
+
+        <nav class="node-nav">
+          <a class="prev" href="sng2014.html"><small data-en="Previous reading" data-zh="上一篇">Previous reading</small>Sng 2014</a>
+          <a class="next" href="sanchez2020.html"><small data-en="Next reading" data-zh="下一篇">Next reading</small>Sánchez de la Sierra 2020</a>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Suryanarayan &amp; White 2021 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 11" data-zh="第 11 周">Week 11</span> · <span data-en="Coercion–Extraction lane" data-zh="强制–汲取层">Coercion–Extraction lane</span> · <span data-en="The long nineteenth century (S4)" data-zh="长十九世纪（S4）">The long nineteenth century (S4)</span></p>
+        <h1><span class="lang-en">Pavithra Suryanarayan &amp; Steven White (2021), “Slavery, Reconstruction, and Bureaucratic Capacity in the American South,” APSR 115(2).</span><span class="lang-zh">苏里亚纳拉扬、怀特（2021）《奴隶制、重建与美国南方的官僚能力》，APSR。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#607066" data-en="Panel FE" data-zh="面板固定效应">Panel FE</span><span class="chip" style="background:#b0713f" data-en="Diff-in-diff" data-zh="双重差分">Diff-in-diff</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The main dependent variable is bureaucratic capacity in the post–Civil War American South, operationalized through three distinct measures. The first measure is per capita county tax collections (logged), drawn from 1870 and 1880 census data. This variable captures both changes to fiscal policy and the state’s actual ability to extract revenue. During Reconstruction (1870), the mean level of per capita county taxation was $1.17; by 1880, after Reconstruction’s demise, it dropped to $0.87, a 26% decline (p. 568). The second measure is census quality, operationalized as age heaping among white respondents using the Whipple’s Index calculated from the full population data of the 1880 census. A Whipple’s Index score of 100 indicates no heaping at ages ending in 0 or 5, while scores above 100 indicate heaping, that is, errors in census recording that reflect bureaucratic inability to gather accurate information (pp. 574–575). The third measure is per capita government employees in each county in 1880, calculated using individual-level occupation data from the full census. This captures the physical “bureaucratic presence” of the state, the degree to which government personnel are available on the ground to gather information, detect noncompliance, and implement policies (p. 576).</p>
+            <p>These three measures are conceptually related but capture different facets of state capacity: the first is a combined indicator of fiscal policy and extractive capacity; the second reflects the quality of the state’s information-gathering apparatus; and the third reflects the sheer size of the local administrative infrastructure. By using multiple measures, the authors aim to show that the weakening after Reconstruction was not confined to tax policy alone but extended to the underlying institutional machinery required for governance.</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要因变量是美国南方内战后的官僚能力，通过三个不同的指标来操作化。第一个指标是人均县级税收（取对数），数据来自1870年和1880年人口普查。该变量既捕捉了财政政策的变化，也反映了国家实际的税收汲取能力。重建时期（1870年），南方各县人均税收的平均水平为1.17美元；到1880年重建终结后，降至0.87美元，下降了26%（第568页）。第二个指标是人口普查质量，通过1880年全人口普查数据中白人受访者的“年龄堆积”（age heaping）来操作化，使用惠普尔指数（Whipple’s Index）计算。惠普尔指数得分为100表示受访者报告的年龄在以0和5结尾的数字上没有异常集中，而高于100的得分则表明存在堆积，即普查记录中的错误，反映了官僚机构无法收集准确信息的能力缺陷（第574–575页）。第三个指标是1880年各县的人均政府雇员数，使用全普查的个人层面职业数据计算，捕捉的是国家“官僚存在感”的物理度量，即地方政府人员在现场收集信息、侦测违规和实施政策的程度（第576页）。</p>
+            <p>这三个指标在概念上相互关联但侧重不同层面：第一个是财政政策和汲取能力的综合指标；第二个反映的是国家信息收集体系的质量；第三个反映的是地方行政基础设施的规模。通过使用多重指标，作者旨在证明重建终结后的削弱不仅限于税收政策本身，还延伸到了治理所必需的制度机器。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The main independent variable is racial-status inequality, operationalized through two county-level measures from the 1860 census. The first is Proportion enslaved, the total number of enslaved people divided by the total county population in 1860, the last census before emancipation. The second is Proportion slaveholders, the number of slaveholding whites as a proportion of total whites in a county. These two measures are highly correlated (r = 0.93) (p. 574). The authors argue that these variables capture the broader degree of racial-status hierarchy in a county, rather than only the political threat posed by newly enfranchised Black voters. In counties where a greater proportion of the population had been enslaved, social norms around interracial interaction were more extreme, white racism was more deeply held, and emancipation therefore produced a more profound social transformation, making white resistance to the new order more intense (p. 573, fn. 11).</p>
+            <p>A critical secondary independent variable is intrawhite economic inequality, measured as the Gini coefficient of occupational prestige among white males in 1850, using the Duncan Socio-Economic Index. This variable allows the authors to test their cross-class coalition hypothesis: in counties with high racial-status inequality, greater intrawhite economic inequality should be associated with lower taxation and weaker bureaucratic capacity after Reconstruction, because poorer whites were rallied around racial solidarity rather than class interest (pp. 580–581).</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要自变量是种族地位不平等，通过1860年人口普查的两个县级指标来操作化。第一个是被奴役人口比例，1860年（解放前最后一次人口普查）县内被奴役总人数除以县总人口。第二个是奴隶主比例，县内白人中奴隶主的比例。这两个指标高度相关（r = 0.93）（第574页）。作者认为，这些变量不仅仅捕捉了新获选举权的黑人选民所构成的政治威胁，更捕捉了一个县内更广泛、更深层的种族地位等级制度的程度。在被奴役人口比例较高的县，围绕种族间互动的社会规范更为极端，白人的种族主义信念更为根深蒂固，因此解放带来了更为深刻的社会转变，也使得白人对新秩序的抵抗更为激烈（第573页，脚注11）。</p>
+            <p>一个关键的次要自变量是白人内部经济不平等，以1850年白人男性职业声望的基尼系数来衡量，使用的是邓肯社会经济指数（Duncan Socio-Economic Index）。该变量使作者能够检验其跨阶级联盟假说：在种族地位不平等程度高的县，白人内部经济不平等程度越高，重建后的税收应越低、官僚能力应越弱，因为贫穷白人被动员到种族团结而非阶级利益的旗帜下（第580–581页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>This paper conceptualizes the state primarily in terms of bureaucratic capacity, the administrative and technological capability of the government to identify potential taxpayers, accurately assess their obligations, and enforce compliance. This follows the Weberian tradition as articulated by Mann (1986) on “infrastructural power” and operationalized by scholars such as Soifer (2008) and Lee and Zhang (2016). In this framework, state capacity is less about de jure authority or policy choices than about the de facto ability to implement those choices on the ground. A state that passes progressive tax legislation but lacks the bureaucracy to collect those taxes has low capacity regardless of its formal policy.</p>
+            <p>The paper’s conceptualization makes a critical analytical distinction between fiscal policy (the tax rates and spending priorities chosen by political leaders) and bureaucratic capacity (the administrative infrastructure that makes policy implementation possible). The authors argue that elites facing democratization can target both tax rates and the state’s underlying institutional machinery. Tax rates can be changed by future governments, but bureaucratic capacity is harder to rebuild. Weakening it is therefore a more durable way to constrain future governments’ ability to redistribute, regardless of their policy preferences (pp. 568–570). This distinction builds on Suryanarayan’s (2016) earlier work on colonial India /ˈɪndiə/ and resonates with Lieberman’s (2003) comparative study of fiscal capacity in South Africa /saʊθ ˈæfrɪkə/ and Brazil /brəˈzɪl/.</p>
+            <p>The paper measures “stateness” at the county level rather than at the national or state level. This is a deliberate choice that allows the authors to exploit within-South variation in the intensity of slavery and its institutional legacies. The assumption is that local government institutions in the American South constituted the front line of state capacity, it was at the county level that taxes were collected, census data gathered, and government services delivered.</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文主要从官僚能力的角度来概念化国家，即政府识别潜在纳税人、准确评估其义务并强制执行合规的行政和技术能力。这遵循了韦伯传统，正如曼恩（Mann, 1986）关于“基础性权力”的论述，以及索伊弗（Soifer, 2008）和李与张（Lee and Zhang, 2016）的操作化方法。在这一框架中，国家能力不仅仅关乎法律上的权威或政策选择，更关乎在地方事实上实施这些选择的能力。一个通过了累进税法但缺乏征税官僚机构的国家，无论其正式政策如何，其能力都是低下的。</p>
+            <p>本文的概念化做出了一个关键的分析区分：财政政策（政治领导人选择的税率和支出优先项）与官僚能力（使政策实施成为可能的行政基础设施）之间的区别。作者认为，面临民主化的精英不仅可以针对税率，这可以被未来的政府改变，还可以针对国家的底层制度机器。削弱官僚能力是一种更为持久的策略，因为它限制了未来政府进行再分配的能力，而不论其政策偏好如何（第568–570页）。这一区分建立在苏里亚纳拉亚南（Suryanarayan, 2016）关于殖民时期印度（India /ˈɪndiə/）的早期研究之上，也与利伯曼（Lieberman, 2003）关于南非（South Africa /saʊθ ˈæfrɪkə/）和巴西（Brazil /brəˈzɪl/）财政能力的比较研究相呼应。</p>
+            <p>本文在县级而非国家或州级层面衡量“国家性”。这是一个刻意的选择，使作者能够利用南方内部在奴隶制强度及其制度遗产方面的变异。其假设是，美国南方的地方政府机构构成了国家能力的前线，正是在县级层面，税收被征收、人口普查数据被收集、政府服务被提供。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The core argument is that the effect of franchise expansion in a ranked society depends on social status divisions as well as economic inequality. During Reconstruction, counties with more extensive slavery before the war had higher per capita taxation, which is consistent with the standard expectation that enfranchising poorer groups increases demand for redistribution. In Table 1, a one-standard-deviation increase in 1860 proportion enslaved is associated with about a 12% increase in per capita county taxation in 1870.</p>
+            <p>After Reconstruction ended, however, the pattern changed. The strongest empirical claim is not that high-slavery counties had significantly lower taxes in 1880 levels. In fact, the coefficient on 1860 proportion enslaved in the 1880 tax model is positive but not statistically significant. The more precise result is that counties with more extensive slavery experienced larger declines in taxation between 1870 and 1880. In other words, the positive relationship seen during Reconstruction disappeared, and the tax trajectory became more negative in places where slavery had been strongest.</p>
+            <p>The authors interpret this reversal as evidence that white elites in the postwar South were able to build cross-class coalitions among whites. In counties where racial-status inequality had been especially strong, poorer whites were less likely to align politically around class interest alone. Instead, they could be mobilized around the protection of white status, even when that meant supporting lower taxation and weaker bureaucratic institutions that also reduced the supply of broader public goods.</p>
+            <p>The interaction results give additional support to the cross-class coalition argument, but they should be stated carefully. The authors find that the interaction between proportion enslaved and intrawhite occupational inequality is negative and statistically significant for 1880 per capita taxes, for the change in per capita taxes between 1870 and 1880, and for per capita government employment. This means that as prewar slavery becomes more extensive, greater intrawhite inequality is associated with lower taxes and fewer government employees after Reconstruction.</p>
+            <p>For age heaping in 1880, the interaction term has the expected positive sign, but it is not statistically significant at conventional levels. So the interaction analysis supports the coalition argument most clearly for taxation and government employment, while the evidence is weaker for census quality. It is therefore better not to summarize the interaction findings as equally strong across all three bureaucratic outcomes.</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文的核心论点是：在一个等级社会中，选举权扩展的后果不仅取决于经济不平等，也取决于社会地位分裂。重建时期，战前奴隶制更强的县，其人均税收更高，这与经典理论的预期一致：当较贫穷群体获得选举权时，对再分配的需求会上升。表 1 显示，1860 年被奴役人口比例每增加一个标准差，1870 年的人均县级税收大约提高 12%。</p>
+            <p>但在重建结束之后，这种关系发生了变化。这里最准确的经验表述不是“高奴隶制县在 1880 年的税收显著更低”。实际上，在 1880 年税收水平模型中，1860 年被奴役人口比例的系数是正的，但不具有统计显著性。更精确的结果是：奴隶制越广泛的县，在 1870 到 1880 年之间经历了更大的税收下降。也就是说，重建时期那种正相关关系消失了，而在原先奴隶制最强的地方，税收走势变得更消极。</p>
+            <p>作者把这种逆转解释为：战后南方的白人精英成功地建立了白人内部的跨阶级联盟。在种族地位不平等特别强的县，较贫穷白人不太会单纯围绕阶级利益来行动；相反，他们可能围绕维护白人地位这一目标被动员起来，即使这意味着支持更低的税收和更弱的官僚机构，而这些选择其实也会减少更广泛公共品的供给。</p>
+            <p>交互项结果确实为跨阶级联盟论点提供了进一步支持，但表述时要更谨慎一些。作者发现，被奴役人口比例 与 白人内部职业不平等 的交互项，对于 1880 年人均税收、1870 到 1880 年税收变化、以及 人均政府雇员数，都是负向且统计显著的。这意味着：战前奴隶制越强的地方，白人内部不平等越高，重建后的税收越低，政府雇员也越少。</p>
+            <p>但对于 1880 年年龄堆积，交互项虽然方向上符合预期，是正的，但在通常显著性标准下并不显著。所以，更准确的总结应该是：交互项分析对税收和政府雇员数的支持最清楚，而对普查质量这一指标的支持较弱。也因此，最好不要把交互项结果概括成对三个官僚能力指标都同样强。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>The paper proposes that racial-status inequality shaped post-Reconstruction outcomes by helping white elites build a cross-class white coalition against taxation and against investments in bureaucratic institutions. The basic idea is that when Black enfranchisement threatened redistribution and the racial hierarchy itself, white elites could appeal to poorer whites by presenting taxation, public goods, and state expansion as threats to white social rank. This is the paper’s main mechanism, and it is supported by the overall pattern of the results and by the historical discussion in the paper.</p>
+            <p>The authors also draw on Du Bois and related scholarship to argue that poorer whites had reasons to value whiteness both materially and psychologically. The point is not simply that poor whites were “fooled,” but that white status itself could carry real benefits and therefore could help sustain a coalition that cut against pure class interest. This is an important part of the paper’s interpretation of why high intrawhite inequality did not automatically produce stronger support for redistribution in high-slavery counties.</p>
+            <p>The discussion of Democratic racial appeals, the “straight-out” strategy, violence, intimidation, and fraud should be treated as historical and qualitative support for the coalition argument, not as separately and fully measured causal mechanisms in the statistical analysis. These materials help show how white solidarity was politically activated in the late Reconstruction and Redemption years, but the paper does not identify each of these channels with the same precision as its main regression results.</p>
+            <p>The same caution applies to the census-enumerator analysis. The authors find that enumerator districts with larger African American populations had worse age-heaping outcomes among white respondents, suggesting weaker administrative performance in such places after Reconstruction. This is useful micro-level evidence consistent with the broader argument about bureaucratic weakening. But it is better not to say that the paper definitively proves a deliberate and systematic “degradation” of local administration. The evidence is more modest: it points to weaker performance and is consistent with the authors’ larger interpretation.</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文提出的机制是：种族地位不平等通过帮助白人精英建立白人内部的跨阶级联盟，进而影响了重建后的税收和官僚结果。其基本逻辑是，当黑人获得选举权不仅威胁到再分配，也威胁到种族等级秩序本身时，白人精英就可以把税收、公共品和国家扩张描述成对白人社会地位的威胁，从而动员较贫穷白人反对这些政策。这是全文最核心的机制，主要由整体经验结果和文中的历史讨论共同支持。</p>
+            <p>作者还借助 Du Bois 等人的论述，说明较贫穷白人之所以珍视 whiteness，不仅有物质层面的原因，也有心理层面的原因。这里的重点不只是说贫穷白人被“欺骗”了，而是说白人地位本身确实带来某些现实利益，因此可以维持一种违背纯粹阶级利益的联盟。这也是作者解释为什么在高奴隶制县，白人内部不平等并没有自动带来更强再分配支持的重要部分。</p>
+            <p>至于民主党的种族诉求、“straight-out” strategy、暴力、恐吓和舞弊，更合适的理解是：这些是对跨阶级联盟论点的历史性、定性支持材料，而不是在统计分析中被分别、完整识别出来的独立机制变量。这些材料有助于说明白人团结在晚期重建和 Redemption 时期是如何被政治性地激活的，但论文并没有像主回归结果那样，对每一条机制通道都做同等精确的识别。</p>
+            <p>对人口普查调查员那部分分析，也应当保持同样的谨慎。作者发现，在非裔美国人比例更高的调查员辖区，白人受访者的年龄堆积更严重，这提示了重建结束后这些地方的行政履职可能更弱。这是与“官僚弱化”论点相一致的一种微观证据。但最好不要把它写成论文已经明确证明地方行政被有意识、系统性地“刻意降质”。更稳妥的说法是：这些结果指向更弱的行政表现，并且与作者更大的理论解释相一致。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>The study uses county-level data from the 11 Confederate states across the U.S. censuses of 1850, 1860, 1870, and 1880. The unit of analysis is the county, with all variables interpolated to 1880 county boundaries using areal weighting techniques to account for changing boundaries over time (pp. 577–578).</p>
+            <p>Dependent variables: (1) Log county tax per capita in 1870 and 1880, drawn from the ICPSR 2896 dataset (Historical, Demographic, Economic, and Social Data: The United States, 1790–2002). Historical sources indicate that county taxes in this period were predominantly property taxes (p. 574). (2) Age heaping among whites in 1880, constructed from the full population census using the Whipple’s Index formula (p. 575). (3) Per capita government employees in 1880, using IPUMS occupational data for individuals coded as “Government clerks,” “Government officials,” or “Government non-officials” (p. 576).</p>
+            <p>Main independent variables: (1) Proportion enslaved in 1860, enslaved persons divided by total county population. (2) Proportion slaveholders in 1860, slaveholding whites divided by total whites in the county (p. 573). (3) Intrawhite occupational Gini in 1850, based on the Duncan Socio-Economic Index scores from IPUMS (p. 580).</p>
+            <p>Control variables: The models include seven controls: (1) Proportion free Black in 1860, capturing the pre-war extent of slavery’s retreat; (2) Gini land inequality in 1860, based on the size of landholdings; (3) Farm value in 1860, measuring the cash value of farms; (4) River access and (5) Rail access, as geographic dummies for transportation infrastructure that might facilitate state capacity; (6) Log population in 1860; and (7) Area in square miles, because larger and more populous counties are harder to govern. All models include state fixed effects (p. 577).</p>
+            <p>Additional data for robustness: The authors use a variable called Economic distress, measuring the change in farm value between 1860 and 1870, to control for war-related economic devastation (p. 579). They also replicate their models in Northern counties to check whether the patterns are specific to the South’s experience with slavery and Reconstruction (p. 579). The enumerator-district-level analysis uses 6,957 enumerator districts across the 11 states from the 1880 full population census (p. 581).</p>
+            <p>Geographic coverage: The 11 states of the former Confederacy: Virginia /vərˈdʒɪnjə/, North Carolina /ˌnɔːrθ kærəˈlaɪnə/, South Carolina /ˌsaʊθ kærəˈlaɪnə/, Georgia /ˈdʒɔːrdʒə/, Florida /ˈflɒrɪdə/, Alabama /ˌæləˈbæmə/, Mississippi /ˌmɪsɪˈsɪpi/, Louisiana /luˌiːziˈænə/, Texas /ˈtɛksəs/, Arkansas /ˈɑːrkənsɔː/, and Tennessee /ˌtɛnəˈsiː/. The sample contains approximately 880–901 counties depending on the specification (p. 578).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本研究使用了前邦联11州在1850年、1860年、1870年和1880年美国人口普查中的县级数据。分析单位是县，所有变量都通过面积加权技术插值到1880年的县界，以应对随时间变化的边界问题（第577–578页）。</p>
+            <p>因变量： （1）1870年和1880年的人均县级税收对数，来自ICPSR 2896数据集（美国历史、人口、经济和社会数据：1790–2002）。历史资料显示，该时期的县级税收主要是财产税（第574页）。（2）1880年白人中的年龄堆积，使用惠普尔指数公式从全人口普查数据构建（第575页）。（3）1880年人均政府雇员数，使用IPUMS中编码为“政府文员”、“政府官员”或“政府非官方人员”的个人职业数据（第576页）。</p>
+            <p>主要自变量： （1）1860年被奴役人口比例，被奴役人数除以县总人口。（2）1860年奴隶主比例，拥有奴隶的白人除以县内白人总数（第573页）。（3）1850年白人内部职业基尼系数，基于IPUMS中的邓肯社会经济指数（第580页）。</p>
+            <p>控制变量： 模型包含七个控制变量：（1）1860年自由黑人比例，捕捉战前奴隶制退缩的程度；（2）1860年土地基尼系数，基于土地持有规模；（3）1860年农场价值，衡量农场的现金价值；（4）河流通达性和（5）铁路通达性，作为可能促进国家能力的交通基础设施的地理虚拟变量；（6）1860年人口对数；以及（7）面积（平方英里），因为更大、更多人口的县更难治理。所有模型包含州固定效应（第577页）。</p>
+            <p>稳健性检验数据： 作者使用名为“经济困境”的变量，衡量1860至1870年间农场价值的变化，来控制战争造成的经济破坏（第579页）。他们还在北方各县复制了模型，以检验所发现的模式是否特定于南方奴隶制和重建的经历（第579页）。调查员辖区层面的分析使用了1880年全人口普查中11州的6,957个调查员辖区（第581页）。</p>
+            <p>地理覆盖范围： 前邦联11州：弗吉尼亚州（Virginia /vərˈdʒɪnjə/）、北卡罗来纳州（North Carolina /ˌnɔːrθ kærəˈlaɪnə/）、南卡罗来纳州（South Carolina /ˌsaʊθ kærəˈlaɪnə/）、佐治亚州（Georgia /ˈdʒɔːrdʒə/）、佛罗里达州（Florida /ˈflɒrɪdə/）、阿拉巴马州（Alabama /ˌæləˈbæmə/）、密西西比州（Mississippi /ˌmɪsɪˈsɪpi/）、路易斯安那州（Louisiana /luˌiːziˈænə/）、得克萨斯州（Texas /ˈtɛksəs/）、阿肯色州（Arkansas /ˈɑːrkənsɔː/）和田纳西州（Tennessee /ˌtɛnəˈsiː/）。根据不同的模型设定，样本包含约880–901个县（第578页）。</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>The paper mainly uses county-level OLS regressions with state fixed effects. The authors estimate separate models for three outcomes in the taxation analysis: log county tax per capita in 1870, log county tax per capita in 1880, and the change in log county tax per capita between 1870 and 1880. All continuous explanatory variables are standardized, which makes it easier to compare coefficient sizes across variables within a model. State fixed effects are included so that the analysis relies on within-state, across-county variation rather than cross-state differences. The paper also uses similar OLS models for age heaping in 1880 and per capita government employment in 1880, with prewar values included where available.</p>
+            <p>This design has a before/after comparative structure, because the authors compare how prewar slavery is related to county outcomes during Reconstruction and after Reconstruction. But it is better not to describe the paper as a formal difference-in-differences design. The authors do not set up the analysis around a treatment and control framework, do not explicitly argue from a parallel-trends assumption, and do not claim a quasi-experimental identification strategy of that kind. A more accurate description is that this is a historical observational design using prewar county variation in slavery intensity to study how its association with taxation and bureaucratic capacity changed across the Reconstruction and Redemption periods.</p>
+            <p>To test the cross-class coalition argument, the authors add an interaction between proportion enslaved and intrawhite occupational inequality. They then examine whether the relationship between intrawhite inequality and post-Reconstruction taxation or bureaucratic outcomes differs across counties with low versus high slavery. In addition, they run a supplementary enumerator-district-level analysis for 1880 census quality, asking whether places with larger African American populations had worse age-heaping outcomes among white respondents. This last analysis is best understood as suggestive mechanism evidence, not as a fully separate causal test.</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文主要使用的是县级OLS回归并加入州固定效应。在税收分析中，作者分别估计三个结果变量：1870年的人均县级税收对数、1880年的人均县级税收对数，以及1870到1880年人均县级税收对数的变化值。所有连续解释变量都做了标准化处理，这样更方便比较同一模型中不同变量系数的大小。模型加入州固定效应，因此识别主要依赖的是州内、县际之间的差异，而不是州与州之间的差异。对于1880年的年龄堆积和1880年的人均政府雇员数，作者也使用了类似的OLS模型；在可以做到的情况下，还加入了战前对应指标。</p>
+            <p>这个设计确实有一种前后比较的结构，因为作者在比较：战前奴隶制强度与县级结果之间的关系，在重建时期和重建结束之后是否不同。但更准确的说法是，不应把它写成正式的双重差分设计。作者并不是按 treatment / control 的框架来设定研究，也没有明确诉诸平行趋势假设，更没有把文章表述成那种准实验识别。更合适的概括是：这是一种历史性的观察性研究设计，利用战前各县奴隶制强度的差异，考察这种差异与税收和官僚能力之间的关系如何在 Reconstruction 与 Redemption 两个时期发生变化。</p>
+            <p>为了检验跨阶级联盟的论点，作者加入了被奴役人口比例与白人内部职业不平等的交互项。他们考察的是：在低奴隶制县和高奴隶制县中，白人内部不平等与重建后税收及官僚结果之间的关系是否不同。除此之外，作者还做了一个补充性的人口普查调查员辖区层面分析，考察1880年非裔美国人比例更高的地区，白人受访者的年龄堆积是否更严重。这个分析最好理解为对机制的提示性证据，而不是一个完全独立、严格识别的因果检验。</p>
+          </div>
+        </section>
+
+
+
+        <nav class="node-nav">
+          <a class="prev" href="wang2022.html"><small data-en="Previous reading" data-zh="上一篇">Previous reading</small>Wang 2022</a>
+          <span class="disabled next"><small data-en="No next reading" data-zh="无下一篇">No next reading</small></span>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

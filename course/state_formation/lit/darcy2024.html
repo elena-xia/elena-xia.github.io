@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>D&#x27;Arcy et al. 2024 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 13" data-zh="第 13 周">Week 13</span> · <span data-en="Material–Technological lane" data-zh="物质–技术层">Material–Technological lane</span> · <span data-en="Transhistorical theory &amp; global long-run panels (S0)" data-zh="一般理论与跨国长时段（S0）">Transhistorical theory &amp; global long-run panels (S0)</span></p>
+        <h1><span class="lang-en">Michelle D’Arcy, Marina Nistotskaya &amp; Ola Olsson (2024), “Cadasters and Economic Growth: A Long-Run Cross-Country Panel,” JPE 132(11).</span><span class="lang-zh">达西、尼斯托茨卡娅、奥尔松（2024）《地籍登记与经济增长：长时段跨国面板》，JPE。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#8a6d2e" data-en="Index construction" data-zh="指数构造">Index construction</span><span class="chip" style="background:#607066" data-en="Panel FE" data-zh="面板固定效应">Panel FE</span><span class="chip" style="background:#24493d" data-en="▼ traces to the present" data-zh="▼ 追踪后果至当代">▼ traces to the present</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The main dependent variable is economic growth, measured as the log of real GDP per capita and, alternatively, as the annual growth rate of real GDP per capita. The authors use GDP data from two sources: the Penn World Tables via Acemoglu et al. (2019) for the 1960–2010 period, and the Maddison Project Database (Bolt and Van Zanden 2020) for the extended historical period from 1252 to 2015. In the mechanisms analysis, the dependent variables shift to intermediate outcome variables including transaction costs in property registration (number of procedures, number of days, monetary cost as percent of property value), tax revenue as a share of GDP (property taxes, direct taxes, indirect taxes, total tax ratio), and investment rates (gross capital formation as a share of GDP) (pp. 3786–3787, 3796, 3801, 3815–3820).</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要的因变量是经济增长，以实际人均GDP的对数值衡量，或以实际人均GDP的年增长率衡量。作者使用了两个数据来源的GDP数据：一是Acemoglu等人(2019)使用的Penn World Tables数据（覆盖1960–2010年），二是Maddison项目数据库（Bolt and Van Zanden 2020）的历史数据（覆盖1252–2015年的扩展时段）。在机制分析中，因变量转换为一系列中间结果变量，包括不动产登记的交易成本（程序数、天数、货币成本占财产价值的百分比）、税收收入占GDP的比重（财产税、直接税、间接税、总税比）以及投资率（固定资本形成总额占GDP比重）（第3786–3787、3796、3801、3815–3820页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The main independent variable is Cadaster, a novel composite index constructed by the authors to measure the existence, quality, and territorial extent of state-administered cadastral records in each country-year. The index is computed as the product of three score components: (1) whether a state-administered cadaster exists (z¹, binary: 1 if yes, 0 if no); (2) the type of cadaster, cartographic or narrative (z², scored 1 for cartographic, 0.75 for narrative); and (3) the proportion of the country’s territory covered by the cadaster (z³, ranging from 0 to 1, with scores above 0.9 counted as 1). The final Cadaster indicator ranges from 0 (no state-administered cadaster) to 1 (a mapped cadaster covering at least 90% of the territory, termed a “full cadaster”). The index is constructed for 159 countries from 1000 CE to 2015. The authors emphasize that the shift from no cadaster to having any cadaster matters more than incremental quality improvements within an existing system (pp. 3790–3792).</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要的自变量是地籍指数 (Cadaster)，这是作者构建的一个新型复合指标，用于衡量每个国家-年度的国家管理地籍登记的存在性、质量和领土覆盖范围。该指数由三个分项分数的乘积构成：(1) 是否存在国家管理的地籍登记（z¹，二值变量：有为1，无为0）；(2) 地籍类型，地图式还是叙述式（z²，地图式为1，叙述式为0.75）；(3) 地籍覆盖的国家领土比例（z³，从0到1，覆盖90%以上计为1）。最终的地籍指数取值范围为0（完全没有国家管理的地籍）到1（覆盖至少90%领土的地图式地籍，即所谓“完整地籍”）。该指数覆盖了从公元1000年到2015年的159个国家。作者强调，从无地籍到有地籍的转变比在现有体系内的质量渐进改善更为重要（第3790–3792页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>The paper does not adopt a single explicit theory of the state, but its conceptualization of the state draws on two interrelated traditions. First, it draws on the Coasean/institutional economics tradition (Coase 1960; North 1990) which views the state as the entity that can define, assign, and publicize property rights, thereby reducing transaction costs for economic agents. A state-administered cadaster is the concrete institutional mechanism through which the state performs this function at national scale: it publicly specifies “who holds which rights over what property” (p. 3788). Second, the paper draws on the state capacity literature (Mann 1984; Besley and Persson 2009, 2013; Dincecco and Katz 2016), conceptualizing cadasters as an instrument of infrastructural power, the state’s capacity to penetrate civil society, collect information on taxable assets and liable parties, and deliver public goods.</p>
+            <p>The state is thus measured not through abstract indices of stateness but through a concrete and historically specific institutional output: the cadaster itself. The authors explicitly describe cadastral systems as reflecting and enabling both the information dimension and the fiscal dimension of state capacity (pp. 3789, 3817). Their index of cadasters can therefore be read as a novel, historically grounded proxy for a particular dimension of state-building, namely, the state’s capacity to formalize land relations through public record-keeping, which simultaneously serves the purposes of taxation and market facilitation. Notably, the authors acknowledge that cadasters can be both fiscal (established for tax purposes) and legal (established for recording property rights), and that even fiscal cadasters contain enough information to serve as de facto property rights registries (pp. 3786, 3789).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文并未采用单一的明确国家理论，但其对国家的概念化基于两个相互关联的学术传统。第一，借鉴了科斯/制度经济学传统（Coase 1960; North 1990），将国家视为能够界定、分配和公示产权，从而降低经济主体交易成本的实体。国家管理的地籍登记是国家在全国范围内履行这一职能的具体制度机制：它公开标明“谁对什么财产持有何种权利”（第3788页）。第二，本文借鉴了国家能力文献（Mann 1984; Besley and Persson 2009, 2013; Dincecco and Katz 2016），将地籍登记概念化为基础性权力的工具，即国家渗透市民社会、收集应税资产和纳税义务人信息、提供公共产品的能力。</p>
+            <p>因此，国家性并非通过抽象的国家性指数来衡量，而是通过一个具体的、具有历史特定性的制度产出，即地籍登记本身，来衡量。作者明确将地籍体系描述为既反映又赋能国家能力的信息维度和财政维度（第3789、3817页）。因此，他们的地籍指数可以被解读为衡量国家建设特定维度的一种新颖的、以历史为基础的代理变量，即国家通过公共档案管理将土地关系正式化的能力，这种能力同时服务于征税和市场促进两个目的。值得注意的是，作者承认地籍既可以是财政性的（为征税目的而建立），也可以是法律性的（为记录产权而建立），而且即使是财政性地籍也包含足够的信息，可以在事实上作为产权登记册发挥作用（第3786、3789页）。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The core argument is that the adoption and development of state-administered cadasters has a substantive positive association with long-run economic growth. The authors argue that cadasters facilitate economic growth through multiple channels rooted in well-established theoretical traditions. From the Coasean perspective, cadasters publicly define property rights, specifying what property exists, who holds it, and what rights attach to it, which is a prerequisite for market transactions and reduces transaction costs. From the state capacity perspective, cadasters enhance the state’s ability to tax and provide public goods, a factor independently linked to growth. The authors are careful throughout the paper to frame their findings as showing a strong positive correlation that is “suggestive but not necessarily causal” (p. 3787). They explicitly acknowledge that cadastral reforms are often bundled with other institutional reforms and may be introduced during periods of economic recovery, making clean causal identification extremely difficult. Nevertheless, they argue that the magnitude, robustness, and consistency of the positive association across many specifications, time periods, and subsamples provides meaningful evidence that cadasters matter for growth. A key empirical finding is that the positive association is strongest in the post-1900 period and is largely absent before 1900, which the authors interpret as suggesting that cadastral reforms may require complementary modern institutions (financial intermediaries, administrative capacity) to translate into growth effects (pp. 3786–3787, 3802, 3821).</p>
+          </div>
+          <div class="lang-zh">
+            <p>核心论点是，国家管理的地籍登记的采用与发展与长期经济增长之间存在实质性的正向关联。作者论证，地籍登记通过根植于成熟理论传统的多重渠道促进经济增长。从科斯的视角看，地籍登记公开界定了产权，标明存在什么财产、谁持有它、以及附带何种权利，这是市场交易的先决条件，并降低了交易成本。从国家能力的视角看，地籍登记增强了国家征税和提供公共产品的能力，而这一因素本身就与经济增长独立相关。作者在全文中谨慎地将其发现框定为展示了一种“有启示性但不一定是因果性的”强正相关关系（第3787页）。他们明确承认，地籍改革往往与其他制度改革捆绑实施，也可能在经济复苏时期引入，使得清晰的因果识别极为困难。尽管如此，他们认为，这种正向关联在众多模型设定、时间段和子样本中的幅度、稳健性和一致性，提供了地籍登记对增长确实重要的有意义证据。一个关键的实证发现是，这种正向关联在1900年后的时期最为强烈，而在1900年以前基本不存在。作者将此解读为：地籍改革可能需要互补性的现代制度（金融中介、行政能力）才能转化为增长效应（第3786–3787、3802、3821页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>The authors propose three main mechanisms through which cadasters may influence economic growth, and they empirically test each one.</p>
+            <p>(1) Reduced transaction costs (Coasean channel). Cadasters contain authoritative information on what land exists, who owns it, and what encumbrances are attached. By making this information publicly available through a state-administered registry, cadasters reduce the costs of buying, selling, and mortgaging property. This enables market transactions at scale between strangers rather than only within local networks of personal trust. The authors test this by regressing the World Bank’s Registering Property Indicators (number of procedures, days, and monetary cost) on the Cadaster index for 2005–2015. They find that a typical cadastral reform (magnitude 0.3) is associated with approximately 29.7 fewer days of waiting for property registration, a highly significant result. Effects on the number of procedures and monetary costs are less robust (pp. 3788–3789, 3815–3817).</p>
+            <p>(2) Enhanced state capacity and taxation (fiscal channel). Cadasters furnish the state with information on taxable assets and who is liable, thereby enhancing fiscal capacity. Using tax data from the Government Revenue Dataset (UNU-WIDER 2021) for 1980–2015, the authors find, somewhat surprisingly, that cadasters do not significantly increase property or direct taxes. Instead, they find a strong positive effect on indirect (consumption) taxes, which they interpret through two sub-mechanisms: first, cadastral reform increases households’ effective wealth, boosting consumption and hence indirect tax revenues; second, cadastral reform brings informal economic activity into the bureaucratic reach of the state, facilitating collection of VAT and similar taxes (pp. 3789, 3817–3820).</p>
+            <p>(3) Investment demand (de Soto channel). Drawing on de Soto (2000) and Besley, Burchardi, and Ghatak (2012), the authors argue that formalized property rights should enable landowners to use real estate as collateral, increasing credit availability and investment demand. They test this using World Bank data on gross capital formation as a share of GDP from the 1960s onward. The results show a positive but weaker and less precisely estimated effect: investment peaks about 5 years after reform. The authors conclude that this channel is less important than transaction costs or state capacity, and they interpret this as suggesting that the Coasean clarity-of-property-rights mechanism matters more than the de Soto collateral-access mechanism (pp. 3788, 3820–3821).</p>
+            <p>Besley, Burchardi, and Ghatak (2012)，</p>
+          </div>
+          <div class="lang-zh">
+            <p>作者提出了地籍登记可能影响经济增长的三个主要机制，并对每个机制进行了实证检验。</p>
+            <p>(1) 降低交易成本（科斯渠道）。 地籍登记包含关于土地存在、归属和附带负担的权威信息。通过国家管理的登记系统公开这些信息，地籍降低了买卖和抵押不动产的成本，使陌生人之间也能进行大规模市场交易，而不仅仅局限于基于个人信任的本地网络。作者使用2005–2015年世界银行的不动产登记指标（程序数、天数和货币成本）对地籍指数进行回归来检验这一机制。他们发现，一次典型的地籍改革（幅度0.3）与不动产登记等待时间减少约29.7天相关联，结果高度显著。对程序数和货币成本的效果则不够稳健（第3788–3789、3815–3817页）。</p>
+            <p>(2) 增强国家能力与税收（财政渠道）。 地籍登记为国家提供关于应税资产和纳税义务人的信息，从而增强财政能力。使用联合国大学世界发展经济研究所（UNU-WIDER 2021）1980–2015年的税收数据，作者发现一个颇出乎意料的结果：地籍并未显著增加财产税或直接税收。相反，他们发现了对间接税（消费税）的强正效应。他们通过两个子机制来解释：第一，地籍改革增加了家庭的有效财富，促进消费进而提高间接税收入；第二，地籍改革将非正规经济活动纳入国家官僚体系的管辖范围，便于征收增值税等税种（第3789、3817–3820页）。</p>
+            <p>(3) 投资需求（德索托渠道）。 借鉴德索托（de Soto 2000）和</p>
+            <p>作者论证，正式化的产权应使土地所有者能够以不动产作为抵押物，从而增加信贷可得性和投资需求。他们使用世界银行从1960年代起的固定资本形成总额占GDP比重数据来检验这一机制。结果显示效果为正但较弱且估计精度较低：投资在改革约5年后达到峰值。作者由此得出结论，这一渠道不如交易成本或国家能力渠道重要。他们将此解读为：科斯式的产权清晰性机制比德索托式的抵押品可及性机制更为重要（第3788、3820–3821页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>The paper employs a rich combination of novel and existing datasets.</p>
+            <p>The Cadaster Index (novel data). The core dataset is the authors’ own Cadaster index, constructed for 159 countries from 1000 CE to 2015. It is an annual panel coding the existence, type (narrative vs. cartographic), and territorial coverage of state-administered cadastral records within countries’ contemporary borders. The construction drew on several hundred sources in multiple languages, was subject to a peer review of coding principles (D’Arcy, Nistotskaya, and Ellis 2019), and was validated by the Fédération Internationale des Géomètres (FIG), the international association of land surveyors. As a validity check, the authors show that their Cadaster index in 2015 correlates at 0.75 with the World Bank’s Quality of Land Administration Index in 2016 (pp. 3790–3793).</p>
+            <p>GDP data. For the baseline analysis (1960–2010), the authors use GDP per capita data from the Penn World Tables as employed in Acemoglu et al. (2019). For the extended historical analysis (1252–2015), they use the Maddison Project Database (Bolt and Van Zanden 2020), an unbalanced panel with few time series in medieval times but 153 country observations by 2015. The United Kingdom /juːˈnaɪtɪd ˈkɪŋdəm/ has the longest series (from 1252), followed by France /fræns/ (1280), Sweden /ˈswiːdən/ (1300), Italy /ˈɪtəli/ (1315), and the Netherlands /ˈnɛðərləndz/ (1348) (pp. 3801).</p>
+            <p>Democracy data. The Democracy variable is taken directly from Acemoglu et al. (2019), a dichotomous measure of democratic transitions.</p>
+            <p>Transaction costs data. The World Bank’s Registering Property Indicators (2005–2020, used up to 2015) for up to 149 countries.</p>
+            <p>Tax data. The Government Revenue Dataset (UNU-WIDER 2021) for 1980–2015, providing property taxes, direct taxes, indirect taxes, and total tax ratios as shares of GDP for up to 115 countries. Also, the tax ratio from Acemoglu et al. (2019) for 1960–2010.</p>
+            <p>Investment data. Gross capital formation as a share of GDP from the World Bank’s World Development Indicators (from ~1960).</p>
+            <p>Prussian sub-national data. For the Prussia /ˈprʌʃə/ case study, data come from the Ifo Prussian Economic History Database (iPEHD), containing digitized information from Prussian historical censuses at the county level for 266 counties, and variables created by Cinnirella and Hornung (2016). Outcome variables are farm density and land concentration in 1816, 1849, 1858, 1864, and 1882 (pp. 3811–3812).</p>
+            <p>Unit of analysis. Country-year for the main analysis; county for the Prussian analysis.</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文使用了新型数据与现有数据集的丰富组合。</p>
+            <p>地籍指数（原创数据）。 核心数据集是作者自行构建的地籍指数，覆盖159个国家从公元1000年到2015年。它是一个年度面板数据，编码各国当代国界内国家管理地籍登记的存在性、类型（叙述式vs.地图式）和领土覆盖范围。构建过程使用了多种语言的数百个资料来源，编码原则经过同行评审（D’Arcy, Nistotskaya, and Ellis 2019），并由国际测量师联合会（FIG）验证。作为效度检验，作者展示了其2015年地籍指数与2016年世界银行土地管理质量指数的相关系数为0.75（第3790–3793页）。</p>
+            <p>GDP数据。 基线分析（1960–2010年）使用Acemoglu等人(2019)所用的Penn World Tables人均GDP数据。扩展历史分析（1252–2015年）使用Maddison</p>
+            <p>项目数据库（Bolt and Van Zanden 2020），这是一个非平衡面板，中世纪时期仅有少量时间序列，但到2015年有153个国家观测值。英国 (United Kingdom /juːˈnaɪtɪd ˈkɪŋdəm/) 有最长的序列（从1252年开始），其次是法国 (France /fræns/，1280年)、瑞典 (Sweden /ˈswiːdən/，1300年)、意大利 (Italy /ˈɪtəli/，1315年)和荷兰 (Netherlands /ˈnɛðərləndz/，1348年)（第3801页）。</p>
+            <p>民主数据。 民主变量直接取自Acemoglu等人(2019)，为民主转型的二值衡量。</p>
+            <p>交易成本数据。 世界银行不动产登记指标（2005–2020年，使用至2015年），覆盖最多149个国家。</p>
+            <p>税收数据。 联合国大学世界发展经济研究所政府收入数据集（UNU-WIDER 2021），1980–2015年，提供最多115个国家的财产税、直接税、间接税和总税比（均占GDP比重）。另外还使用Acemoglu等人(2019)的1960–2010年税收比率。</p>
+            <p>投资数据。 世界银行世界发展指标中的固定资本形成总额占GDP比重（从约1960年起）。</p>
+            <p>普鲁士次国家数据。 普鲁士 (Prussia /ˈprʌʃə/) 案例研究使用Ifo普鲁士经济史数据库（iPEHD），包含从普鲁士历史人口普查中数字化的266个县级数据，以及Cinnirella and Hornung (2016)创建的变量。结果变量是1816、1849、1858、1864和1882年的农场密度和土地集中度（第3811–3812页）。</p>
+            <p>分析单位。 主分析为国家-年度；普鲁士分析为县级。</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>The authors employ a suite of econometric methods, deliberately tying their hands by adopting the baseline specification from Acemoglu et al. (2019) on democracy and growth.</p>
+            <p>(1) Dynamic panel models with fixed effects (within estimator). The primary specification is equation (1):</p>
+            <div class="formula-box">\[
+              y_{it}=\beta C_{it}+\sum_{\ell=1}^{L}\gamma_{\ell}y_{i,t-\ell}+\alpha_i+\delta_t+\varepsilon_{it}.
+            \]</div>
+            <p>Here \(y_{it}\) is log GDP per capita, \(C_{it}\) is the Cadaster index, \(\alpha_i\) are country fixed effects, \(\delta_t\) are year fixed effects, and up to \(L=8\) lags of the dependent variable are included. Country fixed effects absorb all time-invariant country characteristics (geography, colonial history, culture). Year fixed effects absorb worldwide shocks common to all countries (global recessions, world wars). The lags of the dependent variable serve two purposes: they eliminate residual serial correlation and they control for pretrends so that countries experiencing cadastral reform are not simply on a different GDP trajectory from otherwise similar countries. The authors also run first-differenced (growth rate) regressions as an alternative that allows for a unit root in GDP (pp. 3796–3799).</p>
+            <p>(2) Conley standard errors with HAC correction. To address concerns about spatial autocorrelation raised by Kelly (2019), the authors compute Conley standard errors (assuming a 2,000 km radius) that simultaneously account for heteroskedasticity and temporal autocorrelation with linear decay (Colella et al. 2020). These corrected standard errors are generally similar in magnitude to the regular clustered standard errors, strengthening confidence in the results (p. 3797).</p>
+            <p>(3) Semiparametric ATET (average treatment effect on the treated) with inverse propensity score reweighting. To address selection into treatment, the authors estimate propensity scores for transitioning to a full cadaster (Cadaster = 1) using a probit model with lagged GDP levels and year fixed effects as covariates. They then use inverse propensity score reweighting to construct a control group of countries with similar GDP dynamics that did not implement full cadastral reform. This analysis, covering 1900–2015 and excluding outliers Kuwait /kuːˈweɪt/ and Qatar /ˈkɑːtɑːr/, shows near-zero pre-treatment effects and a strong immediate positive effect at the year of reform (3.34% GDP increase), peaking at about 14.7% after 7 years (pp. 3802–3805).</p>
+            <p>(4) Country case studies and event studies. The authors examine six European countries with long time series (United Kingdom, France, Sweden, Italy, Netherlands, Portugal /ˈpɔːrtʃʊɡəl/) using OLS regressions with four lags of the dependent variable and linear time trends. They also conduct event studies showing 5-year moving averages of growth rates during 100-year windows around the year of full cadastral reform (pp. 3807–3810).</p>
+            <p>(5) Prussian county-level cross-sectional analysis. For the Prussian case study, the authors exploit differential timing of cadastral reform across provinces to estimate the effect on farm density and land concentration, using lagged dependent variables and district fixed effects (pp. 3811–3814).</p>
+            <p>Key identifying assumptions. For the within estimator to yield unbiased estimates of β, it must be the case that past levels of GDP and Cadaster are orthogonal to the contemporaneous error term ε_it (strict exogeneity conditional on fixed effects and lagged values). This rules out situations where an anticipated future change in GDP causes the adoption of cadasters (reverse causality) or where an unobserved time-varying factor simultaneously drives both cadastral reform and GDP changes (omitted variable bias). The authors explicitly acknowledge that they cannot fully rule out these threats and therefore interpret their results as “suggestive but not necessarily causal” (p. 3787). The ATET analysis relies on the assumption that no unobserved factors beyond lagged GDP levels and year effects simultaneously determine both selection into full cadastral reform and subsequent GDP growth (conditional independence assumption or unconfoundedness) (p. 3804).</p>
+          </div>
+          <div class="lang-zh">
+            <p>(1) 带固定效应的动态面板模型（组内估计量）。主要设定为方程(1)：</p>
+            <div class="formula-box">\[
+              y_{it}=\beta C_{it}+\sum_{\ell=1}^{L}\gamma_{\ell}y_{i,t-\ell}+\alpha_i+\delta_t+\varepsilon_{it}.
+            \]</div>
+            <p>其中 \(y_{it}\) 为人均GDP对数，\(C_{it}\) 为地籍指数，\(\alpha_i\) 为国家固定效应，\(\delta_t\) 为年份固定效应，并纳入最多 \(L=8\) 个因变量滞后项。国家固定效应吸收所有不随时间变化的国家特征（地理、殖民历史、文化）。年份固定效应吸收所有国家共有的全球冲击（全球衰退、世界大战）。因变量滞后项有两个功能：消除残余序列相关，并且关键地控制前趋势，以确保经历地籍改革的国家与其他类似国家相比并非处于不同的GDP轨迹上。作者还运行了一阶差分（增长率）回归作为允许GDP存在单位根的替代方法（第3796–3799页）。</p>
+            <p>(2) 带HAC校正的Conley标准误。 为应对Kelly (2019)提出的空间自相关问题，作者计算了Conley标准误（假设2000公里半径），同时考虑异方差和时间自相关的线性衰减（Colella et al. 2020）。这些校正后的标准误通常与常规聚类标准误大小相似，增强了对结果的信心（第3797页）。</p>
+            <p>(3) 半参数ATET（处理组平均处理效应）与逆倾向得分重加权。 为应对处理选择性问题，作者使用probit模型以滞后GDP水平和年份固定效应为协变量，估计转向完整地籍（Cadaster=1）的倾向得分。然后使用逆倾向得分重加权构建控制组，即那些GDP动态相似但未实施完整地籍改革的国家。该分析覆盖1900–2015年并排除了异常值科威特 (Kuwait /kuːˈweɪt/) 和卡塔尔 (Qatar /ˈkɑːtɑːr/)，结果显示处理前效应接近于零，而在改革年份出现强烈的即时正效应（GDP增长3.34%），在约7年后达到峰值约14.7%。</p>
+            <p>(4) 国家案例研究与事件研究。 作者考察了六个拥有长时间序列的欧洲国家（英国、法国、瑞典、意大利、荷兰、葡萄牙 Portugal /ˈpɔːrtʃʊɡəl/），使用带四个因变量滞后项和线性时间趋势的OLS回归。他们还进行了事件研究，展示完整地籍改革年份前后各50年（共100年窗口）的GDP增长率5年移动平均（第3807–3810页）。</p>
+            <p>(4) 国家案例研究与事件研究。 作者考察了六个拥有长时间序列的欧洲国家（英国、法国、瑞典、意大利、荷兰、葡萄牙 Portugal /ˈpɔːrtʃʊɡəl/），使用带四个因变量滞后项和线性时间趋势的OLS回归。他们还进行了事件研究，展示完整地籍改革年份前后各50年（共100年窗口）的GDP增长率5年移动平均（第3807–3810页）。</p>
+            <p>关键识别假设。 组内估计量要得到β的无偏估计，必须满足：过去的GDP和地籍水平与当期误差项ε_it正交（条件于固定效应和滞后值的严格外生性）。这排除了以下情形：预期未来GDP变化导致采用地籍（反向因果），或者某个未观测的时变因素同时驱动地籍改革和GDP变化（遗漏变量偏差）。作者明确承认无法完全排除这些威胁，因此将其结果解释为“有启示性但不一定是因果性的”（第3787页）。ATET分析依赖的假设是：除了滞后GDP水平和年份效应之外，不存在同时决定完整地籍改革选择和后续GDP增长的未观测因素（条件独立假设或不可混淆性）（第3804页）。</p>
+          </div>
+        </section>
+
+
+
+        <nav class="node-nav">
+          <span class="disabled prev"><small data-en="No previous reading" data-zh="无上一篇">No previous reading</small></span>
+          <a class="next" href="chambru2024.html"><small data-en="Next reading" data-zh="下一篇">Next reading</small>Chambru et al. 2024</a>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

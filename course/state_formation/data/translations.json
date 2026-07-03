@@ -1,0 +1,553 @@
+{
+ "levi1988": {
+  "dv": {
+   "zh": [
+    "主要因变量是国家收入生产政策的选择与差异：为什么统治者采用特定的征税和收入汲取制度（例如包税制、官僚征收或所得税），以及对这些政策的遵从如何随时间、跨政体而变化。第二章将收入制度的选择作为因变量（p. 10, 17）。第三章将因变量转向对既有税收契约在其存续期内遵从程度的变化，尤其是“准自愿遵从”上升或下降的条件（p. 48, 67–68）。"
+   ]
+  },
+  "iv": {
+   "zh": [
+    "核心自变量是对统治者行为的三项约束：（1）统治者与其代理人／臣民之间的相对讨价还价能力，（2）实施和执行收入政策的交易成本，（3）统治者的贴现率，即他们对未来收益相对于当下收益的重视程度（p. 10, 13）。这三项约束本身又由更深层的结构性变量所塑造：（1）生产力与经济结构，（2）国际环境，（3）政府形式（p. 13）。在第三章中，另一关键自变量是统治者能够在多大程度上创造并维持准自愿遵从，这取决于统治者的可信度、税收交易被认为的公平程度，以及纳税人对其他人也在遵从的信心（p. 52–53）。"
+   ]
+  },
+  "stateness": {
+   "zh": [
+    "Levi 通过将统治者视为政体的首席执行官这一视角来构想国家（p. 10, 14）。统治者可以是君主、军事独裁者、总统或首相，这一界定有意足够宽泛，以涵盖历史上各种政体。国家被理解为统治者与代理人之间、以及统治者与臣民之间的一系列契约的枢纽，尽管 Levi 指出这一表述并不完善，因为它对构建契约与交换的制度理论化不足（p. 11, 脚注 1）。在这一框架中，国家建构是统治者设计并正式化各种结构的过程，这些结构增强其讨价还价能力、降低其交易成本、并降低其贴现率，从而更好地从政治交换中获取收益（p. 16）。Levi 使用收入制度中可观察到的差异（税种、行政机构，以及遵从程度）作为国家能力与性质的经验代理指标。国家控制下的强制性、经济性和政治性资源的演变，作为国家能力日益增强的历史指标（p. 17–19）。Levi 明确将现代民主国家纳入其中：总统和首相都是受法律制衡、立法机关、有组织的代理人和压力集团约束的“统治者”（p. 14）。"
+   ]
+  },
+  "argument": {
+   "zh": [
+    "第二章：统治者是掠夺性的，因为他们始终力图最大化国家的收入，但他们这样做时受到约束：他们相对于代理人和臣民的相对讨价还价能力，实施和执行政策的交易成本，以及他们的贴现率（p. 10）。统治者并不总是掠夺。他们试图像“有差别的垄断者”那样行事，为不同群体设计不同的产权和税收条款，以最大化国家的总收入（p. 10，引用 North 1981）。任一时点上收入制度的选择由这三项约束的组合所决定。这些约束本身又是三个结构性因素的产物：（1）生产力水平与经济结构，（2）国际环境，（3）政府形式（p. 13）。统治者积极试图将这些约束改变为对自己有利。跨政体和跨历史时期国家政策的重大差异，主要反映这些约束的差异（p. 14）。例如，面对拥有相当政治和经济资源的臣民的封建君主，必须以让步（免税、服务）换取忠诚，而垄断强制能力但缺乏监督能力的专制君主，则会建立庞大的收入基础而提供极少服务，只保留其能够防止代理人中饱私囊的那部分收入（p. 14）。",
+    "第三章：一旦收入政策确立，对它的遵从就成为核心问题。Levi 认为，统治者不能仅仅依靠强制来执行纳税，因为强制代价高昂且会滋生怨恨（p. 32, 50）。他们也不能仅仅依靠意识形态或规范，后者作为独立的因果因素仍然理论化不足且难以衡量（p. 51）。Levi 提出的关键机制是准自愿遵从：纳税人选择纳税并非纯粹出于对惩罚的恐惧，也不仅仅出于规范性信念，而是因为他们有信心相信：（1）统治者会履行其契约义务并提供承诺的物品，以及（2）其他纳税人也会缴纳（p. 52–53）。准自愿遵从是有条件的、策略性的：它取决于对公平的感知、统治者的可信度（通过预先承诺策略维持，如提交预算并使自己成为剩余索取者），以及协调纳税人预期的制度（如议会和公社征税单位）（p. 60–66）。如果税收契约的条款在未经纳税人同意的情况下转向不利于其利益，或者有证据表明其他人没有缴纳，准自愿遵从就会下降，不遵从会连锁蔓延（p. 53–54, 67–68）。"
+   ]
+  },
+  "mechanisms": {
+   "zh": [
+    "第二章——决定收入制度选择的机制：",
+    "1. 相对讨价还价能力通过强制性、经济性和政治性资源的分配运作。当统治者垄断这些资源时，他们可以设定有利的交易条件；当统治者所需的资源由他人控制时，统治者就必须让步（p. 12, 17）。强制性资源在历史上以军事能力为中心，拥有中央化军队的统治者拥有更强的讨价还价能力（p. 18，引用 Bean 1973 和 North 1981）。经济性资源包括对生产资料、贸易路线、劳动力供给和货币的所有权（p. 19）。政治性资源包括统治者阻止退出、封锁反对派，以及通过正面激励（庇护、立法）和负面制裁（排斥、惩罚）来促进支持的能力（p. 19–20）。意识形态虽被承认可能重要，却被当作一个理论化不足的残余项处理（p. 22）。",
+    "2. 交易成本通过若干子机制运作：",
+    "（1）讨价还价成本：获取讨价还价对象信息和达成协议的成本；议会和集体组织等制度安排降低这些成本（p. 28）。",
+    "（2）测量成本：可用于标准化和评估可征税财产的技术，决定了哪些财富可以被征税；古代国家只能对产出征税，因为它们无法测量土地价值或收入（p. 29）。",
+    "（3）监督成本：统治者需要观察臣民是否遵从，以及代理人是否忠实地征收并上缴收入；监督的技术与制度（审计、封建等级制、无记名投票、点名表决）影响哪些政策是可行的（p. 29–30）。",
+    "（4）代理成本：代理人可能偷懒或偷窃；统治者必须设计激励结构（固定薪酬、包税制、官僚机构）以最小化代理人行为与统治者利益之间的偏离；Weber 关于代理的历史形式（实物支付、俸禄制组织、包税制、现代官僚制）说明了其中的权衡（p. 30–32）。",
+    "（5）执行成本：强制代价高昂；因此统治者寻求准自愿遵从以减少直接执行的需要（p. 32）。",
+    "3. 贴现率通过统治者的时间视野运作。高贴现率（由军事冲突、任期不稳，或个人意志薄弱／意志失控所致）导致统治者即使以牺牲未来生产力为代价也要汲取最大的当下收入。低贴现率（由统治的安全稳固所致）导致统治者投资于经济增长和可持续的汲取（p. 32–33）。",
+    "第三章——决定遵从的机制：",
+    "1. 强制：对不遵从施加制裁的威胁，由警察、审计员和代理人执行。有效但代价高昂，且单靠它无法实现完全的遵从（p. 50）。",
+    "2. 意识形态性遵从：有些个人出于规范性信念而纳税。Levi 将此视为理性选择模型之外的因素，但承认其重要性。追随 North（1981, 1985），意识形态在依其行事的成本较低之处最具影响力（p. 50–52）。",
+    "3. 准自愿遵从是核心机制。它通过以下方式运作：",
+    "（1）预先承诺：统治者使自己受制于未来的行为（例如提交预算、使自己在法律上负有责任、成为剩余索取者），这使纳税人确信统治者会提供承诺的物品（p. 61–62）。",
+    "（2）统治者与臣民之间的有条件合作：在反复互动和足够低的贴现率下，一种以牙还牙（tit-for-tat）策略会出现。议会等制度使重复交易成为可能，从而揭示偏好并建立信任（p. 62–63）。",
+    "（3）对集体物品的操控：统治者可以将集体物品的生产函数构造成 S 形或阶梯形，而非线性形，使个人的贡献取决于他人的贡献，从而将这一博弈从囚徒困境转变为更接近保证博弈（assurance game）的形态（p. 57–59）。",
+    "（4）臣民之间的有条件合作：统治者促进公社制度（罗马的 gens、古巴的 CDRs、封建庄园、法国的乡村征税机构），其中成员相互监督，从而降低国家监督的成本（p. 65–66）。",
+    "（5）协调与忠诚：统治者提供关于他人正在合作的信息，公开宣扬遵从行为，明显地惩罚不遵从，从而协调各方预期。这使制裁看起来是针对他人的，并让那些潜在愿意遵从者感到安心（p. 66–67）。"
+   ]
+  },
+  "data": {
+   "zh": [
+    "第二章和第三章主要是理论性的，铺陈其分析框架。它们本身并不呈现系统的经验数据，但 Levi 从世界历史中援引例子：马其顿的 Philip（p. 22, 35–36）、西班牙的 Elizabeth I 和 Philip II（p. 22）、古埃及和中国（p. 31）、古巴（p. 65）、美国（p. 23, 30, 51）、法国大革命（p. 22）等等。"
+   ]
+  },
+  "methods": {
+   "zh": [
+    "演绎式理论建构加历史比较。",
+    "若干假设必须成立：（1）统治者必须确实是收入最大化者（或至少“仿佛”是）。（2）个人必须是机会主义的，从而产生搭便车问题，遵从不能被视为理所当然。（3）三类约束（讨价还价能力、交易成本、贴现率）必须被明确界定且可衡量，以便将该模型的预测与其他替代方案区分开。（4）历史案例必须有足够充分的文献记录，以便对相关变量进行评估。（5）对于准自愿遵从的论证，必须能够在经验上区分由强制导致的遵从、由意识形态导致的遵从，以及由准自愿的策略性算计导致的遵从（Levi 承认“并非总是”能够在经验上做出清晰的区分）。（p. 54）"
+   ]
+  }
+ },
+ "northweingast1989": {
+  "dv": {
+   "zh": [
+    "主要因变量是政府对保障产权和履行其财务协议的承诺的可信度，其体现在英格兰公共和私人资本市场的发展之中。作者通过若干经验指标将其操作化：政府借款的规模与条件（政府债务的量级以及政府能够借款的利率）、私人资本市场的增长（包括股票市场交易量、流通中的银行券，以及英格兰银行的往来账户），以及私人产权的总体安全程度（pp. 803–804, 819, 824–828）。"
+   ]
+  },
+  "iv": {
+   "zh": [
+    "主要自变量是 1688 年光荣革命之后随之而来的一整套制度变革，包括确立议会至上、限制王室特权、创设独立的司法机构、议会对征税和支出的控制，以及伴随这些宪制改革的财政创新。作者将这些制度变革视为一揽子改革，它们从根本上重构了王室与议会之间的关系（pp. 804, 815–817）。"
+   ]
+  },
+  "stateness": {
+   "zh": [
+    "North 和 Weingast 主要从主权者的强制权力及其从社会汲取资源的能力来构想国家。国家被理解为一个在强制方面具有比较优势的实体，而核心的分析问题是：什么阻止国家利用这种强制权力来攫取社会的全部剩余（p. 806）。在这一框架中，Stuart 王朝君主治下的“国家”的特征是行政、立法和司法权力集中于王室，这使主权者能够单方面改变产权。这一 1688 年之前国家的关键制度特征包括：王室特权（无需议会即可发布公告的准立法权）、星室法庭（Star Chamber，集立法、行政和司法权力于一体以执行王室政策），以及王室对司法机构的控制（法官任职取决于国王的意志，若作出不利于王室的裁决即可能被免职）（pp. 813–814）。"
+   ]
+  },
+  "argument": {
+   "zh": [
+    "核心论点是：为了获得持续的经济增长，主权者或政府不仅必须确立产权，而且必须对维护产权作出可信的承诺（p. 803）。主权者可以随意轻易修改的规则，与不受单方面修改的同样规则，有着根本的不同。主权者为其自身利益而改变产权的可能性越大，投资的预期回报就越低，因而投资的激励也就越低（p. 803）。",
+    "作者认为，1688 年光荣革命之后的制度变革解决了这一承诺问题。1688 年之前，Stuart 王朝君主一再违背财务协议，通过垄断特许、强制借贷和操纵法律体系来攫取财富，并将行政、立法和司法权力集中于王室，所有这些都使产权极不安全（pp. 808–814）。1688 年之后的制度安排通过以下方式解决了这一问题：要求政策、征税和贷款条款的变更须经议会同意；确立独立的司法机构；并在王室与议会之间建立一种权力制衡，防止任何一方任意行事（pp. 815–819）。这些安排是自我执行的：王室接受这些约束以换取稳健的财政基础，而议会则通过权力划分和普通法法院的独立性来限制自身滥权的可能（pp. 817–819）。"
+   ]
+  },
+  "mechanisms": {
+   "zh": [
+    "1. 财富持有者通过议会同意获得了否决权。通过要求议会对政策、征税和贷款条款的重大变更表示同意，财富持有者的代表能够否决任何不符合他们利益的举动。这消除了王室单方面改变协议的能力（p. 817）。由于议会代表了那些可能被攫取者的利益，赋予议会否决权意味着只有在受害者本人同意的情况下攫取才可能发生。",
+    "2. 替代性收入来源和逃避途径被消除了。王室先前用来违背承诺的渠道被封堵：王室特权（允许单方面立法）被削减并从属于普通法；执行王室公告的特权法院被废除；王室的独立收入来源受到限制，使其在资金上依赖于议会（pp. 816–817）。没有独立收入，王室就无法绕过议会；没有特权法院，它就无法执行对权利的单方面变更。",
+    "3. 独立的司法机构充当了一种担保。政治上独立的司法机构的创设使法官不再服务于国王，这极大地扩展了政府可信地承诺履行其协议的能力。法院能够针对政府本身执行契约和产权，提供了一种可信的担保（pp. 816, 819）。这一机制尤其重要，因为它意味着即便政治部门想要违约，独立的法院体系也会成为障碍。",
+    "4. 可信的罢黜威胁。成功废黜 Charles I 以及后来的 James II，为任何未来从事不负责任行为的君主确立了一种可信的威胁。",
+    "5. 财政交易充当了共同利益。为换取更大的议会控制权，议会各方利益同意提供足够的税收收入。这消除了曾是王室掠夺行为主要动机的财政危机，并为 William III 提供了对法国作战的资源。因此这一安排是互利的且自我执行的。"
+   ]
+  },
+  "data": {
+   "zh": [
+    "公共资本市场数据：（a）1618 年至 1750 年的政府支出和债务水平，汇编自多种二手来源，包括 B. R. Mitchell 的《英国历史统计》（British Historical Statistics）、David Hume 的《英格兰史》（History of England）、Derek Hirst 的《权威与冲突》（Authority and Conflict）、C. D. Chandaman 的《英格兰公共收入》（The English Public Revenue），以及 H. Fisk 的《英格兰公共财政》（English Public Finance）（表 3, p. 822）。政府债务从 1688 年的约 100 万英镑上升到 1697 年的 1670 万英镑，再到 1720 年的 5400 万英镑。（b）1693 年至 1739 年政府长期借款的利率，取自 P. G. M. Dickson 的《英格兰的金融革命》（The Financial Revolution in England）（表 4, p. 824）。利率从 1693 年的 14% 降至 1730 年代的 3%。（c）取自 Mitchell 的消费品价格指数（1701 = 100），显示尽管债务大幅增加却没有出现通货膨胀式融资（表 3, p. 822）。",
+    "1688 年之前的财政数据：（a）取自 Hume 的 1617 年收入来源和支出水平（表 1, p. 809），显示在总收入 45 万英镑之上存在 3.6 万英镑的年度赤字。（b）取自 Robert Ashton 的《王室与货币市场》（The Crown and the Money Market）的、1604 年至 1625 年早期 Stuart 王朝君主强制借贷的细节（表 2, p. 820），记录了反复的违约和对贷款条款的违背。",
+    "私人资本市场数据：（a）取自 Dickson 的 1690 年至 1750 年股票市场（短期证券交易量）的增长（图 1, p. 826），显示交易量从 1690 年代初的每年 30 万英镑增长到 1710 年代初的每年 1100 万英镑。（b）取自 John Clapham 的《英格兰银行》（The Bank of England）的、1698 年至 1750 年英格兰银行流通中的银行券和往来账户（表 5, p. 827）。（c）伦敦银行数量的增长：到 1720 年代约 25 家，1750 年 30 家，1770 年 50 家，1800 年 70 家（p. 826）。（d）由 L. S. Pressnell 和 Sidney Homer 报告的私人利率数据，显示私人利率大致与公共利率平行（p. 825）。",
+    "作者大量借助二手历史来源来记录 Stuart 王朝君主具体的攫取行为，包括出售垄断专利权、1640 年查抄伦敦塔中的金银块、出售并滥发爵位、使用采买征用权（purveyance）、操纵监护法庭（court of wards），以及罢免法官（pp. 809–814）。他们还利用 Maitland、Keir、Hayek 等人的标准宪制史著作来记录革命安排（Revolution Settlement）的具体制度变革。"
+   ]
+  },
+  "methods": {
+   "zh": [
+    "1. 前后对比。核心研究主体是对 1688 年光荣革命前后制度安排、政府财政行为和资本市场结果的比较。作者记录了 Stuart 王朝治下（1603–1688）王室无力借款、其反复违约以及产权的不安全，然后将其与 1688 年之后政府借款的急剧扩张、利率的下降和私人资本市场的增长相对照（pp. 819–828）。其逻辑是：如果这些制度变革可信地保障了产权，我们就应当在革命之时观察到资本市场状况的急剧改善，而数据所显示的正是如此。",
+    "2. 过程追踪。作者追踪其因果过程：从 Stuart 王朝君主的财政压力和制度权力，经由具体的攫取行为，到导致内战并最终引发光荣革命的政治反对，再到革命安排的具体制度创新及其对资本市场的后果。",
+    "3. 这一历史叙事由一个明确的理论框架所结构化，该框架取自新制度经济学，尤其是 Oliver Williamson 关于可信承诺、交易成本和治理结构的著作。",
+    "为使这些方法有效，必须成立的假设：",
+    "（1）没有其他重大变化与光荣革命同时发生，以致能够独立地解释资本市场的急剧改善。作者承认但搁置了更大的经济和宗教背景（p. 805）。",
+    "（2）资本市场行为是产权被感知安全程度的可靠指标，即贷款人以较低利率放贷的意愿反映的是对政府承诺的真实信念，而非仅仅是诸如货币供给变化、储蓄行为转变或外生经济增长等其他因素。"
+   ]
+  }
+ },
+ "stasavage2011": {
+  "dv": {
+   "zh": [
+    "主要因变量是 1250 年至 1750 年间欧洲各国获取公共信贷的能力。Stasavage 以两种方式将其操作化。第一是一国首次建立长期公债的时间，即我们首次观察到某一政体长期政府贷款利率的日期（第二章 p. 29）。第二是借款成本，以一国为其长期债务支付的利率来衡量（第二章 p. 38）。哪些国家能够更早借款，哪些国家能够以更低的成本借款？（Stasavage）论证：一个尚未建立长期债务的城市国家，在某一半个世纪内建立长期债务的概率预计为 43%，而领土国家仅为 5%；并且城市国家所支付的利率估计比领土国家低大约两个百分点（第一章 p. 17）。"
+   ]
+  },
+  "iv": {
+   "zh": [
+    "主要自变量是政体类型，具体而言是城市国家与领土国家之间的区分。Stasavage 论证，城市国家与领土国家的区分最终植根于两个更深层的基础条件：（1）地理规模，以及（2）精英财富的构成（即政治精英是由持有流动财富的商人主导，还是由持有非流动财富的地主主导）（第一章 p. 1）。这两个基础因素共同决定了一个政体能够维持的政治代表形式，而后者又决定了其获取信贷的能力。城市国家规模小，因此定期召集和监督代表议会的成本较低；城市国家还由商人主导，这些商人本身购买公债，并对市议会拥有直接控制权（第一章 pp. 1–2）。领土国家规模大，使得维持活跃的代表议会代价高昂，且其政治精英由对公共信贷兴趣较小的地主所主导（第一章 pp. 2, 8）。"
+   ]
+  },
+  "stateness": {
+   "zh": [
+    "Stasavage 将国家视为一个必须为自身筹资、其存续取决于通过征税和借款筹集资金的能力的政治实体（第二章 pp. 25–28）。“国家性”的关键维度是以低成本借款的能力，Stasavage 认为这取决于偿还承诺的可信度，而后者又取决于政治制度的结构。在这一框架中，拥有能够监督和修改支出与债务的代表议会的国家，作为借款者更“可信”，因而在前现代欧洲的财政—军事竞争中作为国家更为成功（第一章 p. 7）。",
+    "Stasavage 将“城市国家”定义为：一座对其经济和司法事务施加相当程度控制、同时在组织自身防务方面发挥作用、且政治权利仅限于核心城市居民的城市（第一章 p. 6）。为避免选择偏差，他不仅纳入了像威尼斯和佛罗伦萨这样完全自治的城市，也纳入了像 Ghent（根特）和 Bruges（布鲁日）这样自治程度更有限的城市。他指出，将自治程度较低的城市从样本中剔除实际上会强化他的结果（第一章和第二章 pp. 6, 33）。"
+   ]
+  },
+  "argument": {
+   "zh": [
+    "Stasavage 的核心论点：第一，在一个战争不断的时代，获取公共信贷对欧洲各国的存续与成功至关重要，因为军事支出往往突然产生，且无法仅靠即时增加税收来满足（第二章 pp. 25–28）。第二，为使个人愿意向政府放贷，他们需要确信政府将采取与最终偿债相一致的政策行动。例如，行政当局不会将资源挪用于个人消费或过于昂贵的军事冒险（第一章 p. 7）。第三，由于贷款人事先拟定一份涵盖所有偶发情况的完整契约是不可行的，一种解决办法是行政当局向贷款人让渡对未来政策的一定程度的控制权，途径是设立一个能够监督和修改公共支出的代表议会。",
+    "行使这种控制权的成本关键取决于地理规模：在大型领土国家中，派遣代表前往遥远议会的成本、让议会频繁开会以监督支出的成本，以及选民监督自己代表的成本，都高得令人望而却步（第一章 p. 8）。在小型城市国家中，仅凭敲响城镇钟声这样简单的方式就能召集议会（第一章 p. 14）。代表制的有效性还取决于政治精英的构成：商人持有可迅速转换为政府年金的流动财富；地主持有非流动财富。因此商人是公债的天然购买者。在城市国家中，商人主导政治精英，能够利用其对市议会的控制来确保征税以偿付债务。在领土国家中，地主主导议会，对确保偿债的利害关系较小（第一章 pp. 15–16）。",
+    "即便在城市国家群体内部，那些制度更为寡头化、商人精英正式保留市议会席位、代表通过增补选任（cooptation）而非选举产生的城市，往往比那些制度更开放、更民主的城市拥有更好的信贷获取能力（第一章 pp. 2, 13–14）。这是因为当民众压力导致行会手工业者被纳入市议会时，新代表拥有公债的可能性更小，而承担偿债税负的可能性更大，从而产生了违约或削减利息支付的激励（第一章 pp. 2, 13, 18）。Stasavage 将此表述为一种权衡：更寡头化的制度能够强化偿债承诺的可信度，但以更广泛的政治参与为代价。"
+   ]
+  },
+  "mechanisms": {
+   "zh": [
+    "同左。"
+   ]
+  },
+  "data": {
+   "zh": [
+    "Stasavage 构建了一个原创数据集，涵盖 1250 年至 1750 年五个世纪间的 31 个欧洲国家（19 个城市国家和 12 个领土国家）（第一章 p. 16）。分析单位是国家—半世纪（即每个国家在连续的 50 年时段内被观察）。",
+    "关于因变量（公共信贷）：首次长期债务时间的数据来自对 Stephan Epstein（2000）所引二手来源的系统梳理，并辅以大量额外来源。Stasavage 大幅扩充了 Epstein 的数据集，增添了新的政体、延长了时间覆盖范围并改进了测量（第二章 pp. 29–30）。利率数据在有条件时以发行时的名义利率为基础，在没有条件时则以一个财政代理指标（年度偿债额与债务总存量之比）为基础。他指出，在整个样本中，以财政代理法测得的利率与名义利率没有显著差异（第二章 p. 38）。他还区分了债务工具的类型：终身年金与永久年金、强制贷款与自愿贷款（第一章 p. 16）。",
+    "关于自变量（政治代表制）：对 31 个国家中的每一个及每一个 50 年时段，Stasavage 从二手历史来源编码四个二元指标：（1）是否存在代表议会；（2）议会是否对税收拥有否决权；（3）议会是否在管理征税方面发挥直接作用；以及（4）议会是否直接控制支出和债务决策（第三章 pp. 55–57）。他还编码了议会开会的频率（以 0 到 1 的量表衡量，1 表示至少每年一次），以及议会中商人代表的程度（第三章 pp. 62, 65–66）。地理规模以政体面积（平方公里）的自然对数来衡量，或者以一种“政体规模”度量来衡量，后者捕捉的是普通城市居民到达首都所需行进距离的对数（第三章 pp. 66–67）。代表制数据的来源取自大量二手著作，包括 Société Jean Bodin 和国际代表制与议会制度史委员会出版的多卷本研究，如表 3.1 所列（第三章 pp. 54–56）。",
+    "控制变量与其他变量：Stasavage 使用城市化率作为经济和商业发展的代理指标。他还利用 Clark（1988）关于五个欧洲地区（英格兰、法国、Flanders（佛兰德斯）、德国、意大利）土地租金回报的数据，构建了一个政府所支付“风险溢价”的度量，即观察到的政府借款利率与当时私人土地租金回报之间的差额（第二章 pp. 40–41）。他还为一个较小的国家子集编制了收入波动数据，以评估城市国家是否只是拥有更稳定收入的可能性（第二章 pp. 45–46）。"
+   ]
+  },
+  "methods": {
+   "zh": [
+    "在第一至三章中，Stasavage 主要呈现描述性证据和初步回归分析。",
+    "描述性比较：Stasavage 使用直方图、时间序列图和简单的汇总统计来确立基本的经验模式。图 2.1 显示城市国家远早于领土国家建立长期债务。图 2.2 绘制了随时间变化的所有利率观测值，揭示出既有长期下降趋势又有相当大的差异，其中城市国家始终以较低利率借款。图 2.4 绘制了政府借款利率与私人土地租金回报之间的差额，以表明城市国家支付较低的风险溢价（第二章 pp. 31–32, 39–41）。",
+    "关于议会开会频率的 OLS 回归：在第三章表 3.2 中，Stasavage 报告了议会开会频率对地理规模度量的 OLS 回归，并纳入了时段虚拟变量。他既以水平值也以一阶差分进行估计。一阶差分设定很重要，因为它控制了每个政体特有的所有不随时间变化的未观测因素。使用“政体规模”度量时，地理规模在水平值和一阶差分中都具有统计显著性（第三章 pp. 67–68）。标准误经过聚类处理，以允许政体内部的相关性。",
+    "有效性的关键假设：（1）从二手来源对制度特征的编码必须相当准确，且不存在系统性地偏向该假设的偏差。Stasavage 承认可能存在错误，但论证这些模式过于显著，不可能是编码选择的人为产物（第三章 p. 68）。（2）利率数据尽管测量方法有别，仍必须在跨国家和跨时段之间可比，他在第四章的回归中控制了工具类型和测量方法（第一章 p. 16）。（3）为使一阶差分回归能够识别地理规模对开会频率的因果效应，地理规模的变化必须不是由那些同时独立地导致开会频率变化的相同因素所驱动。由于地理规模高度持久（对政体虚拟变量回归的 R² = 0.93），一阶差分是一个非常严苛的检验，对数面积变量失去了显著性，但政体规模变量仍然显著（第三章 p. 68）。（4）对于城市国家因其代表制度而拥有更好信贷获取能力这一更宽泛的因果论断，必须排除城市国家只是恰好出现在经济更发达地区的可能性，Stasavage 在第五章以工具变量来处理这一顾虑，使用的是到公元 870 年 Meersen 条约（Treaty of Meersen）所划加洛林（Carolingian）分界线的距离（第一章 pp. 19–20）。"
+   ]
+  }
+ },
+ "gehlbach2008": {
+  "dv": {
+   "zh": [
+    "主要因变量是向后共产主义国家中不同经济部门提供的部门特定的集体物品（如司法、警察保护、监管框架及其他国家服务）。次要因变量是经济发展，具体而言是新兴私营企业的增长（或萎缩），其典型代表是后共产主义经济中竞争性行业里的小企业。在第一章中，Gehlbach 将总体难题表述为：在提供集体物品时，后共产主义政治家偏袒了谁，其对经济发展有何后果？（pp. 17–18）。在第三章中，形式模型的因变量明确是集体物品在各部门间的均衡配置（p. 64）。"
+   ]
+  },
+  "iv": {
+   "zh": [
+    "主要自变量是各经济部门的“可征税性”（taxability），其定义为某一部门中的企业向税务机关隐瞒收入的代价有多高（p. 65）。这一概念捕捉的是国家从不同类型经济活动中汲取收入的结构性难易程度。可征税性由后共产主义税制的设计所塑造，而后者又由转型之初的初始条件所决定（继承下来的产业结构、与西欧的邻近程度，以及经济发展水平）（pp. 17–18）。次要自变量是经济部门的组织化程度（即其在 Olson 意义上的集体行动能力），它与可征税性相互作用，共同决定集体物品的提供。Gehlbach 论证，决定政治代表的是可征税性，而不仅仅是组织化程度。"
+   ]
+  },
+  "stateness": {
+   "zh": [
+    "Gehlbach 主要通过国家的财政能力来构想国家，即设计税制、强制税收遵从以及从经济中汲取收入的能力。在这一论述中，国家建构关乎共产主义崩溃之后税制的创建。在共产主义制度下，征税不过是一项会计工作，因为国家拥有生产性资产；向私有制的转型则要求建立能够定位并向私人行为者征税的官僚机构（p. 20）。这里国家能力的关键维度不是一般意义上的强制或行政能力，而是国家向不同部门征税的差别化能力。面对从苏联时代继承下来的垄断性企业，国家是“强”的（因为它知道如何监督并向其征税），而面对小型私营企业则是“弱”的（因为其税收机构从未被设计成能够触及它们）。在 Gehlbach 的论述中，这种不均衡的财政能力是后共产主义国家的核心特征。"
+   ]
+  },
+  "argument": {
+   "zh": [
+    "核心论点是：在后共产主义世界，政治代表（即经济中哪些部门获得国家的优待）不仅由利益的组织化（依 Olson 之见）所决定，而且有时主要由这些部门预期的税收遵从所决定。Gehlbach 称之为“通过征税实现代表”（representation through taxation）。",
+    "第一，后共产主义转型之初的初始条件导致了分化的税制：前苏联（FSU）继续依赖企业税以及对商品和服务的征税（共产主义时代熟悉的收入来源），而东欧则转向个人所得税，以与欧盟规范接轨（pp. 5–6）。",
+    "第二，这些税制设计产生了极为不同的税收遵从模式。在前苏联，税务机关集中关注大型垄断企业，而让小企业和竞争性行业相对自由地逃税。在东欧，收入之网撒得更广，从而使各部门间的遵从差异较小（p. 6）。",
+    "第三，这些差别化可征税性的模式塑造了政治家的激励。在前苏联，可征税性差异巨大且税收在政治上迫在眉睫（用以支付国家工资并维持权力），政治家便不成比例地向易于征税的部门提供集体物品，即便这些部门在政治上并未组织起来。这是以牺牲较难征税的部门为代价的，尤其是对长期发展至关重要的小企业部门（pp. 3, 11–14）。",
+    "Gehlbach 论证，政府不仅仅围绕既有经济活动来构建税制；它们还构建税基本身，扶持它们能够征税的经济活动，而牺牲它们无法征税的经济活动（p. 6）。针对 Olson 的《集体行动的逻辑》（Logic of Collective Action），他论证有组织的利益并不总是获胜。当税收在政治上重要时，无组织但高度可征税的部门可能受到偏袒（pp. 10–11）。针对 Robert Bates 的《热带非洲的市场与国家》（Markets and States in Tropical Africa），他论证利益的组织化对于解释发展结果既非必要也非充分；国家从不同部门汲取收入的能力同等重要甚或更为重要（p. 16）。"
+   ]
+  },
+  "mechanisms": {
+   "zh": [
+    "同左，另加以下内容：",
+    "核心机制在于税收遵从是“不可缔约的”（noncontractible）。有组织的部门无法可信地承诺其成员将缴纳更多税款以换取集体物品，因为个别企业有搭便车的激励，会隐瞒它们侥幸能瞒过的部分（pp. 61, 64–65）。这意味着各部门预期的（而非承诺的）税收遵从，由其结构性的“可征税性”所决定，塑造了在政治家可能采取的任何政策中国家与私人行为者之间收益的分配（p. 62）。",
+    "政治家的目标函数是最大化税收收入（来自所有部门）与政治献金（仅来自有组织部门）的加权平均。当税收在政治上重要时（形式模型中的 γ 较高），政治家偏袒能提供更多税收收入的部门，即那些企业隐瞒代价更高的部门，也就是更可征税的部门。当税收不那么重要时，标准的 Olson 式逻辑占上风，无论可征税性如何，有组织的部门都受到偏袒。",
+    "一旦某一部门通过政府的刻意扶持成为主要收入来源，政治家便在收入上依赖它，从而形成一个“收入陷阱”（revenue trap）。即便一位新州长（Kuznetsov）试图拆除对伏特加的优惠待遇，他也因地区预算依赖伏特加税收而被迫退让（pp. 15–16）。这产生了路径依赖：税制设计的初始选择锁定了经济发展的模式，因为劳动力和资本停留在获得集体物品的部门中，而政治家在收入上仍依赖这些部门（p. 17）。",
+    "在前苏联，向“旧的”（易于征税的）经济活动不成比例地提供集体物品，挤出了“新的”（难以征税的）私营企业。能够轻易逃税的小企业，获得的政府支持更少、监管待遇更差、警察和司法保护更少，这并非因为它们缺乏游说能力（尽管它们确实缺乏），而是因为它们对国家收入贡献甚微（pp. 11–14）。"
+   ]
+  },
+  "data": {
+   "zh": [
+    "Gehlbach 在全书中使用多种类型的数据。第一章主要依赖来自 Pskov 州（Pskov oblast，俄罗斯西北部的一个地区）的证据：",
+    "1. 对地区官员的访谈（例如州经济发展委员会主任 Vadim Petrukhin，于 2005 年 7 月 13 日受访）以及 Pskov 的公民社会行为者（p. 2, 脚注 4）。",
+    "2. 来自 Pskovskaia Pravda、Rossiiskaia Gazeta、Pskovskaia Guberniia、Pskovskaia Lenta Novostei 等的地方和全国性报纸报道（贯穿第一章）。",
+    "3. 前州长 Mikhailov 以化名“Specialist”发布的在线论坛帖子，经 Pskov 的相关人士确认（p. 9, 脚注 22）。",
+    "4. 审计署关于伏特加生产补贴的报告（p. 8, 脚注 20）。"
+   ]
+  },
+  "methods": {
+   "zh": [
+    "定性案例研究（第一章）。对俄罗斯 Pskov 州伏特加政治的详细过程追踪研究，借助访谈、报纸档案、政府报告和在线论坛帖子。这既是一次可信性探查，也是对因果机制的例证（整个第一章）。",
+    "形式模型的预测取决于政治献金安排的真实性和税收遵从的不可缔约性。案例研究的可推广性取决于 Pskov 是否能代表前苏联更广泛的动态，Gehlbach 论证它确实如此。"
+   ]
+  }
+ },
+ "tilly1992": {
+  "argument": {
+   "zh": [
+    "战争造就国家，国家亦造就战争。武装力量的创建产生了持久的国家结构。强制与资本的不同组合导致了不同的国家形成路径。十八世纪和十九世纪从雇佣军向国民军队的转变，从根本上改变了国家与社会的关系。",
+    "（1）在不同地区和时期，集中的资本与集中的强制手段的相对可得性，显著影响了发动战争所带来的组织性后果。",
+    "（2）只有那些在与其他国家的战争中站稳脚跟的国家才得以存续。无法动员足够军事资源的国家被征服、吞并或边缘化。这一达尔文式的选择过程逐渐淘汰了效率较低的组织形式。",
+    "（3）从长期来看，战争性质的变化使得那些能够从本国人口中征召庞大而持久军事力量的国家获得军事优势，而这些国家越来越多地是民族国家。军事技术与战术的演进，从以骑兵为主的战争，到装备火器的步兵，再到大规模征兵组成的军队，逐渐有利于那些拥有庞大人口、雄厚税基以及能够高效动员资源的官僚能力的国家。这解释了为何尽管早期国家类型多种多样，最终却趋同于民族国家的形态。"
+   ]
+  },
+  "data": {
+   "zh": [
+    "改编自 Colin McEvedy /kɒlɪn məkˈiːvdi/ 的《企鹅历史地图集》（Penguin Atlas）系列的五幅地图。",
+    "关于特定国家和地区的详细历史记述。",
+    "Jack Levy /dʒæk ˈlɛvi/ 基于 Pitirim Sorokin /pɪˈtɪrɪm sɔːˈroʊkɪn/ 的著作所做的汇编。"
+   ]
+  },
+  "methods": {
+   "zh": [
+    "（1）过程追踪（Process Tracing）：Tilly 追踪了随时间将战争、汲取与国家建设联系起来的因果链条。他展示了特定事件（1494年法国入侵意大利、火药的引入）如何引发一系列制度变迁。",
+    "（2）比较案例分析（Comparative Case Analysis）：本章比较了不同类型的国家：资本密集型（荷兰共和国、威尼斯）、强制密集型（俄国、西班牙）和资本化强制型（法国、英国、普鲁士），以说明初始条件如何塑造了后续的发展。",
+    "（3）理想类型建构（Ideal-Type Construction）：追随韦伯（Weber），Tilly 建构了国家形成路径与税收策略的理想类型，以整理历史的复杂性。",
+    "假设：",
+    "（1）所考察的欧洲国家代表了更广泛的模式，或者至少所识别出的机制在各案例中以类似方式运作。",
+    "（2）因果方向是战争驱动国家形成，而非相反（或者说，两个方向都在起作用，但战争到国家的方向是主要的）。如果拥有强大既有结构的国家本就更可能发动战争，这一假设可能受到挑战。",
+    "（3）该分析假设，尽管技术、经济和文化发生了巨大变化，跨越数个世纪的比较仍然是有意义的。",
+    "（4）关于军队规模、战争死亡人数和财政数字的历史数据是可靠的。但实际上它们是出了名地不可靠，尤其是在十九世纪之前。Tilly 也承认这一点。",
+    "（5）该分析隐含地假设，如果没有战争，国家就不会如此发展，但这是一个无法直接检验的反事实。"
+   ]
+  },
+  "stateness": {
+   "en": [
+    "At the most basic level, Tilly defines states as “any organization that commanded substantial means of coercion and successfully claimed durable priority over all other users of coercion within at least one clearly bounded territory” (p. 44). This definition emphasizes three key elements: (1) command of coercive means, (2) successful claims to priority over other coercion-wielders, and (3) territorial boundedness.",
+    "The more elaborated concept of the national state adds additional criteria: “relatively centralized, differentiated, and autonomous organizations successfully claiming priority in the use of force within large, contiguous, and clearly bounded territories” (p. 43). This definition distinguishes national states from other forms such as city-states (which controlled small territories), empires (which often had discontinuous territories and indirect rule), and federations (which lacked centralization). Importantly, Tilly notes that the national state form only became dominant quite late in European history, “not until the nineteenth century, with Napoleon’s /nəˈpoʊliən/ conquests and the subsequent unifications of Germany and Italy” (p. 46).",
+    "Tilly draws explicitly on Max Weber’s classic definition: “a state is a human community that (successfully) claims the monopoly of the legitimate use of physical force within a given territory.” This definition only “finally began to make sense for European states” after the seventeenth century, when rulers had successfully disarmed civilian populations and concentrated coercive means in state hands (p. 70).",
+    "State building, in Tilly’s framework, is measured and understood through several interrelated processes: (1) The disarmament of civilian populations, including the elimination of private armies, prohibition of duels, controls over weapons production, and restrictions on fortified castles (p. 69); (2) The creation of standing armed forces, armies oriented toward external enemies and police forces oriented toward internal control (pp. 75–76); (3) The development of fiscal infrastructure, including treasuries, tax bureaus, mechanisms for conscription, and supply services (p. 70); (4) The establishment of credit systems, the ability to borrow against future revenues and manage national debt (pp. 85–90); (5) The ratio of coercive means in state hands to those at the disposal of domestic rivals, which increased dramatically as states expanded their armed forces while disarming civilians (p. 70).",
+    "Tilly distinguishes between different organizational forms: armies versus police, with the organizational division between forces oriented to external enemies and those oriented to internal population control developing “only slowly, and never became complete” (p. 75). The creation of “uniformed, salaried, bureaucratic police forces specialized in control of the civilian population” occurred mainly during the nineteenth century (p. 76)."
+   ],
+   "zh": [
+    "在最基本的层面上，他将国家定义为“任何掌握大量强制手段，并在至少一个边界清晰的领土内成功主张对所有其他强制力使用者持有持久优先权的组织”（第44页）。这一定义强调三个关键要素：（1）掌握强制手段，（2）成功主张对其他强制力行使者的优先权，（3）领土的有界性。",
+    "对民族国家更详尽的概念增加了额外标准：“相对集中化、分化和自主的组织，在广阔、连续且边界清晰的领土内成功主张使用武力的优先权”（第43页）。这一定义将民族国家与其他形式区分开来，如城市国家（控制小片领土）、帝国（通常拥有不连续的领土和间接统治）和联邦（缺乏集中化）。重要的是，蒂利指出民族国家形式直到欧洲历史相当晚期才占据主导地位，“直到十九世纪，随着拿破仑的征服以及随后德国和意大利的统一”（第46页）。",
+    "蒂利对国家的概念化明确借鉴了马克斯·韦伯的经典定义：“国家是一个人类共同体，它（成功地）在特定领土范围内主张对合法使用物理暴力的垄断权”（第70页）。这一定义只是在十七世纪之后才“终于开始对欧洲国家有意义”，那时统治者已成功解除了平民的武装，并将强制手段集中于国家手中。",
+    "在蒂利的框架中，国家建设通过若干相互关联的过程来衡量和理解：（1）平民人口的解除武装：包括消灭私人军队、禁止决斗、控制武器生产、限制设防城堡等（第69页）；（2）常备武装力量的创建：面向外部敌人的军队和面向内部控制的警察力量（第75-76页）；（3）财政基础设施的发展：包括国库、税务机构、征兵机制和补给服务（第70页）；（4）信贷体系的建立：以未来收入为担保进行借贷和管理国债的能力（第85-90页）；（5）国家掌握的强制手段与国内对手掌握的强制手段之比：随着国家扩充武装力量同时解除平民武装，这一比率急剧上升（第70页）。",
+    "蒂利区分了不同的组织形式：军队与警察，面向外部敌人的力量与面向内部人口控制的力量之间的组织分化“发展缓慢，且从未完全实现”（第75页）。“专门控制平民人口的制服化、薪金化、官僚化警察力量”的创建主要发生在十九世纪（第76页）。"
+   ]
+  }
+ },
+ "paglayan2024": {
+  "dv": {
+   "en": [
+    "The central outcome of the book is the emergence and expansion of state-regulated primary education systems. In Chapters 1 and 3, this is the main object to be explained: why central governments began to regulate, fund, monitor, and expand primary education for the masses, rather than leaving children’s education to families, churches, and local communities. More specifically, the book is interested in at least two closely related dimensions of this outcome. First, it studies the emergence of state intervention in primary education: when governments began to monitor enrollment, fund schools, regulate curricula, regulate teacher training/certification, require provision, or pass compulsory schooling laws. Second, it studies the expansion of access to primary schooling, most visibly through rising enrollment rates. Chapters 1 and 3 also make clear that the shape of these systems matters: curriculum, teacher policy, inspection, and classroom discipline are not secondary details but part of what the state was building, though the detailed analysis of institutional design is developed more fully in later chapters."
+   ],
+   "zh": [
+    "本书的核心因变量是国家规制的初等教育体系的出现与扩张。在第1章和第3章中，作者主要试图解释的是：中央政府为何开始规制、资助、监测并扩张面向大众的初等教育，而不是继续把儿童教育留给家庭、教会和地方社会。更具体说，这个结果至少有两个紧密相关的维度。第一，是国家干预的出现：政府何时开始监测入学、资助学校、规定课程、规制教师训练与认证、要求普及供给、通过义务教育法。第二，是初等教育覆盖面的扩张，最直观地体现在入学率上升。第1章和第3章也明确表明，教育体系的制度形态同样重要：课程内容、教师政策、督学制度和课堂纪律，并不是附带细节，而是国家所建构之体系的一部分；只是对制度设计的细致分析主要在后续章节展开。"
+   ]
+  },
+  "iv": {
+   "en": [
+    "The main explanatory factor is violent internal conflict involving the masses and perceived by national elites as threatening social order and the state’s stability. The book uses civil war as a particularly tractable empirical indicator in Chapter 2, but Chapters 1 and 3 make clear that the broader concept is not limited to civil war alone. It also includes peasant revolts, food riots, insurrections, social revolutions, mass protests, and other episodes of internal disorder that reveal the danger of mass violence and intensify elite fears of anarchy, crime, or political instability. What matters is not merely conflict in the abstract, but internal conflict that convinces elites that existing tools (repression, concessions, and church-led moral instruction) are insufficient to preserve order."
+   ],
+   "zh": [
+    "主要解释变量是涉及大众并被国家精英感知为威胁社会秩序和国家稳定的暴力性内部冲突。作者在第2章中用内战作为较容易操作化的经验指标，但第1章和第3章都明确指出，更一般的概念并不限于内战。它还包括农民起义、粮食骚乱、暴动、社会革命、大规模抗议以及其他形式的内部失序事件。这些事件的关键不只是“有冲突”，而是它们让精英相信：既有工具（镇压、让步、以及由教会承担的道德教化）已不足以维持秩序。"
+   ]
+  },
+  "stateness": {
+   "en": [
+    "Conceptualization and Measurement of the “State”",
+    "Paglayan conceptualizes the state in a classical state-building sense: as a centralized political authority whose defining function is to maintain social order and consolidate authority within a territory. She explicitly situates her argument against accounts that explain state-building mainly through war-making, coercion, and extraction. Her claim is not that coercion and fiscal centralization were unimportant, but that they were incomplete. In addition to repression and concessions, rulers also invested in indoctrination, and mass primary education became one of the main instruments through which they sought to mold obedient future citizens. Thus, in this book, “state-building” refers not only to armies, taxes, and bureaucracy, but also to the capacity of central governments to regulate the education of children, impose common rules, shape moral instruction, certify teachers, and inspect schools. Empirically, the book does not build a single abstract “stateness index.” Instead, it tracks concrete manifestations of central state penetration into primary education: enrollment monitoring, state funding, curriculum regulation, teacher regulation, compulsory schooling, and related interventions."
+   ],
+   "zh": [
+    "“国家”与“国家建设”的概念化与测量",
+    "帕格拉扬以一种典型的国家建设视角来理解国家：国家是维持社会秩序、在一片领土内巩固中央权威的集中化政治权威。她明确将自己的论证置于那些主要通过战争、强制和汲取来解释国家建设的传统叙事之外。她的意思不是说强制和财政集权不重要，而是说这还不够。除了镇压和让步之外，统治者还会投资于灌输/教化，而大众初等教育正是他们塑造未来顺从臣民的重要工具之一。因此，本书中的“国家建设”不仅涉及军队、税收和官僚制，也涉及中央政府规制儿童教育、规定统一规则、塑造道德教育、认证教师和督查学校的能力。经验上，作者并没有构造一个单一抽象的“国家性指数”，而是追踪中央国家渗透进初等教育的具体表现：入学监测、国家资助、课程规制、教师规制、义务教育法等。"
+   ]
+  },
+  "data": {
+   "en": [
+    "Because these notes focus on Chapters 1 and 3, the data section should distinguish clearly between what those chapters themselves do and what they preview from the broader book. Chapter 1 introduces two major empirical enterprises. First, the book collects information on the timing of central government intervention in primary education across countries, including enrollment monitoring and, for a subset of Western European and Latin American countries, more detailed forms of intervention such as funding, curriculum regulation, teacher regulation, universal provision, and compulsory schooling. Second, the book assembles a long-run dataset of primary school enrollment for forty-two countries in Europe and the Americas from 1828 onward, complemented by Lee and Lee’s broader global dataset. Chapter 1 also signals that later chapters will use parliamentary debates, political correspondence, government reports, landmark education laws, textbooks, and teacher manuals to study motives and institutional design. Chapter 3 then draws on this broader historical archive and on intellectual history to reconstruct how rulers and reformers thought about education as a tool of order, discipline, and obedience."
+   ],
+   "zh": [
+    "由于这份讲义聚焦第1章和第3章，数据部分应当区分清楚：哪些是这两章本身直接展开的，哪些是它们为全书预告的。第1章主要介绍了两项大的经验工作。第一，作者收集了各国中央政府何时开始介入初等教育的信息，包括入学监测；对于部分西欧和拉美国家，还收集了更细的干预形式，如国家资助、课程规制、教师规制、普及供给与义务教育等。第二，作者构建了一个覆盖欧洲和美洲42国、从1828年起的长期初等教育入学数据集，并用 Lee and Lee 的全球数据集进行补充。第1章同时说明，后续章节还将使用议会辩论、政治通信、政府报告、里程碑式教育法、教科书和教师手册，来分析教育改革的动机与制度设计。第3章则更多依靠这一更广泛的历史档案和思想史材料，来重构统治者与改革者如何将教育理解为秩序、纪律和服从的工具。"
+   ]
+  },
+  "methods": {
+   "zh": [
+    "在第1章和第3章中，方法上最准确的表述是：作者采用的是一种历史制度主义式、兼具理论建构性质的研究策略，而不是单一的因果识别设计。第1章先建立经验谜题，并预告若干总体描述性模式：西方国家更早开始规制和扩张初等教育；与民主化相比，内部冲突之后更明显出现入学扩张。第3章则在此基础上发展理论，通过思想史、概念论证和扎根于历史材料的机制分析来解释这些模式。全书后续当然还会辅以跨国描述分析和国家案例研究，但就第1章和第3章而言，主要的方法动作是：指出现有理论解释不足之处，再提出一个更能解释动机、时序和机制的历史性替代理论。也就是说，这两章的任务并不是给出一个完全识别的因果估计，而是证明作者的解释在历史上可信、在理论上自洽，并且比竞争性理论更能说明国家规制初等教育何时、为何出现。"
+   ]
+  },
+  "argument": {
+   "en": [
+    "The core argument is that state-regulated mass primary education emerged and spread in the West primarily as a state-building strategy for promoting long-term social order, not primarily as a response to democratization, industrialization, or external military rivalry. The book makes this argument in two linked steps.",
+    "First, it reconstructs an intellectual history: beginning in the early modern period, social contract thinkers, rulers, and reformers increasingly came to believe that primary education could be used to shape children’s beliefs, habits, and moral character in ways favorable to political order. By the late eighteenth century, absolutist Prussia had become the paradigmatic case in which schooling was explicitly connected to discipline, obedience, and respect for sovereign authority. These ideas then diffused widely across Europe and the Americas through reformers, official missions, educational travel, and influential texts.",
+    "Second, the book argues that the diffusion of these ideas alone cannot explain when centralized education reform actually happened. The crucial missing link was political traction. National elites often resisted state-controlled mass education at first, either because they thought moral education should remain in the hands of parents and the Church, or because they thought the state lacked the resources to undertake so expensive a project. What changed elite coalitions was internal conflict. Episodes of violent disorder increased elite fears that the masses threatened property, life, power, and the viability of the state, while also exposing the limits of traditional tools for keeping order. Under those conditions, proposals for state-regulated primary education became politically attractive because schools promised a long-term way to teach future citizens obedience, discipline, respect for authority, and acceptance of the status quo. In this sense, mass schooling was fundamentally an internal security and state-building project, even if it later also served redistributive, economic, or nation-building purposes."
+   ],
+   "zh": [
+    "核心论点是：西方国家规制的大众初等教育体系，首先是作为一种促进长期社会秩序的国家建设策略而出现和扩张的，而不是首先由民主化、工业化或外部军事竞争所驱动。这一论证有两个相互衔接的步骤。",
+    "第一，作者重构了一条思想史脉络：从近代早期开始，社会契约论者、统治者和改革者越来越相信，初等教育可以用来塑造儿童的信念、习惯和道德品格，从而服务于政治秩序。到18世纪后期，专制普鲁士成为最具代表性的案例，在那里，学校被明确地与纪律、服从以及对主权权威的尊重联系起来。随后，这套观念通过改革者流动、官方考察、教育旅行和关键文本，在欧洲和美洲广泛传播。",
+    "第二，作者认为：观念扩散本身不足以解释国家何时真正启动中央化教育改革。真正关键的是政治上的traction。起初，许多国家精英并不支持国家控制的大众教育，因为他们认为道德教育应继续由父母和教会负责，或者认为国家无力承担如此昂贵的事业。改变精英联盟的是内部冲突。暴力失序事件强化了精英对大众威胁财产、生命、权力以及国家存续的恐惧，同时也暴露出传统维稳工具的局限。正是在这种条件下，国家规制的初等教育方案才变得具有政治吸引力，因为学校承诺提供一种长期方案：从儿童时期就教会未来公民服从、守纪律、尊重权威并接受现状。就此意义而言，大众学校首先是一个内部安全与国家建设工程，即便它后来也承载了再分配、经济发展或民族建构等目标。"
+   ]
+  },
+  "mechanisms": {
+   "en": [
+    "Paglayan develops mechanisms at two levels.",
+    "At the political level, internal conflict changes elite incentives and beliefs. Violent episodes generate fear of the masses and reveal that the status quo is more fragile than elites had assumed. They can also reveal the weakness of existing tools: repression may fail, police may defect or sympathize with protesters, and church-based moral education may seem inadequate to produce orderly subjects. These crises therefore help build broader elite coalitions in favor of centralized schooling. Ideas about moral education already existed, but internal conflict made them newly urgent and politically actionable.",
+    "At the school level, the chapter identifies three main indoctrination mechanisms. First, schools use punishment and reward to teach children that obedience, compliance, and respect for authority are in their own interest. Second, schools teach children to accept their place in society, cultivating moderation, self-sacrifice, and the idea that happiness lies in accepting one’s lot rather than rebelling. Third, schools cultivate habits of obedience through repetition, routines, schedules, silence, marching, recitation, and repeated exposure to morally loaded language in primers and textbooks. Across all three mechanisms, the defining feature is that children are taught to internalize norms and values without room for critical questioning. The chapter then adds two further functions of schooling relevant to order: schools could also keep children off the streets during the day, and teachers could serve as local monitors of children and families."
+   ],
+   "zh": [
+    "帕格拉扬在两个层次上展开机制。",
+    "在政治层面，内部冲突改变了精英的激励与认知。暴力事件会激发对大众的恐惧，并让精英意识到现有秩序比他们原先认为的更加脆弱。它还会暴露既有工具的不足：镇压可能失败，警察可能倒向抗议者，教会式道德教化也可能显得不足以塑造守序臣民。因此，这类危机会帮助形成更广泛的精英联盟，使其转而支持中央化学校体系。也就是说，道德教育的观念原本已经存在，但内部冲突使它突然变得迫切且具有政治可行性。",
+    "在学校层面，第3章明确提出了三种主要的灌输机制。第一，学校通过惩罚与奖赏，让儿童理解服从、守规矩和尊重权威符合他们自己的利益。第二，学校教儿童接受自己的社会位置，培养节制、自我牺牲，并灌输“幸福来自接受自己的命运，而不是反抗现状”的观念。第三，学校通过重复来塑造服从习惯：时间表、日常程序、安静行进、机械背诵，以及识字教材中不断重复的道德化语言，都会把服从内化为习惯。这三种机制的共同点在于：儿童被要求在没有批判性质疑空间的情况下内化规范与价值。第3章还补充了两个与秩序相关的功能：学校能在白天把儿童从街头隔离出去，而教师也能成为监视儿童及其家庭行为的地方性观察者。"
+   ]
+  }
+ },
+ "wang2022": {
+  "dv": {
+   "zh": [
+    "主要因变量是对改革的支持度（Support for reform），用以衡量政治人物对北宋（Northern Song Dynasty /sʊŋ/，960–1127）王安石变法（Wang Anshi /wɑːŋ ɑːn ʃɪ/ Reform，又称新政）的态度。这个变量捕捉的是个体层面的国家建设偏好。在各项改革政策中始终支持变法的政治人物编码为1；始终反对的编码为0；态度不一致的则取各项政策态度的均值（第904页）。在识别出的137位主要政治人物中，63人表达了态度：34人（54%）始终支持变法，24人（38%）始终反对，5人态度混合。其余74人未明确表达态度，多数因其任职于礼仪性岗位（第904页）。主分析中作者对未表态者采用列表删除法（listwise deletion），但在稳健性检验中分别将他们编码为中立（构建三分类变量）、限定样本为政策相关职位者，或以抛硬币法随机赋值，结果均一致（第904–905页）。"
+   ]
+  },
+  "iv": {
+   "zh": [
+    "主要自变量是亲属的地方集中度（Local concentration of kin），一个衡量每位政治人物宗族网络地理集中程度的指数。该指数借鉴了经济地理学中的“市场潜力”方法（Harris 1954）。对于政治人物i，指数定义为对其所有亲属k求和：(1 + i到k的距离)⁻¹（第902页）。数值越高，表示宗族网络在地理上越集中（即越本地化）；数值越低则越分散。每位政治人物的宗族网络包括其核心家庭以及通过其子女婚姻所建立的所有姻亲关系。作者主要利用保存于《全宋文》中的墓志铭来绘制这些网络，辅以中国历代人物传记资料库（CBDB）。每位亲属的籍贯通过中国历史地理信息系统（CHGIS）获取经纬度坐标进行地理编码（第901–902页）。该指数不依赖行政边界——行政边界是任意的且随时间变化；使用基于行政单元的加权赫芬达尔指数（Herfindahl index）进行稳健性检验，结果相似（第902页）。"
+   ]
+  },
+  "stateness": {
+   "en": [
+    "Wang conceptualizes state building not through a Weberian definition of monopolized violence or through a measure of fiscal capacity per se, but through a specific historical reform episode that expanded the scope and strength of central state power. The Wang Anshi Reform (1069–1085) was designed to “enrich the nation and strengthen its military power” (p. 899, citing Liang 1908). In concrete terms, state building in this context is measured by the package of New Policies that sought to increase the state’s fiscal extraction, military capacity, and regulatory control over local society. Four major policies define the content of state building here: (1) Cadastral Surveys and Equitable Tax (方田均税法), which equalized tax burdens and uncovered 34.7 million additional acres of previously untaxed land, 54% of the national total (p. 899); (2) Military Conscription (保甲法), which replaced private militias with a state-organized grassroots military system (baojia /baʊ dʒiɑː/) enrolling 6.9 million men by 1076 (p. 899); (3) Rural Credit (青苗法), which created a state-run loan system to break the private credit monopoly of local landlords (p. 899); and (4) Labor Service (募役法), which replaced a system of corvée labor with a universal tax based on assessed wealth (pp. 899–900). Taken together, these policies represent a comprehensive expansion of the central state’s fiscal, military, and administrative capacities at the expense of local elites’ private-order institutions. Government revenue reached 17.5% of the Song economy in the late eleventh century, unparalleled elsewhere in the world at the time (p. 900).",
+    "This conceptualization aligns with a broad fiscal-military understanding of state building found in the literature from Tilly (1992) through Stasavage (2020) and Dincecco (2017): state building is the process by which central authorities expand their capacity to extract resources, organize military force, and extend administrative control over territory. Wang’s contribution is to show that the political demand for this kind of state building varies among elites who face the same external threat, depending on the structure of their social networks."
+   ],
+   "zh": [
+    "王裕华对国家建设的概念化，既非韦伯式暴力垄断定义，也非单纯的财政能力度量，而是通过一个具体的历史改革事件来呈现中央国家权力范围与力度的扩展。王安石变法（1069–1085）旨在“富国强兵”（第899页，引自梁启超1908年著作）。具体而言，这里的国家建设通过一系列旨在增强国家财政汲取、军事能力和对地方社会管控的新法来衡量。四项主要政策界定了国家建设的内容：（1）方田均税法，均衡税负并发现了3470万亩此前未纳税的土地，占全国总量的54%（第899页）；（2）保甲法（baojia /baʊ dʒiɑː/），以国家组织的基层军事体系取代私人武装，至1076年已编入690万人（第899页）；（3）青苗法，建立国家农村信贷体系以打破地方地主的私人信贷垄断（第899页）；（4）募役法，以基于估产的普遍赋税取代差役制度（第899–900页）。总体而言，这些政策代表了中央国家在财政、军事和行政能力上的全面扩张，而代价是地方精英私人秩序制度的削弱。北宋晚期政府收入达到宋朝经济总量的17.5%，在当时世界上是无可匹敌的（第900页）。",
+    "这一概念化与从蒂利（Tilly 1992）到斯塔萨维奇（Stasavage 2020）和丁切科（Dincecco 2017）的文献中关于国家建设的广义财政-军事理解一致：国家建设是中央权威扩大其资源汲取能力、组织军事力量和在领土上延伸行政控制的过程。王裕华的贡献在于指出，在面临同样外部威胁的精英中，对这种国家建设的政治需求因其社会网络结构的不同而存在差异。"
+   ]
+  },
+  "data": {
+   "en": [
+    "Sample construction. The author identifies 137 major politicians who held positions at the vice-ministerial level or above in the national government during the reign of Emperor Shenzong /ʃɛnˈdzʊŋ/ (1067–1085), using Li’s (2003) list of Shenzong officials. These politicians include chief councilors, central secretariats, leaders of various ministries, and the emperor’s main advisors. They were all male, Han Chinese, from landowning elite families, averaging 51 years old in 1067, with careers starting around 1047, 20 years before Shenzong came to power (pp. 900–901). The main analysis uses 40 politicians for whom full information on all variables is available (p. 905).",
+    "Dependent variable measurement. The outcome variable is coded from three primary sources: (1) The History of Song (宋史, compiled by Toghtō /tɒxˈtoʊ/ in the Yuan Dynasty), (2) The Extended Continuation to Comprehensive Mirror in Aid of Governance (续资治通鉴长编, compiled by Li Tao /liː taʊ/ in the Southern Song), both based on official court records, and (3) The Complete Prose of Song (全宋文, compiled by modern-era scholars Zeng Zaozhuang /dzəŋ dzaʊˈdʒwɑːŋ/ and Liu Lin /ljuː lɪn/ in the twenty-first century), which preserves politicians’ original writings such as memorials to the emperor (p. 904). Using three sources, including original texts, helps triangulate information and mitigate potential biases of contemporaneous historians.",
+    "Independent variable measurement. Kinship networks are mapped using tomb epitaphs (墓志铭), which are square limestone slabs inscribed with lengthy eulogistic biographies of the deceased, preserving information about wives, sons, daughters, sons-in-law, and their families. The author’s research team identified these epitaphs in The Complete Prose of Song, manually extracted kin information, and used a snowball approach supplemented by CBDB (2018) to construct networks for 68 of the 137 politicians. Networks were limited to three generations (parents’, ego’s, and children’s generation) due to cost constraints. Geographic information was geocoded using CHGIS (2018) (pp. 901–902).",
+    "Control variables (8 alternative explanations addressed, p. 905–907):",
+    "Prefecture fixed effects (μⱼ): Controls for hometown geography, history, culture, and cropping patterns.",
+    "Betweenness centrality: Measures each politician’s influence in the overall kinship marriage network of the 137 politicians (using Padgett and Ansell 1993).",
+    "N of kin and N of children: Controls for the possibility that network size rather than geographic distribution matters, and for differential documentation quality.",
+    "Factional tie with reform leader: An indicator for whether the politician had an examiner–examinee relationship, passed the exam in the same year, or belonged to the same philosophical school as a reform leader (Wang Anshi /wɑːŋ ɑːn ʃɪ/, Lü Huiqing /lyː hweɪˈtʃɪŋ/, or Cai Que /tsaɪ tɕɥɛ/).",
+    "Politician’s average rank: Controls for power dynamics and incentives to signal loyalty.",
+    "Kin centroid exposure to external wars: Market-potential index measuring proximity of kin network centroid to all external war battles (1016–1065).",
+    "Kin centroid exposure to mass rebellions: Same approach for domestic rebellions.",
+    "Ruggedness Index: Average terrain ruggedness across grid cells covered by the kinship network (from Nunn and Puga 2012).",
+    "Father exam: Whether the politician’s father entered office by exam.",
+    "Father migration: Distance from the politician’s father’s final residence to the grandfather’s hometown, which serves as a predictor of network dispersion.",
+    "Geographic coverage: Northern Song Dynasty territory (roughly present-day central and eastern China). Time period: The reign of Emperor Shenzong (1067–1085), with kinship networks and threat exposure data extending back to earlier decades. Unit of analysis: Individual politician."
+   ],
+   "zh": [
+    "样本构建。作者从李志良（Li Zhiliang /liː ʒɪˈliɑːŋ/ 2003）的宋代京朝官名单中识别出137位在神宗（Shenzong /ʃɛnˈdzʊŋ/）朝（1067–1085）担任副部级及以上中央官职的主要政治人物。这些政治人物包括宰相、中书省官员、各部领袖和皇帝的主要顾问。他们全部为男性汉族人士，来自拥有土地的精英家庭，1067年时平均51岁，平均入仕时间约为1047年，比神宗即位早20年（第900–901页）。主分析使用所有变量信息完整的40位政治人物（第905页）。",
+    "因变量测量。因变量编码来自三个主要原始资料：（1）《宋史》（元代脱脱 Toghtō /tɒxˈtoʊ/ 编纂）；（2）《续资治通鉴长编》（南宋李焘 Li Tao /liː taʊ/ 编纂），两者均基于官方朝廷记录；（3）《全宋文》（现代学者曾枣庄 Zeng Zaozhuang /dzəŋ dzaʊˈdʒwɑːŋ/ 和刘琳 Liu Lin /ljuː lɪn/ 于二十一世纪编纂），保存了政治人物的原始著述如上奏皇帝的奏章（第904页）。使用三个来源（包括原始文本）有助于交叉验证信息，减轻当代史家的潜在偏见。",
+    "自变量测量。宗族网络通过墓志铭绘制。墓志铭是方形石灰石板，上面镌刻有死者的长篇传记，保存了关于妻子、儿子、女儿、女婿及其家庭的信息。作者的研究团队在《全宋文》中找到这些墓志铭，手动提取亲属信息，并采用滚雪球方法辅以CBDB（2018）为137位政治人物中的68位构建了网络。由于成本限制，网络仅涵盖三代（父辈、本人辈、子女辈）。地理信息使用CHGIS（2018）进行地理编码（第901–902页）。",
+    "控制变量（针对8种替代解释，第905–907页）：",
+    "籍贯所在府固定效应（μⱼ）：控制地理、历史、文化和种植模式。",
+    "中介中心性（Betweenness centrality）：衡量政治人物在137位官员整体婚姻网络中的影响力（使用Padgett and Ansell 1993）。",
+    "亲属数量和子女数量：控制可能是网络规模而非地理分布起作用的替代假设，同时控制记录质量差异。",
+    "与变法领袖的派系关系：政治人物是否与变法领袖（王安石、吕惠卿 Lü Huiqing /lyː hweɪˈtʃɪŋ/、蔡确 Cai Que /tsaɪ tɕɥɛ/）存在考官-考生关系、同年进士关系或同一学派关系。",
+    "政治人物平均品级：控制权力格局和信号忠诚的激励。",
+    "亲属暴露于外部战争：市场潜力指数，衡量亲属网络质心到1016–1065年间所有对外战争战役的接近程度。",
+    "亲属暴露于大规模叛乱：相同方法衡量对国内叛乱的暴露。",
+    "地形崎岖指数：宗族网络覆盖的网格单元的平均地形崎岖度（来自Nunn and Puga 2012）。",
+    "父亲科举：政治人物的父亲是否通过科举入仕。",
+    "父亲迁移距离：政治人物父亲最终居住地到祖父籍贯的距离，用作网络分散程度的预测变量。",
+    "地理覆盖：北宋领土（大致为今天的中国中部和东部）。时间跨度：神宗朝（1067–1085），但宗族网络和威胁暴露数据向前追溯至更早的几十年。分析单元：单个政治人物。"
+   ]
+  }
+ },
+ "scott2017": {
+  "mechanisms": {
+   "en": [
+    "(1) Climate-induced concentration: The period from 3500 to 2500 BCE was marked by steep declines in sea level and reduced water volume in the Euphrates /juːˈfreɪtiːz/. This increasing aridity caused rivers to shrink to main channels, forced populations to huddle around remaining watercourses, and caused soil salinization that sharply reduced arable land. The result was that “90 percent of the population lived in settlements of thirty hectares or more”, a concentration that “intensified the grain-and-manpower modules that were ideal for state formation” (p. 6). Climate change thus “delivered, as it were, an assembled population and concentrated cereal grains in an embryonic state space that could not, at that epoch, have been assembled by any other means” (p. 6-7).",
+    "(2) Legibility: Cereal grains create a “legible” population amenable to taxation. Because grains ripen simultaneously above ground, tax collectors can arrive at harvest time and “cut, thresh, and confiscate the entire harvest in one operation” (p. 15). The small grain format allows for precise measurement by weight and volume, enabling standardized accounting. This legibility extends to population through census-taking, which provided “the basis for assigning the head tax and corvée labor, and for conscription” (p. 27-28). Writing emerged primarily as “bookkeeping” for state administration for more than half a millennium before it was used for literature, mythology, or religious texts (p. 26).",
+    "(3) City walls served the function of protection and confinement. While protecting against external raiders, walls were “built quite as much to keep Chinese taxpaying cultivators inside as to keep the barbarians (nomads) outside” (p. 23). The so-called anti-Amorite /ˈæməraɪt/ walls between the Tigris /ˈtaɪɡrɪs/ and Euphrates /juːˈfreɪtiːz/ may have been “designed more to keep cultivators in the state ‘zone’ than to keep out the Amorites” (p. 23-24).",
+    "(4) States required labor for tasks that free subjects would resist, like quarrying, mining, canal digging, brick making, galley rowing. War captives provided “a disposable proletariat for the most onerous work,” sparing subjects from degrading drudgery that might “provoke flight or rebellion” while satisfying “military and monumental ambitions” (p. 42, 55). Women captives were valued “at least as much for their reproductive services as for their labor,” helping to alleviate the “otherwise unhealthy effects of concentration and the domus” (p. 53-54).",
+    "(5) The population-replenishment mechanism: Given high mortality rates in early state centers, states faced constant demographic challenges. Wars of capture, forced resettlement, and pro-natalist policies were employed to maintain and expand population. The Uruk population “tripled over two hundred years, an increase unlikely to have come from natural population growth, given the high mortality rates” (p. 4). Bas reliefs depicting prisoners in neck shackles “suggest another means by which the population was augmented” (p. 4-5)."
+   ],
+   "zh": [
+    "（1）气候诱导的集中：公元前3500年至2500年期间，海平面急剧下降，幼发拉底河水量减少。日益干旱导致河流缩减为主河道，迫使人口聚集在剩余水道周围，土壤盐碱化急剧减少了可耕地。结果是“90%的人口生活在30公顷或更大的定居点中”，这种集中“强化了适合国家形成的谷物与人力模块”（第6页）。气候变化因此“可以说，交付了一个聚集的人口和集中的谷物到一个胚胎状态的空间，这是那个时代任何其他手段都无法聚集的”（第6-7页）。",
+    "（2）易读性：谷物创造了易于征税的可辨识（legible）人口。由于谷物在地上同时成熟，税收官可以在收获时到达，“一次性切割、脱粒并没收整个收成”（第15页）。小颗粒形式允许通过重量和体积进行精确测量，从而实现标准化核算。这种易读性延伸到人口普查，提供了“分配人头税和徭役以及征兵的基础”（第27-28页）。文字的出现主要是作为国家行政的“簿记”，在用于文学、神话或宗教文本之前，这种情况持续了半个多世纪（第26页）。",
+    "（3）城墙具有保护和禁闭的双重功能。虽然表面上是为了防御外部袭击者，但城墙的建立“既是为了将中国的纳税耕作者留在里面，也是为了将野蛮人（游牧民）挡在外面”（第23页）。底格里斯河和幼发拉底河之间所谓的反阿摩利人墙可能“更多是为了将耕作者留在国家‘区域’内，而不是为了将阿摩利人挡在外面”（第23-24页）。",
+    "（4）国家需要劳动力来完成自由臣民会反抗的任务：采石、采矿、挖运河、制砖、划船。战俘为“最繁重的工作提供了一次性无产阶级”，使臣民免于可能“激起逃跑或反叛”的侮辱性苦役，同时满足“军事和纪念性野心”（第42、55页）。女俘虏“至少因其生殖服务而与其劳动一样受到重视”，有助于缓解“集中和家庭生活的其他不健康影响”（第53-54页）。",
+    "（5）人口补充机制：鉴于早期国家中心的高死亡率，国家面临持续的人口挑战。捕获战争、强迫重新安置和鼓励生育政策被用来维持和扩充人口。乌鲁克人口“在两百年内增加了三倍，鉴于高死亡率，这种增长不太可能来自自然人口增长”（第4页）。描绘戴颈镣战俘的浮雕“暗示了人口增加的另一种手段”（第4-5页）。"
+   ]
+  }
+ },
+ "queralt2022": {
+  "mechanisms": {
+   "en": [
+    "The author proposes two main transmission mechanisms to explain why early nineteenth-century fiscal policy decisions had long-term effects on state capacity: the political mechanism and the bureaucratic mechanism (pp. 16–17).",
+    "(1) The Political Mechanism: To foster compliance with higher taxes, rulers are compelled to articulate power-sharing institutions over fiscal policy to overcome taxpayers’ hesitancy to further taxation. The logic is contractarian: taxpayers demand some institutionalized say in how public moneys are spent in exchange for paying taxes; if granted, rulers secure tax funds while limiting their discretion over fiscal policy (p. 7). Once in place, taxation becomes a self-sustaining compromise: rulers secure funds while taxpayers hold them accountable for fiscal decisions, expanding the capacity to tax in the long run. Power-sharing institutions are “sticky”, tending to persist once established because they help taxpayers overcome collective action problems and because taxation becomes a positive-sum game for both rulers and taxpayers (pp. 7, 17). This mechanism is particularly likely to operate in smaller and wealthier countries where taxpayers face low coordination costs and easy ways to escape taxation (p. 17).",
+    "(2) The Bureaucratic Mechanism: This mechanism operates independently of political status, geographic scale, and capital mobility. It refers to the efforts that tax bureaucracies exert to safeguard organizational survival (p. 17, citing Schumpeter 1991). Once created, tax bureaucracies develop institutional interests in their own perpetuation. They resist disinvestment and seek to maintain or expand their functions. This means that even in the absence of democratic power-sharing, the bureaucratic apparatus created to fund war will tend to persist and continue building tax capacity over time. This mechanism is particularly relevant for understanding state building in colonial dependencies and large, heterogeneous societies where the political mechanism may not operate effectively.",
+    "Beyond these two positive mechanisms, the author also identifies a negative mechanism operating through external finance: extreme conditionality leading to debt traps. When countries defaulted on external loans, they faced severe conditions including debt-equity swaps (surrendering national assets like railroads and monopolies) and the installation of receiverships (foreign-controlled agencies taking over branches of the tax administration). These mechanisms eroded the local tax base rather than building it (pp. 8–9, 16). Receiverships were installed to repatriate private capital, not to build local capacity. They operated under European standards but evidence suggests they did not improve local tax ratios or administrative performance relative to pre-intervention years (p. 25). By agreeing to such conditions, countries regained access to international markets without having strengthened their capacity to tax. If anything, their fiscal position weakened because foreign control shrank the tax base left for local authorities (p. 26)."
+   ],
+   "zh": [
+    "作者提出了两种主要传导机制来解释为何十九世纪早期的财政政策决定对国家能力产生了长期影响：政治机制和官僚机制（第16–17页）。",
+    "（1）政治机制：为促进对更高税收的遵从，统治者被迫就财政政策建立权力分享制度，以克服纳税人对进一步征税的抵触。这一逻辑是契约主义的：纳税人要求在公共资金使用上拥有制度化的发言权，以换取纳税；如果被授予，统治者获得税收资金，同时限制其对财政政策的自由裁量权（第7页）。一旦建立，税收就成为一种自我维持的妥协：统治者获得资金，而纳税人则对其财政决定进行问责，从长远来看扩大了征税能力。权力分享制度具有“粘性”，一旦建立就倾向于持续存在，因为它们帮助纳税人克服集体行动问题，也因为税收对统治者和纳税人都变成了正和博弈（第7、17页）。这一机制特别可能在较小和较富裕的国家运作，那里的纳税人面临较低的协调成本和容易逃税的方式（第17页）。",
+    "（2）官僚机制：这一机制独立于政治地位、地理规模和资本流动性而运作。它指的是税务官僚机构为保护组织生存而做出的努力（第17页，引用Schumpeter 1991）。一旦创建，税务官僚机构就会发展出对自身延续的制度利益。它们抵制撤资并寻求维持或扩展其职能。这意味着即使在没有民主权力分享的情况下，为战争融资而创建的官僚机构也会倾向于持续存在并继续随时间建设税收能力。这一机制对于理解殖民地依附地区和政治机制可能无法有效运作的大型异质社会的国家建设尤为重要。",
+    "除了这两种正面机制外，作者还识别出通过外部融资运作的负面机制：极端条件性导致债务陷阱。当国家对外债违约时，它们面临严苛的条件，包括债转股（交出铁路和垄断企业等国家资产）和建立接管机构（由外国控制的机构接管税务机关的分支机构）。这些机制侵蚀而非建设了当地税基（第8–9、16页）。接管机构的建立是为了遣返私人资本，而非建设当地能力。它们按照欧洲标准运作，但证据表明，它们并未改善相对于干预前年份的当地税收比率或行政绩效（第25页）。通过同意这些条件，国家在没有加强其征税能力的情况下重新获得了进入国际市场的机会。如果说有什么影响的话，它们的财政状况反而恶化了，因为外国控制缩小了留给地方当局的税基（第26页）。"
+   ]
+  },
+  "methods": {
+   "en": [
+    "The author adopts a mixed-methods approach, combining quantitative econometric analysis with qualitative case studies.",
+    "(1) Short-Term Analysis (Chapter 7, Section 7.2): The author uses panel regression with country and year fixed effects to examine the evolution of fiscal capacity as a joint function of war and access to international capital. The formal specification (equation 7.1, p. 197) regresses annual direct tax ratios on war (lagged), exclusion from external finance (lagged), their interaction, the lagged dependent variable, cumulative wars and defaults, and fixed effects. The key coefficient of interest is the interaction term: β₃ captures whether war waged while excluded from capital markets has a different effect than war waged with capital access. The inclusion of the lagged dependent variable accounts for serial correlation in the slow-moving outcome variable. Country fixed effects control for time-invariant unobserved heterogeneity; year fixed effects control for secular trends (p. 200).",
+    "Addressing Endogeneity with Exogenous Shocks: using global credit crunches as exogenous shocks to capital market access. The author argues that banking and stock market crises originating in Britain were (1) domestic in origin and not caused by defaults in the periphery, and (2) unanticipated by borrowers (pp. 202–203). To verify the exogeneity of these shocks, the author demonstrates that the frequency and duration of wars are balanced across periods when credit flowed versus when credit stopped (Tables 7.3 and 7.5, pp. 204, 215). This balance suggests that countries did not systematically time their wars around anticipated credit crunches. To further maximize exogeneity, the author drops Britain, France, and Germany (the global financial centers) from the sample when using this measure (p. 205).",
+    "(2) Long-Term Analysis (Chapter 7, Section 7.3): For cross-sectional analysis of long-term effects, the author uses OLS regression (equation 7.2, pp. 209–210) with the number of years at war while credit was available and while credit was unavailable as separate regressors, controlling for region fixed effects, colonial origins, and various confounders. The identification challenge here is that being in default is endogenous (countries that default may differ systematically from those that do not), and the decision to go to war is also potentially endogenous. The author addresses these concerns through multiple strategies:",
+    "1. Using global credit crunches instead of country-specific defaults to exogenize capital access.",
+    "2. Focusing on “ongoing wars”, namely wars initiated while credit was flowing but that were eventually hit by a sudden stop, to disconnect the decision to go to war from credit access (pp. 216–218).",
+    "3. Including controls for initial state capacity (state antiquity index; census capacity by 1820) to account for preexisting differences that might affect both war propensity and state building (p. 216).",
+    "4. Using COW data on war non-initiators to examine countries that were dragged into war rather than choosing to initiate it (pp. 220–221).",
+    "(3) Robustness and Sensitivity: The author conducts extensive robustness checks, including: varying the window length for credit crunches (3, 4, or 5 years); using different war datasets (Wimmer and Min vs. COW); using intensive margin (number of wars per year) vs. extensive margin (war or no war) measures; controlling for per capita GDP; examining interstate wars alone vs. interstate plus secessionist wars; dropping Great Powers and OECD founding members to focus on the periphery; and controlling for war location, casualties, and outcomes (pp. 205–208, 219–222).",
+    "(4) History Decompression (Section 7.4): To address concerns about “history compression” (the worry that correlations between nineteenth-century causes and twenty-first-century outcomes may be spurious), the author evaluates effects at intermediate points in time. Specifically, the effects of nineteenth-century war finance on tax ratios are tested for each decade from 1945 to 1995. Results show persistent effects across all intermediate periods, strengthening confidence in the causal interpretation (pp. 222–223, Figure 7.8).",
+    "Key Assumptions: For the identification strategy to be valid, several assumptions must hold: (1) Global credit crunches must be exogenous to individual borrowers’ characteristics and unanticipated by them; (2) The timing and nature of wars must not be systematically related to anticipated credit conditions; (3) The controls included must adequately address confounding (no omitted variable bias); (4) The relationship between nineteenth-century war finance and long-term fiscal capacity must not be driven by unmeasured factors that changed systematically over the intervening century. The author provides evidence supporting assumptions (1) and (2) through balance tests, but assumptions (3) and (4) cannot be fully verified."
+   ],
+   "zh": [
+    "作者采用混合方法，将定量计量经济分析与定性案例研究相结合。",
+    "（1）短期分析（第七章第7.2节）：作者使用带有国家和年份固定效应的面板回归来考察财政能力作为战争和国际资本准入联合函数的演变。正式模型规格（方程7.1，第197页）将年度直接税比率回归于战争（滞后）、被排除在外部融资之外（滞后）、它们的交互项、因变量滞后项、累计战争和违约次数，以及固定效应。关键的兴趣系数是交互项：β₃捕捉在被排除在资本市场之外时进行的战争是否与有资本准入时进行的战争具有不同的效应。纳入因变量滞后项是为了考虑缓慢变动的结果变量中的序列相关性。国家固定效应控制时间不变的未观察异质性；年份固定效应控制长期趋势（第200页）。",
+    "用外生冲击解决内生性问题：使用全球信贷紧缩作为外生冲击来衡量资本市场准入。作者认为，源自英国的银行和股市危机（1）是国内原因造成的，而非由边缘地区的违约引起，（2）借款国无法预料（第202–203页）。为验证这些冲击的外生性，作者证明了战争的频率和持续时间在信贷流动期与信贷停止期之间是平衡的（表7.3和7.5，第204、215页）。这种平衡表明国家并未系统性地围绕预期的信贷紧缩来安排战争时机。为进一步最大化外生性，作者在使用此测量时从样本中剔除了英国、法国和德国（全球金融中心）（第205页）。",
+    "（2）长期分析（第七章第7.3节）：对于长期效应的横截面分析，作者使用OLS回归（方程7.2，第209–210页），将信贷可用时的战争年数和信贷不可用时的战争年数作为独立回归变量，控制地区固定效应、殖民起源和各种混淆变量。这里的识别挑战是违约状态是内生的（违约的国家可能与不违约的国家存在系统性差异），进入战争的决定也可能是内生的。作者通过多种策略解决这些问题：",
+    "1. 使用全球信贷紧缩而非国家特定违约来外生化资本准入。",
+    "2. 关注“正在进行的战争”，即在信贷流动时发起但最终被突然停止冲击的战争，以使进入战争的决定与信贷准入脱钩（第216–218页）。",
+    "3. 纳入初始国家能力的控制变量（国家古老程度指数；1820年人口普查能力），以考虑可能同时影响战争倾向和国家建设的既存差异（第216页）。",
+    "4. 使用COW数据中的非战争发起方来考察被拖入战争而非选择发起战争的国家（第220–221页）。",
+    "（3）稳健性和敏感性：作者进行了广泛的稳健性检验，包括：变化信贷紧缩的窗口长度（3、4或5年）；使用不同的战争数据集（温默和闵 vs. COW）；使用密集边际（每年战争数量）vs. 广延边际（有战争或无战争）测量；控制人均GDP；单独考察国家间战争 vs. 国家间加分裂战争；剔除大国和OECD创始成员以聚焦边缘地区；以及控制战争地点、伤亡和结果（第205–208、219–222页）。",
+    "（4）历史解压缩（第7.4节）：为解决“历史压缩”的担忧（即十九世纪原因与二十一世纪结果之间的相关性可能是虚假的），作者在中间时间点评估效应。具体而言，十九世纪战争融资对税收比率的效应在1945年至1995年的每个十年都进行了检验。结果显示所有中间时期都存在持续效应，增强了对因果解释的信心（第222–223页，图7.8）。",
+    "关键假设：识别策略要有效，必须满足若干假设：（1）全球信贷紧缩必须对单个借款国的特征是外生的，且借款国无法预料；（2）战争的时机和性质不得与预期的信贷条件系统性相关；（3）纳入的控制变量必须充分解决混淆问题（无遗漏变量偏误）；（4）十九世纪战争融资与长期财政能力之间的关系不得由在中间世纪系统性变化的未测量因素驱动。作者通过平衡检验提供了支持假设（1）和（2）的证据，但假设（3）和（4）无法完全验证。"
+   ]
+  }
+ },
+ "gennaiolivoth2015": {
+  "mechanisms": {
+   "en": [
+    "(1) The Military Revolution and Rising λ",
+    "The “Military Revolution” fundamentally transformed the relationship between fiscal resources and military success. Three key technological and organizational changes drove this transformation. First, the spread of cannon after 1400 made medieval walls obsolete, but Italian military engineers devised the trace italienne /trɑːs itɑːliˈen/, new fortifications with earthen bulwarks covered by bricks that could withstand cannon fire. These fortifications were immensely costly to build (Louis XIV allegedly asked if the fortress of Besançon /bəˈzɑ̃sɔ̃/ was made of gold when informed of its cost). The existence of numerous strongpoints meant that wars dragged on for long periods, requiring sustained expenditure (p. 1413).",
+    "Second, the introduction of standing armies added to rising costs. Due to the need for firearms training, states began to organize, equip, and drill soldiers continuously, investing in their human capital. Starting with William of Nassau’s /ˈnæsɔː/ reforms during the Dutch rebellion, soldiers were garrisoned and trained year-round rather than being raised only for campaigns. Third, states began to organize permanent navies with large numbers of warships kept in readiness. Even smaller ships in the 18th-century English navy cost more than the largest industrial companies had in capital. In combination, these changes made war vastly more expensive and increasingly dependent on sustained fiscal resources rather than feudal dues or temporary levies (pp. 1413–1414).",
+    "(2) The Contest Success Function and War Incentives",
+    "The theoretical mechanism operates through a contest success function that determines the probability of winning a war. The probability that ruler H wins is given by: p(RH, RF) = LH^α × RH^λ / (LH^α × RH^λ + LF^α × RF^λ), where LJ represents army size and RJ represents fiscal revenues for country J. The parameter λ measures the “money sensitivity of military strength.” When λ is high, fiscal revenues are crucial for victory; when λ is low, other factors (such as luck, terrain, or individual commander ability) dominate (pp. 1418–1419).",
+    "This contest function generates three direct effects of war on the incentive to centralize (see equations 4.5 and 4.6, p. 1420). First, war creates an offensive incentive: higher fiscal revenues enhance the probability of winning and allow the ruler to predate on his competitor and seize their resources. Second, war creates a defensive risk: by increasing fiscal revenue, a ruler becomes a more attractive prey, which stunts the incentive to centralize. Third, war imposes a resource cost: fiscal revenues must be spent on military operations during wartime, reducing the benefits of centralization. The net effect of war on state-building depends on which of these forces dominates, which in turn depends on λ (p. 1420).",
+    "(3) Domestic Opposition and the Cost of Centralization",
+    "State-building requires overcoming domestic opposition from local power holders who benefit from the decentralized status quo. In the decentralized regime, local power holders (nobles, regional assemblies, urban elites) control taxation in their districts and retain the revenues for themselves. They have no incentive to coordinate on efficient taxation; instead, each tries to steal revenue from others by overtaxing market activities that cross district boundaries. This creates economic inefficiency but benefits local elites (pp. 1415–1416).",
+    "Centralizing taxation requires the ruler to buy off or suppress these power holders, at a cost that increases with the degree of domestic conflict B. The authors assume that the cost of centralizing district i is βi × 2(Al - Ah), where βi measures the ability and willingness of the local power holder to resist, and (Al - Ah) represents the tax rent the power holder loses under centralization. The distribution of βi across districts, captured by the c.d.f. H(β), is lower in a first-order stochastic dominance sense for countries with greater ethnic, religious, or regional divisions. The ruler centralizes districts in order of resistance, starting with low-β districts and moving to more hostile ones. The marginal cost of centralization is therefore increasing, creating a convex cost function C(R) = c × R² where c ≡ B(Al - Ah)/(Am - Ah)² (pp. 1416–1417).",
+    "(4) Strategic Interaction and Divergence",
+    "A crucial mechanism driving divergence is the strategic interaction between competing rulers. When λ is low, the reaction functions of the two rulers have opposite slopes: the cohesive ruler’s reaction function is negatively sloped, while the divided ruler’s is positively sloped. This means that if the divided ruler centralizes more, the cohesive ruler actually centralizes less in response. Because when λ is low, even a poor opponent has a reasonable chance of winning, making the cohesive ruler’s accumulated wealth a liability. This dampens divergence under low λ (p. 1421, Figure 3, p. 1422).",
+    "When λ is high, this strategic logic reverses (Corollary 1, p. 1425). Now, stronger centralization by the divided ruler actually increases the cohesive ruler’s incentive to centralize further, because the cohesive ruler is eager to prey upon a richer opponent when money sensitivity is high. If the divided country is also weaker militarily (γ < 1 in the linearized model), divergence becomes extremely pronounced. As money sensitivity increases, the cohesive country centralizes aggressively while the divided country may actually reduce its state-building efforts. Unable to withstand the competition, the divided country gives up.",
+    "(5) Spoils of War and Resource Redistribution",
+    "Wars in early modern Europe were not merely destructive; they systematically redistributed resources from losers to winners. This redistribution took three main forms: territorial conquests within Europe, transfers of overseas possessions, and war indemnities. In the 42 main peace settlements between 1500 and 1780, some 20.6 million square kilometers were redistributed, equivalent to 14% of the earth’s land surface. Conquered territories provided substantial tax revenues to their new rulers; for example, Prussia /ˈprʌʃə/ doubled the tax revenue from Silesia /saɪˈliːʒə/ after conquering it from Austria /ˈɒstriə/ in 1740. Frederick /ˈfredərɪk/ the Great extracted 55-82 million Thaler from occupied Saxony /ˈsæksəni/, Mecklenburg /ˈmeklənbɜːrɡ/, and Pomerania /ˌpɒməˈreɪniə/ during the Seven Years War, enough to cover one-third to one-half of the war’s cost (p. 1414).",
+    "This mechanism of resource redistribution amplifies the effects of λ on state-building. When λ is high and the cohesive state is likely to win, war transfers fiscal resources and territories from weaker, divided states to stronger, cohesive ones, accelerating the latter’s state-building while devastating the former. When λ is low and outcomes are more random, resource redistribution is less systematically directed, but the risk of loss still discourages investment in state capacity by the relatively wealthy (pp. 1427–1428).",
+    "(6) Endogenous War and Selection Effects",
+    "In an extension of the model (Section 5.2), the authors endogenize the decision to go to war. Given the option not to fight, war occurs when one ruler expects to benefit from initiating conflict. The identity of the initiating party depends on λ. When λ is low, the poorer, divided country may initiate war because, even though its probability of winning is below 50%, the payoff from conquering a wealthy opponent is attractive relative to its low stakes. When λ is high, the richer, cohesive country initiates war because it is disproportionately likely to win and can prey upon the weaker opponent. This creates additional forces toward either convergence (when the poor attack the rich under low λ) or divergence (when the rich attack the poor under high λ) (Proposition 3, p. 1427-1428)."
+   ],
+   "zh": [
+    "（1）军事革命与λ的上升",
+    "“军事革命”从根本上改变了财政资源与军事成功之间的关系。三个关键的技术和组织变革推动了这一转变。首先，1400年后大炮的普及使中世纪城墙过时，但意大利军事工程师设计了“意大利式棱堡”，即由砖块覆盖的土质堡垒组成的新型防御工事，能够抵御炮火。这些防御工事造价极其昂贵（据说路易十四得知贝桑松堡垒的造价后，质问它是否由黄金建造）。众多据点的存在意味着战争会持续很长时间，需要持续的支出（第1413页）。",
+    "第二，常备军的建立增加了不断上升的成本。由于需要进行火器训练，国家开始持续组织、装备和训练士兵，对其人力资本进行投资。从荷兰叛乱期间拿骚的威廉改革开始，士兵全年驻扎和训练，而不是仅在战役期间才被征召。第三，国家开始组建常设海军，大量战舰随时待命。即使是18世纪英国海军中较小的舰船，其造价也超过了最大工业公司的资本总额。综合来看，这些变化使战争变得更加昂贵，越来越依赖持续的财政资源，而非封建贡赋或临时征税（第1413-1414页）。",
+    "（2）竞争成功函数与战争激励",
+    "理论机制通过一个决定战争获胜概率的竞争成功函数运作。统治者H获胜的概率为：p(RH, RF) = LH^α × RH^λ / (LH^α × RH^λ + LF^α × RF^λ)，其中LJ表示国家J的军队规模，RJ表示国家J的财政收入。参数λ衡量“军事力量的金钱敏感度”。当λ较高时，财政收入对胜利至关重要；当λ较低时，其他因素（如运气、地形或个别指挥官的能力）占主导地位（第1418-1419页）。",
+    "这一竞争函数产生了战争对集中化激励的三个直接效应（见公式4.5和4.6，第1420页）。第一，战争产生进攻性激励：更高的财政收入提高获胜概率，使统治者能够掠夺竞争对手并夺取其资源。第二，战争产生防御性风险：通过增加财政收入，统治者成为更具吸引力的猎物，这抑制了集中化的激励。第三，战争施加资源成本：财政收入必须在战时用于军事行动，减少了集中化带来的消费收益。战争对国家建设的净效应取决于这些力量中哪个占主导，而这又取决于λ（第1420页）。",
+    "（3）国内反对与集中化成本",
+    "国家建设需要克服从分权现状中受益的地方权力持有者的国内反对。在分权体制下，地方权力持有者（贵族、地区议会、城市精英）控制其辖区内的税收并保留税收收入。他们没有动力协调实施有效的税收；相反，每个人都试图通过对跨越地区边界的市场活动过度征税来窃取他人的收入。这造成了经济效率低下，但有利于地方精英（第1415-1416页）。",
+    "实现税收集中化要求统治者收买或压制这些权力持有者，其成本随国内冲突程度B的增加而增加。作者假设集中化地区i的成本为βi×2(Al-Ah)，其中βi衡量地方权力持有者抵抗的能力和意愿，(Al-Ah)代表权力持有者在集中化下损失的税收租金。βi在各地区的分布由累积分布函数H(β)描述，对于民族、宗教或地区分裂程度较高的国家，该分布在一阶随机占优意义上较低。统治者按抵抗程度的顺序集中化各地区，从低β地区开始，逐步向更具敌意的地区推进。因此，集中化的边际成本是递增的，形成凸成本函数C(R)=c×R²，其中c≡B(Al-Ah)/(Am-Ah)²（第1416-1417页）。",
+    "（4）战略互动与分化",
+    "导致分化的一个关键机制是竞争统治者之间的战略互动。当λ较低时，两位统治者的反应函数斜率相反：凝聚力强的统治者的反应函数斜率为负，而分裂统治者的反应函数斜率为正。这意味着如果分裂的统治者加强集中化，凝聚力强的统治者实际上会相应减少集中化，因为当λ较低时，即使是贫穷的对手也有合理的获胜机会，使得凝聚力强的统治者积累的财富成为负担。这在低λ条件下抑制了分化（第1421页，图3，第1422页）。",
+    "当λ较高时，这种战略逻辑发生逆转（推论1，第1425页）。此时，分裂统治者的更强集中化实际上增加了凝聚力强的统治者进一步集中化的激励，因为当金钱敏感度较高时，凝聚力强的统治者渴望掠夺更富裕的对手。如果分裂的国家在军事上也较弱（在线性化模型中γ<1），分化就会变得极为明显。随着金钱敏感度的增加，凝聚力强的国家积极集中化，而分裂的国家可能实际上减少其国家建设努力。无法承受竞争，分裂的国家选择放弃。",
+    "（5）战争果实与资源再分配",
+    "近代早期欧洲的战争不仅仅是破坏性的；它们系统性地将资源从失败者再分配给胜利者。这种再分配主要采取三种形式：欧洲内部的领土征服、海外属地的转让以及战争赔款。在1500年至1780年间的42项主要和平协定中，约2060万平方公里的领土被重新分配，相当于地球陆地面积的14%。被征服的领土为新统治者提供了大量税收收入；例如，普鲁士在1740年从奥地利征服西里西亚后，使该地税收收入翻倍。腓特烈大帝在七年战争期间从占领的萨克森、梅克伦堡和波美拉尼亚提取了5500万至8200万塔勒，足以支付战争成本的三分之一至二分之一（第1414页）。",
+    "这种资源再分配机制放大了λ对国家建设的影响。当λ较高且凝聚力强的国家可能获胜时，战争将财政资源和领土从较弱的、分裂的国家转移给较强的、凝聚力强的国家，加速后者的国家建设，同时摧毁前者。当λ较低且结果更加随机时，资源再分配的方向性不那么系统，但损失风险仍然抑制了相对富裕者对国家能力的投资（第1427-1428页）。",
+    "（6）内生战争与选择效应",
+    "在模型的扩展部分（第5.2节），作者将战争决策内生化。在有选择不战斗的情况下，当一方统治者预期从发动冲突中获益时，战争就会发生。发动战争一方的身份取决于λ。当λ较低时，更贫穷、分裂的国家可能发动战争，因为尽管其获胜概率低于50%，但相对于其低赌注，征服富裕对手的回报是有吸引力的。当λ较高时，更富裕、凝聚力强的国家发动战争，因为它获胜的可能性过高，可以掠夺较弱的对手。这产生了趋向收敛（当低λ时穷国攻击富国）或分化（当高λ时富国攻击穷国）的额外力量（命题3，第1427-1428页）。"
+   ]
+  }
+ },
+ "cederman2023": {
+  "methods": {
+   "en": [
+    "(1) At the systemic level, the authors present descriptive analysis of territorial concentration trends using the Herfindahl index and compare the size distributions of belligerent versus peaceful states through ridge plots. Belligerent states are defined as those that spent at least a quarter of the time since 1490 at war (p. 336).",
+    "(2) At the state level, the authors use OLS regression with year fixed effects to model log-transformed territorial gains and losses as functions of warfare, state size, and their interactions. Standard errors are clustered at the country level to account for serial correlation within states. The key specifications interact the war dummy with state size and with cumulative war-related gains/losses variables, allowing tests of both the static relationship (Hypotheses 1a and 1b) and the dynamic positive-feedback relationship (Hypotheses 2a and 2b). Some models include country fixed effects to compare conflict periods to peaceful ones within the same state (pp. 345–347).",
+    "(3) For analyzing state death, the authors employ Cox proportional hazard models with standard errors clustered at the country level. The outcome is coded as 1 if a state ceases to exist in the subsequent five-year period. These survival models test whether warfare disproportionately eliminates smaller states while sparing larger ones (Hypothesis 1b) and whether cumulative war gains provide protection against state death (p. 348).",
+    "(4) At the dyadic level, the authors use OLS regression with year fixed effects and, in the most demanding specification, dyad fixed effects. The dependent variable is the log-transformed territorial gain of state A from state B. This setup allows testing whether pairs of states exchange territory differently during wartime versus peacetime, and whether the effect of warfare varies with relative state size and cumulative gains/losses. Standard errors are clustered at the state level. The dyadic analysis includes all state pairs, not just contiguous neighbors, since European history includes many cases of great powers fighting noncontiguous states (e.g., Spain’s conquest of the Netherlands) (pp. 350–352).",
+    "Key assumptions for these methods to be valid include: (1) the conflict data accurately captures warfare and correctly matches belligerents to state units in the border data; (2) the five-year periodization adequately captures the timing of territorial changes relative to wars; (3) year and dyad fixed effects adequately control for unobserved heterogeneity across time periods and state pairs; and (4) the geographic controls (distance, terrain, coastal access) appropriately capture countervailing balance-of-power mechanisms. The authors acknowledge that the macrohistorical focus of bellicist theorizing precludes straightforward causal identification, though they argue that their regression-based analyses with observational data provide solid support for the paradigm (pp. 333, 357).",
+    "Endogeneity that still cannot be ruled out: (i) time-varying dyad heterogeneity, for example a given pair of states that in a certain period becomes more prone to war and to territorial transfers because of royal succession, realignment of alliances, or changes in fiscal capacity. Even with dyad fixed effects, such factors that “vary over time and are correlated with war” may still bias the estimates. (ii) common causes (time-varying confounders), for example a wave of religious reformation, a change in trade routes, or a plague shock that alters fiscal or military strength while simultaneously affecting both war and border outcomes."
+   ],
+   "zh": [
+    "（1）在系统层面，作者使用赫芬达尔指数对领土集中度趋势进行描述性分析，并通过山脊图比较好战国家与和平国家的规模分布。好战国家被定义为自1490年以来至少有四分之一时间处于战争状态的国家（第336页）。",
+    "（2）在国家层面，作者使用带年份固定效应的OLS回归来将对数转换的领土获得和损失建模为战争、国家规模及其交互项的函数。标准误在国家层面聚类，以考虑国家内部的序列相关。关键的模型设定将战争虚拟变量与国家规模以及累积战争相关收益/损失变量进行交互，从而能够检验静态关系（假说1a和1b）和动态正反馈关系（假说2a和2b）。一些模型包含国家固定效应，以比较同一国家内冲突时期与和平时期（第345-347页）。",
+    "（3）对于分析国家消亡，作者采用Cox比例风险模型，标准误在国家层面聚类。如果一个国家在下一个五年期内不复存在，则结果编码为1。这些生存模型检验战争是否不成比例地消灭小国而保全大国（假说1b），以及累积战争收益是否提供对国家消亡的保护（第348页）。",
+    "（4）在二元组层面，作者使用带年份固定效应的OLS回归，在最严格的模型设定中还包括二元组固定效应。因变量是国家A从国家B获得的对数转换领土收益。这一设置允许检验国家对在战时与和平时期是否以不同方式交换领土，以及战争的效果是否随相对国家规模和累积收益/损失而变化。标准误在国家层面聚类。二元组分析包括所有国家对，而不仅仅是相邻邻国，因为欧洲历史包括许多大国与非相邻国家作战的案例（例如，西班牙对尼德兰的征服）（第350-352页）。",
+    "这些方法有效的关键假设包括：（1）冲突数据准确捕捉战争并正确将交战方与边界数据中的国家单位匹配；（2）五年分期充分捕捉领土变化相对于战争的时间；（3）年份和二元组固定效应充分控制了跨时期和国家对的未观测异质性；（4）地理控制变量（距离、地形、沿海通道）恰当捕捉了抵消性的均势机制。作者承认，好战主义理论的宏观历史焦点排除了直接的因果识别，尽管他们认为基于观测数据的回归分析为该范式提供了坚实支持（第333页、第357页）。",
+    "仍然无法排除的内生性：①时间变化的dyad异质性：例如某对国家在某时期因王位继承、联盟重组、财政能力变化而更容易开战且更容易产生领土转移。即便有dyad FE，这类“随时间变化且与战争相关”的因素仍可能偏误估计。②共同原因（time-varying confounders）：比如某次宗教改革浪潮、贸易通道变化、瘟疫冲击导致财政/军力变化，同时影响战争与边界结果。"
+   ]
+  }
+ },
+ "suryanarayanwhite2021": {
+  "methods": {
+   "en": [
+    "The paper mainly uses county-level OLS regressions with state fixed effects. The authors estimate separate models for three outcomes in the taxation analysis: log county tax per capita in 1870, log county tax per capita in 1880, and the change in log county tax per capita between 1870 and 1880. All continuous explanatory variables are standardized, which makes it easier to compare coefficient sizes across variables within a model. State fixed effects are included so that the analysis relies on within-state, across-county variation rather than cross-state differences. The paper also uses similar OLS models for age heaping in 1880 and per capita government employment in 1880, with prewar values included where available.",
+    "This design has a before/after comparative structure, because the authors compare how prewar slavery is related to county outcomes during Reconstruction and after Reconstruction. But it is better not to describe the paper as a formal difference-in-differences design. The authors do not set up the analysis around a treatment and control framework, do not explicitly argue from a parallel-trends assumption, and do not claim a quasi-experimental identification strategy of that kind. A more accurate description is that this is a historical observational design using prewar county variation in slavery intensity to study how its association with taxation and bureaucratic capacity changed across the Reconstruction and Redemption periods.",
+    "To test the cross-class coalition argument, the authors add an interaction between proportion enslaved and intrawhite occupational inequality. They then examine whether the relationship between intrawhite inequality and post-Reconstruction taxation or bureaucratic outcomes differs across counties with low versus high slavery. In addition, they run a supplementary enumerator-district-level analysis for 1880 census quality, asking whether places with larger African American populations had worse age-heaping outcomes among white respondents. This last analysis is best understood as suggestive mechanism evidence, not as a fully separate causal test."
+   ],
+   "zh": [
+    "本文主要使用的是县级OLS回归并加入州固定效应。在税收分析中，作者分别估计三个结果变量：1870年的人均县级税收对数、1880年的人均县级税收对数，以及1870到1880年人均县级税收对数的变化值。所有连续解释变量都做了标准化处理，这样更方便比较同一模型中不同变量系数的大小。模型加入州固定效应，因此识别主要依赖的是州内、县际之间的差异，而不是州与州之间的差异。对于1880年的年龄堆积和1880年的人均政府雇员数，作者也使用了类似的OLS模型；在可以做到的情况下，还加入了战前对应指标。",
+    "这个设计确实有一种前后比较的结构，因为作者在比较：战前奴隶制强度与县级结果之间的关系，在重建时期和重建结束之后是否不同。但更准确的说法是，不应把它写成正式的双重差分设计。作者并不是按 treatment / control 的框架来设定研究，也没有明确诉诸平行趋势假设，更没有把文章表述成那种准实验识别。更合适的概括是：这是一种历史性的观察性研究设计，利用战前各县奴隶制强度的差异，考察这种差异与税收和官僚能力之间的关系如何在 Reconstruction 与 Redemption 两个时期发生变化。",
+    "为了检验跨阶级联盟的论点，作者加入了被奴役人口比例与白人内部职业不平等的交互项。他们考察的是：在低奴隶制县和高奴隶制县中，白人内部不平等与重建后税收及官僚结果之间的关系是否不同。除此之外，作者还做了一个补充性的人口普查调查员辖区层面分析，考察1880年非裔美国人比例更高的地区，白人受访者的年龄堆积是否更严重。这个分析最好理解为对机制的提示性证据，而不是一个完全独立、严格识别的因果检验。"
+   ]
+  }
+ },
+ "darcy2024": {
+  "stateness": {
+   "en": [
+    "The paper does not adopt a single explicit theory of the state, but its conceptualization of the state draws on two interrelated traditions. First, it draws on the Coasean/institutional economics tradition (Coase 1960; North 1990) which views the state as the entity that can define, assign, and publicize property rights, thereby reducing transaction costs for economic agents. A state-administered cadaster is the concrete institutional mechanism through which the state performs this function at national scale: it publicly specifies “who holds which rights over what property” (p. 3788). Second, the paper draws on the state capacity literature (Mann 1984; Besley and Persson 2009, 2013; Dincecco and Katz 2016), conceptualizing cadasters as an instrument of infrastructural power, the state’s capacity to penetrate civil society, collect information on taxable assets and liable parties, and deliver public goods.",
+    "The state is thus measured not through abstract indices of stateness but through a concrete and historically specific institutional output: the cadaster itself. The authors explicitly describe cadastral systems as reflecting and enabling both the information dimension and the fiscal dimension of state capacity (pp. 3789, 3817). Their index of cadasters can therefore be read as a novel, historically grounded proxy for a particular dimension of state-building, namely, the state’s capacity to formalize land relations through public record-keeping, which simultaneously serves the purposes of taxation and market facilitation. Notably, the authors acknowledge that cadasters can be both fiscal (established for tax purposes) and legal (established for recording property rights), and that even fiscal cadasters contain enough information to serve as de facto property rights registries (pp. 3786, 3789)."
+   ],
+   "zh": [
+    "本文并未采用单一的明确国家理论，但其对国家的概念化基于两个相互关联的学术传统。第一，借鉴了科斯/制度经济学传统（Coase 1960; North 1990），将国家视为能够界定、分配和公示产权，从而降低经济主体交易成本的实体。国家管理的地籍登记是国家在全国范围内履行这一职能的具体制度机制：它公开标明“谁对什么财产持有何种权利”（第3788页）。第二，本文借鉴了国家能力文献（Mann 1984; Besley and Persson 2009, 2013; Dincecco and Katz 2016），将地籍登记概念化为基础性权力的工具，即国家渗透市民社会、收集应税资产和纳税义务人信息、提供公共产品的能力。",
+    "因此，国家性并非通过抽象的国家性指数来衡量，而是通过一个具体的、具有历史特定性的制度产出，即地籍登记本身，来衡量。作者明确将地籍体系描述为既反映又赋能国家能力的信息维度和财政维度（第3789、3817页）。因此，他们的地籍指数可以被解读为衡量国家建设特定维度的一种新颖的、以历史为基础的代理变量，即国家通过公共档案管理将土地关系正式化的能力，这种能力同时服务于征税和市场促进两个目的。值得注意的是，作者承认地籍既可以是财政性的（为征税目的而建立），也可以是法律性的（为记录产权而建立），而且即使是财政性地籍也包含足够的信息，可以在事实上作为产权登记册发挥作用（第3786、3789页）。"
+   ]
+  }
+ },
+ "albertusgay2025": {
+  "data": {
+   "en": [
+    "The analysis dataset is a panel of approximately 35,000 parishes of the kingdom of France as of 1789 (excluding Corsica /ˈkɔːrsɪkə/), spanning eight decades from the 1710s to the 1780s, a total of 282,288 parish-decade observations. Parishes were the smallest units of administration in Ancien Régime France, and no prior study had analyzed this period at such a granular level (p. 7).",
+    "The horse-post relay network data are an original historical GIS constructed from the Liste générale des postes de France. The authors digitized one edition per decade from 1714 to 1790, extracting all segments between relays and matching each location to the corresponding parish (pp. 7–8). The data source is administrative and designed for state messengers, which makes it highly reliable.",
+    "The rebellion data come from the Jean Nicolas /ʒɑ̃ nikɔˈla/ survey (Nicolas 1985; 2002), compiled from extensive archival research during the 1980s–1990s. The authors digitized all 40,000 original coding sheets of the survey and constructed a comprehensive database of the 6,000 rebellions that took place in 3,172 parishes between 1714 and 1789. For each event, they recorded the date, location, motives, size, and characteristics of participants (pp. 9–10).",
+    "Additional data include: (i) parish-level decade-average wheat prices from Ridolfi /rɪˈdɒlfi/ (2019), used to control for local economic conditions; (ii) population from the 1793 census (the first census conducted in France); (iii) road connectivity from Cassini’s /kæˈsiːni/ maps published in 1756–90; (iv) whether a parish served as an administrative seat; (v) the type of gabelle taxation regime; (vi) a historical GIS of both the letter-post system and maréchaussée brigades, constructed by the authors for the alternative-mechanisms analysis (p. 12).",
+    "The unit of analysis is the parish-decade. The key administrative divisions used in the empirical strategy are cantons (over 4,500, with a median radius of 6 km and 7 parishes each) and subdélégations /sybdeleɡaˈsjɔ̃/ (nearly 700, with a median radius of 15 km and 39 parishes each) (pp. 11–12)."
+   ],
+   "zh": [
+    "分析数据集是截至1789年法国王国约35,000个教区（不含科西嘉 /ˈkɔːrsɪkə/）的面板，跨越从1710年代到1780年代的八个十年，共282,288个教区-十年观测值。教区是旧制度法国最小的行政单位，此前没有任何研究在如此细粒度的层面分析过这一时期（第7页）。",
+    "驿站网络数据是根据《法国驿站总表》构建的原始历史GIS。作者将1714年至1790年每十年的一个版本进行了数字化，提取了所有驿站之间的路段，并将每个地点与相应的教区匹配（第7–8页）。数据来源是行政性的，专为国家信使设计，因此具有高度可靠性。",
+    "叛乱数据来自让·尼古拉 /ʒɑ̃ nikɔˈla/ 的调查（Nicolas 1985; 2002），该调查由1980–1990年代的广泛档案研究编纂而成。作者将调查的全部40,000份原始编码表进行了数字化，构建了1714年至1789年间3,172个教区中发生的6,000次叛乱的综合数据库。对于每个事件，他们记录了日期、地点、动机、规模和参与者特征（第9–10页）。",
+    "额外数据包括：(i) 来自Ridolfi /rɪˈdɒlfi/（2019）的教区级十年平均小麦价格，用于控制地方经济条件；(ii) 来自1793年人口普查（法国首次人口普查）的人口数据；(iii) 来自卡西尼 /kæˈsiːni/ 1756–90年出版的地图的道路连通性；(iv) 教区是否为行政中心；(v) 盐税制度类型；(vi) 作者为替代机制分析构建的信件邮政系统和宪兵旅的历史GIS（第12页）。",
+    "分析单位是教区-十年。实证策略中使用的关键行政区划是canton（超过4,500个，中位半径6公里，每个包含7个教区）和subdélégation /sybdeleɡaˈsjɔ̃/（近700个，中位半径15公里，每个包含39个教区）（第11–12页）。"
+   ]
+  }
+ },
+ "cantonimohrweigand2024": {
+  "mechanisms": {
+   "zh_prepend": [
+    "作者识别出四个具体机制，财政集权化正是通过这些机制转化为更好的国家整合结果。"
+   ]
+  },
+  "methods": {
+   "zh_prepend": [
+    "本文采用了一系列计量经济学方法，全部围绕一个基于丰富面板数据的交错双重差分（staggered difference-in-differences）设计展开。"
+   ]
+  }
+ }
+}

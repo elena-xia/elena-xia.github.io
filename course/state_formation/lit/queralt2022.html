@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Queralt 2022 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 5" data-zh="第 5 周">Week 5</span> · <span data-en="Coercion–Extraction lane" data-zh="强制–汲取层">Coercion–Extraction lane</span> · <span data-en="The long nineteenth century (S4)" data-zh="长十九世纪（S4）">The long nineteenth century (S4)</span></p>
+        <h1><span class="lang-en">Didac Queralt (2022), Pawned States: State Building in the Era of International Finance, chs. 1, 7.</span><span class="lang-zh">克拉尔特（2022）《被典当的国家：国际金融时代的国家建设》第1、7章。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#607066" data-en="Panel FE" data-zh="面板固定效应">Panel FE</span><span class="chip" style="background:#315b7c" data-en="Comparative history" data-zh="比较历史">Comparative history</span><span class="chip" style="background:#b98d40" data-en="Tilly: qualifies" data-zh="Tilly：限定">Tilly: qualifies</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The main dependent variable is state capacity, specifically operationalized as fiscal capacity, namely the state’s ability to assess wealth, monitor tax compliance, and secure a stable stream of government revenue. For short-term analysis (1816–1913), fiscal capacity is measured by the share of direct taxes (income and property taxes) as a percentage of total taxation. Direct taxes require sophisticated bureaucratic apparatus to assess wealth and monitor compliance of an atomized tax base, and thus efforts to increase direct taxation signal rulers’ resolve to strengthen fiscal capacity. For long-term analysis (effects measured circa 2000), fiscal capacity is measured by personal income tax (PIT) as a percentage of GDP. Implementing a PIT requires a sophisticated bureaucratic apparatus capable of assessing a highly atomized tax base, enforcing compliance, and sanctioning evaders; it is considered the endpoint of fiscal capacity building.</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要因变量是国家能力（state capacity），具体操作化为财政能力（fiscal capacity）,即国家评估财富、监控税收合规以及确保稳定政府收入流的能力（第11页）。在短期分析（1816–1913年）中，财政能力以直接税（所得税和财产税）占总税收的比例来衡量。直接税需要复杂的官僚机构来评估财富并监控分散税基的合规性，因此增加直接税的努力表明统治者加强财政能力的决心（第198页）。在长期分析（效应以2000年左右为衡量点）中，财政能力以个人所得税占GDP的比例来衡量。实施个人所得税需要复杂的官僚机构来评估高度分散的税基、执行合规并惩罚逃税者；这被认为是财政能力建设的终点（第210页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The main independent variable is the means of war finance in the nineteenth century, specifically the distinction between domestic resource mobilization (taxation and domestic credit) versus external finance (foreign loans). The author operationalizes this by examining whether wars were waged while countries had access to international capital markets or were excluded from them (due to default or global credit crunches). Two measures of capital access are employed: (1) an endogenous measure based on country-specific episodes of external default as coded by Reinhart and Rogoff; and (2) an exogenous measure based on global credit crunches or “sudden stops” originating from banking and stock market crises in Britain, which dried up international lending globally regardless of individual borrowers’ characteristics. The key comparison is between the number of years at war while credit was available versus the number of years at war while credit was unavailable.</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要自变量是十九世纪的战争融资方式，具体区分为国内资源动员（税收和国内信贷）与外部融资（外国贷款）。作者通过考察战争是在国家能够进入国际资本市场时进行的，还是在被排除在外时（由于违约或全球信贷紧缩）进行的来操作化这一变量。资本准入采用两种衡量方式：（1）基于莱因哈特和罗戈夫编码的国家特定外债违约事件的内生性测量（第199页）；（2）基于源自英国银行和股市危机的全球信贷紧缩或“突然停止”的外生性测量，这些危机使全球国际借贷枯竭，与单个借款国的特征无关（第201–202页）。关键的比较是在信贷可用时的战争年数与信贷不可用时的战争年数之间的对比。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>The author conceptualizes state capacity as “the institutional capability of the state to carry out various policies that deliver benefits and services to households and firms,” drawing on Besley and Persson’s definition. The modern state is understood to rest on three pillars: (1) the monopoly of coercion, (2) the enforcement of property rights or legal capacity, and (3) taxes or fiscal capacity. Because neither of the other two key functions can be implemented without funds,  “the history of the state revenue production is the history of the evolution of the state.”</p>
+            <p>The author focuses specifically on fiscal capacity, which involves the state’s ability to assess wealth, monitor compliance, and secure a stable stream of government funds. Building fiscal capacity requires tax harmonization across the territory and the establishment of a professionalized tax apparatus endowed with extensive powers to assess wealth, collect taxes, and sanction non-compliers. This conceptualization draws on the bellicist tradition of state formation, particularly Charles Tilly’s /ˈtɪli/ famous dictum that “war made the state, and the state made war”. However, unlike unconditional versions of the bellicist hypothesis, the author argues that the effect of war on state building depends critically on how warfare is paid for: financing war with taxes (or domestic credit) is conducive to state making, whereas financing with external loans may not be similarly conducive.</p>
+            <p>The author illustrates the relationship between tax capacity and overall state capacity by presenting data showing a strong negative correlation between the Fragile States Index (a general proxy of state capacity) and income tax ratios: states that underperform in tax capacity are not strong states. Measurement in the empirical analysis is tailored to data availability: for the nineteenth century, the share of direct taxes to total taxation is used because these taxes require sophisticated bureaucratic capacity; for the contemporary period, personal income tax as a percentage of GDP is the measure because it represents the most administratively demanding form of taxation.</p>
+          </div>
+          <div class="lang-zh">
+            <p>作者将国家能力概念化为“国家实施各种向家庭和企业提供福利和服务的政策的制度能力”，这一定义借鉴了贝斯利和佩尔森的研究（第1页）。现代国家被理解为建立在三大支柱之上：（1）强制力的垄断，（2）财产权的执行或法律能力，（3）税收或财政能力。由于其他两项关键功能都无法在没有资金的情况下实施，“国家收入生产的历史就是国家演变的历史”（第11页，引用Levi 1988）。</p>
+            <p>作者特别关注财政能力（fiscal capacity），这涉及国家评估财富、监控合规和确保稳定政府资金流的能力（第11页）。建设财政能力需要在全境实现税收统一，并建立一个被赋予广泛权力来评估财富、征收税款和惩罚不合规者的专业化税务机构（第12页）。这一概念化借鉴了国家形成的战争主义传统，特别是查尔斯·蒂利（Charles Tilly /ˈtɪli/）的著名论断“战争创造了国家，国家发动了战争”（第13页）。然而，与战争主义假说的无条件版本不同，作者认为战争对国家建设的影响关键取决于战争如何融资：用税收（或国内信贷）融资战争有助于国家建设，而用外部贷款融资则可能不会产生类似效果（第5页）。</p>
+            <p>作者通过展示脆弱国家指数（国家能力的一般代理变量）与所得税比率之间强烈负相关的数据来说明税收能力与整体国家能力之间的关系：在税收能力上表现不佳的国家不是强国（第11–12页）。实证分析中的测量根据数据可用性进行调整：对于十九世纪，使用直接税占总税收的比例，因为这些税种需要复杂的官僚能力；对于当代时期，以个人所得税占GDP的百分比作为衡量标准，因为它代表了行政要求最高的税收形式。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The core argument is that countries that relied on domestic resource mobilization (taxation) rather than foreign debt to fund government, especially during wartime in the nineteenth century developed higher levels of state capacity that persist to the present day. Conversely, countries that relied disproportionally on external finance fell into “state weakening trajectories” and show lower tax capacity today. The argument rests on two interrelated claims about the political economy of public finance.</p>
+            <p>(1) From the perspective of rulers, foreign loans secure government funds while helping rulers dodge administrative reform and constraints on their power. Building an efficient tax bureaucracy consumes funds that rulers can use for self-indulgence or patronage networks. Moreover, rulers may be obliged to share fiscal power with taxpayers to overcome hesitancy to increased taxation. External finance allows rulers to avoid both the administrative costs of taxation (investing in tax bureaucracy) and the political costs (sharing power with domestic constituents). This explains why rulers in the global periphery preferred external debt: they faced weak initial power-sharing institutions and low fiscal capacity, making the political and administrative costs of taxation disproportionally burdensome.</p>
+            <p>(2) Unlike one-sided theories of financial imperialism, the author emphasizes that the surge in external indebtedness also reflected the supply side: extreme conditionality. This refers to the hypothecation (pledging) of local assets, such as state monopolies, railroads, and customs houses, as a precondition for fresh foreign loans. When default occurred, bondholders could seize pledged assets or install receiverships (foreign-controlled debt collection agencies) to take over branches of the local tax administration. These mechanisms were enforced through the alignment of private financial interests with the imperial policies of creditor governments, particularly Britain, France, and Germany. Extreme conditionality explains why weakly institutionalized countries with poor reputations could access cheap credit: the credibility of seizing collateral reduced the risk premium charged to peripheral borrowers.</p>
+            <p>The combination of these demand-side and supply-side factors created a debt trap for many emerging economies. After defaulting and surrendering national assets to foreign bondholders, governments’ effective tax bases shrank, requiring fresh securitized loans to balance the budget, leading to endemic fiscal deficits. By contrast, countries that mobilized domestic resources (whether by choice or by circumstance such as being excluded from capital markets during war) were compelled to invest in tax modernization and share power with taxpayers, setting them on a path of sustained state capacity growth.</p>
+          </div>
+          <div class="lang-zh">
+            <p>核心论点是：在十九世纪依靠国内资源动员（税收）而非外债来为政府融资(尤其是在战时)的国家，发展出了持续至今的更高水平的国家能力。相反，过度依赖外部融资的国家陷入了“国家弱化轨迹”，今天表现出较低的税收能力（第1–3页）。该论点建立在关于公共财政政治经济学的两个相互关联的主张之上。</p>
+            <p>从统治者的角度来看，外国贷款在确保政府资金的同时，帮助统治者逃避行政改革和对其权力的约束（第2页）。建设高效的税务官僚机构会消耗统治者本可用于个人享乐或庇护网络的资金。此外，统治者可能不得不与纳税人分享财政权力，以克服对增税的抵触。外部融资使统治者能够同时避免税收的行政成本（投资于税务官僚机构）和政治成本（与国内选民分享权力）。这解释了为什么全球边缘地区的统治者偏好外债：他们面临薄弱的初始权力分享制度和低财政能力，使得税收的政治和行政成本负担过重（第7–8页）。</p>
+            <p>与金融帝国主义的单边理论不同，作者强调外债激增也反映了供给侧：极端条件性（extreme conditionality）。这指的是将当地资产，如国家垄断企业、铁路和海关，作为获得新外国贷款的前提条件进行抵押（第3–4页）。当违约发生时，债券持有人可以没收抵押资产或建立接管机构（receiverships）（由外国控制的债务催收机构）来接管当地税务机关的分支机构。这些机制通过私人金融利益与债权国政府（特别是英国、法国和德国）帝国政策的一致性得以执行（第8–9页）。极端条件性解释了为什么制度薄弱、声誉不佳的国家能够获得廉价信贷：没收抵押品的可信度降低了向边缘借款国收取的风险溢价。</p>
+            <p>这些需求侧和供给侧因素的结合为许多新兴经济体创造了债务陷阱。在违约并向外国债券持有人交出国家资产后，政府的有效税基萎缩，需要新的证券化贷款来平衡预算，导致地方性财政赤字（第2、16页）。相比之下，动员国内资源的国家，无论是出于选择还是出于环境（如在战争期间被排除在资本市场之外），被迫投资于税收现代化并与纳税人分享权力，使它们走上了国家能力持续增长的道路（第14–15页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>The author proposes two main transmission mechanisms to explain why early nineteenth-century fiscal policy decisions had long-term effects on state capacity: the political mechanism and the bureaucratic mechanism (pp. 16–17).</p>
+            <p>(1) The Political Mechanism: To foster compliance with higher taxes, rulers are compelled to articulate power-sharing institutions over fiscal policy to overcome taxpayers’ hesitancy to further taxation. The logic is contractarian: taxpayers demand some institutionalized say in how public moneys are spent in exchange for paying taxes; if granted, rulers secure tax funds while limiting their discretion over fiscal policy (p. 7). Once in place, taxation becomes a self-sustaining compromise: rulers secure funds while taxpayers hold them accountable for fiscal decisions, expanding the capacity to tax in the long run. Power-sharing institutions are “sticky”, tending to persist once established because they help taxpayers overcome collective action problems and because taxation becomes a positive-sum game for both rulers and taxpayers (pp. 7, 17). This mechanism is particularly likely to operate in smaller and wealthier countries where taxpayers face low coordination costs and easy ways to escape taxation (p. 17).</p>
+            <p>(2) The Bureaucratic Mechanism: This mechanism operates independently of political status, geographic scale, and capital mobility. It refers to the efforts that tax bureaucracies exert to safeguard organizational survival (p. 17, citing Schumpeter 1991). Once created, tax bureaucracies develop institutional interests in their own perpetuation. They resist disinvestment and seek to maintain or expand their functions. This means that even in the absence of democratic power-sharing, the bureaucratic apparatus created to fund war will tend to persist and continue building tax capacity over time. This mechanism is particularly relevant for understanding state building in colonial dependencies and large, heterogeneous societies where the political mechanism may not operate effectively.</p>
+            <p>Beyond these two positive mechanisms, the author also identifies a negative mechanism operating through external finance: extreme conditionality leading to debt traps. When countries defaulted on external loans, they faced severe conditions including debt-equity swaps (surrendering national assets like railroads and monopolies) and the installation of receiverships (foreign-controlled agencies taking over branches of the tax administration). These mechanisms eroded the local tax base rather than building it (pp. 8–9, 16). Receiverships were installed to repatriate private capital, not to build local capacity. They operated under European standards but evidence suggests they did not improve local tax ratios or administrative performance relative to pre-intervention years (p. 25). By agreeing to such conditions, countries regained access to international markets without having strengthened their capacity to tax. If anything, their fiscal position weakened because foreign control shrank the tax base left for local authorities (p. 26).</p>
+          </div>
+          <div class="lang-zh">
+            <p>作者提出了两种主要传导机制来解释为何十九世纪早期的财政政策决定对国家能力产生了长期影响：政治机制和官僚机制（第16–17页）。</p>
+            <p>（1）政治机制：为促进对更高税收的遵从，统治者被迫就财政政策建立权力分享制度，以克服纳税人对进一步征税的抵触。这一逻辑是契约主义的：纳税人要求在公共资金使用上拥有制度化的发言权，以换取纳税；如果被授予，统治者获得税收资金，同时限制其对财政政策的自由裁量权（第7页）。一旦建立，税收就成为一种自我维持的妥协：统治者获得资金，而纳税人则对其财政决定进行问责，从长远来看扩大了征税能力。权力分享制度具有“粘性”，一旦建立就倾向于持续存在，因为它们帮助纳税人克服集体行动问题，也因为税收对统治者和纳税人都变成了正和博弈（第7、17页）。这一机制特别可能在较小和较富裕的国家运作，那里的纳税人面临较低的协调成本和容易逃税的方式（第17页）。</p>
+            <p>（2）官僚机制：这一机制独立于政治地位、地理规模和资本流动性而运作。它指的是税务官僚机构为保护组织生存而做出的努力（第17页，引用Schumpeter 1991）。一旦创建，税务官僚机构就会发展出对自身延续的制度利益。它们抵制撤资并寻求维持或扩展其职能。这意味着即使在没有民主权力分享的情况下，为战争融资而创建的官僚机构也会倾向于持续存在并继续随时间建设税收能力。这一机制对于理解殖民地依附地区和政治机制可能无法有效运作的大型异质社会的国家建设尤为重要。</p>
+            <p>除了这两种正面机制外，作者还识别出通过外部融资运作的负面机制：极端条件性导致债务陷阱。当国家对外债违约时，它们面临严苛的条件，包括债转股（交出铁路和垄断企业等国家资产）和建立接管机构（由外国控制的机构接管税务机关的分支机构）。这些机制侵蚀而非建设了当地税基（第8–9、16页）。接管机构的建立是为了遣返私人资本，而非建设当地能力。它们按照欧洲标准运作，但证据表明，它们并未改善相对于干预前年份的当地税收比率或行政绩效（第25页）。通过同意这些条件，国家在没有加强其征税能力的情况下重新获得了进入国际市场的机会。如果说有什么影响的话，它们的财政状况反而恶化了，因为外国控制缩小了留给地方当局的税基（第26页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>Several original and secondary datasets.</p>
+            <p>(1) Dependent Variable Measurement: For short-term fiscal capacity (1816–1913), the author uses data from Andersson and Brambor (2019), an unbalanced panel of tax ratios for 31 countries in Europe, Latin America, Oceania /ˌoʊʃiˈeɪniə/, and Japan as early as 1800. The specific measure is the share of direct taxes (income and property taxes) as a percentage of total tax revenue. Table 7.1 in the text lists the 23 countries with sufficient data coverage, including Argentina /ˌɑːrdʒənˈtiːnə/, Chile /ˈtʃɪli/, Japan, and various European nations. For long-term fiscal capacity (circa 2000), the author uses personal income tax as a percentage of GDP, drawing on IMF government financial statistics augmented with information from national treasuries, covering 102 countries. For intermediate tests (1945–1995), nontrade tax revenue as a percentage of total taxation is used, drawing on data from Cagé and Gadenne (2018).</p>
+            <p>Gadenne（2018）。</p>
+            <p>(2) Independent Variable Measurement: War data are drawn primarily from Wimmer and Min (2009), which is representative of the universe of warfare waged by sovereign and nonsovereign countries in the nineteenth century, including both interstate and independence/secessionist wars. For robustness, the Correlates of War (COW) dataset is also used, though it covers only interstate wars waged by internationally recognized states (pp. 199, 208). Capital market access is measured in two ways: ① Endogenously, using episodes of external default as coded by Reinhart and Rogoff (2009), who define sovereign default as the failure of a government to meet principal or interest payment on the due date. The median duration of default episodes is six years. While in default, countries are excluded from international lending markets (p. 199). ② Exogenously, using global credit crunches or “sudden stops” based on banking and stock market crises in Britain, the world’s banker before 1914. Table 7.2 lists these crises (1825, 1837–40, 1847–48, 1866, 1873, 1890 for banking crises; multiple stock market crises). These sudden stops lasted four years on average and dried up international lending globally.</p>
+            <p>(3) Control Variables: The author controls for numerous potential confounders. For short-term analysis, controls include a lagged dependent variable (to account for serial correlation), cumulative number of wars and defaults, and country and year fixed effects. For long-term analysis, controls include: Great Power status; initial wealth proxied by population density as of 1820 (a standard proxy of economic prosperity before the Industrial Revolution); sea access (percentage of land within 100km of ice-free coast); desert territory percentage; oil producer status; region fixed effects (continent-specific characteristics); and colonial origins indicators (British, Iberian /aɪˈbɪəriən/, or other colonies). To address selection into war, controls for state antiquity (Bockstette, Chanda, and Putterman 2002) and census capacity by 1820 are included (pp. 211, 216). War location (wars fought abroad vs. at home), war casualties (battle deaths), and war outcomes (net victories) are also controlled in various specifications.</p>
+            <p>(4) Original Data Collection: The author compiled an original dataset of 900+ sovereign loans floated in the London Stock Exchange between 1816 and 1913, including information on nominal interest rates. Additionally, the author coded the presence of pledges (hypothecation of public assets) from 700+ original sovereign bond prospectuses issued in London between 1858 and 1913 to test the extreme conditionality hypothesis.</p>
+            <p>(5) Case Studies: The quantitative evidence is complemented by nine case studies covering different geographic areas and institutional contexts: Argentina /ˌɑːrdʒənˈtiːnə/, Chile /ˈtʃɪli/, late-Qing China, Ethiopia /ˌiːθiˈoʊpiə/, Japan, the Ottoman Empire /ˈɒtəmən/, Peru /pəˈruː/, Siam /saɪˈæm/ (Thailand), and South Africa. These cases illustrate the political game between foreign financiers, local incumbents, and taxpayers, and how early fiscal decisions shaped state building in the long run. Chapter 9 presents paired comparisons (Japan–Argentina; Siam–Ethiopia) and a longitudinal analysis of Chile.</p>
+            <p>The analysis covers the “Bond Era” from 1816 (end of Napoleonic Wars) to 1914 (onset of World War I), when the euphoria in sovereign lending and the high frequency of interstate conflict concentrated. The long-term analysis extends to circa 2000. Geographic coverage is global, including Europe, Latin America, Asia, Africa, and Oceania, with the effective sample varying by model: 23 countries for short-term analysis (Table 7.1), 63–107 countries for long-term analysis depending on data availability .</p>
+          </div>
+          <div class="lang-zh">
+            <p>因变量测量： 对于短期财政能力（1816–1913年），作者使用了安德森和布兰博（Andersson and Brambor 2019）的数据，这是一个早至1800年的31个欧洲、拉丁美洲、大洋洲和日本国家税收比率的非平衡面板。具体测量是直接税（所得税和财产税）占总税收的比例（第198–199页）。文中表7.1列出了数据覆盖充分的23个国家，包括阿根廷（Argentina /ˌɑːrdʒənˈtiːnə/）、智利（Chile /ˈtʃɪli/）、日本和多个欧洲国家。对于长期财政能力（2000年左右），作者使用个人所得税占GDP的百分比，数据来自IMF政府财政统计，并用国家财政部的信息进行补充，涵盖102个国家（第12页，图1.2）。对于中期检验（1945–1995年），使用非贸易税收入占总税收的百分比，数据来自Cagé和</p>
+            <p>自变量测量： 战争数据主要来自温默和闵（Wimmer and Min 2009），该数据集代表了十九世纪主权和非主权国家进行的战争全貌，包括国家间战争和独立/分裂战争。为稳健性起见，也使用了战争相关项目（COW）数据集，尽管它只涵盖国际承认国家进行的国家间战争（第199、208页）。资本市场准入以两种方式测量：①内生性测量，使用莱因哈特和罗戈夫（Reinhart and Rogoff 2009）编码的外债违约事件，他们将主权违约定义为政府未能在到期日（或规定的宽限期内）支付本金或利息。违约事件的中位持续时间为六年。在违约期间，国家被排除在国际借贷市场之外（第199页）。②外生性测量，使用基于英国银行和股市危机的全球信贷紧缩或“突然停止”，英国在1914年前是世界银行家。表7.2列出了这些危机（银行危机：1825、1837–40、1847–48、1866、1873、1890年；多次股市危机）。这些突然停止平均持续四年，并使全球国际借贷枯竭（第201–204页）。</p>
+            <p>控制变量： 作者控制了众多潜在混淆变量。对于短期分析，控制变量包括因变量的滞后值（以考虑序列相关性）、战争和违约的累计次数，以及国家和年份固定效应（第200页）。对于长期分析，控制变量包括：大国地位；以1820年人口密度代理的初始财富（工业革命前经济繁荣的标准代理变量）；海洋通道（距无冰海岸100公里以内的土地百分比）；沙漠领土百分比；石油生产国地位；地区固定效应（特定大陆的特征）；以及殖民起源指标（英国、伊比利亚或其他殖民地）。为解决进入战争的选择问题，纳入了国家古老程度（Bockstette, Chanda, and Putterman 2002）和1820年人口普查能力的控制变量（第211、216页）。战争地点（国外战争vs.国内战争）、战争伤亡（战斗死亡人数）和战争结果（净胜利）也在各种模型规格中得到控制（第214、221页）。</p>
+            <p>原始数据收集： 作者编制了一个包含1816年至1913年间在伦敦证券交易所发行的900多笔主权贷款的原始数据集，包括名义利率信息（第10–11页，图1.1）。此外，作者从1858年至1913年间在伦敦发行的700多份原始主权债券招股说明书中编码了抵押品（公共资产的抵押）的存在，以检验极端条件性假说（第4、10页）。</p>
+            <p>案例研究： 定量证据辅以九个案例研究，涵盖不同的地理区域和制度背景：阿根廷、智利、晚清中国、埃塞俄比亚、日本、奥斯曼帝国、秘鲁、暹罗(即泰国),和南非（第3页）。这些案例说明了外国金融家、本地当权者和纳税人之间的政治博弈，以及早期财政决策如何长期塑造国家建设。第九章呈现了配对比较（日本-阿根廷；暹罗-埃塞俄比亚）和智利的纵向分析。</p>
+            <p>地理和时间覆盖： 分析涵盖1816年（拿破仑战争结束）至1914年（第一次世界大战爆发）的“债券时代”，主权借贷的狂热和国家间冲突的高频率都集中在这一时期（第2页）。长期分析延伸至2000年左右。地理覆盖是全球性的，包括欧洲、拉丁美洲、亚洲、非洲和大洋洲，有效样本因模型而异：短期分析23个国家（表7.1），长期分析根据数据可用性为63–107个国家（第212、215页）。</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>The author adopts a mixed-methods approach, combining quantitative econometric analysis with qualitative case studies.</p>
+            <p>(1) Short-Term Analysis (Chapter 7, Section 7.2): The author uses panel regression with country and year fixed effects to examine the evolution of fiscal capacity as a joint function of war and access to international capital. The formal specification (equation 7.1, p. 197) regresses annual direct tax ratios on war (lagged), exclusion from external finance (lagged), their interaction, the lagged dependent variable, cumulative wars and defaults, and fixed effects. The key coefficient of interest is the interaction term: \(\beta_3\) captures whether war waged while excluded from capital markets has a different effect than war waged with capital access. The inclusion of the lagged dependent variable accounts for serial correlation in the slow-moving outcome variable. Country fixed effects control for time-invariant unobserved heterogeneity; year fixed effects control for secular trends (p. 200).</p>
+            <p>Addressing Endogeneity with Exogenous Shocks: using global credit crunches as exogenous shocks to capital market access. The author argues that banking and stock market crises originating in Britain were (1) domestic in origin and not caused by defaults in the periphery, and (2) unanticipated by borrowers (pp. 202–203). To verify the exogeneity of these shocks, the author demonstrates that the frequency and duration of wars are balanced across periods when credit flowed versus when credit stopped (Tables 7.3 and 7.5, pp. 204, 215). This balance suggests that countries did not systematically time their wars around anticipated credit crunches. To further maximize exogeneity, the author drops Britain, France, and Germany (the global financial centers) from the sample when using this measure (p. 205).</p>
+            <p>(2) Long-Term Analysis (Chapter 7, Section 7.3): For cross-sectional analysis of long-term effects, the author uses OLS regression (equation 7.2, pp. 209–210) with the number of years at war while credit was available and while credit was unavailable as separate regressors, controlling for region fixed effects, colonial origins, and various confounders. The identification challenge here is that being in default is endogenous (countries that default may differ systematically from those that do not), and the decision to go to war is also potentially endogenous. The author addresses these concerns through multiple strategies:</p>
+            <p>1. Using global credit crunches instead of country-specific defaults to exogenize capital access.</p>
+            <p>2. Focusing on “ongoing wars”, namely wars initiated while credit was flowing but that were eventually hit by a sudden stop, to disconnect the decision to go to war from credit access (pp. 216–218).</p>
+            <p>3. Including controls for initial state capacity (state antiquity index; census capacity by 1820) to account for preexisting differences that might affect both war propensity and state building (p. 216).</p>
+            <p>4. Using COW data on war non-initiators to examine countries that were dragged into war rather than choosing to initiate it (pp. 220–221).</p>
+            <p>(3) Robustness and Sensitivity: The author conducts extensive robustness checks, including: varying the window length for credit crunches (3, 4, or 5 years); using different war datasets (Wimmer and Min vs. COW); using intensive margin (number of wars per year) vs. extensive margin (war or no war) measures; controlling for per capita GDP; examining interstate wars alone vs. interstate plus secessionist wars; dropping Great Powers and OECD founding members to focus on the periphery; and controlling for war location, casualties, and outcomes (pp. 205–208, 219–222).</p>
+            <p>(4) History Decompression (Section 7.4): To address concerns about “history compression” (the worry that correlations between nineteenth-century causes and twenty-first-century outcomes may be spurious), the author evaluates effects at intermediate points in time. Specifically, the effects of nineteenth-century war finance on tax ratios are tested for each decade from 1945 to 1995. Results show persistent effects across all intermediate periods, strengthening confidence in the causal interpretation (pp. 222–223, Figure 7.8).</p>
+            <p>Key Assumptions: For the identification strategy to be valid, several assumptions must hold: (1) Global credit crunches must be exogenous to individual borrowers’ characteristics and unanticipated by them; (2) The timing and nature of wars must not be systematically related to anticipated credit conditions; (3) The controls included must adequately address confounding (no omitted variable bias); (4) The relationship between nineteenth-century war finance and long-term fiscal capacity must not be driven by unmeasured factors that changed systematically over the intervening century. The author provides evidence supporting assumptions (1) and (2) through balance tests, but assumptions (3) and (4) cannot be fully verified.</p>
+          </div>
+          <div class="lang-zh">
+            <p>作者采用混合方法，将定量计量经济分析与定性案例研究相结合。</p>
+            <p>（1）短期分析（第七章第7.2节）：作者使用带有国家和年份固定效应的面板回归来考察财政能力作为战争和国际资本准入联合函数的演变。正式模型规格（方程7.1，第197页）将年度直接税比率回归于战争（滞后）、被排除在外部融资之外（滞后）、它们的交互项、因变量滞后项、累计战争和违约次数，以及固定效应。关键的兴趣系数是交互项：\(\beta_3\) 捕捉在被排除在资本市场之外时进行的战争是否与有资本准入时进行的战争具有不同的效应。纳入因变量滞后项是为了考虑缓慢变动的结果变量中的序列相关性。国家固定效应控制时间不变的未观察异质性；年份固定效应控制长期趋势（第200页）。</p>
+            <p>用外生冲击解决内生性问题：使用全球信贷紧缩作为外生冲击来衡量资本市场准入。作者认为，源自英国的银行和股市危机（1）是国内原因造成的，而非由边缘地区的违约引起，（2）借款国无法预料（第202–203页）。为验证这些冲击的外生性，作者证明了战争的频率和持续时间在信贷流动期与信贷停止期之间是平衡的（表7.3和7.5，第204、215页）。这种平衡表明国家并未系统性地围绕预期的信贷紧缩来安排战争时机。为进一步最大化外生性，作者在使用此测量时从样本中剔除了英国、法国和德国（全球金融中心）（第205页）。</p>
+            <p>（2）长期分析（第七章第7.3节）：对于长期效应的横截面分析，作者使用OLS回归（方程7.2，第209–210页），将信贷可用时的战争年数和信贷不可用时的战争年数作为独立回归变量，控制地区固定效应、殖民起源和各种混淆变量。这里的识别挑战是违约状态是内生的（违约的国家可能与不违约的国家存在系统性差异），进入战争的决定也可能是内生的。作者通过多种策略解决这些问题：</p>
+            <p>1. 使用全球信贷紧缩而非国家特定违约来外生化资本准入。</p>
+            <p>2. 关注“正在进行的战争”，即在信贷流动时发起但最终被突然停止冲击的战争，以使进入战争的决定与信贷准入脱钩（第216–218页）。</p>
+            <p>3. 纳入初始国家能力的控制变量（国家古老程度指数；1820年人口普查能力），以考虑可能同时影响战争倾向和国家建设的既存差异（第216页）。</p>
+            <p>4. 使用COW数据中的非战争发起方来考察被拖入战争而非选择发起战争的国家（第220–221页）。</p>
+            <p>（3）稳健性和敏感性：作者进行了广泛的稳健性检验，包括：变化信贷紧缩的窗口长度（3、4或5年）；使用不同的战争数据集（温默和闵 vs. COW）；使用密集边际（每年战争数量）vs. 广延边际（有战争或无战争）测量；控制人均GDP；单独考察国家间战争 vs. 国家间加分裂战争；剔除大国和OECD创始成员以聚焦边缘地区；以及控制战争地点、伤亡和结果（第205–208、219–222页）。</p>
+            <p>（4）历史解压缩（第7.4节）：为解决“历史压缩”的担忧（即十九世纪原因与二十一世纪结果之间的相关性可能是虚假的），作者在中间时间点评估效应。具体而言，十九世纪战争融资对税收比率的效应在1945年至1995年的每个十年都进行了检验。结果显示所有中间时期都存在持续效应，增强了对因果解释的信心（第222–223页，图7.8）。</p>
+            <p>关键假设：识别策略要有效，必须满足若干假设：（1）全球信贷紧缩必须对单个借款国的特征是外生的，且借款国无法预料；（2）战争的时机和性质不得与预期的信贷条件系统性相关；（3）纳入的控制变量必须充分解决混淆问题（无遗漏变量偏误）；（4）十九世纪战争融资与长期财政能力之间的关系不得由在中间世纪系统性变化的未测量因素驱动。作者通过平衡检验提供了支持假设（1）和（2）的证据，但假设（3）和（4）无法完全验证。</p>
+          </div>
+        </section>
+
+
+
+        <nav class="node-nav">
+          <span class="disabled prev"><small data-en="No previous reading" data-zh="无上一篇">No previous reading</small></span>
+          <a class="next" href="gennaiolivoth2015.html"><small data-en="Next reading" data-zh="下一篇">Next reading</small>Gennaioli &amp; Voth 2015</a>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

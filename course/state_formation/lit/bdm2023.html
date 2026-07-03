@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bueno de Mesquita &amp; Bueno de Mesquita 2023 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 12" data-zh="第 12 周">Week 12</span> · <span data-en="Justification–Belief lane" data-zh="证成–信念层">Justification–Belief lane</span> · <span data-en="Antiquity &amp; the medieval world (S2)" data-zh="古代与中世纪（S2）">Antiquity &amp; the medieval world (S2)</span></p>
+        <h1><span class="lang-en">Bruce Bueno de Mesquita &amp; Ethan Bueno de Mesquita (2023), “From Investiture to Worms: European Development and the Rise of Political Authority,” JOP 85(3).</span><span class="lang-zh">布尔诺·德·梅斯基塔父子（2023）《从叙任权之争到沃尔姆斯：欧洲发展与政治权威的兴起》，JOP。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#9a5737" data-en="Formal model" data-zh="形式模型">Formal model</span><span class="chip" style="background:#b0713f" data-en="Diff-in-diff" data-zh="双重差分">Diff-in-diff</span><span class="chip" style="background:#607066" data-en="Panel FE" data-zh="面板固定效应">Panel FE</span><span class="chip" style="background:#24493d" data-en="Normative legitimacy" data-zh="规范合法性">Normative legitimacy</span><span class="chip" style="background:#9a5737" data-en="Tilly: challenges" data-zh="Tilly：挑战">Tilly: challenges</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The main dependent variable is bishop alignment, whether a bishop in a given diocese was aligned with the church or with the lay political ruler. This is coded as a binary variable: Church Aligned equals 1 if the bishop’s prior position before appointment was a religious post (abbot, deacon, archdeacon) or if biographical information links the bishop specifically to the pope; it equals 0 if the bishop’s prior post was as an agent of the lay authorities (court ambassador, chancellor, etc.) or if biographical information specifically links the bishop to the secular ruler (p. 881). Of the 1,580 bishops whose alignment can be coded, 1,244 (79%) are classified as church aligned and 336 as lay aligned (p. 881). The broader theoretical dependent variable that bishop alignment proxies for is the relative political power of lay rulers versus the church, the rise of lay political authority. More aligned-with-the-ruler bishops in wealthier dioceses is taken as evidence that lay rulers had greater bargaining power there.</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要因变量是主教的立场归属（bishop alignment），即某教区的主教是与教会结盟还是与世俗政治统治者结盟。这被编码为二元变量：Church Aligned等于1，如果该主教在就任前担任的是宗教职位（如修道院院长、执事、副执事），或传记信息显示其与教皇有特别联系；等于0，如果该主教此前担任的是世俗当局的代理人（如宫廷大使、大臣等），或传记信息显示其与世俗统治者有特别联系（第881页）。在可以编码立场归属的1,580位主教中，1,244位（79%）被归类为教会结盟，336位为世俗统治者结盟（第881页）。主教立场归属所代理的更广泛的理论因变量是世俗统治者相对于教会的政治权力，即世俗政治权威的兴起。在较富裕教区出现更多亲统治者的主教，被视为世俗统治者在那里拥有更大议价权力的证据。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The core causal shock in the paper is the adoption of the concordats, which changed bishop-selection rules by giving lay rulers veto power over bishop-nominees and making them residual claimants to diocesan revenues during interregna. Empirically, however, the paper’s key explanatory term is not concordat exposure alone but the interaction between concordat exposure and pre-concordat diocesan wealth. The authors’ claim is therefore about a heterogeneous institutional effect: the concordats increased lay rulers’ bargaining power more in wealthier dioceses than in poorer ones. In the regressions, this is captured by Concordats × Wealth.</p>
+            <p>The first is whether a concordat was in effect in a given diocese at the time a bishop was consecrated (the variable Concordats, coded as 1 for the concordat period and 0 otherwise). The second component is a time-invariant measure of diocesan wealth, measured in three ways: (1) whether the diocese’s seat was within 25 km of a major pre-concordat trade route (Traded); (2) whether the diocese had above-median pre-Columbian agricultural caloric potential (Calorie); and (3) whether the diocese contained a settlement of at least 5,000, 10,000, or 15,000 inhabitants before the concordats (Population5, Population10, Population15) (pp. 882–883). The key hypothesis is that the interaction coefficient β₂ (Concordats × Wealth) is negative, that is, the concordats caused bishops in wealthier dioceses to become more lay-aligned relative to bishops in poorer dioceses (p. 883).</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要自变量是协约生效与教区财富之间的交互项。这不是一个简单的处理变量，而是一个双重差分的交互项。第一个成分是某教区在某主教被祝圣时是否有协约在效力范围内（变量Concordats，协约期间编码为1，否则为0）。第二个成分是教区财富的时间不变测度，通过三种方式衡量：（1）该教区的主教座堂是否在协约签订前的主要贸易路线25公里以内（Traded）；（2）该教区是否具有高于欧洲中位数的前哥伦布时期农业热量潜力（Calorie）；（3）该教区在协约签订前是否包含至少5,000、10,000或15,000居民的定居点（Population5, Population10, Population15）（第882–883页）。核心假说是交互项系数β₂（Concordats × Wealth）为负，即协约导致较富裕教区的主教相对于较贫穷教区的主教变得更加亲世俗统治者（第883页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>This paper does not adopt a conventional definition of the “state” as a Weberian territorial monopolist of legitimate violence. Instead, the paper conceptualizes the rise of lay political authority as a gradual, relational process in which secular rulers gained bargaining power vis-à-vis the Catholic Church. “State building” here means the accumulation of political control by lay rulers at the expense of the church, measured indirectly through the alignment of bishops. The paper is not about the emergence of bureaucratic states or the formation of territorial boundaries; it is about the shifting balance of power between two competing institutional authorities, church and crown, in local governance. The authors explicitly frame this as a story about the political preconditions for later developments such as the Protestant Reformation and parliamentary government, rather than about state formation per se (pp. 876–877, 890). In this sense, the paper’s contribution to the state formation literature is oblique: it identifies a mechanism, the concordats’ differential empowerment of lay rulers in wealthier dioceses, that preceded and potentially contributed to the emergence of sovereign, lay-controlled states, but it does not directly measure state capacity, territorial consolidation, or institutional development.</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文并未采用韦伯式的“国家”定义（即合法暴力的领土性垄断者）。相反，本文将世俗政治权威的兴起概念化为一个渐进的、关系性的过程，在此过程中世俗统治者相对于天主教会获得了议价权力。这里的“国家建设”意味着世俗统治者以教会为代价积累政治控制权，通过主教的立场归属间接衡量。本文关注的不是官僚国家的出现或领土边界的形成，而是两个相互竞争的制度权威，教会与王权，在地方治理中的权力天平的移动。作者明确将此框定为关于后续发展（如宗教改革和议会政府）的政治前提条件的故事，而非关于国家形成本身（第876–877、890页）。从这个意义上说，本文对国家形成文献的贡献是间接的：它识别了一个机制，协约对较富裕教区世俗统治者的差异性赋权，这一机制先于并可能促成了主权的、世俗控制的国家的出现，但它并未直接衡量国家能力、领土整合或制度发展。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The core argument proceeds in three steps. First, the concordats of London /ˈlʌndən/ (1107), Paris /ˈpærɪs/ (1107), and Worms /wɜːrmz/ (1122) established a new institutional arrangement for appointing bishops: the church (specifically, the metropolitan archbishop) had the right to nominate a candidate, but the lay ruler had the right to accept or reject the nominee. If the ruler rejected the nominee, diocesan revenues during the resulting interregnum (the period without a bishop in office) flowed to the lay ruler rather than to the church. Before the concordats, under the canon established at the Council of Chalcedon /kælˈsiːdən/ in 451, interregnum revenues had been retained by the church’s own financial administrator (pp. 877–878).</p>
+            <p>Second, this institutional change created a differential shift in bargaining power that depended on diocesan wealth. In wealthier dioceses, the revenue that the church stood to lose during an interregnum was larger, so the church had more to lose from having its nominee rejected. This meant the church faced stronger pressure to nominate bishops acceptable to the ruler in wealthier dioceses. In poorer dioceses, the revenue at stake was smaller, so the church could afford to be more insistent on its own preferred candidate. The net result: the concordats increased lay bargaining power in wealthier dioceses relative to poorer dioceses (pp. 877, 879–880).</p>
+            <p>Third, this wealth-dependent bargaining dynamic created divergent incentives for economic development. Lay rulers had unambiguous incentives to promote economic growth, because increased diocesan wealth would further strengthen their bargaining position. The church, by contrast, had mixed or negative incentives: beyond a certain wealth threshold, increased local income cost the church more in lost bargaining power than it gained in additional revenue. This gave the church incentives to curtail economic development, for instance, through usury bans, restrictions on mechanization, and opposition to productive economic activity, or to divert revenues away from local bishops toward the papal center, where they would not affect bargaining under the concordats (pp. 880–881, 888–889).</p>
+            <p>The authors emphasize that their argument is about the relative shift in bargaining power between wealthy and poor dioceses, not about the absolute level of lay power. They do not claim the concordats necessarily increased lay power everywhere; they claim the concordats increased lay power more in wealthier places than in poorer ones (pp. 877, 883).</p>
+          </div>
+          <div class="lang-zh">
+            <p>核心论证分三步展开。第一，伦敦（London /ˈlʌndən/，1107年）、巴黎（Paris /ˈpærɪs/，1107年）和沃尔姆斯（Worms /wɜːrmz/，1122年）协约确立了一套新的主教任命制度安排：教会（具体为大主教）拥有提名候选人的权利，但世俗统治者拥有接受或否决被提名者的权利。至关重要的是，如果统治者否决了被提名者，在由此产生的主教空缺期（interregnum，即无主教在任的时期）内，教区收入将流向世俗统治者而非教会。在协约之前，根据451年迦勒底公会议（Council of Chalcedon /kælˈsiːdən/）确立的教规，空缺期收入由教会自己的财务管理人保管（第877–878页）。</p>
+            <p>第二，这一制度变迁产生了一种取决于教区财富的差异性议价权力转移。在较富裕的教区，教会在空缺期面临损失的收入更大，因此教会在被提名者被否决时承受更大损失。这意味着教会在较富裕教区面临更强的压力，需要提名统治者可以接受的主教。在较贫穷教区，涉及的收入较少，教会可以更坚持自己偏好的候选人。净结果是：协约增加了较富裕教区相对于较贫穷教区的世俗议价权力（第877、879–880页）。</p>
+            <p>第三，这种依赖财富的议价动态为经济发展创造了分歧性激励。世俗统治者有明确的激励来促进经济增长，因为增加的教区财富将进一步加强他们的议价地位。教会则相反，拥有混合或负面的激励：超过一定的财富门槛后，地方收入的增加给教会带来的议价权力损失超过了额外收入的收益。这赋予了教会抑制经济发展的激励，例如，通过禁止高利贷、限制机械化、反对生产性经济活动，或者将收入从地方主教转移到教皇中心，使其不再影响协约框架下的议价（第880–881、888–889页）。</p>
+            <p>作者强调，他们的论点是关于富裕教区与贫穷教区之间议价权力的相对转移，而非世俗权力的绝对水平。他们并不声称协约必然在所有地方都增加了世俗权力；他们声称协约在较富裕地区比在较贫穷地区更多地增加了世俗权力（第877、883页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>The paper proposes one primary mechanism, formalized in a game-theoretic model, and one secondary mechanism supported by qualitative historical evidence.</p>
+            <p>Primary mechanism: Residual claimancy and bargaining power (pp. 878–880). The concordats made lay rulers the residual claimants of diocesan income during interregna. This meant that when the ruler rejected a bishop-nominee, the ruler gained income while the church lost it. The cost of disagreement was therefore higher for the church in wealthy dioceses than in poor ones. In the language of bargaining theory, the concordats shifted the “outside option” or “disagreement payoff” in favor of the ruler in wealthier dioceses. The church’s rational response was to nominate bishops who were more acceptable to the ruler in wealthier dioceses, to avoid costly interregna. The model formalizes this as an infinite-horizon bargaining game in which the church proposes and the ruler accepts or rejects.</p>
+            <p>To illustrate this mechanism with a historical example, the authors cite the case of Henry II /ˈhɛnri/ of England (reigned 1154–1189). After the assassination of Archbishop Becket /ˈbɛkɪt/, Henry held onto revenues from wealthy dioceses until he could appoint loyalist bishops. To the wealthy dioceses of Bath /bɑːθ/ and Norwich /ˈnɒrɪtʃ/, he appointed trusted royal agents, Reginald FitzJocelin /ˈrɛdʒɪnəld fɪtsˈdʒɒslɪn/ and John of Oxford /ˈdʒɒn əv ˈɒksfərd/, but to the less wealthy and less important sees of Chichester /ˈtʃɪtʃɪstər/ and Hereford /ˈhɛrɪfərd/, he allowed obscure figures to be appointed (pp. 878, quoting Warren 1973).</p>
+            <p>Warren 1973）。</p>
+            <p>Secondary mechanism: a wedge in incentives over economic development.</p>
+            <p>The model also implies that the concordats created at least one force pushing lay rulers and church leaders toward different development incentives. Lay rulers benefit politically from greater diocesan wealth because it strengthens their bargaining position. The church faces more mixed incentives: at higher levels of wealth, greater local income can reduce its bargaining power enough to offset the gains from higher revenue. On this basis, the authors suggest that church leaders could have had incentives to restrain development, while lay rulers had incentives to promote it. However, this second mechanism is more speculative and more weakly supported empirically than the primary bargaining mechanism; the paper explores it with qualitative illustrations and limited quantitative evidence rather than establishing it decisively.</p>
+            <p>On the church side: the Lateran Councils /ˈlætərən/ (1123, 1139, 1179, 1215) banned usury, restricting credit and slowing economic development; the church opposed labor-saving mechanization (e.g., mills) during the 12th century; and the church diverted revenues from local bishops to the papal center through new monastic orders (Cistercians /sɪˈstɜːrʃənz/, Knights Templar /ˈtɛmplər/, Knights Hospitaler /ˈhɒspɪtələr/) that were exempted from local episcopal control and taxation (pp. 888–889). On the lay ruler side: Henry II of England introduced legal reforms (writs protecting tenant farmers’ property rights, writs restricting ecclesiastical rights) that promoted economic development; Richard the Lionheart /ˈrɪtʃərd/ increased taxes on church property; King John /dʒɒn/ seized church lands; Philip IV /ˈfɪlɪp/ of France followed a similar path (pp. 889–890).</p>
+            <p>The paper presents a formal (game-theoretic) model of bishop selection under the concordats. Here we lay out its structure, key results, and a critical assessment.</p>
+            <p>Setup (pp. 879–880). There are two players: the church and the (lay) ruler. The game is an infinite-horizon, discrete-time game with discounting, with discount factor \(\delta\in(0,1)\). At the start of each period in which no bishop is in office, the church nominates a candidate with policy position \(r_t\in[\underline r,\bar r]\subset\mathbb{R}\). The ruler then accepts or rejects. If accepted, the nominated bishop serves for the remainder of the game. If rejected, there is no bishop in that period, and the game continues to the next period.</p>
+            <div class="formula-box">\[
+              \begin{aligned}
+              U_C(\text{bishop }r)&=\lambda_C r+(1-\lambda_C)y,\\
+              U_C(\text{interregnum})&=\lambda_C q,\\
+              U_R(\text{reject})&=-\lambda_R q+(1-\lambda_R)y-c,\\
+              U_R(\text{accept }r,t)&=-\lambda_R r+\varepsilon_t.
+              \end{aligned}
+            \]</div>
+            <p>In each period, the diocese generates income \(y&gt;0\). The church’s weight on policy relative to income is \(\lambda_C\in(0,1)\); \(q\) is a status quo policy; \(c&gt;0\) represents the church’s punishment costs; and \(\varepsilon_t\) is an i.i.d. random shock drawn from a log-concave distribution \(F\). The ruler values lower \(r\) (bishops more aligned with himself), while the church values higher \(r\) (bishops more aligned with itself). Lower \(r\) on the scale \([\underline r,\bar r]\) means the bishop is more lay-aligned; higher \(r\) means more church-aligned.</p>
+            <p>Key institutional feature modeled. The critical concordat rule is captured by the asymmetry in income allocation: during interregna, the ruler receives the diocesan income y (the “residual claimant” feature), while the church receives none. Before the concordats, the church would have retained this income.</p>
+            <p>Equilibrium (pp. 879–880). The authors study pure strategy subgame perfect Nash equilibria in stationary strategies. Lemma 1 establishes that the ruler always uses a cutoff rule: accept if \(\varepsilon_t\) exceeds a threshold \(\varepsilon^*(r_t)\), reject otherwise. Lemma 2 shows that if the church uses a stationary strategy, the ruler’s best response is also stationary. Lemma 3 shows the church has a unique stationary best response \(r^*\) to the ruler’s stationary strategy. The church’s optimal nomination depends on \(y\): there exist thresholds \(\underline y&lt;\bar y\) such that \(r^*=\bar r\) (full church alignment) if \(y&lt;\underline y\), \(r^*=\underline r\) (full ruler alignment) if \(y&gt;\bar y\), and \(r^*\) is interior and determined by a first-order condition for intermediate \(y\). Proposition 1 combines these lemmas to establish existence of a stationary equilibrium.</p>
+            <p>Key comparative statics (pp. 880–881):</p>
+            <p>Proposition 2: In equilibrium, if the nominated bishop’s alignment \(r^*\) is interior, it is strictly decreasing in \(y\). That is, the wealthier the diocese, the more lay-aligned the nominated bishop. This is the paper’s central testable prediction.</p>
+            <p>Proposition 3: The ruler’s expected payoff is strictly increasing in \(y\), lay rulers always benefit from greater diocesan wealth. The church’s expected payoff is nonmonotone in \(y\): it increases for sufficiently low \(y\) (where the church has enough bargaining power to retain the income) and decreases for sufficiently high \(y\) (where the ruler’s bargaining power is strong enough that the church loses more in political control than it gains in income). There exists a unique \(\hat y\) at which the church’s payoff is maximized, and beyond which the church is harmed by further increases in wealth.</p>
+            <p>Critical assessment of the model:</p>
+            <p>(1) Strengths. The model is parsimonious and captures the key institutional innovation, the shift of interregnum revenues to the ruler, in a clean way. The comparative static on y (Proposition 2) generates a clear, testable prediction about the interaction of wealth and concordat treatment. The nonmonotonicity result for the church (Proposition 3) is theoretically interesting and generates the secondary prediction about divergent development incentives.</p>
+            <p>(2) The payoff shock ε_t. The authors acknowledge that without the shock, the model would predict no rejections ever occur (fn. 4, p. 879). The shock is introduced purely to generate rejections and interregna. This is a standard modeling device but raises the question of what the shock substantively represents. The authors suggest it could be “unforeseen local political, economic, and social conditions” or “a shock to the costs the church can impose on the ruler.” This is fine for generating equilibrium predictions, but it means the model cannot speak to the determinants of interregna duration or frequency without specifying the shock distribution more precisely.</p>
+            <p>(3) One-shot appointment. The model assumes that once a bishop is accepted, he serves “for the remainder of the game.” In reality, bishops died, were transferred, or were removed. This simplification means the model cannot capture repeated renegotiation or the evolution of bargaining power within a single ruler’s reign. However, for the comparative-static purpose of the paper (comparing wealthy vs. poor dioceses), this simplification is acceptable because it applies equally to both types.</p>
+            <p>(4) No outside options for the church. The model gives the church no tools beyond nomination, it cannot depose rulers, excommunicate, or use crusades as leverage. In reality, as both Grzymala-Busse (2020) and the authors’ own historical narrative acknowledge, the church had powerful spiritual and temporal weapons. The model thus captures only the concordat-specific bargaining mechanism and abstracts away from the broader strategic interaction, which could attenuate or amplify the wealth-bargaining-power channel depending on the correlation between diocesan wealth and the church’s ability to deploy these other tools.</p>
+            <p>(5) Policy position as unidimensional. The bishop’s “alignment” is modeled as a single point on ℝ. In reality, bishops made decisions on many dimensions (fiscal policy, land management, ecclesiastical law, political loyalty, military support). The unidimensional assumption is standard but may miss important complementarities or conflicts across dimensions.</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文提出了一个主要机制（通过博弈论模型形式化）和一个辅助机制（通过定性历史证据支持）。</p>
+            <p>主要机制：剩余索取权与议价权力（第878–880页）。 协约使世俗统治者成为空缺期教区收入的剩余索取者。这意味着当统治者否决主教被提名者时，统治者获得收入而教会失去收入。因此，在富裕教区，分歧的成本对教会而言更高。用议价理论的语言来说，协约在较富裕教区将“外部选项”或“分歧支付”向有利于统治者的方向转移。教会的理性回应是在较富裕教区提名更能被统治者接受的主教，以避免代价高昂的空缺期。模型将此形式化为一个无限期议价博弈，其中教会提议、统治者接受或否决。</p>
+            <p>为阐明这一机制，作者引用了英格兰亨利二世（Henry II /ˈhɛnri/，在位1154–1189年）的历史案例。在坎特伯雷大主教贝克特（Becket /ˈbɛkɪt/）被刺杀后，亨利扣留了富裕教区的收入，直到他能够任命效忠于自己的主教。对于富裕的巴斯（Bath /bɑːθ/）和诺里奇（Norwich /ˈnɒrɪtʃ/）教区，他任命了可信赖的王室代理人，雷金纳德·菲茨约瑟林（Reginald FitzJocelin /ˈrɛdʒɪnəld fɪtsˈdʒɒslɪn/）和牛津的约翰（John of Oxford /ˈdʒɒn əv ˈɒksfərd/），但对于较不富裕且不太重要的奇切斯特（Chichester /ˈtʃɪtʃɪstər/）和赫里福德（Hereford /ˈhɛrɪfərd/）教区，他允许默默无闻的人物被任命（第878页，引用</p>
+            <p>模型进一步表明，协约至少创造出一种力量，使世俗统治者与教会在经济发展问题上的激励出现分化。世俗统治者会从更高的教区财富中获得政治上的好处，因为财富增长会增强他们的议价地位；而教会的激励则更复杂：当财富较高时，地方收入增加带来的议价权力损失，可能超过它从收入本身获得的收益。基于这一点，作者提出教会可能有动力限制经济发展，而世俗统治者则有动力促进经济发展。但需要强调，这第二条机制的证据明显弱于第一条：作者只是用模型推导、一些历史例证和有限的定量分析来加以探索，而不是对其进行了强有力的因果证明。</p>
+            <p>作者为双方提供了定性证据。教会方面：拉特兰公会议（Lateran Councils /ˈlætərən/，1123、1139、1179、1215年）禁止高利贷，限制了信贷并减缓了经济发展；教会在12世纪反对节省劳动力的机械化（如水磨）；教会通过新的修道院组织（熙笃会 Cistercians /sɪˈstɜːrʃənz/、圣殿骑士团 Knights Templar /ˈtɛmplər/、医院骑士团 Knights Hospitaler /ˈhɒspɪtələr/）将收入从地方主教转移到教皇中心，这些修道会被免除了地方主教管辖和税收（第888–889页）。世俗统治者方面：英格兰亨利二世引入法律改革（保护佃农产权的令状、限制教会权利的令状）促进了经济发展；狮心王理查（Richard the Lionheart /ˈrɪtʃərd/）增加了对教会财产的征税；约翰王（King John /dʒɒn/）没收教会土地；法国腓力四世（Philip IV /ˈfɪlɪp/）采取了类似路径（第889–890页）。</p>
+            <p>本文提出了一个关于协约框架下主教选任的形式（博弈论）模型。以下阐述其结构、关键结果和批判性评估。</p>
+            <p>设定（第879–880页）。 有两个参与者：教会和（世俗）统治者。博弈为无限期、离散时间博弈，折现因子为 \(\delta\in(0,1)\)。在每个无主教在任的期间开始时，教会提名一个政策立场为 \(r_t\in[\underline r,\bar r]\subset\mathbb{R}\) 的候选人。统治者随后接受或否决。如果被接受，被提名的主教将在博弈的剩余时间任职；如果被否决，该期间没有主教，博弈进入下一期。</p>
+            <div class="formula-box">\[
+              \begin{aligned}
+              U_C(\text{主教 }r)&=\lambda_C r+(1-\lambda_C)y,\\
+              U_C(\text{空缺期})&=\lambda_C q,\\
+              U_R(\text{否决})&=-\lambda_R q+(1-\lambda_R)y-c,\\
+              U_R(\text{接受 }r,t)&=-\lambda_R r+\varepsilon_t.
+              \end{aligned}
+            \]</div>
+            <p>每期教区产生收入 \(y&gt;0\)。\(\lambda_C\in(0,1)\) 是教会对政策相对于收入的权重；\(q\) 为现状政策；\(c&gt;0\) 代表教会的惩罚成本（如绝罚）；\(\varepsilon_t\) 是从对数凹分布 \(F\) 中抽取的独立同分布随机冲击。统治者偏好较低的 \(r\)（即更亲世俗的主教），教会偏好较高的 \(r\)（更亲教会的主教）。\([\underline r,\bar r]\) 尺度上 \(r\) 越低意味着主教越亲世俗；\(r\) 越高意味着越亲教会。</p>
+            <p>模型化的关键制度特征。 协约的关键规则通过收入分配的不对称性来体现：在空缺期，统治者获得教区收入y（“剩余索取者”特征），而教会不获得任何收入。在协约之前，教会本可保留这些收入。</p>
+            <p>均衡（第879–880页）。 作者研究稳态策略下的纯策略子博弈完美纳什均衡。引理1确立统治者总是使用截断规则：如果 \(\varepsilon_t\) 超过阈值 \(\varepsilon^*(r_t)\) 则接受，否则否决。引理2表明如果教会使用稳态策略，统治者的最优反应也是稳态的。引理3表明教会对统治者的稳态策略有唯一的稳态最优反应 \(r^*\)。教会的最优提名取决于 \(y\)：存在阈值 \(\underline y&lt;\bar y\)，使得当 \(y&lt;\underline y\) 时 \(r^*=\bar r\)（完全教会结盟），当 \(y&gt;\bar y\) 时 \(r^*=\underline r\)（完全统治者结盟），对于中间的 \(y\)，\(r^*\) 由一阶条件决定。命题1结合这些引理确立了稳态均衡的存在性。</p>
+            <p>关键比较静态（第880–881页）：</p>
+            <p>命题2： 在均衡中，如果被提名主教的立场 \(r^*\) 是内点解，则 \(r^*\) 关于 \(y\) 严格递减。即教区越富裕，被提名的主教越亲世俗。这是本文的核心可检验预测。</p>
+            <p>命题3： 统治者的期望支付关于 \(y\) 严格递增，世俗统治者总是从更大的教区财富中获益。教会的期望支付关于 \(y\) 非单调：在 \(y\) 足够低时递增（教会有足够议价权力保留收入），在 \(y\) 足够高时递减（统治者的议价权力足够强，使教会在政治控制上的损失超过收入增加的收益）。存在唯一的 \(\hat y\) 使教会的支付最大化，超过此点教会受到财富进一步增加的损害。</p>
+            <p>模型的批判性评估：</p>
+            <p>（1）优势。 模型简洁，以清晰的方式捕捉了关键的制度创新，空缺期收入转移给统治者。关于y的比较静态（命题2）生成了一个清晰的、可检验的关于财富与协约处理交互作用的预测。教会的非单调性结果（命题3）在理论上有趣，并生成了关于分歧性发展激励的次要预测。</p>
+            <p>（2）支付冲击ε_t。 作者承认如果没有冲击，模型将预测被提名者永远不会被否决（注4，第879页）。冲击纯粹是为了产生否决和空缺期而引入的。这是标准的建模手法，但引发了冲击在实质上代表什么的问题。作者建议它可能代表“未预见的地方政治、经济和社会条件”或“教会能够施加给统治者的成本的冲击”。这对于生成均衡预测是可以的，但意味着如果不更精确地指定冲击分布，模型无法说明空缺期持续时间或频率的决定因素。</p>
+            <p>（3）一次性任命。 模型假设一旦主教被接受，他将“在博弈的剩余时间”任职。现实中，主教会死亡、调任或被撤职。这一简化意味着模型无法捕捉单一统治者任期内的反复重新谈判或议价权力的演变。然而，就本文的比较静态目的（比较富裕与贫穷教区）而言，这一简化是可接受的，因为它同样适用于两种类型。</p>
+            <p>（4）教会没有外部选项。 模型只赋予教会提名权，它不能废黜统治者、施行绝罚或利用十字军作为筹码。现实中，正如Grzymala-Busse (2020)和作者自己的历史叙事所承认的，教会拥有强大的精神和世俗武器。因此，模型仅捕捉了协约特有的议价机制，而抽象掉了更广泛的战略互动，这可能会减弱或放大财富-议价权力渠道的效果。</p>
+            <p>（5）政策立场为一维的。 主教的“立场归属”被建模为ℝ上的单一点。现实中，主教在多个维度上做出决策（财政政策、土地管理、教会法、政治忠诚、军事支持）。一维假设是标准的，但可能遗漏跨维度的重要互补性或冲突。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>The data cover Roman Catholic dioceses and their bishops from 325 (Council of Nicaea /naɪˈsiːə/) to 1309 (the beginning of the Avignon /ˌævɪnˈjɒn/ papacy). The dataset includes 427 unique dioceses, of which 292 are covered by a concordat at some point and 181 are never covered. There are 6,947 diocese-bishop pairs, approximately 76% from covered dioceses (p. 881).</p>
+            <p>Dependent variable, Bishop alignment. Coded from scraped Catholic Church websites and Wikipedia in English, German, and occasionally French, Spanish, or Swedish. Of all bishops in the dataset, 1,580 have sufficient biographical detail for alignment coding. Of these, 1,244 (79%) are church aligned and 336 are lay aligned (p. 881).</p>
+            <p>Independent variable, Concordats. Coded as 1 if a concordat was in effect in the diocese at the time the bishop was consecrated. For England and France (excluding Burgundy /ˈbɜːrɡəndi/), this is 1107–1309. For Ireland /ˈaɪərlənd/, 1171–1309 (after Henry II’s invasion). For the Holy Roman Empire, 1122–1309. For uncovered dioceses (Spain , Portugal /ˈpɔːrtʃʊɡəl/, southern Italy, Venice /ˈvɛnɪs/, much of eastern and northern Europe), always 0 (p. 882).</p>
+            <p>Wealth measures (all time-invariant, measured before the concordats):</p>
+            <p>(1) Trade (Traded): Coded as 1 if the diocese seat was within 25 km of a major pre-concordat trade or pilgrimage route, had a port or river route, or produced and exported goods. Source: Old World Trade Routes Project, supplemented by historical maps. 71 of 427 dioceses are coded as trade-exposed (p. 882).</p>
+            <p>(2) Caloric potential (Calorie): Above- or below-median pre-Columbian agricultural caloric potential per hectare, from the UN FAO (Galor and Özak 2016). A fixed geographic characteristic (p. 882).</p>
+            <p>(3) Settlement population (Population5, Population10, Population15): Whether the diocese contained a settlement of at least 5,000 / 10,000 / 15,000 inhabitants at any time before the concordats. Source: Buringh (2021), expanding Bairoch (1991) and Bairoch, Batou, and Chèvre (1988). These thresholds correspond roughly to the 75th, 90th, and 95th percentiles of European settlement size (pp. 882–883).</p>
+            <p>Controls: Crusade routes (four dummy variables for four crusades, coded from GIS data); kingdom assignment (from the Digital Atlas of Roman and Medieval Civilizations, two snapshots at 1000 and 1200); monarch identity (from Wikipedia, available for 61% of bishops); 400 km² grid cell dummies (66 cells) (pp. 883–884).</p>
+            <p>Geographic coverage: All of Catholic Europe, including England, France, the Holy Roman Empire, Ireland, plus uncovered dioceses in Iberia /aɪˈbɪəriə/, southern Italy, Venice, Scandinavia /ˌskændɪˈneɪviə/, and eastern Europe. The Papal States are excluded because the pope was both civil and religious authority there (p. 882).</p>
+          </div>
+          <div class="lang-zh">
+            <p>数据涵盖325年（尼西亚公会议 Council of Nicaea /naɪˈsiːə/）至1309年（阿维尼翁 Avignon /ˌævɪnˈjɒn/ 教廷开始）的罗马天主教教区及其主教。数据集包含427个独特教区，其中292个在某一时期受协约约束，181个从未受约束。共有6,947个教区-主教配对，约76%来自受约束教区（第881页）。</p>
+            <p>因变量，主教立场归属。 从天主教会网站和英语、德语（偶尔法语、西班牙语或瑞典语）维基百科抓取编码。在数据集中所有主教中，1,580位有足够详细的传记信息可供编码立场归属。其中1,244位（79%）为教会结盟，336位为世俗统治者结盟（第881页）。</p>
+            <p>自变量，协约。 如果在主教被祝圣时教区有协约生效则编码为1。对于英格兰和法国（不含勃艮第 Burgundy /ˈbɜːrɡəndi/），为1107–1309年。对于爱尔兰（Ireland /ˈaɪərlənd/），为1171–1309年（亨利二世入侵后）。对于神圣罗马帝国，为1122–1309年。对于未受约束的教区（西班牙 Spain、葡萄牙 Portugal /ˈpɔːrtʃʊɡəl/、南意大利 Italy、威尼斯 Venice /ˈvɛnɪs/、东欧和北欧大部），始终为0（第882页）。</p>
+            <p>财富测度（均为时间不变的，在协约之前测量）：</p>
+            <p>（1）贸易（Traded）： 如果教区主教座堂在协约前的主要贸易或朝圣路线25公里以内、拥有港口或河流路线、或生产并出口商品，则编码为1。来源：旧世界贸易路线项目（Old World Trade Routes Project），辅以历史地图。427个教区中71个被编码为有贸易暴露（第882页）。</p>
+            <p>（2）热量潜力（Calorie）： 根据联合国粮农组织（FAO）估算的前哥伦布时期每公顷农业热量潜力高于或低于欧洲中位数（Galor and Özak 2016）。是固定的地理特征（第882页）。</p>
+            <p>（3）定居点人口（Population5, Population10, Population15）： 该教区在协约签订前是否包含至少5,000/10,000/15,000居民的定居点。来源：Buringh (2021)，扩展了Bairoch (1991)和Bairoch, Batou, and Chèvre (1988)。这些阈值大致对应欧洲定居点规模的第75、90和95百分位（第882–883页）。</p>
+            <p>控制变量： 十字军路线（四次十字军的四个虚拟变量，从GIS数据编码）；王国归属（来自罗马和中世纪文明数字地图集，1000年和1200年两个时间截面）；君主身份（来自维基百科，可用于61%的主教）；400平方公里网格单元虚拟变量（66个单元）（第883–884页）。</p>
+            <p>地理覆盖： 整个天主教欧洲，包括英格兰、法国、神圣罗马帝国、爱尔兰，加上伊比利亚半岛（Iberia /aɪˈbɪəriə/）、南意大利、威尼斯、斯堪的纳维亚（Scandinavia /ˌskændɪˈneɪviə/）和东欧的未受约束教区。教皇国（Papal States）被排除，因为教皇同时是世俗和宗教当局（第882页）。</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>The empirical strategy is a difference-in-differences (DiD) design implemented through a linear probability model (LPM). The key equation is (p. 883):</p>
+            <div class="formula-box">\[
+              ChurchAligned_{db}=\beta_0+\beta_1 Concordats_{db}
+              +\beta_2(Concordats_{db}\times Wealth_d)
+              +\gamma X_{db}+\omega_{Diocese}+\theta_{HalfCentury}+\varepsilon_{db}.
+            \]</div>
+            <p>The coefficient of interest is \(\beta_2\), the interaction of Concordats and Wealth. Because Wealth is a time-invariant diocese characteristic, its main effect is absorbed by the diocese fixed effect. The paper runs five specifications for each wealth measure: (1) diocese + half century FE; (2) diocese + half century + monarch FE; (3) diocese + kingdom × half century FE; (4) diocese + grid cell × half century FE; (5) diocese + half century FE + linear time trend × wealth (p. 883).</p>
+            <p>The unit of analysis is a diocese-bishop pair. Standard errors are clustered by diocese.</p>
+            <p>Timing / placebo tests (pp. 887–888). To assess whether the divergence between wealthier and poorer dioceses coincides with the concordats’ adoption, the authors run a series of placebo regressions using moving treatment windows. For each possible starting year from 800 to 1275, they re-estimate the regression with that year as the start of the treatment period (keeping 1309 as the endpoint). They plot the estimated β₂ across starting years. For trade, caloric potential, and the 5,000-inhabitant threshold, the estimated effect is minimized around the true concordat dates, consistent with the concordats being the relevant event. For the 10,000 and 15,000 thresholds, the pattern is less clear (p. 888).</p>
+            <p>Economic growth analysis (p. 889–890). For the secondary hypothesis about divergent development incentives, the authors estimate a simple DiD regression:</p>
+            <div class="formula-box">\[
+              Growth_d=\beta_0+\beta_1(Covered_d\times LayStrength_d)+\beta_2 Covered_d+\beta_3 LayStrength_d+\varepsilon_d.
+            \]</div>
+            <p>Growth is measured as the difference in the population of the largest settlement in a diocese before and after the concordats. Lay strength is measured three ways: (1) whether the first post-concordat bishop was lay-aligned; (2) a dummy for being far from Rome /roʊm/; (3) continuous distance to Rome in megameters. Results are directionally consistent but not statistically significant (Table 2, p. 890).</p>
+            <p>Assumptions required for validity:</p>
+            <p>(1) Parallel trends: The key identifying assumption is that, absent the concordats, wealthier and poorer dioceses (within both covered and uncovered groups) would have followed parallel trends in bishop alignment. The placebo tests and the specification with wealth × linear time trend partially address this, but cannot rule out divergent pre-trends driven by unobserved factors.</p>
+            <p>(2) No endogenous wealth changes: The use of time-invariant wealth measures (pre-concordat trade routes, caloric potential, pre-concordat settlements) is designed to avoid the concern that wealth itself was affected by the concordats. This is a strong design choice. However, caloric potential is determined by geography and truly exogenous; trade exposure and settlement size, while measured before the concordats, may reflect earlier institutional or political conditions that also affected later bishop selection through channels other than the concordats.</p>
+            <p>(3) No differential selection into the concordats: The concordats applied to all dioceses within a given kingdom, so there was no diocese-level selection into treatment. However, the different timing of adoption (1107 for England/France, 1122 for the HRE, 1171 for Ireland) could be correlated with kingdom-level confounders, which the kingdom × half century FE address.</p>
+            <p>(4) SUTVA (Stable Unit Treatment Value Assumption): The assumption that one diocese’s treatment does not affect another’s outcome. This could be violated if, for example, the church strategically allocated pro-church bishops across dioceses in response to the concordats’ overall pattern.</p>
+            <p>(5) Correct functional form: The LPM assumes a linear relationship between the binary outcome and the covariates. For a binary DV, logit or probit would be more natural, but in DiD designs with many fixed effects, LPM is standard and the linear approximation is generally acceptable.</p>
+          </div>
+          <div class="lang-zh">
+            <p>实证策略是通过线性概率模型（LPM）实施的双重差分（DiD）设计。核心方程为（第883页）：</p>
+            <div class="formula-box">\[
+              ChurchAligned_{db}=\beta_0+\beta_1 Concordats_{db}
+              +\beta_2(Concordats_{db}\times Wealth_d)
+              +\gamma X_{db}+\omega_{Diocese}+\theta_{HalfCentury}+\varepsilon_{db}.
+            \]</div>
+            <p>关注的系数是 \(\beta_2\)，即协约与财富的交互项。因为 \(Wealth\) 是教区的时间不变特征，其主效应被教区固定效应吸收。本文对每个财富测度运行五个设定：（1）教区+半世纪固定效应；（2）教区+半世纪+君主固定效应；（3）教区+王国×半世纪固定效应；（4）教区+网格单元×半世纪固定效应；（5）教区+半世纪固定效应+线性时间趋势×财富（第883页）。</p>
+            <p>分析单位是教区-主教配对。标准误按教区聚类。</p>
+            <p>时序/安慰剂检验（第887–888页）。 为评估富裕教区与贫穷教区之间的分歧是否与协约的采纳时间一致，作者使用移动处理窗口进行一系列安慰剂回归。对于从800年到1275年的每个可能起始年份，他们以该年作为处理期起始（保持1309年为终点）重新估计回归。他们绘制了β₂在各起始年份上的估计值。对于贸易、热量潜力和5,000居民阈值，估计效应在真实协约日期附近最小化，与协约是相关事件一致。对于10,000和15,000阈值，模式不太清晰（第888页）。</p>
+            <p>经济增长分析（第889–890页）。 对于关于分歧性发展激励的次要假说，作者估计了一个简单的DiD回归：</p>
+            <div class="formula-box">\[
+              Growth_d=\beta_0+\beta_1(Covered_d\times LayStrength_d)+\beta_2 Covered_d+\beta_3 LayStrength_d+\varepsilon_d.
+            \]</div>
+            <p>增长通过教区最大定居点在协约前后的人口差异来衡量。世俗力量强度通过三种方式衡量：（1）协约后的第一位主教是否亲世俗；（2）是否远离罗马（Rome /roʊm/）的虚拟变量；（3）到罗马的连续距离（百万米）。结果方向一致但统计上不显著（表2，第890页）。</p>
+            <p>方法有效性所需的假设：</p>
+            <p>（1）平行趋势： 关键识别假设是，如果没有协约，较富裕和较贫穷的教区（在受约束和未受约束的群组内）将在主教立场归属上遵循平行趋势。安慰剂检验和财富×线性时间趋势的设定部分解决了这一问题，但无法排除由未观测因素驱动的分歧性前期趋势。</p>
+            <p>（2）财富无内生变化： 使用时间不变的财富测度（协约前的贸易路线、热量潜力、协约前的定居点）旨在避免财富本身受协约影响的担忧。这是一个强有力的设计选择。然而，热量潜力由地理决定，确实是外生的；贸易暴露和定居点规模虽在协约前测量，但可能反映了更早的制度或政治条件，这些条件也可能通过协约以外的渠道影响后来的主教选任。</p>
+            <p>（3）不存在对协约的差异性选入： 协约适用于给定王国内的所有教区，因此不存在教区层面对处理的选入。然而，采纳的不同时间（英格兰/法国1107年，神圣罗马帝国1122年，爱尔兰1171年）可能与王国层面的混淆因素相关，王国×半世纪固定效应对此有所处理。</p>
+            <p>（4）SUTVA（稳定单位处理值假设）： 一个教区的处理不影响另一个教区结果的假设。如果教会在面对协约的整体格局时战略性地在各教区间分配亲教会主教，则此假设可能被违反。</p>
+            <p>（5）正确的函数形式： LPM假设二元结果与协变量之间存在线性关系。对于二元因变量，logit或probit更自然，但在包含大量固定效应的DiD设计中，LPM是标准做法，线性近似一般可接受。</p>
+          </div>
+        </section>
+
+
+
+        <nav class="node-nav">
+          <a class="prev" href="grzymalabusse2023.html"><small data-en="Previous reading" data-zh="上一篇">Previous reading</small>Grzymala-Busse 2023</a>
+          <a class="next" href="cantoni2018.html"><small data-en="Next reading" data-zh="下一篇">Next reading</small>Cantoni et al. 2018</a>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

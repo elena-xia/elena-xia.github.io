@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Methods &amp; the research chain · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="course-sf.css">
+    <style>
+      .md-body h3 { font-family: Georgia,"Times New Roman",serif; font-size:1.18rem; font-weight:500; margin:28px 0 8px; }
+      .md-body h4 { font-size:1rem; margin:20px 0 6px; color:var(--forest); }
+      .md-body p { margin:10px 0; }
+      .md-body ul.clean-list, .md-body ol.clean-list { margin:10px 0; padding-left:20px; }
+      .md-body ul.clean-list li, .md-body ol.clean-list li { margin:6px 0; }
+      .md-quote { margin:14px 0; padding:14px 18px; border-left:4px solid var(--gold); background:#fffdf8; color:#5a4a24; border-radius:8px; }
+      .epigraph { border-left:4px solid var(--forest); background:var(--paper-deep); border-radius:8px; padding:18px 22px; margin:0 0 8px; }
+      .epigraph p { margin:0; font-size:1.02rem; color:var(--ink); }
+      .lesson { border:1px solid var(--line); background:#fffdf8; border-radius:10px; padding:14px 16px; margin:18px 0; }
+      .lesson strong { color:var(--forest); }
+      .formula-box { background:var(--paper-deep); border:1px solid var(--line); border-radius:10px; padding:14px 16px; margin:16px 0; overflow-x:auto; }
+      .formula-box p { margin:7px 0; }
+      .table-wrap { overflow-x:auto; margin:16px 0; }
+      table.method-table { width:100%; border-collapse:collapse; font-size:0.92rem; line-height:1.45; }
+      .method-table caption { text-align:left; font-weight:600; color:var(--forest); margin:0 0 6px; }
+      .method-table th, .method-table td { border:1px solid var(--line); padding:9px 10px; vertical-align:top; }
+      .method-table th { background:var(--paper-deep); color:var(--forest); font-weight:600; }
+      .method-table td:first-child { font-weight:600; color:var(--ink); }
+      .small-note { font-size:0.9rem; color:#62584a; }
+      .source-note { font-size:0.86rem; color:#746a5d; margin-top:6px; }
+      .formula-list { margin:8px 0 0 20px; }
+      .formula-list li { margin:5px 0; }
+      html[data-lang="en"] .lang-zh { display:none !important; }
+      html[data-lang="zh"] .lang-en { display:none !important; }
+      html[data-lang="en"] div.lang-en, html[data-lang="en"] section.lang-en { display:block !important; }
+      html[data-lang="zh"] div.lang-zh, html[data-lang="zh"] section.lang-zh { display:block !important; }
+      html[data-lang="en"] table.lang-en { display:table !important; }
+      html[data-lang="zh"] table.lang-zh { display:table !important; }
+      html[data-lang="en"] span.lang-en { display:inline !important; }
+      html[data-lang="zh"] span.lang-zh { display:inline !important; }
+    </style>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['\\(', '\\)']],
+          displayMath: [['\\[', '\\]']],
+          processEscapes: true
+        },
+        svg: { fontCache: 'global' }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script src="sf-lang.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="index.html">↩ The genealogy</a>
+          <a href="../../index.html#education">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../index.html">Home</a> / <a href="index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Methods" data-zh="方法论">Methods</span></p>
+        <p class="eyebrow" data-en="The research chain &amp; methods" data-zh="研究链条与方法">The research chain &amp; methods</p>
+        <h1 data-en="How the work is built and judged" data-zh="研究如何被建构与评判">How the work is built and judged</h1>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:900px">
+        <div class="epigraph">
+          <p><span class="lang-en">Methods are trade-offs. Formal models buy logical transparency at the cost of realism. Comparative history buys mechanism thickness at the cost of clean identification. RDD buys local internal validity at the cost of external validity. Large-N panels and grids buy scope at the cost of measurement error. New indices buy measurement innovation at the cost of construct-validity risk. This is not a low-to-high progression.</span><span class="lang-zh">方法在这里被理解为不同类型的可信度交易。形式模型以现实性换逻辑透明；比较历史以识别换机制厚度；RDD 以外部效度换局部内部效度；大 N 面板与网格以测量误差换覆盖范围；新指数以构念效度风险换测量创新。这不是从低级到高级的进步序列。</span></p>
+        </div>
+
+        <section class="sf-field">
+          <h2 data-en="The five-link research chain" data-zh="五链条研究链">The five-link research chain</h2>
+          <p data-en="Problem construction → concept &amp; measurement → theory &amp; mechanism → testing &amp; identification → limitations &amp; extrapolation." data-zh="问题构建 → 概念与测量 → 理论与机制 → 检验与识别 → 局限与外推。">Problem construction → concept &amp; measurement → theory &amp; mechanism → testing &amp; identification → limitations &amp; extrapolation.</p>
+          <p class="lead" data-en="The readings can be organized through this chain: each is first placed back into its own research problem, then the comparison generates lessons about modeling, measurement, identification, and critique." data-zh="这些文献可以按照这个链条来组织：先把每篇文献放回自己的研究问题，再从比较中提炼关于建模、测量、识别与批评的 lesson。">The readings can be organized through this chain: each is first placed back into its own research problem, then the comparison generates lessons about modeling, measurement, identification, and critique.</p>
+        </section>
+
+        <section class="sf-field" id="problem">
+          <h2 data-en="Problem construction" data-zh="问题构建">Problem construction</h2>
+          <div class="md-body">
+            <div class="lang-en">
+              <blockquote class="md-quote">The starting point is not whether formal models are good or bad. The useful question is what problem a model makes visible, what it hides, and what kind of empirical credibility remains after the abstraction.</blockquote>
+              <p>Across the four readings, one mechanism recurs across different research problems: principal-agent politics under imperfect monitoring. The outcome changes by paper. Kiser asks why rulers choose tax farming or salaried administration. Sng asks why late imperial China taxed lightly, kept a small bureaucracy, and suffered fiscal decline. Stasavage asks why weak rulers often governed through councils and why bureaucratic technologies later made hierarchy easier. Sánchez de la Sierra asks when armed actors in eastern Congo build taxation, protection, and administration.</p>
+              <div class="table-wrap">
+                <table class="method-table">
+                  <thead><tr><th>Reading</th><th>Research Setting</th><th>Key Words</th><th>Modeling</th><th>Lesson</th></tr></thead>
+                  <tbody>
+                    <tr><td>Kiser (1994)</td><td>Early modern tax systems in Europe and imperial settings</td><td>Tax farming; state administration; agency theory; monitoring; predictability</td><td>Uses principal-agent theory as a conceptual frame, with markets and hierarchies as ideal types</td><td>Tax farming is not simply a backward institution. When monitoring is weak, it can be the ruler's fallback contract</td></tr>
+                    <tr><td>Sng (2014)</td><td>Late imperial China, mainly 1700 to 1850</td><td>Size; distance; monitoring; extortion; low taxation; small bureaucracy; fiscal decline</td><td>Builds a formal model with a ruler, local agents, taxpayers, a no-revolt constraint, and a monitoring parameter</td><td>Applied modeling is powerful but risky. The logic is clear, but some results may depend on assumptions chosen to rationalize a known historical pattern</td></tr>
+                    <tr><td>Stasavage (2020)</td><td>Early democracy, weak states, and bureaucratic alternatives across world regions</td><td>Production uncertainty; exit; councils; military democracy; bureaucracy; writing; soil maps; geometry</td><td>Uses a verbal mechanism: councils and bureaucracies are alternative ways to solve rulers' information problems, and technology can raise legibility</td><td>The key question is not only what follows from monitoring capacity, but also how rulers change monitoring capacity in the first place</td></tr>
+                    <tr><td>Sánchez de la Sierra (2020)</td><td>Armed groups and army units in eastern Democratic Republic of Congo</td><td>Stationary bandits; coltan; gold; output observability; price shocks; customs; fiscal administration</td><td>Uses a simple optimal-taxation logic and a reduced-form empirical design based on mineral price shocks</td><td>The mechanism can be identified through variation in observability, while the larger claim about state origins still needs scope conditions</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="lang-zh">
+              <blockquote class="md-quote">起点不是形式模型好不好，而是一个更具体的问题：模型让什么问题变得可见，遮蔽了什么，又能在这种抽象之后保留哪一种经验可信度。</blockquote>
+              <p>四篇文献中反复出现同一个机制：监控不完美条件下的委托-代理政治。每篇文献的因变量不同。Kiser 解释统治者为何选择包税制或薪俸制行政征税。Sng 解释晚期帝制中国为何轻税、小官僚，并出现财政能力下降。Stasavage 解释弱统治者为何常常通过 council 治理，以及官僚技术为什么会让等级制更容易。Sánchez de la Sierra 解释刚果东部的武装行为者在什么条件下会建立征税、保护和行政功能。</p>
+              <div class="table-wrap">
+                <table class="method-table">
+                  <thead><tr><th>文献</th><th>研究情境</th><th>关键词</th><th>模型</th><th>课堂讨论</th></tr></thead>
+                  <tbody>
+                    <tr><td>Kiser (1994)</td><td>早期现代欧洲与帝国税收制度</td><td>包税制；国家行政征收；agency theory；监控；可预测性</td><td>把委托-代理理论作为概念框架，用 markets 与 hierarchies 区分两种理想型</td><td>包税制不只是落后制度；监控弱时，它可以是统治者的兜底合约</td></tr>
+                    <tr><td>Sng (2014)</td><td>晚期帝制中国，主要是 1700 至 1850 年</td><td>规模；距离；监控；勒索；低税；小官僚；财政衰落</td><td>建立包含统治者、地方代理人、纳税人、无反叛约束和监控参数的形式模型</td><td>应用模型既有力量也有危险；逻辑很清楚，但部分结果可能依赖为合理化已知历史模式而设定的假设</td></tr>
+                    <tr><td>Stasavage (2020)</td><td>跨地区比较中的早期民主、弱国家与官僚替代方案</td><td>生产不确定性；退出；council；军事民主；官僚制；书写；土壤地图；几何</td><td>使用语言化机制：council 与官僚制都是解决统治者信息问题的方式，技术可以提高可辨识性</td><td>关键不只在于给定监控能力会发生什么，也在于统治者如何首先改变监控能力</td></tr>
+                    <tr><td>Sánchez de la Sierra (2020)</td><td>刚果民主共和国东部的武装团体与军队单位</td><td>坐寇；钶钽矿；黄金；产出可观察性；价格冲击；关卡税；财政行政</td><td>使用简洁的最优征税逻辑，并用矿产价格冲击构造 reduced-form 经验设计</td><td>机制可以通过可观察性的变化被识别，但关于国家起源的宏大命题仍需范围条件</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sf-field" id="concept">
+          <h2 data-en="Concept &amp; measurement" data-zh="概念与测量">Concept &amp; measurement</h2>
+          <div class="md-body">
+            <div class="lang-en">
+              <h3>1. Legibility is not one thing</h3>
+              <p>The shared concept is legibility or monitoring, but it needs to be kept narrow before it is generalized. In the blackboard model, it means the ruler's ability to interpret a low-revenue signal. When the ruler observes low revenue, can he tell whether the agent shirked or whether the state of the world was bad?</p>
+              <div class="formula-box">
+                <p>\[q \in [1/2,1], \qquad q = \Pr(e=0 \mid R=L).\]</p>
+                <p class="small-note">A value of \(q=1/2\) is no better than guessing. A value of \(q=1\) means the ruler can perfectly interpret low revenue.</p>
+              </div>
+              <p>Sng uses a related but different parameter. His \(m\) determines how easily the ruler detects extortion. Sánchez de la Sierra uses a concrete proxy: coltan output is bulky and hard to hide, while gold is small, valuable, and easy to conceal. Stasavage widens the concept. In chapter 3, he measures uncertainty about production through caloric variability and exit through mobility or population density. In chapter 4, he treats writing, soil mapping, geometry, surveying, and agricultural techniques as technologies that make society more legible to rulers.</p>
+
+              <h3>2. Concept and proxy are separate</h3>
+              <div class="table-wrap">
+                <table class="method-table">
+                  <caption>Reading the measurement problem</caption>
+                  <thead><tr><th>Paper</th><th>Concept</th><th>Proxy</th><th>Measurement risk</th></tr></thead>
+                  <tbody>
+                    <tr><td>Kiser</td><td>Ruler's control capacity over tax agents</td><td>Type of tax, mobility of the tax base, country size, ruler autonomy, and control technologies</td><td>The concept is broad. The paper gives a plausible comparative framework rather than a clean measurement strategy</td></tr>
+                    <tr><td>Sng</td><td>Monitoring capacity \(m\)</td><td>Distance from Beijing, postal routes, least-cost paths, tax gradients, and county gradients</td><td>Distance may capture monitoring, but it may also capture productivity, frontier politics, institutional design, fiscal quotas, or ideology</td></tr>
+                    <tr><td>Stasavage</td><td>Weak ruler position and bureaucratic legibility</td><td>Caloric variability, population density, council governance, bureaucrat presence, soil maps, writing, and surveying</td><td>The evidence is wide-ranging and often illustrative. Different chapters operationalize legibility and ruler weakness in different ways</td></tr>
+                    <tr><td>Sánchez de la Sierra</td><td>Observability of taxable output</td><td>Physical contrast between coltan and gold, interacted with world price shocks</td><td>The proxy is strong for output observability, but price shocks may also change actor composition, taxation location, and village politics</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>3. Monitoring and enforcement are separate</h3>
+              <p>Analytically, two ideas that are easy to collapse should be separated. Monitoring means learning what happened. Enforcement means making a contract bite after learning enough. Tax farming does not require the ruler to observe every transaction, but it still requires the ruler to stop an unauthorized actor from collecting in the crown's name without paying the bid. If a tax farmer can collect and refuse to pay, the model is no longer a contract model.</p>
+
+              <h3>4. Measurement lesson</h3>
+              <div class="lesson">
+                <p><strong>Lesson:</strong> before testing a model, the relevant dimension of legibility must be specified. Is it information about output, information about effort, records that travel to the center, audit capacity, coercive enforcement, or local organizations that verify claims? A proxy can be useful without measuring the whole concept. It becomes misleading when its precise meaning is forgotten.</p>
+              </div>
+            </div>
+
+            <div class="lang-zh">
+              <h3>1. Legibility 不是单一概念</h3>
+              <p>四篇文献共享的概念是可辨识性或监控能力，但这个概念需要先窄化，再推广。在课堂板书模型中，它指统治者解释低税收信号的能力。统治者看到低收入时，能否判断代理人是在偷懒，还是外部状态不好？</p>
+              <div class="formula-box">
+                <p>\[q \in [1/2,1], \qquad q = \Pr(e=0 \mid R=L).\]</p>
+                <p class="small-note">\(q=1/2\) 表示和随机猜测没有区别。\(q=1\) 表示统治者能够完美解释低收入信号。</p>
+              </div>
+              <p>Sng 使用的是相关但不同的参数。他的 \(m\) 决定统治者发现勒索的能力。Sánchez de la Sierra 使用的是更具体的代理变量：钶钽矿体积大、难隐藏，黄金体积小、价值高、容易隐藏。Stasavage 则把概念拓宽。第三章用 caloric variability 测量生产不确定性，用人口密度和流动性讨论退出；第四章把书写、土壤地图、几何、测量和农业技术视为让社会对统治者更可辨识的技术。</p>
+
+              <h3>2. 概念和代理变量需要分开</h3>
+              <div class="table-wrap">
+                <table class="method-table">
+                  <caption>测量问题</caption>
+                  <thead><tr><th>文献</th><th>概念</th><th>代理变量</th><th>测量风险</th></tr></thead>
+                  <tbody>
+                    <tr><td>Kiser</td><td>统治者控制税收代理人的能力</td><td>税种性质、税基流动性、国家规模、统治者自主性和控制技术</td><td>概念很宽。论文提供的是可信的比较框架，而不是干净的测量策略</td></tr>
+                    <tr><td>Sng</td><td>监控能力 \(m\)</td><td>距北京距离、驿道、最低成本路径、税收梯度和县治梯度</td><td>距离可能测量监控，也可能混入生产力、边疆政治、制度设计、财政定额或意识形态</td></tr>
+                    <tr><td>Stasavage</td><td>统治者弱势与官僚可辨识性</td><td>热量波动、人口密度、council governance、官僚存在、土壤地图、书写和测量</td><td>证据范围很广，但常常更接近说明性证据。不同章节对 legibility 和统治者弱势的操作化并不相同</td></tr>
+                    <tr><td>Sánchez de la Sierra</td><td>可征税产出的可观察性</td><td>钶钽矿和黄金的物理差异，并与世界价格冲击交互</td><td>这个代理变量对产出可观察性很强，但价格冲击也可能改变武装行为者构成、征税地点和村庄政治</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>3. 监控与执行需要分开</h3>
+              <p>两个容易混同的概念需要分开。监控是知道发生了什么。执行是在知道足够信息之后使合约发生约束力。包税制不要求统治者观察每一笔交易，但仍然要求统治者能够阻止未经授权的人冒用王室名义征税却不缴纳包税款。如果包税人可以征税并拒绝付款，模型就不再是合约模型。</p>
+
+              <h3>4. 测量上的 lesson</h3>
+              <div class="lesson">
+                <p><strong>Lesson：</strong>检验模型之前，必须说明测量的是 legibility 的哪一个维度。是关于产出的信息，关于努力的信息，能传到中央的记录，审计能力，强制执行能力，还是地方组织帮助核实信息的能力？代理变量可以有用而不测量整个概念。危险在于忘记这个代理变量究竟测量了什么。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sf-field" id="theory">
+          <h2 data-en="Theory &amp; mechanism" data-zh="理论与机制">Theory &amp; mechanism</h2>
+          <div class="md-body">
+            <div class="lang-en">
+              <h3>1. The blackboard model as a toy model</h3>
+              <p>The classroom model is not a realistic description of any one fiscal system, but it can function as a minimal machine for isolating one mechanism: monitoring makes direct hierarchy more attractive because the ruler can use dismissal as a stick. There are two players, a ruler and an intermediary. The ruler chooses indirect rule \(I\) or direct rule \(D\). The agent chooses effort \(e\in\{0,1\}\) at cost \(k&gt;0\). If the agent works, high revenue \(H\) arrives with probability \(p\). If the agent shirks, high revenue never arrives.</p>
+              <div class="formula-box">
+                <p><strong>Indirect rule or tax farming:</strong></p>
+                <p>\[pSH \geq k, \qquad S_I^* = \frac{k}{pH}, \qquad \pi_I = p(1-S_I^*)H = pH-k.\]</p>
+                <p>Monitoring \(q\) does not enter \(\pi_I\). The ruler can sell the right to collect taxes in advance. Competition among potential tax farmers can transform a share contract into a fixed-payment auction.</p>
+              </div>
+              <div class="formula-box">
+                <p><strong>Direct rule or salaried administration:</strong></p>
+                <p>\[pSH + qV \geq k, \qquad S_D^* = \max\left\{0,\frac{k-qV}{pH}\right\}.\]</p>
+                <p>\[\pi_D = \begin{cases} pH, & qV&gt;k, \\ pH-k+qV, & qV\leq k. \end{cases}\]</p>
+                <p>In the interior case \(qV\leq k\), moving from indirect to direct rule has transition cost \(C\). The ruler chooses direct rule when</p>
+                <p>\[pH-k+qV-C \geq pH-k \quad \Longleftrightarrow \quad q \geq q^* = \frac{C}{V}.\]</p>
+              </div>
+              <p>The model's core result is not that real states literally follow these equations. The result is that indirect rule works when the ruler cannot see much, while direct rule becomes attractive when monitoring and dismissal together can discipline agents.</p>
+
+              <h3>2. Kiser: agency theory as a conceptual framework</h3>
+              <p>Kiser asks about institutional form in early modern tax collection. The dependent variable is not simply how much the state collected. It is whether rulers used tax farming, state administration, or mixed systems across tax types. His main contribution is theoretical arbitrage: he brings contract theory into historical sociology and uses it to reinterpret markets and hierarchies in taxation.</p>
+              <p>The lesson is two-sided. Kiser gives a useful list of structural factors: the nature of the tax, state size, ruler autonomy, and control technologies. These factors are unified by monitoring. But the article still needs a clearer test structure. A stronger test would include a table showing, for each case and each tax type, which propositions fit and which do not. The predictability argument also remains a serious alternative because historical tax officials often cared about stable revenue flows.</p>
+
+              <h3>3. Sng: a clear but fragile formal model</h3>
+              <p>Sng does not model the choice between tax farming and state administration. He assumes a hierarchical Qing state and asks how weak monitoring shapes the official tax rate, corruption, bureaucratic size, and fiscal trajectory. The ruler sets an official tax rate \(\tau\). Local agents add an illegal surcharge \(\varepsilon\). Taxpayers rebel if total burden exceeds \(r\).</p>
+              <div class="formula-box">
+                <p>Agent's extortion payoff:</p>
+                <p>\[V_A = \varepsilon Y - m\varepsilon^2 X.\]</p>
+                <p>Equilibrium extortion and official tax rate:</p>
+                <p>\[\varepsilon^* = \frac{Y}{2mX}, \qquad \tau^* = r - \frac{Y}{2mX}.\]</p>
+                <p>When \(m\) is low, extortion is high. The ruler lowers the official tax rate to keep \(\tau + \varepsilon \leq r\).</p>
+              </div>
+              <div class="formula-box">
+                <p>Bureaucratic size \(\beta\) is chosen with cost \(C(\beta)\):</p>
+                <p>\[V_R = \tau \beta Y - C(\beta), \qquad \tau^*Y = C'(\beta^*).\]</p>
+                <p>If weak monitoring lowers \(\tau^*\), it also lowers the marginal benefit of adding counties. The result is a small bureaucracy.</p>
+              </div>
+              <p>The dynamic extension sets output as \(Y=AN\). Population growth raises the tax base, but it also raises the return to extortion. If monitoring is weak enough, the second effect eventually dominates and fiscal revenue follows a hump-shaped pattern. This creates a warning: the inverted-U result may depend on a modeling move that splits total output into components and places them inside a concave function. The punishment parameter \(X\) is also a fragile assumption because it looks like something the ruler might choose, not something that simply falls from the sky.</p>
+
+              <h3>4. Stasavage: councils and bureaucracy as alternative information technologies</h3>
+              <p>Stasavage changes the dependent variable. He is not explaining tax farming or Qing decline. He asks why early democracy appeared in some settings and autocracy in others. Chapter 3 can be read as an argument about weak rulers. Early democracy becomes likely when rulers face uncertainty about production, when people can exit, and when rulers need people for military service. Councils help rulers learn what society can pay and help organize governance without requiring a deep bureaucracy.</p>
+              <p>Chapter 4 gives the mechanism its historical direction. Technologies of writing, soil mapping, geometry, surveying, and intensive agriculture make the bureaucratic alternative more feasible. In this sense, technology can undermine early democracy. When bureaucrats can map soil, count plots, survey land, and keep records, rulers need less information from councils. China’s fish-scale maps and Aztec soil glyphs matter because they make agricultural production more legible for taxation. Medieval Europe’s relative backwardness in these mundane technologies left rulers weaker and gave representative institutions more room to survive.</p>
+
+              <h3>5. Sánchez de la Sierra: a mechanism test</h3>
+              <p>Sánchez de la Sierra gives the cleanest empirical test of the observability mechanism. If output is observable and valuable, an armed actor can tax production directly and provide protection at the production site. If output is hard to observe, the actor moves to villages where income is spent and builds more administrative capacity to tax people and consumption.</p>
+              <div class="table-wrap">
+                <table class="method-table">
+                  <caption>The mechanism in Sánchez de la Sierra</caption>
+                  <thead><tr><th>Mineral</th><th>Observability</th><th>Taxing strategy</th><th>Institutional implication</th></tr></thead>
+                  <tbody>
+                    <tr><td>Coltan</td><td>Bulky, visible, difficult to hide</td><td>Customs-like taxes at mines and roadblocks</td><td>Monopoly of violence and protection at production sites. Less need to penetrate village society</td></tr>
+                    <tr><td>Gold</td><td>Small, valuable, easy to hide</td><td>Entry fees, mining visas, market taxes, poll taxes, and taxes in support villages</td><td>More fiscal and judicial administration because the actor must tax income in circulation, not only output</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>6. Theory lesson</h3>
+              <div class="lesson">
+                <p><strong>Lesson:</strong> A model should not be asked to become miniature reality. The key questions are whether it isolates a mechanism, makes its assumptions explicit, and produces implications that can be separated from rival mechanisms. The decisive omissions are not all unrealistic details. The decisive omissions are the ones that would change the qualitative result.</p>
+              </div>
+            </div>
+
+            <div class="lang-zh">
+              <h3>1. 课堂板书模型作为 toy model</h3>
+              <p>课堂模型不是对任何真实税制的写实描述，而是隔离一个机制的最小机器：监控能力使直接科层制更有吸引力，因为统治者可以把解雇作为惩罚工具。模型有两个行动者：统治者和中间人。统治者选择间接统治 \(I\) 或直接统治 \(D\)。代理人选择是否努力 \(e\in\{0,1\}\)，努力成本 \(k&gt;0\)。代理人努力时，高收入 \(H\) 以概率 \(p\) 出现；代理人不努力时，高收入不会出现。</p>
+              <div class="formula-box">
+                <p><strong>间接统治或包税制：</strong></p>
+                <p>\[pSH \geq k, \qquad S_I^* = \frac{k}{pH}, \qquad \pi_I = p(1-S_I^*)H = pH-k.\]</p>
+                <p>监控能力 \(q\) 不进入 \(\pi_I\)。统治者可以提前出售征税权。若存在多个潜在包税人竞争，这个分成合约可以转化为固定金额的拍卖合约。</p>
+              </div>
+              <div class="formula-box">
+                <p><strong>直接统治或薪俸制行政征税：</strong></p>
+                <p>\[pSH + qV \geq k, \qquad S_D^* = \max\left\{0,\frac{k-qV}{pH}\right\}.\]</p>
+                <p>\[\pi_D = \begin{cases} pH, & qV&gt;k, \\ pH-k+qV, & qV\leq k. \end{cases}\]</p>
+                <p>在内点情形 \(qV\leq k\) 下，从间接统治转向直接统治有转换成本 \(C\)。统治者选择直接统治的条件是</p>
+                <p>\[pH-k+qV-C \geq pH-k \quad \Longleftrightarrow \quad q \geq q^* = \frac{C}{V}.\]</p>
+              </div>
+              <p>模型的核心结果不是说真实国家会逐字遵循这些公式，而是说：间接统治在统治者看不清地方时可以运作；直接统治在监控与解雇能够共同约束代理人时变得更有吸引力。</p>
+
+              <h3>2. Kiser：agency theory 作为概念框架</h3>
+              <p>Kiser 研究早期现代税收中的制度形式。因变量不是简单的税收收入，而是统治者在不同税种上使用包税制、国家行政征收还是混合制度。他的主要贡献是理论套利：把合约理论带入历史社会学，用它重新解释税收中的市场与科层。</p>
+              <p>这里的 lesson 是双面的。Kiser 提供了一组有用的结构性因素：税种性质、国家规模、统治者自主性和控制技术。这些因素被监控能力统一起来。但论文需要更清楚的检验结构。更强的写法应当有一张表，对每个案例和税种说明哪些命题符合，哪些命题不符合。Predictability 也应保留为严肃替代解释，因为历史税务官确实常常关心稳定收入流。</p>
+
+              <h3>3. Sng：清楚但脆弱的形式模型</h3>
+              <p>Sng 没有建模包税制与国家行政征收之间的选择。他假定清代国家已经是层级官僚制，并问弱监控如何影响官方税率、腐败、官僚规模和财政轨迹。统治者设定官方税率 \(\tau\)。地方代理人增加非法附加负担 \(\varepsilon\)。纳税人的总负担超过 \(r\) 时会反叛。</p>
+              <div class="formula-box">
+                <p>代理人的勒索收益：</p>
+                <p>\[V_A = \varepsilon Y - m\varepsilon^2 X.\]</p>
+                <p>均衡勒索率与官方税率：</p>
+                <p>\[\varepsilon^* = \frac{Y}{2mX}, \qquad \tau^* = r - \frac{Y}{2mX}.\]</p>
+                <p>当 \(m\) 低时，勒索高。统治者压低官方税率，以维持 \(\tau + \varepsilon \leq r\)。</p>
+              </div>
+              <div class="formula-box">
+                <p>官僚规模 \(\beta\) 的成本为 \(C(\beta)\)：</p>
+                <p>\[V_R = \tau \beta Y - C(\beta), \qquad \tau^*Y = C'(\beta^*).\]</p>
+                <p>弱监控压低 \(\tau^*\) 时，也会降低增设县治的边际收益。结果是小官僚机构。</p>
+              </div>
+              <p>动态拓展把产出设为 \(Y=AN\)。人口增长扩大税基，但也提高勒索回报。如果监控足够弱，第二个效应最终压倒第一个效应，财政收入出现驼峰形。这个问题提示：倒 U 型结果可能依赖一个把总产出拆分并放进凹函数的建模处理。惩罚参数 \(X\) 也是脆弱假设，因为它看起来像统治者可以选择的东西，而不是从天上掉下来的东西。</p>
+
+              <h3>4. Stasavage：council 与 bureaucracy 作为替代性信息技术</h3>
+              <p>Stasavage 更换了因变量。他不是解释包税制，也不是解释清代衰落，而是问为什么某些环境中出现早期民主，某些环境中出现专制。第三章可以读作关于弱统治者的论证。早期民主更可能出现在三个条件下：统治者不确定社会能生产多少，人们容易退出，统治者需要人民提供军事服务。Council 帮助统治者知道社会能付多少，也帮助组织治理，而不要求一个很深的官僚体系。</p>
+              <p>第四章给这个机制加入历史方向。书写、土壤地图、几何、土地测量和集约农业等技术，使官僚替代方案更可行。在这个意义上，技术进步可能削弱早期民主。当官僚能够绘制土壤、清点地块、测量土地并保存记录时，统治者就不那么需要从 council 获得信息。中国的鱼鳞图和阿兹特克土壤 glyphs 重要，是因为它们使农业生产对征税者更可辨识。中世纪欧洲在这些日常技术上的相对落后，使统治者更弱，也给代表性制度留下了更大生存空间。</p>
+
+              <h3>5. Sánchez de la Sierra：机制检验</h3>
+              <p>Sánchez de la Sierra 对可观察性机制给出了最清楚的经验检验。如果产出可观察且有价值，武装行为者可以直接在生产地征税并提供保护。如果产出难以观察，行为者就转向收入被消费的村庄，并建立更多行政能力来向人口和消费征税。</p>
+              <div class="table-wrap">
+                <table class="method-table">
+                  <caption>Sánchez de la Sierra 中的机制</caption>
+                  <thead><tr><th>矿产</th><th>可观察性</th><th>征税策略</th><th>制度含义</th></tr></thead>
+                  <tbody>
+                    <tr><td>钶钽矿</td><td>体积大、可见、难以隐藏</td><td>矿点和路障上的类似关卡税</td><td>在生产地建立暴力垄断和保护，对村庄社会的渗透需求较低</td></tr>
+                    <tr><td>黄金</td><td>体积小、价值高、容易隐藏</td><td>入场费、采矿签证、市场税、人头税和 support villages 中的税</td><td>需要更多财政与司法行政，因为行为者必须向流通中的收入征税，而不只是向产出征税</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>6. 理论上的 lesson</h3>
+              <div class="lesson">
+                <p><strong>Lesson：</strong>模型不应被要求成为缩小版现实。关键问题是：它是否隔离了一个机制，是否把假设显性化，是否产生能够同竞争机制区分开的经验含义。决定性的遗漏不是所有不现实的细节，而是那些一旦改变就会改变定性结论的遗漏。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sf-field" id="build-model">
+          <h2 data-en="How to build a model" data-zh="如何建构模型">How to build a model</h2>
+          <div class="md-body">
+            <div class="lang-en">
+              <blockquote class="md-quote">This is a modeling checklist for turning an intuition into a testable argument.</blockquote>
+
+              <h3>1. Status of a model</h3>
+              <p>George Box's line, "all models are wrong, but some are useful," is the right starting point. A model is not built to copy reality. It isolates a causal mechanism, makes its logic transparent, and derives claims that can be checked against the world. A model must omit details. That is not a defect by itself. A model that includes everything is as complex as reality and therefore not useful as a tool for thought.</p>
+
+              <h3>2. Outcome, actors, action space, and mechanism</h3>
+              <p>The first discipline is to write the dependent variable before writing the model. Is the outcome tax revenue, the form of tax collection, the size of bureaucracy, council governance, fiscal administration, or state origins? These are not the same outcome. The model should then name the actors, what each actor can choose, what information each actor has, and what mechanism connects choices to outcomes.</p>
+              <p>The classroom toy model works because it is minimal: ruler, agent, effort, high or low revenue, monitoring, and a choice between indirect and direct rule. Its value comes from the way a few assumptions generate a threshold result:</p>
+              <div class="formula-box">
+                <p>\[\pi_I=pH-k, \qquad \pi_D=pH-k+qV, \qquad q^*=\frac{C}{V}.\]</p>
+                <p>If \(q\geq q^*\), direct rule becomes worth the transition cost. Without the formal setup, the link among these claims is much harder to see.</p>
+              </div>
+
+              <h3>3. Three uses of formalization</h3>
+              <h4>Internal consistency</h4>
+              <p>Formalization forces assumptions onto the page and checks whether the steps fit together. In the direct-rule contract, for example, the maximum operator is necessary:</p>
+              <div class="formula-box">
+                <p>\[S_D^* = \max\left\{0,\frac{k-qV}{pH}\right\}.\]</p>
+              </div>
+              <p>Without the \(\max\), the model could imply a negative share, which is nonsense. This does not mean mathematical modeling is the only path to consistency. Political theory, philosophy, and law can also be internally rigorous. Mathematics is one language for discipline, not the only language.</p>
+              <h4>Non-obvious observable implications</h4>
+              <p>This is the most important use. A model becomes valuable when it sends the analysis toward patterns not already known in advance. In historical research, prediction does not mean forecasting the future. It means deriving an observable implication: if the mechanism is right, X should appear in the historical record. X should not simply be the fact that motivated the model.</p>
+              <h4>Signal and persuasion</h4>
+              <p>There is also a less noble use. In the discipline, formal models can sometimes signal technical seriousness or hide weak empirical work. That is not a reason to avoid modeling. It is a reason to use modeling early as a private discipline, even if the final paper does not publish a model. Forcing the argument into the sentence "the outcome is Y, the treatment is X, and the mechanism is M" is already useful.</p>
+
+              <h3>4. Distinguishing predictions</h3>
+              <p>A model that only reproduces the motivating fact is weak. Sng's model is useful as a training case. If the model says \(\varepsilon^*=Y/(2mX)\), then at the same distance and punishment level, richer areas should place more downward pressure on the official tax rate because extortion pressure rises with \(Y\). That prediction is not the same as a simple productivity story, which would expect richer areas to pay more.</p>
+              <p>The model can be pushed in several directions: compare places at the same distance but different incomes; compare postal-road locations with off-road locations; test tax rates and bureaucratic density jointly; examine whether the timing of fiscal decline follows economic expansion rather than ideological announcements; and ask whether salary reforms such as the Yongzheng reforms produce only temporary relief if the structural monitoring problem remains.</p>
+
+              <h3>5. Do not let key parameters fall from the sky</h3>
+              <p>A parameter can be exogenous in a model without being exogenous in the world. If the explanation depends on \(q\), \(m\), \(X\), or \(r\), the analysis has to ask who chooses it, what changes it, and whether treating it as fixed removes the real politics from the model. This is why Stasavage matters: he asks how writing, measurement, surveying, and bureaucratic records can raise legibility. He opens the question that Kiser and Sng often leave outside the model.</p>
+
+              <h3>6. Critique by changing assumptions that matter</h3>
+              <p>A useful critique is not "reality is more complicated." Reality is always more complicated. A useful critique identifies an assumption that might change the qualitative result.</p>
+              <div class="table-wrap">
+                <table class="method-table">
+                  <caption>Constructive-critique checklist</caption>
+                  <thead><tr><th>Critique</th><th>Question</th><th>Example</th></tr></thead>
+                  <tbody>
+                    <tr><td>Robustness</td><td>If this assumption is relaxed, does the core result survive?</td><td>If Sng's punishment \(X\) becomes a ruler choice, the model must explain why the ruler does not set it very high</td></tr>
+                    <tr><td>Scope condition</td><td>What must be true for the game itself to exist?</td><td>Kiser's tax farm requires enough enforcement to make the winning bidder pay</td></tr>
+                    <tr><td>Alternative mechanism</td><td>Can a different mechanism produce the same pattern?</td><td>Distance from Beijing may capture monitoring, but also ideology, fiscal quotas, institutional design, or failure to tax commerce</td></tr>
+                    <tr><td>Conceptual independence</td><td>Is the outcome defined separately from the evidence?</td><td>Sánchez de la Sierra uses state functions to identify state formation, so it is better read as a mechanism paper</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>7. Common traps</h3>
+              <ul class="clean-list">
+                <li><strong>Post hoc rationalization:</strong> The Qing decline is known first, then assumptions are chosen that make decline appear. The model should generate implications beyond the known fact.</li>
+                <li><strong>Functional-form driven results:</strong> if an inverted-U appears only because of a particular concave payoff function, the result is not robust enough.</li>
+                <li><strong>Convenient exogeneity:</strong> if a parameter is really chosen by an actor in the model, either endogenize it or defend why it can be fixed.</li>
+                <li><strong>Over-simplified concepts:</strong> rebellion, state formation, and legibility are not single buttons. Simplification is allowed, but the simplification should be explicit.</li>
+              </ul>
+
+              <h3>8. Meta-principles</h3>
+              <ol class="clean-list">
+                <li>A model is a discovery tool, not a display tool. If nothing new is learned after writing it, the model has not done its main job.</li>
+                <li>The value of a model equals the number and quality of its distinguishing observable implications.</li>
+                <li>Simplicity is not the final goal. Discriminating power is the final goal.</li>
+                <li>Exogeneity assumptions need defense. They are not free simplifications.</li>
+                <li>A constructive critique gives an actionable modification and explains why it might change the result.</li>
+                <li>A good research cycle is: start with a simple exogenous mechanism, endogenize key parameters, improve measurement, and then look for identification.</li>
+                <li>Even if the model is not published, trying to formalize the argument is useful because it forces the outcome, cause, mechanism, and scope conditions to be stated clearly.</li>
+              </ol>
+            </div>
+
+            <div class="lang-zh">
+              <blockquote class="md-quote">这一节是把直觉转化为可检验论证的建模 checklist。</blockquote>
+
+              <h3>1. 模型的地位</h3>
+              <p>George Box 的“所有模型都是错的，但有些模型是有用的”是建模的出发点。建模型不是为了复制现实，而是为了隔离一个因果机制，让逻辑透明，并推出可以和世界对照的命题。模型必须省略细节。这本身不是缺陷。一个包含一切的模型与现实同等复杂，也就不能作为思维工具。</p>
+
+              <h3>2. 因变量、行动者、行动空间和机制</h3>
+              <p>第一条纪律是在写模型前先写因变量。要解释的是税收收入、征税制度形式、官僚规模、council governance、财政行政，还是国家起源？这些不是同一个结果。然后写清行动者是谁，每个行动者能选择什么，拥有什么信息，以及什么机制把选择连接到结果。</p>
+              <p>课堂 toy model 有用，是因为它足够简洁：统治者、代理人、努力、高低收入、监控，以及间接统治和直接统治之间的选择。几个假设推出一个阈值结果：</p>
+              <div class="formula-box">
+                <p>\[\pi_I=pH-k, \qquad \pi_D=pH-k+qV, \qquad q^*=\frac{C}{V}.\]</p>
+                <p>如果 \(q\geq q^*\)，直接统治值得支付转换成本。没有形式化设置，这几个命题之间的关系不容易看清。</p>
+              </div>
+
+              <h3>3. 形式化的三种用途</h3>
+              <h4>内部一致性</h4>
+              <p>形式化迫使假设写在纸面上，并检查每一步是否能连起来。比如在直接统治合约中，必须写出 max：</p>
+              <div class="formula-box">
+                <p>\[S_D^* = \max\left\{0,\frac{k-qV}{pH}\right\}.\]</p>
+              </div>
+              <p>如果没有 \(\max\)，模型可能推出负分成，这是荒谬的。但这不意味着数学模型是保持内部一致性的唯一路径。政治理论、哲学和法学也可以非常严密。数学是一种纪律语言，不是唯一语言。</p>
+              <h4>非显而易见的可观察含义</h4>
+              <p>这是最重要的用途。模型有价值，是因为它能推动分析去寻找本来不知道该寻找的模式。在历史研究中，prediction 不是预测未来，而是推出可观察含义：如果机制成立，历史资料中应当看到 X。这个 X 不应只是激发建模的那个事实本身。</p>
+              <h4>信号与说服</h4>
+              <p>还有不那么高尚的一面。在学科现实中，形式模型有时会作为技术严肃性的信号，也可能掩盖薄弱的经验分析。这不是不建模的理由，而是提醒建模首先可以作为思维训练。哪怕最后论文不放模型，强迫论证写成“因变量是 Y，解释变量是 X，机制是 M”也有价值。</p>
+
+              <h3>4. 区分性预测</h3>
+              <p>一个只能复现出发事实的模型很弱。Sng 的模型是很好的训练例子。如果模型说 \(\varepsilon^*=Y/(2mX)\)，那么在距离和惩罚不变时，更富裕地区应当对官方税率产生更强下压，因为勒索压力随 \(Y\) 上升。这个预测不同于单纯生产力故事，后者通常会预期更富裕地区缴纳更多税。</p>
+              <p>模型可以继续往几个方向推：比较同样距离但收入不同的地区；比较驿道沿线和偏离驿道的地区；联合检验税率与官僚密度；考察财政下降的时间点是否跟随经济规模扩大，而不是跟随意识形态宣言；追问雍正养廉银这类薪俸改革是否只能带来暂时缓解，因为结构性监控问题仍然存在。</p>
+
+              <h3>5. 不让关键参数从天上掉下来</h3>
+              <p>一个参数可以在模型中外生，但这不意味着它在现实中外生。如果解释依赖 \(q\)、\(m\)、\(X\) 或 \(r\)，就要问它是谁选择的，什么会改变它，把它固定是否把真正的政治从模型中拿掉。这就是 Stasavage 重要的原因：他问书写、测量、土地测绘和官僚记录如何提高可辨识性。他打开了 Kiser 和 Sng 常常留在模型外的问题。</p>
+
+              <h3>6. 通过改变关键假设来批评模型</h3>
+              <p>有用的批评不是“现实更复杂”。现实总是更复杂。有用的批评会指出一个可能改变核心定性结论的假设。</p>
+              <div class="table-wrap">
+                <table class="method-table">
+                  <caption>建设性批评 checklist</caption>
+                  <thead><tr><th>批评</th><th>问题</th><th>例子</th></tr></thead>
+                  <tbody>
+                    <tr><td>稳健性</td><td>如果放松这个假设，核心结果是否还存在</td><td>如果 Sng 的惩罚 \(X\) 变成统治者选择，模型必须解释统治者为什么不把 \(X\) 设得很高</td></tr>
+                    <tr><td>范围条件</td><td>什么必须成立，这个博弈才存在</td><td>Kiser 的包税制需要足够执行力，使中标者必须付款</td></tr>
+                    <tr><td>替代机制</td><td>另一个机制能否产生同样经验模式</td><td>距北京距离可能测量监控，也可能测量意识形态、财政定额、制度设计或商业税失败</td></tr>
+                    <tr><td>概念独立性</td><td>因变量是否独立于证据而定义</td><td>Sánchez de la Sierra 用国家功能识别国家形成，所以更适合谨慎地读作机制论文</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>7. 常见陷阱</h3>
+              <ul class="clean-list">
+                <li><strong>事后合理化：</strong>先知道清朝衰落，然后选择能制造衰落的假设。模型应当产生超出已知事实的含义。</li>
+                <li><strong>函数形式驱动结果：</strong>如果倒 U 型只来自某个特定凹函数，结果就还不够稳健。</li>
+                <li><strong>方便但可疑的外生性：</strong>如果一个参数其实是模型中某个行动者能选择的，就应当内生化它，或解释为什么可以固定。</li>
+                <li><strong>概念过度简化：</strong>叛乱、国家形成和 legibility 都不是单一按钮。简化可以，但必须知道简化掉了什么。</li>
+              </ul>
+
+              <h3>8. 元原则</h3>
+              <ol class="clean-list">
+                <li>模型是发现工具，不是展示工具。如果写完模型后没有学到新东西，模型就没有完成主要任务。</li>
+                <li>模型的价值等于它产生的区分性可观察含义的数量和质量。</li>
+                <li>简洁不是终极目标，区分力才是终极目标。</li>
+                <li>外生性假设需要辩护，不是免费的简化。</li>
+                <li>建设性批评要给出可操作修改，并说明这个修改为什么可能改变结果。</li>
+                <li>好的研究循环是：先用简单外生机制厘清逻辑，再内生化关键参数，再改进测量，最后寻找识别。</li>
+                <li>即使最后不在论文中使用模型，尝试形式化也有价值，因为它迫使因变量、原因、机制和范围条件被写清楚。</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="sf-field" id="testing">
+          <h2 data-en="Testing &amp; identification" data-zh="检验与识别">Testing &amp; identification</h2>
+          <div class="md-body">
+            <div class="lang-en">
+              <h3>1. Prediction as observable implication</h3>
+              <p>In historical work, prediction does not mean predicting the future. It means deriving a claim about observable evidence from the model's logic. The standard is that the implication should not be merely the motivating fact. If a model is built to explain Qing fiscal decline, reproducing Qing fiscal decline is not enough. Additional patterns are needed, especially patterns that rival theories would not all predict.</p>
+
+              <h3>2. Kiser gives comparative propositions, not causal identification</h3>
+              <p>Kiser's evidence is comparative historical evidence. It is best read as a structured plausibility test, not as a regression design. The paper would be stronger if it made the tests explicit case by case.</p>
+              <div class="table-wrap">
+                <table class="method-table">
+                  <caption>Kiser's propositions as tests</caption>
+                  <thead><tr><th>No.</th><th>Proposition</th><th>Evidence to look for</th></tr></thead>
+                  <tbody>
+                    <tr><td>1</td><td>Harder control of agents should increase tax farming</td><td>Taxes or regions that are hard to audit should be farmed more often</td></tr>
+                    <tr><td>2</td><td>Indirect taxes should be farmed more than direct taxes</td><td>Customs, sales taxes, and excises should be farmed more than land taxes</td></tr>
+                    <tr><td>3</td><td>Larger countries should use more tax farming</td><td>Large territorial states should rely more on delegated collection</td></tr>
+                    <tr><td>4</td><td>Higher ruler autonomy should increase tax farming</td><td>Where taxpayers constrain rulers less, tax farmers can impose higher burdens</td></tr>
+                    <tr><td>5</td><td>Better control technologies should reduce tax farming</td><td>Improved communication, transport, and record keeping should favor administration</td></tr>
+                    <tr><td>6</td><td>Switching between systems should be common</td><td>Rulers should experiment when they cannot observe system efficiency</td></tr>
+                    <tr><td>7</td><td>Tax farms should innovate in control techniques</td><td>Tax-farm organizations should use wages, monitoring, and internal controls more effectively than state administration</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>3. Sng gives empirical checks, but the causal burden remains high</h3>
+              <p>Sng's empirical work does two things. First, it uses spatial variation around 1820. Tax per capita and county density decline with distance from Beijing. Second, it reconstructs Qing fiscal revenue from 1650 to 1850 and shows real and per capita decline despite population and economic growth. These are important evidence, but not full causal identification. Sng himself states that the distance analysis does not identify causality. The harder test is to derive implications that distinguish size from ideology, fiscal quotas, frontier politics, institutional design, commercial tax failure, and administrative inertia.</p>
+              <div class="formula-box">
+                <p>One possible discriminating implication from Sng:</p>
+                <p>\[\varepsilon^* = \frac{Y}{2mX}.\]</p>
+                <p>Holding \(m\) and \(X\) fixed, richer regions should generate stronger extortion pressure and thus lower official tax rates. A pure productivity story would usually point the other way.</p>
+              </div>
+
+              <h3>4. Stasavage gives broad pattern evidence</h3>
+              <p>Stasavage's evidence is comparative and wide. Chapter 3 is best read as a set of pattern tests. Agricultural suitability predicts whether central governance exists, but it does not strongly predict whether governance is autocratic or council-based. Caloric variability is more closely associated with council governance. Evidence from western North America is used as a second setting. Population density gives a way to think about exit and circumscription. Warrior prestige gives a way to think about military democracy. The bureaucracy comparison is especially useful: if councils and bureaucrats are substitute solutions to information problems, then caloric variability should predict councils mainly where bureaucrats are absent.</p>
+              <p>Chapter 4 then tests the historical direction with examples of soil mapping, surveying, writing, and agricultural intensification. This is strong mechanism-building but weaker causal identification. The examples clarify why bureaucratic legibility matters, but the book often relies on broad comparisons rather than a clean shock or design.</p>
+
+              <h3>5. Sánchez de la Sierra gives the strongest identification of the mechanism</h3>
+              <p>Sánchez de la Sierra uses global price shocks and local mineral endowments. Since the DRC is a price taker in gold, and the coltan shock is tied to the PlayStation II demand boom, the world prices are more plausibly exogenous to local armed actors than local prices would be.</p>
+              <div class="formula-box">
+                <p>Core reduced-form specification:</p>
+                <p>\[Y_{jt}=\beta_t+\alpha_j+\gamma_c C_j p^{US}_{c,t}+\gamma_g G_j p^{US}_{g,t}+\varepsilon_{jt}.\]</p>
+                <p>Here \(Y_{jt}\) can be output taxation, stationary-bandit presence, protection, fiscal administration, or judicial administration. \(C_j\) and \(G_j\) mark coltan and gold locations. \(\alpha_j\) and \(\beta_t\) are location and year fixed effects.</p>
+              </div>
+              <p>This design buys stronger internal validity for the observability mechanism. It does not automatically buy validity for the phrase "origins of the state," because the actors operate inside a weak modern state and global commodity economy, not in a prehistoric stateless world.</p>
+
+              <h3>6. Regression tables as claims about credibility</h3>
+              <p>Regression tables often begin with a bivariate estimate, then add controls, fixed effects, alternative estimators, robustness checks, and subsamples. Each column can be read as an answer to a possible objection. The weakness is that papers do not always say clearly which threat each column is meant to address.</p>
+
+              <h3>7. Identification lesson</h3>
+              <div class="lesson">
+                <p><strong>Lesson:</strong> testing a model requires more than showing that it matches the motivating fact. the test must ask which other patterns must be true if the mechanism is true, which rival mechanisms predict something different, and whether the variables needed for that test can actually be measured.</p>
+              </div>
+            </div>
+
+            <div class="lang-zh">
+              <h3>1. Prediction 作为可观察含义</h3>
+              <p>在历史研究中，prediction 不是预测未来，而是从模型逻辑推出关于可观察证据的命题。使用的标准是：这个命题不能只是激发模型的那个事实本身。如果一个模型是为了解释清代财政衰落而建，那么它能够再现清代财政衰落并不足够。还需要其他经验模式，尤其是竞争理论不会全部给出同样预测的模式。</p>
+
+              <h3>2. Kiser 给出比较命题，不给出因果识别</h3>
+              <p>Kiser 使用的是比较历史证据。它更适合读作结构化的可信性检验，而不是回归设计。论文如果能对每个案例显性列出检验，会更有说服力。</p>
+              <div class="table-wrap">
+                <table class="method-table">
+                  <caption>Kiser 的命题如何变成检验</caption>
+                  <thead><tr><th>编号</th><th>命题</th><th>需要寻找什么证据</th></tr></thead>
+                  <tbody>
+                    <tr><td>1</td><td>控制代理人越难，越可能使用包税制</td><td>审计困难的税种或地区更常使用包税制</td></tr>
+                    <tr><td>2</td><td>间接税应比直接税更常被包税</td><td>关税、销售税、消费税比土地税更常被包税</td></tr>
+                    <tr><td>3</td><td>国家越大，越可能使用包税制</td><td>大领土国家更依赖委托征收</td></tr>
+                    <tr><td>4</td><td>统治者自主性越高，越可能使用包税制</td><td>纳税人约束弱时，包税人可以施加更高负担</td></tr>
+                    <tr><td>5</td><td>控制技术越好，越少使用包税制</td><td>通讯、交通和记录改善后，薪俸制行政征收增加</td></tr>
+                    <tr><td>6</td><td>制度切换应很常见</td><td>统治者无法观察系统真实效率时，会在不同制度间试验</td></tr>
+                    <tr><td>7</td><td>包税组织应在控制技术上更有创新</td><td>包税组织比国家行政更有效使用高薪、监控和内部控制</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>3. Sng 给出经验检查，但因果负担仍然很高</h3>
+              <p>Sng 的经验工作做了两件事。第一，用 1820 年前后的空间变异：距北京越远，人均土地税和县治密度越低。第二，重建 1650 至 1850 年清代财政收入，显示在人口和经济增长的情况下，实际收入和人均收入下降。这些是重要证据，但不是完整因果识别。Sng 自己也说明，距离分析不识别因果。更难的检验是推出能够区分规模、意识形态、财政定额、边疆政治、制度设计、商业税失败和行政惯性的含义。</p>
+              <div class="formula-box">
+                <p>一个可以从 Sng 推出的区分性含义：</p>
+                <p>\[\varepsilon^* = \frac{Y}{2mX}.\]</p>
+                <p>在 \(m\) 和 \(X\) 不变时，更富裕地区会产生更高勒索压力，从而压低官方税率。单纯生产力解释通常会指向相反方向。</p>
+              </div>
+
+              <h3>4. Stasavage 给出广泛的模式证据</h3>
+              <p>Stasavage 的证据是比较性的，而且范围很广。第三章更适合读作一组模式检验。农业适宜性能够预测是否出现中央治理，但不能强烈预测治理是专制还是 council-based。Caloric variability 与 council governance 的关系更紧。北美西部原住民资料提供了第二个场域。人口密度提供了思考退出与 circumscription 的方式。战士声望提供了思考军事民主的方式。关于官僚制的比较尤其有用：如果 council 和官僚都是解决信息问题的替代方案，那么 caloric variability 主要应当在没有官僚时预测 council。</p>
+              <p>第四章再用土壤地图、测量、书写和农业集约化说明历史方向。这是强机制建构，但不是强因果识别。这些例子说明官僚可辨识性为什么重要，但书中常常依赖宽泛比较，而不是干净冲击或识别设计。</p>
+
+              <h3>5. Sánchez de la Sierra 对机制给出最强识别</h3>
+              <p>Sánchez de la Sierra 利用全球价格冲击和地方矿产禀赋。因为刚果民主共和国在黄金市场上是 price taker，钶钽矿冲击又与 PlayStation II 需求繁荣有关，世界价格相对于地方武装行为者行为，比地方价格更可信地外生。</p>
+              <div class="formula-box">
+                <p>核心 reduced-form specification：</p>
+                <p>\[Y_{jt}=\beta_t+\alpha_j+\gamma_c C_j p^{US}_{c,t}+\gamma_g G_j p^{US}_{g,t}+\varepsilon_{jt}.\]</p>
+                <p>这里 \(Y_{jt}\) 可以是产出税、坐寇存在、保护、财政行政或司法行政。\(C_j\) 与 \(G_j\) 表示钶钽矿与黄金地点。\(\alpha_j\) 和 \(\beta_t\) 是地点固定效应和年份固定效应。</p>
+              </div>
+              <p>这个设计为可观察性机制购买了较强内部效度。但它并不自动为“国家起源”这个表述购买效度，因为被观察到的行动者运作在一个弱现代国家和全球商品经济之中，而不是史前无国家世界。</p>
+
+              <h3>6. 回归表作为可信度主张</h3>
+              <p>回归表往往先给双变量估计，再加入控制变量、固定效应、替代估计方法、稳健性检验和子样本。每一列都可以读作对某个潜在质疑的回答。弱点在于，论文并不总是清楚说明每一列针对哪一种识别威胁。</p>
+
+              <h3>7. 识别上的 lesson</h3>
+              <div class="lesson">
+                <p><strong>Lesson：</strong>检验模型不只是说明模型能够匹配出发事实。需要问：如果机制是真的，还必须观察到哪些其他模式？竞争机制会给出什么不同预测？而这些检验所需要的变量是否真的可以测量？</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sf-field" id="limits">
+          <h2 data-en="Limitations &amp; extrapolation" data-zh="局限与外推">Limitations &amp; extrapolation</h2>
+          <div class="md-body">
+            <div class="lang-en">
+              <h3>1. Abstraction vs. damaging omission</h3>
+              <p>All models omit details. Omission itself is not a criticism. The question is whether the omitted element would change the core qualitative conclusion. A harmless simplification leaves the mechanism intact. A damaging omission changes the game.</p>
+              <div class="table-wrap">
+                <table class="method-table">
+                  <caption>Constructive criticism</caption>
+                  <thead><tr><th>Critique type</th><th>Question</th><th>Example</th></tr></thead>
+                  <tbody>
+                    <tr><td>Scope condition</td><td>What must be true for the model to apply?</td><td>Kiser's tax farming requires enforcement. If the ruler cannot make the winning bidder pay, there is no real contract</td></tr>
+                    <tr><td>Endogeneity</td><td>Who chooses the parameter treated as fixed?</td><td>In Sng, punishment \(X\) and monitoring \(m\) may be institutional choices, not only exogenous constraints</td></tr>
+                    <tr><td>Functional form</td><td>Would the result survive a different reasonable payoff function?</td><td>Sng's inverted-U fiscal pattern may depend on a convenient concavity assumption</td></tr>
+                    <tr><td>Alternative mechanism</td><td>Can another mechanism produce the same pattern?</td><td>Distance from Beijing may proxy monitoring, but also fiscal quota rigidity, ideology, commercial-tax failure, or institutional obsolescence</td></tr>
+                    <tr><td>Conceptual scope</td><td>Does the claim exceed what the design identifies?</td><td>Sánchez de la Sierra identifies a mechanism of state-like functions, not the full origin of the ancient state</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>2. Kiser: keep the scope condition visible</h3>
+              <p>Kiser works best when the ruler can enforce contracts but cannot cheaply audit tax collection. The Spanish colonial alcabala example makes the distinction vivid. Auditing whether a merchant was truly passing through a city, whether an exemption was valid, or whether a receipt was accurate was hard. Suppressing an unauthorized armed collector who claimed the crown's taxing right could be easier. This is why monitoring and enforcement need to remain separate.</p>
+              <p>Mixed systems also need to be kept clear. For Kiser, mixed systems usually mean that different tax types use different collection forms. Indirect taxes may be farmed while land taxes are administered directly. This does not necessarily mean one agent receives a hybrid contract.</p>
+
+              <h3>3. Sng: keep the mechanism, narrow the claim</h3>
+              <p>The Sng discussion should not be reduced to rejection. The paper captures a real agency mechanism: hierarchical bureaucracies face monitoring problems, and distance can worsen those problems. The empirical contributions are important: spatial gradients in taxation and administration, plus a reconstructed fiscal time series. The more fragile claim is that size itself explains dynastic decline.</p>
+              <p>The critical point is to separate geographic size from institutional design. Late imperial China may have been weak because difficult geography met a fiscal and bureaucratic system that stopped adapting. The late Qing customs service under Robert Hart is a useful counterexample. The empire did not shrink, but new extraction channels and professionalized administration raised revenue sharply. This does not prove size was irrelevant. It shows that size was not the only binding constraint.</p>
+              <p>The no-revolt constraint also needs care. If collective action was organizationally difficult, the rebellion threshold \(r\) may have been endogenous and high. Then low taxation may reflect administrative incapacity, quota rigidity, or a political choice to keep governance cheap, not only fear of revolt.</p>
+
+              <h3>4. Stasavage: keep the question and limit the test</h3>
+              <p>Stasavage asks the right theoretical question for this week: how does \(q\) change? Chapter 3 shows why weak rulers may use councils when production is uncertain and people can exit. Chapter 4 shows why technologies of legibility can make hierarchy easier. This is an important extension of the Kiser-Sng framework.</p>
+              <p>At the same time, the empirical caution remains. The evidence often works by broad comparison and illustration. The ethnographic datasets raise reliability issues. The same concept, legibility, is measured differently across chapters. That does not make the argument unhelpful, but it should not be treated as a clean causal design.</p>
+
+              <h3>5. Sánchez de la Sierra: keep mechanism and origin separate</h3>
+              <p>Sánchez de la Sierra provides a strong mechanism test: output observability changes the taxation and administration that coercive actors build. But the title's state-origin claim is broader than the design. Eastern Congo is not an original state-of-nature setting. Armed actors operate inside a world shaped by the Congolese state, colonial legacies, global commodity markets, NGOs, and military networks.</p>
+              <p>The stationary-bandit frame also has a scope condition. Olson's logic assumes a time horizon long enough for investment in rule to pay off. In a commodity boom, armed actors may not know whether a price shock will last. The paper is therefore best read modestly: it tests when coercive actors build state-like functions, not the full origin of the state.</p>
+
+              <h3>6. Extrapolation lesson</h3>
+              <div class="lesson">
+                <p><strong>Lesson:</strong> A mechanism test should not be turned into a civilizational origin story without adding scope conditions. A mechanism can be real, identified, and important, while still being only one part of a larger historical explanation.</p>
+              </div>
+            </div>
+
+            <div class="lang-zh">
+              <h3>1. 抽象与关键遗漏</h3>
+              <p>所有模型都省略细节。省略本身不是批评。关键问题是：被省略的东西是否会改变核心定性结论。无害简化不会改变机制，关键遗漏会改变博弈。</p>
+              <div class="table-wrap">
+                <table class="method-table">
+                  <caption>建设性批评</caption>
+                  <thead><tr><th>批评类型</th><th>问题</th><th>例子</th></tr></thead>
+                  <tbody>
+                    <tr><td>范围条件</td><td>什么必须成立，模型才适用</td><td>Kiser 的包税制需要执行力。如果统治者不能让中标者付款，就没有真实合约</td></tr>
+                    <tr><td>内生性</td><td>模型当作固定的参数，在现实中是谁选择的</td><td>在 Sng 中，惩罚 \(X\) 和监控 \(m\) 可能是制度选择，而不只是外生约束</td></tr>
+                    <tr><td>函数形式</td><td>换一个同样合理的收益函数，结果是否还存在</td><td>Sng 的倒 U 型财政模式可能依赖方便的凹性假设</td></tr>
+                    <tr><td>替代机制</td><td>另一个机制能否产生同样模式</td><td>距北京距离可能代理监控，也可能代理财政定额刚性、意识形态、商业税失败或制度过时</td></tr>
+                    <tr><td>概念范围</td><td>论断是否超过设计能够识别的东西</td><td>Sánchez de la Sierra 识别的是类似国家功能的机制，而不是古代国家的完整起源</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h3>2. Kiser：保留范围条件</h3>
+              <p>Kiser 的框架最适用于这样一种情形：统治者能够执行合约，但不能低成本审计征税过程。西属殖民地 alcabala 的例子把这个区分讲得很清楚。要审计一个商人是否真的只是路过城市、免税资格是否有效、票据是否准确，很难。镇压一个冒用王室征税权的武装征税者，反而可能更容易。因此监控和执行必须分开。</p>
+              <p>Mixed systems 也需要澄清。对 Kiser 而言，混合制度通常是不同税种使用不同征收制度。间接税可能包税，土地税可能由国家行政征收。这不必然意味着同一个代理人获得一个混合合约。</p>
+
+              <h3>3. Sng：保留机制，但收窄论断</h3>
+              <p>对 Sng 的讨论不应简化为否定。论文捕捉了真实的 agency 机制：层级官僚制会产生监控问题，距离可能加剧这些问题。经验贡献也重要：税收与行政的空间梯度，以及重建的财政时间序列。更脆弱的是“规模本身解释王朝衰落”这个强命题。</p>
+              <p>关键是区分地理规模和制度设计。晚期帝制中国可能之所以虚弱，是因为困难地理遇上了一个停止适应的财政和官僚系统。赫德主持的晚清海关是一个有用反例。帝国没有变小，但新的汲取渠道和专业化行政显著提高了收入。这不证明规模无关，而是说明规模不是唯一约束条件。</p>
+              <p>无反叛约束也需要谨慎处理。如果集体行动在组织上很困难，那么叛乱门槛 \(r\) 可能是内生且很高的。低税收就可能反映行政能力不足、财政定额刚性，或维持低成本治理的政治选择，而不只是对叛乱的恐惧。</p>
+
+              <h3>4. Stasavage：保留问题方向，也限制检验强度</h3>
+              <p>Stasavage 问了本周最重要的理论问题：\(q\) 如何变化？第三章说明生产不确定、人们能够退出时，弱统治者为什么可能使用 council。第四章说明可辨识性技术为什么会让等级制更容易。这是对 Kiser-Sng 框架的重要拓展。</p>
+              <p>同时，经验上的谨慎仍然需要保留。证据常常依靠宽泛比较和说明性例子。民族志数据集存在可靠性问题。同一个概念 legibility 在不同章节中被不同方式测量。这不使论证失去价值，但它不能被当作干净因果设计。</p>
+
+              <h3>5. Sánchez de la Sierra：机制与起源分开</h3>
+              <p>Sánchez de la Sierra 提供了强机制检验：产出的可观察性改变暴力行为者建立的征税形式和行政能力。但标题中的国家起源命题比研究设计更宏大。刚果东部不是原初无国家状态。武装团体运作在一个已经受到刚果国家、殖民遗产、全球商品市场、NGO 和军事网络塑造的世界中。</p>
+              <p>坐寇框架也有范围条件。Olson 的逻辑要求行为者有足够长的时间跨度，使投资于统治能够回报。在商品繁荣中，武装行为者未必知道价格冲击能持续多久。因此，这篇文章更适合被温和地读作：它检验的是暴力行为者何时建立类似国家的功能，而不是完整证明国家起源。</p>
+
+              <h3>6. 外推上的 lesson</h3>
+              <div class="lesson">
+                <p><strong>Lesson：</strong>不应在没有补充范围条件的情况下，从一个机制检验直接外推到文明起源叙事。一个机制可以是真实的、被识别的、重要的，但仍然只是更大历史解释的一部分。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <p style="margin-top:26px"><a href="index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

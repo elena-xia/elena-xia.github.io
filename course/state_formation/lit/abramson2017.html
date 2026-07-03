@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Abramson 2017 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 6" data-zh="第 6 周">Week 6</span> · <span data-en="Coercion–Extraction lane" data-zh="强制–汲取层">Coercion–Extraction lane</span> · <span data-en="Early modern (S3)" data-zh="早期现代（S3）">Early modern (S3)</span></p>
+        <h1><span class="lang-en">Scott F. Abramson (2017), “The Economic Origins of the Territorial State,” IO 71.</span><span class="lang-zh">艾布拉姆森（2017）《领土国家的经济起源》，IO。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#3f7d6a" data-en="Grid / GIS" data-zh="网格/GIS">Grid / GIS</span><span class="chip" style="background:#607066" data-en="Panel FE" data-zh="面板固定效应">Panel FE</span><span class="chip" style="background:#9a5737" data-en="Tilly: challenges" data-zh="Tilly：挑战">Tilly: challenges</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The main dependent variable in this paper is the number and size (geographic area) of European states. Specifically, the author focuses on the degree of political fragmentation, that is, how many independent states exist within a given geographic area and how their average geographic scale changes over time (p. 97). In the empirical analysis, the author employs two specific measurements: first, the geographic area of states (measured in square kilometers); second, the number of states formed within fixed geographic units (10,000 square-kilometer grid squares) (p. 117).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文的主要因变量是欧洲国家的数量与规模（地理面积）。具体而言，作者关注的是政治权威的碎片化程度，即在某一特定地理区域内存在多少独立国家，以及这些国家的平均地理规模如何随时间变化（第97页）。在实证分析中，作者采用两种具体测量方式：一是国家的地理面积（以平方公里计），二是在固定地理单元（10,000平方公里的网格方块）内形成的国家数量（第117页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The main independent variable is urban population size, serving as a proxy for urban growth and commercial revival. The author uses the dataset compiled by Bairoch /beɪˈrɒk/, Batou /bæˈtuː/, and Chevre /ˈʃevrə/, which covers approximately 2,200 towns that had populations of 5,000 or more at some point between 800 and 1800 CE (p. 117). Urban population is treated as a measure of economic development, commercial activity, and the strength of emerging burgher classes.</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文的主要自变量是城市人口规模，作为城市增长与商业复兴的代理指标。作者使用贝洛赫(Bairoch /beɪˈrɒk/)、巴图(Batou /bæˈtuː/)和谢弗(Chevre /ˈʃevrə/)编纂的数据集，该数据集涵盖了公元800年至1800年间约2,200个曾拥有5,000人以上人口的城镇（第117页）。城市人口被视为经济发展、商业活动以及新兴市民阶层力量的衡量标准。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>The author adopts a minimalist Weberian /ˈveɪbəriən/ definition of the state. He defines states as “organizations that maintain a quasi-monopoly of violence over a fixed territory”, that is, organizations that have a clear preponderance of coercive means over some geographically defined unit (pp. 100-101). This definition closely matches Tilly’s /ˈtɪli/ formulation on the first page of Coercion, Capital, and European States: states are “coercion-wielding organizations that are distinct from households and kinship groups and exercise clear priority in some respects over all other organizations within substantial territories” (p. 101).</p>
+            <p>The author explicitly rejects the requirement of juridical sovereignty as a central feature of statehood. Drawing on Krasner /ˈkræznər/ and Osiander /oʊˈziːændər/, he notes that the conventional view treating the Peace of Westphalia /west ˈfeɪliə/ of 1648 as a historical turning point is mistaken, the contemporary legal understanding of sovereignty did not develop until well into the nineteenth century (pp. 101-102). Political entities like France /fræns/, Venice /ˈvenɪs/, and England /ˈɪŋɡlənd/, as well as older polities like the Roman Empire or the Han Empire, existed as coercion-monopolizing entities long before 1648 or 1555 (p. 104).</p>
+            <p>To operationalize this definition, the author provides three observable coding criteria to distinguish states from non-states (pp. 102-103):</p>
+            <p>First, Direct Military Occupation: If a political unit is militarily occupied by a foreign power, it ceases to exist as an independent state according to the coding scheme. For example, when the Castilian-Aragonese /kæˈstiːliən ærəˈɡɒniːz/ state drove the Moors /mʊərz/ from Granada /ɡrəˈnɑːdə/, the Emirate of Granada ceases to be coded as an independent state and its territory is coded as part of Castile /kæˈstiːl/ (p. 103).</p>
+            <p>Second, The Capacity to Tax: Expropriative power, the ability to take from another what she owns, is the coercive authority most associated with statehood. Taxation is simply on-the-path coercion. The author takes the capacity to tax as evidence of the state’s quasi-monopoly of coercion. For example, when Worms /vɔːrmz/ (1184) or Lübeck /ˈlyːbek/ (1226) demonstrably gained rights to collect taxes and tolls within their boundaries, they are coded as independent states (p. 103).</p>
+            <p>Third, A Common Executive: Recognizing that many states during this period were “composite” entities composed of political units that maintained semi-independent bureaucracies, parliaments, and other separate political institutions, the author treats those sharing a common executive as a single state. For example, all territory held by the head of the Wittelsbach /ˈvɪtəlzbɑːk/ family, at various points including the Counties of Holland /ˈhɒlənd/, Hainaut /eɪˈnoʊ/, and Zeeland /ˈziːlənd/, as well as the Duchies of Jülich /ˈjuːlɪç/ and Berg /bɛrk/, are all coded as a single state. However, when the family split territory among its various component branches, each is treated as a distinct state (p. 103).</p>
+            <p>This coding scheme allows the author to treat many constituent units within the Holy Roman Empire, such as imperial city-states, prince-bishoprics, free cities, and imperial abbeys, as independent states when they demonstrated effective independence. As Bryce /braɪs/ describes, by the end of the thirteenth century an increasing number of units within the Empire acquired de facto independence; even petty magnates “swore fealty to only God and Emperor” yet “eschewed themselves equally of both powers” and maintained “full jurisdiction... rights of legislation, privileges of coining money, levying tolls and taxes” (p. 105).</p>
+            <p>Regarding leagues of city-states (such as the Hansa /ˈhænsə/ or Swabian /ˈsweɪbiən/ League), the author argues they were not a fundamentally distinct alternative to the state but rather organizations made up of units he calls states. Leagues facilitated cooperation among members largely through reputational mechanisms; they could not directly tax their members and relied upon voluntary compliance of individual member cities for revenue. Like modern international organizations, the Hansa could at most expel member cities who failed to comply with calls for revenue (p. 105). The absence of third-party enforcement is most evident in military affairs: for example, when the Hansa waged war against the Danish Crown in 1360, it could not compel all member states to participate in the conflict (p. 105).</p>
+          </div>
+          <div class="lang-zh">
+            <p>作者采用了一种简约的韦伯式(Weber /ˈveɪbər/)国家定义。他将国家界定为“在固定领土上维持暴力准垄断的组织”，即在某一地理界定的单元上拥有明确强制手段优势的组织（第100-101页）。这一定义与蒂利(Tilly /ˈtɪli/)在《强制、资本与欧洲国家》一书开篇的表述高度吻合：国家是“运用强制的组织，有别于家户和亲属群体，在某些方面对其实质性领土内的所有其他组织行使明确优先权”（第101页）。</p>
+            <p>作者明确放弃了法理主权(juridical sovereignty)作为国家地位的核心特征这一要求。他援引克拉斯纳(Krasner /ˈkræznər/)和奥西安德(Osiander /oʊˈziːændər/)的研究指出，将1648年《威斯特伐利亚和约》(Peace of Westphalia /west ˈfeɪliə/)视为历史转折点的传统观点是错误的，当代法律意义上的主权概念直到19世纪才得以充分发展（第101-102页）。在1648年或1555年之前，诸如法国、威尼斯(Venice /ˈvenɪs/)、英格兰(England /ˈɪŋɡlənd/)这样的政治实体，乃至更古老的罗马帝国(Roman Empire)或汉帝国(Han Empire)，早已作为垄断强制手段的实体而存在（第104页）。</p>
+            <p>为使这一定义可操作化，作者提出三项可观察的编码标准来区分国家与非国家（第102-103页）：</p>
+            <p>第一，直接军事占领： 若某一政治单元被外国势力军事占领，按照本文编码规则，该单元即不再作为独立国家存在。例如，当卡斯提尔-阿拉贡(Castile-Aragon /kæˈstiːl əˈræɡɒn/)国家将摩尔人逐出格拉纳达(Granada /ɡrəˈnɑːdə/)时，格拉纳达酋长国不再被编码为独立国家，其领土被编码为卡斯提尔的一部分（第103页）。</p>
+            <p>第二，征税能力： 征敛权力，即从他人手中夺取其所有物的能力，是与国家地位最密切相关的强制性权威。征税本质上是一种“在均衡路径上”的强制行为。作者以征税能力作为国家对强制手段准垄断的证据。例如，当沃尔姆斯(Worms /vɔːrmz/)于1184年、吕贝克(Lübeck /ˈlyːbek/)于1226年明确获得在其边界内征收税款和通行费的权利时，它们便被编码为独立国家（第103页）。</p>
+            <p>第三，共同行政长官： 鉴于这一时期许多国家是由维持半独立官僚机构、议会和其他独立政治制度的政治单元组成的“复合”实体，作者将拥有共同行政长官的单元视为单一国家。例如，维特尔斯巴赫(Wittelsbach /ˈvɪtəlzbɑːk/)家族首领所持有的所有领土，在不同时期包括荷兰(Holland /ˈhɒlənd/)、埃诺(Hainaut /eɪˈnoʊ/)和泽兰(Zeeland /ˈziːlənd/)伯国，以及于利希(Jülich /ˈjuːlɪç/)和贝格(Berg /bɛrk/)公国，都被编码为单一国家。然而，当家族在各分支之间分割领土时，每个分支则被视为独立国家（第103页）。</p>
+            <p>这种编码方式使作者能够将神圣罗马帝国(Holy Roman Empire)内部的许多组成单元，如帝国直辖城市、采邑主教区、自由城市和帝国修道院，在它们展示出有效独立性时编码为独立国家。正如布莱斯(Bryce /braɪs/)所描述的，到13世纪末，帝国内越来越多的单元获得了事实上的独立；即便是小贵族也“只向上帝和皇帝宣誓效忠，却同时摆脱了这两种权力”，并维持“完全的司法管辖权……立法权、铸币特权、征收通行费和税款的权利”（第105页）。</p>
+            <p>关于城市联盟（如汉萨同盟/Hansa /ˈhænsə/或施瓦本联盟/Swabian League /ˈsweɪbiən/），作者认为它们并非国家的根本性替代形式，而是由他所定义的国家组成的组织。联盟主要通过声誉机制促进成员间合作，它们无法直接对成员征税，只能依靠成员城市的自愿遵守来获取收入。与现代国际组织类似，汉萨同盟至多只能将不遵守收入要求的成员城市开除（第105页）。在军事事务中，第三方执行机制的缺失尤为明显：例如，当汉萨同盟于1360年与丹麦王室开战时，它无法强制所有成员国参战（第105页）。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The core argument of this paper is that observed changes in the number and size of states before the French Revolution were driven by economic factors rather than changes in patterns of war and war making. In those regions where urban life reclaimed a foothold, where new cities formed and the new social classes that emerged within them were capable of asserting themselves, political life fragmented. These new political actors, by virtue of their material wealth, were capable of resisting the centralizing efforts of the leaders of would-be territorial states. In the continent’s periphery, where these groups were weak and incapable of subverting the construction of large states, the earliest national states formed (p. 125).</p>
+            <p>The author explicitly challenges the long-standing belief that changes in patterns of war and war making caused the emergence of large territorial states. This mainstream view dates back to German sociologists Hintze /ˈhɪntsə/ and Weber /ˈveɪbər/ and was further developed by scholars such as Tilly /ˈtɪli/, Downing /ˈdaʊnɪŋ/, and Ertman /ˈɜːrtmən/. According to these “bellicist” theories, large states could most easily raise the manpower and finance required to field increasingly large standing armies and increasingly expensive technologies of coercion necessary to survive an era of endemic warfare. Technological shocks to the production of violence selected states most capable of adapting to these changes, and the most fit states were allegedly those that maintained advantages in the form of substantial populations, larger tax bases, and greater access to natural resources, that is, geographically large states (p. 98).</p>
+            <p>However, the author argues that before the French Revolution, before the era of the mass-conscript army, wealth could purchase both the technologies of violence and the manpower required to fight major wars. Rather than being an age when large states dominated militarily, this was a period when the population and natural resource advantages of territorial states provided little benefit in the production of violence. Just as city-states could use economic resources to purchase the most advanced technologies of coercion like siege artillery or firearms, leaders of states could, for a negotiated price, hire a Hessian /ˈhesiən/ colonel or an Italian condottiero /ˌkɒndɒˈtjɛroʊ/ and retain their men for a campaign season. Because of their economic capacity, city-states like Genoa /ˈdʒenəwə/ and Florence /ˈflɒrəns/, or groups of independent towns like the Swabian League, could raise armies that matched or even exceeded those of territorial states like France or England (pp. 98-99).</p>
+            <p>The author further points out that if the economic capacity of states best explains their ability to project force, it is not clear that large territorial states held an advantage over their smaller competitors. In fact, the opposite is likely true. For example, the tax income of the Della Scala /ˌdelə ˈskɑːlə/ signoria in the fourteenth century was double that of England; the revenue of Venice /ˈvenɪs/ in the fifteenth century was 60 percent greater than that of France and more than double Spain’s /speɪnz/ or England’s. Moreover, geographically small and urban city-states could far more easily and earlier construct financial instruments necessary to purchase the means of defense required to survive interstate competition (p. 99).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文的核心论点是：在法国大革命之前，欧洲国家数量和规模的观察变化是由经济因素而非战争方式变化所驱动的。在城市生活重新立足的地区，在新城市形成且其中涌现的新社会阶层能够自我主张的地方，政治生活走向碎片化。这些新的政治行动者凭借其物质财富，能够抵抗意图构建领土国家的领导者的中央集权努力。而在欧洲大陆边缘地区，这些群体力量薄弱、无力阻止大国建设，最早的民族国家便在那里形成（第125页）。</p>
+            <p>作者明确挑战了长期以来的主流观点，即战争模式和战争方式的变化导致了大型领土国家的出现。这一主流观点可追溯至德国社会学家辛策(Hintze /ˈhɪntsə/)和韦伯(Weber /ˈveɪbər/)，并由蒂利(Tilly /ˈtɪli/)、唐宁(Downing /ˈdaʊnɪŋ/)、厄特曼(Ertman /ˈɜːrtmən/)等学者进一步发展。根据这些“好战主义”(bellicist)理论，大国最容易筹集到组建日益庞大的常备军和日益昂贵的强制技术所需的人力和财力，以在地方性战争时代生存下来。对暴力生产的技术冲击选择了最能适应这些变化的国家，而最适者据称是那些拥有大量人口、更大税基和更多自然资源的国家，即地理上的大国（第98页）。</p>
+            <p>然而，作者认为，在法国大革命之前、在大规模征兵军队时代来临之前，财富可以购买暴力技术和发动重大战争所需的人力。这不是一个大国在军事上占主导地位的时代，而是一个领土国家的人口和自然资源优势在暴力生产中几乎没有带来好处的时期。正如城邦可以用经济资源购买最先进的强制技术（如攻城炮或火器）一样，国家领导者可以以谈判好的价格雇佣黑森(Hessian /ˈhesiən/)上校或意大利雇佣兵首领(condottiero /ˌkɒndɒˈtjɛroʊ/)及其部队进行一个战役季节的作战。正是凭借经济能力，热那亚(Genoa /ˈdʒenəwə/)和佛罗伦萨(Florence /ˈflɒrəns/)这样的城邦，或施瓦本联盟(Swabian League)这样的独立城镇群体，才能组建与法国或英格兰等领土国家匹敌甚至超过其规模的军队（第98-99页）。</p>
+            <p>作者进一步指出，如果经济资源在很大程度上决定了投射武力的能力，那么大型领土国家相对于较小竞争者是否占有优势就不清楚了。事实上，情况可能恰恰相反。例如，德拉·斯卡拉家族(Della Scala /ˌdelə ˈskɑːlə/)领地在14世纪的税收收入是英格兰的两倍；15世纪威尼斯的收入比法国高60%，是西班牙或英格兰的两倍多。此外，地理上较小的城市城邦比大型领土国家更容易、更早地建立购买生存所需防御手段的金融工具（第99页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>The causal mechanism proposed by the author builds on the traditions of political sociologist Rokkan /ˈrɒkən/ and economic historian Pirenne /pɪˈren/, further developed by Spruyt /sprɔɪt/. The mechanism can be summarized as the following causal chain (pp. 99-100, 113-116):</p>
+            <p>Step One: The revival of Eastern trade and urban life. In the last half of the tenth century, Eastern trade reemerged and urban life revived. This commercial revival was not geographically uniform but concentrated in a central regional band extending roughly in an arc from the Low Countries /ˈloʊ ˈkʌntriz/, through the Rhineland /ˈraɪnlænd/, and into Northern Italy (pp. 99, 116).</p>
+            <p>Step Two: The formation of new commercial classes. In those places where trade resumed, new towns and cities formed as hubs of economic life, allowing a class of burghers to establish effective independence. These new social groups residing in cities, the only real location of economic specialization in the pre-industrial world, embodied newly acquired material capabilities (pp. 115, 124).</p>
+            <p>Step Three: Burghers use economic power to assert independence. The wealth that came to exist in these new towns and cities allowed urban social groups, in ways no different from the constructors of territorial states, to project force and assert themselves as independent states within the international system. The wealth that came to exist in new towns and cities allowed urban social groups to project force and assert themselves as independent states (pp. 99-100). For example, Genoa /ˈdʒenəwə/ raised an army of 40,000 men in 1295; in contrast, the French army at the end of the Hundred Years War was estimated to be 14,000 (p. 99, footnote 11).</p>
+            <p>Step Four: Urban groups prevent territorial consolidation. Where towns formed and burghers could force their rights upon princes and kings, smaller political units proliferated. These groups’ economic power made it harder for monarchs, especially the Holy Roman Emperor, to create large territorial states. Monarchs were forced into political bargains that accepted the de facto independence of these states. Moreover, because of their wealth and ability to establish institutions like the Hansa capable of providing quasi-public or club goods like collective security, these states could claim independence and sustain it over time (pp. 115-116).</p>
+            <p>Step Five: Formation of large territorial states in the periphery. Only in the weakly commercialized European periphery did large territorial states form. In the absence of dense urban and commercial growth, outside the urbanized central corridor, large territorial states took shape (pp. 100, 116).</p>
+            <p>The author also tests this mechanism in the appendix using proto-industrial (textile and metallurgic) activity as a proxy for the presence of commercial actors. Using the mediation analysis methodology proposed by Imai /iːˈmaɪ/, Keele /kiːl/, and Tingley /ˈtɪŋɡli/, he finds that about 40 percent of the effect of urban population can be explained by the presence of commercial social actors proxied by proto-industrial activity (p. 124).</p>
+          </div>
+          <div class="lang-zh">
+            <p>作者提出的因果机制建立在政治社会学家罗坎(Rokkan /ˈrɒkən/)和经济史学家皮雷纳(Pirenne /pɪˈren/)的传统之上，并由斯普鲁伊特(Spruyt /sprɔɪt/)进一步发展。该机制可概括为以下因果链条（第99-100页、113-116页）：</p>
+            <p>第一步：东方贸易的复兴与城市生活的恢复。 十世纪后半叶，东方贸易重新兴起，城市生活复苏。这一商业复兴在地理上并非均匀分布，而是集中在从低地国家(Low Countries)经莱茵兰(Rhineland /ˈraɪnlænd/)延伸至北意大利(Northern Italy)的中央区域带（第99页、116页）。</p>
+            <p>第二步：新商业阶层的形成。 在贸易恢复的地方，新的城镇和城市作为经济生活的中心而形成，使市民阶层(burghers)得以建立有效的独立地位。这些居住在城市中的新社会群体，在前工业时代唯一真正实现经济专业化的地方，体现了新兴的物质能力（第115页、124页）。</p>
+            <p>第三步：市民阶层利用经济力量主张独立。 这些城市群体的财富使他们能够以与领土国家建造者无异的方式投射武力，并在国际体系中主张自己作为独立国家的地位。新城镇和城市中的财富使城市社会群体能够投射武力并主张自己的独立国家地位（第99-100页）。例如，热那亚在1295年组建了一支40,000人的军队；相比之下，法国军队在百年战争结束时估计只有14,000人（第99页脚注11）。</p>
+            <p>第四步：城市群体阻止领土整合。 在城镇形成、市民能够向君主和国王争取权利的地方，较小的政治单元大量涌现。凭借群体的经济力量，君主，尤其是神圣罗马帝国皇帝，在建立地理上大型国家的尝试中受阻，被迫接受承认这些国家事实独立地位的政治交易。此外，由于他们的财富和建立能够提供集体安全等准公共物品或俱乐部物品的制度（如汉萨同盟）的能力，这些国家不仅能够声称独立，而且能够长期维持它（第115-116页）。</p>
+            <p>第五步：边缘地区大型领土国家的形成。 只有在商业化程度较弱的欧洲边缘地区，大型领土国家才得以形成。在没有密集的城市和商业增长的地方，即在城市化的中央区域带之外，大型领土国家才得以成形（第100页、116页）。</p>
+            <p>作者还在附录中使用原工业活动（纺织和冶金活动）作为商业行动者存在的代理变量来检验这一机制。通过伊迈(Imai /iːˈmaɪ/)、基尔(Keele /kiːl/)和廷利(Tingley /ˈtɪŋɡli/)提出的中介分析方法，他发现大约40%的城市人口效应可以通过原工业活动所代表的商业社会行动者的存在来解释（第124页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>Data Sources and Construction: The author constructs a new dataset describing the entire universe of European states between 1100 and 1790 by manually geo-referencing several sets of historical maps. Two main sources are the Centennia Historical Atlas (Reed) and the Euratlas (Nussli /ˈnʊsli/) digital atlas. The Nussli data are measured in one-hundred-year panels, whereas the Reed atlas utilizes a more high-frequency approach, recording observations in tenths of years. The author aligns boundaries from both datasets at every hundred-year mark (p. 106).</p>
+            <p>Supplements and Corrections: Even after combining data from these digital sources, there remain imperfections. For example, units coded as independent states according to the author’s scheme are absent from the reconstructed shape files, these tend to be small independent principalities, ecclesiastical units, and city-states not captured by historical geographers. To rectify these flaws and prevent ensuing selection problems, the author turns to a number of historical and contemporary primary source maps to create high-frequency boundary changes for these missing units (p. 106). The author illustrates this procedure with a detailed example showing the creation of shape files for part of Nassau /ˈnæsɔː/ between 1159 and 1328 (p. 107).</p>
+            <p>Urban Population Data: Data on urban population come from the widely used dataset of Bairoch, Batou, and Chevre, which describes the population sizes of approximately 2,200 towns that ever had 5,000 or more inhabitants at some time between 800 and 1800 (p. 117).</p>
+            <p>Instrumental Variable: To address endogeneity concerns, the author uses paleoclimatological sources to construct a measure of random climatic variation in the ability of a given location to produce cereals like wheat. The instrument is the deviation from the optimal growing temperature for cereals (10.5°C) (pp. 119-120).</p>
+            <p>Geographic Coverage: The entire European continent.</p>
+            <p>Time Period: 1100 to 1790.</p>
+            <p>Unit of Analysis: For survival analysis, the unit is individual states; for the analysis of urbanization and state formation, the unit is arbitrarily defined pieces of geography, 10,000 square-kilometer grid squares (p. 117).</p>
+          </div>
+          <div class="lang-zh">
+            <p>数据来源与构建： 作者通过手工地理参照多套历史地图构建了一个新的数据集，描述了1100年至1790年间欧洲国家的完整分布。两个主要来源是森特尼亚历史地图集(Centennia Historical Atlas，里德/Reed编)和欧洲地图集(Euratlas，努斯利/Nussli /ˈnʊsli/编)数字地图集。努斯利数据以百年为面板测量，而里德地图集采用更高频率的方法，以十分之一年为单位记录观察值。作者在每个百年节点对齐两个数据集的边界（第106页）。</p>
+            <p>补充与修正： 即使在合并这些数字来源的数据后，仍存在一些不完善之处。例如，按作者编码应为独立国家的单元在重建的形状文件中缺失，这些往往是未被历史地理学家捕捉到的小型独立公国、教会单元和城邦。为纠正这些缺陷并防止由此产生的选择性问题，作者转向若干历史和当代原始地图来源，为这些缺失单元创建高频边界变化记录（第106页）。作者通过详细的例子说明了这一程序，展示了1159年至1328年间拿骚(Nassau /ˈnæsɔː/)部分地区形状文件的创建过程（第107页）。</p>
+            <p>城市人口数据： 关于城市人口的数据来自贝洛赫、巴图和谢弗广泛使用的数据集，该数据集描述了公元800年至1800年间约2,200个曾拥有5,000人以上人口的城镇的人口规模（第117页）。</p>
+            <p>工具变量： 为解决内生性问题，作者使用古气候来源构建了一个描述特定地点种植谷物（如小麦）能力的随机气候变异指标。该工具变量是距最适宜谷物生长温度（10.5°C）的偏离程度（第119-120页）。</p>
+            <p>地理覆盖范围： 整个欧洲大陆。</p>
+            <p>时间跨度： 1100年至1790年。</p>
+            <p>分析单元： 对于生存分析，分析单元是单个国家；对于城市化与国家形成的关系分析，分析单元是任意定义的地理单元，10,000平方公里的网格方块（第117页）。</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>The author employs multiple methods to assess the argument:</p>
+            <p>First, Descriptive Statistical Analysis. The author first shows through a simple description of the data that during the period associated with the military revolution, the typical state actually declined in size. He plots the trend in state size across time measured in square kilometers. When considering only the mean, it appears that the bellicist hypothesis matches the general trend, between 1400 and 1790, the average size of states more than doubled from approximately 33,000 to 71,000 square kilometers. However, because the distribution is heavily skewed, with several extremely large states distorting what we might otherwise view as typical, once the data are log-transformed to account for outliers, this upward trend disappears. Rather, the typical state between 1100 and 1790 declined in size (pp. 109-111).</p>
+            <p>Second, Survival Analysis (Cox Proportional Hazards Model). To test the war-making theories’ prediction that large states should be more likely to survive, the author estimates the relationship between the hazard rate and geographic size of states via a mixed-effects Cox proportional hazards model. He finds that, contrary to bellicist theories, geographically large states are more likely to fail than their smaller counterparts. Moreover, the relationship between size and failure did not change in a statistically significant way across time, the positive relationship between size and the failure rate of states did not change during the period before, after, or during the military revolution (pp. 111-113).</p>
+            <p>Third, OLS and Negative Binomial Regression. To estimate the relationship between urban population and state formation, the author uses arbitrarily defined pieces of geography (10,000 square-kilometer grid squares) as the unit of analysis and estimates the effect of changes in urban population on the number of states forming within a given unit. Since the number of entrants is by definition a non-negative integer, he estimates via both pooled OLS and negative binomial regression (pp. 117-118).</p>
+            <p>Fourth, Instrumental Variables Approach (Two-Stage Least Squares). Since the relationship between urban population size and the number of states is likely affected by unobservable confounders and because causality runs in both directions, the author takes an instrumental variables approach to identify the effect of changes in patterns of urban development on the size and number of states. Exploiting random climatic variation in propensity to support large populations, treating deviation from the optimal growing temperature for cereals like wheat as an instrument for the development of towns and cities, he shows that variation in urban growth caused political fragmentation (pp. 100, 119-124).</p>
+            <p>Assumptions for Method Validity: For the instrumental variables approach, several assumptions must be satisfied to consistently estimate the parameter. First, random assignment is likely satisfied since until the nineteenth century there was little to no human effect on climate. Second, the instrument strength assumption is also satisfied, in each of the first-stage regressions, all tests against weak instrumentation meet conventional levels of statistical significance. Third, the exclusion restriction is also likely satisfied: deviation from the optimal growing temperature for cereals would have to affect the number of states entering on a given quadrant only through urban population (the proxy for economic development), not through other means (pp. 120-122). The author provides evidence supporting the exclusion restriction by controlling for latitude and longitude, including grid-square fixed effects, controlling for per capita income, and conducting sensitivity analysis (pp. 121-123).</p>
+          </div>
+          <div class="lang-zh">
+            <p>作者采用多种方法来检验其论点：</p>
+            <p>第一，描述性统计分析。 作者首先通过简单的数据描述表明，在与军事革命相关的时期，典型国家的规模实际上是下降的。他展示了国家规模在时间上的趋势，测量单位为平方公里。当只考虑均值时，看起来好战主义假设与总体趋势吻合，1400年至1790年间，国家的平均规模从约33,000平方公里增加到71,000平方公里。然而，由于分布严重偏斜，存在若干极端大的国家扭曲了典型情况。一旦对数据进行对数转换以解释这些离群值，上升趋势便消失了。相反，1100年至1790年间典型国家的规模下降了（第109-111页）。</p>
+            <p>第二，生存分析（Cox比例风险模型）。 为检验战争理论关于大国更可能生存的预测，作者采用混合效应Cox比例风险模型估计危险率与国家地理规模之间的关系。他发现，与好战主义理论的结论相反，地理上的大国比小国更容易失败。此外，规模与失败之间的关系在整个时期内没有统计显著性变化，规模与失败率之间的正相关关系在与军事革命相关的时期前后和期间都没有变化（第111-113页）。</p>
+            <p>第三，OLS和负二项回归。 为估计城市人口与国家形成之间的关系，作者以任意定义的地理单元（10,000平方公里网格方块）为分析单元，估计城市人口变化对给定单元内形成国家数量的影响。由于进入者数量按定义是非负整数，他同时采用合并OLS和负二项回归进行估计（第117-118页）。</p>
+            <p>第四，工具变量方法（两阶段最小二乘法）。 由于城市人口规模与国家数量之间的关系可能受到不可观测混淆因素的影响，且因果关系是双向的，作者采用工具变量方法来识别城市发展模式变化对国家规模和数量的因果效应。他利用在支持大规模人口方面的随机气候变异，将距谷物（如小麦）最适生长温度的偏离作为城镇和城市发展的工具，表明城市增长的变异导致了政治碎片化（第100页、119-124页）。</p>
+            <p>方法有效性的假设： 对于工具变量方法，必须满足几个假设才能一致估计参数。首先，随机分配假设可能满足，因为直到19世纪人类对气候几乎没有影响。其次，工具强度假设也满足，在每个第一阶段回归中，所有弱工具性检验都达到传统的统计显著性水平。第三，排除性约束假设也可能满足：距谷物最适生长温度的偏离必须仅通过城市人口（经济发展的代理变量）而非通过其他方式影响给定地区形成的国家数量（第120-122页）。作者通过控制纬度和经度、加入网格方块固定效应、控制人均收入以及进行敏感性分析，提供了支持排除性约束成立的证据（第121-123页）。</p>
+          </div>
+        </section>
+
+
+
+        <nav class="node-nav">
+          <span class="disabled prev"><small data-en="No previous reading" data-zh="无上一篇">No previous reading</small></span>
+          <a class="next" href="fracturedland2023.html"><small data-en="Next reading" data-zh="下一篇">Next reading</small>Fernández-Villaverde et al. 2023</a>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

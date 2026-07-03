@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hariri 2012 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 4" data-zh="第 4 周">Week 4</span> · <span data-en="Coercion–Extraction lane" data-zh="强制–汲取层">Coercion–Extraction lane</span> · <span data-en="Transhistorical theory &amp; global long-run panels (S0)" data-zh="一般理论与跨国长时段（S0）">Transhistorical theory &amp; global long-run panels (S0)</span></p>
+        <h1><span class="lang-en">Jacob Gerner Hariri (2012), “The Autocratic Legacy of Early Statehood,” APSR 106(3).</span><span class="lang-zh">哈里里（2012）《早期国家形成的专制遗产》，APSR。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#2f6d5a" data-en="IV" data-zh="工具变量">IV</span><span class="chip" style="background:#607066" data-en="Panel FE" data-zh="面板固定效应">Panel FE</span><span class="chip" style="background:#24493d" data-en="▼ traces to the present" data-zh="▼ 追踪后果至当代">▼ traces to the present</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The main dependent variable is democracy, conceptualized as the degree to which a country exhibits democratic political institutions and practices in the contemporary period. The author operationalizes democracy using three distinct measures to ensure robustness of findings. The primary measure is the Polity IV composite democracy index (polity2), averaged over the post-Cold War period from 1991 to 2007, chosen specifically to avoid having short spells of regime instability affect the results (p. 476). The second measure is the binary ACLP indicator, originally constructed by Przeworski et al. (2000) and updated by Cheibub, Gandhi, and Vreeland (2009), which dichotomously classifies regimes as either democratic or non-democratic (p. 476). The third measure is the accumulated democratic experience since 1900, termed “Democracy stock,” constructed by Gerring et al. (2005) from polity2 scores, which captures the historical depth of democratic experience rather than merely a snapshot of current regime type (p. 476). The author demonstrates that identical conclusions are reached using all three democracy measures, and the results are very robust to measuring levels of democracy for other years as well (p. 476).</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要因变量是民主程度，即一个国家在当代表现出民主政治制度和实践的程度。作者使用三种不同的测量方式来确保研究结论的稳健性。主要测量指标是Polity IV的综合民主指数（polity2），取1991年至2007年冷战后时期的平均值，这一选择旨在避免短期政权波动对结果的影响（第476页）。第二个测量指标是二元ACLP指标，该指标最初由Przeworski等人（2000年）构建，后由Cheibub、Gandhi和Vreeland（2009年）更新，以二分法将政权分类为民主或非民主（第476页）。第三个测量指标是自1900年以来累积的民主经验，称为“民主存量”（Democracy stock），由Gerring等人（2005年）根据polity2分数构建，它捕捉的是民主经验的历史深度，而非仅仅是当前政权类型的快照（第476页）。作者证明使用所有三种民主测量方式都能得出相同的结论，并且用其他年份衡量民主水平时，结果也非常稳健（第476页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The main independent variable is early state development, defined as the extent and duration of state-like political organization in a territory prior to the onset of European colonization, specifically measured up to the year 1500 CE. The author focuses on statehood up to 1500 because index values thereafter reflect European colonization rather than indigenous state development (p. 475). This temporal threshold ensures that the measure captures genuinely indigenous political development rather than externally imposed colonial structures. The variable is measured using the State Antiquity Index (Version 3) developed by Bockstette and Putterman (2007), which has been widely used in scholarly literature including studies by Chanda and Putterman (2005), Gerring et al. (2011), Olsson (2009), Petersen and Skaaning (2010), and Posner (p. 475). The author also notes that identical results are obtained when using other plausible thresholds, such as 1750 (the earliest beginnings of the second wave of colonialism) or a combined threshold of 1500 for the Americas /əˈmerɪkəz/ and 1750 for other countries (p. 475).</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要自变量是早期国家发展程度，定义为一个领土在欧洲殖民开始之前所具有的类国家政治组织的程度和持续时间，具体测量截止到公元1500年。作者将关注点限定在1500年之前的国家历史，因为此后的指数值反映的是欧洲殖民而非本土国家发展（第475页）。这一时间阈值确保测量指标捕捉的是真正的本土政治发展，而非外部强加的殖民结构。该变量使用Bockstette和Putterman（2007年）开发的国家历史指数（State Antiquity Index，第3版）进行测量，该指数已被学术文献广泛使用，包括Chanda和Putterman（2005年）、Gerring等人（2011年）、Olsson（2009年）、Petersen和Skaaning（2010年）以及Posner的研究（第475页）。作者还指出，使用其他合理阈值（如1750年，第二波殖民主义的最早开端，或美洲（Americas /əˈmerɪkəz/）使用1500年、其他国家使用1750年的组合阈值）也能得到相同的结果（第475页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>The conceptualization of the state in this article draws upon classical definitions emphasizing centralized political authority above the tribal or chiefdom level, combined with territorial control and administrative capacity. The author employs the State Antiquity Index, which operationalizes statehood through three core dimensions assessed for each of 39 half-centuries from year 1 to 1950 CE. The first dimension asks whether there is a government above the tribal or chiefdom level, scored as 1 if yes, 0.75 if chiefdom, and 0 if tribe (p. 475). The second dimension assesses whether the government is locally based, scored as 1 if yes, 0.75 if there is a local government with substantial foreign oversight, and 0.5 if foreign based (p. 475). The third dimension measures how much of the present-day country’s territory was ruled by the historical government, scored as 1 if more than 50%, 0.75 if between 25% and 50%, 0.5 if between 10% and 25%, and 0.3 if less than 10% (p. 475). Scores from the three questions are multiplied for each half-century, and the index of state history is computed by summing the discounted value of the scores for the 39 half-centuries using a 5% discount rate, which has become standard in the literature (p. 475).</p>
+            <p>This measurement reasonably captures the ability of non-European territories to resist colonization and limit European settlement. First, the definition of statehood as government above a tribal or chiefdom level implies a concentration of decision-making authority and resources at the level of the state instead of in a number of autonomous tribes. This is consistent with the idea of state development as an impediment to European colonization, because states, relative to tribes or chiefdoms, were better able to raise the resources necessary to resist colonization and mount a coordinated defense (p. 475). Second, in political units that historically comprised more than one contemporaneous country (the Ottoman /ˈɒtəmən/ Empire, for example), the country from where power emanated (Turkey /ˈtɜːrki/) scores higher than the “occupied territories” (Tunisia /tuːˈnɪʒə/, say). This coding procedure seems meaningful, because it is probably true that, during the Ottoman years, it would have been easier to colonize Tunisia than Turkey (p. 475). Third, the cumulative nature of the index is appealing, because there is ample historical evidence to suggest that cleavages within indigenous political units facilitated European penetration. If a shared history within a single polity reduces such cleavages, then European colonization should depend on the history of state development up to the time of European arrival rather than only on the level of statehood at that particular moment (p. 475).</p>
+            <p>The author acknowledges that the State Antiquity Index is bounded above at A.D. 1, which in some countries excludes millennia of state history. This is recognized as a source of measurement error in the independent variable, which biases toward zero estimates of the coefficient on state development in OLS regressions. This limitation, in addition to endogeneity concerns, motivates the use of instrumental variable estimation, where the instrumental variable (timing of the Neolithic /ˌniːəˈlɪθɪk/ Revolution) is temporally unbounded such that IV estimation alleviates this source of measurement error (p. 475). To gauge the external validity of the independent variable, the author examined the correlation between early state development (up to 1500) and population density in 1500 for the 107 countries for which data are available for both variables. This revealed a very significant (t = 8.48) positive correlation of 0.57 between the two, providing some validation of the measure of early state development, because more densely populated territories were likely to have had more developed state institutions (p. 475-476).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文对国家的概念化借鉴了强调部落或酋邦水平以上集中政治权威的经典定义，并结合了领土控制和行政能力。作者使用国家历史指数，通过评估公元1年至1950年共39个半世纪的三个核心维度来操作化国家概念。第一个维度询问是否存在部落或酋邦水平以上的政府，如果是则得1分，如果是酋邦则得0.75分，如果是部落则得0分（第475页）。第二个维度评估政府是否以本地为基础，如果是则得1分，如果存在本地政府但受到外国大量监督则得0.75分，如果以外国为基础则得0.5分（第475页）。第三个维度测量当今国家领土中有多少被历史政府统治，超过50%得1分，25%至50%之间得0.75分，10%至25%之间得0.5分，低于10%得0.3分（第475页）。每个半世纪的三项得分相乘，然后使用5%的折现率对39个半世纪的得分进行折现求和，计算出国家历史指数，这一做法已成为文献中的标准（第475页）。</p>
+            <p>这种测量方式合理地捕捉了非欧洲领土抵抗殖民和限制欧洲人定居的能力。首先，将国家定义为部落或酋邦水平以上的政府，意味着决策权力和资源集中在国家层面，而非分散在众多自治部落中。这与早期国家发展是欧洲殖民障碍的观点相一致，因为相对于部落或酋邦，国家更能调动抵抗殖民所需的资源并组织协调防御（第475页）。其次，在历史上由多个当代国家组成的政治单元中（如奥斯曼帝国/ˈɒtəmən ˈempaɪər/），权力发源国（土耳其/ˈtɜːrki/）的得分高于“被占领土”（如突尼斯/tuːˈnɪʒə/）。这一编码程序是有意义的，因为在奥斯曼时期，殖民突尼斯可能比殖民土耳其更容易（第475页）。第三，指数的累积性质具有吸引力，因为有充分的历史证据表明，本土政治单元内部的分裂有利于欧洲人的渗透。如果在单一政体内的共同历史能够减少这种分裂，那么欧洲殖民应该取决于欧洲人到来之前的国家发展历史，而不仅仅是那一特定时刻的国家水平（第475页）。</p>
+            <p>作者承认国家历史指数的上限为公元1年，这在某些国家会排除数千年的国家历史。这被认为是自变量的测量误差来源，会使OLS回归中国家发展系数的估计值偏向零。这一局限性加上内生性问题，促使作者使用工具变量估计，其中工具变量（新石器革命/ˌniːəˈlɪθɪk/的时间）在时间上没有限制，因此工具变量估计可以缓解这一测量误差来源（第475页）。为了检验自变量的外部效度，作者检验了107个有两个变量数据的国家中，早期国家发展（截至1500年）与1500年人口密度之间的相关性。结果显示两者之间存在非常显著的正相关（t = 8.48），相关系数为0.57，这为早期国家发展的测量提供了一定的验证，因为人口密度较高的领土可能拥有更发达的国家制度（第475-476页）。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The core argument of this article is that, contrary to the conventional wisdom derived from European history, precolonial state development outside Europe has been an impediment to the development of democracy rather than a precursor to it. While there is scholarly agreement that statehood is a necessary condition for democracy and that the European state-building process created conditions conducive to representative assemblies through fiscal bargaining between rulers and citizens (p. 471), the author argues that this European pattern did not replicate itself elsewhere. Instead, outside the European continent, the historical consequence of an early development of statehood has been autocracy, not democracy (p. 471).</p>
+            <p>The argument proceeds through a two-step causal logic. First, indigenous state institutions constrained the European colonial endeavor and limited the diffusion of European institutions and ideas. Some countries were strong enough to resist colonization entirely; others had enough state infrastructure that the colonial powers would rule to a considerable degree through existing institutions in a system of indirect rule. Neither group therefore experienced institutional transplantation nor significant European settlement (p. 471). Second, European settlement and colonization, despite not exporting democracy per se, did bring institutional forms of governance from European countries of origin as well as settlers’ identities as Europeans, both of which facilitated the spread of early representative institutions (p. 474). In societies with more precolonial state development, it was therefore more likely that the traditional mode of rule, autocracy, was preserved. In countries with less precolonial state development, the indigenous state was not an obstacle to European settlement and institutional transplantation, making these countries more likely to embark on a democratic regime trajectory (p. 471).</p>
+            <p>This argument adds an external factor, the diffusion of European influence during the colonial period, to the set of domestic factors that have been proposed to mediate the effect of statehood on subsequent regime developments (p. 472). The author notes that although the analysis focuses on an external factor, it is not wholly silent on domestic dynamics: it suggests that a long history of statehood might have shifted bargaining power toward the ruler in control of the state apparatus, because just as indigenous state development allowed rulers to fend off Europeans, it must have also facilitated the repression of internal opposition (p. 472). Furthermore, the analysis shows that even if state building can create a long-run impetus to parliamentarism by unleashing a fiscal bargaining game, this effect cannot be very strong outside Europe, it is dominated by the negative effect of having kept Europeans away or having been colonized with indirect rule (p. 472).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文的核心论点是，与源自欧洲历史的传统观点相反，欧洲以外地区的殖民前国家发展是民主发展的障碍，而非先导。虽然学界普遍认为国家是民主的必要条件，欧洲的国家构建过程通过统治者与公民之间的财政讨价还价创造了有利于代议制议会的条件（第471页），但作者认为这一欧洲模式并未在其他地方复制。相反，在欧洲大陆以外，早期国家发展的历史结果是专制而非民主（第471页）。</p>
+            <p>这一论点通过两步因果逻辑展开。首先，本土国家制度限制了欧洲殖民事业，阻碍了欧洲制度和思想的传播。一些国家强大到足以完全抵抗殖民；另一些国家拥有足够的国家基础设施，使殖民列强在很大程度上通过现有制度进行间接统治。因此，这两类国家都没有经历制度移植或大规模欧洲人定居（第471页）。其次，尽管欧洲人的定居和殖民本身并未输出民主，但确实带来了源自欧洲母国的治理制度形式以及定居者作为欧洲人的身份认同，这两者都促进了早期代议制度的传播（第474页）。因此，在殖民前国家发展程度较高的社会中，传统的专制统治模式更可能得到保留。而在殖民前国家发展程度较低的国家中，本土国家并不构成欧洲人定居和制度移植的障碍，使这些国家更可能走上民主政权轨道（第471页）。</p>
+            <p>这一论点为国家构建影响后续政权发展的国内因素集合增添了一个外部因素，殖民时期欧洲影响的扩散（第472页）。作者指出，尽管分析聚焦于外部因素，但并未完全忽视国内动态：它表明漫长的国家历史可能使讨价还价的权力向控制国家机器的统治者倾斜，因为正如本土国家发展使统治者能够抵御欧洲人一样，它也必然促进了对内部反对派的镇压（第472页）。此外，分析表明，即使国家构建能够通过引发财政讨价还价博弈为议会制创造长期动力，这种效应在欧洲以外也不会很强，它被拒欧洲人于门外或被间接殖民的负面效应所主导（第472页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>The author proposes a coherent set of mechanisms linking early state development to contemporary autocracy, operating through the mediating role of European colonization and settlement. These mechanisms can be organized into two sequential stages.</p>
+            <p>Mechanism 1: Early Statehood as a Barrier to Colonization and Settlement</p>
+            <p>Territories governed by state-like institutions were harder to colonize because centralized authority under a single ruler enabled polities to respond decisively and mount coordinated resistance (p. 473). The author draws on the logic articulated by Patricia Crone (1986), noting that defense is a public good, and autonomous polities or tribes had an incentive to free-ride on the defensive efforts of others. Free-riding is harder when authority is centralized in a single polity. Moreover, one-body polities are likely to be less fraught with disunity and internal strife for colonists to exploit in divide-and-conquer strategies, as argued by Hendrik Spruyt (1994) (p. 473).</p>
+            <p>The author provides extensive historical evidence for this mechanism. In North Africa /ˈæfrɪkə/ and the Middle East, Europeans encountered comparatively organized state institutions which they were unable to colonize; in the early 16th century, Charles V /tʃɑːrlz/ of Spain /speɪn/ repeatedly fought the Ottomans /ˈɒtəmənz/ over territory in North Africa but never succeeded in dislodging the Ottoman stronghold (p. 473). In 1578, the last Portuguese /ˌpɔːrtʃʊˈɡiːz/ settlement in Morocco /məˈrɒkəʊ/ was abandoned after the disastrous defeat at Ksar El Kebir /ksɑːr el kəˈbɪr/, which cost the lives of King Sebastian /səˈbæstʃən/ and 8,000 soldiers (p. 473).</p>
+            <p>In the New World, Europeans encountered the Aztec /ˈæztek/ and Inca /ˈɪŋkə/ empires, which were relatively young and did not present a unified front against colonists. Conflict between the people of Tlaxcala /tlæsˈkɑːlə/ and the rulers in Tenochtitlan /teˌnɒtʃtɪˈtlɑːn/ was an important factor in Hernán Cortés’ /ɛrˈnɑːn kɔːrˈtes/ conquest of the Aztec capital; when Cortés conquered Tenochtitlan, the Spanish forces of fewer than 350 men were joined by some 6,000 Tlaxcalan warriors (p. 473). In Brazil /brəˈzɪl/, the Portuguese found tribal societies that lacked the coordination of a centralized state, fighting as much among themselves as against the Europeans (p. 473).</p>
+            <p>In sub-Saharan Africa /sʌb səˈhærən ˈæfrɪkə/, Ethiopia /ˌiːθiˈəʊpiə/, the oldest kingdom-state on the continent, was the only country strong enough to avoid colonization. Historian Sven Rubenson /sven ˈruːbənsən/ attributed this to the country’s long history of statehood: “[Ethiopia] was [a] one body polity aware of one common identity and there was a greater political cohesion and awareness of the issues involved than the enemies of Ethiopia foresaw” (p. 473). In Asia /ˈeɪʒə/, the Tokugawa /toʊkuˈɡɑːwə/ shogunate in Japan /dʒəˈpæn/ was strong enough to evict European merchants, missionaries, and settlers; prohibit Christianity; and persecute indigenous converts, keeping Japan almost hermetically sealed off from European influence under the Sakoku /sɑːˈkoʊku/ policy for two centuries (p. 473). In China /ˈtʃaɪnə/, authorities greatly restricted European merchant presence and allowed trade only with a government-authorized merchant guild (p. 473).</p>
+            <p>Mechanism 2: Colonization Strategy and Indirect Rule</p>
+            <p>Precolonial state development affected which territories were colonized and shaped the colonization strategy. Where state-like institutions and authority structures were already in place, metropolitan rule could superimpose itself on the existing framework and govern through the established channels in a system of indirect rule (p. 473). Citing Gerring et al. (2011), the author argues that the capacity of a colonized territory to act as an agent of the colonial power depends on how state-like the polity is. It was easier for a colonial power to use existing authority and state infrastructure than to destroy and rebuild from scratch (p. 473). Thus, territories with more developed precolonial state institutions were less likely to be colonized, but if they were colonized, they were more likely to be colonized with an indirect form of rule (p. 473).</p>
+            <p>Mechanism 3: European Settlement and the Spread of Representative Institutions</p>
+            <p>European colonization and settlement did not export democracy because none of the colonial powers were democratic at the time. However, European settlers did bring institutional forms of governance from their countries of origin, as well as their identity as Europeans, both factors facilitated the spread of early representative institutions (p. 474). The author provides the example of the Recopilación de las leyes de Indias, the body of laws issued by the Spanish Crown for its overseas possessions, which explicitly stated that “the Kingdoms of Castile /kæˈstiːl/ and of the Indies /ˈɪndiz/ are under one Crown, the laws and manner of government of one should conform as nearly as possible to those of the other” (p. 474).</p>
+            <p>The authority of European courts was three thousand miles away; settlers were empowered by the easy availability of land and their status as propertied men; and they took with them their identities as English, Spaniards, and Portuguese. Whatever political right was granted in their motherlands, they felt the same right should apply overseas as well (p. 474). The settlers were in “communication and communion” with their countries of origin and were influenced by events there. Bernard Bailyn /ˈbeɪlɪn/ (1967) shows how opposition thought in the North American settler colonies was inspired primarily by the political writings of the Whig /wɪɡ/ opposition in England /ˈɪŋɡlənd/ in the late 17th and early 18th centuries (p. 474). European ideals transmitted to European settlers underlay the American Revolution and the first democracy in the New World. Everywhere in the New World, except Haiti /ˈheɪti/, nationalist leaders who rejected the monarchical principle and advocated republican government were from the European settler community (p. 474).</p>
+            <p>Mechanism 4: Indirect Colonial Rule and Authoritarian Persistence</p>
+            <p>There is an intermediate category, countries that were colonized without settlement and with a relatively indirect form of colonial rule. Here, metropolitan powers ruled through the existing pattern of political authority and allowed substantial local political discretion. This meant that colonial rulers would often reinforce traditional forms of authority and suspend local regime dynamics (p. 474). Indirect colonial rule was not conducive to the subsequent development of democracy because (a) there was only limited institutional diffusion, (b) there was limited European settlement and ideational diffusion, and (c) the incorporation of indigenous political institutions would often reinforce existing authoritarian authority structures (p. 475).</p>
+          </div>
+          <div class="lang-zh">
+            <p>作者提出了一套连贯的机制，将早期国家发展与当代专制联系起来，通过欧洲殖民和定居的中介作用运作。这些机制可以组织为两个连续阶段。</p>
+            <p>机制1：早期国家作为殖民和定居的障碍</p>
+            <p>由类国家制度治理的领土更难被殖民，因为单一统治者下的集中权威使政体能够果断应对并组织协调抵抗（第473页）。作者借鉴了Patricia Crone（1986年）阐述的逻辑，指出防御是一种公共物品，自治政体或部落有动机搭便车于他人的防御努力。当权威集中在单一政体中时，搭便车更加困难。此外，如Hendrik Spruyt（1994年）所论，单一政体不太可能充满分裂和内部纷争，让殖民者无法利用分而治之的策略（第473页）。</p>
+            <p>作者为这一机制提供了大量历史证据。在北非（North Africa /ˈæfrɪkə/）和中东，欧洲人遇到了相对有组织的国家制度，他们无法将其殖民；16世纪初，西班牙（Spain /speɪn/）的查理五世（Charles V /tʃɑːrlz/）多次与奥斯曼人（Ottomans /ˈɒtəmənz/）争夺北非领土，但从未成功撼动奥斯曼据点（第473页）。1578年，葡萄牙人（Portuguese /ˌpɔːrtʃʊˈɡiːz/）在摩洛哥（Morocco /məˈrɒkəʊ/）的最后一个定居点在克萨尔·埃尔·凯比尔（Ksar El Kebir /ksɑːr el kəˈbɪr/）的灾难性战败后被放弃，塞巴斯蒂安国王（King Sebastian /səˈbæstʃən/）和8000名士兵在此战中阵亡（第473页）。</p>
+            <p>在新大陆，欧洲人遇到了阿兹特克帝国（Aztec /ˈæztek/）和印加帝国（Inca /ˈɪŋkə/），它们相对年轻，没有形成对抗殖民者的统一战线。特拉斯卡拉（Tlaxcala /tlæsˈkɑːlə/）人与特诺奇蒂特兰（Tenochtitlan /teˌnɒtʃtɪˈtlɑːn/）统治者之间的冲突是埃尔南·科尔特斯（Hernán Cortés /ɛrˈnɑːn kɔːrˈtes/）征服阿兹特克首都的重要因素；当科尔特斯征服特诺奇蒂特兰时，不到350人的西班牙军队得到了约6000名特拉斯卡拉战士的加入（第473页）。在巴西（Brazil /brəˈzɪl/），葡萄牙人发现的部落社会缺乏中央集权国家的协调，它们之间的争斗与对抗欧洲人一样频繁（第473页）。</p>
+            <p>在撒哈拉以南非洲（sub-Saharan Africa /sʌb səˈhærən ˈæfrɪkə/），埃塞俄比亚（Ethiopia /ˌiːθiˈəʊpiə/）是非洲大陆上最古老的王国国家，也是唯一强大到足以避免被殖民的国家。历史学家斯文·鲁本森（Sven Rubenson /sven ˈruːbənsən/）将此归因于该国悠久的国家历史：“[埃塞俄比亚]是一个意识到共同身份的单一政体，其政治凝聚力和对相关问题的认识超出了埃塞俄比亚敌人的预期”（第473页）。在亚洲（Asia /ˈeɪʒə/），日本（Japan /dʒəˈpæn/）的德川幕府（Tokugawa /toʊkuˈɡɑːwə/）足够强大，能够驱逐欧洲商人、传教士和定居者，禁止基督教并迫害本土皈依者，在锁国政策（Sakoku /sɑːˈkoʊku/）下将日本与欧洲影响近乎完全隔绝了两个世纪（第473页）。在中国（China /ˈtʃaɪnə/），当局严格限制欧洲商人的存在，只允许与政府授权的商会进行贸易（第473页）。</p>
+            <p>机制2：殖民策略与间接统治</p>
+            <p>殖民前的国家发展不仅影响了哪些领土被殖民，还塑造了殖民策略。在已经存在类国家制度和权威结构的地方，宗主国统治可以叠加在现有框架之上，通过已建立的渠道在间接统治体系中进行治理（第473页）。作者引用Gerring等人（2011年）的观点，认为被殖民领土作为殖民列强代理人的能力取决于该政体的国家化程度，对于殖民列强来说，使用现有权威和国家基础设施比摧毁后重建要容易得多（第473页）。因此，殖民前国家制度较发达的领土不太可能被殖民，但如果被殖民，则更可能以间接统治的形式被殖民（第473页）。</p>
+            <p>机制3：欧洲人定居与代议制度的传播</p>
+            <p>欧洲殖民和定居并未输出民主，因为当时没有一个殖民列强是民主国家。然而，欧洲定居者确实从他们的原籍国带来了治理制度形式以及他们作为欧洲人的身份认同，这两个因素都促进了早期代议制度的传播（第474页）。作者以西班牙王室为其海外领地颁布的《印度法律汇编》（Recopilación de las leyes de Indias）为例，该法典明确规定“卡斯蒂利亚（Castile /kæˈstiːl/）王国和印度群岛（Indies /ˈɪndiz/）王国同属一个王室，二者的法律和治理方式应尽可能一致”（第474页）。</p>
+            <p>欧洲法院的权威远在三千英里之外；定居者因土地易于获得和其有产者地位而获得权力；他们带着自己作为英国人、西班牙人和葡萄牙人的身份认同。无论母国授予什么政治权利，他们都认为同样的权利应该适用于海外（第474页）。定居者与其原籍国保持“沟通和交流”，受到那里事件的影响。伯纳德·贝林（Bernard Bailyn /ˈbeɪlɪn/，1967年）展示了北美定居者殖民地的反对派思想如何主要受到17世纪末和18世纪初英格兰（England /ˈɪŋɡlənd/）辉格党（Whig /wɪɡ/）反对派政治著作的启发（第474页）。传递给欧洲定居者的欧洲理想构成了美国革命和新大陆第一个民主国家的基础。在新大陆的各个地方，除了海地（Haiti /ˈheɪti/），拒绝君主制原则并倡导共和政府的民族主义领袖都来自欧洲定居者社区（第474页）。</p>
+            <p>机制4：间接殖民统治与威权持续</p>
+            <p>还有一类中间情况，被殖民但没有定居者且采用相对间接殖民统治形式的国家。在这些地方，宗主国通过现有的政治权威模式进行统治，并允许相当程度的地方政治自主权。这意味着殖民统治者往往会强化传统的权威形式并中止地方政权动态（第474页）。间接殖民统治不利于民主的后续发展，因为（a）制度扩散有限，（b）欧洲人定居和思想扩散有限，（c）对本土政治制度的纳入往往会强化现有的威权权威结构（第475页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>The author employs a comprehensive dataset covering 111 countries outside Europe for which State Antiquity Index scores are available. The sample is not restricted to former colonies because it is an integral part of the argument that countries strong enough to avoid colonization are likely to have remained autocratic (p. 476). The study covers a broad geographic scope including Africa, Asia, the Americas, and the Middle East, with the explicit exclusion of Europe to focus on the non-European experience.</p>
+            <p>Early State Development (Main Independent Variable): The State Antiquity Index (Version 3) by Bockstette and Putterman (2007) is used, with values calculated up to the year 1500. The index scores each half-century from year 1 to 1950 on three dimensions (level of government, local versus foreign control, territorial coverage), multiplies scores, and sums with a 5% discount rate (pp. 475-476).</p>
+            <p>Democracy (Main Dependent Variable): Three measures are employed: (1) Polity IV’s polity2 averaged over 1991-2007 (primary measure); (2) the binary ACLP indicator from Cheibub, Gandhi, and Vreeland (2009); and (3) Democracy stock from Gerring et al. (2005) measuring accumulated democratic experience since 1900 (p. 476).</p>
+            <p>Instrumental Variable: The timing of the Neolithic Revolution, the historical transition from foraging to farming approximately 10,000 years ago, is used as a source of exogenous variation in precolonial state development. Data on the timing of the Neolithic Revolution are from Putterman and Trainor (2006). The identification strategy is based on the simple idea that an early transition from hunting-gathering to settled agriculture predicts an early development of state institutions (pp. 480-481).</p>
+            <p>European Colonization and Settlement (Mediating Variables): Three proxies are used for settler penetration and influence: (1) the fraction of the population speaking as their first language the language of one of the main European colonial powers, English, French, German, Portuguese, or Spanish (from Hall and Jones 1999); (2) the fraction of the population of European descent (calculated from Putterman and Weil 2008); and (3) the duration of colonial rule in 100 years (from Olsson 2009). The author preferred measuring settler influence by language instead of descendancy because the former is likely to be measured with less error (p. 476).</p>
+            <p>Indirect Colonial Rule: As suggested by Matthew Lange (2004, Appendix A), a proxy for indirect colonial rule is the number of colonially recognized customary court cases divided by the total number of court cases. This measure only exists for 33 former British colonies. Because the form of colonial rule varied very systematically with the number of settlers, the author used settlement measures to predict the extent of indirect rule for countries with missing values. The correlation between the extent of indirect rule and the fraction of the population speaking a European language is −0.61 (t = −7.61) (p. 476).</p>
+            <p>Control Variables: The study includes numerous controls drawn from alternative theories of democratization: latitude (from Rodrik, Subramanian, and Trebbi 2004); population density in 1500 (from Acemoglu, Johnson, and Robinson 2002); settler mortality (from Acemoglu, Johnson, and Robinson 2001); terrain ruggedness and mountainous terrain; precipitation and precipitation volatility; soil quality indicators; temperature and humidity measures; GDP per capita; urbanization; educational attainment; ethnic, religious, and linguistic fractionalization; Protestant and Muslim majority dummies; and natural resource indicators including fuel exports and diamond deposits (pp. 490-491).</p>
+          </div>
+          <div class="lang-zh">
+            <p>作者使用了一个涵盖欧洲以外111个国家（有国家历史指数得分）的综合数据集。样本不限于前殖民地，因为强大到足以避免被殖民的国家更可能保持专制，这是论点的重要组成部分（第476页）。研究涵盖了广泛的地理范围，包括非洲、亚洲、美洲和中东，明确排除欧洲以聚焦非欧洲经验。</p>
+            <p>主要变量的测量：</p>
+            <p>早期国家发展（主要自变量）：使用</p>
+            <p>年）的国家历史指数（第3版），计算截至1500年的数值。该指数对公元1年至1950年的每个半世纪在三个维度（政府水平、本地与外国控制、领土覆盖）上评分，将分数相乘，并以5%的折现率求和（第475-476页）。</p>
+            <p>民主（主要因变量）：采用三种测量方式：（1）1991-2007年</p>
+            <p>Polity IV的polity2平均值（主要测量指标）；（2）Cheibub、Gandhi和Vreeland（2009年）的二元ACLP指标；（3）Gerring</p>
+            <p>等人（2005年）的民主存量，测量1900年以来累积的民主经验（第476页）。</p>
+            <p>工具变量： 新石器革命的时间，大约10000年前从采集狩猎向农耕的历史性转变，被用作殖民前国家发展的外生变异来源。新石器革命时间的数据来自Putterman和Trainor（2006年）。识别策略基于一个简单的想法：从狩猎采集向定居农业的早期转变预示着国家制度的早期发展（第480-481页）。</p>
+            <p>欧洲殖民和定居（中介变量）：使用三个代理变量来衡量定居者的渗透和影响：（1）以主要欧洲殖民列强语言，英语、法语、德语、葡萄牙语或西班牙语，为母语的人口比例（来自Hall和Jones 1999年）；（2）欧洲血统人口比例（根据Putterman和Weil 2008年计算）；（3）殖民统治持续时间，以100年为单位（来自Olsson 2009年）。作者倾向于用语言而非血统来衡量定居者影响，因为前者的测量误差可能更小（第476页）。</p>
+            <p>间接殖民统治： 按照Matthew Lange（2004</p>
+            <p>年，附录A）的建议，间接殖民统治的代理变量是殖民当局认可的习惯法案件数量除以案件总数。这一测量指标仅存在于33个前英国殖民地。由于殖民统治形式与定居者数量高度系统性相关，作者使用定居测量指标来预测缺失值国家的间接统治程度。间接统治程度与说欧洲语言人口比例之间的相关系数为−0.61（t = −7.61）（第476页）。</p>
+            <p>控制变量： 研究包括从民主化替代理论中提取的众多控制变量：纬度（来自Rodrik、Subramanian和Trebbi 2004年）；1500年人口密度（来自Acemoglu、Johnson和Robinson 2002年）；定居者死亡率（来自Acemoglu、Johnson和Robinson 2001年）；地形崎岖度和山地地形；降水量及其波动性；土壤质量指标；温度和湿度测量；人均GDP；城市化率；受教育程度；民族、宗教和语言分化程度；新教和穆斯林多数国家虚拟变量；以及包括燃料出口和钻石矿藏在内的自然资源指标（第490-491页）。</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>The author employs a multi-method approach combining ordinary least squares (OLS) regression with instrumental variable (IV) estimation to address both descriptive and causal questions.</p>
+            <p>Ordinary Least Squares (OLS):</p>
+            <p>The baseline analysis uses OLS regressions of democracy on early state development, corresponding to the equation:</p>
+            <div class="formula-box">\[
+              D_i=\alpha_D+\delta_S S_i+\beta_D X_i+\varepsilon_{Di}.
+            \]</div>
+            <p>Here \(D_i\) is democracy in country \(i\), \(S_i\) is early state development in country \(i\), and \(X_i\) is a vector of controls. The coefficient of interest is \(\delta_S\), which measures the association between state development up to 1500 and current levels of democracy (p. 476). Table 1 reports OLS coefficients showing a highly significant unconditional correlation of \(-5.47\) between democracy and precolonial state development outside Europe, with \(R^2\) showing that as much as one-tenth of the variation in contemporary levels of democracy is associated with variation in state development more than five centuries ago (p. 476).</p>
+            <p>Instrumental Variable (IV) Estimation:</p>
+            <p>To address endogeneity concerns, the author uses two-stage least squares (2SLS) estimation with the timing of the Neolithic Revolution as an instrumental variable for early state development. The endogeneity concerns include: (1) reverse causality, the way a state is governed affects the probability that it will survive as a state; (2) omitted variable bias, unobserved cultural and historical factors might affect both state history and regime trajectory; and (3) measurement error in the State Antiquity Index, which is bounded above at A.D. 1 and excludes millennia of state history in some countries (pp. 480-481).</p>
+            <p>The first-stage equation is:</p>
+            <div class="formula-box">\[
+              S_i=\alpha_S+\delta_T T_i+\beta_S X_i+\varepsilon_{Si}.
+            \]</div>
+            <p>Here \(T_i\) is the timing of the Neolithic transition in country \(i\). The identification strategy is based on the simple idea that an early transition from hunting-gathering to settled agriculture predicts an early development of state institutions through increased food production, population density, specialization, social stratification, and political organization (pp. 480-481).</p>
+            <p>Assumptions for IV Validity:</p>
+            <p>The validity of the 2SLS approach depends on the exclusion restriction, the assumption that, conditional on the controls included in the analyses, the timing of the Neolithic Revolution has no effect on democracy other than through its effect on early state development (p. 481). The author conducts several tests to examine this assumption:</p>
+            <p>1. Geographic and climatic controls: The author includes measures of ruggedness, precipitation and precipitation volatility, soil quality, temperature, and humidity to account for the possibility that factors affecting the timing of the Neolithic Revolution might also influence regime trajectories through other channels (p. 481).</p>
+            <p>2. Direct effect test: The timing of the Neolithic Revolution is included as a regressor alongside early state development in OLS regressions. If there were an independent effect of the agricultural revolution, one would expect this variable to be significant, but it is insignificant in almost all models (p. 483).</p>
+            <p>3. Three-stage least squares (3SLS): To purge estimates of potentially confounding cultural factors, the author instruments the timing of the Neolithic Revolution with measures of climate volatility, inspired by Ashraf and Michalopoulos (2010), who show that climate volatility and geographic factors explain as much as 90% of the cross-country variation in the timing of the Neolithic Revolution (p. 483).</p>
+            <p>Robustness Checks:</p>
+            <p>The author conducts extensive robustness checks including: (1) different sample restrictions excluding Africa and the Middle East, the Americas, or European offshoots (Australia /ɒˈstreɪliə/, Canada /ˈkænədə/, New Zealand /njuː ˈziːlənd/, United States); (2) inclusion of regional dummies; (3) different democracy measures; (4) controls for settler mortality; (5) excluding high-leverage or high-DFBETA observations; and (6) alternative theories of democracy including modernization (GDP per capita, urbanization, education), fractionalization, religion, and natural resources (pp. 477-479, 486-488).</p>
+          </div>
+          <div class="lang-zh">
+            <p>作者采用多方法策略，将普通最小二乘法（OLS）回归与工具变量（IV）估计相结合，以解决描述性和因果性问题。</p>
+            <p>普通最小二乘法（OLS）：</p>
+            <p>基线分析使用民主对早期国家发展的OLS回归，对应方程：</p>
+            <div class="formula-box">\[
+              D_i=\alpha_D+\delta_S S_i+\beta_D X_i+\varepsilon_{Di}.
+            \]</div>
+            <p>其中 \(D_i\) 是国家 \(i\) 的民主程度，\(S_i\) 是国家 \(i\) 的早期国家发展，\(X_i\) 是控制变量向量。感兴趣的系数是 \(\delta_S\)，它测量截至1500年的国家发展与当前民主水平之间的关联（第476页）。表1报告的OLS系数显示，欧洲以外地区民主与殖民前国家发展之间存在高度显著的无条件相关性，为 \(-5.47\)，\(R^2\) 表明当代民主水平变异中多达十分之一与五个多世纪前的国家发展变异相关（第476页）。</p>
+            <p>工具变量（IV）估计：</p>
+            <p>为解决内生性问题，作者使用两阶段最小二乘法（2SLS）估计，以新石器革命的时间作为早期国家发展的工具变量。内生性问题包括：（1）逆向因果，国家的治理方式影响其作为国家存续的概率；（2）遗漏变量偏误，未观察到的文化和历史因素可能同时影响国家历史和政权轨迹；（3）国家历史指数的测量误差，该指数上限为公元1年，在一些国家排除了数千年的国家历史）。</p>
+            <p>第一阶段方程为：</p>
+            <div class="formula-box">\[
+              S_i=\alpha_S+\delta_T T_i+\beta_S X_i+\varepsilon_{Si}.
+            \]</div>
+            <p>其中 \(T_i\) 是国家 \(i\) 的新石器转型时间。识别策略基于一个简单的想法：从狩猎采集向定居农业的早期转变通过增加粮食生产、人口密度、专业化、社会分层和政治组织，预示着国家制度的早期发展。</p>
+            <p>IV有效性的假设：</p>
+            <p>2SLS方法的有效性取决于排除性限制，即在控制分析中包含的变量后，新石器革命的时间对民主没有通过早期国家发展之外的其他影响（第481页）。作者进行了几项测试来检验这一假设：</p>
+            <p>1. 地理和气候控制： 作者纳入了崎岖度、降水量及其波动性、土壤质量、温度和湿度的测量，以解释影响新石器革命时间的因素可能通过其他渠道影响政权轨迹的可能性（第481页）。</p>
+            <p>2. 直接效应测试： 在OLS回归中，将新石器革命的时间与早期国家发展一起作为回归变量。如果农业革命存在独立效应，预期该变量将显著，但在几乎所有模型中它都不显著（第483页）。</p>
+            <p>3. 三阶段最小二乘法（3SLS）： 为了消除潜在混淆文化因素的影响，作者受Ashraf和Michalopoulos（2010年）启发，用气候波动性测量作为新石器革命时间的工具变量。他们的研究表明，气候波动性和地理因素解释了新石器革命时间跨国变异的90%（第483页）。</p>
+            <p>稳健性检验：</p>
+            <p>作者进行了广泛的稳健性检验，包括：（1）不同的样本限制，排除非洲和中东、美洲或欧洲分支国家（澳大利亚/ɒˈstreɪliə/、加拿大/ˈkænədə/、新西兰/njuː ˈziːlənd/、美国）；（2）纳入区域虚拟变量；（3）不同的民主测量指标；（4）控制定居者死亡率；（5）排除高杠杆或高DFBETA观测值；（6）民主的替代理论，包括现代化（人均GDP、城市化、教育）、分化程度、宗教和自然资源。</p>
+          </div>
+        </section>
+
+
+
+        <nav class="node-nav">
+          <a class="prev" href="dell2018.html"><small data-en="Previous reading" data-zh="上一篇">Previous reading</small>Dell et al. 2018</a>
+          <a class="next" href="arroyomaurer2021.html"><small data-en="Next reading" data-zh="下一篇">Next reading</small>Arroyo Abad &amp; Maurer 2021</a>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

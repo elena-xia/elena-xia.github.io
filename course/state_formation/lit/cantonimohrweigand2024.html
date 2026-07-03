@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cantoni et al. 2024 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 13" data-zh="第 13 周">Week 13</span> · <span data-en="Coercion–Extraction lane" data-zh="强制–汲取层">Coercion–Extraction lane</span> · <span data-en="Early modern (S3)" data-zh="早期现代（S3）">Early modern (S3)</span></p>
+        <h1><span class="lang-en">Davide Cantoni, Cathrin Mohr &amp; Matthias Weigand (2024), “The Rise of Fiscal Capacity: Administration and State Consolidation in the Holy Roman Empire,” Econometrica 92(5).</span><span class="lang-zh">坎托尼、莫尔、魏甘德（2024）《财政能力的兴起：神圣罗马帝国的行政管理与国家整合》，Econometrica。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#607066" data-en="Panel FE" data-zh="面板固定效应">Panel FE</span><span class="chip" style="background:#b0713f" data-en="Diff-in-diff" data-zh="双重差分">Diff-in-diff</span><span class="chip" style="background:#8a6d2e" data-en="Index construction" data-zh="指数构造">Index construction</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The paper examines three main dependent variables, all capturing different dimensions of state consolidation in the Holy Roman Empire /ˌhoʊli ˈroʊmən ˈɛmpaɪər/. First, territorial survival: whether a territory vanishes in a given year, coded as a binary indicator, disaggregated by cause, conflict/conquest, purchase, or dynastic extinction (p. 1451–1452). Second, territorial size: measured as the natural logarithm of the number of cities a territory rules, further decomposed into cities it rules alone (single ruler), uncontested cities, and total cities (p. 1454–1455). Third, territorial compactness: a measure of how cohesive and rounded a territory’s shape is, defined as the ratio of internal borders (shared between cities under the same ruler) to total borders of all city polygons in a territory, measured at both the territory level and the city level (p. 1456). These three outcomes, survival, size, and compactness, together constitute the authors’ operationalization of the overarching concept of “state consolidation” in the early modern period.</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文考察了三个主要因变量，它们分别刻画了神圣罗马帝国 /ˌhoʊli ˈroʊmən ˈɛmpaɪər/ 中国家整合（state consolidation）的不同维度。第一，领地存续（territorial survival）：某一领地是否在特定年份消亡，编码为二元指标，并按原因分解为冲突/征服、购买和王朝绝嗣三类（第1451–1452页）。第二，领地规模（territorial size）：用领地所统治城市数量的自然对数衡量，进一步区分为独治城市、无争议城市和全部城市（第1454–1455页）。第三，领地紧凑度（territorial compactness）：衡量领地形状的连贯性和圆整度，定义为内部边界（同一领主所辖城市之间的共享边界）与领地内全部城市多边形边界总长的比值，分别在领地层面和城市层面进行度量（第1456页）。这三项结果，存续、规模和紧凑度，共同构成了作者对近代早期“国家整合”这一上位概念的操作化衡量。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The main independent variable is fiscal centralization, operationalized as the introduction of a permanent, centralized fiscal administration, specifically, a Chamber (Hofkammer or Rentkammer), within a territory. In the main panel regressions, this is coded as an absorbing binary indicator (Treated) that switches from 0 to 1 in the year a territory introduces such a Chamber and remains 1 thereafter. The authors document Chamber adoption for 39 territories between the sixteenth and eighteenth centuries and, in the main outcome specifications, interact Treated with Decades Since Treatment to capture the fact that the effects of fiscal centralization unfold gradually over time rather than appearing as a one-off shock.</p>
+            <p>In the paper’s instrumental-variables strategy, the relevant source of exogenous variation is not Chamber adoption itself but variation in the Imperial tax pressure faced by a territory. More precisely, the authors exploit the interaction between a territory’s fixed contribution share in the Imperial Register (Reichsmatrikel) of 1521 and the quasi-random timing and size of aggregate Imperial tax levies. Because Chamber adoption is an absorbing treatment, the IV is constructed as the maximum Imperial tax contribution a territory has faced up to year t, rather than simply the contemporaneous interaction term. This instrument is used to identify the causal effect of fiscal centralization on consolidation outcomes for the subset of territories whose adoption decisions were shifted by Imperial tax pressure.</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要自变量是财政集权化（fiscal centralization），其操作化方式是一个领地是否建立了永久性的、集中化的财政管理机构，具体而言，即设立了 财政室（Hofkammer 或 Rentkammer）。在正文的主回归中，这一变量被编码为一个吸收态二元指标（Treated）：在领地建立财政室的年份从 0 变为 1，此后保持为 1。作者记录了 16 世纪到 18 世纪之间 39 个领地引入财政室的时间；在主要结果方程中，又将 Treated 与 Decades Since Treatment 交互，以刻画财政集权化的影响并非一次性冲击，而是会随时间逐步展开。</p>
+            <p>在论文的工具变量识别策略中，真正提供外生变异的并不是财政室建立本身，而是一个领地所面临的帝国税压力。更准确地说，作者利用的是：领地在 1521 年帝国税册（Reichsmatrikel） 中的固定分摊份额，与帝国税总额在时间上和规模上的准随机波动之间的交互。由于财政室建立是一个吸收态处理，作者在 IV 中进一步将工具变量构造为：截至 t 年为止，该领地所面临过的最大帝国税贡献，而不是简单的当期交互项。这个 IV 用来识别财政集权化对国家整合结果的因果效应，但其识别对象是那些会被帝国税压力推动进入 reform 的领地。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>The paper does not study the rise of the modern nation-state in the full Weberian sense. Rather, it analyzes the territorial consolidation of princely polities within the Holy Roman Empire in the early modern period. The relevant political units are the Empire’s constituent territories, whose rulers increasingly exercised sovereignty over the administrative and fiscal organization of their lands. In this setting, “state building” is best understood as the transformation from more personalized, fragmented, and overlapping forms of rule toward more durable, territorially bounded, and bureaucratically organized rule. The paper therefore focuses on territorial state consolidation, not on the emergence of a fully modern centralized nation-state with standardized citizenship, uniform law, and direct administration over a national population.</p>
+            <p>Empirically, the authors capture this consolidation through three principal outcome dimensions: survival, size, and compactness. Survival refers to whether a territory continues to exist rather than vanishing through conflict/conquest, purchase, or dynastic extinction. Size is measured by the number of cities a territory controls, with distinctions between cities ruled alone, uncontested cities, and all cities. Compactness captures how territorially cohesive a polity becomes, that is, whether its holdings are increasingly contiguous rather than scattered across enclaves and exclaves. These are the paper’s main observable indicators of consolidation, and the authors explicitly motivate them as the major aspects of territorial “enlargement” and survival in the early modern imperial setting.</p>
+            <p>The paper treats fiscal capacity in a narrow and historically specific sense. It is not defined as the ability to impose broad-based new taxation through representative bargaining. Instead, it refers primarily to the administrative capacity to collect, organize, monitor, and spend existing demesne-based revenues more efficiently. The Chamber is the operational marker of this capacity because it introduced centralized bookkeeping, systematic audits, and a specialized collegial office that concentrated fiscal knowledge. In theoretical terms, the paper draws less on a generic “war makes states” narrative than on an organizational account in which a new bureaucratic layer reduces fiscal complexity and improves the ruler’s ability to use preexisting revenue sources.</p>
+          </div>
+          <div class="lang-zh">
+            <p>这篇论文研究的并不是完整韦伯意义上的现代民族国家兴起，而是近代早期神圣罗马帝国内部亲王领地的 territorial consolidation。作者关注的政治单位是帝国的组成性领地；随着时间推移，这些领地的统治者越来越多地掌握其土地的行政与财政组织权。在这样的背景下，论文中的 “state building” 更适合理解为：从更具人格性、碎片化、管辖重叠的统治形式，转向更持久、更具领土边界性、也更官僚化的统治形式。因此，本文讨论的首先是领地性的国家整合，而不是一个已经具备统一公民身份、统一法制与直接国民治理能力的现代 nation-state 的形成。</p>
+            <p>在经验层面，作者主要通过三个结果维度来把握这种整合：存续、规模和紧凑度。存续指领地是否继续存在，而不是因冲突/征服、购买或王朝绝嗣而消失；规模指领地控制城市的数量，并区分独治城市、无争议城市和全部城市；紧凑度则刻画一个 polity 的领土是否越来越连片，而非散落成大量飞地和孤立据点。这三项并不是对 “state” 概念的穷尽性定义，</p>
+            <p>而是论文用来观察 early modern imperial setting 中 territorial consolidation 的主要可观测指标；作者也明确将 survival 与 territorial “enlargement”</p>
+            <p>视为这一历史过程的关键面向。</p>
+            <p>关键在于，论文对财政能力的理解是狭义而历史特定的。它不是通过代议制协商来征收广泛新税的能力，而主要是对既有领地收入，即 demesne-based revenues，进行更有效率的征收、组织、监控与支出的行政能力。财政室之所以成为财政能力建设的操作性指标，正是因为它引入了集中化簿记、系统性审计，以及一个专门汇聚财政知识的合议制常设机构。就理论取向而言，本文并不只是复述一个一般性的 “war makes states” 故事，而是在组织理论意义上说明：新的官僚层级如何降低财政复杂性，并提高统治者利用既有收入来源的能力。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The core argument is that the development of fiscal capacity through permanent, centralized administrations (Chambers) was an institutional innovation that drove state consolidation in the Holy Roman Empire. The argument unfolds in two steps.</p>
+            <p>First, regarding the origins of fiscal centralization: rulers faced a cost-benefit tradeoff when deciding whether to adopt a Chamber. The benefit was increased efficiency in extracting revenues from existing demesnes (not from new taxes); the cost was the fixed expense of establishing permanent offices and employing professional bureaucrats. The key exogenous driver that tipped this tradeoff was the imposition of Imperial taxes (Reichstürkenhilfe): at irregular intervals, the Imperial Diet required territorial rulers to process and remit war taxes (primarily to fund campaigns against the Ottoman /ˈɒtəmən/ Empire). While rulers could pass these taxes through to their subjects costlessly, having a sophisticated fiscal bureaucracy allowed them to retain a surplus from more efficient processing. The larger the Imperial tax request, the greater the incentive to adopt a Chamber. The quasi-random timing and size of these Imperial tax levies, combined with each territory’s fixed share in the Imperial Register of 1521, provided an exogenous, territory-specific fiscal demand shock that predicted Chamber adoption (p. 1441, 1446, 1449–1451).</p>
+            <p>Second, regarding the consequences: once a Chamber was established, territories experienced three interrelated consolidation outcomes. They were more likely to survive (specifically, less likely to vanish through conflict or purchase, though not through dynastic extinction, which is treated as exogenous). They grew larger, controlling more cities over time. And they became more compact, achieving more cohesive territorial shapes. These effects unfolded gradually over decades rather than appearing as an immediate, one-off shock (p. 1440, 1451–1456).</p>
+            <p>The authors are careful to note that this is not a story about taxation and representation. In the Holy Roman Empire, the taxation-representation nexus was resolved in favor of rulers and absolutism, not parliamentarism. Chambers operated entirely within the sovereign’s private finances, separate from and independent of the Estates (territorial parliaments). Over time, Chambers grew to become the dominant administrative institution, progressively absorbing fiscal tasks that had been associated with the Estates, thereby tilting the consolidating states toward bureaucratic-absolutist governance (p. 1442, 1458, 1468–1469).</p>
+          </div>
+          <div class="lang-zh">
+            <p>核心论点是：通过永久性、集中化行政机构（财政室）发展起来的财政能力，是推动神圣罗马帝国国家整合的关键制度创新。论证分为两步展开。</p>
+            <p>第一，关于财政集权化的起源：统治者在决定是否设立财政室时面临成本，收益权衡。收益是提高对现有领地收入（而非新税）的征收效率；成本是建立常设机构和雇佣专业官僚的固定支出。使这一权衡发生倾斜的关键外生驱动因素是帝国税（Reichstürkenhilfe）的征收：帝国议会不定期地要求各领地统治者处理和上缴战争税款（主要用于资助对抗奥斯曼帝国 /ˈɒtəmən/ 的战役）。虽然统治者可以将这些税赋无成本地转嫁给臣民，但拥有精密的财政官僚机构使他们能够从更高效的税赋处理中截留盈余。帝国税请求越大，设立财政室的激励就越强。帝国税征收的准随机时间和规模，结合各领地在1521年帝国税册中的固定份额，为财政室的设立提供了一个外生的、因领地而异的财政需求冲击，有效预测了财政室的建立（第1441、1446、1449–1451页）。</p>
+            <p>第二，关于后果：财政室一旦建立，领地就经历了三个相互关联的整合结果。它们更有可能存续（具体而言，因冲突或购买而消亡的概率显著下降，但因王朝绝嗣而消亡的概率不受影响，后者被视为外生的）。它们的规模随时间逐步扩大，控制更多的城市。它们的形状也变得更加紧凑，实现了更连片的领土版图。这些效应是在数十年的过程中逐渐展开的，而非作为一次性冲击即时显现（第1440、1451–1456页）。</p>
+            <p>作者审慎地指出，这并非一个关于征税与代议制关系的故事。在神圣罗马帝国，征税，代议制的关系是以有利于统治者和专制主义的方式解决的，而非议会主义。财政室完全在领主的私人财政范围内运作，独立于等级会议（领地议会）。随着时间推移，财政室成长为最主要的行政机构，逐步吸收了原本与等级会议相关联的财政职能，从而将正在整合中的国家推向官僚，专制主义治理（第1442、1458、1468–1469页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>The authors identify four concrete mechanisms through which fiscal centralization translated into improved consolidation outcomes.</p>
+            <p>1. Increased revenues (p. 1460–1461). Historical revenue data for Hesse /hɛsə/ and Albertine Saxony /ˈælbɜːtiːn ˈsæksəni/ show that revenues increased substantially following the introduction of a Chamber. In Hesse, revenues jumped by over 36,000 guilders in the decade after centralization. In Albertine Saxony, drink excise tax revenues rose from an average of 21,000 guilders to approximately 26,000 guilders per year after the 1524 reform. These increases came from more efficient exploitation of existing revenue sources (demesnes), not from new taxes. This is consistent with the Chamber’s mandate to improve administrative efficiency rather than expand the tax base.</p>
+            <p>2. Reduced reliance on pawning (p. 1461–1462). Before Chambers, rulers frequently pawned cities and land holdings to local nobles in exchange for short-term cash, an inefficient and self-defeating practice that eroded the revenue base. After fiscal centralization, the probability of a city being pawned dropped sharply and immediately (as shown in event-study graphs), indicating that improved fiscal administration allowed rulers to generate revenue through regular channels rather than selling off assets. In Hesse, the Chamber redeemed 28 local offices and spent 100,000 guilders redeeming pawns within a decade; in Albertine Saxony, the largest post-reform expenditure (46,190 guilders) went to pawn redemption.</p>
+            <p>3. Military investment and defensive success (p. 1463–1464). Following fiscal centralization, cities in treated territories experienced a significant increase in military construction (castles, arsenals, fortifications), about 0.04 additional buildings per century, against a baseline of 0.051 per century. This near-doubling of military infrastructure investment was not driven by increased attacks or changes in the external threat environment. Importantly, when cities in centralized territories were attacked, the probability of losing the city to another ruler was reduced to nearly zero (the interaction of Attack × Treated almost exactly offsets the main effect of Attack on rule changes due to violence), while there was no such defensive advantage for rule changes due to purchase or extinction. This confirms that military investment following fiscal centralization substantially increased defensive capabilities.</p>
+            <p>4. Strategic marriage success (p. 1464–1466). Marriages were a primary tool of territorial expansion through inheritance claims. They were also expensive: dowries and wedding ceremonies required large sums from the ruler’s treasury, which Chambers helped finance. The authors measure marriage success by the change in a daughter’s dynastic network connectedness resulting from her marriage, specifically, the number of territorial rulers and ruled cities within three degrees of family separation. After fiscal centralization, rulers’ daughters gained 29% more connected rulers and 70% more connected land holdings through their marriages, reflecting substantially improved outcomes of marriage diplomacy.</p>
+            <p>The authors further conduct a mediation analysis (p. 1466–1468) in which they interact the treatment with features that amplify specific mechanisms. Territories whose Chamber ordinance explicitly included a construction mandate showed larger effects on size and compactness. Territories where the ruler had marriageable daughters showed additional consolidation gains. While statistical power is limited (given the small number of territories with these features), the interaction coefficients point in the expected directions and are quantitatively meaningful.</p>
+          </div>
+          <div class="lang-zh">
+            <p>作者识别出四个具体机制，财政集权化正是通过这些机制转化为更好的国家整合结果。</p>
+            <p>1. 收入增加（第1460–1461页）。 黑森 /hɛsə/ 和阿尔贝廷萨克森 /ˈælbɜːtiːn ˈsæksəni/ 的历史收入数据显示，财政室设立后收入大幅增长。在黑森，集权化后十年内收入增加了超过36,000基尔登。在阿尔贝廷萨克森，饮品消费税收入从平均每年21,000基尔登上升至1524年改革后的约26,000基尔登。关键在于，这些增长来自对现有收入来源（领地产业）更有效率的开发，而非新税种，这与财政室旨在提高行政效率而非扩大税基的使命相一致。</p>
+            <p>2. 减少对城市质押的依赖（第1461–1462页）。 在财政室建立之前，统治者经常将城市和土地质押给地方贵族以换取短期现金，这是一种低效且自我削弱的做法，会侵蚀收入基础。财政集权化之后，城市被质押的概率急剧且立即下降（如事件研究图所示），表明改进的财政管理使统治者能够通过常规渠道获取收入，而不必出售资产。在黑森，财政室在十年内赎回了28个地方机构，并花费100,000基尔登赎回质押；在阿尔贝廷萨克森，改革后最大的一笔支出（46,190基尔登）用于赎回质押。</p>
+            <p>3. 军事投资与防御成功（第1463–1464页）。 财政集权化后，实验组领地中的城市在军事建筑（城堡、军械库、防御工事）方面出现了显著增长，每世纪约增加0.04座建筑，而基线水平为每世纪0.051座。这种几近翻倍的军事基础设施投资并非由攻击增多或外部威胁环境变化所驱动。重要的是，当集权化领地的城市确实遭到攻击时，城市被夺走的概率几乎降至零（Attack × Treated的交互效应几乎完全抵消了Attack对因暴力导致统治者变更的主效应），而对于因购买或绝嗣导致的统治者变更则无此防御优势。这证实了财政集权化后的军事投资大幅提高了防御能力。</p>
+            <p>4. 战略婚姻成功（第1464–1466页）。 婚姻是通过继承权主张进行领土扩张的主要工具。婚姻也是昂贵的：嫁妆和婚礼仪式需要从统治者的国库中支出大笔资金，而财政室有助于为此提供资金。作者通过一位女儿的婚姻所带来的王朝网络联通性变化来度量婚姻成功，具体而言，即婚后三度家族分隔范围内的领地统治者数量和被统治城市数量。财政集权化后，统治者的女儿通过婚姻增加了29%的关联统治者和70%的关联领地，反映出婚姻外交成果的大幅改善。</p>
+            <p>作者还进行了中介分析（第1466–1468页），将处理变量与放大特定机制的特征进行交互。那些财政室条例中明确包含建筑任务的领地，在规模和紧凑度上表现出更大的效应。统治者拥有适婚女儿的领地表现出额外的整合收益。虽然统计检验力有限（因为具有这些特征的领地数量较少），但交互系数的方向符合预期，且在数量上具有实质意义。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>The paper is built around a major, novel data collection effort, the scale of which is itself a significant contribution.</p>
+            <p>Core dataset, cities and territories (p. 1440, 1446–1447). The authors construct a panel linking each of the 2,382 cities in the Deutsches Städtebuch /ˈdɔʏtʃəs ˈʃtɛːtəbuːx/ (Keyser et al., 1939–2003), a comprehensive encyclopedia of cities in Central Europe, to one or multiple ruling dynasties for every year between 1400 and 1789. For each city-year, they record the kind of rule, the hierarchy of rulers (if multiple), and reasons for any rule changes. From this, they aggregate to the territory level, identifying 636 distinct territorial entities, 102,825 territory-year observations, and 15,568 rule transitions. Some analyses are conducted at the city-year level (826,408 observations) (p. 1440, 1447).</p>
+            <p>Fiscal centralization data (p. 1448). They construct a novel dataset on the dates of Chamber introduction for 39 territories by supplementing and cross-verifying the comprehensive administrative history handbook by Jeserich /ˈjeːzərɪç/, Pohl /poːl/, and von Unruh /fɔn ˈʊnruː/ (1983) with a large number of publications on fiscal and regional history. There is considerable variation in adoption timing: Württemberg /ˈvʏrtəmbɛrk/ and Albertine Saxony were first (early 16th century), while Schaumburg-Lippe /ˈʃaʊmbʊrk ˈlɪpə/, Paderborn /ˈpɑːdɐbɔrn/, and Reuß-Greiz /rɔʏs ɡraɪts/ did not adopt until the 18th century.</p>
+            <p>Dynastic network data (p. 1447). The authors identify 2,799 rulers of secular territories in an extensive kinship and marriage network of over 133,000 members of noble families sourced from Marek /ˈmɑːrɛk/ (2018). For each individual, dates of birth, death, and marriage, as well as full offspring and marriage links, are known. This allows the calculation of network-based measures of dynastic connectedness.</p>
+            <p>Spatial data (p. 1447). Lacking detailed year-by-year border maps, the authors approximate territorial shape by drawing Thiessen /ˈtiːsən/ (Voronoi /vɒrɒˈnɔɪ/) polygons around city center-points and aggregating polygons belonging to the same ruler in a given year. This enables the computation of compactness measures. They also construct modified polygons accounting for terrain ruggedness and river velocity as robustness checks.</p>
+            <p>Imperial tax data (p. 1448). Territories are mapped to the Imperial Register (Reichsmatrikel) of 1521, which assigned a fixed share of the Imperial tax burden to each territory. The timing and total size of Imperial tax levies, raised 30 times between 1522 and 1740, are collected from historical sources.</p>
+            <p>Additional covariates (p. 1448–1449). The dataset is enriched with geographic variables (terrain ruggedness, distance to navigable water, agricultural suitability, mining activity), economic indicators (construction events, market grants from the Deutsches Städtebuch), conflict data (attacks to cities), institutional data (advisory councils, Estates/territorial diets), and neighborhood characteristics (military construction in foreign neighboring cities, share of fiscally centralized neighbors).</p>
+            <p>Geographic and temporal coverage: The analysis covers all territories and cities within the Holy Roman Empire (approximating the borders of Germany in 1937), from 1400 to 1789, excluding territories outside the Empire or largely outside the area of analysis (such as Bohemia /boʊˈhiːmiə/ and the Further Austrian territories of the Habsburgs /ˈhæpsbɜːrɡ/) (p. 1447).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文建立在一项大规模的、原创性的数据采集工作之上，其数据规模本身即为重要贡献。</p>
+            <p>核心数据集，城市与领地（第1440、1446–1447页）。 作者构建了一个面板数据集，将《德国城市志》（Deutsches Städtebuch /ˈdɔʏtʃəs ˈʃtɛːtəbuːx/，Keyser等人，1939–2003）中全部2,382座中欧城市逐一链接到1400年至1789年间每一年度的一个或多个统治王朝。对每个城市-年度观测值，记录统治类型、统治者层级（如有多个统治者）以及任何统治者变更的原因。从中汇总到领地层面，识别出636个不同的领地实体、102,825个领地-年度观测值和15,568次统治者交接。部分分析在城市-年度层面进行（826,408个观测值）（第1440、1447页）。</p>
+            <p>财政集权化数据（第1448页）。 作者通过补充和交叉核验耶泽里希 /ˈjeːzərɪç/、波尔 /poːl/ 和冯·温鲁 /fɔn ˈʊnruː/（1983）的综合行政史手册以及大量财政史和地方史文献，构建了一个关于39个领地引入财政室日期的原创数据集。采纳时间差异很大：符腾堡 /ˈvʏrtəmbɛrk/ 和阿尔贝廷萨克森最早（16世纪初），而绍姆堡-利珀 /ˈʃaʊmbʊrk ˈlɪpə/、帕德博恩 /ˈpɑːdɐbɔrn/ 和罗伊斯-格赖茨 /rɔʏs ɡraɪts/ 直到18世纪才采纳。</p>
+            <p>王朝网络数据（第1447页）。 作者从马雷克 /ˈmɑːrɛk/（2018）的数据中识别出2,799名世俗领地的统治者，这些统治者位于一个包含超过133,000名贵族成员的广泛亲属和婚姻网络中。对每个个体，已知出生、死亡和婚姻日期，以及完整的后代和婚姻关系。这使得计算基于网络的王朝联通性度量成为可能。</p>
+            <p>空间数据（第1447页）。 由于缺乏详细的逐年边界地图，作者通过在城市中心点周围绘制泰森 /ˈtiːsən/（沃罗诺伊 /vɒrɒˈnɔɪ/）多边形，并将同一统治者在给定年份的多边形汇总，来近似领地形状。这使紧凑度度量的计算成为可能。作为稳健性检验，他们还构建了考虑地形崎岖度和河流流速的修正多边形。</p>
+            <p>帝国税数据（第1448页）。 领地被映射至1521年帝国税册（Reichsmatrikel），该税册为每个领地分配了固定的帝国税负担份额。帝国税征收的时间和总额，在1522年至1740年间共征收了30次，从历史文献中采集。</p>
+            <p>其他控制变量（第1448–1449页）。 数据集还纳入了地理变量（地形崎岖度、距通航水道距离、农业适宜性、采矿活动）、经济指标（建筑事件、来自《德国城市志》的市场特许权）、冲突数据（城市遭受攻击）、制度数据（顾问委员会、等级会议/领地议会）以及邻域特征（外国邻近城市的军事建设、财政集权化邻域的比例）。</p>
+            <p>地理和时间覆盖范围： 分析涵盖神圣罗马帝国内（大致对应1937年德国边界内）的全部领地和城市，时间跨度为1400年至1789年，排除了帝国之外或主要位于分析区域之外的领地（如波西米亚 /boʊˈhiːmiə/ 和哈布斯堡王朝 /ˈhæpsbɜːrɡ/ 的远奥地利领地）（第1447页）。</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>The paper employs a range of econometric methods, all built around a staggered difference-in-differences design with a rich panel dataset.</p>
+            <p>1. Predicting Chamber adoption, hazard model (Section 4, p. 1449–1451). The authors estimate a linear probability model at the territory-decade level to identify predictors of fiscal centralization. The dependent variable is a binary indicator for Chamber adoption in a given decade; once a territory adopts, it exits the sample (reflecting the absorbing state). The regression includes territory and decade fixed effects. Covariates are grouped into geographic, internal composition, commercial/economic, external military pressure, and Imperial tax contribution variables. The key finding is that the interaction of the territory’s fixed contribution share with the logged total Imperial tax levy (Roman Months) is the only consistently significant predictor across all specifications, including Cox hazard rate regressions.</p>
+            <p>2. Main effects, two-way fixed effects (TWFE) regressions (Section 5, p. 1451–1457). For each of the three consolidation outcomes (vanishing, size, compactness), the authors estimate panel regressions at the territory-year or city-year level with territory (and/or city) and year fixed effects. The treatment variable Treated is interacted with Decades Since Treatment to capture the gradually unfolding effect. Standard errors are clustered at the territory level throughout.</p>
+            <p>3. Event studies (p. 1453, 1455–1457). The authors estimate event-study specifications that interact the treatment indicator with relative decade dummies (for decades before and after treatment). These serve two purposes: demonstrating the absence of immediate pre-trends (supporting the parallel trends assumption) and visualizing the dynamic trajectory of treatment effects. For the vanishing outcome, pre-treatment coefficients cannot be estimated because sample inclusion is conditional on survival to the treatment date.</p>
+            <p>4. Robustness, confounders (p. 1457–1458). The authors control for a range of time-varying, territory-specific potential confounders: the external military threat environment, concurrent institutional changes (advisory councils), and the role of Estates/parliaments. They show that Chamber ordinances were issued separately from council ordinances and that accounting for Estates does not alter results. They emphasize that in the Holy Roman Empire, unlike England or France, the taxation-representation nexus was resolved in favor of absolutism.</p>
+            <p>5. Robustness, matching (p. 1459). The authors implement nearest neighbor matching, full matching, and restrict to territories in the 90th percentile of adoption probability (predicted from a cross-section Probit on 1500 characteristics). They repeat these matching strategies for territory size in 1500 and for the Imperial Register contribution share. Results are robust across all approaches.</p>
+            <p>6. Robustness, intensive margin (p. 1459). Restricting to only the 39 territories that eventually adopt a Chamber yields qualitatively and quantitatively similar results, addressing concerns about comparisons between fundamentally different types of territories and potential SUTVA violations/spillovers.</p>
+            <p>7. Instrumental variables (p. 1459–1460). The authors construct a shift-share IV: the instrument is the maximum cumulative Imperial tax contribution a territory has faced up to year t (the interaction of the fixed Reichsmatrikel share and the quasi-randomly varying total tax levy). Following Borusyak /bɒˈruːʃæk/, Hull /hʌl/, and Jaravel /ˈʒɑːrɑːvɛl/ (2022), the identifying assumption is that the temporal shocks to the overall tax level are orthogonal, even if the territory-specific share may be endogenously determined. The IV estimates are qualitatively similar to OLS but larger in magnitude, consistent with higher returns to Chamber adoption for compliers. The authors note two limitations: the IV only recovers a LATE (for compliers induced by Imperial tax pressure), and because treatment is binary/absorbing while the IV is continuous, the IV cannot estimate the dynamic time-since-treatment effects or event studies.</p>
+            <p>8. Robustness, heterogeneous treatment effects (p. 1460). The authors address concerns from the recent econometrics literature (Sun and Abraham 2021; De Chaisemartin and d’Haultfœuille 2020) about bias in TWFE with staggered adoption. They show robustness to excluding individual territories (ruling out that results are driven by outliers like Prussia /ˈprʌʃə/) and employ the De Chaisemartin and d’Haultfœuille (2024) estimator.</p>
+            <p>Key identifying assumptions: (a) Conditional on territory and year fixed effects, there are no unobserved, time-varying, territory-specific confounders that coincide with Chamber adoption and independently drive consolidation. (b) The parallel trends assumption: absent treatment, treated and control territories would have followed similar trajectories. The event studies support this by showing no immediate pre-trends, though the authors acknowledge that some results are not robust to the inclusion of linear territory trends. (c) For the IV: the exclusion restriction requires that Imperial tax levies affect consolidation outcomes only through their effect on Chamber adoption (i.e., not through direct war exposure, which the authors argue is satisfied since no territory in their analysis was directly affected by Ottoman campaigns, p. 1441). (d) Monotonicity: higher Imperial tax contributions weakly increase the probability of Chamber adoption. (e) SUTVA: the treatment effect for one territory does not depend on the treatment status of other territories, which is partially addressed by the intensive-margin analysis.</p>
+            <p>Although the authors do not present a fully formalized mathematical model in the main text (a formal treatment is in Supplemental Appendix, Section C, p. 1449), they describe a clear stylized framework for the adoption decision. The key elements are:</p>
+            <p>A territory’s ruler faces fiscal demands that vary over time. These demands come from two sources: internal needs (court expenses, feuds, military costs) and external shocks (Imperial tax levies).</p>
+            <p>Without a Chamber, complex fiscal tasks cannot be handled efficiently even by the prince and his advisors. This creates an efficiency loss in raising and spending revenues from demesnes. The size of this efficiency loss depends on the complexity of the fiscal environment, proxied by geographic features (terrain ruggedness, dispersed land holdings) and the composition of demesne types.</p>
+            <p>Introducing a Chamber adds a specialized administrative layer to the territorial hierarchy (following Garicano 2000’s knowledge hierarchy model). This layer concentrates fiscal expertise, enabling the systematic auditing of local offices, centralized bookkeeping, and the tracking of revenue flows. For a given level of fiscal demands and demesne size, this narrows the efficiency gap and benefits princely finances.</p>
+            <p>Against these benefits stand the fixed costs of establishing the Chamber: setting up permanent offices and paying professional bureaucrats.</p>
+            <p>The key time-varying shock to fiscal demands comes from Imperial taxes: when the Imperial Diet requests a large tax, a territory with a Chamber can process it more efficiently and retain a surplus proportional to the size of the request. This surplus-retention incentive scales with both the territory’s fixed share in the Imperial Register and the total tax requested.</p>
+            <p>In each period, the ruler compares the static efficiency gains from a Chamber against its fixed costs. When a sufficiently large Imperial tax request pushes the benefits above the fixed cost threshold, the ruler adopts a Chamber. This explains why Chamber adoption clusters around Imperial Diet sessions that approved large tax levies (p. 1449–1451).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文采用了一系列计量经济学方法，全部围绕一个基于丰富面板数据的交错双重差分（staggered difference-in-differences）设计展开。</p>
+            <p>1. 预测财政室建立，风险模型（第4节，第1449–1451页）。 作者在领地-十年层面估计了一个线性概率模型，以识别财政集权化的预测因素。因变量为给定十年内是否建立财政室的二元指标；一旦领地采纳，即退出样本（反映吸收态特征）。回归包含领地和十年固定效应。协变量分为地理、内部构成、商业/经济、外部军事压力和帝国税贡献五组。核心发现是：领地固定贡献份额与帝国税总额（罗马月）对数的交互项是所有设定（包括Cox比例风险回归）中唯一始终显著的预测因素。</p>
+            <p>2. 主效应，双向固定效应（TWFE）回归（第5节，第1451–1457页）。 对于三个整合结果（消亡、规模、紧凑度）中的每一个，作者在领地-年度或城市-年度层面进行面板回归，包含领地（和/或城市）和年份固定效应。处理变量Treated与Decades Since Treatment交互，以捕捉效应逐步展开的特征。全文均在领地层面进行标准误聚类。</p>
+            <p>3. 事件研究（第1453、1455–1457页）。 作者估计了事件研究设定，将处理指标与相对十年虚拟变量（处理前后的各十年）交互。这有两个目的：证明不存在即时的处理前趋势（支持平行趋势假设），以及可视化处理效应的动态轨迹。对于消亡结果，由于样本的纳入以存续到处理年份为条件，处理前系数无法估计。</p>
+            <p>4. 稳健性，混淆因素（第1457–1458页）。 作者控制了一系列随时间变化的、领地特定的潜在混淆因素：外部军事威胁环境、同期的制度变革（顾问委员会）以及等级会议/议会的角色。他们表明财政室条例是独立于委员会条例发布的，且控制等级会议不影响结果。他们强调，与英格兰或法国不同，在神圣罗马帝国中，征税，代议制的关系是以有利于专制主义的方式解决的。</p>
+            <p>5. 稳健性，匹配（第1459页）。 作者实施了最近邻匹配、完全匹配，并限制在采纳概率第90百分位以上的领地（基于1500年特征的截面Probit模型预测）。他们还对1500年的领地规模和帝国税册贡献份额重复了这些匹配策略。所有方法下结果均稳健。</p>
+            <p>6. 稳健性，密集边际（第1459页）。 仅限于最终采纳财政室的39个领地进行分析，结果在定性和定量上相似，回应了关于根本不同类型领地之间比较以及潜在SUTVA违反/溢出效应的关切。</p>
+            <p>7. 工具变量（第1459–1460页）。 作者构建了一个份额-冲击（shift-share）工具变量：工具变量为一个领地截至t年所面临的最大累计帝国税贡献（帝国税册固定份额与准随机变化的税收总额的交互项）。依据博鲁沙克 /bɒˈruːʃæk/、赫尔 /hʌl/ 和贾拉韦尔 /ˈʒɑːrɑːvɛl/（2022），识别假设为：对总税额的时间冲击是正交的，即使领地特定份额可能是内生决定的。IV估计值在方向上与OLS一致，但幅度更大，与对遵从者（compliers）而言财政室采纳回报更高相一致。作者指出两个局限：IV仅恢复局部平均处理效应（LATE，针对受帝国税压力驱动进入处理的遵从者）；由于处理是二元/吸收态而IV是连续的，IV无法估计动态的处理后时间效应或事件研究。</p>
+            <p>8. 稳健性，异质性处理效应（第1460页）。 作者回应了近期计量经济学文献（Sun和Abraham 2021；De Chaisemartin和d’Haultfœuille 2020）关于交错采纳设计中TWFE偏误的关切。他们证明了排除单个领地后结果的稳健性（排除了普鲁士 /ˈprʌʃə/ 等异常值驱动结果的可能），并使用了</p>
+            <p>De Chaisemartin和d’Haultfœuille（2024）的估计量。</p>
+            <p>关键识别假设：（a）在控制领地和年份固定效应的条件下，不存在与财政室建立同时发生且独立驱动整合的、未观测到的、随时间变化的领地特定混淆因素。（b）平行趋势假设：在没有处理的情况下，处理组和对照组领地将遵循相似的轨迹。事件研究通过显示不存在即时处理前趋势来支持这一点，但作者承认某些结果对加入领地线性趋势不稳健。（c）对于IV：排他性约束要求帝国税征收仅通过其对财政室建立的影响来影响整合结果（即不通过直接的战争暴露，作者论证这一条件得到满足，因为其分析中没有领地直接受到奥斯曼战役的影响，第1441页）。（d）单调性：更高的帝国税贡献弱增加财政室建立的概率。（e）SUTVA：一个领地的处理效应不取决于其他领地的处理状态，这在一定程度上通过密集边际分析得到处理。</p>
+            <p>虽然作者在正文中没有提出一个完全形式化的数学模型（正式处理见补充附录C节，第1449页），但他们描述了一个清晰的程式化框架来解释采纳决策。关键要素如下：</p>
+            <p>领地统治者面临随时间变化的财政需求。这些需求来自两个来源：内部需要（宫廷开支、封建争斗、军事费用）和外部冲击（帝国税征收）。</p>
+            <p>在没有财政室的情况下，即使是亲王和他的顾问也无法有效处理复杂的财政任务。这导致了从领地产业中征收和支出收入时的效率损失。效率损失的大小取决于财政环境的复杂程度，以地理特征（地形崎岖度、分散的土地持有）和领地产业类型的构成为代理。</p>
+            <p>引入财政室为领地层级增添了一个专业化行政层（遵循Garicano 2000的知识层级模型）。该层级集中了财政专业知识，使地方办公室的系统化审计、集中化簿记和收入流跟踪成为可能。在给定的财政需求和领地规模下，这缩小了效率差距并有益于亲王的财政。</p>
+            <p>与这些收益相对的是建立财政室的固定成本：设立常设机构和支付专业官僚的费用。</p>
+            <p>财政需求的关键时变冲击来自帝国税：当帝国议会要求征收大额税款时，拥有财政室的领地能够更高效地处理税款并截留一个与请求规模成正比的盈余。这一盈余截留激励随领地在帝国税册中的固定份额和请求的税额总量而增大。</p>
+            <p>在每个时期，统治者比较财政室带来的静态效率收益与其固定成本。当一次足够大的帝国税请求使收益超过固定成本门槛时，统治者就采纳财政室。这解释了为何财政室的建立集中在批准大额税收的帝国议会会议前后（第1449–1451页）。</p>
+          </div>
+        </section>
+
+
+
+        <nav class="node-nav">
+          <a class="prev" href="chambru2024.html"><small data-en="Previous reading" data-zh="上一篇">Previous reading</small>Chambru et al. 2024</a>
+          <a class="next" href="albertusgay2025.html"><small data-en="Next reading" data-zh="下一篇">Next reading</small>Albertus &amp; Gay 2025</a>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

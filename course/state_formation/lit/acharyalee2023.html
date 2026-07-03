@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acharya &amp; Lee 2023 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 6" data-zh="第 6 周">Week 6</span> · <span data-en="Coercion–Extraction lane" data-zh="强制–汲取层">Coercion–Extraction lane</span> · <span data-en="Transhistorical theory &amp; global long-run panels (S0)" data-zh="一般理论与跨国长时段（S0）">Transhistorical theory &amp; global long-run panels (S0)</span></p>
+        <h1><span class="lang-en">Avidit Acharya &amp; Alexander Lee (2023), The Cartel System of States: An Economic Theory of International Politics.</span><span class="lang-zh">阿查里亚、李（2023）《国家的卡特尔体系：国际政治的经济学理论》。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#9a5737" data-en="Formal model" data-zh="形式模型">Formal model</span><span class="chip" style="background:#315b7c" data-en="Comparative history" data-zh="比较历史">Comparative history</span><span class="chip" style="background:#315b7c" data-en="Tilly: extends" data-zh="Tilly：扩展">Tilly: extends</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The core dependent variable of this book is the emergence, stability, and persistence of the modern territorial state system. Specifically, the authors are concerned with why international borders carry such profound political significance in modern times, why residents on opposite sides of a border are subject to vastly different governance systems, and why states have achieved such extensive cooperation and tacit agreement in dividing governance rights. Using the example of the towns of Neche /ˈniːʃi/, North Dakota, and Gretna /ˈɡretnə/, Manitoba, on the US-Canada border, the authors point out that despite these two communities being neighbors and highly similar, the border corresponds to a sharp change in political authority, one side subject to Canadian laws, Canadian taxes, and Canadian public services, the other to American laws, American taxes, and American services (p. 1). This political salience of borders is a fundamental fact of modern political life and the core phenomenon this book seeks to explain.</p>
+            <p>The authors further point out that the defining feature of the modern territorial state system is the local, bounded, monopoly that states have in governing their citizens. States refuse to violate each other’s monopolies even when they could do so easily, and even attempts to seize territory by force have become rarer over time (pp. 4-5). This stable pattern of cooperation, rather than conflict, is the focus of the book.</p>
+            <p>In Chapters 1-2, the dependent variable was the existence and stability of the cartel system of states characterized by territorial sovereignty and mutual recognition. Chapter 3 extends this by specifying the historical emergence of this system as the dependent variable. The chapter focuses on three observable manifestations of the cartel system’s emergence: the decline of universal claims to authority, the rise of clearly demarcated interstate borders, and the development of modern diplomacy with permanent embassies and formal equality among states (pp.55-58). The transformation is from a medieval system of overlapping jurisdictions, hierarchical relationships, and ambiguous territorial claims to a modern system where rulers claim absolute practical control over finite, bounded territories rather than theoretical control over infinite domains (p.55).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本书的核心因变量是现代领土国家体系的形成、稳定与持续存在。具体而言，作者关注的是：为何国际边界在现代具有如此深刻的政治意义？为何边界两侧的居民被纳入截然不同的治理体系？为何国家之间能够在划分治理权方面达成如此广泛的合作与默契？作者以美国（United States /juːˈnaɪtɪd steɪts/）与加拿大（Canada /ˈkænədə/）边境的尼奇镇（Neche /ˈniːʃi/）与格雷特纳镇（Gretna /ˈɡretnə/）为例，指出尽管这两个社区相邻且高度相似，但边界却对应着政治权威的急剧变化，一边是加拿大法律、加拿大税收、加拿大公共服务，另一边则是美国法律、美国税收与美国公共服务（第1页）。这种边界的政治显著性是现代政治生活的基本事实，也是本书试图解释的核心现象。</p>
+            <p>作者进一步指出，现代国家体系的核心特征是国家对其公民享有地方性、有边界的、垄断性的治理权。国家相互拒绝侵犯彼此的垄断权，即使有能力也不轻易这样做。甚至武力夺取领土的企图也随着时间推移变得越来越罕见（第4-5页）。这种稳定的合作格局，而非冲突，才是本书关注的焦点。</p>
+            <p>在第一、二章中，因变量是以领土主权和相互承认为特征的国家卡特尔体系的存在与稳定性。第三章将此拓展为该体系的历史性生成过程。本章聚焦于卡特尔体系生成的三个可观察表现：普世性权威主张的衰落、清晰界定的国家间边界的兴起，以及以常驻大使和国家间形式平等为特征的现代外交制度的发展（第55-58页）。这一转型是从中世纪管辖权重叠、等级关系分明、领土主张模糊的体系，转变为现代体系，在现代体系中，统治者主张对有限、有界领土的绝对实际控制，而非对无限疆域的理论控制（第55页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The core independent variable of this book is the incentive for rulers to avoid competition and maximize profits in the governance market. The authors conceptualize “governance” as an evolving package of services that states provide to their citizens, including protection, dispute resolution, education, healthcare, and infrastructure (p. 5, pp. 22-23). Because these services have value and there is demand for them, there exists a “market for governance.” In this market, states are the suppliers of governance, citizens are the demanders, and taxes are the “price” citizens pay for governance services.</p>
+            <p>The authors emphasize that the governance market has the potential to be competitive: if residents near borders or powerful local elites consider taxes too high relative to benefits received, they may choose to join another polity, or threaten to do so to extract concessions (pp. 5-6). In a competitive governance market, citizens would receive more services and lower taxes, while rulers’ profits would be compressed. Therefore, rulers have strong incentives to collude, divide the market, and eliminate competition, so that they can enjoy monopoly pricing power within their respective territories and collect higher tax revenues (p. 5, pp. 28-29).</p>
+            <p>The conceptualization of “state” in this book builds on the political economy tradition, especially the “monopoly of protection” theory of Frederick Lane /ˈfredərɪk leɪn/ and Charles Tilly /tʃɑːrlz ˈtɪli/. Lane and Tilly argued that early states in medieval Europe did little beyond providing basic protection, essentially functioning as “protection rackets,” where rulers supplied protection to citizens against the threat of violence from themselves (p. 22). Konrad /kaɪ ˈkɒnræd/ and Skaperdas /ˈstɜːdʒɪɒs skəˈpɜːdəs/ further argued that by establishing monopolies of violence, these early states also provided valuable protection from other local bandits or distant robbers (p. 22).</p>
+            <p>However, modern states are complex organizations that serve a variety of functions beyond protection, including dispute resolution, commercial regulation, public health, education, and scientific research (pp. 22-23). Therefore, the authors define the state as a supplier in the governance market, with governance being an evolving package of services. States obtain revenue through taxes, and their objective is profit maximization, maximizing net revenue after subtracting the costs of governance (p. 26). This definition follows the tradition of Margaret Levi /ˈmɑːɡərɪt ˈlevi/’s “revenue-maximizing ruler” (p. 38).</p>
+            <p>Regarding the state system, the authors conceptualize it as an economic cartel: an agreement among states to divide the market for governance in ways that reduce competition and deter entry, at the expense of their citizens (p. 5). Just as Osram, General Electric, and Philips divided the global market in lightbulbs in the 1920s, contemporary states divide among themselves the right to tax and govern the world (p. 7). This coordination could occur through large multilateral meetings like the Congress of Vienna /viˈenə/ or the Treaty of Versailles /vɛəˈsaɪ/, but more typically occurred through bilateral treaties adhering to a loose set of international norms (p. 7).</p>
+            <p>Chapter 2 established the theoretical framework where the value of governance (v) and the costs of governing (c) determine whether states compete or cooperate. Chapter 3 extends this by identifying the concrete historical factors that altered these parameters: economic growth and improvements in military technology and administrative capacity (p.46). Economic growth, particularly the “Commercial Revolution” beginning in the 15th century with improvements in accounting, insurance, and banking, raised the value of governance by increasing the surplus available for extraction (pp.48-49). Maddison’s /ˈmædɪsən/ data show that Western European GDP per capita grew 55% between 1500-1820 and 182% between 1820-2000, compared to only 38% from 1-1500 AD (p.49). Military and administrative improvements, including artillery, professional armies replacing feudal levies, and bureaucratic capacity to support distant forces, lowered the costs of projecting power over distance (pp.50-51).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本书的核心自变量是统治者在治理市场中避免竞争、追求利润最大化的激励。作者将“治理”（governance）视为国家向公民提供的一揽子服务，包括保护、纠纷解决、教育、医疗、基础设施等（第5页，第22-23页）。由于这些服务具有价值，存在对它们的需求，因此存在一个“治理市场”（market for governance）。在这个市场中，国家是治理的供给者，公民是需求者，税收则是公民为获得治理服务所支付的“价格”。</p>
+            <p>作者强调，治理市场具有潜在的竞争性：如果边境附近的居民或强大的地方精英认为税负过高、服务不足，他们可以选择效忠另一个国家，或以此威胁来获取更多优惠（第5-6页）。在竞争的治理市场中，公民将获得更多服务、更低税负，而统治者的利润将被压缩。因此，统治者有强烈的动机相互勾结、划分市场、消除竞争，以便在各自的领土范围内享有垄断定价权，获取更高的税收收入（第5页，第28-29页）。</p>
+            <p>本书对“国家”的概念化建立在政治经济学传统之上，尤其是弗雷德里克·莱恩（Frederick Lane /ˈfredərɪk leɪn/）与查尔斯·蒂利（Charles Tilly /tʃɑːrlz ˈtɪli/）的“保护垄断”（monopoly of protection）理论。莱恩与蒂利认为，中世纪欧洲的早期国家主要提供保护服务，实质上是“保护费勒索”（protection rackets），统治者向公民提供免遭自己暴力威胁的保护（第22页）。科拉德与斯卡佩尔达斯（Kai Konrad /kaɪ ˈkɒnræd/ 与 Stergios Skaperdas /ˈstɜːdʒɪɒs skəˈpɜːdəs/）进一步指出，国家通过建立暴力垄断，也提供了免遭其他强盗和劫匪侵害的保护（第22页）。</p>
+            <p>然而，现代国家是复杂的组织，提供的服务远不止保护，还包括纠纷解决、商业监管、公共卫生、教育、科学研究等（第22-23页）。因此，作者将国家界定为治理市场中的供给者，治理是一个随时间演变的服务包。国家通过税收获取收入，国家的目标是利润最大化，即税收收入减去治理成本后的净收益最大化（第26页）。这种界定延续了玛格丽特·利维（Margaret Levi /ˈmɑːɡərɪt ˈlevi/）的“收入最大化统治者”（revenue-maximizing ruler）传统（第38页）。</p>
+            <p>关于国家体系，作者将其概念化为一个经济卡特尔（economic cartel）：这是国家之间达成的一项协议，旨在以减少竞争、阻止新进入者的方式瓜分治理市场，从而牺牲公民利益（第5页）。与奥萨姆（Osram）、通用电气（General Electric）、菲利浦（Philips）等企业在1920年代瓜分全球灯泡市场类似，当代国家之间也瓜分了对全球的征税权和治理权（第7页）。这种协调可以通过维也纳会议（Congress of Vienna /viˈenə/）或凡尔赛条约（Treaty of Versailles /vɛəˈsaɪ/）等大型多边会议进行，但更典型的是通过遵循一套松散国际规范的双边条约来实现（第7页）。</p>
+            <p>第二章建立了理论框架，其中治理价值（v）和治理成本（c）决定国家是竞争还是合作。第三章将此拓展为识别改变这些参数的具体历史因素：经济增长以及军事技术和行政能力的提升（第46页）。经济增长，特别是始于15世纪、以会计、保险和银行业改进为特征的“商业革命”，通过增加可供汲取的剩余而提高了治理价值（第48-49页）。麦迪森 /ˈmædɪsən/ 的数据显示，西欧人均GDP在1500-1820年间增长了55%，在1820-2000年间增长了182%，而公元1-1500年间仅增长38%（第49页）。军事和行政方面的改进，包括火炮、以职业军队取代封建征召，以及支持远距离军队的官僚能力，降低了向远方投射权力的成本（第50-51页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>Chapter 3 substantially extends the conceptualization of statehood from earlier chapters. Medieval “states” are characterized by limited provision of governance (only defense, dispute resolution, and basic currency), inability to project power across distant territories, and contractual rather than absolute authority, exemplified by the varied privileges granted to towns, bishops, and lords through individual charters (pp.47-48). The Cinque Ports /sɪŋk pɔːts/ of southern England, for instance, enjoyed complete judicial autonomy and tax freedom in exchange for providing ships (p.48). State building is measured through several indicators: the convergence of tax burdens between core and peripheral provinces, the extension of ordinary fiscal structures to previously exempt border regions, the elimination of local privileges (fueros /ˈfweɪrəʊs/ in Spain, liberties in England), and the replacement of hereditary local offices with centrally appointed officials (pp.66-71). The chapter explicitly measures statehood through revenue extraction capacity, showing that French state revenues increased by factors of 10.5 and 46.3 in France and England respectively between 1600-1780 (p.50).</p>
+          </div>
+          <div class="lang-zh">
+            <p>第三章大幅拓展了此前各章对国家性的概念化。中世纪“国家”的特征是治理供给有限（仅限防御、纠纷解决和基本货币）、无法向远方领土投射权力、权威是契约性的而非绝对的，这体现在通过个别特许状授予城镇、主教和领主的各种特权（第47-48页）。例如，英格兰南部的五港同盟 /sɪŋk pɔːts/ 享有完全的司法自治和免税权，以换取提供船只（第48页）。国家建设通过若干指标测量：核心省份与边缘省份税负的趋同、普通财政结构向此前免税的边境地区的延伸、地方特权（西班牙的fueros /ˈfweɪrəʊs/、英格兰的liberties）的废除，以及以中央任命官员取代世袭地方官职（第66-71页）。本章明确通过税收汲取能力测量国家性，显示法国和英国的国家收入在1600-1780年间分别增长了10.5倍和46.3倍（第50页）。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The core argument of this book is that the territorial state system represents an economic cartel, a collusive arrangement among rulers against their citizens, aimed at dividing the governance market, exercising monopoly power, and extracting higher taxes.</p>
+            <p>The authors construct a parsimonious spatial game-theoretic model to articulate this argument. In the model, two rulers A and B are located at the endpoints of a line segment, with citizens distributed between them. Each ruler’s cost of providing governance increases with distance from their administrative center: the farther from the capital, the longer communications become, the higher the cost of moving armies, and the more unfamiliar local society becomes to officials (p. 24). For example, Hawaii /həˈwaɪ(j)i/ is more costly for the US government to administer and defend than Pennsylvania /ˌpensɪlˈveɪniə/, and the Amazon /ˈæməzɒn/ is more costly for Brazil to govern than Minas Gerais /ˈmiːnəs ʒəˈraɪs/ (p. 6).</p>
+            <p>In border regions, the governance cost curves of the two states intersect, forming a zone of competition: within this zone, both rulers can profitably provide governance, so there is potential competition (pp. 25-26). Under competition, border residents can use the threat of “exit” (threatening to shift allegiance to a rival polity) to extract lower taxes or more privileges. For example, in colonial India /ˈɪndiə/, the British Raj, in the North-West Frontier (competing with Afghanistan /æfˈɡænɪstæn/), collected no land taxes and gave local khans generous subsidies (pp. 6-7). Such competition compresses rulers’ profits.</p>
+            <p>To eliminate this profit loss, rulers are incentivized to reach a collusive agreement: both sides demarcate a border, with A promising not to provide governance to people east of the border, and B promising not to provide governance west of it. Thus, each ruler becomes a monopolist within their territory, able to charge citizens the monopoly price (tax) without competitive constraints (p. 28). “Territorial sovereignty” thus emerges as a cartel agreement among rulers against their citizens (p. 28).</p>
+            <p>This cartel agreement is self-enforcing: since there is no external enforcement authority, the stability of the agreement depends on punishment strategies in repeated games. If one side violates the border and attempts to “steal” the other’s market share, both will revert to a competitive state, damaging future profits. As long as rulers are sufficiently forward-looking, they will abide by the sovereignty norm (p. 29).</p>
+            <p>Chapter 3 applies and extends the model from Chapter 2 to explain the historical transformation. The core argument proceeds through a “before and after” comparison illustrated in Figures 4 and 5 (pp.51-54). Before the transformation, low governance value (v) and steeply increasing costs of governing (cA and cB) meant that rulers’ practical reach was limited, leaving large buffer zones between states where neither could profitably govern. In this situation, grandiose universal claims had no practical consequences and could be safely ignored (pp.52-53). After economic growth raised v and military improvements flattened the cost curves, rulers’ practical reach expanded until their spheres of influence overlapped. This created large zones where both could potentially govern, generating losses from competition (LA and LB) as local elites played rulers against each other (pp.53-54). The key insight is that higher v and flatter cost curves mean larger losses from not cooperating, providing strong incentives to agree on borders and develop the sovereignty norm (p.53).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本书的核心论点是：领土国家体系代表了一个经济卡特尔，这是统治者之间针对公民进行的合谋，旨在瓜分治理市场、行使垄断权力、攫取更高税收。</p>
+            <p>作者构建了一个简约的空间博弈模型来阐明这一论点。在模型中，两个统治者A和B分别位于一条线段的两端，公民分布在两者之间。每个统治者提供治理服务的成本随着距离其行政中心的远近而递增：距离首都越远，通讯越漫长、军队调动成本越高、官员对地方社会越陌生，治理成本就越高（第24页）。例如，夏威夷（Hawaii /həˈwaɪ(j)i/）对美国政府的管理和防卫成本高于宾夕法尼亚（Pennsylvania /ˌpensɪlˈveɪniə/），亚马孙地区（Amazon /ˈæməzɒn/）对巴西的治理成本高于米纳斯吉拉斯州（Minas Gerais /ˈmiːnəs ʒəˈraɪs/）（第6页）。</p>
+            <p>在边境地区，两个国家的治理成本曲线会出现交叉，形成一个竞争区域：在这个区域内，两个统治者都有能力以盈利的方式提供治理，因此存在潜在的竞争（第25-26页）。在竞争状态下，边境居民可以利用“退出”威胁（威胁效忠另一个国家）来获取更低的税负或更多的特权。例如，在殖民时期的印度（India /ˈɪndiə/），英国殖民政府在西北边境（与阿富汗（Afghanistan /æfˈɡænɪstæn/）竞争的地区）不仅不征收土地税，还向当地酋长提供丰厚的补贴（第6-7页）。这种竞争会压低统治者的利润。</p>
+            <p>为了消除这种利润损失，统治者有激励达成合谋协议：双方划定一条边界，A承诺不向边界以东的人口提供治理，B承诺不向边界以西的人口提供治理。由此，每个统治者在其领土范围内成为垄断者，能够向公民收取垄断价格（税收），而不再受竞争的制约（第28页）。这种“领土主权”（territorial sovereignty）因此是统治者之间针对公民的卡特尔协议（第28页）。</p>
+            <p>这种卡特尔协议是自我执行的（self-enforcing）：由于没有外部强制执行机构，协议的稳定性依赖于重复博弈中的惩罚策略。如果一方违反边界、试图“偷取”对方的治理市场份额，那么双方将恢复到竞争状态，未来的利润都会受损。只要统治者足够重视未来收益，他们就会遵守主权规范（第29页）。</p>
+            <p>第三章将第二章的模型应用并拓展至解释历史转型。核心论点通过图4和图5所示的“前后”比较展开（第51-54页）。转型之前，治理价值（v）较低且治理成本（cA和cB）随距离陡增，这意味着统治者的实际触及范围有限，在国家之间留下大片缓冲区，双方都无法从中获利。在这种情况下，宏大的普世性主张没有实际后果，可以被安全地忽视（第52-53页）。当经济增长提高了v、军事进步使成本曲线趋于平缓之后，统治者的实际触及范围扩展，直至其影响范围相互重叠。这创造了双方都可能治理的大片区域，由于地方精英在统治者之间左右逢源而产生竞争损失（LA和LB）（第53-54页）。关键洞见是：v越高、成本曲线越平缓，不合作的损失就越大，这为达成边界协议和发展主权规范提供了强大激励（第53页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>The authors propose multiple interrelated mechanisms to explain the dependent variable:</p>
+            <p>Mechanism 1: Spatial increase in governance costs. States have the lowest governance costs near their administrative centers, and costs increase with distance (pp. 24-25). The substantive basis for this assumption is that projecting state power requires communications, military deployment, and bureaucratic administration, all of which become more expensive and difficult with distance. Geographic barriers (rivers, mountains) can cause nonlinear, discontinuous changes in costs; cultural and linguistic differences also affect governance costs, it is cheaper to govern individuals who share the same culture and language as state administrators (p. 6, p. 25).</p>
+            <p>Mechanism 2: Border competition compresses rulers’ profits. In the zone where the governance cost curves of two states intersect, there is potential competition. Border residents or local elites can use the “exit option”, threatening to shift allegiance to a rival polity, to force rulers to lower taxes or provide more privileges. This prevents rulers from charging monopoly prices in border regions, reducing profits below monopoly levels (pp. 27-28).</p>
+            <p>Mechanism 3: Territorial division eliminates competition and restores monopoly. By demarcating borders and mutually recognizing sovereignty, rulers can eliminate border competition. Each state becomes the sole provider of governance within its territory, able to charge citizens monopoly prices (p. 28). Territorial borders serve as clear markers of political division, making violations of cooperative norms unambiguous and easier to police (p. 8).</p>
+            <p>Mechanism 4: Repeated games and self-enforcing cooperation. The stability of the cartel agreement depends on “trigger strategies” in repeated games: as long as both sides abide by the agreement, cooperation continues; once one side defects, both revert to competition, damaging future profits. As long as rulers value future profits sufficiently (discount factor is high enough), cooperation is self-enforcing (p. 29). This mechanism draws on the work of neoliberal scholars like Robert Keohane /ˈrɒbət kɪˈoʊheɪn/ on state cooperation under anarchy (p. 29, p. 38).</p>
+            <p>Mechanism 5: Nationalism as “brand loyalty.” Nationalism creates intense emotional attachment among citizens to their own state, making them unwilling to accept foreign governance, even willing to die rather than accept it (pp. 8-9). This is analogous to “brand loyalty” in economic cartels: even if competitors offer better terms, consumers refuse to switch. Nationalism creates steep changes in governance costs at borders: low costs for governing one’s own citizens, high costs for governing foreign populations (pp. 16-17). This both stabilizes borders and makes citizens of democracies unwilling to open the governance market to foreign competition (p. 17).</p>
+            <p>Mechanism 6: Coordination function of international institutions. As world politics and the economy became increasingly complex, states developed international institutions (such as the UN and WTO) to clarify cartel norms and facilitate coordination among members (pp. 15-16). The primary goal of these institutions is not to suppress conflict, but to help cartel leaders coordinate their collective interest in the governance market. Organizations like the WTO help stabilize cartel norms by clarifying the consequences of violations (p. 16).</p>
+            <p>Mechanism 7: Deterrence of entry. The cartel system suppresses the emergence of new states unless existing members (especially the most powerful) view their entry as in their interest. For example, Belgian /ˈbeldʒəm/ independence was supported by Britain, colonial independence was encouraged by the US and Soviet Union, and new states after the Soviet dissolution were supported by the US and its Western allies (p. 13). Conversely, the Rif State in Morocco /məˈrɒkoʊ/, the Confederate States of America, and the Biafran /biˈɑːfrə/ secession in Nigeria /naɪˈdʒɪəriə/ failed to gain recognition; Somaliland /soʊˈmɑːlilænd/ has remained unrecognized for nearly three decades despite developing many state institutions (p. 13).</p>
+            <p>Chapters 1 and 2 of this book are primarily theory-building, not systematic empirical studies. The authors mainly use historical case analysis to illustrate the theory:</p>
+            <p>Geographic scope: Covers medieval and early modern Europe, colonial Africa, the Americas, Asia (India, China, Japan), and the contemporary US-Canada border (pp. 1-2, pp. 3-4, pp. 6-7, pp. 9-11).</p>
+            <p>Time span: From the medieval period (c. 1000 CE) to the early 21st century.</p>
+            <p>Unit of analysis: States/rulers, border communities, and the international system.</p>
+            <p>Exemplary cases: Neche, Gretna, and Point Roberts /pɔɪnt ˈrɒbəts/ on the US-Canada border; the North-West Frontier of British India; the lightbulb (Phoebus /ˈfiːbəs/) cartel; the New York commercial trash cartel; the Valois /ˈvæləwɑː/ dukes of Burgundy /bɜːˈɡʌndi/ (pp. 1-2, pp. 6-7, pp. 28-29, p. 3).</p>
+            <p>Data sources: Secondary historical literature and case descriptions, rather than quantitative data.</p>
+            <p>In the model, the measurement of core variables is as follows:</p>
+            <p>Governance costs (cA, cB): Cost curves as a function of distance, representing how state governance costs increase with distance (pp. 24-25).</p>
+            <p>Value of governance (v): The value society derives from governance, assumed constant, representing the ceiling on tax rates, beyond which citizens would revolt, exit the formal economy, or engage in tax avoidance (pp. 25-26).</p>
+            <p>Profit shortfalls (LA, LB): Under competition, the profits rulers lose due to inability to charge monopoly prices (p. 27).</p>
+            <p>Border (Y): The intersection of the two states’ governance cost curves, representing the optimal division point (p. 27).</p>
+            <p>Chapter 3 specifies several mechanisms linking the independent variables to outcomes. First, when governance spheres overlap, local lords can extract concessions by threatening to switch allegiance. This depresses revenues for both rulers and explains why losses are greatest near the border point Y (p.53). The historical record confirms this: the Douglas /ˈdʌɡləs/ family spent much of the 15th century as English clients while nominally Scottish vassals (p.60), and the Armstrongs /ˈɑːmstrɒŋz/ maintained 3,000 armed men and raided both sides while selling loot across the border (p.60). Second, border agreement requires demarcation and sustained cooperative contact. Rulers need permanent ambassadors to manage smuggling, extradition, and tariffs (p.54). Third, cooperation on borders necessitates abandoning universal claims, since such claims signal intent to violate the cartel agreement (p.54). Fourth, the process of demarcation itself required technological innovations like the theodolite /θiˈɒdəlaɪt/ (1571), plane table (1551), and Gunter’s /ˈɡʌntəz/ chain (1620) to enable precise cartography (p.57).</p>
+          </div>
+          <div class="lang-zh">
+            <p>作者提出了多重相互关联的机制来解释因变量：</p>
+            <p>机制一：治理成本的空间递增。国家在其行政中心附近治理成本最低，随着距离增加，成本逐渐上升（第24-25页）。这一假设的实质基础在于：国家投射权力需要通讯、军事部署、官僚管理，而这些都随距离增加而变得更加昂贵和困难。地理障碍（河流、山脉）可以导致成本的非线性、不连续变化；文化和语言差异也会影响治理成本，治理与行政人员共享文化和语言的人群成本更低（第6页，第25页）。</p>
+            <p>机制二：边境竞争压低统治者利润。在两国治理成本曲线交叉的区域，存在潜在竞争。边境居民或地方精英可以利用“退出选项”，威胁效忠另一个国家，来迫使统治者降低税负或提供更多特权。这导致统治者在边境地区无法收取垄断价格，利润低于垄断水平（第27-28页）。</p>
+            <p>机制三：领土划分消除竞争、恢复垄断。统治者通过划定边界、相互承认主权，可以消除边境竞争。每个国家在其领土范围内成为唯一的治理提供者，能够向公民收取垄断价格（第28页）。领土边界作为政治分割的明确标记，使违反合作规范的行为更加清晰可辨、更易于监督（第8页）。</p>
+            <p>机制四：重复博弈与自我执行的合作。卡特尔协议的稳定性依赖于重复博弈中的“触发策略”（trigger strategies）：只要双方遵守协议，合作就继续；一旦一方违约，双方恢复竞争，未来利润都会受损。只要统治者足够重视未来收益（贴现因子足够高），合作就是自我执行的（第29页）。这一机制借鉴了基欧汉（Robert Keohane /ˈrɒbət kɪˈoʊheɪn/）等新自由主义学者关于无政府状态下国家合作的理论（第29页，第38页）。</p>
+            <p>机制五：民族主义作为“品牌忠诚”。民族主义使公民对本国产生强烈的情感依附，不愿接受外国治理，甚至愿意为抵抗外国统治而牺牲生命（第8-9页）。这类似于经济卡特尔中的“品牌忠诚”：即使竞争对手提供更优惠的条件，消费者也不愿转换。民族主义使边界两侧的治理成本出现陡峭变化：本国公民治理成本低，外国公民治理成本高（第16-17页）。这既稳定了边界，也使民主国家的公民不愿意开放治理市场引入外国竞争（第17页）。</p>
+            <p>机制六：国际制度的协调功能。随着世界政治经济日益复杂，国家发展出国际制度（如联合国、世贸组织）来澄清卡特尔规范、便利成员国之间的协调（第15-16页）。这些制度的主要目标不是压制冲突，而是帮助卡特尔领导者在治理市场中协调共同利益。世贸组织等组织通过明确违规后果，帮助稳定卡特尔规范（第16页）。</p>
+            <p>机制七：对新进入者的遏制。卡特尔体系抑制新国家的出现，除非现有成员（尤其是最强大的成员）认为新进入者的加入符合其利益。例如，比利时（Belgium /ˈbeldʒəm/）独立得到英国支持，殖民地独立得到美苏支持，苏联解体后新国家得到美国及其西方盟友支持（第13页）。相反，摩洛哥（Morocco /məˈrɒkoʊ/）的里夫共和国（Rif State）、美国（Confederate States of America）南方邦联、尼日利亚（Nigeria /naɪˈdʒɪəriə/）的比亚法拉分离运动（Biafra /biˈɑːfrə/）等未能获得承认而失败；索马里兰（Somaliland /soʊˈmɑːlilænd/）尽管建立了许多国家制度，却近三十年未获承认（第13页）。</p>
+            <p>本书第一、二章主要是理论建构，并非系统的经验研究。作者主要通过历史案例分析来阐明理论：</p>
+            <p>地理范围：涵盖欧洲中世纪与近代早期、殖民时期非洲、美洲、亚洲（印度、中国、日本）、当代美加边境等（第1-2页，第3-4页，第6-7页，第9-11页）。</p>
+            <p>时间跨度：从中世纪（约公元1000年）到21世纪初。</p>
+            <p>分析单位：国家/统治者、边境社区、国际体系。</p>
+            <p>典型案例：美加边境的尼奇、格雷特纳、罗伯茨角（Point Roberts /pɔɪnt ˈrɒbəts/）；英属印度西北边境；灯泡卡特尔（Phoebus cartel /ˈfiːbəs/）；纽约商业垃圾卡特尔；勃艮第瓦卢瓦公爵（Valois dukes of Burgundy /ˈvæləwɑː ... bɜːˈɡʌndi/）等（第1-2页，第6-7页，第28-29页，第3页）。</p>
+            <p>数据来源：二手历史文献、案例描述，而非量化数据。</p>
+            <p>在模型中，核心变量的测量如下：</p>
+            <p>治理成本 (cA, cB)：以距离为函数的成本曲线，代表国家提供治理的费用随距离增加而上升（第24-25页）。</p>
+            <p>治理价值 (v)：社会从治理中获得的价值，假设为常数，代表税率的上限，超过此点，公民会叛乱、退出正规经济或进行避税（第25-26页）。</p>
+            <p>利润损失 (LA, LB)：在竞争状态下，统治者因无法收取垄断价格而损失的利润（第27页）。</p>
+            <p>边界 (Y)：两国治理成本曲线交点，代表最优分割点（第27页）。</p>
+            <p>第三章详细说明了连接自变量与结果的若干机制。首先，当治理范围重叠时，地方领主可以通过威胁转换效忠来榨取让步，从而压低双方统治者的收入，这一机制解释了为何损失在边界点Y附近最大（第53页）。历史记录证实了这一点：道格拉斯 /ˈdʌɡləs/ 家族在15世纪大部分时间作为英格兰的附庸，而名义上是苏格兰封臣（第60页）；阿姆斯特朗 /ˈɑːmstrɒŋz/ 家族维持着3000名武装人员，在边境两侧劫掠，并将赃物跨境销售（第60页）。其次，边界协议不仅需要划界，还需要持续的合作联系，统治者需要常驻大使来处理走私、引渡和关税问题（第54页）。第三，边界合作要求放弃普世性主张，因为此类主张意味着违反卡特尔协议的意图（第54页）。第四，划界过程本身需要技术创新，如经纬仪 /θiˈɒdəlaɪt/（1571年）、平板仪（1551年）和冈特 /ˈɡʌntəz/ 测链（1620年），以实现精确制图（第57页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>Chapter 3 employs diverse data sources across multiple geographic areas and time periods. Quantitative data include: Maddison’s /ˈmædɪsən/ GDP estimates covering 1-2000 AD for Western Europe (p.49); Bairoch’s /baɪˈrɒk/ urban population data for French cities over 10,000 from 1400-1800, distinguishing core from peripheral provinces (p.49); French state revenue data from Mallet /mæˈleɪ/ (1789) digitized by Bonney /ˈbɒni/ (1999) covering 1600-1700 (p.70); treaty text data from Dumont /djuːˈmɒ̃/, de Carlscroon /də ˈkɑːlskruːn/, and Picart /piˈkɑːr/ (1726) for 1368-1709 showing mentions of borders (p.57); and diplomatic relations data from Bayer /ˈbaɪər/ (2006) for 1820-1909 (p.58). The geographic coverage spans Britain, France, Sweden, and Spain, with the unit of analysis varying from provinces (for revenue data) to dyads (for diplomatic data) to individual treaties. Qualitative evidence draws heavily on primary sources including privy council records, diplomatic correspondence, and the actual text of treaties like Edinburgh-Northampton /ˌɛdɪnbərə-nɔːrˈθæmptən/ (1328) and Westphalia /wɛstˈfeɪliə/ (1648).</p>
+          </div>
+          <div class="lang-zh">
+            <p>第三章使用了跨越多个地理区域和时间段的多元数据来源。定量数据包括：麦迪森 /ˈmædɪsən/ 对公元1-2000年西欧的GDP估计（第49页）；贝罗赫 /baɪˈrɒk/ 对1400-1800年间人口超过一万的法国城市的城市人口数据，区分核心省份与边缘省份（第49页）；马莱 /mæˈleɪ/（1789年）收集、邦尼 /ˈbɒni/（1999年）数字化的1600-1700年法国国家收入数据（第70页）；杜蒙 /djuːˈmɒ̃/、德·卡尔斯克隆 /də ˈkɑːlskruːn/ 和皮卡尔 /piˈkɑːr/（1726年）收录的1368-1709年条约文本数据，显示边界的提及情况（第57页）；以及拜尔 /ˈbaɪər/（2006年）的1820-1909年外交关系数据（第58页）。地理覆盖范围包括英国、法国、瑞典和西班牙，分析单位从省份（收入数据）到国家二元组（外交数据）再到单个条约不等。定性证据大量依赖原始资料，包括枢密院记录、外交通信，以及爱丁堡-北安普顿 /ˌɛdɪnbərə-nɔːrˈθæmptən/ 条约（1328年）和威斯特伐利亚 /wɛstˈfeɪliə/ 和约（1648年）等条约的实际文本。</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>The main methods employed in this book are deductive theory-building and game-theoretic modeling:</p>
+            <p>Game-theoretic model: The authors construct a Bertrand competition /bɜːˈtrɑːnd/ game, assuming two rulers compete by setting location-specific taxes (pp. 26-27). Within a repeated game framework, the authors analyze conditions for self-enforcing cooperative agreements (p. 29).</p>
+            <p>Historical case analysis: Used to illustrate theoretical mechanisms, not for systematic testing.</p>
+            <p>Comparative statics: Examines how changes in parameters (e.g., governance costs, discount factors) affect equilibrium outcomes.</p>
+            <p>Assumptions required for methodological validity:</p>
+            <p>Rulers are rational, profit-maximizing actors (p. 26).</p>
+            <p>Citizens/local elites are relatively stationary, or moving costs are high (p. 32).</p>
+            <p>Governance costs increase with distance (pp. 24-25).</p>
+            <p>There exists a competitive zone where both states can profitably provide governance (p. 26).</p>
+            <p>In repeated games, actors’ discount rates for future payoffs are sufficiently high (p. 29).</p>
+            <p>The authors discuss the applicability of these assumptions, noting that many can be relaxed or reinterpreted without affecting core conclusions (pp. 30-35). For example, “ruler” can refer to an autocrat or a decisive voter or interest group in a democracy; the “stationary citizens” assumption can be relaxed as long as land or immovable property is the main tax base (p. 32).</p>
+            <p>The chapter employs comparative historical analysis with process tracing as its primary method. The Anglo-Scottish /ˌæŋɡləʊ-ˈskɒtɪʃ/ border case receives extended treatment (pp.59-66), tracing the three-step process of cooperation: mutual recognition, cooperative demarcation, and cooperative enforcement through institutions like the March Law and Wardens of the Marches. The authors use primary documents to demonstrate actors’ motivations, quoting the Scottish privy council’s frustration with border residents and English diplomats’ preference for secrecy from local elites (pp.65). Three briefer cases, Sweden /ˈswiːdən/, Spain, and France, provide comparative leverage, each showing that border consolidation through interstate agreement preceded increased revenue extraction from peripheral regions (pp.67-71). Figure 7 presents a difference-in-differences style comparison of revenue trends across French province types (p.70). Key assumptions for validity include: that the timing of agreements was not driven by anticipated revenue increases (reverse causality), that observed patterns reflect the theorized mechanisms rather than confounding factors, and that case selection does not systematically exclude disconfirming evidence.</p>
+          </div>
+          <div class="lang-zh">
+            <p>本书采用的主要方法是演绎式理论建构与博弈论建模：</p>
+            <p>博弈论模型：作者构建了一个伯特兰竞争（Bertrand competition /bɜːˈtrɑːnd/）博弈模型，假设两个统治者通过设定位置特定的税率进行竞争（第26-27页）。在重复博弈框架下，作者分析了自我执行的合作协议的条件（第29页）。</p>
+            <p>历史案例分析：用于阐明理论机制，而非系统性检验。</p>
+            <p>比较静态分析：考察参数变化（如治理成本、贴现因子）对均衡结果的影响。</p>
+            <p>方法有效性的假设条件：</p>
+            <p>统治者是理性的、追求利润最大化的行为者（第26页）。</p>
+            <p>公民/地方精英在空间上相对固定，或移动成本较高（第32页）。</p>
+            <p>治理成本随距离递增（第24-25页）。</p>
+            <p>存在一个双方都可盈利提供治理的竞争区域（第26页）。</p>
+            <p>重复博弈中，行为者对未来收益的贴现率足够高（第29页）。</p>
+            <p>作者对假设条件的适用性进行了讨论，指出许多假设可以放松或重新诠释而不影响核心结论（第30-35页）。例如，“统治者”可以是独裁者，也可以是民主政体中的关键选民或利益集团；“公民固定”的假设可以放宽到只要土地或不动产是主要税基即可（第32页）。</p>
+            <p>本章以比较历史分析配合过程追踪作为主要方法。英格兰-苏格兰 /ˌæŋɡləʊ-ˈskɒtɪʃ/ 边界案例获得详细论述（第59-66页），追踪合作的三步过程：相互承认、合作划界、以及通过边区法和边区守护官等制度进行的合作执法。作者使用原始文献展示行为者的动机，引用苏格兰枢密院对边境居民的不满以及英格兰外交官对向地方精英保密的偏好（第65页）。三个较简短的案例，瑞典 /ˈswiːdən/、西班牙和法国，提供了比较支点，每个案例都显示通过国家间协议实现的边界巩固先于从边缘地区增加税收汲取（第67-71页）。图7呈现了一个类似双重差分的法国各类省份收入趋势比较（第70页）。有效性的关键假设包括：协议的时机并非由预期的收入增长所驱动（逆向因果）、观察到的模式反映的是理论化的机制而非混淆因素、以及案例选择没有系统性地排除反证。</p>
+          </div>
+        </section>
+
+
+
+        <nav class="node-nav">
+          <a class="prev" href="fracturedland2023.html"><small data-en="Previous reading" data-zh="上一篇">Previous reading</small>Fernández-Villaverde et al. 2023</a>
+          <a class="next" href="nathan2023.html"><small data-en="Next reading" data-zh="下一篇">Next reading</small>Nathan 2023</a>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

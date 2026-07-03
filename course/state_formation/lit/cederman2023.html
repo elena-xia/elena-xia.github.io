@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cederman et al. 2023 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 5" data-zh="第 5 周">Week 5</span> · <span data-en="Coercion–Extraction lane" data-zh="强制–汲取层">Coercion–Extraction lane</span> · <span data-en="Early modern (S3)" data-zh="早期现代（S3）">Early modern (S3)</span></p>
+        <h1><span class="lang-en">Lars-Erik Cederman, Paola Galano Toro, Luc Girardin &amp; Guy Schvitz (2023), “War Did Make States: Revisiting the Bellicist Paradigm in Early Modern Europe.”</span><span class="lang-zh">塞德曼等（2023）《战争确实造就了国家：重访早期现代欧洲的贝利主义范式》。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#607066" data-en="Panel FE" data-zh="面板固定效应">Panel FE</span><span class="chip" style="background:#a0603f" data-en="Survival analysis" data-zh="生存分析">Survival analysis</span><span class="chip" style="background:#3f7d6a" data-en="Grid / GIS" data-zh="网格/GIS">Grid / GIS</span><span class="chip" style="background:#3f7d6a" data-en="Tilly: supports" data-zh="Tilly：支持">Tilly: supports</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The main dependent variable is the territorial change of states, which is operationalized in multiple ways across different levels of analysis. At the systemic level, the authors measure territorial concentration using the Herfindahl index, which captures the probability that two randomly chosen locations in Europe belong to the same state. The index increased from 0.09 in 1490 to 0.23 in 1790, indicating substantial consolidation of the European state system. At the state level, the dependent variables include the log-transformed territorial net gains and losses of each state during each five-year period. Additionally, state death is examined as a binary outcome in survival analysis, coded as 1 if a state ceases to exist in the subsequent five-year period. At the dyadic level, the dependent variable is the log-transformed territorial net gain of state A from the territory of state B.</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要因变量是国家的领土变化，在不同分析层次上以多种方式进行操作化。在系统层面，作者使用赫芬达尔指数（Herfindahl index）来衡量领土集中度，该指数反映了在欧洲随机选取两个地点属于同一国家的概率。该指数从1490年的0.09上升到1790年的0.23，表明欧洲国家体系发生了显著的整合（第335页）。在国家层面，因变量包括每个五年期内各国对数转换的领土净获得与净损失（第345页）。此外，国家消亡作为生存分析中的二元结果被考察，如果一个国家在下一个五年期内不复存在，则编码为1（第348页）。在二元组（dyadic）层面，因变量是国家A从国家B领土中获得的对数转换领土净收益（第350页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The main independent variable is warfare (or armed conflict). At the state level, warfare is operationalized as a country-level war dummy variable derived from dyadic indicators, which equals 1 if the country was involved in any dyadic war during each five-year period and 0 otherwise. At the dyadic level, the war variable equals 1 if states A and B fight on opposite sides in the same war, and 0 otherwise. The conflict data is drawn from Peter Brecke’s /ˈpiːtər ˈbrekə/ Conflict Catalog, which records all violent conflicts since 1400 AD in which at least thirty-two persons died. The authors focus exclusively on interstate wars, excluding internal conflicts, and their dataset records 346 interstate wars during the study period. In addition to the contemporaneous war variable, the authors also construct cumulative variables that measure war-fueled territorial gains or losses accumulated from 1490 (or independence) to the current observation, to test the positive-feedback dynamics central to bellicist theory.</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要自变量是战争（或武装冲突）。在国家层面，战争被操作化为一个国家层面的战争虚拟变量，该变量源自二元组指标，如果某国在某个五年期内参与了任何二元组战争则为1，否则为0（第345页）。在二元组层面，战争变量当国家A和国家B在同一场战争中处于对立方时为1，否则为0（第350页）。冲突数据来源于彼得·布雷克（Peter Brecke /ˈpiːtər ˈbrekə/）的冲突目录，该目录记录了自公元1400年以来所有至少造成32人死亡的暴力冲突。作者仅关注国家间战争，排除内部冲突，其数据集记录了研究期间的346场国家间战争（第334页）。除了同期战争变量外，作者还构建了累积变量，用以衡量从1490年（或独立之日）至当前观测时间内因战争而积累的领土收益或损失，这使他们能够检验好战主义理论核心的正反馈动态（第345页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>The paper focuses primarily on the external dimension of state formation, namely territorial expansion and border change, rather than the internal aspects such as institutional development, bureaucratization, or fiscal capacity. The authors acknowledge that Charles Tilly’s /ˈtʃɑːrlz ˈtɪli/ original theory encompasses both dimensions: externally, ever more efficient and expensive warfare favored and produced larger and more powerful states; internally, warfare triggered resource extraction and a shift from “indirect” to “direct rule” that allowed central rulers to bypass intermediaries such as local elites. This paper concentrates on how warfare triggers border change and redistributes territory such that larger states gain while smaller states lose or perish.</p>
+            <p>Regarding the operationalization of “states,” the authors rely primarily on Scott Abramson’s /skɒt ˈeɪbrəmsən/ spatial data on early modern European states. Abramson defines states as territorial units that are not occupied by a foreign power, have the capacity to tax, and enjoy a common executive. Furthermore, units seemingly under outside control, such as those constituting the Holy Roman Empire, are considered states in their own right as long as they acted “as if” they were independent. This definition also treats “composite” units as single entities which, despite their quasi-independent institutions, shared the same common executive. This is particularly relevant for imperial families like the Wittelsbachs /ˈvɪtəlzbɑːks/, whose scattered holdings are all treated together as a single state The authors note that the concept of well-defined territories applied only partially to medieval and early modern Europe, and even well into the modern age there were many units that lacked clearly demarcated borders. For robustness checks, the authors also use the Centennia /senˈteniə/ Historical Atlas, which defines states based on “de facto” control.</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文主要关注国家形成的外部维度，即领土扩张和边界变化，而非制度发展、官僚化或财政能力等内部方面。作者承认查尔斯·蒂利（Charles Tilly /ˈtʃɑːrlz ˈtɪli/）的原始理论涵盖了两个维度：在外部，日益高效和昂贵的战争有利于并产生了更大、更强的国家；在内部，战争引发了资源榨取，并推动了从“间接统治”向“直接统治”的转变，使中央统治者能够绑过诸如地方精英等中间人（第326页）。本文的实证分析集中于战争如何引发边界变化并重新分配领土，从而使大国获益、小国损失乃至消亡（第329页）。</p>
+            <p>关于“国家”的操作化，作者主要依赖斯科特·艾布拉姆森关于近代早期欧洲国家的空间数据。艾布拉姆森将国家定义为未被外国势力占领、具有征税能力并拥有共同行政首脑的领土单位。此外，那些表面上处于外部控制下的单位，如构成神圣罗马帝国的各政治实体，只要它们表现得“好像”是独立的，就被视为独立国家。这一定义还将“复合”单位视为单一实体，尽管它们拥有准独立的制度，但共享同一行政首脑。这对于维特尔斯巴赫家族等帝国家族尤为相关，其分散的领地被合并视为单一国家（第333页）。作者指出，明确界定的领土概念仅部分适用于中世纪和近代早期的欧洲，甚至在现代早期仍有许多单位缺乏清晰划定的边界（第333页）。为进行稳健性检验，作者还使用了世纪纪年历史地图集，该地图集基于“事实上”的控制来定义国家（第333页）。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The core argument is that warfare played a central role in the territorial expansion of European states during the early modern period (1490–1790) and beyond. The authors directly test Charles Tilly’s famous dictum that “war made the state, and states made war,” focusing specifically on the external, territorial dimension of this claim. They argue that warfare is strongly linked to the expansion of the great powers, and while there is little support for a drastic “Darwinian” process exclusively driven by conquest and absorption, the evidence confirms that war-driven territorial expansion was central to European state formation.</p>
+            <p>The authors propose four hypotheses derived from the bellicist model. Hypothesis 1a posits that the correlation between war and territorial expansion increases with pre-existing state size, meaning larger states benefit more from warfare. Hypothesis 1b posits that the correlation between war and territorial shrinkage decreases with pre-existing state size, meaning smaller states suffer more territorial losses during wartime. Hypothesis 2a addresses positive feedback: territorial gains from warfare increase with previous war-related gains, suggesting a snowball effect where successful conquerors become even more successful. Hypothesis 2b posits that territorial losses from warfare increase with previous war-related losses, indicating a vicious cycle for declining states. These hypotheses capture the reciprocal and self-reinforcing nature of the bellicist paradigm: the big get bigger through war while the small get smaller or disappear entirely.</p>
+          </div>
+          <div class="lang-zh">
+            <p>核心论点是，战争在近代早期（1490-1790年）乃至之后的欧洲国家领土扩张中发挥了关键作用。作者直接检验了查尔斯·蒂利的著名论断，“战争塑造了国家，国家制造了战争”，特别聚焦于这一主张的外部领土维度。他们认为，战争与大国的扩张密切相关，虽然几乎没有证据支持一个完全由征服和吸收驱动的激进“达尔文式”过程，但证据证实了战争驱动的领土扩张是欧洲国家形成的核心（第325页）。</p>
+            <p>作者从好战主义模型中推导出四个假说。假说1a认为战争与领土扩张之间的相关性随国家既有规模的增大而增强，意味着大国从战争中获益更多。假说1b认为战争与领土收缩之间的相关性随国家既有规模的增大而减弱，意味着小国在战时遭受更多领土损失。假说2a涉及正反馈：战争导致的领土收益随先前战争相关收益的增加而增加，表明成功的征服者变得更加成功的滚雪球效应。假说2b认为战争导致的领土损失随先前战争相关损失的增加而增加，表明衰落国家陷入恶性循环（第329-332页）。这些假说捕捉了好战主义范式的互惠性和自我强化特性：大国通过战争变得更大，而小国变得更小或完全消失。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>The authors identify three specific mechanisms that contribute to this snowball effect of conquest.</p>
+            <p>(1) Cumulative resource extraction: aggressors can draw on resources gained from conquered provinces to finance further expansion. For example, during the Thirty Years’ War, Sweden engaged in such successful resource extraction from conquered territories in Germany that it hardly needed to increase taxation at home. Subsequently, Prussia emulated this strategy, most notably conquering resource-rich Silesia /saɪˈliːʒə/. In contrast, peaceful gains through dynastic marriages tended to be smaller and less strategically valuable, as marriage pools were limited by distance and, after the Reformation, by confession. Moreover, territories gained through peaceful treaties often involved provisions of autonomy that narrowed the resources available to the conquering state.</p>
+            <p>(2) Military learning and innovation: rather than reflecting a long-term plan, military experiences during persistent warfare forced tactical innovation and organizational reforms that made armies even more fit for further expansion. For example, Russia’s Peter the Great’s confrontations with the Swedes in the 1700s led him to westernize his army, which facilitated later conquests of Livonia /lɪˈvoʊniə/ and Eastern Finland. Pacific expansion yielded no such direct benefits.</p>
+            <p>(3) Legitimacy and prestige: while enlarged territory brought prestige in general, past military success served as a propagandistic tool that legitimized the state as a whole. As Downing /ˈdaʊnɪŋ/ describes for Prussia, “Military victory became the basic edifice of legitimacy for the state.” The confidence gained from previous conquests also motivated further expansionist claims, as in the case of France’s pretensions in the Italian Peninsula /ɪˈtæliən pəˈnɪnsjʊlə/ during the early sixteenth century.</p>
+            <p>The authors also acknowledge countervailing mechanisms that prevent the feedback loops from running indefinitely toward a single European empire. These include balance-of-power mechanisms that Kenneth Waltz /ˈkenɪθ wɔːlts/ classified as “internal” and “external” balancing. Internal balancing involves states’ attempts to increase their military capacity through armament, emulation, and innovation. External balancing involves defensive alliances or geographic features like rough terrain that slow down conquest. Thanks to these mechanisms, metastable equilibria emerged that were often quite stable for long periods but vulnerable to changes in weapons technology and geopolitical constellations.</p>
+          </div>
+          <div class="lang-zh">
+            <p>累积资源榨取：侵略者可以利用从被征服省份获得的资源来资助进一步扩张。例如，在三十年战争期间，瑞典从德国被征服领土的资源榨取如此成功，以至于几乎不需要增加国内税收。随后，普鲁士效仿了这一策略，最著名的是征服了资源丰富的西里西亚（第331页）。相比之下，通过王朝联姻获得的和平收益往往更小且战略价值更低，因为婚姻选择受到距离限制，且在宗教改革之后还受到教派限制。此外，通过和平条约获得的领土通常涉及自治条款，这缩小了征服国可获得的资源（第331页）。</p>
+            <p>军事学习与创新：持续战争中的军事经验迫使军队进行战术创新和组织改革，使其更适合进一步扩张，而非反映长期计划。例如，俄国彼得大帝在18世纪初与瑞典人的对抗促使他对军队进行西化改革，这为后来征服利沃尼亚和东芬兰提供了便利。和平扩张则没有产生这种直接收益（第331页）。</p>
+            <p>合法性与威望：虽然扩大的领土总体上带来威望，但过去的军事成功作为一种宣传工具使整个国家合法化。正如道宁在描述普鲁士时所说：“军事胜利成为国家合法性的基本支柱。”先前征服所获得的信心也激发了进一步的扩张主张，例如16世纪初法国对意大利半岛的野心（第331页）。</p>
+            <p>作者还承认存在抵消机制，防止反馈回路无限运行直至形成单一欧洲帝国。这些机制包括肯尼斯·沃尔兹分类的“内部”和“外部”制衡的均势机制。内部制衡涉及国家通过军备、效仿和创新来增强军事能力的努力。外部制衡涉及防御联盟或如崎岖地形等减缓征服的地理特征。得益于这些机制，出现了亚稳定均衡，这些均衡通常在长时期内相当稳定，但容易受到武器技术和地缘政治格局变化的影响（第330页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>(1) For state borders, the authors rely primarily on Scott Abramson’s spatial data on early modern European states, which provides geocoded polygon data for every five-year period, based on the Centennia Historical Atlas, Euratlas /ˌjʊərˈætləs/, and other sources. The data covers the period from 1100 through 1790, though the authors focus their main analysis on 1490–1790 following Tilly’s own periodization. For robustness checks and extended analysis, the authors also use the Centennia Historical Atlas directly, which covers European history until 2003.</p>
+            <p>(2) For conflict data, the authors use Peter Brecke’s Conflict Catalog, which records all violent conflicts since 1400 AD in which at least thirty-two persons died. Brecke defines wars as cases “of purposive and lethal violence among two or more social groups pursuing conflicting political goals that results in fatalities, with at least one belligerent group organized under the command of authoritative leadership.” While Brecke records fatalities for only less than half of all wars, most conflicts meet standard definitions of large-scale wars, with just 10 percent falling below the threshold of one thousand casualties. The authors focus on interstate wars only, excluding internal conflicts, and their dataset records 346 interstate wars during the study period.</p>
+            <p>(3) Geographic coverage is defined in physical-geographic terms, using the Bosporus /ˈbɒspərəs/, the Black Sea, the Carpathian /kɑːrˈpeɪθiən/ mountain ridge, the Caspian Sea /ˈkæspiən siː/, and the Urals /ˈjʊərəlz/ as Europe’s borders. The time period of main analysis runs from 1490 to 1790, which Tilly identified as the beginning of a new phase in the coercive expansion of European states, marked by the military revolution gaining speed. The extended analysis using Centennia data goes up to 1915, as the authors anticipate that beyond that point the logic of state formation became increasingly transformed by nationalism, especially through the creation of new states and the disintegration of multiethnic empires.</p>
+            <p>(4) Units of analysis vary by level. At the systemic level, the unit is the entire European state system observed in each five-year period. At the state level, the unit is the country-period (each state in each five-year period), yielding 13,705 observations for the gains models and 14,342 for survival analysis. At the dyadic level, the unit is the directed dyad-period: for each time period with N states, there are N(N-1) dyads, adding up to more than three million dyad-periods in a panel setup based on five-year periods (p. 350).</p>
+            <p>Control variables include log-transformed age of the state, coastal access, log-transformed number of contiguous neighbors, standard deviation of elevation as a proxy for rough terrain, and at the dyadic level, geographic distance between states.</p>
+          </div>
+          <div class="lang-zh">
+            <p>对于国家边界，作者主要依赖斯科特·艾布拉姆森关于近代早期欧洲国家的空间数据，该数据基于世纪纪年历史地图集、欧洲历史地图集和其他来源，提供了每五年期的地理编码多边形数据。数据涵盖1100年至1790年的时期，尽管作者遵循蒂利本人的分期，将主要分析集中在1490-1790年（第333页）。为进行稳健性检验和扩展分析，作者还直接使用了覆盖欧洲历史至2003年的世纪纪年历史地图集（第333页）。</p>
+            <p>对于冲突数据，作者使用彼得·布雷克的冲突目录，该目录记录了自公元1400年以来所有至少造成32人死亡的暴力冲突。布雷克将战争定义为“两个或更多追求冲突性政治目标的社会群体之间有目的的致命暴力行为，导致人员死亡，且至少有一个交战群体在权威领导下组织起来的案例”。虽然布雷克仅记录了不到一半战争的伤亡人数，但大多数冲突符合大规模战争的标准定义，只有10%低于一千人伤亡的门槛。作者仅关注国家间战争，排除内部冲突，其数据集记录了研究期间的346场国家间战争（第334页）。</p>
+            <p>地理覆盖范围以自然地理术语界定，使用博斯普鲁斯海峡、黑海、喀尔巴阡山脊、里海和乌拉尔山脉作为欧洲的边界（第334页）。主要分析的时间段从1490年到1790年，蒂利将其确定为欧洲国家强制性扩张的新阶段的开始，以军事革命加速为标志。使用世纪纪年数据的扩展分析延续到1915年，因为作者预计在那之后，国家形成的逻辑日益受到民族主义的转变，特别是通过新国家的建立和多民族帝国的解体。</p>
+            <p>分析单位因层次而异。在系统层面，单位是每个五年期观察到的整个欧洲国家体系。在国家层面，单位是国家-时期（每个国家在每个五年期内），收益模型产生13705个观测值，生存分析产生14342个观测值。在二元组层面，单位是有向二元组-时期：对于每个有N个国家的时期，存在N(N-1)个二元组，在基于五年期的面板设置中累计超过三百万个二元组-时期（第350页）。</p>
+            <p>控制变量包括国家年龄的对数转换、沿海通道、相邻邻国数量的对数转换、海拔标准差作为崎岖地形的代理变量，以及在二元组层面上国家之间的地理距离（第345页、第351页）。</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>(1) At the systemic level, the authors present descriptive analysis of territorial concentration trends using the Herfindahl index and compare the size distributions of belligerent versus peaceful states through ridge plots. Belligerent states are defined as those that spent at least a quarter of the time since 1490 at war (p. 336).</p>
+            <p>(2) At the state level, the authors use OLS regression with year fixed effects to model log-transformed territorial gains and losses as functions of warfare, state size, and their interactions. Standard errors are clustered at the country level to account for serial correlation within states. The key specifications interact the war dummy with state size and with cumulative war-related gains/losses variables, allowing tests of both the static relationship (Hypotheses 1a and 1b) and the dynamic positive-feedback relationship (Hypotheses 2a and 2b). Some models include country fixed effects to compare conflict periods to peaceful ones within the same state (pp. 345–347).</p>
+            <p>(3) For analyzing state death, the authors employ Cox proportional hazard models with standard errors clustered at the country level. The outcome is coded as 1 if a state ceases to exist in the subsequent five-year period. These survival models test whether warfare disproportionately eliminates smaller states while sparing larger ones (Hypothesis 1b) and whether cumulative war gains provide protection against state death (p. 348).</p>
+            <p>(4) At the dyadic level, the authors use OLS regression with year fixed effects and, in the most demanding specification, dyad fixed effects. The dependent variable is the log-transformed territorial gain of state A from state B. This setup allows testing whether pairs of states exchange territory differently during wartime versus peacetime, and whether the effect of warfare varies with relative state size and cumulative gains/losses. Standard errors are clustered at the state level. The dyadic analysis includes all state pairs, including noncontiguous pairs, since European history includes many cases of great powers fighting noncontiguous states (e.g., Spain’s conquest of the Netherlands) (pp. 350–352).</p>
+            <p>Key assumptions for these methods to be valid include: (1) the conflict data accurately captures warfare and correctly matches belligerents to state units in the border data; (2) the five-year periodization adequately captures the timing of territorial changes relative to wars; (3) year and dyad fixed effects adequately control for unobserved heterogeneity across time periods and state pairs; and (4) the geographic controls (distance, terrain, coastal access) appropriately capture countervailing balance-of-power mechanisms. The authors acknowledge that the macrohistorical focus of bellicist theorizing precludes straightforward causal identification, though they argue that their regression-based analyses with observational data provide solid support for the paradigm (pp. 333, 357).</p>
+            <p>Endogeneity that still cannot be ruled out: (i) time-varying dyad heterogeneity, for example a given pair of states that in a certain period becomes more prone to war and to territorial transfers because of royal succession, realignment of alliances, or changes in fiscal capacity. Even with dyad fixed effects, such factors that “vary over time and are correlated with war” may still bias the estimates. (ii) common causes (time-varying confounders), for example a wave of religious reformation, a change in trade routes, or a plague shock that alters fiscal or military strength while simultaneously affecting both war and border outcomes.</p>
+          </div>
+          <div class="lang-zh">
+            <p>（1）在系统层面，作者使用赫芬达尔指数对领土集中度趋势进行描述性分析，并通过山脊图比较好战国家与和平国家的规模分布。好战国家被定义为自1490年以来至少有四分之一时间处于战争状态的国家（第336页）。</p>
+            <p>（2）在国家层面，作者使用带年份固定效应的OLS回归来将对数转换的领土获得和损失建模为战争、国家规模及其交互项的函数。标准误在国家层面聚类，以考虑国家内部的序列相关。关键的模型设定将战争虚拟变量与国家规模以及累积战争相关收益/损失变量进行交互，从而能够检验静态关系（假说1a和1b）和动态正反馈关系（假说2a和2b）。一些模型包含国家固定效应，以比较同一国家内冲突时期与和平时期（第345-347页）。</p>
+            <p>（3）对于分析国家消亡，作者采用Cox比例风险模型，标准误在国家层面聚类。如果一个国家在下一个五年期内不复存在，则结果编码为1。这些生存模型检验战争是否不成比例地消灭小国而保全大国（假说1b），以及累积战争收益是否提供对国家消亡的保护（第348页）。</p>
+            <p>（4）在二元组层面，作者使用带年份固定效应的OLS回归，在最严格的模型设定中还包括二元组固定效应。因变量是国家A从国家B获得的对数转换领土收益。这一设置允许检验国家对在战时与和平时期是否以不同方式交换领土，以及战争的效果是否随相对国家规模和累积收益/损失而变化。标准误在国家层面聚类。二元组分析包括所有国家对，而不仅仅是相邻邻国，因为欧洲历史包括许多大国与非相邻国家作战的案例（例如，西班牙对尼德兰的征服）（第350-352页）。</p>
+            <p>这些方法有效的关键假设包括：（1）冲突数据准确捕捉战争并正确将交战方与边界数据中的国家单位匹配；（2）五年分期充分捕捉领土变化相对于战争的时间；（3）年份和二元组固定效应充分控制了跨时期和国家对的未观测异质性；（4）地理控制变量（距离、地形、沿海通道）恰当捕捉了抵消性的均势机制。作者承认，好战主义理论的宏观历史焦点排除了直接的因果识别，尽管他们认为基于观测数据的回归分析为该范式提供了坚实支持（第333页、第357页）。</p>
+            <p>仍然无法排除的内生性：①时间变化的dyad异质性：例如某对国家在某时期因王位继承、联盟重组、财政能力变化而更容易开战且更容易产生领土转移。即便有dyad FE，这类“随时间变化且与战争相关”的因素仍可能偏误估计。②共同原因（time-varying confounders）：比如某次宗教改革浪潮、贸易通道变化、瘟疫冲击导致财政/军力变化，同时影响战争与边界结果。</p>
+          </div>
+        </section>
+
+
+
+        <nav class="node-nav">
+          <a class="prev" href="gennaiolivoth2015.html"><small data-en="Previous reading" data-zh="上一篇">Previous reading</small>Gennaioli &amp; Voth 2015</a>
+          <a class="next" href="tilly1992.html"><small data-en="Next reading" data-zh="下一篇">Next reading</small>Tilly 1992</a>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

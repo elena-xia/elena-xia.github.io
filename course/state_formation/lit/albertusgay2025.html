@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Albertus &amp; Gay 2025 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 13" data-zh="第 13 周">Week 13</span> · <span data-en="Material–Technological lane" data-zh="物质–技术层">Material–Technological lane</span> · <span data-en="Early modern (S3)" data-zh="早期现代（S3）">Early modern (S3)</span></p>
+        <h1><span class="lang-en">Michael Albertus &amp; Victor Gay (2025, forthcoming), “State-Building and Rebellion in the Run-Up to the French Revolution,” APSR.</span><span class="lang-zh">阿尔贝图斯、盖伊（2025，即刊）《法国大革命前夕的国家建设与叛乱》，APSR。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#b0713f" data-en="Diff-in-diff" data-zh="双重差分">Diff-in-diff</span><span class="chip" style="background:#607066" data-en="Panel FE" data-zh="面板固定效应">Panel FE</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The main dependent variable is the number of rebellions per parish per decade in eighteenth-century France. The data come from the Jean Nicolas /ʒɑ̃ nikɔˈla/ survey (Nicolas 1985; 2002), which documents 8,516 rebellions across France between 1661 and 1789. The authors focus on the 6,000 rebellions that occurred in 3,172 parishes within the kingdom’s boundaries between 1714 and 1789 (pp. 9–10). The survey sets a low threshold for inclusion: any uprising that lasted only a few hours or involved as few as four individuals qualifies. This makes the survey an unusually comprehensive “thermometer” of popular discontent (p. 10). In robustness checks, the authors also use an indicator variable for whether any rebellion occurred in a parish-decade, and they disaggregate by rebellion intensity (weak: 4–10 participants; moderate: 11–50; strong: 50+), by targets of rebellion (state authorities vs. non-state authorities, taxation vs. military vs. judiciary), and by the social identity of protagonists (notables, laborers, craftsmen, etc.) (pp. 9–10, Table 1).</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要因变量是十八世纪法国每个教区每十年的叛乱次数。数据来源于让·尼古拉 /ʒɑ̃ nikɔˈla/ 的调查（Nicolas 1985; 2002），该调查记录了1661年至1789年间法国全境8,516次叛乱。作者聚焦于1714年至1789年间王国境内3,172个教区中发生的6,000次叛乱（第9–10页）。调查设定了较低的纳入门槛：任何仅持续数小时或涉及少至四人的起义均符合条件。这使得该调查成为衡量民众不满的异常全面的“温度计”（第10页）。在稳健性检验中，作者还使用了教区-十年中是否发生过任何叛乱的指示变量，并按叛乱强度（弱：4–10人；中等：11–50人；强：50人以上）、叛乱对象（国家当局vs.非国家当局，税收vs.军事vs.司法）以及参与者社会身份（地方显贵、劳工、工匠等）进行分类（第9–10页，表1）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The main independent variable is the presence of a horse-post relay in a parish in a given decade. This is a binary, non-absorbing treatment: a parish can gain a relay, lose it, regain it, etc. The authors construct an original historical GIS of the horse-post relay network based on administrative sources, specifically, the Liste générale des postes de France, an official publication printed annually from 1708 onward that listed all relays and distances between them. The authors digitized one edition per decade from the 1710s through the 1790s. The network grew from 841 relays spanning 11,000 km of postal roads in 1714 to 1,403 relays covering 24,000 km in 1790, essentially doubling in size over the period (pp. 7–8, Figure 3). The expansion was not linear: it involved the creation of 1,001 relays and the retirement of 439 (p. 9). Over the eighteenth century, the network shifted from a center-periphery configuration driven by geopolitical and military concerns toward an internal densification aimed at projecting monarchic authority into the kingdom’s interior (pp. 7–8).</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要自变量是某教区在某个十年期内是否存在驿站。这是一个二元的、非吸收性的处理变量：一个教区可以获得一个驿站，也可以失去它，然后再次获得，等等。作者基于行政来源，具体而言是1708年起每年印刷的官方出版物《法国驿站总表》（Liste générale des postes de France），构建了驿站网络的原始历史GIS。作者将1710年代至1790年代每十年的一个版本进行了数字化。网络从1714年的841个驿站、11,000公里邮路增长到1790年的1,403个驿站、24,000公里邮路，在此期间基本上翻了一番（第7–8页，图3）。扩张并非线性的：共涉及1,001个驿站的新建和439个驿站的撤销（第9页）。在十八世纪期间，网络从由地缘政治和军事考量驱动的中心-外围格局，转向以将君主权威投射到王国内陆为目标的内部加密（第7–8页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>The paper draws on a rich body of state formation theory. The state is conceptualized in Weberian terms as an entity seeking a monopoly over violence and the centralized administration of territory (Weber 1968), but the emphasis throughout the paper is on the process of achieving that monopoly, that is, on state-building rather than state strength. The authors engage directly with Michael Mann’s /maɪkəl mæn/ (1984) concept of infrastructural power, the capacity of the central state to penetrate its territories and logistically implement its decisions, as distinct from despotic power, the ability to impose mandates over society without negotiation. The horse-post relay network is treated as a concrete manifestation of the state’s attempt to build infrastructural power: it enhanced the monarchy’s informational capacity, allowed coordination among tax collectors, intendants, and military officials, and extended the state’s administrative reach into remote provinces (pp. 2–3). The authors also draw on Charles Tilly’s /tʃɑːrlz ˈtɪli/ (1990) bellicist framework, noting that the initial configuration of the horse-post network reflected strategic military concerns vis-à-vis neighboring powers (Spain, England, the Holy Roman Empire), while eighteenth-century expansion was driven by internal consolidation (pp. 7–8). The state is further conceptualized through Norbert Elias’s /ˈnɔːrbɛrt ˈeɪliəs/ ([1939] 1994) account of state centralization as a long, centuries-spanning process of absorbing feudal capacities and creating “civilizing” norms of state control over violence (p. 2). The paper distinguishes the process of state-building from the outcome of state strength: while greater state capacity may ultimately support political stability and order, the process of building that capacity can be disruptive, contested, and generative of popular resistance (pp. 2–3, 25). This distinction, between the long-run equilibrium effect of state capacity and its transitional, destabilizing dynamics, is the paper’s key conceptual contribution to state formation theory. The measurement of stateness is thus operationalized through a concrete, observable indicator of state penetration: the physical presence of a horse-post relay in a parish, which represented an attended building with stables and lodging quarters, staffed by uniformed postillons and managed by a state-appointed postmaster who served as both a relay operator and an intelligence agent for the monarchy (pp. 4–5).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文借鉴了丰富的国家形成理论体系。国家按韦伯式的定义被概念化为一个寻求在其领土内垄断暴力并集中管理领土的实体（Weber 1968），但全文的重点在于实现这一垄断的过程，即国家建设而非国家实力。作者直接运用了迈克尔·曼 /maɪkəl mæn/（1984）的基础性权力概念，中央国家渗透其领土并在后勤上执行其决策的能力，以区别于专制权力，即无需谈判即可将命令强加于社会的能力。驿站网络被视为国家试图建设基础性权力的具体体现：它增强了君主制的信息能力，允许税收官员、省督（intendants）和军事官员之间的协调，并将国家的行政触角延伸到偏远省份（第2–3页）。作者还借鉴了查尔斯·蒂利 /tʃɑːrlz ˈtɪli/（1990）的战争主义框架，指出驿站网络的初始配置反映了相对于邻国（西班牙、英格兰、神圣罗马帝国）的战略军事考量，而十八世纪的扩张则由内部整合所驱动（第7–8页）。国家还通过诺贝特·埃利亚斯 /ˈnɔːrbɛrt ˈeɪliəs/（[1939] 1994）的叙述被进一步概念化，他将国家集中化视为一个长达数世纪的吸收封建能力并创造国家暴力控制“文明化”规范的过程（第2页）。至关重要的是，本文坚持区分国家建设的过程与国家实力的结果：虽然更大的国家能力最终可能支持政治稳定和秩序，但建设这种能力的过程可能是破坏性的、充满争议的，并会引发民众抵抗（第2–3页，第25页）。这一区分，长期均衡效应与过渡性、不稳定动态之间的区分，是本文对国家形成理论的关键概念贡献。因此，国家性通过一个具体的、可观察的国家渗透指标来操作化：教区中驿站的物理存在，这代表着一座有人值守的建筑物，配有马厩和住宿区，由穿制服的驿卒运营，并由国家任命的驿站长管理，驿站长同时充当驿站运营者和为君主服务的情报人员（第4–5页）。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The core argument is that the expansion of the state’s communication infrastructure, specifically, the horse-post relay network, increased local rebellion in eighteenth-century France. This finding is attributed primarily to the material consequences of state centralization: the establishment of new horse-post relays brought increased state presence that disrupted local social equilibria in several concrete ways. The state agents who followed or were facilitated by the horse post, tax collectors, military recruiters, judicial officials, and police (maréchaussée /maʁeʃoˈse/), became targets of popular ire for their coercive activities: forced conscription, tax enforcement, monopolization of postal roads, and inflexible enforcement of royal laws perceived as unfair (pp. 1–2, 5–6). The paper thus presents an argument about the contested nature of state-building itself: while greater state capacity may ultimately support stability, the process of building it generates backlash, especially when the state has enough power to intrude into local life but not enough coercive capacity or legitimacy to deter resistance (p. 3). The argument further proposes that this backlash varied across the territory in accordance with pre-existing levels of state and administrative fragmentation: areas near fiscal boundaries (gabelles /ɡaˈbɛl/ frontiers) and regions historically more remote from direct monarchic control (pays d’États and pays d’Imposition vs. pays d’Élection) showed disproportionately stronger responses (pp. 20–21, Table 5). This finding connects the paper to Joel Migdal’s /dʒoʊˈɛl ˈmɪɡdæl/ (1988) argument about strong societies and weak states: pre-existing regional divisions and competing authorities conditioned the state’s ability to penetrate and order society in a consistent fashion (p. 3).</p>
+          </div>
+          <div class="lang-zh">
+            <p>核心论点是国家通信基础设施的扩张，具体而言是驿站网络，增加了十八世纪法国的地方叛乱。这一发现主要归因于国家集中化的物质后果：新驿站的建立带来了更多的国家存在，以多种具体方式打破了地方社会均衡。跟随或受驿站便利的国家代理人，税收官员、军事征兵官、司法官员和宪兵（maréchaussée /maʁeʃoˈse/），因其强制性活动而成为民众愤怒的对象：强制征兵、税收执法、邮政道路的垄断，以及被认为不公正的王室法律的僵硬执行（第1–2、5–6页）。因此，本文提出了一个关于国家建设本身的争议性质的论点：虽然更大的国家能力最终可能支持稳定，但建设它的过程会引发反弹，尤其是当国家有足够的权力侵入地方生活但没有足够的强制能力或合法性来威慑抵抗时（第3页）。论点还进一步提出，这种反弹在全境内随着先前存在的国家和行政碎片化程度而变化：靠近财政边界（盐税区 /ɡaˈbɛl/ 边境）的地区以及历史上更远离直接君主控制的地区（三级会议省和税征省vs.选举省）表现出不成比例的更强烈反应（第20–21页，表5）。这一发现将本文与乔尔·米格达尔 /dʒoʊˈɛl ˈmɪɡdæl/（1988）关于强社会与弱国家的论点联系起来：先前存在的地区分裂和竞争性权威影响了国家以一致方式渗透和管理社会的能力（第3页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>The authors propose that the link between new horse-post relays and rebellion operates primarily through the material consequences of state penetration, rather than through information diffusion or collective action facilitation. They identify several specific channels:</p>
+            <p>Mechanism 1: Tax enforcement. Improved speed and reliability of state communication facilitated stricter tax enforcement, crystallizing popular ire against state tax obligations. The horse-post network allowed central officials, tax farmers (fermiers généraux), and provincial intendants to coordinate swiftly on tax collection and enforcement, including efforts to suppress salt smuggling (faux-saunage) across the kingdom’s disparate salt-tax zones (gabelles) (p. 5). Rebellions against taxation account for about one-fourth of the total effect (p. 19, Table 4, column 3).</p>
+            <p>Mechanism 2: Military conscription. The network facilitated the transmission of military recruitment orders and enabled information gathering on draft-eligible men. The authors provide a vivid example from 1781 in Mirande /miˈʁɑ̃d/, in the southwestern généralité of Auch /oʃ/, where draft-eligible peasants confronted military officials at a conscription draw, shouting “They should all be killed!” (p. 6). Rebellions against the military account for about one-fifth of the total effect (p. 20, Table 4, column 4).</p>
+            <p>Mechanism 3: Judicial enforcement. Stricter enforcement of royal laws and court orders, facilitated by faster communication, disrupted local social balance and generated grievances. Rebellions against the judiciary account for about one-fourth of the total effect (p. 20, Table 4, column 5).</p>
+            <p>Mechanism 4: Crowding out of private interests. The monopolies associated with the horse post, monopoly on horse rentals along postal roads, monopoly on galloping at night, priority access to hay and animal fodder, disrupted competing private businesses and generated resentment among local notables, horse renters, farmers, and innkeepers situated off postal roads (pp. 5–6). Rebellions led by notables account for about one-fifth of the total effect (p. 20, Table 4, column 6). The authors provide an example from 1775 in Chauny /ʃoˈni/, Picardy /ˈpɪkərdi/, where a crowd attacked and ransacked a horse-post relay on rumors that the postmaster had stockpiled wheat during a local shortage (pp. 6–7).</p>
+            <p>Mechanism 5: Gathering effects. The visible new state presence, large buildings with stables, uniformed postillons, and royal-marked horses, may have drawn people from surrounding parishes to express grievances at these new symbols of state authority. The authors find evidence of a “gathering effect”: rebellions decreased in parishes within 5–10 km of a new relay, while increasing in the host parish itself. However, the net effect remains positive and is about twice the magnitude of the cumulated spillover effects (pp. 21–22, Figure 8).</p>
+            <p>Mechanism 6: Pre-existing fragmentation as a moderator. The authors find that the rebellion response to new relays was disproportionately stronger in areas of pre-existing fiscal and administrative fragmentation: near gabelles frontiers and in pays d’États/d’Imposition relative to pays d’Élection (pp. 20–21, Table 5).</p>
+            <p>The authors explicitly test and reject several alternative mechanisms: (i) disruption of traditional social hierarchies, they find no effect on rebellions against the Church, nobility, or seigneurial authorities (p. 22); (ii) war zones and wartime, the effect is robust to excluding border regions and wartime rebellions (pp. 22–23); (iii) information diffusion via the contemporaneous letter-post system, controlling for letter-post offices yields virtually identical estimates (p. 23); (iv) transit infrastructure, the horse post was built atop existing roads and the road network was managed independently by the Bridges and Roads (Ponts et Chaussées) administration (pp. 23–24); (v) policing by maréchaussée brigades, the spatial development of brigades followed a different logic, and controlling for brigade presence does not change the results (pp. 24–25).</p>
+            <p>Alternative explanations the authors examine.</p>
+            <p>The paper also works to rule out several rival accounts. The authors find no comparable effect on rebellions against non-state authorities such as the Church, nobility, seigneurial, or municipal authorities, which weakens the idea that relay expansion mainly disrupted traditional hierarchies in a broad social sense. They also show that the results are robust to excluding border regions and wartime rebellions, making it less likely that the estimates are driven simply by war exposure. In addition, controlling for the letter-post system yields very similar estimates, which weakens the argument that the main effect operates through broader information diffusion. Finally, the authors argue that the results are unlikely to be driven by transportation infrastructure per se or by the deployment of maréchaussée brigades, since the horse-post network was built on preexisting roads, roads were administered separately by the Ponts et Chaussées, and brigade expansion followed a different spatial logic. Still, the authors do not claim to have disproven in all settings the possibility that communication infrastructure may facilitate collective action; rather, they argue that in this case, the evidence points more strongly toward the material consequences of state centralization.</p>
+          </div>
+          <div class="lang-zh">
+            <p>作者提出，新驿站与叛乱之间的联系主要通过国家渗透的物质后果运作，而非通过信息传播或集体行动的促进。他们识别了几个具体渠道：</p>
+            <p>机制一：税收执法。 国家通信速度和可靠性的提高促进了更严格的税收执法，使民众对国家税收义务的愤怒具体化。驿站网络使中央官员、包税商（fermiers généraux）和省督能够迅速协调税收征管和执法，包括打击全国分散盐税区（gabelles）之间的走私活动（faux-saunage）（第5页）。针对税收的叛乱约占总效应的四分之一（第19页，表4，第3列）。</p>
+            <p>机制二：军事征兵。 网络促进了军事征兵令的传达，并使收集适龄男性信息成为可能。作者提供了一个来自1781年西南部Auch /oʃ/ 总督区Mirande /miˈʁɑ̃d/ 的生动案例，在那里适龄农民在征兵抽签现场面对军官，高喊“应该把他们全部杀掉！”（第6页）。针对军事的叛乱约占总效应的五分之一（第20页，表4，第4列）。</p>
+            <p>机制三：司法执法。 更快的通信促进了对王室法律和法院裁决的更严格执行，打破了地方社会平衡并产生了不满。针对司法的叛乱约占总效应的四分之一（第20页，表4，第5列）。</p>
+            <p>机制四：排挤私人利益。 与驿站相关的垄断，邮政道路上的马匹租赁垄断、夜间疾驰的垄断、优先获取干草和饲料，扰乱了竞争性的私人企业，在地方显贵、马匹租赁商、农民和不在邮路上的旅店主中产生了怨恨（第5–6页）。由显贵领导的叛乱约占总效应的五分之一（第20页，表4，第6列）。作者提供了一个来自1775年皮卡第 /ˈpɪkərdi/ 的Chauny /ʃoˈni/ 的案例，一群人在传闻驿站长在当地粮食短缺期间囤积小麦后袭击并洗劫了当地驿站（第6–7页）。</p>
+            <p>机制五：聚集效应。 可见的新国家存在，大型建筑物、穿制服的驿卒、带有王室标记的马匹，可能吸引了周围教区的人们到这些新的国家权威象征处表达不满。作者发现了“聚集效应”的证据：在距新驿站5–10公里范围内的教区叛乱减少了，而在驿站所在教区本身则增加了。然而，净效应仍为正值，约为累积溢出效应的两倍（第21–22页，图8）。</p>
+            <p>机制六：先前存在的碎片化作为调节变量。 作者发现，在先前存在财政和行政碎片化的地区，叛乱对新驿站的反应不成比例地更强烈：在盐税区边境附近以及三级会议省/税征省（相对于选举省）（第20–21页，表5）。</p>
+            <p>作者明确检验并否定了几个替代机制：(i) 传统社会等级的瓦解，他们发现对针对教会、贵族或领主权威的叛乱没有影响（第22页）；(ii) 战区和战时，在排除边境地区和战时叛乱后效果稳健（第22–23页）；(iii) 通过同期信件邮政系统的信息扩散，控制信件邮局后估计值几乎不变（第23页）；(iv) 交通基础设施，驿站建在已有道路之上，道路网络由桥梁与道路管理局（Ponts et Chaussées）独立管理（第23–24页）；(v) 宪兵巡逻，宪兵旅的空间发展遵循不同的逻辑，控制宪兵存在不改变结果（第24–25页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>The analysis dataset is a panel of approximately 35,000 parishes of the kingdom of France as of 1789 (excluding Corsica /ˈkɔːrsɪkə/), spanning eight decades from the 1710s to the 1780s, a total of 282,288 parish-decade observations. Parishes were the smallest units of administration in Ancien Régime France, and no prior study had analyzed this period at such a granular level (p. 7).</p>
+            <p>The horse-post relay network data are an original historical GIS constructed from the Liste générale des postes de France. The authors digitized one edition per decade from 1714 to 1790, extracting all segments between relays and matching each location to the corresponding parish (pp. 7–8). The data source is administrative and designed for state messengers, which makes it highly reliable.</p>
+            <p>The rebellion data come from the Jean Nicolas /ʒɑ̃ nikɔˈla/ survey (Nicolas 1985; 2002), compiled from extensive archival research during the 1980s–1990s. The authors digitized all 40,000 original coding sheets of the survey and constructed a comprehensive database of the 6,000 rebellions that took place in 3,172 parishes between 1714 and 1789. For each event, they recorded the date, location, motives, size, and characteristics of participants (pp. 9–10).</p>
+            <p>Additional data include: (i) parish-level decade-average wheat prices from Ridolfi /rɪˈdɒlfi/ (2019), used to control for local economic conditions; (ii) population from the 1793 census (the first census conducted in France); (iii) road connectivity from Cassini’s /kæˈsiːni/ maps published in 1756–90; (iv) whether a parish served as an administrative seat; (v) the type of gabelle taxation regime; (vi) a historical GIS of both the letter-post system and maréchaussée brigades, constructed by the authors for the alternative-mechanisms analysis (p. 12).</p>
+            <p>The unit of analysis is the parish-decade. The key administrative divisions used in the empirical strategy are cantons (over 4,500, with a median radius of 6 km and 7 parishes each) and subdélégations /sybdeleɡaˈsjɔ̃/ (nearly 700, with a median radius of 15 km and 39 parishes each) (pp. 11–12).</p>
+          </div>
+          <div class="lang-zh">
+            <p>分析数据集是截至1789年法国王国约35,000个教区（不含科西嘉 /ˈkɔːrsɪkə/）的面板，跨越从1710年代到1780年代的八个十年，共282,288个教区-十年观测值。教区是旧制度法国最小的行政单位，此前没有任何研究在如此细粒度的层面分析过这一时期（第7页）。</p>
+            <p>驿站网络数据是根据《法国驿站总表》构建的原始历史GIS。作者将1714年至1790年每十年的一个版本进行了数字化，提取了所有驿站之间的路段，并将每个地点与相应的教区匹配（第7–8页）。数据来源是行政性的，专为国家信使设计，因此具有高度可靠性。</p>
+            <p>叛乱数据来自让·尼古拉 /ʒɑ̃ nikɔˈla/ 的调查（Nicolas 1985; 2002），该调查由1980–1990年代的广泛档案研究编纂而成。作者将调查的全部40,000份原始编码表进行了数字化，构建了1714年至1789年间3,172个教区中发生的6,000次叛乱的综合数据库。对于每个事件，他们记录了日期、地点、动机、规模和参与者特征（第9–10页）。</p>
+            <p>额外数据包括：(i) 来自Ridolfi /rɪˈdɒlfi/（2019）的教区级十年平均小麦价格，用于控制地方经济条件；(ii) 来自1793年人口普查（法国首次人口普查）的人口数据；(iii) 来自卡西尼 /kæˈsiːni/ 1756–90年出版的地图的道路连通性；(iv) 教区是否为行政中心；(v) 盐税制度类型；(vi) 作者为替代机制分析构建的信件邮政系统和宪兵旅的历史GIS（第12页）。</p>
+            <p>分析单位是教区-十年。实证策略中使用的关键行政区划是canton（超过4,500个，中位半径6公里，每个包含7个教区）和subdélégation /sybdeleɡaˈsjɔ̃/（近700个，中位半径15公里，每个包含39个教区）（第11–12页）。</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>The paper employs a staggered difference-in-differences (DiD) design. The treatment is binary and non-absorbing: parishes can gain and lose horse-post relays over time. To account for heterogeneous and dynamic treatment effects, a well-known problem in staggered DiD settings, the authors use the estimator developed by de Chaisemartin /də ʃɛzmarˈtɛ̃/ and D’Haultfœuille /dotfœˈij/ (2024), which compares switchers (parishes that change treatment status) to not-yet-switchers with the same initial treatment status. This approach avoids the “contamination” of standard two-way fixed effects estimators that can arise when treatment effects are heterogeneous across time and units (pp. 12–13).</p>
+            <p>The regression equation (Equation 1, p. 12) is:</p>
+            <div class="formula-box">\[
+              rebellions_{pda}=\alpha_p+\lambda_d+\sum_{\ell}\delta_{\ell}\,
+              \mathbf{1}[horse\_post_{pd}=1]\mathbf{1}[d=\ell]
+              +prices_{pd}+\gamma_{da}+\varepsilon_{pda}.
+            \]</div>
+            <p>where \(p\) indexes parishes, \(d\) indexes decades, and \(a\) indexes administrative divisions. \(\alpha_p\) denotes parish fixed effects; \(\lambda_d\), decade fixed effects; \(prices_{pd}\), average wheat prices; and \(\gamma_{da}\), decade-by-administrative division fixed effects (alternatively at the subdélégation or canton level). Standard errors are clustered at the parish level.</p>
+            <p>The preferred specification uses two leads and three lags in the event-study framework, based on de Chaisemartin and D’Haultfœuille’s rule of thumb that at least half of ever-treated parishes should contribute to the estimation of each coefficient (p. 13).</p>
+            <p>Key identifying assumptions:</p>
+            <p>(1) Parallel trends: Absent the introduction of a relay, treated and untreated parishes within the same administrative division would have followed parallel trends in rebellion. The event-study plot (Figure 7, p. 16) shows no evidence of differential pre-trends, supporting this assumption.</p>
+            <p>(2) No anticipation of treatment: Parishes did not increase rebellion in anticipation of receiving a relay.</p>
+            <p>(3) Initial conditions: Past treatments before the starting period do not affect outcomes during the analysis period. The authors test this by excluding the 1710 decade, with results essentially unchanged (p. 16, Table 3, column 2).</p>
+            <p>(4) Exogeneity of relay placement conditional on fixed effects: The identifying strategy uses the fact that while the placement of major relay nodes in administrative centers may be endogenous to population dynamics, the specific location of relays between these nodes was primarily determined by the physiological need to space relays 10–15 km apart, reflecting horse physiology (Minetti 2003). The preferred specification uses within-canton variation (decade-by-canton fixed effects) to compare parishes within the same small administrative unit over time. This is a demanding specification: it reduces the effective sample from 35,287 parishes to 6,834 and from 282,296 to 54,672 parish-decades (p. 15, Table 2, columns 5–6). The authors demonstrate with a detailed case study of the Auxerre /oˈsɛʁ/ – Dijon /diˈʒɔ̃/ postal route in Burgundy /ˈbɜːrɡəndi/ that relay placement between regional centers was driven by distances along pre-existing roads rather than by population or economic characteristics (pp. 13–14, Figure 6).</p>
+            <p>Robustness checks include: varying periodization, holding the sample of switchers constant, using only switchers-in, population weights, decade-by-rural-status fixed effects, restricting to moderate/strong rebellions, distinguishing new relays from reconfigurations, using an indicator outcome, testing for archival reporting biases, and alternative clustering and grid-based fixed effects (pp. 16–18, Table 3, and Appendices B–C).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文采用**交错双重差分（DiD）**设计。处理变量是二元且非吸收性的：教区可以随时间获得和失去驿站。为了处理交错DiD设计中众所周知的异质性和动态处理效应问题，作者使用了de Chaisemartin /də ʃɛzmarˈtɛ̃/ 和 D’Haultfœuille /dotfœˈij/（2024）开发的估计量，该估计量将切换者（改变处理状态的教区）与具有相同初始处理状态的尚未切换者进行比较。这种方法避免了当处理效应在时间和单位间存在异质性时标准双向固定效应估计量可能出现的“污染”（第12–13页）。</p>
+            <p>回归方程（方程1，第12页）为：</p>
+            <div class="formula-box">\[
+              rebellions_{pda}=\alpha_p+\lambda_d+\sum_{\ell}\delta_{\ell}\,
+              \mathbf{1}[horse\_post_{pd}=1]\mathbf{1}[d=\ell]
+              +prices_{pd}+\gamma_{da}+\varepsilon_{pda}.
+            \]</div>
+            <p>其中 \(p\) 索引教区，\(d\) 索引十年，\(a\) 索引行政区划。\(\alpha_p\) 表示教区固定效应；\(\lambda_d\) 为十年固定效应；\(prices_{pd}\) 为平均小麦价格；\(\gamma_{da}\) 为十年-行政区划交互固定效应（在subdélégation或canton层面）。标准误在教区层面聚类。</p>
+            <p>首选规格在事件研究框架中使用两个前导期和三个滞后期，基于de Chaisemartin和D’Haultfœuille的经验法则，即至少一半曾被处理的教区应贡献于每个系数的估计（第13页）。</p>
+            <p>关键识别假设：</p>
+            <p>(1) 平行趋势： 在没有引入驿站的情况下，同一行政区划内处理组和未处理组的教区在叛乱方面将遵循平行趋势。事件研究图（图7，第16页）未显示差异性前趋势的证据，支持这一假设。</p>
+            <p>(2) 无处理预期： 教区不会因预期到将获得驿站而增加叛乱。</p>
+            <p>(3) 初始条件： 分析期开始前的过去处理不影响分析期间的结果。作者通过排除1710年代来检验这一点，结果基本不变（第16页，表3，第2列）。</p>
+            <p>(4) 条件于固定效应的驿站设置外生性： 关键的识别策略利用了以下事实：虽然行政中心主要驿站节点的设置可能对人口动态内生，但节点之间驿站的具体位置主要由每10–15公里设置驿站的生理需要决定，这反映了马匹生理学（Minetti 2003）。首选规格使用canton内变异（十年-canton交互固定效应）来比较同一小型行政单位内的教区随时间的变化。这是一个要求严格的规格：它将有效样本从35,287个教区减少到6,834个，从282,296个教区-十年减少到54,672个（第15页，表2，第5–6列）。作者通过勃艮第 /ˈbɜːrɡəndi/ 的Auxerre /oˈsɛʁ/ – Dijon /diˈʒɔ̃/ 邮路的详细案例研究证明，区域中心之间的驿站设置是由沿已有道路的距离而非人口或经济特征驱动的（第13–14页，图6）。</p>
+            <p>稳健性检验包括：改变分期、固定切换者样本、仅使用进入处理的切换者、人口权重、十年-农村状态交互固定效应、限于中强叛乱、区分新建驿站与重新配置、使用指示变量结果、检验档案记录偏差，以及替代聚类和网格固定效应（第16–18页，表3，以及附录B–C）。</p>
+          </div>
+        </section>
+
+
+
+        <nav class="node-nav">
+          <a class="prev" href="cantonimohrweigand2024.html"><small data-en="Previous reading" data-zh="上一篇">Previous reading</small>Cantoni et al. 2024</a>
+          <span class="disabled next"><small data-en="No next reading" data-zh="无下一篇">No next reading</small></span>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

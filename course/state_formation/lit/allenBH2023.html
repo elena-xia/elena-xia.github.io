@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Allen et al. 2023 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 3" data-zh="第 3 周">Week 3</span> · <span data-en="Coercion–Extraction lane" data-zh="强制–汲取层">Coercion–Extraction lane</span> · <span data-en="Pristine states (S1)" data-zh="原生国家（S1）">Pristine states (S1)</span></p>
+        <h1><span class="lang-en">Robert C. Allen, Mattia C. Bertazzini &amp; Leander Heldring (2023), “The Economic Origins of Government,” AER 113(10).</span><span class="lang-zh">艾伦、贝尔塔齐尼、赫尔德林（2023）《政府的经济起源》，AER。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#3f7d6a" data-en="Grid / GIS" data-zh="网格/GIS">Grid / GIS</span><span class="chip" style="background:#4a7ba6" data-en="Natural experiment" data-zh="自然实验">Natural experiment</span><span class="chip" style="background:#607066" data-en="Panel FE" data-zh="面板固定效应">Panel FE</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The paper examines multiple dependent variables that collectively capture the formation and functioning of early states. The primary dependent variable is state formation, measured as whether a grid cell is part of a state in a given archaeological period. This is operationalized through an indicator variable equal to one if a grid cell falls within the boundaries governed by a city possessing an administrative building (p. 2522). The authors further decompose this into “new state formation” (whether a grid cell becomes part of a state that did not exist in the previous period) and “existing state expansion” (whether a grid cell becomes part of a pre-existing state), finding that results are entirely driven by new state formation (p. 2530, 2532).</p>
+            <p>Secondary dependent variables include public good provision, measured through two indicators: (1) canal construction, coded as an indicator equal to one if a grid cell was within five kilometers of a canal, and (2) defensive wall construction, coded as an indicator equal to one if the nearest city to a grid cell had a defensive wall (p. 2523, 2533). The paper also examines tribute payment, measured as an indicator equal to one if a cuneiform tablet was found in the nearest city to a grid cell, since most surviving tablets from this period are government records of tribute collection or redistribution (p. 2523, 2534). Finally, the authors measure state capacity through the total number of administrative buildings (palaces, temples, and ziggurats) in the nearest city (p. 2534-2535).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文考察了多个因变量，这些变量共同刻画了早期国家的形成与运作。主要因变量是国家形成，通过测量某个网格单元在给定考古时期是否属于某个国家来衡量。具体操作化为一个指示变量，如果某网格单元位于拥有行政建筑的城市所管辖的边界内，则该变量等于1（第2522页）。作者进一步将其分解为“新国家形成”（某网格单元是否成为上一时期不存在的国家的一部分）和“现有国家扩张”（某网格单元是否成为既有国家的一部分），发现结果完全由新国家形成所驱动（第2530、2532页）。</p>
+            <p>次要因变量包括公共品供给，通过两个指标测量：（1）运河建设，如果某网格单元位于运河五公里范围内则编码为1；（2）防御城墙建设，如果距某网格单元最近的城市拥有防御城墙则编码为1（第2523、2533页）。本文还考察了贡赋缴纳，通过一个指示变量测量，如果在距某网格单元最近的城市发现了楔形文字泥板，则该变量等于1，因为这一时期现存的大多数泥板都是政府记录贡赋征收或再分配的文书（第2523、2534页）。最后，作者通过距最近城市的行政建筑（宫殿、神庙和金字形神塔）总数来测量国家能力（第2534-2535页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The main independent variable is a river shift, specifically a river shifting away from a community. The authors exploit the fact that between 5000 BCE and today, Iraq’s /ɪˈrɑːk/ main rivers, the Euphrates /juːˈfreɪtiːz/ and the Tigris /ˈtaɪɡrɪs/, shifted into their current courses through six sudden shifts. The first shift around 2850 BCE is the main natural experiment (p. 2508). Treatment is defined at the grid cell level: a grid cell is considered “treated” in period t if its centroid was within five kilometers of the nearest river in period t-1 but is no longer within five kilometers in period t. This captures the situation where settlements that previously had independent water access can now only farm productively if water is brought in through a canal (p. 2521).</p>
+            <p>The mechanism of river shifts is grounded in physical geography. Rivers in southern Mesopotamia /ˌmesəpəˈteɪmiə/ were elevated above the plain due to sediment buildup, held in place by natural levees. When upstream rainfall in Turkey /ˈtɜːki/ and Syria /ˈsɪriə/ caused surges in water volume, Tigris flow could double in two days and water levels could rise by six meters. The increased pressure could break the levees (p. 2520). Critically, rivers did not shift in parallel but broke through at specific points, creating cross-sectional variation in which communities were affected (p. 2508). The authors provide evidence that the first river shift coincided with a period of highly variable rainfall in the mountains where the rivers originated (p. 2520, 2527).</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要自变量是河流改道，具体指河流远离某个社区。作者利用了这样一个事实：从公元前5000年至今，伊拉克（Iraq /ɪˈrɑːk/）的主要河流，幼发拉底河（Euphrates /juːˈfreɪtiːz/）和底格里斯河（Tigris /ˈtaɪɡrɪs/），通过六次突然的改道形成了现今的河道。大约公元前2850年的第一次改道作为主要的自然实验（第2508页）。处理效应在网格单元层面定义：如果某网格单元的质心在t-1期距最近河流五公里以内，但在t期不再位于五公里以内，则该网格单元被视为在t期“受到处理”。这捕捉了这样一种情况：原先拥有独立水源的定居点现在只有通过运河引水才能进行高效农业生产（第2521页）。</p>
+            <p>河流改道的机制基于自然地理。美索不达米亚（Mesopotamia /ˌmesəpəˈteɪmiə/）南部的河流由于沉积物堆积而高于平原，由天然堤坝维持位置。当土耳其（Turkey /ˈtɜːki/）和叙利亚（Syria /ˈsɪriə/）上游的降雨导致水量激增时，底格里斯河的流量可以在两天内翻倍，水位可以上升六米，增加的压力可能冲破堤坝（第2520页）。关键的是，河流并非平行改道，而是在特定点位冲破，从而产生了横截面上的变异，使得不同社区受到不同程度的影响（第2508页）。作者提供了证据表明，第一次河流改道恰逢河流源头山区降雨高度波动的时期（第2520、2527页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>The authors conceptualize states as consisting of “several succeeding governments of a city or a territory” (p. 2507). This definition acknowledges that states are not static entities but rather evolving political organizations that persist across multiple governing administrations. The paper situates this conceptualization within two theoretical traditions: the cooperative tradition, which views government as an organization with a comparative advantage in public good provision and dispute resolution (drawing on Locke /lɒk/, Baumol /ˈbaʊmɒl/, and Samuelson /ˈsæmjuːəlsən/), and the extractive tradition, which views government as an organization tasked with extraction on behalf of an elite (associated with Marx /mɑːks/ and Engels /ˈeŋɡəlz/) (p. 2507-2508).</p>
+            <p>Measurement of state presence proceeds through a two-step procedure. First, the authors identify cities with administrative buildings (palaces, temples, or ziggurats) using archaeological sources including Heinrich /ˈhaɪnrɪx/ (1982, 1984), Meyers /ˈmaɪərz/ (1997), and Bryce /braɪs/ (2009). Over the entire study period, they identify 444 buildings (62 palaces, 423 temples, and 21 ziggurats) across 62 cities (p. 2522). Second, they record the outer borders of the territory administered from these buildings. Before the treatment period (Early Dynastic I, 2900-2700 BCE), state boundaries are defined as grid cells within a 6-kilometer radius of a capital city. From the treatment period onward, they use reconstructed territorial state borders from Lafont /ləˈfɒ̃/ et al. (2017) (p. 2522).</p>
+            <p>The authors distinguish between different dimensions of statehood. “State formation” refers to the emergence of new political entities, while “state expansion” refers to existing states incorporating new territories. They find that results are driven entirely by the formation of new states rather than expansion of existing ones like Uruk /ˈʊrʊk/ or Esnunna /esˈnʊnə/ (p. 2532). “State capacity” is measured through the number of administrative buildings, reflecting the government’s organizational infrastructure (p. 2534-2535). The internal organization of the state is characterized as an extension of lineage organization, where the ruling family’s head (the lugal /ˈluːɡɑːl/) performs functions analogous to a lineage head but across multiple lineages rather than just one (p. 2512).</p>
+          </div>
+          <div class="lang-zh">
+            <p>作者将国家概念化为“由一个城市或领土的若干相继政府组成”（第2507页）。这一定义承认国家不是静态实体，而是跨越多个行政管理时期持续存在的演进中的政治组织。本文将这一概念化置于两个理论传统之中：合作传统认为政府是一个在公共品供给和争端解决方面具有比较优势的组织（援引洛克 Locke /lɒk/、鲍莫尔 Baumol /ˈbaʊmɒl/ 和萨缪尔森 Samuelson /ˈsæmjuːəlsən/），而榨取传统则认为政府是一个代表精英进行榨取的组织（与马克思 Marx /mɑːks/ 和恩格斯 Engels /ˈeŋɡəlz/ 相关）（第2507-2508页）。</p>
+            <p>国家存在的测量通过两步程序进行。首先，作者使用考古资料识别拥有行政建筑（宫殿、神庙或金字形神塔）的城市，这些资料包括海因里希（Heinrich /ˈhaɪnrɪx/）（1982、1984年）、迈耶斯（Meyers /ˈmaɪərz/）（1997年）和布莱斯（Bryce /braɪs/）（2009年）的著作。在整个研究期间，他们在62个城市中识别出444座建筑（62座宫殿、423座神庙和21座金字形神塔）（第2522页）。其次，他们记录从这些建筑管辖的领土外边界。在处理期（早王朝I期，公元前2900-2700年）之前，国家边界被定义为首都城市6公里半径内的网格单元。从处理期开始，他们使用拉封（Lafont /ləˈfɒ̃/）等人（2017年）重建的领土国家边界（第2522页）。</p>
+            <p>作者区分了国家性的不同维度。“国家形成”指新政治实体的出现，而“国家扩张”指现有国家纳入新领土。他们发现结果完全由新国家的形成驱动，而非现有国家如乌鲁克（Uruk /ˈʊrʊk/）或埃什努纳（Esnunna /esˈnʊnə/）的扩张（第2532页）。“国家能力”通过行政建筑数量来测量，反映政府的组织基础设施（第2534-2535页）。国家的内部组织被刻画为世系组织的延伸，其中统治家族的首领（卢伽尔 lugal /ˈluːɡɑːl/）执行的功能类似于世系首领，但跨越多个世系而非仅仅一个（第2512页）。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The core argument of the paper is that the first governments formed as cooperative organizations to solve coordination problems, specifically the underprovision of public goods, rather than as extractive organizations designed to expropriate surplus on behalf of an elite. This is the paper’s central theoretical contribution: providing an empirical test that can distinguish between these two longstanding theoretical traditions in political philosophy and social science (p. 2507-2508).</p>
+            <p>The logic of the argument proceeds as follows. Before river shifts, farming in southern Iraq /ɪˈrɑːk/ relied on irrigating the arid desert from nearby rivers. Small-scale canals could be provided privately by individual communities. However, when a river shifted away, farmers faced a stark choice: revert to nomadism, migrate to follow the river, or re-irrigate through longer canals that required cooperation across distinct communities. The inability of separate lineages to credibly coordinate among themselves created demand for a government that could solve this coordination failure (p. 2508).</p>
+            <p>The theoretical predictions of cooperative and extractive theories diverge in this setting. If governments form primarily to organize extraction, states should be more likely to form where rivers shifted to (or did not shift at all), because the tax base remains intact in those locations. If governments form to address coordination problems, states should be more likely to form where rivers shifted away, because that is where the returns to solving coordination failure are highest (p. 2508). The finding that states formed where rivers shifted away, not where the tax base remained, is therefore interpreted as evidence consistent with the cooperative theory and inconsistent with extractive theories that emphasize coercion (p. 2510, 2530-2531).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文的核心论点是，最早的政府是作为解决协调问题（特别是公共品供给不足问题）的合作组织而形成的，而非作为代表精英榨取剩余的榨取组织而形成的。这是本文的核心理论贡献：提供一个能够区分政治哲学和社会科学中这两个长期存在的理论传统的经验检验（第2507-2508页）。</p>
+            <p>论证逻辑如下展开。在河流改道之前，伊拉克（Iraq /ɪˈrɑːk/）南部的农业依赖于从附近河流灌溉干旱的沙漠。小规模运河可以由单个社区私人提供。然而，当河流改道时，农民面临着严峻的选择：转向游牧生活、迁移以追随河流，或者通过需要不同社区间合作的更长运河来重新灌溉。各个世系无法可信地在彼此之间进行协调，这创造了对能够解决这种协调失败的政府的需求（第2508页）。</p>
+            <p>关键的是，合作理论和榨取理论的理论预测在这一情境中出现分歧。如果政府主要是为了组织榨取而形成，那么国家更可能在河流改道目的地（或完全未改道的地方）形成，因为这些地点的税基保持完整。如果政府是为了解决协调问题而形成，那么国家更可能在河流改道离开的地方形成，因为那里解决协调失败的回报最高（第2508页）。国家在河流改道离开的地方，而非税基保持完整的地方，形成这一发现，因此被解释为与合作理论一致、与强调强制的榨取理论不一致的证据（第2510、2530-2531页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>The paper proposes several interconnected mechanisms through which river shifts led to state formation. The primary mechanism is the creation of coordination problems requiring collective action. When rivers shifted away, farmers lost their independent water source. While small-scale irrigation could be privately provided, the longer canals needed to bring water from the new river location required cooperation between multiple communities. The classic collective action problem, where each community has an incentive to free-ride on others’ contributions, created demand for an organization that could credibly coordinate contributions and enforce agreements (p. 2508, 2512-2513).</p>
+            <p>The second mechanism is the disincentivization of extraction. A river shifting away caused the disappearance of the local agricultural tax base, since land without irrigation could not be farmed productively. This reduced the incentive for any potential predatory elite to form a state in affected areas. The simultaneity of increased coordination benefits and decreased extraction benefits in treated areas is what allows the empirical design to distinguish between theories (p. 2508).</p>
+            <p>The third mechanism involves the scaling up of existing social institutions. Before state formation, extended kinship groups called “lineages” adjudicated disputes, coordinated through assemblies, and provided public goods locally (p. 2510). The innovation that led to state formation was extending this lineage organization to encompass multiple lineages. The government was structured as a higher-level lineage, with the lugal /ˈluːɡɑːl/ (literally “big man”) serving as the lineage head of the state, performing functions analogous to what individual lineage heads did within their own communities. The component parts of this higher-level government were other lineages represented by their group leaders, creating a pyramidal structure that replicated the organization of its constituent parts at each level (p. 2512).</p>
+            <p>The fourth mechanism concerns implementation through existing social structures. Government authorities did not directly command individuals but rather coordinated between different groups in society. The ruling family “co-opted local professional groups who were left on their own to handle the actual delivery of the labor” (Garfinkle /ˈɡɑːfɪŋkəl/ 2021, p. 158, cited on p. 2513). Individuals who appeared to be government officials “would in fact have been heads of major lineages or groups of lineages, representing their constituencies” (Gibson /ˈɡɪbsən/ 1992, p. 16, cited on p. 2513). This explains how states could form and function without the coercive apparatus typically associated with modern states, enforcement occurred through established norms of reciprocity within kinship groups (p. 2512).</p>
+            <p>The authors provide direct evidence for these mechanisms through analysis of cuneiform tablets. They find that mentions of “lugal” (state leader) first appear after state formation, while mentions of “gal” (generic lineage leader/chief) increase by about 40% after river shifts. Mentions of canals and tribute also increase after state formation. This textual evidence supports the interpretation that governments were scaled-up lineage organizations that coordinated public good provision in exchange for tribute (p. 2539-2540).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文提出了几个相互关联的机制，通过这些机制河流改道导致了国家形成。主要机制是创造需要集体行动的协调问题。当河流改道时，农民失去了独立的水源。虽然小规模灌溉可以私人提供，但从新河流位置引水所需的更长运河需要多个社区之间的合作。经典的集体行动问题，每个社区都有动机搭便车于他人贡献之上，创造了对能够可信地协调贡献并执行协议的组织的需求（第2508、2512-2513页）。</p>
+            <p>第二个机制是对榨取的负激励。河流改道导致当地农业税基消失，因为没有灌溉的土地无法进行高效农业生产。这降低了任何潜在掠夺性精英在受影响地区建立国家的动机。受处理地区协调收益增加和榨取收益减少的同时性，使得经验设计能够区分不同理论（第2508页）。</p>
+            <p>第三个机制涉及现有社会制度的规模扩大。在国家形成之前，被称为“世系”的扩展亲属群体裁决争端、通过集会进行协调，并在地方层面提供公共品（第2510页）。导致国家形成的创新是将这种世系组织扩展到涵盖多个世系。政府被构建为更高层级的世系，卢伽尔（lugal /ˈluːɡɑːl/，字面意思为“大人物”）作为国家的世系首领，执行类似于各个世系首领在其各自社区内所做的功能。这个更高层级政府的组成部分是由其群体领袖代表的其他世系，创造了一种金字塔结构，在每个层级复制其组成部分的组织形式（第2512页）。</p>
+            <p>第四个机制涉及通过现有社会结构的实施。政府当局并不直接指挥个人，而是在社会不同群体之间进行协调。统治家族“吸纳地方专业群体，让他们自行处理实际劳动力的提供”（加芬克尔 Garfinkle /ˈɡɑːfɪŋkəl/ 2021年，第158页，引用于第2513页）。那些看起来是政府官员的人“实际上是主要世系或世系群体的首领，代表他们的成员”（吉布森 Gibson /ˈɡɪbsən/ 1992年，第16页，引用于第2513页）。这解释了国家如何能够在没有通常与现代国家相关联的强制机器的情况下形成和运作，执行是通过亲属群体内部既定的互惠规范进行的（第2512页）。</p>
+            <p>作者通过分析楔形文字泥板为这些机制提供了直接证据。他们发现，“卢伽尔”（国家领袖）的提及首次出现在国家形成之后，而“伽尔”（通用世系领袖/首领）的提及在河流改道后增加了约40%。运河和贡赋的提及也在国家形成后增加。这一文本证据支持这样的解释：政府是规模扩大的世系组织，通过协调公共品供给来换取贡赋（第2539-2540页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>The paper constructs an original archaeological panel dataset covering southern Iraq /ɪˈrɑːk/. The study area is approximately 30,000 square kilometers, roughly equivalent to Belgium /ˈbeldʒəm/ or Vermont /vərˈmɒnt/ (p. 2511). The cross-sectional unit of observation is a 5×5 kilometer grid cell, with 1,374 grid cells covering the union of archaeological survey areas between the modern Euphrates /juːˈfreɪtiːz/ and Tigris /ˈtaɪɡrɪs/ rivers from Baghdad /bæɡˈdæd/ to Basra /ˈbɑːsrə/ (p. 2517).</p>
+            <p>The temporal dimension consists of 31 archaeological periods from 5000 BCE to 1950 CE. The main study period covers five periods spanning 3900 BCE to 2700 BCE (Early Uruk, Middle Uruk, Late Uruk, Jemdet Nasr /ˈdʒemdət ˈnɑːsr/, and Early Dynastic I), with an average period length of approximately 240 years. The extended study period covers all 31 periods spanning 7,000 years, with an average period of 228 years (p. 2518).</p>
+            <p>Data on settlements and cities come from three large archaeological projects by the Chicago Oriental Institute (Adams /ˈædəmz/ 1965, 1981; Adams and Nissen /ˈnɪsən/ 1972). These “sweep surveys” were designed to record the full settlement history of contiguous areas, identifying 4,372 archaeological sites (p. 2521-2522). The authors identify 62 named cities within or around the sample area. Data on river positions are reconstructed from archaeological and geographical sources, with the first shift dated to approximately 2850 BCE (p. 2521). Data on administrative buildings (444 total: 62 palaces, 423 temples, 21 ziggurats) come from Heinrich /ˈhaɪnrɪx/ (1982, 1984), Meyers /ˈmaɪərz/ (1997), and Bryce /braɪs/ (2009) (p. 2522).</p>
+            <p>Data on canals are reconstructed from the Chicago Oriental Institute excavation reports, with 1,117 individual canals recorded (151 from the main study period) (p. 2523). Data on defensive walls come from Bryce (2009) and Meyers (1997), identifying 35 cities with walls over the extended period and 10 in the main study period (p. 2523). Data on cuneiform tablets come from the Cuneiform Digital Library Initiative (CDLI), with 6,573 tablets from the main study period, of which 5,885 have transliterations available for text analysis (p. 2523). Data on state borders come from Lafont /ləˈfɒ̃/ et al. (2017) for the territorial state period (p. 2522).</p>
+            <p>Additional covariates include climate data (average rainfall and temperature), geographical suitability for irrigated versus rainfed barley cultivation from the Food and Agricultural Organization, and indicators for the three separate archaeological survey areas (p. 2525-2526, 2537). The authors also compile data on river flow characteristics to distinguish between the fast-flowing Tigris (harder to irrigate from) and the slow-flowing Euphrates (easier to irrigate from) (p. 2537).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文构建了一个涵盖伊拉克（Iraq /ɪˈrɑːk/）南部的原创考古面板数据集。研究区域约30,000平方公里，大致相当于比利时（Belgium /ˈbeldʒəm/）或佛蒙特州（Vermont /vərˈmɒnt/）（第2511页）。横截面观察单位是5×5公里的网格单元，1,374个网格单元覆盖了从巴格达（Baghdad /bæɡˈdæd/）到巴士拉（Basra /ˈbɑːsrə/）的现代幼发拉底河（Euphrates /juːˈfreɪtiːz/）和底格里斯河（Tigris /ˈtaɪɡrɪs/）之间的考古调查区域的并集（第2517页）。</p>
+            <p>时间维度由公元前5000年至公元1950年的31个考古时期组成。主要研究期涵盖公元前3900年至公元前2700年的五个时期（早乌鲁克期、中乌鲁克期、晚乌鲁克期、杰姆代特纳斯尔期 Jemdet Nasr /ˈdʒemdət ˈnɑːsr/ 和早王朝I期），平均时期长度约为240年。扩展研究期涵盖所有31个时期，跨越7,000年，平均时期为228年（第2518页）。</p>
+            <p>关于定居点和城市的数据来自芝加哥东方研究所的三个大型考古项目（亚当斯 Adams /ˈædəmz/ 1965、1981年；亚当斯和尼森 Nissen /ˈnɪsən/ 1972年）。这些“扫描调查”旨在记录连续区域的完整定居历史，识别出4,372个考古遗址（第2521-2522页）。作者在样本区域内或周围识别出62个有名称的城市。河流位置数据根据考古和地理资料重建，第一次改道被定年为大约公元前2850年（第2521页）。行政建筑数据（共444座：62座宫殿、423座神庙、21座金字形神塔）来自海因里希（Heinrich /ˈhaɪnrɪx/）（1982、1984年）、迈耶斯（Meyers /ˈmaɪərz/）（1997年）和布莱斯（Bryce /braɪs/）（2009年）（第2522页）。</p>
+            <p>运河数据根据芝加哥东方研究所的发掘报告重建，共记录1,117条运河（主要研究期151条）（第2523页）。防御城墙数据来自布莱斯（Bryce）（2009年）和迈耶斯（Meyers）（1997年），在扩展期识别出35个有城墙的城市，主要研究期有10个（第2523页）。楔形文字泥板数据来自楔形文字数字图书馆计划（CDLI），主要研究期共有6,573块泥板，其中5,885块有可用于文本分析的转写（第2523页）。国家边界数据来自拉封（Lafont /ləˈfɒ̃/）等人（2017年）的领土国家时期研究（第2522页）。</p>
+            <p>额外的协变量包括气候数据（平均降雨量和温度）、来自联合国粮农组织的灌溉与雨养大麦种植的地理适宜性，以及三个独立考古调查区域的指示变量（第2525-2526、2537页）。作者还汇编了河流流动特征数据，以区分流速快的底格里斯河（更难灌溉）和流速慢的幼发拉底河（更易灌溉）（第2537页）。</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>The paper employs a panel difference-in-differences design, estimated using ordinary least squares. The main regression equation takes the form:</p>
+            <div class="formula-box">\[
+              Y_{ct}=\sum_{k=-4}^{0}\beta_k^{treatment}\,
+              \mathbf{1}\{period_k\}\times treated_c+\rho_c+\gamma_t+\upsilon_{ct}+\varepsilon_{ct}.
+            \]</div>
+            <p>Here \(Y_{ct}\) is an outcome for grid cell \(c\) in period \(t\), \(treated_c\) is a time-invariant indicator equal to one if the grid cell is treated in period \(k=0\), \(\rho_c\) are grid cell fixed effects, \(\gamma_t\) are period fixed effects, \(\upsilon_{ct}\) are period fixed effects interacted with time-invariant covariates (archaeological survey indicators, rainfall, temperature, and urban status in the last pre-period), and \(\varepsilon_{ct}\) is the error term clustered at the grid cell level. The coefficients \(\beta_k^{treatment}\) capture the time-varying effect of treatment relative to the last pre-period (\(k=-1\)) (p. 2525).</p>
+            <p>The key identifying assumption is the parallel trends assumption: absent treatment, treated grid cells would have evolved similarly to untreated grid cells, conditional on covariates. While untestable, the authors provide evidence supporting this assumption through several approaches. First, they estimate treatment effects in periods before treatment (pretrends) and find them statistically indistinguishable from zero throughout (p. 2526, 2528-2530). Second, they show that river shifts are uncorrelated with lagged outcomes (number of settlements, city presence, canal presence), which would indicate potential manipulation of river flow (p. 2526-2527). Third, they provide evidence that river shifts occur due to rainfall patterns in Turkey /ˈtɜːki/ and Syria /ˈsɪriə/ rather than local factors that might be correlated with state formation (p. 2520, 2527).</p>
+            <p>The authors address spatial correlation by reporting Conley /ˈkɒnli/ (1999) standard errors with a cutoff of 484 kilometers (covering the entire sample area), finding that these are similar to or slightly larger than clustered standard errors but do not threaten inference (p. 2526). They also report double-clustered standard errors at the grid cell and nearest-city-by-period levels for outcomes that vary at the city level (p. 2526). Because all grid cells are treated in the same period, the design avoids complications from staggered treatment timing. The authors verify that all OLS weights on treated grid cells are positive (following De Chaisemartin /də ʃɛzˈmɑːtæ̃/ and d’Haultfoeuille /doʊtfœˈiː/ 2020) and re-estimate results using their estimator, finding virtually identical results (p. 2526).</p>
+            <p>Robustness checks include: excluding fixed effects and covariate trends, varying the unit of observation and sample inclusion criteria, varying the definition of treatment (distance thresholds), varying the definition of state presence, using spatial lag models, and conducting placebo tests with rivers shifting closer (which yields consistently negative effects as predicted) (p. 2532-2533). The extended analysis covering all six river shifts over 7,000 years uses a standard panel difference-in-differences model with time-varying treatment, and results are also verified using stacked panel models (p. 2538).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文采用面板双重差分设计，使用普通最小二乘法估计。主要回归方程形式为：</p>
+            <div class="formula-box">\[
+              Y_{ct}=\sum_{k=-4}^{0}\beta_k^{treatment}\,
+              \mathbf{1}\{period_k\}\times treated_c+\rho_c+\gamma_t+\upsilon_{ct}+\varepsilon_{ct}.
+            \]</div>
+            <p>其中 \(Y_{ct}\) 是网格单元 \(c\) 在时期 \(t\) 的结果，\(treated_c\) 是时间不变的指示变量，如果网格单元在 \(k=0\) 期被处理则等于1，\(\rho_c\) 是网格单元固定效应，\(\gamma_t\) 是时期固定效应，\(\upsilon_{ct}\) 是时期固定效应与时间不变协变量（考古调查指示变量、降雨量、温度和最后一个预处理期的城市状态）的交互项，\(\varepsilon_{ct}\) 是在网格单元层面聚类的误差项。系数 \(\beta_k^{treatment}\) 捕捉相对于最后一个预处理期（\(k=-1\)）的处理效应的时变效果（第2525页）。</p>
+            <p>关键识别假设是平行趋势假设：在没有处理的情况下，受处理的网格单元将与未受处理的网格单元以相似方式演变，条件是协变量。虽然无法检验，但作者通过几种方法提供了支持这一假设的证据。首先，他们估计处理前各期的处理效应（预趋势），发现它们在统计上始终与零不可区分（第2526、2528-2530页）。其次，他们表明河流改道与滞后结果（定居点数量、城市存在、运河存在）不相关，这种相关性将表明对河流流动的潜在操纵（第2526-2527页）。第三，他们提供证据表明河流改道是由于土耳其（Turkey /ˈtɜːki/）和叙利亚（Syria /ˈsɪriə/）的降雨模式，而非可能与国家形成相关的当地因素（第2520、2527页）。</p>
+            <p>作者通过报告康利（Conley /ˈkɒnli/）（1999年）标准误（截断距离为484公里，覆盖整个样本区域）来处理空间相关性，发现这些标准误与聚类标准误相似或略大，但不影响推断（第2526页）。他们还报告了在网格单元和最近城市-时期层面双重聚类的标准误，用于在城市层面变化的结果（第2526页）。由于所有网格单元都在同一时期受到处理，设计避免了交错处理时机带来的复杂性。作者验证了所有受处理网格单元的OLS权重都是正的（遵循德·谢马丹 De Chaisemartin /də ʃɛzˈmɑːtæ̃/ 和多特弗耶 d’Haultfoeuille /doʊtfœˈiː/ 2020年的方法），并使用他们的估计量重新估计结果，发现结果几乎相同（第2526页）。</p>
+            <p>稳健性检验包括：排除固定效应和协变量趋势、改变观察单位和样本纳入标准、改变处理定义（距离阈值）、改变国家存在的定义、使用空间滞后模型，以及使用河流靠近的安慰剂检验（如预测的那样产生持续负效应）（第2532-2533页）。涵盖7,000年间所有六次河流改道的扩展分析使用带有时变处理的标准面板双重差分模型，结果也通过堆叠面板模型得到验证（第2538页）。</p>
+          </div>
+        </section>
+
+
+
+        <nav class="node-nav">
+          <a class="prev" href="kurrild2003.html"><small data-en="Previous reading" data-zh="上一篇">Previous reading</small>Kurrild-Klitgaard &amp; Svendsen 2003</a>
+          <a class="next" href="mayshar2022.html"><small data-en="Next reading" data-zh="下一篇">Next reading</small>Mayshar et al. 2022</a>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

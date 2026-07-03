@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chambru et al. 2024 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 13" data-zh="第 13 周">Week 13</span> · <span data-en="Coercion–Extraction lane" data-zh="强制–汲取层">Coercion–Extraction lane</span> · <span data-en="The long nineteenth century (S4)" data-zh="长十九世纪（S4）">The long nineteenth century (S4)</span></p>
+        <h1><span class="lang-en">Cédric Chambru, Emeric Henry &amp; Benjamin Marx (2024), “The Dynamic Consequences of State Building: Evidence from the French Revolution,” AER 114(11).</span><span class="lang-zh">尚布吕、亨利、马克思（2024）《国家建设的动态后果：来自法国大革命的证据》，AER。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#b0713f" data-en="Diff-in-diff" data-zh="双重差分">Diff-in-diff</span><span class="chip" style="background:#607066" data-en="Panel FE" data-zh="面板固定效应">Panel FE</span><span class="chip" style="background:#4a7ba6" data-en="Natural experiment" data-zh="自然实验">Natural experiment</span><span class="chip" style="background:#24493d" data-en="▼ traces to the present" data-zh="▼ 追踪后果至当代">▼ traces to the present</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The paper examines multiple dependent variables organized along a temporal sequence: (1) in the short run, indicators of the state’s coercive capacity, including extractive capacity (the timing of cadaster establishment, the amount of business tax collected per industrial establishment, and the number of military conscripts) and enforcement capacity (the number of prisons, tribunals, and police forces); (2) in the medium run, indicators of productive capacity, including secondary schools, hospitals, welfare offices, telegraph connections, and railway stations; and (3) in the long run, indicators of economic development, including industrial establishments, banks, patents registered by residents, population growth, and public and private employment (pp. 3578–3580). The overarching dependent variable is how state capacity and economic development evolve dynamically over time following an exogenous administrative reform. The paper does not have a single DV; rather, its central contribution is precisely to trace the sequence across multiple DVs.</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文考察了沿时间顺序排列的多个因变量：（1）在短期内，衡量国家强制能力（coercive capacity）的指标，包括榨取能力（cadastre地籍调查建立的时间、每个工业企业缴纳的营业税额、拿破仑军队的征兵人数）和执法能力（监狱、法庭和警力数量）；（2）在中期，衡量生产能力（productive capacity）的指标，包括中学、医院、福利机构、电报连接和铁路车站；（3）在长期，衡量经济发展的指标，包括工业企业数量、银行数量、居民注册的专利数量、人口增长以及公共和私人就业（第3578–3580页）。总体而言，因变量是在外生行政改革之后国家能力和经济发展如何随时间动态演变。本文并没有单一的因变量，其核心贡献恰恰在于追踪跨越多个因变量的时序。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The main independent variable is capital status, that is, whether a city was chosen as the capital (chef-lieu) of a newly created department (département) in the 1790 administrative reform of Revolutionary France /frɑːns/ (p. 3579). For the analysis of peripheral municipalities, the independent variable is proximity to the capital, specifically, a binary indicator of whether a municipality’s nearest candidate city was ultimately chosen as the department capital (p. 3593). The variation in capital status is exploited as a quasi-random assignment: in a subset of artificial departments, the French Constituent Assembly (Assemblée nationale constituante /asɑ̃ble nasjɔnal kɔ̃stitɥɑ̃t/) failed to designate a single capital and instead established rotations of administrative functions across multiple candidate cities or left the choice to a local election. When the rotation system was abolished in September 1791, capitals were “fixed” in whichever city happened to host the administration at that moment (pp. 3583–3585).</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要自变量是省会地位（capital status），即一座城市是否在法国大革命（French Revolution）1790年行政改革中被选为新设省（département /depaʁtəmɑ̃/）的省会（chef-lieu /ʃɛf ljø/）（第3579页）。对于周边市镇的分析，自变量是与省会的接近程度，具体而言，是一个二元指标，衡量某市镇最近的候选城市是否最终被选为省会（第3593页）。省会地位的变异被利用为准随机分配：在一部分人为划定的省份中，法国制宪议会（Assemblée nationale constituante /asɑ̃ble nasjɔnal kɔ̃stitɥɑ̃t/）未能指定唯一的省会，而是设立了行政职能在多个候选城市之间轮换的制度，或将选择权交给地方选举。当轮换制度于1791年9月被废除时，省会被“固定”在当时恰好驻有行政机构的城市（第3583–3585页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>The authors conceptualize state capacity following Mann /mæn/ (1984), Besley /ˈbɛzli/ and Persson /ˈpɛrsən/ (2010), and Berwick /ˈbɛrɪk/ and Christia /ˈkrɪstiə/ (2018) as the state’s ability to implement policy and achieve intended outcomes (p. 3580). They decompose state capacity into three distinct dimensions. The first is extractive capacity: the state’s ability to obtain fiscal or physical contributions from citizens, measured through cadaster establishment, business tax per establishment, and military conscription rates (pp. 3580, 3595–3598). The second is enforcement capacity: the ability to control the population through institutions of law and order, measured through the construction of prisons and tribunals and the size of police forces (pp. 3580, 3598). The authors group extractive and enforcement capacity together as coercive capacity, conceptualizing them as inputs into the production of public goods, consistent with Besley and Persson’s (2010) framework (p. 3580). The third is productive capacity: the ability of the state to provide public goods, measured through schools, hospitals, welfare services, telegraph connections, and railway stations (pp. 3580, 3598–3600). State building, in this paper, is therefore understood not as a one-time event but as a dynamic process in which the state first establishes coercive capacity in a locality, which then enables revenue collection, which in turn funds productive investments. The “state” is not conceptualized as a unitary Weberian entity but rather as a set of local institutions and administrative presences whose intensity varies across space (p. 3580).</p>
+            <p>This conceptualization has important theoretical implications. It is consistent with Tilly’s /ˈtɪli/ (1990) argument that coercion precedes extraction and public goods provision, and with Olson’s /ˈoʊlsən/ (1993) insight that a stationary bandit first needs the capacity to extract before providing public goods. However, the authors add a temporal dimension: they argue that the sequence matters, and that the short-term costs of coercion (higher taxes, conscription, population outflow) are a necessary investment whose payoff materializes only in the long run through improved public goods and economic growth (pp. 3581, 3607).</p>
+          </div>
+          <div class="lang-zh">
+            <p>作者遵循曼恩（Mann /mæn/，1984）、贝斯利（Besley /ˈbɛzli/）和佩尔松（Persson /ˈpɛrsən/，2010）、以及伯威克（Berwick /ˈbɛrɪk/）和克里斯蒂亚（Christia /ˈkrɪstiə/，2018）的框架，将国家能力概念化为国家实施政策并实现预期结果的能力（第3580页）。他们将国家能力分解为三个维度。第一是榨取能力（extractive capacity）：国家从公民那里获取财政或物质贡献的能力，通过地籍调查建立时间、每个企业缴纳的营业税额和征兵率来衡量（第3580、3595–3598页）。第二是执法能力（enforcement capacity）：通过法律和秩序制度控制人口的能力，通过监狱和法庭的建设及警力规模来衡量（第3580、3598页）。作者将榨取能力和执法能力统称为强制能力（coercive capacity），将其概念化为公共物品生产的投入，与贝斯利和佩尔松（2010）的框架一致（第3580页）。第三是生产能力（productive capacity）：国家提供公共物品的能力，通过学校、医院、福利服务、电报连接和铁路车站来衡量（第3580、3598–3600页）。在本文中，国家建设因此被理解为不是一次性事件，而是一个动态过程：国家首先在一个地区建立强制能力，进而实现税收征集，再以此资助生产性投资。“国家”在此不是被概念化为一个统一的韦伯式实体，而是一组地方制度和行政存在，其强度在空间上有所不同（第3580页）。</p>
+            <p>这一概念化具有重要的理论含义。它与蒂利（Tilly /ˈtɪli/，1990）关于强制先于榨取和公共物品供给的论点一致，也与奥尔森（Olson /ˈoʊlsən/，1993）关于固定土匪首先需要榨取能力然后才能提供公共物品的洞见一致。但作者增加了一个关键的时间维度：他们论证顺序很重要，强制的短期成本（更高的税收、征兵、人口外流）是一种必要的投资，其回报只在长期才通过改善的公共物品和经济增长得以实现（第3581、3607页）。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The core argument is that state building is a dynamic process in which early investments in coercive capacity are a prerequisite for later investments in productive capacity and long-run economic development. The paper argues that when a city received quasi-random administrative status as a department capital in 1790, this triggered a sequential chain of effects: in the short run, the new capital experienced higher taxation, more conscription, and greater investment in law enforcement institutions (prisons, tribunals, police); in the medium run, these fiscal resources enabled greater provision of public goods such as schools, hospitals, telegraph connections, and railways; and in the long run, these public goods attracted private economic activity, innovation, and population growth, so that by the early 20th century, capitals were approximately 40% more populated than comparable candidate cities (pp. 3578–3580). The authors argue that this divergence did not appear immediately. In the short run, the costs of coercion (higher taxes, conscription) may have actually driven some citizens away from the capital. Only after decades of institutional buildup did the benefits of state presence, in the form of local public goods and the private sector activity they attracted, outweigh these costs (pp. 3581, 3589–3590).</p>
+            <p>The argument can be summarized as a three-stage temporal logic: (1) Coercion first: the state projects its coercive power into the new capital, establishing tax collection infrastructure (cadasters), military recruitment capacity, and law enforcement institutions (pp. 3595–3598); (2) Public goods next: the fiscal resources accumulated through coercion fund investments in public goods, which materialize in the medium to long run (pp. 3598–3600, 3601–3603); (3) Growth last: the availability of local public goods raises productivity and attracts private sector activity and population, generating a self-reinforcing cycle of urban growth (pp. 3603–3607). This temporal logic is formalized in a spatial equilibrium model presented in Section 3 of the paper (pp. 3586–3590).</p>
+          </div>
+          <div class="lang-zh">
+            <p>核心论点是：国家建设是一个动态过程，其中对强制能力的早期投资是后来对生产能力投资和长期经济发展的先决条件。本文论证，当一座城市在1790年准随机地获得省会行政地位时，这触发了一连串的因果效应：在短期内，新省会经历了更高的税收、更多的征兵和更大的执法制度投资（监狱、法庭、警力）；在中期，这些财政资源使得更多公共物品，如学校、医院、电报连接和铁路，得以提供；而在长期，这些公共物品吸引了私人经济活动、创新和人口增长，以至于到20世纪初，省会城市的人口大约比同等条件的候选城市多出40%（第3578–3580页）。至关重要的是，作者论证这种分化并非立即出现。在短期内，强制的成本（更高的税收、征兵）实际上可能将一些公民驱离省会。只有经过数十年的制度建设，国家存在的益处，以地方公共物品和它们吸引的私人部门活动的形式，才超过了这些成本（第3581、3589–3590页）。</p>
+            <p>该论点可以概括为三阶段时序逻辑：（1）强制在先：国家将其强制力量投射到新省会，建立税收征集基础设施（地籍调查）、军事征募能力和执法制度（第3595–3598页）；（2）公共物品随后：通过强制积累的财政资源资助公共物品投资，这在中长期才得以实现（第3598–3600、3601–3603页）；（3）增长最后：地方公共物品的可得性提高了生产力，吸引了私人部门活动和人口，产生了城市增长的自我强化循环（第3603–3607页）。这一时序逻辑在论文第3节的空间均衡模型中被形式化（第3586–3590页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>The authors propose a formal spatial equilibrium model that delivers the key mechanisms (pp. 3586–3590). The model is structured as follows.</p>
+            <p>Setting: There are two cities, a capital \(c\) and a rival candidate city \(r\), and two periods. Both cities are initially identical except that \(c\) receives an exogenous positive shock in coercive capacity. Private goods are produced according to a linear production function where productivity depends on the level of local public goods:</p>
+            <div class="formula-box">\[
+              A_{j,t}=A(G_{j,t})^{\beta_1}.
+            \]</div>
+            <p>Workers are paid their marginal product. Public goods are produced using tax revenues. The government allocates revenue across three uses: local public goods (share \(\mu\)), global public goods (share \(\nu\)), and coercive capacity investment (share \(1-\mu-\nu\)). Tax revenue depends on coercive capacity:</p>
+            <div class="formula-box">\[
+              T_{j,t}=C_{j,t}\times\tau_{j,t}\times N_{j,t}\times w_{j,t},
+            \]</div>
+            <p>so without coercive capacity no taxes can be collected. Coercive capacity is a stock that grows proportionally to the budget allocated to it:</p>
+            <div class="formula-box">\[
+              C_{j,t}=C_{j,t-1}\times(B_{j,t-1})^{\sigma}.
+            \]</div>
+            <p>Citizens are mobile and choose cities based on utility from private goods, local public goods, and global public goods, plus an idiosyncratic taste shock (pp. 3586–3588).</p>
+            <p>Predictions (Proposition 1): In Period 1, taxes are strictly higher in the capital; if the initial shock in coercive capacity is not too large, the capital has fewer local public goods, lower productivity, lower wages, and experiences population outflow. In Period 2, the gap in coercive capacity has grown even larger (because more resources were invested in coercion in the capital in Period 1); taxes remain higher in the capital, but more local public goods are now provided; productivity and wages are higher; and population migrates toward the capital (p. 3589). The key insight is that the budget share allocated to coercive capacity is the same in both cities, but the size of the budget differs because the capital can collect taxes more efficiently. This means the absolute investment in coercion is higher in the capital, which amplifies the initial advantage over time (p. 3589).</p>
+            <p>Specific empirical mechanisms: Beyond the formal model, the authors identify several concrete channels: (a) Cadaster as fiscal infrastructure: the early establishment of cadasters in capitals and their periphery facilitated systematic land taxation, which generated revenue for the central state; the authors specifically test and reject alternative channels whereby the cadaster boosted growth through property rights or reduced conflict (pp. 3596–3597). (b) Conscription as physical extraction: the Napoleonic state used the administrative proximity of the prefect to recruit more soldiers from capitals (p. 3597). (c) Law enforcement as a complementary coercive investment: prisons, tribunals, and police forces were concentrated in capitals, reinforcing the state’s capacity to enforce compliance (p. 3598). (d) Public goods as growth engines: secondary schools, hospitals, telegraph, and railways attracted productive workers and firms; the authors argue these emerged only after enough fiscal capacity had been built up (pp. 3598–3603). (e) Agglomeration effects: once public goods attracted workers and firms, concentration effects further amplified the capital’s advantage, as evidenced by the rising gap in patents, banks, and population (pp. 3603–3607). (f) Civil servants as a demand channel: about one-third of the population difference between capitals and candidates by 1886 is attributable to civil servants and their families; the remaining two-thirds reflects broader private-sector attraction (pp. 3604–3605).</p>
+          </div>
+          <div class="lang-zh">
+            <p>设定：有两座城市，省会 \(c\) 和竞争的候选城市 \(r\)，以及两个时期。两座城市初始完全相同，除了 \(c\) 获得一个外生的正向强制能力冲击。私人物品的生产函数为线性形式，生产率取决于地方公共物品水平：</p>
+            <div class="formula-box">\[
+              A_{j,t}=A(G_{j,t})^{\beta_1}.
+            \]</div>
+            <p>工人获得其边际产出。公共物品由税收收入生产。政府将收入在三种用途之间分配：地方公共物品（份额 \(\mu\)）、全局公共物品（份额 \(\nu\)）和强制能力投资（份额 \(1-\mu-\nu\)）。税收收入取决于强制能力：</p>
+            <div class="formula-box">\[
+              T_{j,t}=C_{j,t}\times\tau_{j,t}\times N_{j,t}\times w_{j,t},
+            \]</div>
+            <p>因此没有强制能力就无法征税。强制能力是一个存量，与分配给它的预算成比例增长：</p>
+            <div class="formula-box">\[
+              C_{j,t}=C_{j,t-1}\times(B_{j,t-1})^{\sigma}.
+            \]</div>
+            <p>公民可以流动，基于私人物品、地方公共物品和全局公共物品的效用加上个体偏好冲击来选择城市（第3586–3588页）。</p>
+            <p>预测（命题1）：在第1期，省会的税率严格更高；如果初始强制能力冲击不太大，省会的地方公共物品更少、生产率更低、工资更低，并经历人口外流。在第2期，强制能力差距进一步扩大（因为第1期省会投入了更多资源于强制）；省会的税率仍然更高，但现在提供了更多的地方公共物品；生产率和工资更高；人口向省会迁移（第3589页）。关键洞见是：分配给强制能力的预算份额在两座城市中相同，但预算规模不同，因为省会能更有效地征税。这意味着省会在强制方面的绝对投资更高，从而随时间放大了初始优势（第3589页）。</p>
+            <p>具体经验机制：除了形式模型之外，作者还识别了几条具体渠道：（a）地籍调查作为财政基础设施：省会及其周边地区率先建立的地籍调查促进了系统性的土地税征收，为中央政府创造了收入；作者专门检验并排除了地籍调查通过产权保护或减少冲突促进增长的替代渠道（第3596–3597页）。（b）征兵作为物质榨取：拿破仑国家利用省长（préfet /pʁeˈfɛ/）的行政接近性从省会征募更多士兵（第3597页）。（c）执法作为互补的强制投资：监狱、法庭和警力集中在省会，强化了国家执行服从的能力（第3598页）。（d）公共物品作为增长引擎：中学、医院、电报和铁路吸引了有生产力的工人和企业；作者论证这些只在积累了足够的财政能力之后才出现（第3598–3603页）。（e）集聚效应：一旦公共物品吸引了工人和企业，集中效应进一步放大了省会的优势，专利、银行和人口差距的不断扩大证明了这一点（第3603–3607页）。（f）公务员作为需求渠道：到1886年，省会与候选城市之间大约三分之一的人口差异可归因于公务员及其家属；其余三分之二反映了更广泛的私人部门吸引力（第3604–3605页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>The paper assembles an impressively comprehensive set of original data at the municipal level across France /frɑːns/, spanning from the late 18th century to the early 21st century.</p>
+            <p>Geographic coverage and unit of analysis: The primary unit of analysis is the municipality (commune). The authors construct a balanced panel of municipalities covering the period 1800–1914 using the Cassini map of France, digitized by EHESS (École des Hautes Études en Sciences Sociales /ekɔl de ot etyd ɑ̃ sjɑ̃s sɔsjal/). Their baseline sample includes 50 candidate cities across 17 “artificial” departments; their augmented sample extends to 69 cities across 25 departments. For peripheral analysis, they cover 10,892 municipalities within 20 km of candidate cities across these 25 departments (pp. 3590–3592).</p>
+            <p>Key data sources and how variables are measured: For pre-reform characteristics (balance checks), they use Nordman /ˈnɔːrdmən/ et al. (1995) for Ancien Régime /ɑ̃sjɛ̃ ʁeˈʒim/ administrative functions (bishoprics, bailiwicks, tax centers, subdelegations), pre-revolution road networks from Arnaud /aʁˈno/ (2021), navigable waterway data from Dupain-Triel /dyˈpɛ̃ tʁiˈɛl/ (1781), and urban potential from Bosker /ˈbɒskər/ et al. (2013). Population data comes from decennial censuses starting in 1793. For extractive capacity, they collected cadaster dates from departmental archives (series P and 3P), conscription data from the Matricules Napoléoniens /matʁikyl napɔleɔˈnjɛ̃/ collaborative project (950,000+ soldiers, 1802–1815), and business tax data from the first industrial census (1839–47) digitized from Chanut /ʃaˈny/ et al. (2000). For enforcement capacity, they use the Atlas Historique de la Gendarmerie for police locations in 1790 and 1816, and the Conseil des Bâtiments Civils (Conbavil) database for public building construction projects (prisons, tribunals, hospitals) from 1795 to 1840. For productive capacity, they collected secondary school data at the municipal level for 1812 and 1836 from national archives, welfare office data from Bucquet /byˈkɛ/ (1874), telegraph network data from de Vougy /də vuˈʒi/ (1863), and railway station locations from historical maps (1852, 1870). For economic outcomes, they use establishment-level microdata from the 1839 industrial census, banking data from Hoffman /ˈhɒfmən/ et al. (2019), and patent data from INPI. For contemporary outcomes, they use the DADS matched employer-employee dataset (2006–2015) covering public and private employment (pp. 3592–3594).</p>
+            <p>Time period: The data spans from the Ancien Régime (pre-1789) to 2015, with the most intensive coverage from 1800 to 1914.</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文在法国（France /frɑːns/）市镇层面汇集了一套极为全面的原始数据，时间跨度从18世纪末到21世纪初。</p>
+            <p>地理覆盖范围和分析单位：主要分析单位是市镇（commune /kɔˈmyn/）。作者使用由法国高等社会科学院（EHESS /ekɔl de ot etyd ɑ̃ sjɑ̃s sɔsjal/）数字化的法国卡西尼地图（Cassini /kɑːˈsiːni/）构建了覆盖1800–1914年的市镇平衡面板。基准样本包括17个“人为划定”省份中的50个候选城市；扩展样本延伸至25个省份中的69个城市。对于周边分析，他们覆盖了这25个省份中候选城市20公里范围内的10,892个市镇（第3590–3592页）。</p>
+            <p>关键数据来源和变量测量方式：对于改革前特征（平衡性检验），他们使用诺德曼（Nordman /ˈnɔːrdmən/）等人（1995）的旧制度（Ancien Régime /ɑ̃sjɛ̃ ʁeˈʒim/）行政功能数据（主教区、法管区、税务中心、行政分区），阿尔诺（Arnaud /aʁˈno/，2021）的革命前公路网络数据，杜潘-特里埃尔（Dupain-Triel /dyˈpɛ̃ tʁiˈɛl/，1781）的通航水道数据，以及博斯克（Bosker /ˈbɒskər/）等人（2013）的城市潜力数据。人口数据来自1793年开始的十年一次人口普查。对于榨取能力，他们从省级档案（P系列和3P系列）收集了地籍调查日期，从拿破仑征兵簿（Matricules Napoléoniens /matʁikyl napɔleɔˈnjɛ̃/）协作项目获取了征兵数据（超过95万名士兵，1802–1815年），以及从沙尼（Chanut /ʃaˈny/）等人（2000）数字化的第一次工业普查（1839–47年）获取了营业税数据。对于执法能力，他们使用宪兵历史地图集（Atlas Historique de la Gendarmerie）获取1790年和1816年的警力位置，以及公共建筑委员会（Conseil des Bâtiments Civils /kɔ̃ˈsɛj de bɑtiˈmɑ̃ siˈvil/，即Conbavil）数据库获取1795年至1840年的公共建筑施工项目（监狱、法庭、医院）。对于生产能力，他们从国家档案收集了1812年和1836年市镇层面的中学数据，从比克（Bucquet /byˈkɛ/，1874）获取福利机构数据，从德·弗日（de Vougy /də vuˈʒi/，1863）获取电报网络数据，从历史地图（1852年、1870年）获取铁路车站位置。对于经济成果，他们使用1839年工业普查的企业层面微观数据、霍夫曼（Hoffman /ˈhɒfmən/）等人（2019）的银行数据和国家工业产权研究所（INPI）的专利数据。对于当代成果，他们使用DADS雇主-雇员匹配数据集（2006–2015年），涵盖公共和私人就业（第3592–3594页）。</p>
+            <p>时间跨度：数据从旧制度时期（1789年之前）延伸至2015年，1800年至1914年覆盖最为密集。</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>The identification strategy is based on a quasi-natural experiment arising from the 1790 administrative reform. The authors exploit the fact that in a subset of “artificial” departments (those not built around a single historical city or province), the Constituent Assembly could not agree on a single capital and instead set up a rotation system or local elections among multiple candidate cities. When the rotation system was abolished in 1791, the final capital was effectively determined by which city happened to host the administration at that time. The authors argue this constitutes quasi-random assignment of capital status (pp. 3583–3585, 3593–3594).</p>
+            <p>The core empirical framework uses three specifications. Equation (1) compares capitals with other candidate cities within the same department:</p>
+            <div class="formula-box">\[
+              y_{ij}=\alpha_0+\alpha_1 C_{ij}+\delta_j+\varepsilon_{ij}.
+            \]</div>
+            <p>Here \(C_{ij}\) is capital status, \(\delta_j\) are department fixed effects, and the sample consists of candidate cities only. Equation (2) estimates effects on peripheral municipalities:</p>
+            <div class="formula-box">\[
+              y_{ij}=\beta_0+\beta_1 CloseToCap_{ij}+X_{ij}\Omega+\delta_j+\varepsilon_{ij}.
+            \]</div>
+            <p>\(CloseToCap\) is a binary variable for whether the nearest candidate city was chosen as capital, and \(X\) includes geographic, demographic, and administrative controls. Equation (3) jointly estimates capital effects and periphery effects including all municipalities within 20 km of candidate cities (pp. 3593–3594).</p>
+            <p>For inference, the authors employ two complementary approaches. First, a design-based approach: they aggregate treatment and control outcomes within each department and perform a paired t-test with K−1 degrees of freedom (K = 17 or 25 departments), conducting randomization inference based on this t-statistic. Second, they estimate OLS with 95% permutation-based randomization confidence intervals from Young /jʌŋ/ (2022), using 10,000 permutations of treatment assignment (p. 3594). They also report results with heteroskedasticity-robust standard errors and standard errors clustered by department, with wild bootstrap p-values following Cameron /ˈkæmərən/ et al. (2008) to account for the small number of clusters (pp. 3600–3601). As supplementary evidence, they use the synthetic control method of Abadie /ˌɑːbɑːˈdiːeɪ/ et al. (2010) and Abadie and L’Hour /luːr/ (2021) to construct synthetic control cities for each capital (pp. 3603–3604).</p>
+            <p>Assumptions required for validity: (1) Conditional random assignment: within each artificial department, the final capital was chosen quasi-randomly among the candidate cities. The authors support this with extensive balance checks showing that capitals and other candidates were statistically indistinguishable along 20+ pre-reform characteristics, population, administrative functions, market access, urban potential, economic potential, and geographic features (pp. 3594–3596). Only 1 out of 20 baseline characteristics is significantly different at the 5% level. (2) SUTVA (Stable Unit Treatment Value Assumption): the outcome for one candidate city is not affected by the capital assignment in another department. This is plausible given the departments are geographically distinct. (3) No anticipation: the candidate cities did not differentially adjust their behavior before the capital assignment was finalized. (4) Excludability: capital status affects outcomes only through the administrative presence mechanism, not through other correlated channels. The authors acknowledge that centrality within the department is correlated with capital status (capitals are on average 16 km closer to the department centroid), but argue this is not a confounder because the department boundaries were arbitrary for artificial departments and proximity to the centroid had no economic significance before the reform. They confirm results are robust to controlling for distance to the centroid (pp. 3595–3596).</p>
+          </div>
+          <div class="lang-zh">
+            <p>识别策略基于1790年行政改革产生的准自然实验。作者利用这样一个事实：在一部分“人为划定”的省份（即不是围绕单一历史城市或省份建立的省份）中，制宪议会无法就唯一的省会达成一致，而是在多个候选城市之间设立了轮换制度或地方选举。当轮换制度于1791年被废除时，最终省会实际上由当时恰好驻有行政机构的城市决定。作者论证这构成了省会地位的准随机分配（第3583–3585、3593–3594页）。</p>
+            <p>核心经验框架使用三个方程。方程（1）在同一省份内比较省会与其他候选城市：</p>
+            <div class="formula-box">\[
+              y_{ij}=\alpha_0+\alpha_1 C_{ij}+\delta_j+\varepsilon_{ij}.
+            \]</div>
+            <p>其中 \(C_{ij}\) 为省会地位，\(\delta_j\) 为省份固定效应，样本仅包括候选城市。方程（2）估计对周边市镇的影响：</p>
+            <div class="formula-box">\[
+              y_{ij}=\beta_0+\beta_1 CloseToCap_{ij}+X_{ij}\Omega+\delta_j+\varepsilon_{ij}.
+            \]</div>
+            <p>其中 \(CloseToCap\) 是最近的候选城市是否被选为省会的二元变量，\(X\) 包括地理、人口和行政控制变量。方程（3）联合估计省会效应和周边效应，包括候选城市20公里范围内的所有市镇（第3593–3594页）。</p>
+            <p>在推断方面，作者采用两种互补方法。第一，基于设计的方法：他们在每个省份内聚合处理组和控制组的结果，进行自由度为K−1的配对t检验（K = 17或25个省份），并基于该t统计量进行随机化推断。第二，他们使用杨（Young /jʌŋ/，2022）的方法估计OLS并构建95%的基于置换的随机化置信区间，使用10,000次处理分配的置换（第3594页）。他们还报告了异方差稳健标准误和按省份聚类的标准误的结果，使用卡梅伦（Cameron /ˈkæmərən/）等人（2008）的野蛮自举p值来处理少量聚类（第3600–3601页）。作为补充证据，他们使用阿巴迪（Abadie /ˌɑːbɑːˈdiːeɪ/）等人（2010）和阿巴迪与勒尔（L’Hour /luːr/，2021）的合成控制方法为每个省会构建合成控制城市（第3603–3604页）。</p>
+            <p>有效性所需的假设：（1）条件随机分配：在每个人为划定的省份内，最终省会是从候选城市中准随机选出的。作者通过广泛的平衡性检验支持这一点，表明省会和其他候选城市在20多个改革前特征，人口、行政功能、市场准入、城市潜力、经济潜力和地理特征，上不存在统计显著差异（第3594–3596页）。20个基线特征中只有1个在5%水平上显著不同。（2）SUTVA（稳定单位处理值假设）：一个候选城市的结果不受另一个省份省会分配的影响。鉴于各省份在地理上是分离的，这是合理的。（3）无预期效应：在省会分配最终确定之前，候选城市没有差异性地调整其行为。（4）排除性限制：省会地位仅通过行政存在机制影响结果，而非通过其他相关渠道。作者承认省份内的中心性与省会地位相关（省会平均比其他候选城市靠近省份质心16公里），但认为这不是混淆因素，因为对于人为划定的省份，省份边界是任意的，而靠近质心在改革前没有经济意义。他们确认结果在控制与质心的距离后仍然稳健（第3595–3596页）。</p>
+          </div>
+        </section>
+
+
+
+        <nav class="node-nav">
+          <a class="prev" href="darcy2024.html"><small data-en="Previous reading" data-zh="上一篇">Previous reading</small>D&#x27;Arcy et al. 2024</a>
+          <a class="next" href="cantonimohrweigand2024.html"><small data-en="Next reading" data-zh="下一篇">Next reading</small>Cantoni et al. 2024</a>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

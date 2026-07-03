@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dal Bó et al. 2022 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 2" data-zh="第 2 周">Week 2</span> · <span data-en="Coercion–Extraction lane" data-zh="强制–汲取层">Coercion–Extraction lane</span> · <span data-en="Transhistorical theory &amp; global long-run panels (S0)" data-zh="一般理论与跨国长时段（S0）">Transhistorical theory &amp; global long-run panels (S0)</span></p>
+        <h1><span class="lang-en">Ernesto Dal Bó, Pablo Hernández-Lagos &amp; Sebastián Mazzuca (2022), “The Paradox of Civilization: Preinstitutional Sources of Security and Prosperity.”</span><span class="lang-zh">达尔博等（2022）《文明的悖论：安全与繁荣的前制度根源》。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#9a5737" data-en="Formal model" data-zh="形式模型">Formal model</span><span class="chip" style="background:#b98d40" data-en="Case illustration" data-zh="案例说明">Case illustration</span><span class="chip" style="background:#315b7c" data-en="Tilly: extends" data-zh="Tilly：扩展">Tilly: extends</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The primary dependent variable is “civilization potential,” defined as a security-adjusted measure of surplus production that combines prosperity (economic surplus through productive investment) and security (protection from external predation). Formally, civilization potential is operationalized as:</p>
+            <div class="formula-box">\[
+              CP=P(\text{settler wins})\times(v_2-v_1)=\frac{d_1}{d_1+a_1}\times\rho i_1.
+            \]</div>
+            <p>The probability of the settler retaining its assets is multiplied by the surplus created through investment. This compound outcome captures the “civilization core”: the joint attainment of surplus production and surplus protection. (pp. 1-2, 6-7)</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要因变量是civilization potential，</p>
+            <p>定义为经过安全调整后的剩余生产测量，结合了繁荣（通过生产性投资获得的经济剩余）和安全（免受外部掠夺的保护）。形式上，文明潜力操作化为：</p>
+            <div class="formula-box">\[
+              CP=P(\text{定居者获胜})\times(v_2-v_1)=\frac{d_1}{d_1+a_1}\times\rho i_1.
+            \]</div>
+            <p>其中定居者保留其资产的概率乘以投资创造的剩余。这一复合结果捕捉了“文明核心”：剩余生产和剩余保护的联合实现。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>Three interconnected independent variables: (1) Growth capabilities (ρ, rho): the returns to productive investment, capturing factors like potential crop yield improvements from irrigation infrastructure; (2) Defense capabilities (κ, kappa): the effectiveness of defense efforts, reflecting geographic features (deserts, mountains) or built infrastructure (walls) that lower the cost of protection; (3) Initial income (v1): baseline resources derived from environmental endowments (soil quality, climate, natural fertility) before any improvements. These parameters are shaped by observable biogeographic conditions including topography, rivers, precipitation, soil quality, crop suitability, and plant/animal domesticates. The key insight is that growth and defense capabilities interact: neither alone is sufficient for civilization (pp. 5, 7).</p>
+          </div>
+          <div class="lang-zh">
+            <p>三个相互关联的自变量构成了模型的基础：(1) 增长能力（ρ, rho）：生产性投资的回报，捕捉如灌溉基础设施带来的潜在作物产量提升等因素；(2) 防御能力（κ, kappa）：防御努力的有效性，反映了降低保护成本的地理特征（沙漠、山脉）或建筑基础设施（城墙）；(3) 初始收入（v1）：来自环境禀赋（土壤质量、气候、自然肥力）且在任何改进之前的基准资源。 这些参数由可观察的生物地理条件形成，包括地形、河流、降水、土壤质量、作物适宜性和植物/动物驯化物。 关键见解是增长和防御能力相互作用：单靠任何一个都不足以产生文明。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>The authors define “stateness” in the Weberian tradition as a territorial monopoly of legitimate violence, but they focus on external security: “statehood emerges when a settlement attains significant security from external threats” (p. 4). They distinguish their approach from anthropological accounts that define state formation mainly as the rise of an internal hierarchy between rulers and ruled. They acknowledge internal hierarchy, but focus on external security because it “holds the key to solving the paradox of civilization” (p. 4). The state is not measured through formal institutional indicators. It is measured through the model’s outcome: a society achieves statehood when it deters external challengers (full security with P(settler wins) = 1) or maintains enough security to sustain productive investment. Civilization, which includes statehood, requires surplus production through intensive agriculture and surplus protection through the state. Other civilizational traits, such as urbanization, writing, monumental architecture, and organized religion, are treated as peripheral rather than definitional (pp. 3-4).</p>
+          </div>
+          <div class="lang-zh">
+            <p>国家概念化遵循韦伯传统，即（合法）暴力的领土垄断，并明确关注外部安全维度：“当一个定居点获得免受外部威胁的显着安全时，国家地位就出现了”。 作者将他们的方法与人类学传统区分开来，后者主要将国家形成概念化为统治者与被统治者分离的内部等级制度的出现。 虽然承认内部等级制度的重要性，但他们专注于外部安全，因为它“掌握着解决文明悖论的钥匙”。 国家不是通过正式的制度指标来衡量，而是通过模型的结果来衡量：当一个社会成功威慑外部挑战者（完全安全，P(定居者获胜) = 1）或维持足够的安全以维持生产性投资时，它就实现了国家地位。 嵌套国家地位的文明，既需要通过集约农业的剩余生产，也需要通过国家的剩余保护。 其他文明属性（城市化、文字、纪念性建筑、有组织的宗教）被视为“外围”而非定义性的。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>Addressing what the authors term “the paradox of civilization”: prosperity attracts predation, which discourages the investments required for prosperity, making civilization paradoxical. The paper reconciles two opposing scholarly traditions: “productivist optimism” (Childe’s view that favorable agricultural endowments inevitably produce civilization) and “predatory fatalism” (the observation that surplus-producing societies become targets for raiders, potentially aborting civilization). The resolution lies in the interaction of growth and defense capabilities. Neither high initial income nor high growth capabilities alone can produce civilization: both make challengers more aggressive. Civilization potential becomes positive only when: (1) Growth and defense capabilities are both sufficiently high (the “twice-lucky” society), creating a balanced profile that allows productive investment with adequate protection; or (2) When natural defense capabilities are low but initial income is high enough to finance artificial defense investments (walls, fortifications) that substitute for missing natural protection. The theory thus identifies two distinct paths to civilization, explaining how Sumer (low natural defenses, high initial income enabling wall construction) and Egypt (high natural defenses from surrounding deserts) both achieved civilization despite different security environments (pp. 1-2, 6-12).</p>
+          </div>
+          <div class="lang-zh">
+            <p>解决了作者所称的“文明的悖论”：繁荣吸引掠夺，而掠夺阻碍了繁荣所需的投资，使得文明变得矛盾。 该论文调和了两个对立的学术传统：“生产主义乐观论”（Childe 的观点，即有利的农业禀赋必然产生文明）和“掠夺宿命论”（历史学家的观察，即生产剩余的社会成为袭击者的目标，可能导致文明流产）。 解决方案在于增长和防御能力的相互作用。 仅靠高初始收入或高增长能力都无法产生文明：两者都会使挑战者更具侵略性。 文明潜力仅在以下情况下变为正值：(1) 增长和防御能力都足够高（“双重幸运”的社会），创造一个允许生产性投资并有足够保护的平衡轮廓；或者 (2) 当自然防御能力低但初始收入足够高，可以资助人工防御投资（城墙、防御工事）以替代缺失的自然保护时。 该理论因此确定了两条独特的文明路径，解释了苏美尔（自然防御低，高初始收入使得城墙建设成为可能）和埃及（周围沙漠提供高自然防御）如何在不同的安全环境下都实现了文明。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>(1) Settlers face a triple trade-off allocating resources among current consumption, productive investment (enhancing future income), and defense (protecting against challengers). This choice is shaped by fundamentals \((v_1,\rho,\kappa)\). (2) Productive investment increases future income, \(v_2=v_1+\rho i_1\), but makes the challenger more aggressive, \(\partial a_1/\partial i_1&gt;0\), as higher expected returns incentivize attack. This originates the paradox: attempting prosperity raises insecurity. (3) Higher \(\kappa\) allows the settler to convert resources into defense more efficiently, increasing security (probability of winning) for any given expenditure. When defense capabilities are high, more income helps; when low, no amount of income can outpace challenger aggression. (4) If defense exceeds future income value, \(d_1\ge v_2\), the challenger will not attack, achieving full security. (5) When natural defense is insufficient, settlers can invest in defense capabilities \((m_0)\) that mature in future periods, though such investments also attract immediate predation. This creates intertemporal complementarity: defense investments today make productive investments tomorrow attractive by raising future security. (6) Two paths to civilization emerge: twice-lucky societies with high natural \((\rho,\kappa)\) achieve civilization directly; societies with low \(\kappa\) but high \(v_0\) can build artificial defenses, mimicking the twice-lucky profile (pp. 5-10).</p>
+          </div>
+          <div class="lang-zh">
+            <p>(1) 定居者面临三重权衡，在当前消费、生产性投资（增加未来收入）和防御（防止挑战者）之间分配资源。这一选择由基本面 \((v_1,\rho,\kappa)\) 形成。(2) 生产性投资增加了未来收入，\(v_2=v_1+\rho i_1\)，但也使挑战者更具侵略性，\(\partial a_1/\partial i_1&gt;0\)，因为更高的预期回报激励攻击。这引发了悖论：试图繁荣会增加不安全性。(3) 更高的 \(\kappa\) 允许定居者更有效地将资源转化为防御，在任何给定支出下增加安全性（获胜概率）。当防御能力高时，更多收入有帮助；当低时，再多的收入也无法超过挑战者的侵略。(4) 如果防御超过未来收入价值，\(d_1\ge v_2\)，挑战者将不会攻击，实现完全安全。(5) 当自然防御不足时，定居者可以投资于未来成熟的防御能力 \((m_0)\)，尽管此类投资也会吸引即时掠夺。这创造了跨期互补性：今天的防御投资通过提高未来的安全性使明天的生产性投资具有吸引力。(6) 具有高自然 \((\rho,\kappa)\) 的双重幸运社会直接实现文明；具有低 \(\kappa\) 但高 \(v_0\) 的社会可以建立人工防御，模仿双重幸运的轮廓。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>Qualitative historical and archaeological evidence from the first two civilizations: Sumer (Southern Mesopotamia) and Egypt.</p>
+          </div>
+          <div class="lang-zh">
+            <p>对于增长能力（ρ）：两个地区都有很高的灌溉投资回报。在苏美尔，底格里斯河和幼发拉底河沿岸的冲积农业通过运河建设使大麦产量可能增加了“十倍” (Liverani 2008)。在埃及，盆地灌溉产生了 12:1 到 24:1 的种子产出比 (Morris and Manning 2005)。这两个地区都能产生“远大于雨养土壤人口所知的剩余” (Mann 1986)。 对于防御能力（κ）：埃及拥有来自周围沙漠的高自然防御：“北面的海以及西面和东面的沙漠隔离了埃及人” (Bradford 2001)。苏美尔缺乏自然保护，位于一个“北面和东面被山脉环绕的平原，那是野蛮高地人千年的家园” (Finer 1997)。 对于初始收入（v0）：苏美尔拥有卓越的初始禀赋，包括所有八种新石器时代奠基作物和五种主要驯化动物中的四种 (Diamond 1997)，加上冲积肥力。 对于防御投资：考古证据显示几乎所有的美索不达米亚城市都有外围城墙 (Van de Mieroop 1997)，而埃及城市通常没有：证实了模型的预测，即人工防御替代了缺失的自然保护。 地理和时间覆盖范围主要跨越约公元前 4000-2000 年的新月沃土和尼罗河流域地区。</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>Formal game-theoretic modeling combined with qualitative historical illustration.(pp. 5-14)</p>
+          </div>
+          <div class="lang-zh">
+            <p>该论文采用形式博弈论建模结合定性历史解释。形式模型是一个“定居者”（农业定居点）和“挑战者”（牧区袭击者）之间的两期（基线）或三期（扩展）动态博弈。定居者先行动，选择防御 \(d\)、投资 \(i\) 以及可能的防御能力投资 \(m\)；挑战者观察这些选择并选择攻击强度 \(a\)。冲突结果遵循 Tullock 竞赛成功函数：</p>
+            <div class="formula-box">\[
+              P(\text{定居者获胜})=\frac{d}{d+a}.
+            \]</div>
+            <p>模型通过逆向归纳法求解子博弈完美纳什均衡，导出关于文明潜力作为 \((\kappa,\rho,v_1)\) 函数的比较静态。关键假设包括：(1) 线性偏好（风险中性）；(2) 无折旧或折现；(3) 只有定居者可以投资（反映定居与游牧群体的不对称能力）；(4) 定居者先行动（使威慑成为可能）；(5) 攻击成本不消耗挑战者预算；(6) 挑战者试图取代定居者并继承能力。模型抽象掉了内部等级制度，将两个行动者都视为单一的。稳健性检查（可按要求提供）考虑了多于两期、内生角色选择、参与者之间的转移以及冲突造成的破坏。历史案例作为“定性插图”而非正式测试，评估案例是否符合模型关于两条文明路径的预测。</p>
+          </div>
+        </section>
+
+
+
+        <nav class="node-nav">
+          <a class="prev" href="scott2017.html"><small data-en="Previous reading" data-zh="上一篇">Previous reading</small>Scott 2017</a>
+          <span class="disabled next"><small data-en="No next reading" data-zh="无下一篇">No next reading</small></span>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

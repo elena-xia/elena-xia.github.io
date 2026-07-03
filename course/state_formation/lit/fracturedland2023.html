@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fernández-Villaverde et al. 2023 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 6" data-zh="第 6 周">Week 6</span> · <span data-en="Material–Technological lane" data-zh="物质–技术层">Material–Technological lane</span> · <span data-en="Antiquity &amp; the medieval world (S2)" data-zh="古代与中世纪（S2）">Antiquity &amp; the medieval world (S2)</span></p>
+        <h1><span class="lang-en">Jesús Fernández-Villaverde, Mark Koyama, Youhong Lin &amp; Tuan-Hwee Sng (2023), “The Fractured-Land Hypothesis,” QJE 138(2).</span><span class="lang-zh">费尔南德斯-比利亚韦尔德、小山、林友宏、孙端辉（2023）《碎裂土地假说》，QJE。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#5a8fb0" data-en="Simulation" data-zh="模拟">Simulation</span><span class="chip" style="background:#3f7d6a" data-en="Grid / GIS" data-zh="网格/GIS">Grid / GIS</span><span class="chip" style="background:#315b7c" data-en="Comparative history" data-zh="比较历史">Comparative history</span><span class="chip" style="background:#9a5737" data-en="Tilly: challenges" data-zh="Tilly：挑战">Tilly: challenges</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The core dependent variable of this paper is the pattern of state formation, specifically the difference between political unification and polycentrism. The authors focus on why China /ˈtʃaɪnə/ historically tended toward unified centralized empires while Europe /ˈjʊərəp/ maintained a multi-state political landscape for extended periods. This dependent variable is measured through the Herfindahl Index, which calculates the sum of squared territorial shares controlled by each polity in a region. A value closer to 1 indicates greater political unification, while a lower value indicates greater political fragmentation (pp. 1200-1201).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文的核心因变量是国家形成的政治结构模式，具体而言是政治统一与多中心主义之间的差异。作者关注的是为何中国历史上倾向于形成统一的中央集权帝国，而欧洲则长期维持多国并立的政治格局。这一因变量通过赫芬达尔指数（Herfindahl Index）来测量，该指数计算某一地区内各政体所控制的领土份额的平方和，数值越接近1表示政治越统一，数值越低则表示政治越分裂（第1200-1201页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The core independent variable is “fractured land,” a concept derived from Jared Diamond’s /ˈdʒærəd ˈdaɪmənd/ 1997 book Guns, Germs, and Steel. The authors distinguish between two dimensions of “fractured land”: in the narrow sense, it refers to topographical ruggedness, including geographical barriers such as mountain ranges and coastline indentation; in the broader sense, it further encompasses the spatial distribution of highly productive agricultural land (p. 1175).</p>
+            <p>Specifically, the independent variables include the following geographical and climatic characteristics: (1) terrain ruggedness, measured by the standard deviation of elevation; (2) hot and cold climate zones, with the former referring to areas with annual average maximum monthly temperatures above 22°C and the latter referring to areas with annual average minimum monthly temperatures below 8°C; (3) historical resource availability, measured through attainable caloric yields from the FAO Global Agro-Ecological Zones database (GAEZ v4) and the distribution of alluvial soil (pp. 1183-1186).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文的核心自变量是“碎裂土地”（Fractured Land），这一概念源自贾雷德·戴蒙德（Jared Diamond /ˈdʒærəd ˈdaɪmənd/）1997年的著作《枪炮、病菌与钢铁》。作者将“碎裂土地”区分为两个层面：狭义上指地形的崎岖程度，包括山脉、海岸线曲折度等地理障碍；广义上则进一步包含高生产力农业用地的空间分布格局（第1175页）。</p>
+            <p>具体而言，自变量包括以下地理和气候特征：（1）地形崎岖度，以海拔标准差来测量；（2）高温与低温气候区域，前者指年均最高月温度超过22°C的地区，后者指年均最低月温度低于8°C的地区；（3）历史资源可得性，通过联合国粮农组织全球农业生态区数据库（GAEZ v4）的可达热量产出以及冲积土分布来测量（第1183-1186页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>Conceptualization and Measurement</p>
+            <p>This paper follows the Weberian tradition in defining the concept of “state” or “polity.” The authors explicitly state that a “polity” or “state” is an organization that maintains a quasi-monopoly of violence over a fixed territory (p. 1174, footnote 2). This definition emphasizes that the core characteristic of a state lies in its capacity for violent control over a specific territory, rather than other functional characteristics.</p>
+            <p>In terms of measurement, the authors divide the global landmass (excluding Antarctica /ænˈtɑːrktɪkə/) into 65,641 hexagonal cells with a radius of 28 kilometers, with each cell representing the minimum territorial unit that the simplest polities could monitor and defend. This radius corresponds to the distance a healthy adult can travel on foot per day, roughly reflecting the control range of the simplest polities during the Bronze Age (pp. 1182-1183). The process of state building is operationalized as the dynamic evolution through which polities gain adjacent cells through conquest or lose cells through secession (pp. 1188-1194).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文遵循韦伯式（Weberian）传统来界定“国家”或“政体”的概念。作者明确指出，“政体”或“国家”是指在固定领土范围内保持对暴力的准垄断的组织（第1174页脚注2）。这一定义强调国家的核心特征在于其对特定领土的暴力控制能力，而非其他功能性特征。</p>
+            <p>在测量方面，作者将全球陆地（不含南极洲）划分为65,641个半径28公里的六边形单元格，每个单元格代表最简单政体能够监控和防御的最小领土单位。这一半径对应于成年人每日步行可覆盖的距离，大致反映了青铜器时代最简单政体的控制范围（第1182-1183页）。国家建构的过程被操作化为政体通过征服获取相邻单元格、或通过分裂丧失单元格的动态演化过程（第1188-1194页）。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The core argument of this paper is that “fractured land”, whether referring to topographical barriers or the spatial distribution of highly productive agricultural land, can explain why China /ˈtʃaɪnə/ tended toward political unification while Europe /ˈjʊərəp/ maintained long-term polycentrism. The authors find that topographical factors alone are sufficient but not necessary to explain this divergence; similarly, the concentrated distribution of highly productive land can produce the same effect. Only when both geographical barriers and differences in land productivity are simultaneously neutralized do China and Europe converge in their pace of political unification (pp. 1175, 1202-1203).</p>
+            <p>Specifically, Europe’s mountain ranges are located at the center of the continent, separating the Italian Peninsula /ɪˈtæliən pəˈnɪnsjʊlə/, the Iberian Peninsula /aɪˈbɪəriən pəˈnɪnsjʊlə/ from France /frɑːns/, and making central European core regions such as Switzerland /ˈswɪtsərlənd/ and Austria /ˈɒɒstriə/ difficult to conquer. This created multiple geographical cores of comparable size that provided the foundation for future European states (pp. 1180-1181). In contrast, China’s most rugged regions are located on the southern and western peripheries and do not intersect with the historically central northern Central Plain region. The Central Plain, centered on the Yellow River /ˈjeləʊ ˈrɪvə/ basin, is flat except for the Taishan Mountains /taɪˈʃɑːn ˈmaʊntɪnz/ in Shandong /ˈʃɑːnˈdʊŋ/ and the Dabie Mountains /dɑːˈbjeɪ ˈmaʊntɪnz/ in Anhui /ɑːnˈhweɪ/, geographical conditions that facilitated China’s early unification (p. 1181).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文的核心论点是：“碎裂土地”，无论是地形障碍还是高生产力农业用地的空间分布，都能够解释中国为何趋向政治统一而欧洲为何长期保持多中心主义。作者发现，单独的地形因素是解释这一差异的充分条件但非必要条件；同样，高生产力土地的集中分布也能产生相同效果。只有当同时消除地理障碍和土地生产力差异时，中国和欧洲的政治统一进程才会趋于一致（第1175页、第1202-1203页）。</p>
+            <p>具体而言，欧洲的山脉位于大陆中心位置，将意大利半岛（Italian Peninsula /ɪˈtæliən pəˈnɪnsjʊlə/）、伊比利亚半岛（Iberian Peninsula /aɪˈbɪəriən pəˈnɪnsjʊlə/）与法国（France /frɑːns/）分隔开来，使瑞士（Switzerland /ˈswɪtsərlənd/）和奥地利（Austria /ˈɒstriə/）等中欧核心地区难以被征服，从而形成了多个规模相近的地理核心区，为未来欧洲各国的形成提供了基础（第1180-1181页）。相比之下，中国最崎岖的地区位于南部和西部边缘，不与历史上起关键作用的北方中原地区交叉。中原地区（Central Plain）以黄河（Yellow River /ˈjeləʊ ˈrɪvə/）流域为中心，地势平坦，仅有山东泰山（Taishan Mountains /taɪˈʃɑːn ˈmaʊntɪnz/）和安徽大别山（Dabie Mountains /dɑːˈbjeɪ ˈmaʊntɪnz/）例外，这种地理条件促进了中国的早期统一（第1181页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>This paper proposes multiple mechanisms to explain how the independent variables influence the dependent variable:</p>
+            <p>First, the geographical barriers and conquest difficulty mechanism. Terrain ruggedness and extreme climatic conditions increase the difficulty of military conquest. In the model, when two evenly matched polities engage in war in a rugged cell, the probability of the war ending with no victor (i.e., no territorial annexation) increases significantly. Following Dupuy’s /djuːˈpiː/ 1979 military history research, the authors set parameters such that in cells at the 90th percentile of ruggedness, the probability of a stalemate is approximately two-thirds (pp. 1196-1197).</p>
+            <p>Second, the resource concentration and state formation acceleration mechanism. The spatial distribution of highly productive land affects both the probability of conflict and the gains from conquest. In the model, the probability of a cell experiencing border conflict is proportional to its productivity, wealthier regions are more likely to become targets of neighboring covetousness. This assumption is based on Hobbes’s /hɒbz/ thesis that conflict arises from the desire for gain, safety, and reputation (pp. 1188-1189). Northern China possesses a vast core region of high productivity composed of the Yellow River and Yangtze River /ˈjæŋtsi ˈrɪvə/ basins, which are only weakly separated from each other and eventually fused into a single core, providing the resource foundation for early unification (p. 1181).</p>
+            <p>Third, the “stopping power of water” mechanism. Sea conquest is more difficult than land conquest. Before 1500, ships were not sturdy enough for long-distance power projection across rough seas; naval battles were essentially infantry battles fought on water or beaches, which disadvantaged the aggressor. In the model, the probability of sea conflict is only one-tenth that of land conflict, and the maximum distance for sea conquest is approximately 330 kilometers (pp. 1191-1193).</p>
+            <p>Fourth, the secession mechanism. Border cells have a certain probability of seceding from their parent polity. The probability of secession depends on three factors: the cell’s geographical and climatic characteristics (which make secession harder to suppress), the number of cells controlled by the parent polity (larger polities are more heterogeneous), and the length of the polity’s frontier relative to its interior (longer frontiers are harder to monitor). This mechanism ensures that large empires face inherent centrifugal forces and must continuously conquer to compensate for territorial losses (pp. 1193-1194).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文提出了多重机制来解释自变量如何影响因变量：</p>
+            <p>第一，地理障碍与征服难度机制。地形崎岖度、极端气候条件都会增加军事征服的难度。在模型中，当两个势均力敌的政体在地形崎岖的单元格发生战争时，战争以无人获胜告终（即无领土兼并）的概率会显著增加。作者根据杜普伊（Dupuy /djuːˈpiː/）1979年的军事史研究设定参数，使得在第90百分位崎岖度的单元格，战争陷入僵局的概率约为三分之二（第1196-1197页）。</p>
+            <p>第二，资源集中与国家形成加速机制。高生产力土地的空间分布影响冲突发生的概率和征服的收益。在模型中，单元格发生边境冲突的概率与其生产力成正比，即更富庶的地区更可能成为邻国觊觎的目标，这一假设基于霍布斯（Hobbes /hɒbz/）关于冲突根源于对利益、安全和荣誉追求的观点（第1188-1189页）。中国北方存在一个由黄河和长江流域组成的巨大高生产力核心区，这些区域之间仅有较弱的地理分隔并最终融合为单一核心，为早期统一提供了资源基础（第1181页）。</p>
+            <p>第三，海洋的“阻滞力”机制。海上征服比陆地征服更加困难。在1500年之前，船只不够坚固，无法进行远距离的跨海军事投射；海战本质上是在水上或海滩上进行的步兵战斗，这对进攻方不利。模型中，海上冲突发生的概率仅为陆地冲突的十分之一，且跨海征服的距离上限为约330公里（第1191-1193页）。</p>
+            <p>第四，分裂机制。边境单元格有一定概率从所属政体分裂出去。分裂概率取决于三个因素：该单元格的地理气候特征（使分裂更难被镇压）、母政体控制的单元格数量（政体越大越异质）、以及母政体边境相对于内部的长度（边境越长监控越困难）。这一机制确保大型帝国面临内在的离心力，需要持续征服来弥补领土损失（第1193-1194页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>Spatial units and geographic coverage: The authors divide the global landmass into 65,641 hexagonal cells with a radius of 28 kilometers. The baseline analysis focuses on 28,822 cells in Eurasia /jʊəˈreɪʒə/, including most of Europe, North Africa /nɔːrθ ˈæfrɪkə/, the Middle East /ˌmɪdl ˈiːst/, continental Asia, and Japan /dʒəˈpæn/. Among these, “China” is defined as 1,415 cells south of the Great Wall, and “(Western) Europe” is defined as 1,285 cells west of the line running from St. Petersburg /seɪnt ˈpiːtəzbɜːrɡ/ to Trieste /triˈɛst/ (pp. 1186-1187).</p>
+            <p>Time period: The simulation runs from 1000 BCE (the beginning of the Iron Age) to 1500 CE (the eve of the Age of Exploration), spanning 2,500 years with 5-year intervals as time units, totaling 500 simulation periods (pp. 1195-1196).</p>
+            <p>Main data sources: (1) Terrain ruggedness data comes from the CGIAR-CSI dataset, measured by the standard deviation of elevation within each cell; (2) Climate data comes from WorldClim 1.4 historical data, using annual average monthly maximum and minimum temperatures from the mid-Holocene epoch (4000 BCE); (3) Agricultural productivity data comes from the FAO Global Agro-Ecological Zones database version 4 (GAEZ v4), calculating the highest attainable caloric yields from pre-Columbian cereals for each cell; (4) Soil data comes from the FAO Digital Soil Map of the World, used to identify alluvial soil distribution (pp. 1183-1186).</p>
+          </div>
+          <div class="lang-zh">
+            <p>空间单元与地理覆盖：作者将全球陆地划分为65,641个半径28公里的六边形单元格。基准分析聚焦于欧亚大陆（Eurasia /jʊəˈreɪʒə/）的28,822个单元格，包括大部分欧洲、北非（North Africa /nɔːrθ ˈæfrɪkə/）、中东（Middle East /ˌmɪdl ˈiːst/）、亚洲大陆和日本（Japan /dʒəˈpæn/）。其中，“中国”定义为长城以南的1,415个单元格，“（西）欧洲”定义为圣彼得堡（St. Petersburg /seɪnt ˈpiːtəzbɜːrɡ/）至的里雅斯特（Trieste /triˈɛst/）连线以西的1,285个单元格（第1186-1187页）。</p>
+            <p>时间跨度：模拟从公元前1000年（铁器时代开始）运行至公元1500年（大航海时代前夕），共2500年，以5年为一个时间单位，共500个模拟期（第1195-1196页）。</p>
+            <p>主要数据来源：（1）地形崎岖度数据来自CGIAR-CSI数据集，以每个单元格内海拔的标准差来测量；（2）气候数据来自WorldClim 1.4历史数据，使用全新世中期（公元前4000年）的年均月最高和最低温度；（3）农业生产力数据来自联合国粮农组织全球农业生态区数据库第4版（GAEZ v4），计算各单元格在前哥伦布交换时期本土谷物的最高可达热量产出；（4）土壤数据来自FAO世界数字土壤图，用于识别冲积土分布（第1183-1186页）。</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>This paper employs a dynamic simulation method to test the fractured-land hypothesis. Specifically, the authors construct a dynamic model of polity evolution in which each hexagonal cell begins as an independent polity at the initial period (t=0), then evolves continuously through processes of conquest and secession. The model’s stochasticity derives from probability distributions governing conflict outbreak and war outcomes, embodying the idea that history is a mixture of structure and contingency (p. 1175).</p>
+            <p>The authors run 30 simulations and conduct bootstrap analysis to calculate the mean Herfindahl indices and their confidence intervals for China and Europe. The specific procedure involves drawing samples with replacement from the 30 simulations 10,000 times to construct 95% confidence intervals for the estimated indices in each period (pp. 1198-1200).</p>
+            <p>Counterfactual analysis is the core methodological feature of this paper. The authors systematically vary parameter values to identify the relative importance of different factors: (1) “Minimum set of obstacles”, retaining only topographical barriers while eliminating climate effects; (2) “No obstacles”, completely eliminating sea and geo-climatic barriers; (3) “Uniform resource distribution”, assuming equal productivity across all cells; (4) “No obstacles + uniform resource distribution”, simultaneously eliminating both geographical barriers and productivity differences (pp. 1201-1203). This counterfactual design allows the authors to distinguish the explanatory power of topography versus land productivity.</p>
+            <p>Assumptions required for method validity: First, the model assumes that conflict probability is proportional to cell productivity, based on the Hobbesian logic that wealthier regions are more likely to provoke contention; second, war outcomes are determined by a contest function that depends on the aggregate productivity of warring polities and the geographical characteristics of contested cells; third, the model assumes conflicts between cells are independent, with no alliances or strategic behavior. The authors acknowledge that these simplifying assumptions may omit important mechanisms but emphasize this is a necessary cost of maintaining model tractability (pp. 1189-1191, 1213-1214).</p>
+          </div>
+          <div class="lang-zh">
+            <p>本文采用动态模拟方法来检验碎裂土地假说。具体而言，作者构建了一个政体演化的动态模型，在该模型中，每个六边形单元格在初始时期（t=0）都是独立政体，随后通过征服和分裂过程不断演化。模型的随机性来自冲突爆发和战争结果的概率分布，体现了历史是结构与偶然性混合产物的思想（第1175页）。</p>
+            <p>作者运行30次模拟，并通过自助法（bootstrap）分析计算中国和欧洲的平均赫芬达尔指数及其置信区间。具体做法是从30次模拟中有放回地抽取样本10,000次，以此构建每个时期估计指数的95%置信区间（第1198-1200页）。</p>
+            <p>反事实分析是本文方法论的核心特色。作者通过系统性地改变参数值来识别不同因素的相对重要性：（1）“最小障碍集”，仅保留地形障碍，消除气候因素的影响；（2）“无障碍”，完全消除海洋和地理气候障碍；（3）“均匀资源分布”，假设所有单元格的生产力相同；（4）“无障碍+均匀资源分布”，同时消除地理障碍和生产力差异（第1201-1203页）。这种反事实设计使作者能够区分地形和土地生产力各自的解释力。</p>
+            <p>方法有效性所需的假设：首先，模型假设冲突发生概率与单元格生产力成正比，这基于更富庶地区更易引发争夺的霍布斯式逻辑；其次，战争胜负由竞赛函数决定，该函数取决于交战政体的总生产力和交战单元格的地理特征；第三，模型假设各单元格的冲突相互独立，不存在联盟或战略行为。作者承认这些简化假设可能遗漏了某些重要机制，但强调这是保持模型可处理性的必要代价（第1189-1191页、第1213-1214页）。</p>
+          </div>
+        </section>
+
+
+
+        <nav class="node-nav">
+          <a class="prev" href="abramson2017.html"><small data-en="Previous reading" data-zh="上一篇">Previous reading</small>Abramson 2017</a>
+          <a class="next" href="acharyalee2023.html"><small data-en="Next reading" data-zh="下一篇">Next reading</small>Acharya &amp; Lee 2023</a>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>

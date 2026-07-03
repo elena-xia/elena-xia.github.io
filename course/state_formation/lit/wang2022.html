@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wang 2022 · State Formation, Yidan Xia</title>
+    <link rel="stylesheet" href="../../../assets/styles.css">
+    <link rel="stylesheet" href="../course-sf.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script src="../sf-lang.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof renderMathInElement !== "function") return;
+        // single-$ is intentionally NOT a delimiter: every $ in these notes is
+        // currency ($1, $90), never math. Only $$…$$ and \(…\) trigger rendering.
+        var opts = { delimiters: [
+          {left:"$$",right:"$$",display:true},
+          {left:"\\(",right:"\\)",display:false},
+          {left:"\\[",right:"\\]",display:true} ], throwOnError:false };
+        document.querySelectorAll(".sf-field .lang-en, .sf-field .lang-zh, .class-notes .lang-en, .class-notes .lang-zh").forEach(function (el) { renderMathInElement(el, opts); });
+      });
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="../../../index.html">Yidan Xia</a>
+        <div class="nav-links">
+          <a href="../index.html" data-en="↩ The genealogy" data-zh="↩ 谱系树">↩ The genealogy</a>
+          <a href="../methodology.html" data-en="Methods" data-zh="方法论">Methods</a>
+          <a href="../../../index.html#education" data-en="Education" data-zh="教育">Education</a>
+          <button type="button" class="lang-toggle" data-lang-toggle>中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="sf-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="../../../index.html">Home</a> / <a href="../index.html" data-en="State Formation" data-zh="国家形成">State Formation</a> / <span data-en="Reading" data-zh="文献">Reading</span></p>
+        <p class="eyebrow"><span data-en="Week 11" data-zh="第 11 周">Week 11</span> · <span data-en="Organization–Representation lane" data-zh="组织–代表层">Organization–Representation lane</span> · <span data-en="Antiquity &amp; the medieval world (S2)" data-zh="古代与中世纪（S2）">Antiquity &amp; the medieval world (S2)</span></p>
+        <h1><span class="lang-en">Yuhua Wang (2022), “Blood is Thicker Than Water: Elite Kinship Networks and State Building in Imperial China,” APSR 116(3).</span><span class="lang-zh">王裕华（2022）《血浓于水：帝制中国的精英宗族网络与国家建设》，APSR。</span></h1>
+        <div class="sf-chips"><span class="chip" style="background:#855a9e" data-en="Network data" data-zh="网络数据">Network data</span><span class="chip" style="background:#607066" data-en="Panel FE" data-zh="面板固定效应">Panel FE</span></div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container" style="max-width:860px">
+        <div class="overview-strip">
+          <div class="ov"><h4 data-en="Dependent variable (DV)" data-zh="因变量">Dependent variable (DV)</h4>
+          <div class="lang-en">
+            <p>The main dependent variable is Support for reform, which measures a politician’s attitude toward the Wang Anshi /wɑːŋ ɑːn ʃɪ/ Reform (also known as the New Policies, 新政) during the Northern Song Dynasty /sʊŋ/ (960–1127). This variable captures individual-level preferences for state building. Politicians who consistently supported the reform across policies and over time are coded as 1; those who consistently opposed are coded as 0; those with mixed attitudes receive an averaged score across all reform policies (p. 904). Of the 137 major politicians identified, 63 expressed an opinion: 34 (54%) consistently supported the reform, 24 (38%) consistently opposed it, and 5 had mixed views. The remaining 74 politicians did not explicitly express an attitude, mostly because they held ceremonial positions (p. 904). In the main analysis, the author uses listwise deletion for those who did not express an opinion, but in robustness checks he codes them as neutral (creating a trichotomous variable), restricts the sample to those in policy-relevant positions, or randomly assigns a value by coin toss, all producing similar results (pp. 904-905).</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要因变量是对改革的支持度（Support for reform），用以衡量政治人物对北宋（Northern Song Dynasty /sʊŋ/，960–1127）王安石变法（Wang Anshi /wɑːŋ ɑːn ʃɪ/ Reform，又称新政）的态度。这个变量捕捉的是个体层面的国家建设偏好。在各项改革政策中始终支持变法的政治人物编码为1；始终反对的编码为0；态度不一致的则取各项政策态度的均值（第904页）。在识别出的137位主要政治人物中，63人表达了态度：34人（54%）始终支持变法，24人（38%）始终反对，5人态度混合。其余74人未明确表达态度，多数因其任职于礼仪性岗位（第904页）。主分析中作者对未表态者采用列表删除法（listwise deletion），但在稳健性检验中分别将他们编码为中立（构建三分类变量）、限定样本为政策相关职位者，或以抛硬币法随机赋值，结果均一致（第904–905页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Independent variable (IV)" data-zh="自变量">Independent variable (IV)</h4>
+          <div class="lang-en">
+            <p>The main independent variable is Local concentration of kin, an index measuring the geographic concentration of each politician’s kinship network. This index is constructed using the “market potential” approach from economic geography (Harris 1954). For politician i, the index is defined as the sum over all kin members k of (1 + distance from i to k)^(-1) (p. 902). Higher values indicate a more geographically concentrated (i.e., localized) kinship network; lower values indicate a more dispersed network. The kinship network for each politician includes his nuclear family and all in-laws connected through the marriages of his sons and daughters. The author maps these networks primarily from tomb epitaphs preserved in The Complete Prose of Song , supplemented by the China Biographical Database (CBDB). Each kin member’s hometown is geocoded using the China Historical Geographic Information System (CHGIS) to obtain latitude-longitude coordinates (pp. 901–902). The index avoids relying on administrative boundaries, which are arbitrary and time-variant; robustness checks using a weighted Herfindahl index based on administrative units yield similar results (p. 902).</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要自变量是亲属的地方集中度（Local concentration of kin），一个衡量每位政治人物宗族网络地理集中程度的指数。该指数借鉴了经济地理学中的“市场潜力”方法（Harris 1954）。对于政治人物i，指数定义为对其所有亲属k求和：(1 + i到k的距离)⁻¹（第902页）。数值越高，表示宗族网络在地理上越集中（即越本地化）；数值越低则越分散。每位政治人物的宗族网络包括其核心家庭以及通过其子女婚姻所建立的所有姻亲关系。作者主要利用保存于《全宋文》中的墓志铭来绘制这些网络，辅以中国历代人物传记资料库（CBDB）。每位亲属的籍贯通过中国历史地理信息系统（CHGIS）获取经纬度坐标进行地理编码（第901–902页）。该指数不依赖行政边界，行政边界是任意的且随时间变化；使用基于行政单元的加权赫芬达尔指数（Herfindahl index）进行稳健性检验，结果相似（第902页）。</p>
+          </div>
+          </div>
+          <div class="ov"><h4 data-en="Stateness" data-zh="国家性">Stateness</h4>
+          <div class="lang-en">
+            <p>Wang conceptualizes state building not through a Weberian definition of monopolized violence or through a measure of fiscal capacity per se, but through a specific historical reform episode that expanded the scope and strength of central state power. The Wang Anshi Reform (1069–1085) was designed to “enrich the nation and strengthen its military power” (p. 899, citing Liang 1908). In concrete terms, state building in this context is measured by the package of New Policies that sought to increase the state’s fiscal extraction, military capacity, and regulatory control over local society. Four major policies define the content of state building here: (1) Cadastral Surveys and Equitable Tax (方田均税法), which equalized tax burdens and uncovered 34.7 million additional acres of previously untaxed land, 54% of the national total (p. 899); (2) Military Conscription (保甲法), which replaced private militias with a state-organized grassroots military system (baojia /baʊ dʒiɑː/) enrolling 6.9 million men by 1076 (p. 899); (3) Rural Credit (青苗法), which created a state-run loan system to break the private credit monopoly of local landlords (p. 899); and (4) Labor Service (募役法), which replaced a system of corvée labor with a universal tax based on assessed wealth (pp. 899–900). Taken together, these policies represent a comprehensive expansion of the central state’s fiscal, military, and administrative capacities at the expense of local elites’ private-order institutions. Government revenue reached 17.5% of the Song economy in the late eleventh century, unparalleled elsewhere in the world at the time (p. 900).</p>
+            <p>This conceptualization aligns with a broad fiscal-military understanding of state building found in the literature from Tilly (1992) through Stasavage (2020) and Dincecco (2017): state building is the process by which central authorities expand their capacity to extract resources, organize military force, and extend administrative control over territory. Wang’s contribution is to show that the political demand for this kind of state building varies among elites who face the same external threat, depending on the structure of their social networks.</p>
+          </div>
+          <div class="lang-zh">
+            <p>王裕华对国家建设的概念化，既非韦伯式暴力垄断定义，也非单纯的财政能力度量，而是通过一个具体的历史改革事件来呈现中央国家权力范围与力度的扩展。王安石变法（1069–1085）旨在“富国强兵”（第899页，引自梁启超1908年著作）。具体而言，这里的国家建设通过一系列旨在增强国家财政汲取、军事能力和对地方社会管控的新法来衡量。四项主要政策界定了国家建设的内容：（1）方田均税法，均衡税负并发现了3470万亩此前未纳税的土地，占全国总量的54%（第899页）；（2）保甲法（baojia /baʊ dʒiɑː/），以国家组织的基层军事体系取代私人武装，至1076年已编入690万人（第899页）；（3）青苗法，建立国家农村信贷体系以打破地方地主的私人信贷垄断（第899页）；（4）募役法，以基于估产的普遍赋税取代差役制度（第899–900页）。总体而言，这些政策代表了中央国家在财政、军事和行政能力上的全面扩张，而代价是地方精英私人秩序制度的削弱。北宋晚期政府收入达到宋朝经济总量的17.5%，在当时世界上是无可匹敌的（第900页）。</p>
+            <p>这一概念化与从蒂利（Tilly 1992）到斯塔萨维奇（Stasavage 2020）和丁切科（Dincecco 2017）的文献中关于国家建设的广义财政-军事理解一致：国家建设是中央权威扩大其资源汲取能力、组织军事力量和在领土上延伸行政控制的过程。王裕华的贡献在于指出，在面临同样外部威胁的精英中，对这种国家建设的政治需求因其社会网络结构的不同而存在差异。</p>
+          </div>
+          </div>
+        </div>
+
+        <section class="sf-field"><h2 data-en="Core argument" data-zh="核心论点">Core argument</h2>
+          <div class="lang-en">
+            <p>The core argument directly challenges a long tradition in social science, from Weber ([1915] 1951) through Migdal (1988), Fukuyama (2011), Acemoglu and Robinson (2019), to Henrich (2020), which holds that kinship-based institutions fundamentally undermine state building because they compete with the state to provide rules, security, and justice (pp. 896–897). Wang argues instead that it is the type, rather than the existence, of kinship-based institutions that matters for state building (p. 896).</p>
+            <p>Specifically, Wang argues that geographically dispersed kinship networks cross-cut local cleavages and align the incentives of self-interested elites in favor of building a strong central state, because a strong state generates scale economies in providing protection and justice throughout a large territory (p. 896). By contrast, geographically concentrated kinship networks reinforce regional cleavages and give elites incentives to oppose state building in favor of private-order institutions that serve local interests at lower cost.</p>
+            <p>The logic runs as follows. Elites are agents of their kinship groups; their goal is to influence policy so that their kin receive the best services (defense, insurance, justice) at the lowest cost. Two governance structures compete to provide these services: public-order institutions (the state) and private-order institutions (kinship organizations) (p. 898). Elites embedded in dispersed networks face two considerations. First, an economic logic of scale: it is more efficient for the central state to cover the many distant localities where a politician’s kin reside than for each kinship group to provide its own security and justice independently. Second, a social logic of cross-cutting cleavages (drawing on Lipset and Rokkan 1967): dispersed networks connect multiple localities, incentivizing elites to aggregate interests at the national level rather than champion parochial local interests (p. 898). Elites with dispersed networks thus function like Olson’s (1982) “encompassing” interest groups, while those with concentrated networks function like “narrow” interest groups (p. 898).</p>
+            <p>The testable hypothesis follows: a politician’s support for state building increases with the geographic size of his kinship network, ceteris paribus (p. 899).</p>
+          </div>
+          <div class="lang-zh">
+            <p>核心论点直接挑战了社会科学中一个长期传统，从韦伯（Weber [1915] 1951）到米格达尔（Migdal 1988）、福山（Fukuyama 2011）、阿西莫格鲁与罗宾逊（Acemoglu and Robinson 2019），再到亨利希（Henrich 2020），该传统认为基于宗族的制度从根本上削弱国家建设，因为宗族与国家竞争提供规则、安全和正义（第896–897页）。王裕华反驳说，对国家建设而言，重要的不是宗族制度是否存在，而是宗族制度的类型（第896页）。</p>
+            <p>具体而言，王裕华论证：地理上分散的宗族网络能够跨越地方分界线（cross-cut local cleavages），使自利精英的激励与建设强大中央国家相一致，因为强大的国家在广大领土上提供保护和正义方面具有规模经济优势（第896页）。相反，地理上集中的宗族网络则强化地区分界线，使精英有动机反对国家建设，转而依赖以较低成本服务地方利益的私人秩序制度。</p>
+            <p>逻辑如下。精英是其宗族群体的代理人；其目标是影响政策，使其亲属以最低成本获得最好的服务（防御、保险、司法）。两种治理结构竞争性地提供这些服务：公共秩序制度（国家）和私人秩序制度（宗族组织）（第898页）。嵌入分散网络的精英面临两方面考量。第一是规模经济的经济逻辑：由中央国家覆盖政治人物亲属所在的众多分散地区，比每个宗族群体各自独立提供安全和司法更为高效。第二是跨切分界线的社会逻辑（援引Lipset and Rokkan 1967）：分散的网络连接多个地方，激励精英在全国层面汇聚利益，而非维护狭隘的地方利益（第898页）。拥有分散网络的精英如同奥尔森（Olson 1982）所说的“涵盖性”（encompassing）利益集团，而拥有集中网络的精英则如同“狭隘”（narrow）利益集团（第898页）。</p>
+            <p>由此得出可检验假设：在其他条件相同的情况下，政治人物对国家建设的支持随其宗族网络地理规模的增大而增强（第899页）。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Mechanisms" data-zh="机制">Mechanisms</h2>
+          <div class="lang-en">
+            <p>Wang proposes several interrelated mechanisms through which the geographic structure of kinship networks shapes politicians’ state-building preferences.</p>
+            <p>Mechanism 1: Economies of scale in public goods provision. A strong central state can provide protection, justice, and insurance more cheaply across a large territory than multiple private-order kinship organizations operating independently in separate localities. The fixed costs of state infrastructure (roads, arsenals, communication networks, etc.) increase less than proportionally to geographic span, and public services that are nonrival and nonexcludable benefit from these decreasing marginal costs. Furthermore, central institutions can facilitate specialization of labor and capital, increasing efficiency (p. 898, fn. 5). For a politician whose relatives are spread across the country, the state is the only institution that can efficiently provide protection and justice to all of them simultaneously. For a politician whose kin are concentrated nearby, the marginal cost of funding a local kinship organization to service that area is low relative to the taxes required to fund the central state.</p>
+            <p>Mechanism 2: Cross-cutting versus reinforcing cleavages. This mechanism draws on the classic Lipset and Rokkan (1967) framework. Concentrated kinship networks reinforce regional cleavages: each locally embedded kin group cares about local interests and opposes paying taxes to the central state because those taxes fund services for other regions as well. But when a politician’s kinship network spans multiple regions, these regional cleavages are cross-cut. The politician must aggregate the interests of multiple localities and groups and scale them up to the national level. This prevents the politician from becoming the champion of any single locality’s parochial interests (p. 898).</p>
+            <p>Mechanism 3: Forward linkages (Hirschman 1958). The kinship networks that politicians inherit or build create “forward linkages” that lock politicians into state-building preferences even after the initial impetus to create the networks has passed. Kinship networks were a form of patronage sharing and risk mitigation established before the reform; once in place, they shaped how politicians weighed their family’s future interests vis-à-vis state interests. Politicians at time t calculated how their kin would benefit from policies at time t + 1, coinciding with their children’s generation (pp. 897, 901).</p>
+            <p>Mechanism 4: Credible commitment through the state. Wang argues that dispersed kinship networks make a “Hobbesian deal” with the ruler more attractive: elites pay taxes and support a stronger central state in exchange for centralized protection. He then proposes two related commitment logics. First, dispersed networks strengthen elites’ bargaining power vis-à-vis the ruler. Because these elites are connected across regions, they can mobilize social forces on a broader territorial scale. Facing such a nationally connected elite, the ruler has stronger incentives to commit to using the state to provide public goods rather than merely to prey on society. Second, the state also works as a commitment device between elites and their own kin. By backing state building, elites can more credibly promise protection to kin across many localities, because a centralized state is harder than local kinship institutions to manipulate in ways that selectively exclude some distant family members.</p>
+          </div>
+          <div class="lang-zh">
+            <p>王裕华提出了几个相互关联的机制，解释宗族网络的地理结构如何塑造政治人物的国家建设偏好。</p>
+            <p>机制一：公共品供给的规模经济。 一个强大的中央国家在广大领土上提供保护、司法和保险，其成本低于多个分散在不同地方独立运作的私人宗族组织。国家基础设施（道路、军火库、通信网络等）的固定成本增长低于地理范围的等比例增长，而非竞争性和非排他性的公共服务受益于这种递减的边际成本。此外，中央制度可以促进劳动和资本的专业化分工，提高效率（第898页，注5）。对于亲属遍布全国的政治人物而言，国家是唯一能够高效地同时为所有亲属提供保护和司法的制度。对于亲属集中在附近的政治人物而言，资助一个地方宗族组织服务该区域的边际成本相对于缴纳中央国家税收来说很低。</p>
+            <p>机制二：跨切分界线与强化分界线。 此机制援引经典的利普塞特与罗坎（Lipset and Rokkan 1967）框架。集中的宗族网络强化了地区分界线：每个扎根本地的宗族群体关注地方利益，反对向中央国家纳税，因为这些税收也会为其他地区提供服务。但当一个政治人物的宗族网络跨越多个地区时，这些地区分界线就被跨切了。政治人物必须汇聚多个地方和群体的利益，将其提升到全国层面。这阻止了政治人物成为任何单一地方狭隘利益的代言人（第898页）。</p>
+            <p>机制三：前向联系（赫希曼，Hirschman 1958）。 政治人物继承或建立的宗族网络创造了“前向联系”，使政治人物被“锁定”在国家建设偏好之中，即使建立这些网络的最初动力已经消退。宗族网络是在变法之前建立的一种庇护分享和风险缓解形式；一旦建立，它们便塑造了政治人物如何权衡其家族未来利益与国家利益。处于时间t的政治人物会计算其亲属如何从t+1时期的政策中获益，这与其子女一代相吻合（第897、901页）。</p>
+            <p>机制四：通过国家实现可置信承诺。 王裕华认为，地理上分散的亲属网络会让一种“霍布斯式交易”更有吸引力：精英缴税、支持更强的中央国家，以换取集中化的保护。随后，他提出了两个彼此相关的承诺逻辑。第一，分散网络会增强精英相对于统治者的议价能力。因为这些精英拥有跨地区联结，他们可以在更广阔的空间范围内动员社会力量。面对这种全国性联结的精英，统治者更有激励承诺将国家用于提供公共品，而不仅仅是掠夺社会。第二，国家本身也充当精英与其亲属之间的承诺装置。通过支持国家建设，精英可以更可信地向分散在多个地方的亲属承诺保护，因为相较于地方性宗族组织，一个中央国家更不容易被操纵为只选择性地照顾某些近处成员、排除某些远处成员。</p>
+          </div>
+        </section>
+        <section class="sf-field"><h2 data-en="Data &amp; methods" data-zh="数据与方法">Data &amp; methods</h2>
+          <h3 data-en="Data" data-zh="数据">Data</h3>
+          <div class="lang-en">
+            <p>Sample construction. The author identifies 137 major politicians who held positions at the vice-ministerial level or above in the national government during the reign of Emperor Shenzong /ʃɛnˈdzʊŋ/ (1067–1085), using Li’s (2003) list of Shenzong officials. These politicians include chief councilors, central secretariats, leaders of various ministries, and the emperor’s main advisors. They were all male, Han Chinese, from landowning elite families, averaging 51 years old in 1067, with careers starting around 1047, 20 years before Shenzong came to power (pp. 900–901). The main analysis uses 40 politicians for whom full information on all variables is available (p. 905).</p>
+            <p>Dependent variable measurement. The outcome variable is coded from three primary sources: (1) The History of Song (宋史, compiled by Toghtō /tɒxˈtoʊ/ in the Yuan Dynasty), (2) The Extended Continuation to Comprehensive Mirror in Aid of Governance (续资治通鉴长编, compiled by Li Tao /liː taʊ/ in the Southern Song), both based on official court records, and (3) The Complete Prose of Song (全宋文, compiled by modern-era scholars Zeng Zaozhuang /dzəŋ dzaʊˈdʒwɑːŋ/ and Liu Lin /ljuː lɪn/ in the twenty-first century), which preserves politicians’ original writings such as memorials to the emperor (p. 904). Using three sources, including original texts, helps triangulate information and mitigate potential biases of contemporaneous historians.</p>
+            <p>Independent variable measurement. Kinship networks are mapped using tomb epitaphs (墓志铭), which are square limestone slabs inscribed with lengthy eulogistic biographies of the deceased, preserving information about wives, sons, daughters, sons-in-law, and their families. The author’s research team identified these epitaphs in The Complete Prose of Song, manually extracted kin information, and used a snowball approach supplemented by CBDB (2018) to construct networks for 68 of the 137 politicians. Networks were limited to three generations (parents’, ego’s, and children’s generation) due to cost constraints. Geographic information was geocoded using CHGIS (2018) (pp. 901–902).</p>
+            <p>Control variables (8 alternative explanations addressed, p. 905–907):</p>
+            <p>Prefecture fixed effects (μⱼ): Controls for hometown geography, history, culture, and cropping patterns.</p>
+            <p>Betweenness centrality: Measures each politician’s influence in the overall kinship marriage network of the 137 politicians (using Padgett and Ansell 1993).</p>
+            <p>N of kin and N of children: Controls for the possibility that network size rather than geographic distribution matters, and for differential documentation quality.</p>
+            <p>Factional tie with reform leader: An indicator for whether the politician had an examiner–examinee relationship, passed the exam in the same year, or belonged to the same philosophical school as a reform leader (Wang Anshi /wɑːŋ ɑːn ʃɪ/, Lü Huiqing /lyː hweɪˈtʃɪŋ/, or Cai Que /tsaɪ tɕɥɛ/).</p>
+            <p>Politician’s average rank: Controls for power dynamics and incentives to signal loyalty.</p>
+            <p>Kin centroid exposure to external wars: Market-potential index measuring proximity of kin network centroid to all external war battles (1016–1065).</p>
+            <p>Kin centroid exposure to mass rebellions: Same approach for domestic rebellions.</p>
+            <p>Ruggedness Index: Average terrain ruggedness across grid cells covered by the kinship network (from Nunn and Puga 2012).</p>
+            <p>Father exam: Whether the politician’s father entered office by exam.</p>
+            <p>Father migration: Distance from the politician’s father’s final residence to the grandfather’s hometown, which predicts network dispersion.</p>
+            <p>Geographic coverage: Northern Song Dynasty territory (roughly present-day central and eastern China). Time period: The reign of Emperor Shenzong (1067–1085), with kinship networks and threat exposure data extending back to earlier decades. Unit of analysis: Individual politician.</p>
+          </div>
+          <div class="lang-zh">
+            <p>样本构建。作者从李志良（Li Zhiliang /liː ʒɪˈliɑːŋ/ 2003）的宋代京朝官名单中识别出137位在神宗（Shenzong /ʃɛnˈdzʊŋ/）朝（1067–1085）担任副部级及以上中央官职的主要政治人物。这些政治人物包括宰相、中书省官员、各部领袖和皇帝的主要顾问。他们全部为男性汉族人士，来自拥有土地的精英家庭，1067年时平均51岁，平均入仕时间约为1047年，比神宗即位早20年（第900–901页）。主分析使用所有变量信息完整的40位政治人物（第905页）。</p>
+            <p>因变量测量。因变量编码来自三个主要原始资料：（1）《宋史》（元代脱脱 Toghtō /tɒxˈtoʊ/ 编纂）；（2）《续资治通鉴长编》（南宋李焘 Li Tao /liː taʊ/ 编纂），两者均基于官方朝廷记录；（3）《全宋文》（现代学者曾枣庄 Zeng Zaozhuang /dzəŋ dzaʊˈdʒwɑːŋ/ 和刘琳 Liu Lin /ljuː lɪn/ 于二十一世纪编纂），保存了政治人物的原始著述如上奏皇帝的奏章（第904页）。使用三个来源（包括原始文本）有助于交叉验证信息，减轻当代史家的潜在偏见。</p>
+            <p>自变量测量。宗族网络通过墓志铭绘制。墓志铭是方形石灰石板，上面镌刻有死者的长篇传记，保存了关于妻子、儿子、女儿、女婿及其家庭的信息。作者的研究团队在《全宋文》中找到这些墓志铭，手动提取亲属信息，并采用滚雪球方法辅以CBDB（2018）为137位政治人物中的68位构建了网络。由于成本限制，网络仅涵盖三代（父辈、本人辈、子女辈）。地理信息使用CHGIS（2018）进行地理编码（第901–902页）。</p>
+            <p>控制变量（针对8种替代解释，第905–907页）：</p>
+            <p>籍贯所在府固定效应（μⱼ）：控制地理、历史、文化和种植模式。</p>
+            <p>中介中心性（Betweenness centrality）：衡量政治人物在137位官员整体婚姻网络中的影响力（使用Padgett and Ansell 1993）。</p>
+            <p>亲属数量和子女数量：控制可能是网络规模而非地理分布起作用的替代假设，同时控制记录质量差异。</p>
+            <p>与变法领袖的派系关系：政治人物是否与变法领袖（王安石、吕惠卿 Lü Huiqing /lyː hweɪˈtʃɪŋ/、蔡确 Cai Que /tsaɪ tɕɥɛ/）存在考官-考生关系、同年进士关系或同一学派关系。</p>
+            <p>政治人物平均品级：控制权力格局和信号忠诚的激励。</p>
+            <p>亲属暴露于外部战争：市场潜力指数，衡量亲属网络质心到1016–1065年间所有对外战争战役的接近程度。</p>
+            <p>亲属暴露于大规模叛乱：相同方法衡量对国内叛乱的暴露。</p>
+            <p>地形崎岖指数：宗族网络覆盖的网格单元的平均地形崎岖度（来自Nunn and Puga 2012）。</p>
+            <p>父亲科举：政治人物的父亲是否通过科举入仕。</p>
+            <p>父亲迁移距离：政治人物父亲最终居住地到祖父籍贯的距离，用作网络分散程度的预测变量。</p>
+            <p>地理覆盖：北宋领土（大致为今天的中国中部和东部）。时间跨度：神宗朝（1067–1085），但宗族网络和威胁暴露数据向前追溯至更早的几十年。分析单元：单个政治人物。</p>
+          </div>
+          <h3 data-en="Methods" data-zh="方法">Methods</h3>
+          <div class="lang-en">
+            <p>The primary method is Ordinary Least Squares (OLS) regression with prefecture fixed effects and robust standard errors clustered at the prefectural level (p. 905). All variables are standardized to facilitate interpretation of coefficient magnitudes. The benchmark model is estimated across four specifications: (1) bivariate, (2) with prefecture fixed effects, (3) with all control variables, and (4) with only covariates selected by LASSO post-double-selection (Belloni, Chernozhukov, and Hansen 2014) (p. 905). The standardized coefficient on Local concentration of kin ranges from −0.250 to −0.433, all statistically significant at the 0.10 level or better (p. 907).</p>
+            <p>Robustness checks are extensive (Appendix): alternative functional forms for the independent variable (inverse hyperbolic sine, square root); alternative kinship measures (weighted Herfindahl index based on administrative units; matrilineal discount; relational distance discount); alternative dependent variable coding (trichotomous, restricted sample, random assignment to those with unknown attitudes); alternative centrality measures (degree centrality, Bonacich power); dropping one politician at a time (jackknife); multiple imputation for missing data; flexible controls for number of children; province fixed effects instead of prefecture fixed effects; and using politicians’ own marriage networks as an alternative measure or instrument.</p>
+            <p>Sensitivity analysis: The author conducts the Altonji, Elder, and Taber (2005) test for selection on unobservables. The ratios range from 13.650 to 15.328, far exceeding the benchmark value of 3, suggesting that unobservable factors would need to be at least 13 times as influential as the observable controls to fully explain away the result (p. 908).</p>
+            <p>Key assumptions for validity:</p>
+            <p>(1) Conditional independence / selection on observables: After controlling for prefecture fixed effects and the listed covariates, remaining unobserved factors are uncorrelated with both Local concentration of kin and Support for reform. The sensitivity analysis addresses this but cannot eliminate the concern entirely.</p>
+            <p>(2) No reverse causality: The kinship networks must have been formed before the reform started. The author argues this is plausible because marriages were arranged before the reform, often in the parents’ generation, and because engagements occurred when children were very young or even before birth (p. 901). Nevertheless, strategic matchmaking anticipating future reform battles remains a possibility. ’</p>
+            <p>(3) SUTVA (Stable Unit Treatment Value Assumption): Each politician’s outcome is unaffected by others’ kinship networks. Given that politicians interacted in factional politics, this is a strong assumption. The author controls for factional ties but cannot rule out interference effects.</p>
+            <p>(4) Measurement validity: The tomb epitaphs capture actual kinship networks rather than a selective or biased subset. Missing data (69 politicians lack kinship information) could introduce selection bias. The author addresses this through multiple imputation and by comparing the estimating sample with the excluded sample (pp. 901-902, 905).</p>
+          </div>
+          <div class="lang-zh">
+            <p>主要方法是普通最小二乘法（OLS）回归，加入籍贯府固定效应和在府一级聚类的稳健标准误（第905页）。所有变量均标准化以便于解读系数大小。基准模型有四个设定：（1）双变量；（2）加入府固定效应；（3）加入全部控制变量；（4）仅保留LASSO事后双重选择法（Belloni, Chernozhukov, Hansen 2014）选出的协变量（第905页）。亲属地方集中度的标准化系数介于−0.250至−0.433之间，均在0.10或更低显著性水平上统计显著（第907页）。</p>
+            <p>稳健性检验非常广泛（附录）： 自变量的替代函数形式（反双曲正弦、平方根）；替代亲属度量（基于行政单元的加权赫芬达尔指数；母系折扣；关系距离折扣）；因变量的替代编码（三分类、限定样本、随机赋值）；替代中心性度量（度中心性、Bonacich权力）；逐一删除政治人物（刀切法）；多重插补缺失数据；对子女数量的灵活控制；省级固定效应替代府级固定效应；使用政治人物自身婚姻网络作为替代度量或工具变量。</p>
+            <p>敏感性分析： 作者使用Altonji, Elder, and Taber（2005）检验不可观测变量的选择效应。比率介于13.650至15.328之间，远超基准值3，表明不可观测因素需要至少13倍于可观测控制变量的影响力才能完全解释掉本文的发现（第908页）。</p>
+            <p>方法有效性的关键假设：</p>
+            <p>（1）条件独立性/基于可观测变量的选择：在控制了府固定效应和所列协变量后，剩余的未观测因素与亲属地方集中度和改革支持度均不相关。敏感性分析处理了这一问题，但无法完全消除疑虑。</p>
+            <p>（2）无反向因果：宗族网络必须在变法启动之前就已形成。作者论证这是合理的，因为婚姻在变法之前即已缔结，往往是在父辈时代安排的，订婚甚至发生在孩子年幼或出生之前（第901页）。尽管如此，预见到未来改革斗争而进行的战略性联姻仍是一种可能。</p>
+            <p>（3）SUTVA（稳定单元处理值假设）：每位政治人物的结果不受其他人宗族网络的影响。鉴于政治人物在派系政治中相互影响，这是一个较强的假设。作者控制了派系关系但无法排除干扰效应。</p>
+            <p>（4）测量效度：墓志铭捕捉的是实际的宗族网络而非有选择性或偏差性的子集。69位政治人物缺失宗族信息可能引入选择偏差。作者通过多重插补和比较估计样本与被排除样本来应对这一问题（第901–902、905页）。</p>
+          </div>
+        </section>
+
+
+
+        <nav class="node-nav">
+          <a class="prev" href="paglayan2024.html"><small data-en="Previous reading" data-zh="上一篇">Previous reading</small>Paglayan 2024</a>
+          <a class="next" href="suryanarayanwhite2021.html"><small data-en="Next reading" data-zh="下一篇">Next reading</small>Suryanarayan &amp; White 2021</a>
+        </nav>
+        <p style="margin-top:22px"><a href="../index.html" data-en="← Back to the genealogy graph" data-zh="← 返回谱系图">← Back to the genealogy graph</a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><span>Yidan Xia · Duke University</span><span><a href="mailto:yx326@duke.edu">yx326@duke.edu</a></span></div>
+    </footer>
+  </body>
+</html>
