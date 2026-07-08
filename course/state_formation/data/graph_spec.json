@@ -46,7 +46,7 @@
     "tilly": {
       "label_en": "Tilly lens", "label_zh": "Tilly 透镜",
       "note_en": "Highlights how each work relates to the bellicist paradigm. Note that some works respond to a strawman Tilly; hover texts flag this where the class discussed it.",
-      "note_zh": "高亮各文献与贝利主义（战争制造国家）范式的关系。部分文献回应的是稻草人 Tilly，课堂讨论涉及处在悬停文案中标注。",
+      "note_zh": "高亮各文献与战争制造国家范式的关系。部分文献回应的是稻草人 Tilly，课堂讨论涉及处在悬停文案中标注。",
       "values": ["anchor", "precursor", "supports", "qualifies", "challenges", "extends"]
     }
   },
@@ -203,16 +203,16 @@
      "tags": {"method": ["formal_model", "comparative_historical"], "legitimacy": [], "tilly": ["qualifies"]},
      "persistence": false, "source_file": "week5_literature.docx",
      "tooltip_en": "War builds states only under conditions: after the Military Revolution made money decisive, and where domestic cohesion made revenue investments worthwhile. The bellicist thesis rewritten with interaction terms.",
-     "tooltip_zh": "战争只在特定条件下造就国家：军事革命使金钱决定胜负之后，且国内凝聚使财政投资值得。带交互项重写的贝利主义。"},
+     "tooltip_zh": "战争只在特定条件下造就国家：军事革命使金钱决定胜负之后，且国内凝聚使财政投资值得。带交互项重写的战争国家说。"},
 
     {"id": "cederman2023", "type": "reading", "week": 5,
      "citation_en": "Lars-Erik Cederman, Paola Galano Toro, Luc Girardin & Guy Schvitz (2023), \"War Did Make States: Revisiting the Bellicist Paradigm in Early Modern Europe.\"",
-     "citation_zh": "塞德曼等（2023）《战争确实造就了国家：重访早期现代欧洲的贝利主义范式》。",
+     "citation_zh": "塞德曼等（2023）《战争确实造就了国家：重访早期现代欧洲的战争国家范式》。",
      "year": 2023, "stage": "S3", "lane": "coercion_extraction", "lane_reach": [],
      "tags": {"method": ["panel_fe", "survival_analysis", "grid_gis"], "legitimacy": [], "tilly": ["supports"]},
      "persistence": false, "source_file": "week5_literature.docx",
      "tooltip_en": "Territorial panel 1490–1790 (Herfindahl concentration, state death, dyadic gains): cumulative war-fueled territorial feedback supports the bellicist paradigm against its revisionist critics.",
-     "tooltip_zh": "1490–1790领土面板（赫芬达尔集中度、国家消亡、二元组得失）：战争驱动的累积领土反馈支持贝利主义，回应修正派批评。"},
+     "tooltip_zh": "1490–1790领土面板（赫芬达尔集中度、国家消亡、二元组得失）：战争驱动的累积领土反馈支持战争国家说，回应修正派批评。"},
 
     {"id": "tilly1992", "type": "reading", "week": 5,
      "citation_en": "Charles Tilly (1992), Coercion, Capital, and European States, AD 990–1992, chs. 2–3.",
@@ -505,14 +505,14 @@
      "hover_zh": "限制论的反转与放大：碎裂地形使欧洲无法出现单一霸权，中国的开阔核心则奖励统一。网格地理上的模拟把静态地理决定论变成国家体系分流的动态参数化模型。"},
 
     {"id": "e_tilly_cederman", "kind": "lane_evolution", "source": "tilly1992", "target": "cederman2023",
-     "keyword_en": "bellicist revival", "keyword_zh": "贝利主义复兴",
+     "keyword_en": "bellicist revival", "keyword_zh": "战争国家说复兴",
      "hover_en": "Answering decades of criticism (endogeneity, vague mechanisms) with data: a 1490–1790 territorial panel and cumulative war-gain variables that recover the positive-feedback dynamic Tilly narrated. Supports the paradigm.",
      "hover_zh": "以数据回应数十年批评（内生性、机制含混）：1490–1790领土面板与累积战争收益变量，复原 Tilly 叙述的正反馈动态。支持范式。"},
 
     {"id": "e_tilly_gennaioli", "kind": "lane_evolution", "source": "tilly1992", "target": "gennaiolivoth2015",
      "keyword_en": "scope conditions", "keyword_zh": "范围条件",
      "hover_en": "War builds fiscal capacity only after the Military Revolution made money decisive, and only where domestic cohesion made investment worthwhile. The bellicist claim survives — rewritten with interaction terms.",
-     "hover_zh": "只有在军事革命使金钱决定胜负之后、且国内凝聚使投资值得之处，战争才建设财政能力。贝利主义命题存活——但被改写为带交互项的形式。"},
+     "hover_zh": "只有在军事革命使金钱决定胜负之后、且国内凝聚使投资值得之处，战争才建设财政能力。战争国家命题存活——但被改写为带交互项的形式。"},
 
     {"id": "e_tilly_queralt", "kind": "lane_evolution", "source": "tilly1992", "target": "queralt2022",
      "keyword_en": "how war is financed", "keyword_zh": "战争如何融资",
@@ -527,7 +527,7 @@
     {"id": "e_tilly_gb", "kind": "lane_evolution", "source": "tilly1992", "target": "grzymalabusse2023",
      "keyword_en": "church, not war", "keyword_zh": "教会而非战争",
      "hover_en": "Europe's administrative and legal templates — chanceries, canon law, conciliar practice — were borrowed from the papacy centuries before sustained interstate war competition. The institutional genome of the state predates the bellicist mechanism.",
-     "hover_zh": "欧洲的行政与法律模板——文书署、教会法、会议制——在持续的国家间战争竞争之前数百年就借自教廷。国家的制度基因早于贝利主义机制。"},
+     "hover_zh": "欧洲的行政与法律模板——文书署、教会法、会议制——在持续的国家间战争竞争之前数百年就借自教廷。国家的制度基因早于战争国家说机制。"},
 
     {"id": "e_tilly_huangkang", "kind": "lane_evolution", "source": "tilly1992", "target": "huangkang2022",
      "keyword_en": "East Asian anomaly", "keyword_zh": "东亚反例",
