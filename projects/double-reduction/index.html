@@ -132,7 +132,7 @@
             <section id="scm-general">
               <h2>What Is Synthetic Control?</h2>
               <p>
-                The synthetic control method (SCM) is a technique for estimating the causal effect of a policy or intervention when only one or a few units are treated. The core idea: take a group of untreated units and combine them with optimized weights to build a “synthetic” version of the treated unit that matches its pre-treatment behavior as closely as possible. After the intervention, any divergence between the actual treated unit and its synthetic counterpart is attributed to the treatment.
+                The synthetic control method (SCM) is a technique for estimating the causal effect of a policy or intervention when only one or a few units are treated. The core idea: take a group of untreated units and combine them with optimized weights to build a “synthetic” version of the treated unit that matches its pre-treatment behavior as closely as possible. After the intervention, a divergence is interpretable as a treatment effect if pre-treatment fit is adequate and no contemporaneous shock differentially affects the treated unit.
               </p>
               <figure class="figure" style="margin: 24px 0;">
                 <img src="../../assets/images/scm-explainer.png" alt="Three-panel diagram explaining SCM: (a) one treated series compared to many controls, (b) controls reweighted into a single synthetic control matching pre-treatment, (c) synthetic control projected forward to estimate counterfactual.">
@@ -369,7 +369,7 @@
             <section id="reflections">
               <h2>Reflections</h2>
               <p>
-                The primary finding of this project is negative, and the negative finding is the point. Nighttime light data cannot serve as a valid proxy for student study activity. The reasons are structural rather than fixable with better data processing: VIIRS resolution is too coarse, urban base illumination overwhelms any student-generated signal, seasonal patterns dominate the time series, and the COVID-19 pandemic produced heterogeneous shocks that are temporally inseparable from the policy itself.
+                The primary finding of this project is negative, and the negative finding is the point. In this city-quarter design, VIIRS nighttime light does not provide a valid proxy for student study activity. The reasons are structural rather than fixable with better data processing: VIIRS resolution is too coarse, urban base illumination overwhelms any student-generated signal, seasonal patterns dominate the time series, and the COVID-19 pandemic produced heterogeneous shocks that are temporally inseparable from the policy itself.
               </p>
               <p>
                 The methodological journey matters as much as the conclusion. DID failed because pilot city selection was politically driven and structurally non-random. PSM-DID failed because matching on observables cannot repair fundamental trend differences rooted in unobserved selection processes. SCM performed better in principle but could not overcome the COVID confound or the structural mismatch between megacity treatment units and smaller donor cities.
@@ -378,7 +378,7 @@
                 A better design for this question would need higher-frequency data, finer spatial resolution, and triangulation with other indicators: electricity consumption records, traffic patterns near schools, time-use surveys, or administrative data on tutoring registrations. The question itself (whether policy constraints on education reduce burden or merely redirect it) remains important and unanswered.
               </p>
               <p>
-                For my broader research trajectory, this project established a lesson that shaped everything after it: <strong>macro-level observable proxies cannot reliably penetrate individual-level states.</strong> The gap between what a satellite sees and what a student does is not just a measurement limitation. It is a conceptual warning about the relationship between observable traces and the phenomena we want them to represent.
+                For my broader research trajectory, this project established a lesson that shaped everything after it: <strong>A macro-level proxy should not be assumed to recover individual-level behavior without direct validation at the relevant spatial and temporal scale.</strong> The gap between what a satellite sees and what a student does is not just a measurement limitation. It is a conceptual warning about the relationship between observable traces and the phenomena we want them to represent.
               </p>
             </section>
 
