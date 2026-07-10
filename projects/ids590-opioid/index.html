@@ -82,7 +82,7 @@
                 </div>
                 <div class="method-box">
                   <h3>Mortality</h3>
-                  <p>CDC WONDER Underlying Cause of Death files, yearly tab-separated text files for 2006 to 2015. Filtered to drug-induced causes (codes D1, D2, D4, D9). Suppressed death counts (a CDC convention for small cells) converted to zero. County and state parsed from combined strings. Deaths summed across cause codes per county-year. Mortality rate calculated as <code>(drug_deaths / population) &times; 100,000</code>.</p>
+                  <p>CDC WONDER Underlying Cause of Death files, yearly tab-separated text files for 2006 to 2015. Filtered to drug-induced causes (codes D1, D2, D4, D9). Suppressed death counts (a CDC convention for small cells) converted to zero; ; this convention treats an unknown small count as no deaths and may understate mortality in suppressed cells. County and state parsed from combined strings. Deaths summed across cause codes per county-year. Mortality rate calculated as <code>(drug_deaths / population) &times; 100,000</code>.</p>
                 </div>
                 <div class="method-box">
                   <h3>Socioeconomic covariates</h3>
@@ -135,7 +135,7 @@
             <section id="trends">
               <h2>Parallel Trend Assessment</h2>
               <p>
-                With the control states selected, I estimated an event-study model to assess whether Florida and the control group followed parallel trends before the 2010 policy. The model interacted event-time dummies (relative to 2009 as the reference year) with a treatment indicator, with county fixed effects and standard errors clustered at the state level. Two outcomes were tested: MME per 1,000 and overdose mortality per 100,000.
+                With the control states selected, I estimated an event-study model to assess whether Florida and the control group followed parallel trends before the 2010 policy. The model interacted event-time dummies (relative to 2009 as the reference year) with a treatment indicator, with county fixed effects and standard errors clustered at the state level (conventional cluster-robust inference is therefore fragile and the event-study results should be read cautiously). Two outcomes were tested: MME per 1,000 and overdose mortality per 100,000.
               </p>
 
               <div class="figure-grid">
